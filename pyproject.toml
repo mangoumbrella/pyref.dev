@@ -1,0 +1,12 @@
+[project]
+name = "pyref-dev"
+version = "0.1.0"
+description = "The entry point to Python reference docs"
+authors = [
+    {name = "Mango Umbrella", email = "hi@mangoumbrella.com"},
+]
+readme = "README.md"
+requires-python = ">=3.13.3,<3.14"
+dependencies = [
+    "fastapi>=0.115.12,<1",
+]
