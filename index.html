@@ -1,5 +1,107 @@
-<html>
-    <body>
-        <p>Hello, pyref.dev!</p>
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pyref.dev - Python Reference Docs</title>
+    <style>
+        :root {
+            --python-blue: #306998;
+            --python-yellow: #ffd43b;
+            --dark: #222;
+            --light: #f8f9fa;
+            --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+            --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: var(--font-sans);
+            background: var(--light);
+            color: var(--dark);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            line-height: 1.6;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 800px;
+            text-align: center;
+            padding: 3rem 1.5rem;
+        }
+        
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+        }
+        
+        h1 .py-blue {
+            color: var(--python-blue);
+        }
+        
+        h1 .py-yellow {
+            color: var(--python-yellow);
+        }
+        
+        p {
+            font-size: 1.25rem;
+            margin-bottom: 2rem;
+            color: #555;
+        }
+        
+        .github-link {
+            display: inline-block;
+            background: var(--python-blue);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.2s ease;
+            border: 2px solid var(--python-blue);
+        }
+        
+        .github-link:hover {
+            background: transparent;
+            color: var(--python-blue);
+        }
+        
+        .github-link svg {
+            vertical-align: middle;
+            margin-right: 0.5rem;
+        }
+        
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            
+            p {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><span class="py-blue">pyref</span>.<span class="py-yellow">dev</span></h1>
+        <p>The entry point to Python reference docs.</p>
+        <a href="https://github.com/mangoumbrella/pyref.dev" class="github-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+            </svg>
+            View on GitHub
+        </a>
+    </div>
+</body>
 </html>
