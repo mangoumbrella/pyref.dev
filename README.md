@@ -1,6 +1,20 @@
 # pyref.dev
 
-[pyref.dev](https://pyref.dev) is the entry point to python reference docs.
+[pyref.dev](https://pyref.dev) is a fast, convenient way to access Python reference docs.
+
+It allows you to quickly jump to the official documentation for any Python standard library module, class, or function by using a simple URL pattern:
+
+```
+https://pyref.dev/<fully.qualified.symbol.name>
+```
+
+## Examples
+
+* https://pyref.dev/json
+* https://pyref.dev/pathlib.Path
+* https://pyref.dev/datetime.datetime.strftime
+
+For now, the symbols are case-insensitive.
 
 ## License
 
