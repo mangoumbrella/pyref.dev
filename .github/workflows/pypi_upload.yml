@@ -23,5 +23,15 @@ jobs:
     if: github.event_name == 'release'
 
     steps:
+    - uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '*'
+
+    - name: Build package
+      run: python -m build
+
     - name: Publish package distributions to PyPI
       uses: pypa/gh-action-pypi-publish@release/v1
