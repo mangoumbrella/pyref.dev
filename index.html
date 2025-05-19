@@ -8,10 +8,19 @@
         :root {
             --python-blue: #306998;
             --python-yellow: #ffd43b;
+            --python-green: #3c873a;
             --dark: #222;
             --light: #f8f9fa;
+            --gray-100: #f0f0f0;
+            --gray-200: #e9ecef;
+            --gray-300: #dee2e6;
+            --gray-600: #6c757d;
             --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
             --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --header-height: 60px;
         }
         
         * {
@@ -27,22 +36,58 @@
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             line-height: 1.6;
+            position: relative;
+            padding-top: var(--header-height);
+        }
+        
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--header-height);
+            /* background-color: white; */
+            /* box-shadow: var(--shadow-sm); */
+            z-index: 100;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding: 0 1.5rem;
         }
         
         .container {
             width: 90%;
             max-width: 800px;
             text-align: center;
-            padding: 3rem 1.5rem;
+            padding: 2rem 1.5rem;
+            margin: 0 auto;
+        }
+        
+        .logo {
+            margin-bottom: 2rem;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .logo::before {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background-color: var(--python-yellow);
+            border-radius: 50%;
+            top: -15px;
+            left: -25px;
+            z-index: -1;
+            opacity: 0.6;
         }
         
         h1 {
-            font-size: 3rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -0.05em;
         }
         
         h1 .py-blue {
@@ -51,57 +96,203 @@
         
         h1 .py-yellow {
             color: var(--python-yellow);
+            position: relative;
+        }
+        
+        .tagline {
+            font-size: 1.4rem;
+            margin-bottom: 2.5rem;
+            color: var(--gray-600);
+            font-weight: 500;
         }
         
         p {
-            font-size: 1.25rem;
+            font-size: 1.2rem;
             margin-bottom: 2rem;
-            color: #555;
+            color: var(--gray-600);
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .url-pattern {
+            display: inline-block;
+            padding: 1rem 1.5rem;
+            background-color: var(--gray-100);
+            border-radius: 8px;
+            font-family: var(--font-mono);
+            font-size: 1.1rem;
+            color: var(--python-blue);
+            border-left: 4px solid var(--python-yellow);
+            margin-bottom: 2rem;
+            box-shadow: var(--shadow-sm);
+            word-break: break-all;
+        }
+        
+        .examples-title {
+            font-weight: 600;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+        
+        .examples-list {
+            list-style: none;
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow-md);
+            text-align: left;
+            width: 100%;
+        }
+        
+        .examples-list li {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--gray-200);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        
+        .examples-list li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--python-green);
+            font-weight: bold;
+        }
+        
+        .examples-list li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+        
+        .examples-list a {
+            color: var(--python-blue);
+            text-decoration: none;
+            font-family: var(--font-mono);
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+            word-break: break-all;
+            display: inline-block;
+        }
+        
+        .examples-list a:hover {
+            text-decoration: underline;
+            color: var(--python-green);
         }
         
         .github-link {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             background: var(--python-blue);
             color: white;
-            padding: 0.8rem 1.5rem;
-            border-radius: 4px;
+            padding: 0.6rem 1.2rem;
+            border-radius: 6px;
             text-decoration: none;
-            font-weight: 500;
-            transition: all 0.2s ease;
-            border: 2px solid var(--python-blue);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            border: 1px solid var(--python-blue);
+            box-shadow: var(--shadow-sm);
         }
         
         .github-link:hover {
-            background: transparent;
+            background: white;
             color: var(--python-blue);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-md);
         }
         
         .github-link svg {
-            vertical-align: middle;
             margin-right: 0.5rem;
+        }
+        
+        .footer {
+            margin-top: 3rem;
+            color: var(--gray-600);
+            font-size: 0.9rem;
         }
         
         @media (max-width: 600px) {
             h1 {
-                font-size: 2.5rem;
+                font-size: 2.8rem;
+            }
+            
+            .tagline {
+                font-size: 1.2rem;
             }
             
             p {
                 font-size: 1.1rem;
             }
+            
+            .url-pattern {
+                font-size: 0.9rem;
+                padding: 0.8rem 1rem;
+            }
+            
+            .logo::before {
+                width: 50px;
+                height: 50px;
+                top: -12px;
+                left: -20px;
+            }
+            
+            .examples-list {
+                padding: 1.2rem 1rem;
+            }
+            
+            .examples-list a {
+                font-size: 0.85rem;
+            }
+            
+            .examples-list li {
+                padding-left: 1.2rem;
+                margin-bottom: 0.8rem;
+                padding-bottom: 0.8rem;
+            }
+            
+            .github-link {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
+            }
+            
+            .github-link svg {
+                width: 18px;
+                height: 18px;
+            }
+            
+            .header {
+                padding: 0 1rem;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1><span class="py-blue">pyref</span>.<span class="py-yellow">dev</span></h1>
-        <p>The entry point to Python reference docs.</p>
+    <header class="header">
         <a href="https://github.com/mangoumbrella/pyref.dev" class="github-link">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
             </svg>
             View on GitHub
         </a>
+    </header>
+    <div class="container">
+        <div class="logo">
+            <h1><span class="py-blue">pyref</span>.<span class="py-yellow">dev</span></h1>
+        </div>
+        <p class="tagline">A fast, convenient way to access Python reference docs.</p>
+        <p>Quickly jump to the official documentation for any Python standard library module, class, or function by using a simple URL pattern:</p>
+        <div class="url-pattern">https://pyref.dev/&lt;fully.qualified.symbol.name&gt;</div>
+        <p class="examples-title">Examples</p>
+        <ul class="examples-list">
+            <li><a href="https://pyref.dev/json">https://pyref.dev/json</a></li>
+            <li><a href="https://pyref.dev/pathlib.Path">https://pyref.dev/pathlib.Path</a></li>
+            <li><a href="https://pyref.dev/datetime.datetime.strftime">https://pyref.dev/datetime.datetime.strftime</a></li>
+        </ul>
     </div>
 </body>
 </html>
