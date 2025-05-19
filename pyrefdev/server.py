@@ -14,8 +14,6 @@ async def root():
 
 @app.get("/{symbol}")
 async def redirects(symbol: str):
-    if symbol.startswith("_"):
-        return PlainTextResponse(content=f"{symbol} not found", status_code=404)
     if url := MAPPING.get(symbol):
         return RedirectResponse(url)
     if url := MAPPING.get(symbol.lower()):
