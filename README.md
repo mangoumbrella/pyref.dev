@@ -8,6 +8,8 @@ It allows you to quickly jump to the official documentation for any Python stand
 https://pyref.dev/<fully.qualified.symbol.name>
 ```
 
+Alternatively, you could also `pip install pyrefdev` and run the `pyrefdev` CLI tool.
+
 ## Examples
 
 * https://pyref.dev/json
