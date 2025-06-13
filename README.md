@@ -2,6 +2,12 @@
 
 [pyref.dev](https://pyref.dev) is a fast, convenient way to access Python reference docs.
 
+<p>
+<a href="https://pypi.org/project/pyrefdev"><img alt="PyPI" src="https://img.shields.io/pypi/v/pyrefdev"></a>
+<a href="https://pypi.org/project/pyrefdev"><img alt="Python veresions supported" src="https://img.shields.io/pypi/pyversions/pyrefdev"></a>
+<a href="https://github.com/mangoumbrella/pyref.dev/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/pypi/l/pyrefdev.svg"></a>
+</p>
+
 It allows you to quickly jump to the official documentation for any Python standard library module, class, or function by using a simple URL pattern:
 
 ```
