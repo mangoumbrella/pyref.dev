@@ -24,6 +24,10 @@ Alternatively, you could also `pip install pyrefdev` and run the `pyrefdev` CLI 
 
 For now, the symbols are case-insensitive.
 
+## Changelog
+
+See [CHANGELOG.md](https://github.com/mangoumbrella/pyref.dev/blob/main/CHANGELOG.md).
+
 ## License
 
 [pyref.dev](https://pyref.dev) is licensed under the terms of the Apache license. See [LICENSE](LICENSE) for more information.
