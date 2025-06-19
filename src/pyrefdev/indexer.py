@@ -4,7 +4,7 @@ import pyrefdev
 
 
 app = cyclopts.App(
-    name="pyref.dev indexer",
+    name="pyrefdev-indexer",
     help="The indexer for pyref.dev.",
     version=pyrefdev.__version__,
 )
