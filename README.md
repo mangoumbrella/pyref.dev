@@ -30,4 +30,4 @@ See [CHANGELOG.md](https://github.com/mangoumbrella/pyref.dev/blob/main/CHANGELO
 
 ## License
 
-[pyref.dev](https://pyref.dev) is licensed under the terms of the Apache license. See [LICENSE](LICENSE) for more information.
+[pyref.dev](https://pyref.dev) is licensed under the terms of the Apache license. See [LICENSE](https://github.com/mangoumbrella/pyref.dev/blob/main/LICENSE) for more information.
