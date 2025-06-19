@@ -41,9 +41,13 @@ server = [
     "uvicorn[standard]>=0.34.2,<1",
     "fastapi>=0.115.12,<1",
 ]
+indexer = [
+    "cyclopts>=3.19.0",
+]
 
 [project.scripts]
 pyrefdev = "pyrefdev.__main__:main"
+pyrefdev-indexer = "pyrefdev.indexer:app"
 
 [tool.hatch.version]
 source = "vcs"
