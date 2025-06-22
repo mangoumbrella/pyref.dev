@@ -29,6 +29,7 @@ keywords = [
 ]
 requires-python = ">=3.10"
 dependencies = [
+    "yib>=0.2.0",
 ]
 dynamic = ["version"]
 
@@ -43,11 +44,13 @@ server = [
 ]
 indexer = [
     "cyclopts>=3.19.0",
+    "rich>=14.0.0",
+    "Beautifulsoup4>=4.13.4",
 ]
 
 [project.scripts]
 pyrefdev = "pyrefdev.__main__:main"
-pyrefdev-indexer = "pyrefdev.indexer:app"
+pyrefdev-indexer = "pyrefdev.indexer.__main__:app"
 
 [tool.hatch.version]
 source = "vcs"
