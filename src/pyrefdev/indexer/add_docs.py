@@ -12,8 +12,8 @@ _MARKER = re.compile("(\n.*ENTRY-LINE-MARKER.*\n)")
 
 
 def add_docs(
-    package: str,
     *,
+    package: str,
     index_url: str,
     pypi: str | None = None,
     docs_directory: Path | None = None,
