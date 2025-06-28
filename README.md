@@ -24,6 +24,26 @@ Alternatively, you could also `pip install pyrefdev` and run the `pyrefdev` CLI 
 
 For now, the symbols are case-insensitive.
 
+## Server Setup
+
+To set up a new server:
+
+```bash
+> git clone https://github.com/mangoumbrella/pyref.dev
+> cd pyref.dev
+> sudo cp pyrefdev.service /etc/systemd/system/pyrefdev.service
+> systemctl start pyrefdev.service
+```
+
+To update to a new version:
+
+```bash
+> cd pyref.dev
+> git pull
+> uv sync --all-extras
+> systemctl restart pyrefdev.service
+```
+
 ## Changelog
 
 See [CHANGELOG.md](https://github.com/mangoumbrella/pyref.dev/blob/main/CHANGELOG.md).
