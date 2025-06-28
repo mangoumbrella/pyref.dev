@@ -32,6 +32,11 @@ SUPPORTED_PACKAGES: dict[str, Package] = {
         index="https://pandas.pydata.org/docs/reference/index.html",
         crawler_root="https://pandas.pydata.org/docs/reference/",
     ),
+    "urllib3": Package(
+        name="urllib3",
+        index="https://urllib3.readthedocs.io/en/stable/reference/index.html",
+        crawler_root="https://urllib3.readthedocs.io/en/stable/reference/",
+    ),
     # ENTRY-LINE-MARKER
 }
 
