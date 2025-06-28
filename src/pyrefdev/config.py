@@ -37,6 +37,11 @@ SUPPORTED_PACKAGES: dict[str, Package] = {
         index="https://urllib3.readthedocs.io/en/stable/reference/index.html",
         crawler_root="https://urllib3.readthedocs.io/en/stable/reference/",
     ),
+    "requests": Package(
+        name="requests",
+        index="https://requests.readthedocs.io/en/latest/",
+        crawler_root="https://requests.readthedocs.io/en/latest/",
+    ),
     # ENTRY-LINE-MARKER
 }
 
