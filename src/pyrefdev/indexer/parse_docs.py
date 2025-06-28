@@ -1,6 +1,7 @@
 import builtins
 from collections import defaultdict
 import difflib
+import importlib
 import itertools
 import json
 from pathlib import Path
@@ -11,45 +12,70 @@ from rich.progress import Progress
 
 import bs4
 
-from pyrefdev.mapping import __python__
-from pyrefdev.config import console
+from pyrefdev.config import console, get_packages, Package
 
 
 _STDLIB_MODULES_NAMES = frozenset({*sys.stdlib_module_names, "test"})
 
 
-def parse_docs(docs_directory: Path, in_place: bool = False) -> None:
+def parse_docs(
+    docs_directory: Path, package: str | None = None, in_place: bool = False
+) -> None:
     if sys.version_info[:2] != (3, 13):
         console.fatal("pyrefdev-indexer parse_docs must be run on Python 3.13.")
 
-    metadata_file = docs_directory / "__python__.json"
-    docs_subdir = docs_directory / "__python__"
+    packages = get_packages(package)
+    with Progress(console=console) as progress:
+        if len(packages) > 1:
+            task = progress.add_task(f"Parsing {len(packages)} packages")
+        else:
+            task = None
+        for package in packages:
+            _parse_package(
+                progress, package, docs_directory / package.name, in_place=in_place
+            )
+            if task is not None:
+                progress.advance(task)
+
+
+def _parse_package(
+    progress: Progress, package: Package, package_docs: Path, *, in_place: bool
+) -> None:
+    metadata_file = package_docs.parent / f"{package.name}.json"
     file_and_urls: list[tuple[str, str]] = list(
         json.loads(metadata_file.read_text()).items()
     )
-    symbol_to_urls: dict[str, str] = _SPECIAL_SYMBOLS.copy()
-    with Progress(console=console) as progress:
-        task = progress.add_task(f"Parsing {docs_subdir}", total=len(file_and_urls))
-        while file_and_urls:
-            file, url = file_and_urls.pop()
+    if package.is_stdlib():
+        symbol_to_urls: dict[str, str] = _SPECIAL_SYMBOLS.copy()
+    else:
+        symbol_to_urls: dict[str, str] = {package.name: package.index}
+    parser = _Parser(package)
+    task = progress.add_task(f"Parsing {package_docs}", total=len(file_and_urls))
+    while file_and_urls:
+        file, url = file_and_urls.pop()
+        if package.is_stdlib:
             maybe_module = url.removeprefix(
                 "https://docs.python.org/3/library/"
             ).removesuffix(".html")
             maybe_module_prefix = maybe_module.split(".")[0]
             if maybe_module_prefix in _STDLIB_MODULES_NAMES:
                 symbol_to_urls[maybe_module] = url
-            symbols = _parse_symbols((docs_subdir / file).read_text())
-            for symbol in symbols:
-                if symbol not in symbol_to_urls:
-                    symbol_to_urls[symbol] = f"{url}#{symbol}"
-            progress.update(task, advance=1)
+        symbols = parser.parse_symbols((package_docs / file).read_text())
+        for symbol in symbols:
+            if symbol not in symbol_to_urls:
+                symbol_to_urls[symbol] = f"{url}#{symbol}"
+        progress.update(task, advance=1)
+    progress.update(task, visible=False)
 
     console.print(f"Found {len(symbol_to_urls)} symbols.")
     lines = _create_symbols_map(symbol_to_urls)
+    mapping_module = importlib.import_module(f"pyrefdev.mapping.{package.name}")
     if in_place:
-        Path(__python__.__file__).write_text("\n".join(itertools.chain(lines, [""])))
+        Path(mapping_module.__file__).write_text(
+            "\n".join(itertools.chain(lines, [""]))
+        )
     else:
-        before = Path(__python__.__file__).read_text().splitlines(keepends=True)
+        before = Path(mapping_module.__file__).read_text().splitlines(keepends=True)
         diffs = difflib.unified_diff(
             before, [line + "\n" for line in lines], fromfile="before", tofile="after"
         )
@@ -87,28 +113,36 @@ def _create_symbols_map(symbol_to_urls: dict[str, str]) -> list[str]:
     return lines
 
 
-def _parse_symbols(content: str) -> set[str]:
-    try:
-        soup = bs4.BeautifulSoup(content, "html.parser")
-    except bs4.ParserRejectedMarkup:
-        return set()
-    symbols = set()
-    for element in soup.find_all(id=True):
-        maybe_symbol = element["id"]
-        if _is_stdlib(maybe_symbol):
-            symbols.add(maybe_symbol)
-    return symbols
+class _Parser:
+    def __init__(self, package: Package) -> None:
+        self._package = package
 
+    def parse_symbols(self, content: str) -> set[str]:
+        try:
+            soup = bs4.BeautifulSoup(content, "html.parser")
+        except bs4.ParserRejectedMarkup:
+            return set()
+        symbols = set()
+        for element in soup.find_all(id=True):
+            maybe_symbol = element["id"]
+            if self._is_symbol(maybe_symbol):
+                symbols.add(maybe_symbol)
+        return symbols
 
-def _is_stdlib(symbol: str) -> bool:
-    if not re.match(r"^([a-zA-Z_][a-zA-Z_0-9]*)(\.[a-zA-Z_][a-zA-Z_0-9]*)*$", symbol):
-        return False
-    prefix = symbol.split(".")[0]
-    if prefix in _STDLIB_MODULES_NAMES:
-        return True
-    if prefix in dir(builtins):
-        return True
-    return False
+    def _is_symbol(self, symbol: str) -> bool:
+        if not re.match(
+            r"^([a-zA-Z_][a-zA-Z_0-9]*)(\.[a-zA-Z_][a-zA-Z_0-9]*)*$", symbol
+        ):
+            return False
+        prefix = symbol.split(".")[0]
+        if self._package.is_stdlib():
+            if prefix in _STDLIB_MODULES_NAMES:
+                return True
+            if prefix in dir(builtins):
+                return True
+            return False
+        else:
+            return prefix == self._package.name
 
 
 _SPECIAL_SYMBOLS = {

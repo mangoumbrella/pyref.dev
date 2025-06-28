@@ -9,34 +9,52 @@ from urllib import parse, request
 import bs4
 from rich.progress import Progress, TaskID
 
-from ..config import console, SUPPORTED_DOCS
+from pyrefdev.config import console, get_packages
 
 
-def crawl_docs(output_directory: Path | None = None, num_threads: int = 2) -> None:
+def crawl_docs(
+    output_directory: Path | None = None,
+    *,
+    package: str | None = None,
+    num_threads: int = 2,
+) -> None:
     """Crawl the docs into a local directory."""
     if output_directory:
         if output_directory.exists():
             if not output_directory.is_dir():
-                pass
+                console.fatal(f"{output_directory} is not a directory")
     else:
         output_directory = Path(tempfile.mkdtemp(prefix="pyref.dev."))
 
     console.print(f"Crawling documents into {output_directory}")
-    for name, website in SUPPORTED_DOCS.items():
-        subdir = output_directory / name
-        if subdir.exists():
-            console.fatal(f"{subdir} already exists.")
-        subdir.mkdir(parents=True)
-        crawler = _Crawler(
-            output_directory / name,
-            website,
-        )
-        crawler.crawl(num_threads=num_threads)
-        crawler.save_url_map(output_directory / f"{name}.json")
+    packages = get_packages(package)
+    with Progress(console=console) as progress:
+        if len(packages) > 1:
+            task = progress.add_task(
+                f"Crawling {len(packages)} packages", total=len(packages)
+            )
+        else:
+            task = None
+        for package in packages:
+            try:
+                subdir = output_directory / package.name
+                if subdir.exists():
+                    console.print(f"{subdir} already exists, skipping.")
+                    continue
+                subdir.mkdir(parents=True)
+                crawler = _Crawler(
+                    progress, output_directory / package.name, package.crawler_root
+                )
+                crawler.crawl(num_threads=num_threads)
+                crawler.save_url_map(output_directory / f"{package.name}.json")
+            finally:
+                if task is not None:
+                    progress.advance(task)
 
 
 class _Crawler:
-    def __init__(self, output_directory: Path, root_url: str):
+    def __init__(self, progress: Progress, output_directory: Path, root_url: str):
+        self._progress = progress
         self._output_directory = output_directory
         self._root_url = root_url
 
@@ -51,16 +69,16 @@ class _Crawler:
         self._to_crawl_queue.put(self._root_url)
         self._seen_urls.add(self._root_url)
 
-        with Progress(console=console) as progress:
-            task = progress.add_task(f"Crawling {self._root_url}")
-            threads = []
-            for _ in range(num_threads):
-                thread = threading.Thread(
-                    target=self._crawl_thread, args=(progress, task), daemon=True
-                )
-                thread.start()
-                threads.append(thread)
-            self._to_crawl_queue.join()
+        task = self._progress.add_task(f"Crawling {self._root_url}")
+        threads = []
+        for _ in range(num_threads):
+            thread = threading.Thread(
+                target=self._crawl_thread, args=(task,), daemon=True
+            )
+            thread.start()
+            threads.append(thread)
+        self._to_crawl_queue.join()
+        self._progress.update(task, visible=False)
 
     def save_url_map(self, output: Path) -> None:
         metadata = {
@@ -69,7 +87,7 @@ class _Crawler:
         }
         output.write_text(json.dumps(metadata))
 
-    def _crawl_thread(self, progress: Progress, task: TaskID) -> None:
+    def _crawl_thread(self, task: TaskID) -> None:
         while True:
             url = self._to_crawl_queue.get()
             try:
@@ -77,7 +95,7 @@ class _Crawler:
             finally:
                 if saved is not None:
                     self._crawled_url_to_files[url] = saved
-                progress.update(
+                self._progress.update(
                     task,
                     total=len(self._seen_urls),
                     completed=len(self._crawled_url_to_files),
