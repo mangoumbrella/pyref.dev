@@ -25,14 +25,13 @@ Alternatively, you could also `pip install pyrefdev` and run the `pyrefdev` CLI 
 
 ## Supported packages
 
-* [Python Standard Library](https://docs.python.org/3/library/)
-* [NumPy](https://numpy.org/doc/stable/reference/index.html)
+See [pyref.dev](https://pyref.dev/#supported-packages) for the list of supported packages.
 
 # Case sensitivity
 
 For most of the cases, they are case-insensitive. However, for symbols like `typing.final` and `typing.Final`, you need to access them with the correct case.
 
-## Server Setup
+## Server setup
 
 To set up a new server:
 

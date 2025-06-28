@@ -19,7 +19,7 @@ _STDLIB_MODULES_NAMES = frozenset({*sys.stdlib_module_names, "test"})
 
 
 def parse_docs(
-    docs_directory: Path, package: str | None = None, in_place: bool = False
+    docs_directory: Path, *, package: str | None = None, in_place: bool = False
 ) -> None:
     if sys.version_info[:2] != (3, 13):
         console.fatal("pyrefdev-indexer parse_docs must be run on Python 3.13.")

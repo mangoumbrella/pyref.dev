@@ -38,10 +38,7 @@ def crawl_docs(
         for package in packages:
             try:
                 subdir = output_directory / package.name
-                if subdir.exists():
-                    console.print(f"{subdir} already exists, skipping.")
-                    continue
-                subdir.mkdir(parents=True)
+                subdir.mkdir(parents=True, exist_ok=True)
                 crawler = _Crawler(
                     progress, output_directory / package.name, package.crawler_root
                 )

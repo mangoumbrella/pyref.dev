@@ -27,6 +27,12 @@ SUPPORTED_PACKAGES: dict[str, Package] = {
         index="https://numpy.org/doc/stable/reference/index.html",
         crawler_root="https://numpy.org/doc/stable/reference/",
     ),
+    "pandas": Package(
+        name="pandas",
+        index="https://pandas.pydata.org/docs/reference/index.html",
+        crawler_root="https://pandas.pydata.org/docs/reference/",
+    ),
+    # ENTRY-LINE-MARKER
 }
 
 
