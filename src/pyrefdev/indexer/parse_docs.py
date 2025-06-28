@@ -32,7 +32,7 @@ def parse_docs(
             task = None
         for package in packages:
             _parse_package(
-                progress, package, docs_directory / package.name, in_place=in_place
+                progress, package, docs_directory / package.package, in_place=in_place
             )
             if task is not None:
                 progress.advance(task)
@@ -41,14 +41,14 @@ def parse_docs(
 def _parse_package(
     progress: Progress, package: Package, package_docs: Path, *, in_place: bool
 ) -> None:
-    metadata_file = package_docs.parent / f"{package.name}.json"
+    metadata_file = package_docs.parent / f"{package.package}.json"
     file_and_urls: list[tuple[str, str]] = list(
         json.loads(metadata_file.read_text()).items()
     )
     if package.is_stdlib():
         symbol_to_urls: dict[str, str] = _SPECIAL_SYMBOLS.copy()
     else:
-        symbol_to_urls: dict[str, str] = {package.name: package.index}
+        symbol_to_urls: dict[str, str] = {package.package: package.index}
     parser = _Parser(package)
     task = progress.add_task(f"Parsing {package_docs}", total=len(file_and_urls))
     while file_and_urls:
@@ -69,7 +69,7 @@ def _parse_package(
 
     console.print(f"Found {len(symbol_to_urls)} symbols.")
     lines = _create_symbols_map(symbol_to_urls)
-    mapping_module = importlib.import_module(f"pyrefdev.mapping.{package.name}")
+    mapping_module = importlib.import_module(f"pyrefdev.mapping.{package.package}")
     if in_place:
         Path(mapping_module.__file__).write_text(
             "\n".join(itertools.chain(lines, [""]))
@@ -142,7 +142,7 @@ class _Parser:
                 return True
             return False
         else:
-            return prefix == self._package.name
+            return prefix == self._package.package
 
 
 _SPECIAL_SYMBOLS = {

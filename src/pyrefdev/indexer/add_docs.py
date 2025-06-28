@@ -16,13 +16,17 @@ def add_docs(
     *,
     index: str,
     crawler_root: str,
+    pypi: str | None = None,
     docs_directory: Path | None = None,
 ) -> None:
     if package in config.SUPPORTED_PACKAGES:
         console.fatal(f"Package exists: {package}")
+    pypi = pypi or package
+
     config_entry = f"""
     "{package}": Package(
-        name="{package}",
+        package="{package}",
+        pypi="{pypi}",
         index="{index}",
         crawler_root="{crawler_root}",
     ),"""
@@ -35,7 +39,7 @@ def add_docs(
     mapping_file.write_text("MAPPING = {}")
 
     index_entry = f"""
-            <li><a href="{index}" class="package-name">{package}</a></li>"""
+            <li><a href="{index}" class="package-name">{pypi}</a></li>"""
     index_file = Path(config.__file__).parent.parent.parent / "index.html"
     index_content = index_file.read_text()
     index_content = _MARKER.sub(index_entry + r"\g<1>", index_content)

@@ -37,13 +37,13 @@ def crawl_docs(
             task = None
         for package in packages:
             try:
-                subdir = output_directory / package.name
+                subdir = output_directory / package.package
                 subdir.mkdir(parents=True, exist_ok=True)
                 crawler = _Crawler(
-                    progress, output_directory / package.name, package.crawler_root
+                    progress, output_directory / package.package, package.crawler_root
                 )
                 crawler.crawl(num_threads=num_threads)
-                crawler.save_url_map(output_directory / f"{package.name}.json")
+                crawler.save_url_map(output_directory / f"{package.package}.json")
             finally:
                 if task is not None:
                     progress.advance(task)

@@ -8,39 +8,51 @@ console = yconsole.Console(stderr=True)
 
 @dataclasses.dataclass
 class Package:
-    name: str
+    package: str
+    pypi: str
     index: str  # The URL for pyref.dev/<name>.
     crawler_root: str  # The seed and root URL for crawler.
 
     def is_stdlib(self):
-        return self.name == "__python__"
+        return self.package == "__python__"
 
 
 SUPPORTED_PACKAGES: dict[str, Package] = {
     "__python__": Package(
-        name="__python__",
+        package="__python__",
+        pypi="__python__",
         index="https://docs.python.org/3/library",
         crawler_root="https://docs.python.org/3/",
     ),
     "numpy": Package(
-        name="numpy",
+        package="numpy",
+        pypi="numpy",
         index="https://numpy.org/doc/stable/reference/index.html",
         crawler_root="https://numpy.org/doc/stable/reference/",
     ),
     "pandas": Package(
-        name="pandas",
+        package="pandas",
+        pypi="pandas",
         index="https://pandas.pydata.org/docs/reference/index.html",
         crawler_root="https://pandas.pydata.org/docs/reference/",
     ),
     "urllib3": Package(
-        name="urllib3",
+        package="urllib3",
+        pypi="urllib3",
         index="https://urllib3.readthedocs.io/en/stable/reference/index.html",
         crawler_root="https://urllib3.readthedocs.io/en/stable/reference/",
     ),
     "requests": Package(
-        name="requests",
+        package="requests",
+        pypi="requests",
         index="https://requests.readthedocs.io/en/latest/",
         crawler_root="https://requests.readthedocs.io/en/latest/",
+    ),
+    "dateutil": Package(
+        package="dateutil",
+        pypi="python-dateutil",
+        index="https://dateutil.readthedocs.io/en/stable/",
+        crawler_root="https://dateutil.readthedocs.io/en/stable/",
     ),
     # ENTRY-LINE-MARKER
 }
