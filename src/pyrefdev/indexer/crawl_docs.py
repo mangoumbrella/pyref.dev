@@ -150,33 +150,14 @@ class _Crawler:
             soup = bs4.BeautifulSoup(content, "html.parser")
         except bs4.ParserRejectedMarkup:
             return set()
-        parsed_current_url = parse.urlparse(current_url)
         links = set()
         for link in soup.find_all("a"):
             if (href := link.get("href")) is None:
                 continue
+            absolute_href = parse.urljoin(current_url, href)
             # href could be full URL, absolute path, and relative path.
-            parsed_href = parse.urlparse(href)
+            parsed_href = parse.urlparse(absolute_href)
             # Remove the fragment.
             parsed_href = parsed_href._replace(fragment="")
-            if parsed_href.netloc:
-                pass
-            elif parsed_href.path.startswith("/"):
-                # Absolute path
-                parsed_href = parsed_href._replace(
-                    scheme=parsed_current_url.scheme, netloc=parsed_current_url.netloc
-                )
-            else:
-                # Relative path
-                new_path = os.path.normpath(
-                    os.path.join(
-                        os.path.dirname(parsed_current_url.path), parsed_href.path
-                    )
-                )
-                parsed_href = parsed_href._replace(
-                    scheme=parsed_current_url.scheme,
-                    netloc=parsed_current_url.netloc,
-                    path=new_path,
-                )
             links.add(parse.urlunparse(parsed_href))
         return links

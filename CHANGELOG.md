@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-Nothing noticeable unreleased.
+- Fix a bug in the crawler where relative paths aren't joined correctly.
 
 ## v2025.3
 
