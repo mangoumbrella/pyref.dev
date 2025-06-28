@@ -1,7 +1,6 @@
 # fmt: off
 
 MAPPING = {
-    # Special
     "__abs__": "https://docs.python.org/3/reference/datamodel.html#object.__abs__",
     "__add__": "https://docs.python.org/3/reference/datamodel.html#object.__add__",
     "__aenter__": "https://docs.python.org/3/reference/datamodel.html#object.__aenter__",
@@ -39,6 +38,7 @@ MAPPING = {
     "__floor__": "https://docs.python.org/3/reference/datamodel.html#object.__floor__",
     "__floordiv__": "https://docs.python.org/3/reference/datamodel.html#object.__floordiv__",
     "__format__": "https://docs.python.org/3/reference/datamodel.html#object.__format__",
+    "__future__": "https://docs.python.org/3/library/__future__.html",
     "__future__.absolute_import": "https://docs.python.org/3/library/__future__.html",
     "__future__.annotations": "https://docs.python.org/3/library/__future__.html",
     "__future__.division": "https://docs.python.org/3/library/__future__.html",
@@ -83,6 +83,7 @@ MAPPING = {
     "__length_hint__": "https://docs.python.org/3/reference/datamodel.html#object.__length_hint__",
     "__lshift__": "https://docs.python.org/3/reference/datamodel.html#object.__lshift__",
     "__lt__": "https://docs.python.org/3/reference/datamodel.html#object.__lt__",
+    "__main__": "https://docs.python.org/3/library/__main__.html",
     "__match_args__": "https://docs.python.org/3/reference/datamodel.html#object.__match_args__",
     "__matmul__": "https://docs.python.org/3/reference/datamodel.html#object.__matmul__",
     "__missing__": "https://docs.python.org/3/reference/datamodel.html#object.__missing__",
@@ -137,12 +138,6 @@ MAPPING = {
     "__trunc__": "https://docs.python.org/3/reference/datamodel.html#object.__trunc__",
     "__type_params__": "https://docs.python.org/3/reference/datamodel.html#type.__type_params__",
     "__xor__": "https://docs.python.org/3/reference/datamodel.html#object.__xor__",
-}
-
-# BEGIN __python__
-MAPPING.update({
-    "__future__": "https://docs.python.org/3/library/__future__.html",
-    "__main__": "https://docs.python.org/3/library/__main__.html",
     "_thread": "https://docs.python.org/3/library/_thread.html",
     "abc": "https://docs.python.org/3/library/abc.html",
     "abc.abc": "https://docs.python.org/3/library/abc.html#abc.ABC",
@@ -9509,5 +9504,4 @@ MAPPING.update({
     "zoneinfo.zoneinfo.key": "https://docs.python.org/3/library/zoneinfo.html#zoneinfo.ZoneInfo.key",
     "zoneinfo.zoneinfo.no_cache": "https://docs.python.org/3/library/zoneinfo.html#zoneinfo.ZoneInfo.no_cache",
     "zoneinfo.zoneinfonotfounderror": "https://docs.python.org/3/library/zoneinfo.html#zoneinfo.ZoneInfoNotFoundError",
-})
-# END __python__
+}
