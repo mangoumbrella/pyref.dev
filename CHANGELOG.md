@@ -2,10 +2,15 @@
 
 ## [Unreleased]
 
+Nothing noticeable unreleased.
+
+## v2025.4
+
 - Fix a bug in the crawler where relative paths aren't joined correctly.
 - Support [pandas](https://pandas.pydata.org/docs/reference/index.html)
 - Support [urllib3](https://urllib3.readthedocs.io/en/stable/reference/index.html)
 - Support [requests](https://requests.readthedocs.io/en/latest/)
+- Support [python-dateutil](https://dateutil.readthedocs.io/en/stable/)
 
 ## v2025.3
 
