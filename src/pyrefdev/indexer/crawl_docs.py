@@ -15,9 +15,9 @@ from pyrefdev.indexer.schema import CrawlState
 
 
 def crawl_docs(
-    output_directory: Path | None = None,
     *,
     package: str | None = None,
+    docs_directory: Path | None = None,
     num_parallel_packages: int = 2,
     num_threads_per_package: int = 2,
 ) -> None:
@@ -31,14 +31,14 @@ def crawl_docs(
             f"--num-threads-per-package must be > 0, found {num_threads_per_package}"
         )
 
-    if output_directory:
-        if output_directory.exists():
-            if not output_directory.is_dir():
-                console.fatal(f"{output_directory} is not a directory")
+    if docs_directory:
+        if docs_directory.exists():
+            if not docs_directory.is_dir():
+                console.fatal(f"{docs_directory} is not a directory")
     else:
-        output_directory = Path(tempfile.mkdtemp(prefix="pyref.dev."))
+        docs_directory = Path(tempfile.mkdtemp(prefix="pyref.dev."))
 
-    console.print(f"Crawling documents into {output_directory}")
+    console.print(f"Crawling documents into {docs_directory}")
     packages = get_packages(package)
     with Progress(console=console) as progress:
         if len(packages) > 1:
@@ -53,9 +53,9 @@ def crawl_docs(
                 package_version = fetch_package_version(pkg)
                 if package_version is None:
                     return
-                subdir = output_directory / pkg.package
+                subdir = docs_directory / pkg.package
                 subdir.mkdir(parents=True, exist_ok=True)
-                crawl_state_file = output_directory / f"{pkg.package}.json"
+                crawl_state_file = docs_directory / f"{pkg.package}.json"
                 if crawl_state_file.exists():
                     crawl_state = CrawlState.loads(crawl_state_file.read_text())
                     crawled_version = version.parse(crawl_state.package_version)
@@ -72,7 +72,7 @@ def crawl_docs(
                     crawl_state = None
                 crawler = _Crawler(
                     progress,
-                    output_directory / pkg.package,
+                    docs_directory / pkg.package,
                     pkg.index_url,
                     crawl_state,
                 )
@@ -91,12 +91,12 @@ class _Crawler:
     def __init__(
         self,
         progress: Progress,
-        output_directory: Path,
+        docs_directory: Path,
         root_url: str,
         crawl_state: CrawlState | None,
     ):
         self._progress = progress
-        self._output_directory = output_directory
+        self._docs_directory = docs_directory
         self._root_url = root_url
         self._prefix = (
             root_url
@@ -144,14 +144,14 @@ class _Crawler:
                 else:
                     saved, _, _ = result
                     self._crawl_state.file_to_urls[
-                        str(saved.relative_to(self._output_directory))
+                        str(saved.relative_to(self._docs_directory))
                     ] = url
             self._crawl_state.failed_urls = failed_urls
 
     def save_crawl_state(self, package_version: version.Version, output: Path) -> None:
         if (state := self._crawl_state) is None:
             file_to_urls = {
-                str(file.relative_to(self._output_directory)): url
+                str(file.relative_to(self._docs_directory)): url
                 for url, file in self._crawled_url_to_files.items()
             }
             state = CrawlState(
@@ -211,7 +211,7 @@ class _Crawler:
 
     def _save(self, url: str, content: str) -> Path:
         relative_path = url.removeprefix(self._prefix).removeprefix("/")
-        output = self._output_directory / relative_path
+        output = self._docs_directory / relative_path
         if not relative_path.endswith(".html"):
             output = output / "index.html"
         output.parent.mkdir(parents=True, exist_ok=True)

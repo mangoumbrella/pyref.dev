@@ -14,9 +14,9 @@ _MARKER = re.compile("(\n.*ENTRY-LINE-MARKER.*\n)")
 def add_docs(
     *,
     package: str,
+    docs_directory: Path | None = None,
     index_url: str,
     pypi: str | None = None,
-    docs_directory: Path | None = None,
 ) -> None:
     if package in config.SUPPORTED_PACKAGES:
         console.fatal(f"Package exists: {package}")
