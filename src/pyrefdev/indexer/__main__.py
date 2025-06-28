@@ -3,7 +3,7 @@ import cyclopts
 import pyrefdev
 from pyrefdev.indexer.crawl_docs import crawl_docs
 from pyrefdev.indexer.parse_docs import parse_docs
-from pyrefdev.indexer.config import console
+from pyrefdev.config import console
 
 
 app = cyclopts.App(

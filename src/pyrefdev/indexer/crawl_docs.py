@@ -9,7 +9,7 @@ from urllib import parse, request
 import bs4
 from rich.progress import Progress, TaskID
 
-from .config import console, SUPPORTED_DOCS
+from ..config import console, SUPPORTED_DOCS
 
 
 def crawl_docs(output_directory: Path | None = None, num_threads: int = 2) -> None:

@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.responses import RedirectResponse, FileResponse, PlainTextResponse
 
-from .mapping import MAPPING
+from pyrefdev.mapping import MAPPING
 
 
 app = FastAPI()

@@ -60,3 +60,8 @@ version-file = "src/pyrefdev/_version.py"
 template = '''
 version = "{version}"
 '''
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+]

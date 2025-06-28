@@ -11,8 +11,8 @@ from rich.progress import Progress
 
 import bs4
 
-from pyrefdev import mapping
-from pyrefdev.indexer.config import console
+from pyrefdev.mapping import __python__
+from pyrefdev.config import console
 
 
 _STDLIB_MODULES_NAMES = frozenset({*sys.stdlib_module_names, "test"})
@@ -47,9 +47,9 @@ def parse_docs(docs_directory: Path, in_place: bool = False) -> None:
     console.print(f"Found {len(symbol_to_urls)} symbols.")
     lines = _create_symbols_map(symbol_to_urls)
     if in_place:
-        Path(mapping.__file__).write_text("\n".join(itertools.chain(lines, [""])))
+        Path(__python__.__file__).write_text("\n".join(itertools.chain(lines, [""])))
     else:
-        before = Path(mapping.__file__).read_text().splitlines(keepends=True)
+        before = Path(__python__.__file__).read_text().splitlines(keepends=True)
         diffs = difflib.unified_diff(
             before, [line + "\n" for line in lines], fromfile="before", tofile="after"
         )
