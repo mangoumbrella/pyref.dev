@@ -104,7 +104,7 @@ def _is_stdlib(symbol: str) -> bool:
     if not re.match(r"^([a-zA-Z_][a-zA-Z_0-9]*)(\.[a-zA-Z_][a-zA-Z_0-9]*)*$", symbol):
         return False
     prefix = symbol.split(".")[0]
-    if prefix in sys.stdlib_module_names:
+    if prefix in _STDLIB_MODULES_NAMES:
         return True
     if prefix in dir(builtins):
         return True
