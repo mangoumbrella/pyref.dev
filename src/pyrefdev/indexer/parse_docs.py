@@ -3,7 +3,6 @@ from collections import defaultdict
 import difflib
 import importlib
 import itertools
-import json
 from pathlib import Path
 import re
 import sys
@@ -13,6 +12,7 @@ from rich.progress import Progress
 import bs4
 
 from pyrefdev.config import console, get_packages, Package
+from pyrefdev.indexer.schema import CrawlState
 
 
 _STDLIB_MODULES_NAMES = frozenset({*sys.stdlib_module_names, "test"})
@@ -27,7 +27,9 @@ def parse_docs(
     packages = get_packages(package)
     with Progress(console=console) as progress:
         if len(packages) > 1:
-            task = progress.add_task(f"Parsing {len(packages)} packages")
+            task = progress.add_task(
+                f"Parsing {len(packages)} packages", total=len(packages)
+            )
         else:
             task = None
         for package in packages:
@@ -41,19 +43,18 @@ def parse_docs(
 def _parse_package(
     progress: Progress, package: Package, package_docs: Path, *, in_place: bool
 ) -> None:
-    metadata_file = package_docs.parent / f"{package.package}.json"
-    file_and_urls: list[tuple[str, str]] = list(
-        json.loads(metadata_file.read_text()).items()
-    )
-    if package.is_stdlib():
+    crawl_state_file = package_docs.parent / f"{package.package}.json"
+    crawl_state = CrawlState.loads(crawl_state_file.read_text())
+    file_and_urls: list[tuple[str, str]] = list(crawl_state.file_to_urls.items())
+    if package.is_cpython():
         symbol_to_urls: dict[str, str] = _SPECIAL_SYMBOLS.copy()
     else:
-        symbol_to_urls: dict[str, str] = {package.package: package.index}
+        symbol_to_urls: dict[str, str] = {package.package: package.index_url}
     parser = _Parser(package)
     task = progress.add_task(f"Parsing {package_docs}", total=len(file_and_urls))
     while file_and_urls:
         file, url = file_and_urls.pop()
-        if package.is_stdlib:
+        if package.is_cpython:
             maybe_module = url.removeprefix(
                 "https://docs.python.org/3/library/"
             ).removesuffix(".html")
@@ -135,7 +136,7 @@ class _Parser:
         ):
             return False
         prefix = symbol.split(".")[0]
-        if self._package.is_stdlib():
+        if self._package.is_cpython():
             if prefix in _STDLIB_MODULES_NAMES:
                 return True
             if prefix in dir(builtins):

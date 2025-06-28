@@ -1,5 +1,4 @@
-import json
-import os
+from concurrent import futures
 from pathlib import Path
 import queue
 import tempfile
@@ -7,18 +6,31 @@ import threading
 from urllib import parse, request
 
 import bs4
+from packaging import version
 from rich.progress import Progress, TaskID
 
-from pyrefdev.config import console, get_packages
+from pyrefdev.config import console, get_packages, Package
+from pyrefdev.indexer.pypi import fetch_package_version
+from pyrefdev.indexer.schema import CrawlState
 
 
 def crawl_docs(
     output_directory: Path | None = None,
     *,
     package: str | None = None,
-    num_threads: int = 2,
+    num_parallel_packages: int = 2,
+    num_threads_per_package: int = 2,
 ) -> None:
     """Crawl the docs into a local directory."""
+    if num_parallel_packages <= 0:
+        raise ValueError(
+            f"--num-parallel-packages must be > 0, found {num_parallel_packages}"
+        )
+    if num_threads_per_package <= 0:
+        raise ValueError(
+            f"--num-threads-per-package must be > 0, found {num_threads_per_package}"
+        )
+
     if output_directory:
         if output_directory.exists():
             if not output_directory.is_dir():
@@ -35,22 +47,54 @@ def crawl_docs(
             )
         else:
             task = None
-        for package in packages:
+
+        def crawl_package(package: Package):
             try:
+                package_version = fetch_package_version(package)
+                if package_version is None:
+                    return
                 subdir = output_directory / package.package
                 subdir.mkdir(parents=True, exist_ok=True)
+                crawl_state_file = output_directory / f"{package.package}.json"
+                if crawl_state_file.exists():
+                    crawl_state = CrawlState.loads(crawl_state_file.read_text())
+                    crawled_version = version.parse(crawl_state.package_version)
+                    if package_version > crawled_version:
+                        console.print(
+                            f"{package} upgraded from {crawl_state.package_version} to {package_version!s}"
+                        )
+                        crawl_state = None
+                    elif package_version < crawled_version:
+                        console.print(
+                            f"[yellow]WARNING:[/yellow] {package}'s latest version {package_version!s} is older than previously crawled {crawl_state.package_version}"
+                        )
+                else:
+                    crawl_state = None
                 crawler = _Crawler(
-                    progress, output_directory / package.package, package.index_url
+                    progress,
+                    output_directory / package.package,
+                    package.index_url,
+                    crawl_state,
                 )
-                crawler.crawl(num_threads=num_threads)
-                crawler.save_url_map(output_directory / f"{package.package}.json")
+                crawler.crawl(num_threads=num_threads_per_package)
+                crawler.save_crawl_state(package_version, crawl_state_file)
             finally:
                 if task is not None:
                     progress.advance(task)
 
+        with futures.ThreadPoolExecutor(max_workers=num_parallel_packages) as executor:
+            for package in packages:
+                executor.submit(crawl_package, package)
+
 
 class _Crawler:
-    def __init__(self, progress: Progress, output_directory: Path, root_url: str):
+    def __init__(
+        self,
+        progress: Progress,
+        output_directory: Path,
+        root_url: str,
+        crawl_state: CrawlState | None,
+    ):
         self._progress = progress
         self._output_directory = output_directory
         self._root_url = root_url
@@ -65,29 +109,57 @@ class _Crawler:
         self._crawled_url_to_files: dict[str, Path] = {}
         self._lock = threading.RLock()
 
+        self._crawl_state = crawl_state
+        if crawl_state is None:
+            self._failed_urls: list[str] = []
+        else:
+            self._failed_urls = crawl_state.failed_urls
+
     def crawl(self, *, num_threads: int) -> None:
-        if num_threads <= 0:
-            raise ValueError(f"num_threads must be > 0, found {num_threads=}")
-        self._to_crawl_queue.put(self._root_url)
-        self._seen_urls.add(self._root_url)
+        if self._crawl_state is None:
+            self._to_crawl_queue.put(self._root_url)
+            self._seen_urls.add(self._root_url)
 
-        task = self._progress.add_task(f"Crawling {self._root_url}")
-        threads = []
-        for _ in range(num_threads):
-            thread = threading.Thread(
-                target=self._crawl_thread, args=(task,), daemon=True
+            task = self._progress.add_task(f"Crawling {self._root_url}")
+            threads = []
+            for _ in range(num_threads):
+                thread = threading.Thread(
+                    target=self._crawl_thread, args=(task,), daemon=True
+                )
+                thread.start()
+                threads.append(thread)
+            self._to_crawl_queue.join()
+            self._progress.update(task, visible=False)
+
+        else:
+            if not self._failed_urls:
+                return
+            task = self._progress.add_task(
+                f"Retrying previously {len(self._failed_urls)} failed URLs"
             )
-            thread.start()
-            threads.append(thread)
-        self._to_crawl_queue.join()
-        self._progress.update(task, visible=False)
+            failed_urls = []
+            for url in self._failed_urls:
+                if (result := self._fetch_and_save_url(url)) is None:
+                    failed_urls.append(url)
+                else:
+                    saved, _, _ = result
+                    self._crawl_state.file_to_urls[
+                        str(saved.relative_to(self._output_directory))
+                    ] = url
+            self._crawl_state.failed_urls = failed_urls
 
-    def save_url_map(self, output: Path) -> None:
-        metadata = {
-            str(file.relative_to(self._output_directory)): url
-            for url, file in self._crawled_url_to_files.items()
-        }
-        output.write_text(json.dumps(metadata))
+    def save_crawl_state(self, package_version: version.Version, output: Path) -> None:
+        if (state := self._crawl_state) is None:
+            file_to_urls = {
+                str(file.relative_to(self._output_directory)): url
+                for url, file in self._crawled_url_to_files.items()
+            }
+            state = CrawlState(
+                package_version=str(package_version),
+                file_to_urls=file_to_urls,
+                failed_urls=self._failed_urls,
+            )
+        output.write_text(state.dumps())
 
     def _crawl_thread(self, task: TaskID) -> None:
         while True:
@@ -105,19 +177,26 @@ class _Crawler:
                 )
                 self._to_crawl_queue.task_done()
 
-    def _crawl_url(self, url: str) -> Path | None:
+    def _fetch_and_save_url(self, url: str) -> tuple[Path, str, str] | None:
         try:
-            with request.urlopen(url) as f:
+            with request.urlopen(url, timeout=60) as f:
                 content = f.read().decode("utf-8", "backslashreplace")
         except request.URLError as e:
             console.print(
-                "[yellow]WARNING:[/yellow] Failed to fetch url %s, error: %s", url, e
+                f"[yellow]WARNING:[/yellow] Failed to fetch url {url}, error: {e}"
             )
+            self._failed_urls.append(url)
             return None
         maybe_redirected_url = f.url
         if maybe_redirected_url != url and not self._should_crawl(maybe_redirected_url):
             return None
         saved = self._save(maybe_redirected_url, content)
+        return saved, maybe_redirected_url, content
+
+    def _crawl_url(self, url: str) -> Path | None:
+        if (result := self._fetch_and_save_url(url)) is None:
+            return None
+        saved, maybe_redirected_url, content = result
         self._seen_urls.add(maybe_redirected_url)
         new_links = self._parse_links(maybe_redirected_url, content)
         with self._lock:

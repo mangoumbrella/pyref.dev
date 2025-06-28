@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-Nothing noticeable unreleased.
+- Added `add-docs`, `update-docs` commands to `pyrefdev-indexer`.
 
 ## v2025.4
 

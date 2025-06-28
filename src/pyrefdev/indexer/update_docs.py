@@ -6,11 +6,9 @@ from pyrefdev.indexer.parse_docs import parse_docs
 
 
 def update_docs(
-    package: str,
-    *,
-    docs_directory: Path | None = None,
+    *, docs_directory: Path | None = None, package: str | None = None
 ) -> None:
     if docs_directory is None:
-        docs_directory = Path(tempfile.mkdtemp(prefix=f"{package}."))
+        docs_directory = Path(tempfile.mkdtemp(prefix="pyref.dev."))
     crawl_docs(docs_directory, package=package)
     parse_docs(docs_directory, package=package, in_place=True)

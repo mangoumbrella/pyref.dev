@@ -17,7 +17,7 @@ class Package:
         if not self.pypi:
             self.pypi = self.package
 
-    def is_stdlib(self):
+    def is_cpython(self):
         return self.package == "__python__"
 
 
