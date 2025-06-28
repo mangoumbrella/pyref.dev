@@ -3,7 +3,7 @@ from pathlib import Path
 import queue
 import tempfile
 import threading
-from urllib import parse, request
+from urllib import error, parse, request
 
 import bs4
 from packaging import version
@@ -48,32 +48,32 @@ def crawl_docs(
         else:
             task = None
 
-        def crawl_package(package: Package):
+        def crawl_package(pkg: Package):
             try:
-                package_version = fetch_package_version(package)
+                package_version = fetch_package_version(pkg)
                 if package_version is None:
                     return
-                subdir = output_directory / package.package
+                subdir = output_directory / pkg.package
                 subdir.mkdir(parents=True, exist_ok=True)
-                crawl_state_file = output_directory / f"{package.package}.json"
+                crawl_state_file = output_directory / f"{pkg.package}.json"
                 if crawl_state_file.exists():
                     crawl_state = CrawlState.loads(crawl_state_file.read_text())
                     crawled_version = version.parse(crawl_state.package_version)
                     if package_version > crawled_version:
                         console.print(
-                            f"{package} upgraded from {crawl_state.package_version} to {package_version!s}"
+                            f"{pkg} upgraded from {crawl_state.package_version} to {package_version!s}"
                         )
                         crawl_state = None
                     elif package_version < crawled_version:
                         console.print(
-                            f"[yellow]WARNING:[/yellow] {package}'s latest version {package_version!s} is older than previously crawled {crawl_state.package_version}"
+                            f"[yellow]WARNING:[/yellow] {pkg}'s latest version {package_version!s} is older than previously crawled {crawl_state.package_version}"
                         )
                 else:
                     crawl_state = None
                 crawler = _Crawler(
                     progress,
-                    output_directory / package.package,
-                    package.index_url,
+                    output_directory / pkg.package,
+                    pkg.index_url,
                     crawl_state,
                 )
                 crawler.crawl(num_threads=num_threads_per_package)
@@ -83,8 +83,8 @@ def crawl_docs(
                     progress.advance(task)
 
         with futures.ThreadPoolExecutor(max_workers=num_parallel_packages) as executor:
-            for package in packages:
-                executor.submit(crawl_package, package)
+            for pkg in packages:
+                executor.submit(crawl_package, pkg)
 
 
 class _Crawler:
@@ -181,7 +181,7 @@ class _Crawler:
         try:
             with request.urlopen(url, timeout=60) as f:
                 content = f.read().decode("utf-8", "backslashreplace")
-        except request.URLError as e:
+        except error.URLError as e:
             console.print(
                 f"[yellow]WARNING:[/yellow] Failed to fetch url {url}, error: {e}"
             )

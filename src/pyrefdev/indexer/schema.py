@@ -1,6 +1,5 @@
 import dataclasses
 import json
-from typing import Self
 
 
 @dataclasses.dataclass
@@ -10,7 +9,7 @@ class CrawlState:
     failed_urls: list[str]
 
     @classmethod
-    def loads(cls, content: str) -> Self:
+    def loads(cls, content: str) -> "CrawlState":
         return cls(**json.loads(content))
 
     def dumps(self) -> str:

@@ -32,9 +32,9 @@ def parse_docs(
             )
         else:
             task = None
-        for package in packages:
+        for pkg in packages:
             _parse_package(
-                progress, package, docs_directory / package.package, in_place=in_place
+                progress, pkg, docs_directory / pkg.package, in_place=in_place
             )
             if task is not None:
                 progress.advance(task)

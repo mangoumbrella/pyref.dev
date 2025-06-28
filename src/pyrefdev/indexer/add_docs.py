@@ -44,4 +44,4 @@ def add_docs(
     index_file.write_text(index_content)
 
     importlib.reload(config)
-    update_docs(package, docs_directory=docs_directory)
+    update_docs(docs_directory=docs_directory, package=package)

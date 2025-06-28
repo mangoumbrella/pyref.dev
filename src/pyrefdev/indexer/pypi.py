@@ -1,5 +1,5 @@
 import json
-from urllib import request
+from urllib import request, error
 
 from packaging import version
 
@@ -14,14 +14,14 @@ def fetch_package_version(package: Package) -> version.Version | None:
             content = f.read().decode("utf-8")
         pypi_info = json.loads(content)
         return version.parse(pypi_info["info"]["version"])
-    except request.URLError as e:
+    except error.URLError as e:
         console.print(
             f"[yellow]WARNING:[/yellow] Failed to fetch pypi version for {package.pypi}, error: {e}"
         )
         return None
 
 
-def _fetch_latest_cpython_version() -> version.Version:
+def _fetch_latest_cpython_version() -> version.Version | None:
     try:
         with request.urlopen("https://endoflife.date/api/python.json") as f:
             content = f.read().decode("utf-8")
@@ -31,7 +31,7 @@ def _fetch_latest_cpython_version() -> version.Version:
             if (latest := version.parse(cycle["latest"])) > latest_version:
                 latest_version = latest
         return latest_version
-    except request.URLError as e:
+    except error.URLError as e:
         console.print(
             f"[yellow]WARNING:[/yellow] Failed to fetch latest CPython version, error: {e}"
         )
