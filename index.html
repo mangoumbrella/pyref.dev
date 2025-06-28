@@ -17,18 +17,18 @@
             --gray-600: #6c757d;
             --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
             --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-            --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
-            --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-            --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
             --header-height: 60px;
         }
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
             font-family: var(--font-sans);
             background: var(--light);
@@ -40,22 +40,20 @@
             position: relative;
             padding-top: var(--header-height);
         }
-        
+
         .header {
             position: fixed;
             top: 0;
             left: 0;
             right: 0;
             height: var(--header-height);
-            /* background-color: white; */
-            /* box-shadow: var(--shadow-sm); */
             z-index: 100;
             display: flex;
             justify-content: flex-end;
             align-items: center;
             padding: 0 1.5rem;
         }
-        
+
         .container {
             width: 90%;
             max-width: 800px;
@@ -63,13 +61,13 @@
             padding: 2rem 1.5rem;
             margin: 0 auto;
         }
-        
+
         .logo {
             margin-bottom: 2rem;
             position: relative;
             display: inline-block;
         }
-        
+
         .logo::before {
             content: '';
             position: absolute;
@@ -82,30 +80,30 @@
             z-index: -1;
             opacity: 0.6;
         }
-        
+
         h1 {
             font-size: 3.5rem;
             font-weight: 800;
             margin-bottom: 1rem;
             letter-spacing: -0.05em;
         }
-        
+
         h1 .py-blue {
             color: var(--python-blue);
         }
-        
+
         h1 .py-yellow {
             color: var(--python-yellow);
             position: relative;
         }
-        
+
         .tagline {
             font-size: 1.4rem;
             margin-bottom: 2.5rem;
             color: var(--gray-600);
             font-weight: 500;
         }
-        
+
         p {
             font-size: 1.2rem;
             margin-bottom: 2rem;
@@ -114,7 +112,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-        
+
         .url-pattern {
             display: inline-block;
             padding: 1rem 1.5rem;
@@ -128,14 +126,14 @@
             box-shadow: var(--shadow-sm);
             word-break: break-all;
         }
-        
-        .examples-title {
+
+        .section-title {
             font-weight: 600;
             color: var(--dark);
             margin-bottom: 1rem;
             font-size: 1.3rem;
         }
-        
+
         .examples-list {
             list-style: none;
             background-color: white;
@@ -146,7 +144,7 @@
             text-align: left;
             width: 100%;
         }
-        
+
         .examples-list li {
             margin-bottom: 1rem;
             padding-bottom: 1rem;
@@ -154,7 +152,7 @@
             position: relative;
             padding-left: 1.5rem;
         }
-        
+
         .examples-list li::before {
             content: '→';
             position: absolute;
@@ -162,13 +160,13 @@
             color: var(--python-green);
             font-weight: bold;
         }
-        
+
         .examples-list li:last-child {
             margin-bottom: 0;
             padding-bottom: 0;
             border-bottom: none;
         }
-        
+
         .examples-list a {
             color: var(--python-blue);
             text-decoration: none;
@@ -178,12 +176,47 @@
             word-break: break-all;
             display: inline-block;
         }
-        
+
         .examples-list a:hover {
             text-decoration: underline;
             color: var(--python-green);
         }
-        
+
+        .supported-packages {
+            list-style: none;
+            background-color: white;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin-bottom: 2.5rem;
+            box-shadow: var(--shadow-md);
+            text-align: left;
+            width: 100%;
+        }
+
+        .supported-packages li {
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--gray-200);
+        }
+
+        .supported-packages li:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .package-name {
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: color 0.2s ease;
+            color: var(--python-blue);
+        }
+
+        .package-name:hover {
+            text-decoration: underline;
+        }
+
         .github-link {
             display: inline-flex;
             align-items: center;
@@ -198,73 +231,82 @@
             border: 1px solid var(--python-blue);
             box-shadow: var(--shadow-sm);
         }
-        
+
         .github-link:hover {
             background: white;
             color: var(--python-blue);
             transform: translateY(-1px);
             box-shadow: var(--shadow-md);
         }
-        
+
         .github-link svg {
             margin-right: 0.5rem;
         }
-        
+
         .footer {
             margin-top: 3rem;
             color: var(--gray-600);
             font-size: 0.9rem;
         }
-        
+
         @media (max-width: 600px) {
             h1 {
                 font-size: 2.8rem;
             }
-            
+
             .tagline {
                 font-size: 1.2rem;
             }
-            
+
             p {
                 font-size: 1.1rem;
             }
-            
+
             .url-pattern {
                 font-size: 0.9rem;
                 padding: 0.8rem 1rem;
             }
-            
+
             .logo::before {
                 width: 50px;
                 height: 50px;
                 top: -12px;
                 left: -20px;
             }
-            
+
             .examples-list {
                 padding: 1.2rem 1rem;
             }
-            
+
             .examples-list a {
                 font-size: 0.85rem;
             }
-            
+
             .examples-list li {
                 padding-left: 1.2rem;
                 margin-bottom: 0.8rem;
                 padding-bottom: 0.8rem;
             }
-            
+
+            .supported-packages {
+                padding: 1.2rem 1rem;
+            }
+
+            .supported-packages li {
+                margin-bottom: 0.8rem;
+                padding-bottom: 0.8rem;
+            }
+
             .github-link {
                 padding: 0.5rem 0.8rem;
                 font-size: 0.8rem;
             }
-            
+
             .github-link svg {
                 width: 18px;
                 height: 18px;
             }
-            
+
             .header {
                 padding: 0 1rem;
             }
@@ -285,13 +327,21 @@
             <h1><span class="py-blue">pyref</span>.<span class="py-yellow">dev</span></h1>
         </div>
         <p class="tagline">A fast, convenient way to access Python reference docs.</p>
-        <p>Quickly jump to the official documentation for any Python standard library module, class, or function by using a simple URL pattern:</p>
+        <p>Quickly jump to the official documentation for Python standard library modules and popular packages by using a simple URL pattern:</p>
         <div class="url-pattern">https://pyref.dev/&lt;fully.qualified.symbol.name&gt;</div>
-        <p class="examples-title">Examples</p>
+
+        <p class="section-title">Examples</p>
         <ul class="examples-list">
             <li><a href="https://pyref.dev/json">https://pyref.dev/json</a></li>
             <li><a href="https://pyref.dev/pathlib.Path">https://pyref.dev/pathlib.Path</a></li>
             <li><a href="https://pyref.dev/datetime.datetime.strftime">https://pyref.dev/datetime.datetime.strftime</a></li>
+            <li><a href="https://pyref.dev/numpy.array">https://pyref.dev/numpy.array</a></li>
+        </ul>
+
+        <p class="section-title">Supported Packages</p>
+        <ul class="supported-packages">
+            <li><a href="https://docs.python.org/3/library/" class="package-name python">Python Standard Library</a></li>
+            <li><a href="https://numpy.org/doc/stable/reference/index.html" class="package-name numpy">NumPy</a></li>
         </ul>
     </div>
 </body>
