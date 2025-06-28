@@ -9,9 +9,13 @@ console = yconsole.Console(stderr=True)
 @dataclasses.dataclass
 class Package:
     package: str
-    pypi: str
-    index: str  # The URL for pyref.dev/<name>.
-    crawler_root: str  # The seed and root URL for crawler.
+    # The crawler will crawl URLs with the same prefix until the last slash.
+    index_url: str
+    pypi: str = ""
+
+    def __post_init__(self):
+        if not self.pypi:
+            self.pypi = self.package
 
     def is_stdlib(self):
         return self.package == "__python__"
@@ -20,39 +24,28 @@ class Package:
 SUPPORTED_PACKAGES: dict[str, Package] = {
     "__python__": Package(
         package="__python__",
-        pypi="__python__",
-        index="https://docs.python.org/3/library",
-        crawler_root="https://docs.python.org/3/",
+        index_url="https://docs.python.org/3/library",
     ),
     "numpy": Package(
         package="numpy",
-        pypi="numpy",
-        index="https://numpy.org/doc/stable/reference/index.html",
-        crawler_root="https://numpy.org/doc/stable/reference/",
+        index_url="https://numpy.org/doc/stable/reference/index.html",
     ),
     "pandas": Package(
         package="pandas",
-        pypi="pandas",
-        index="https://pandas.pydata.org/docs/reference/index.html",
-        crawler_root="https://pandas.pydata.org/docs/reference/",
+        index_url="https://pandas.pydata.org/docs/reference/index.html",
     ),
     "urllib3": Package(
         package="urllib3",
-        pypi="urllib3",
-        index="https://urllib3.readthedocs.io/en/stable/reference/index.html",
-        crawler_root="https://urllib3.readthedocs.io/en/stable/reference/",
+        index_url="https://urllib3.readthedocs.io/en/stable/reference/index.html",
     ),
     "requests": Package(
         package="requests",
-        pypi="requests",
-        index="https://requests.readthedocs.io/en/latest/",
-        crawler_root="https://requests.readthedocs.io/en/latest/",
+        index_url="https://requests.readthedocs.io/en/latest/",
     ),
     "dateutil": Package(
         package="dateutil",
+        index_url="https://dateutil.readthedocs.io/en/stable/",
         pypi="python-dateutil",
-        index="https://dateutil.readthedocs.io/en/stable/",
-        crawler_root="https://dateutil.readthedocs.io/en/stable/",
     ),
     # ENTRY-LINE-MARKER
 }

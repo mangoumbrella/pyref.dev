@@ -40,7 +40,7 @@ def crawl_docs(
                 subdir = output_directory / package.package
                 subdir.mkdir(parents=True, exist_ok=True)
                 crawler = _Crawler(
-                    progress, output_directory / package.package, package.crawler_root
+                    progress, output_directory / package.package, package.index_url
                 )
                 crawler.crawl(num_threads=num_threads)
                 crawler.save_url_map(output_directory / f"{package.package}.json")
@@ -54,6 +54,11 @@ class _Crawler:
         self._progress = progress
         self._output_directory = output_directory
         self._root_url = root_url
+        self._prefix = (
+            root_url
+            if root_url.endswith("/")
+            else root_url.rsplit("/", maxsplit=1)[0] + "/"
+        )
 
         self._seen_urls: set[str] = set()
         self._to_crawl_queue: queue.Queue[str] = queue.Queue()
@@ -126,7 +131,7 @@ class _Crawler:
         return saved
 
     def _save(self, url: str, content: str) -> Path:
-        relative_path = url.removeprefix(self._root_url).removeprefix("/")
+        relative_path = url.removeprefix(self._prefix).removeprefix("/")
         output = self._output_directory / relative_path
         if not relative_path.endswith(".html"):
             output = output / "index.html"
@@ -140,7 +145,7 @@ class _Crawler:
         return output
 
     def _should_crawl(self, url: str) -> bool:
-        if not url.startswith(self._root_url):
+        if not url.startswith(self._prefix):
             return False
         ext = url.rsplit("/", maxsplit=1)[-1].rsplit(".", maxsplit=1)[-1]
         return (not ext) or (ext == "html")

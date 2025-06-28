@@ -14,8 +14,7 @@ _MARKER = re.compile("(\n.*ENTRY-LINE-MARKER.*\n)")
 def add_docs(
     package: str,
     *,
-    index: str,
-    crawler_root: str,
+    index_url: str,
     pypi: str | None = None,
     docs_directory: Path | None = None,
 ) -> None:
@@ -27,8 +26,7 @@ def add_docs(
     "{package}": Package(
         package="{package}",
         pypi="{pypi}",
-        index="{index}",
-        crawler_root="{crawler_root}",
+        index_url="{index_url}",
     ),"""
     config_file = Path(config.__file__)
     config_content = config_file.read_text()
@@ -39,7 +37,7 @@ def add_docs(
     mapping_file.write_text("MAPPING = {}")
 
     index_entry = f"""
-            <li><a href="{index}" class="package-name">{pypi}</a></li>"""
+            <li><a href="{index_url}" class="package-name">{pypi}</a></li>"""
     index_file = Path(config.__file__).parent.parent.parent / "index.html"
     index_content = index_file.read_text()
     index_content = _MARKER.sub(index_entry + r"\g<1>", index_content)
