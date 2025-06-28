@@ -8,7 +8,7 @@
 <a href="https://github.com/mangoumbrella/pyref.dev/blob/main/LICENSE"><img alt="License" src="https://img.shields.io/pypi/l/pyrefdev.svg"></a>
 </p>
 
-It allows you to quickly jump to the official documentation for any Python standard library module, class, or function by using a simple URL pattern:
+It allows you to quickly jump to the official documentation for Python standard library modules and popular packages by using a simple URL pattern:
 
 ```
 https://pyref.dev/<fully.qualified.symbol.name>
@@ -21,8 +21,16 @@ Alternatively, you could also `pip install pyrefdev` and run the `pyrefdev` CLI 
 * https://pyref.dev/json
 * https://pyref.dev/pathlib.Path
 * https://pyref.dev/datetime.datetime.strftime
+* https://pyref.dev/numpy.array
 
-For now, the symbols are case-insensitive.
+## Supported packages
+
+* [Python Standard Library](https://docs.python.org/3/library/)
+* [NumPy](https://numpy.org/doc/stable/reference/index.html)
+
+# Case sensitivity
+
+For most of the cases, they are case-insensitive. However, for symbols like `typing.final` and `typing.Final`, you need to access them with the correct case.
 
 ## Server Setup
 
