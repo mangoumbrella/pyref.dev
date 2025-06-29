@@ -183,38 +183,76 @@
         }
 
         .supported-packages {
-            list-style: none;
             background-color: white;
             border-radius: 10px;
             padding: 1.5rem;
-            margin-bottom: 2.5rem;
+            margin: 0 auto 2.5rem auto;
             box-shadow: var(--shadow-md);
-            text-align: left;
-            width: 100%;
+            width: 90%;
+            max-width: 1200px;
         }
 
-        .supported-packages li {
-            margin-bottom: 1rem;
-            padding-bottom: 1rem;
-            border-bottom: 1px solid var(--gray-200);
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+            list-style: none;
         }
 
-        .supported-packages li:last-child {
-            margin-bottom: 0;
-            padding-bottom: 0;
-            border-bottom: none;
+        @media (min-width: 1000px) {
+            .packages-grid {
+                grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+                gap: 1rem;
+            }
         }
 
-        .supported-packages a {
-            font-weight: 600;
-            font-size: 1rem;
+        .packages-grid li {
+            background-color: var(--gray-100);
+            border-radius: 6px;
+            transition: all 0.2s ease;
+            border: 1px solid transparent;
+        }
+
+        .packages-grid li:hover {
+            background-color: var(--gray-200);
+            border-color: var(--python-blue);
+            transform: translateY(-1px);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .packages-grid a {
+            display: block;
+            padding: 0.75rem 1rem;
             text-decoration: none;
-            transition: color 0.2s ease;
             color: var(--python-blue);
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: color 0.2s ease;
+            border-radius: 6px;
         }
 
-        .supported-packages a:hover {
-            text-decoration: underline;
+        .packages-grid a:hover {
+            color: var(--python-green);
+        }
+
+        .stdlib-package {
+            background-color: var(--python-yellow) !important;
+            opacity: 0.9;
+        }
+
+        .stdlib-package:hover {
+            background-color: var(--python-yellow) !important;
+            opacity: 1;
+            border-color: var(--python-blue);
+        }
+
+        .stdlib-package a {
+            color: var(--dark);
+            font-weight: 600;
+        }
+
+        .stdlib-package a:hover {
+            color: var(--python-blue);
         }
 
         .github-link {
@@ -292,9 +330,14 @@
                 padding: 1.2rem 1rem;
             }
 
-            .supported-packages li {
-                margin-bottom: 0.8rem;
-                padding-bottom: 0.8rem;
+            .packages-grid {
+                grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+                gap: 0.5rem;
+            }
+
+            .packages-grid a {
+                padding: 0.6rem 0.8rem;
+                font-size: 0.85rem;
             }
 
             .github-link {
@@ -309,6 +352,12 @@
 
             .header {
                 padding: 0 1rem;
+            }
+        }
+
+        @media (max-width: 400px) {
+            .packages-grid {
+                grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             }
         }
     </style>
@@ -339,8 +388,11 @@
         </ul>
 
         <p id="supported-packages" class="section-title">Supported Packages</p>
-        <ul class="supported-packages">
-            <li><a href="https://docs.python.org/3/library/">Python Standard Library</a></li>
+    </div>
+    
+    <div class="supported-packages">
+        <ul class="packages-grid">
+            <li class="stdlib-package"><a href="https://docs.python.org/3/library/">Standard Library</a></li>
             <!-- BEGIN PYPI PACKAGES -->
             <li><a href="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html">boto3</a></li>
             <li><a href="https://botocore.amazonaws.com/v1/documentation/api/latest/index.html">botocore</a></li>
@@ -358,6 +410,12 @@
             <li><a href="https://urllib3.readthedocs.io/en/stable/reference/index.html">urllib3</a></li>
             <!-- END PYPI PACKAGES -->
         </ul>
+    </div>
+    
+    <div class="container">
+        <div class="footer">
+            <!-- Footer content can go here if needed -->
+        </div>
     </div>
 </body>
 </html>
