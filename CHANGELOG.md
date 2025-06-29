@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-Nothing noticeable unreleased.
+- Support [cyclopts](https://cyclopts.readthedocs.io/en/latest/).
 
 ## v2025.5
 
