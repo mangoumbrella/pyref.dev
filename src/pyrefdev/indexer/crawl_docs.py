@@ -19,13 +19,15 @@ def crawl_docs(
     package: str | None = None,
     docs_directory: Path | None = None,
     num_parallel_packages: int = 2,
-    num_threads_per_package: int = 2,
+    num_threads_per_package: int | None = None,
 ) -> None:
     """Crawl the docs into a local directory."""
     if num_parallel_packages <= 0:
         raise ValueError(
             f"--num-parallel-packages must be > 0, found {num_parallel_packages}"
         )
+    if num_threads_per_package is None:
+        num_threads_per_package = 2
     if num_threads_per_package <= 0:
         raise ValueError(
             f"--num-threads-per-package must be > 0, found {num_threads_per_package}"
@@ -67,6 +69,7 @@ def crawl_docs(
                 else:
                     crawl_state = None
                 crawler = _Crawler(
+                    pkg,
                     progress,
                     docs_directory / pkg.package,
                     pkg.index_url,
@@ -85,11 +88,13 @@ def crawl_docs(
 class _Crawler:
     def __init__(
         self,
+        package: Package,
         progress: Progress,
         docs_directory: Path,
         root_url: str,
         crawl_state: CrawlState | None,
     ):
+        self._package = package
         self._progress = progress
         self._docs_directory = docs_directory
         self._root_url = root_url
@@ -233,6 +238,9 @@ class _Crawler:
     def _should_crawl(self, url: str) -> bool:
         if not url.startswith(self._prefix):
             return False
+        for exclude in self._package.exclude_root_urls:
+            if url.startswith(exclude):
+                return False
         ext = url.rsplit("/", maxsplit=1)[-1].rsplit(".", maxsplit=1)[-1]
         return (not ext) or (ext == "html")
 

@@ -1,21 +1,65 @@
 import builtins
 from collections import defaultdict
+from concurrent import futures
 import difflib
 import importlib
 import itertools
+import multiprocessing
 from pathlib import Path
 import re
 import sys
-
-from rich.progress import Progress
+import threading
+from urllib import parse
 
 import bs4
+from rich.progress import Progress
 
 from pyrefdev.config import console, get_packages, Package
 from pyrefdev.indexer.schema import CrawlState
 
 
 _STDLIB_MODULES_NAMES = frozenset({*sys.stdlib_module_names, "test"})
+_MODULE_FRAGMENT_PREFIX = "module-"
+
+
+class ProgressExecutor(futures.ThreadPoolExecutor):
+    def __init__(
+        self,
+        description: str,
+        *,
+        progress: Progress,
+        total: int,
+        transient: bool = False,
+        max_workers=None,
+        thread_name_prefix="",
+        initializer=None,
+        initargs=(),
+    ) -> None:
+        super().__init__(
+            max_workers=max_workers,
+            thread_name_prefix=thread_name_prefix,
+            initializer=initializer,
+            initargs=initargs,
+        )
+        self.progress = progress
+        self._transient = transient
+        self._task = self.progress.add_task(description=description, total=total)
+        self._exit_stack = None
+
+    def submit(self, fn, /, *args, **kwargs):
+        def fn_wrapper(*fn_args, **fn_kwargs):
+            try:
+                return fn(*fn_args, **fn_kwargs)
+            finally:
+                self.progress.advance(self._task)
+
+        return super().submit(fn_wrapper, *args, **kwargs)
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        result = super().__exit__(exc_type, exc_val, exc_tb)
+        if self._transient:
+            self.progress.update(self._task, visible=False)
+        return result
 
 
 def parse_docs(
@@ -23,24 +67,40 @@ def parse_docs(
     package: str | None = None,
     docs_directory: Path,
     in_place: bool = False,
+    num_parallel_packages: int = multiprocessing.cpu_count(),
+    num_threads_per_package: int = multiprocessing.cpu_count(),
 ) -> None:
     if sys.version_info[:2] != (3, 13):
         console.fatal("pyrefdev-indexer parse_docs must be run on Python 3.13.")
 
     packages = get_packages(package)
-    with Progress(console=console) as progress:
-        task = progress.add_task(
-            f"Parsing {len(packages)} packages", total=len(packages)
-        )
+    with (
+        Progress(console=console) as progress,
+        ProgressExecutor(
+            f"Parsing {len(packages)} packages",
+            progress=progress,
+            total=len(packages),
+            max_workers=num_parallel_packages,
+        ) as executor,
+    ):
         for pkg in packages:
-            _parse_package(
-                progress, pkg, docs_directory / pkg.package, in_place=in_place
+            executor.submit(
+                _parse_package,
+                executor.progress,
+                pkg,
+                docs_directory / pkg.package,
+                in_place=in_place,
+                num_threads_per_package=num_threads_per_package,
             )
-            progress.advance(task)
 
 
 def _parse_package(
-    progress: Progress, package: Package, package_docs: Path, *, in_place: bool
+    progress: Progress,
+    package: Package,
+    package_docs: Path,
+    *,
+    in_place: bool,
+    num_threads_per_package: int,
 ) -> None:
     crawl_state_file = package_docs.parent / f"{package.package}.json"
     crawl_state = CrawlState.loads(crawl_state_file.read_text())
@@ -50,9 +110,9 @@ def _parse_package(
     else:
         symbol_to_urls: dict[str, str] = {package.package: package.index_url}
     parser = _Parser(package)
-    task = progress.add_task(f"Parsing {package_docs}", total=len(file_and_urls))
-    while file_and_urls:
-        file, url = file_and_urls.pop()
+    lock = threading.RLock()
+
+    def parse(file, url):
         if package.is_cpython:
             maybe_module = url.removeprefix(
                 "https://docs.python.org/3/library/"
@@ -61,13 +121,33 @@ def _parse_package(
             if maybe_module_prefix in _STDLIB_MODULES_NAMES:
                 symbol_to_urls[maybe_module] = url
         symbols = parser.parse_symbols((package_docs / file).read_text())
-        for symbol in symbols:
-            if symbol not in symbol_to_urls:
-                symbol_to_urls[symbol] = f"{url}#{symbol}"
-        progress.update(task, advance=1)
-    progress.update(task, visible=False)
+        module_count = sum(
+            1 if fragment.startswith(_MODULE_FRAGMENT_PREFIX) else 0
+            for fragment in symbols.values()
+        )
+        for symbol, fragment in symbols.items():
+            with lock:
+                if symbol not in symbol_to_urls:
+                    if (
+                        fragment.startswith(_MODULE_FRAGMENT_PREFIX)
+                        and module_count == 1
+                    ):
+                        # This page contains a single module, let's redirect to this page without the anchor.
+                        symbol_to_urls[symbol] = f"{url}"
+                    else:
+                        symbol_to_urls[symbol] = f"{url}#{fragment}"
 
-    console.print(f"Found {len(symbol_to_urls)} symbols.")
+    with ProgressExecutor(
+        f"Parsing {len(file_and_urls)} files for {package_docs}",
+        progress=progress,
+        total=len(file_and_urls),
+        transient=True,
+        max_workers=num_threads_per_package,
+    ) as executor:
+        for file, url in file_and_urls:
+            executor.submit(parse, file, url)
+
+    console.print(f"Found {len(symbol_to_urls)} symbols in {package.package}")
     lines = _create_symbols_map(symbol_to_urls)
     mapping_module = importlib.import_module(f"pyrefdev.mapping.{package.package}")
     if in_place:
@@ -81,6 +161,12 @@ def _parse_package(
         )
         if diffs:
             console.print("".join(diffs))
+
+
+def _remove_fragment(url: str) -> str:
+    parsed = parse.urlparse(url)
+    parsed = parsed._replace(fragment="")
+    return parse.urlunparse(parsed)
 
 
 def _create_symbols_map(symbol_to_urls: dict[str, str]) -> list[str]:
@@ -117,16 +203,17 @@ class _Parser:
     def __init__(self, package: Package) -> None:
         self._package = package
 
-    def parse_symbols(self, content: str) -> set[str]:
+    def parse_symbols(self, content: str) -> dict[str, str]:
         try:
             soup = bs4.BeautifulSoup(content, "html.parser")
         except bs4.ParserRejectedMarkup:
-            return set()
-        symbols = set()
+            return {}
+        symbols = {}
         for element in soup.find_all(id=True):
-            maybe_symbol = element["id"]
-            if self._is_symbol(maybe_symbol):
-                symbols.add(maybe_symbol)
+            fragment = element["id"]
+            symbol = fragment.removeprefix(_MODULE_FRAGMENT_PREFIX)
+            if self._is_symbol(symbol):
+                symbols[symbol] = fragment
         return symbols
 
     def _is_symbol(self, symbol: str) -> bool:

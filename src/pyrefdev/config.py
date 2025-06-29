@@ -12,6 +12,7 @@ class Package:
     # The crawler will crawl URLs with the same prefix until the last slash.
     index_url: str
     pypi: str = ""
+    exclude_root_urls: list[str] = dataclasses.field(default_factory=list)
 
     def __post_init__(self):
         if not self.pypi:
@@ -25,6 +26,9 @@ SUPPORTED_PACKAGES: dict[str, Package] = {
     "__python__": Package(
         package="__python__",
         index_url="https://docs.python.org/3/library",
+        exclude_root_urls=[
+            "https://docs.python.org/3/copyright.html",  # Conflict with built-in copyright.
+        ],
     ),
     "numpy": Package(
         package="numpy",
@@ -44,47 +48,47 @@ SUPPORTED_PACKAGES: dict[str, Package] = {
     ),
     "dateutil": Package(
         package="dateutil",
-        index_url="https://dateutil.readthedocs.io/en/stable/",
         pypi="python-dateutil",
+        index_url="https://dateutil.readthedocs.io/en/stable/",
     ),
     "boto3": Package(
         package="boto3",
-        pypi="boto3",
         index_url="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html",
-    ),
-    "setuptools": Package(
-        package="setuptools",
-        pypi="setuptools",
-        index_url="https://setuptools.pypa.io/en/latest/",
+        exclude_root_urls=[
+            # TODO: Support boto services.
+            "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/",
+        ],
     ),
     "botocore": Package(
         package="botocore",
-        pypi="botocore",
         index_url="https://botocore.amazonaws.com/v1/documentation/api/latest/index.html",
+        exclude_root_urls=[
+            # TODO: Support boto services.
+            "https://botocore.amazonaws.com/v1/documentation/api/latest/reference/services/",
+        ],
+    ),
+    "setuptools": Package(
+        package="setuptools",
+        index_url="https://setuptools.pypa.io/en/latest/",
     ),
     "charset_normalizer": Package(
         package="charset_normalizer",
-        pypi="charset_normalizer",
         index_url="https://charset-normalizer.readthedocs.io/en/latest/",
     ),
     "typing_extensions": Package(
         package="typing_extensions",
-        pypi="typing_extensions",
         index_url="https://typing-extensions.readthedocs.io/en/latest/",
     ),
     "packaging": Package(
         package="packaging",
-        pypi="packaging",
         index_url="https://packaging.pypa.io/en/stable/",
     ),
     "s3fs": Package(
         package="s3fs",
-        pypi="s3fs",
         index_url="https://s3fs.readthedocs.io/en/latest/",
     ),
     "six": Package(
         package="six",
-        pypi="six",
         index_url="https://six.readthedocs.io/",
     ),
     # ENTRY-LINE-MARKER

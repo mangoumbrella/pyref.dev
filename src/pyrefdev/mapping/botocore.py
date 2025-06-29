@@ -11,6 +11,7 @@ MAPPING = {
     "botocore.config.config.merge": "https://botocore.amazonaws.com/v1/documentation/api/latest/reference/config.html#botocore.config.Config.merge",
     "botocore.eventstream.eventstream": "https://botocore.amazonaws.com/v1/documentation/api/latest/reference/eventstream.html#botocore.eventstream.EventStream",
     "botocore.eventstream.eventstream.close": "https://botocore.amazonaws.com/v1/documentation/api/latest/reference/eventstream.html#botocore.eventstream.EventStream.close",
+    "botocore.loaders": "https://botocore.amazonaws.com/v1/documentation/api/latest/reference/loaders.html",
     "botocore.loaders.create_loader": "https://botocore.amazonaws.com/v1/documentation/api/latest/reference/loaders.html#botocore.loaders.create_loader",
     "botocore.loaders.extrasprocessor": "https://botocore.amazonaws.com/v1/documentation/api/latest/reference/loaders.html#botocore.loaders.ExtrasProcessor",
     "botocore.loaders.extrasprocessor.process": "https://botocore.amazonaws.com/v1/documentation/api/latest/reference/loaders.html#botocore.loaders.ExtrasProcessor.process",

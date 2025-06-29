@@ -1,3 +1,4 @@
+import multiprocessing
 from pathlib import Path
 import tempfile
 
@@ -9,8 +10,8 @@ def update_docs(
     *,
     package: str | None = None,
     docs_directory: Path | None = None,
-    num_parallel_packages: int = 2,
-    num_threads_per_package: int = 2,
+    num_parallel_packages: int = multiprocessing.cpu_count(),
+    num_threads_per_package: int | None = None,
 ) -> None:
     if docs_directory is None:
         docs_directory = Path(tempfile.mkdtemp(prefix="pyref.dev."))
@@ -20,4 +21,9 @@ def update_docs(
         num_parallel_packages=num_parallel_packages,
         num_threads_per_package=num_threads_per_package,
     )
-    parse_docs(package=package, docs_directory=docs_directory, in_place=True)
+    parse_docs(
+        package=package,
+        docs_directory=docs_directory,
+        in_place=True,
+        num_parallel_packages=num_parallel_packages,
+    )
