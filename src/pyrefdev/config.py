@@ -15,7 +15,7 @@ class Package:
 
     def __post_init__(self):
         if not self.pypi:
-            self.pypi = self.package
+            self.pypi = self.package.replace("_", "-")
 
     def is_cpython(self):
         return self.package == "__python__"
@@ -46,6 +46,46 @@ SUPPORTED_PACKAGES: dict[str, Package] = {
         package="dateutil",
         index_url="https://dateutil.readthedocs.io/en/stable/",
         pypi="python-dateutil",
+    ),
+    "boto3": Package(
+        package="boto3",
+        pypi="boto3",
+        index_url="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html",
+    ),
+    "setuptools": Package(
+        package="setuptools",
+        pypi="setuptools",
+        index_url="https://setuptools.pypa.io/en/latest/",
+    ),
+    "botocore": Package(
+        package="botocore",
+        pypi="botocore",
+        index_url="https://botocore.amazonaws.com/v1/documentation/api/latest/index.html",
+    ),
+    "charset_normalizer": Package(
+        package="charset_normalizer",
+        pypi="charset_normalizer",
+        index_url="https://charset-normalizer.readthedocs.io/en/latest/",
+    ),
+    "typing_extensions": Package(
+        package="typing_extensions",
+        pypi="typing_extensions",
+        index_url="https://typing-extensions.readthedocs.io/en/latest/",
+    ),
+    "packaging": Package(
+        package="packaging",
+        pypi="packaging",
+        index_url="https://packaging.pypa.io/en/stable/",
+    ),
+    "s3fs": Package(
+        package="s3fs",
+        pypi="s3fs",
+        index_url="https://s3fs.readthedocs.io/en/latest/",
+    ),
+    "six": Package(
+        package="six",
+        pypi="six",
+        index_url="https://six.readthedocs.io/",
     ),
     # ENTRY-LINE-MARKER
 }

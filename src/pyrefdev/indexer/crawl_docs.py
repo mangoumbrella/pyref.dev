@@ -41,13 +41,9 @@ def crawl_docs(
     console.print(f"Crawling documents into {docs_directory}")
     packages = get_packages(package)
     with Progress(console=console) as progress:
-        if len(packages) > 1:
-            task = progress.add_task(
-                f"Crawling {len(packages)} packages", total=len(packages)
-            )
-        else:
-            task = None
-
+        task = progress.add_task(
+            f"Crawling {len(packages)} packages", total=len(packages)
+        )
         def crawl_package(pkg: Package):
             try:
                 package_version = fetch_package_version(pkg)
@@ -79,8 +75,7 @@ def crawl_docs(
                 crawler.crawl(num_threads=num_threads_per_package)
                 crawler.save_crawl_state(package_version, crawl_state_file)
             finally:
-                if task is not None:
-                    progress.advance(task)
+                progress.advance(task)
 
         with futures.ThreadPoolExecutor(max_workers=num_parallel_packages) as executor:
             for pkg in packages:
@@ -135,11 +130,23 @@ class _Crawler:
             if not self._failed_urls:
                 return
             task = self._progress.add_task(
-                f"Retrying previously {len(self._failed_urls)} failed URLs"
+                f"Retrying previously {len(self._failed_urls)} failed URLs",
+                total=len(self._failed_urls),
             )
+
+            def fetch_and_save(url: str) -> tuple[Path, str, str] | None:
+                result = self._fetch_and_save_url(url)
+                self._progress.advance(task)
+                return result
+
+            with futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
+                url_to_futures = {
+                    url: executor.submit(fetch_and_save, url)
+                    for url in list(self._failed_urls)  # Need to create a copy
+                }
             failed_urls = []
-            for url in self._failed_urls:
-                if (result := self._fetch_and_save_url(url)) is None:
+            for url, f in url_to_futures.items():
+                if (result := f.result()) is None:
                     failed_urls.append(url)
                 else:
                     saved, _, _ = result

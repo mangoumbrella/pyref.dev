@@ -29,18 +29,14 @@ def parse_docs(
 
     packages = get_packages(package)
     with Progress(console=console) as progress:
-        if len(packages) > 1:
-            task = progress.add_task(
-                f"Parsing {len(packages)} packages", total=len(packages)
-            )
-        else:
-            task = None
+        task = progress.add_task(
+            f"Parsing {len(packages)} packages", total=len(packages)
+        )
         for pkg in packages:
             _parse_package(
                 progress, pkg, docs_directory / pkg.package, in_place=in_place
             )
-            if task is not None:
-                progress.advance(task)
+            progress.advance(task)
 
 
 def _parse_package(

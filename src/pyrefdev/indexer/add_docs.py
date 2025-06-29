@@ -17,6 +17,7 @@ def add_docs(
     docs_directory: Path | None = None,
     index_url: str,
     pypi: str | None = None,
+    crawl: bool = True,
 ) -> None:
     if package in config.SUPPORTED_PACKAGES:
         console.fatal(f"Package exists: {package}")
@@ -43,5 +44,6 @@ def add_docs(
     index_content = _MARKER.sub(index_entry + r"\g<1>", index_content)
     index_file.write_text(index_content)
 
-    importlib.reload(config)
-    update_docs(docs_directory=docs_directory, package=package)
+    if crawl:
+        importlib.reload(config)
+        update_docs(docs_directory=docs_directory, package=package)
