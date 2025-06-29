@@ -10,6 +10,7 @@ def update_docs(
     *,
     package: str | None = None,
     docs_directory: Path | None = None,
+    force: bool = False,
     num_parallel_packages: int = multiprocessing.cpu_count(),
     num_threads_per_package: int | None = None,
 ) -> None:
@@ -18,6 +19,7 @@ def update_docs(
     crawl_docs(
         package=package,
         docs_directory=docs_directory,
+        force=force,
         num_parallel_packages=num_parallel_packages,
         num_threads_per_package=num_threads_per_package,
     )

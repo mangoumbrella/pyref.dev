@@ -18,6 +18,7 @@ def crawl_docs(
     *,
     package: str | None = None,
     docs_directory: Path | None = None,
+    force: bool = False,
     num_parallel_packages: int = 2,
     num_threads_per_package: int | None = None,
 ) -> None:
@@ -54,7 +55,7 @@ def crawl_docs(
                 subdir = docs_directory / pkg.pypi
                 subdir.mkdir(parents=True, exist_ok=True)
                 crawl_state_file = docs_directory / f"{pkg.pypi}.json"
-                if crawl_state_file.exists():
+                if not force and crawl_state_file.exists():
                     crawl_state = CrawlState.loads(crawl_state_file.read_text())
                     crawled_version = version.parse(crawl_state.package_version)
                     if package_version > crawled_version:
