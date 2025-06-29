@@ -1,5 +1,7 @@
+import random
 import json
 from urllib import request, error
+import time
 
 from packaging import version
 
@@ -10,7 +12,18 @@ def urlopen(url: str) -> str:
     req = request.Request(
         url, method="GET", headers={"User-Agent": "https://pyref.dev"}
     )
-    return request.urlopen(req, timeout=60)
+    backoffs = [1, 2, 5, 15, 30, 60]
+    while True:
+        try:
+            return request.urlopen(req, timeout=60)
+        except error.HTTPError as e:
+            if e.code == 429:  # Too Many Request
+                if not backoffs:
+                    raise
+                backoff = backoffs.pop(0) * (0.9 + random.random() / 5.0)
+                time.sleep(backoff)
+            else:
+                raise
 
 
 def fetch_package_version(package: Package) -> version.Version | None:
