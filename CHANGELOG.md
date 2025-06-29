@@ -4,6 +4,7 @@
 
 - Added `add-docs`, `update-docs`, and `update-landing-page` commands to `pyrefdev-indexer`.
 - Added missing module symbols.
+- Support [attrs]("https://www.attrs.org/en/stable/").
 - Support [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
 - Support [botocore](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html).
 - Support [charset-normalizer](https://charset-normalizer.readthedocs.io/en/latest/).

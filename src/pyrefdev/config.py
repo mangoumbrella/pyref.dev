@@ -31,6 +31,7 @@ _packages = [
             "https://docs.python.org/3/copyright.html",  # Conflict with built-in copyright.
         ],
     ),
+    Package(pypi="attrs", index_url="https://www.attrs.org/en/stable/", namespaces=["attrs", "attr"]),
     Package(pypi="boto3", index_url="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html", exclude_root_urls=["https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/"]),  # TODO: Support boto services
     Package(pypi="botocore", index_url="https://botocore.amazonaws.com/v1/documentation/api/latest/index.html", exclude_root_urls=["https://botocore.amazonaws.com/v1/documentation/api/latest/reference/services/"]),  # TODO: Support boto services
     Package(pypi="charset-normalizer", index_url="https://charset-normalizer.readthedocs.io/en/latest/"),

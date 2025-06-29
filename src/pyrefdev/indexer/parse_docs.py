@@ -172,7 +172,9 @@ def _heuristically_fillin_modules(
 ) -> None:
     extra_module_to_urls: dict[str, str] = {}
     for symbol in symbol_to_urls:
-        namespaces = {ns for ns in package.namespaces if symbol.startswith(ns)}
+        if symbol in package.namespaces:
+            continue
+        namespaces = {ns for ns in package.namespaces if symbol.startswith(ns + ".")}
         assert len(namespaces) == 1, f"{symbol=} unexpectedly matches {namespaces=}"
         namespace = next(iter(namespaces))
 
