@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+Nothing noticeable unreleased.
+
+## v2025.5
+
 - Added `add-docs`, `update-docs`, and `update-landing-page` commands to `pyrefdev-indexer`.
 - Added missing module symbols.
 - Support [aiohttp](https://docs.aiohttp.org/en/stable/).
