@@ -51,9 +51,9 @@ def crawl_docs(
                 package_version = fetch_package_version(pkg)
                 if package_version is None:
                     return
-                subdir = docs_directory / pkg.package
+                subdir = docs_directory / pkg.pypi
                 subdir.mkdir(parents=True, exist_ok=True)
-                crawl_state_file = docs_directory / f"{pkg.package}.json"
+                crawl_state_file = docs_directory / f"{pkg.pypi}.json"
                 if crawl_state_file.exists():
                     crawl_state = CrawlState.loads(crawl_state_file.read_text())
                     crawled_version = version.parse(crawl_state.package_version)
@@ -71,7 +71,7 @@ def crawl_docs(
                 crawler = _Crawler(
                     pkg,
                     progress,
-                    docs_directory / pkg.package,
+                    docs_directory / pkg.pypi,
                     pkg.index_url,
                     crawl_state,
                 )

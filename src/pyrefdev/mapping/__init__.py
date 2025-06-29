@@ -1,12 +1,16 @@
 import importlib
 
-from pyrefdev.config import SUPPORTED_PACKAGES
+from pyrefdev.config import console, SUPPORTED_PACKAGES
 
 
 def load_mapping(verify_duplicates: bool) -> dict[str, str]:
     mapping = {}
     for package in SUPPORTED_PACKAGES:
-        package_module = importlib.import_module(f"pyrefdev.mapping.{package}")
+        try:
+            package_module = importlib.import_module(f"pyrefdev.mapping.{package}")
+        except ImportError:
+            console.print(f"[yellow]WARNING:[/yellow] Missing mapping for {package}")
+            continue
         package_mapping = getattr(package_module, "MAPPING")
         if verify_duplicates:
             duplicates = set(mapping) & set(package_mapping)

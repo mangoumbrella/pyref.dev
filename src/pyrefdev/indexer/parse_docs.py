@@ -9,11 +9,11 @@ from pathlib import Path
 import re
 import sys
 import threading
-from urllib import parse
 
 import bs4
 from rich.progress import Progress
 
+from pyrefdev import mapping
 from pyrefdev.config import console, get_packages, Package
 from pyrefdev.indexer.schema import CrawlState
 
@@ -88,7 +88,7 @@ def parse_docs(
                 _parse_package,
                 executor.progress,
                 pkg,
-                docs_directory / pkg.package,
+                docs_directory / pkg.pypi,
                 in_place=in_place,
                 num_threads_per_package=num_threads_per_package,
             )
@@ -102,13 +102,15 @@ def _parse_package(
     in_place: bool,
     num_threads_per_package: int,
 ) -> None:
-    crawl_state_file = package_docs.parent / f"{package.package}.json"
+    crawl_state_file = package_docs.parent / f"{package.pypi}.json"
     crawl_state = CrawlState.loads(crawl_state_file.read_text())
     file_and_urls: list[tuple[str, str]] = list(crawl_state.file_to_urls.items())
     if package.is_cpython():
         symbol_to_urls: dict[str, str] = _SPECIAL_SYMBOLS.copy()
     else:
-        symbol_to_urls: dict[str, str] = {package.package: package.index_url}
+        symbol_to_urls: dict[str, str] = {
+            ns: package.index_url for ns in package.namespaces
+        }
     parser = _Parser(package)
     lock = threading.RLock()
 
@@ -147,26 +149,21 @@ def _parse_package(
         for file, url in file_and_urls:
             executor.submit(parse, file, url)
 
-    console.print(f"Found {len(symbol_to_urls)} symbols in {package.package}")
+    console.print(f"Found {len(symbol_to_urls)} symbols in {package.pypi}")
     lines = _create_symbols_map(symbol_to_urls)
-    mapping_module = importlib.import_module(f"pyrefdev.mapping.{package.package}")
+    mapping_file = Path(mapping.__file__).parent / f"{package.pypi}.py"
     if in_place:
-        Path(mapping_module.__file__).write_text(
-            "\n".join(itertools.chain(lines, [""]))
-        )
+        mapping_file.write_text("\n".join(itertools.chain(lines, [""])))
     else:
-        before = Path(mapping_module.__file__).read_text().splitlines(keepends=True)
+        if mapping_file.exists():
+            before = mapping_file.read_text().splitlines(keepends=True)
+        else:
+            before = []
         diffs = difflib.unified_diff(
             before, [line + "\n" for line in lines], fromfile="before", tofile="after"
         )
         if diffs:
             console.print("".join(diffs))
-
-
-def _remove_fragment(url: str) -> str:
-    parsed = parse.urlparse(url)
-    parsed = parsed._replace(fragment="")
-    return parse.urlunparse(parsed)
 
 
 def _create_symbols_map(symbol_to_urls: dict[str, str]) -> list[str]:
@@ -180,6 +177,7 @@ def _create_symbols_map(symbol_to_urls: dict[str, str]) -> list[str]:
         "MAPPING = {",
     ]
     previous_symbol = None
+    extra_lowercase_symbols = set()
     for symbol, url in sorted(
         symbol_to_urls.items(), key=lambda t: (t[0].lower(), t[1])
     ):
@@ -191,9 +189,11 @@ def _create_symbols_map(symbol_to_urls: dict[str, str]) -> list[str]:
             and (previous_lower_symbol := previous_symbol.lower())
             and len(lowercase_symbols[previous_lower_symbol]) > 1
             and previous_lower_symbol not in symbol_to_urls
+            and previous_lower_symbol not in extra_lowercase_symbols
         ):
             # Ensure the lower case key is also available.
             lines.append(f'    "{previous_lower_symbol}": "{url}",')
+            extra_lowercase_symbols.add(previous_lower_symbol)
         previous_symbol = symbol
     lines.append("}")
     return lines
@@ -221,15 +221,18 @@ class _Parser:
             r"^([a-zA-Z_][a-zA-Z_0-9]*)(\.[a-zA-Z_][a-zA-Z_0-9]*)*$", symbol
         ):
             return False
-        prefix = symbol.split(".")[0]
         if self._package.is_cpython():
+            prefix = symbol.split(".")[0]
             if prefix in _STDLIB_MODULES_NAMES:
                 return True
             if prefix in dir(builtins):
                 return True
             return False
         else:
-            return prefix == self._package.package
+            for ns in self._package.namespaces:
+                if symbol.startswith(ns + "."):
+                    return True
+            return False
 
 
 _SPECIAL_SYMBOLS = {
