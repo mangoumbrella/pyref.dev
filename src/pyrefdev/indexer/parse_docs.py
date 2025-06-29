@@ -83,7 +83,7 @@ def parse_docs(
             max_workers=num_parallel_packages,
         ) as executor,
     ):
-        for pkg in packages:
+        fs = [
             executor.submit(
                 _parse_package,
                 executor.progress,
@@ -92,6 +92,10 @@ def parse_docs(
                 in_place=in_place,
                 num_threads_per_package=num_threads_per_package,
             )
+            for pkg in packages
+        ]
+        for f in fs:
+            f.result()
 
 
 def _parse_package(
@@ -146,8 +150,9 @@ def _parse_package(
         transient=True,
         max_workers=num_threads_per_package,
     ) as executor:
-        for file, url in file_and_urls:
-            executor.submit(parse, file, url)
+        fs = [executor.submit(parse, file, url) for file, url in file_and_urls]
+        for f in fs:
+            f.result()
 
     console.print(f"Found {len(symbol_to_urls)} symbols in {package.pypi}")
     _heuristically_fillin_modules(package, symbol_to_urls)

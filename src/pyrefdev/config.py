@@ -51,6 +51,7 @@ _packages = [
     Package(pypi="six", index_url="https://six.readthedocs.io/"),
     Package(pypi="typing-extensions", index_url="https://typing-extensions.readthedocs.io/en/latest/"),
     Package(pypi="urllib3", index_url="https://urllib3.readthedocs.io/en/stable/reference/index.html"),
+    Package(pypi="platformdirs", index_url="https://platformdirs.readthedocs.io/en/latest/"),
     # ENTRY-LINE-MARKER
 ]
 # fmt: on

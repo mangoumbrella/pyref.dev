@@ -1,17 +1,23 @@
 from pathlib import Path
 import re
 
-from pyrefdev.config import console, SUPPORTED_PACKAGES
+from pyrefdev.config import console, Package, SUPPORTED_PACKAGES
 
 
 def update_landing_page(file: Path | None = None) -> None:
+    update_landing_page_with_packages(SUPPORTED_PACKAGES, file)
+
+
+def update_landing_page_with_packages(
+    packages: dict[str, Package], file: Path | None = None
+) -> None:
     if file is None:
         file = Path(__file__).parent.parent.parent.parent / "index.html"
         if not file.exists():
             console.fatal(f"{file} does not exist")
 
     packages = sorted(
-        (p for p in SUPPORTED_PACKAGES.values() if not p.is_cpython()),
+        (p for p in packages.values() if not p.is_cpython()),
         key=lambda p: p.pypi,
     )
     indent = "            "

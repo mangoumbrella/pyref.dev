@@ -81,8 +81,9 @@ def crawl_docs(
                 progress.advance(task)
 
         with futures.ThreadPoolExecutor(max_workers=num_parallel_packages) as executor:
-            for pkg in packages:
-                executor.submit(crawl_package, pkg)
+            fs = [executor.submit(crawl_package, pkg) for pkg in packages]
+            for f in fs:
+                f.result()
 
 
 class _Crawler:

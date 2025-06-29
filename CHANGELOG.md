@@ -19,6 +19,7 @@
 - Support [setuptools](https://setuptools.pypa.io/en/latest/).
 - Support [six](https://six.readthedocs.io/).
 - Support [typing-extensions](https://typing-extensions.readthedocs.io/en/latest/).
+- Support [platformdirs](https://platformdirs.readthedocs.io/en/latest/).
 
 ## v2025.4
 
