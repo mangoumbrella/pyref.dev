@@ -1,0 +1,29 @@
+from pathlib import Path
+import re
+
+from pyrefdev.config import console, SUPPORTED_PACKAGES
+
+
+def update_landing_page(file: Path | None = None) -> None:
+    if file is None:
+        file = Path(__file__).parent.parent.parent.parent / "index.html"
+        if not file.exists():
+            console.fatal(f"{file} does not exist")
+
+    packages = sorted(
+        (p for p in SUPPORTED_PACKAGES.values() if not p.is_cpython()),
+        key=lambda p: p.pypi,
+    )
+    indent = "            "
+    lines = [
+        f"{indent}<!-- BEGIN PYPI PACKAGES -->",
+        *[f'{indent}<li><a href="{p.index_url}">{p.pypi}</a></li>' for p in packages],
+        f"{indent}<!-- END PYPI PACKAGES -->",
+    ]
+    new_content = re.sub(
+        rf"{indent}<!-- BEGIN PYPI PACKAGES -->.*<!-- END PYPI PACKAGES -->",
+        "\n".join(lines),
+        file.read_text(),
+        flags=re.DOTALL,
+    )
+    file.write_text(new_content)

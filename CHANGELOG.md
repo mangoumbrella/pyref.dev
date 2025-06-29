@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-- Added `add-docs`, `update-docs` commands to `pyrefdev-indexer`.
+- Added `add-docs`, `update-docs`, and `update-landing-page` commands to `pyrefdev-indexer`.
 - Added missing module symbols.
 - Support [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
 - Support [botocore](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html).
