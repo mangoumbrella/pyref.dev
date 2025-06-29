@@ -54,6 +54,8 @@ MAPPING = {
     "dateutil.tz": "https://dateutil.readthedocs.io/en/stable/tz.html",
     "dateutil.tz.datetime_ambiguous": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.datetime_ambiguous",
     "dateutil.tz.datetime_exists": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.datetime_exists",
+    "dateutil.tz.dateutil": "https://dateutil.readthedocs.io/en/stable/tz.html",
+    "dateutil.tz.dateutil.tz": "https://dateutil.readthedocs.io/en/stable/tz.html",
     "dateutil.tz.dateutil.tz.utc": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.dateutil.tz.UTC",
     "dateutil.tz.enfold": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.enfold",
     "dateutil.tz.gettz": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.gettz",

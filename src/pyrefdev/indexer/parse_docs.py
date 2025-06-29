@@ -8,6 +8,7 @@ from pathlib import Path
 import re
 import sys
 import threading
+from urllib import parse
 
 import bs4
 from rich.progress import Progress
@@ -149,6 +150,7 @@ def _parse_package(
             executor.submit(parse, file, url)
 
     console.print(f"Found {len(symbol_to_urls)} symbols in {package.pypi}")
+    _heuristically_fillin_modules(package, symbol_to_urls)
     lines = _create_symbols_map(symbol_to_urls)
     mapping_file = Path(mapping.__file__).parent / f"{package.pypi}.py"
     if in_place:
@@ -163,6 +165,35 @@ def _parse_package(
         )
         if diffs:
             console.print("".join(diffs))
+
+
+def _heuristically_fillin_modules(
+    package: Package, symbol_to_urls: dict[str, str]
+) -> None:
+    extra_module_to_urls: dict[str, str] = {}
+    for symbol in symbol_to_urls:
+        namespaces = {ns for ns in package.namespaces if symbol.startswith(ns)}
+        assert len(namespaces) == 1, f"{symbol=} unexpectedly matches {namespaces=}"
+        namespace = next(iter(namespaces))
+
+        module = symbol
+        while module != namespace:
+            module = module.rsplit(".", maxsplit=1)[0]
+            assert module
+            if module in symbol_to_urls or module in extra_module_to_urls:
+                break
+            urls = {
+                _remove_fragment(url)
+                for s, url in symbol_to_urls.items()
+                if s.startswith(module + ".")
+            }
+            if len(urls) == 1:
+                extra_module_to_urls[module] = next(iter(urls))
+    symbol_to_urls.update(extra_module_to_urls)
+
+
+def _remove_fragment(url: str) -> str:
+    return parse.urlunparse(parse.urlparse(url)._replace(fragment=""))
 
 
 def _create_symbols_map(symbol_to_urls: dict[str, str]) -> list[str]:

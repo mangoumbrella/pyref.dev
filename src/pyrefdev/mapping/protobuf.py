@@ -1248,6 +1248,7 @@ MAPPING = {
     "google.protobuf.field_mask_pb2.fieldmask.union": "https://googleapis.dev/python/protobuf/latest/google/protobuf/field_mask_pb2.html#google.protobuf.field_mask_pb2.FieldMask.Union",
     "google.protobuf.field_mask_pb2.fieldmask.unknownfields": "https://googleapis.dev/python/protobuf/latest/google/protobuf/field_mask_pb2.html#google.protobuf.field_mask_pb2.FieldMask.UnknownFields",
     "google.protobuf.field_mask_pb2.fieldmask.whichoneof": "https://googleapis.dev/python/protobuf/latest/google/protobuf/field_mask_pb2.html#google.protobuf.field_mask_pb2.FieldMask.WhichOneof",
+    "google.protobuf.internal": "https://googleapis.dev/python/protobuf/latest/google/protobuf/internal/containers.html",
     "google.protobuf.internal.containers": "https://googleapis.dev/python/protobuf/latest/google/protobuf/internal/containers.html",
     "google.protobuf.internal.containers.basecontainer": "https://googleapis.dev/python/protobuf/latest/google/protobuf/internal/containers.html#google.protobuf.internal.containers.BaseContainer",
     "google.protobuf.internal.containers.basecontainer.count": "https://googleapis.dev/python/protobuf/latest/google/protobuf/internal/containers.html#google.protobuf.internal.containers.BaseContainer.count",

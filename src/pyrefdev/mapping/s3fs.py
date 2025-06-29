@@ -2,6 +2,7 @@
 
 MAPPING = {
     "s3fs": "https://s3fs.readthedocs.io/en/latest/",
+    "s3fs.core": "https://s3fs.readthedocs.io/en/latest/api.html",
     "s3fs.core.s3file": "https://s3fs.readthedocs.io/en/latest/api.html#s3fs.core.S3File",
     "s3fs.core.s3file.close": "https://s3fs.readthedocs.io/en/latest/api.html#s3fs.core.S3File.close",
     "s3fs.core.s3file.commit": "https://s3fs.readthedocs.io/en/latest/api.html#s3fs.core.S3File.commit",
@@ -112,7 +113,9 @@ MAPPING = {
     "s3fs.core.s3filesystem.walk": "https://s3fs.readthedocs.io/en/latest/api.html#s3fs.core.S3FileSystem.walk",
     "s3fs.core.s3filesystem.write_bytes": "https://s3fs.readthedocs.io/en/latest/api.html#s3fs.core.S3FileSystem.write_bytes",
     "s3fs.core.s3filesystem.write_text": "https://s3fs.readthedocs.io/en/latest/api.html#s3fs.core.S3FileSystem.write_text",
+    "s3fs.mapping": "https://s3fs.readthedocs.io/en/latest/api.html",
     "s3fs.mapping.s3map": "https://s3fs.readthedocs.io/en/latest/api.html#s3fs.mapping.S3Map",
+    "s3fs.utils": "https://s3fs.readthedocs.io/en/latest/api.html",
     "s3fs.utils.paramkwargshelper": "https://s3fs.readthedocs.io/en/latest/api.html#s3fs.utils.ParamKwargsHelper",
     "s3fs.utils.sseparams": "https://s3fs.readthedocs.io/en/latest/api.html#s3fs.utils.SSEParams",
 }

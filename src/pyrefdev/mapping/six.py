@@ -41,6 +41,7 @@ MAPPING = {
     "six.movedattribute": "https://six.readthedocs.io/index.html#six.MovedAttribute",
     "six.movedmodule": "https://six.readthedocs.io/index.html#six.MovedModule",
     "six.moves": "https://six.readthedocs.io/index.html#module-six.moves",
+    "six.moves.urllib": "https://six.readthedocs.io/index.html",
     "six.moves.urllib.error": "https://six.readthedocs.io/index.html#module-six.moves.urllib.error",
     "six.moves.urllib.parse": "https://six.readthedocs.io/index.html#module-six.moves.urllib.parse",
     "six.moves.urllib.request": "https://six.readthedocs.io/index.html#module-six.moves.urllib.request",

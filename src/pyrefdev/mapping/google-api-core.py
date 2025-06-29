@@ -101,6 +101,7 @@ MAPPING = {
     "google.api_core.future.polling.pollingfuture.running": "https://googleapis.dev/python/google-api-core/latest/futures.html#google.api_core.future.polling.PollingFuture.running",
     "google.api_core.future.polling.pollingfuture.set_exception": "https://googleapis.dev/python/google-api-core/latest/futures.html#google.api_core.future.polling.PollingFuture.set_exception",
     "google.api_core.future.polling.pollingfuture.set_result": "https://googleapis.dev/python/google-api-core/latest/futures.html#google.api_core.future.polling.PollingFuture.set_result",
+    "google.api_core.gapic_v1": "https://googleapis.dev/python/google-api-core/latest/client_info.html",
     "google.api_core.gapic_v1.client_info": "https://googleapis.dev/python/google-api-core/latest/client_info.html#module-google.api_core.gapic_v1.client_info",
     "google.api_core.gapic_v1.client_info.clientinfo": "https://googleapis.dev/python/google-api-core/latest/client_info.html#google.api_core.gapic_v1.client_info.ClientInfo",
     "google.api_core.gapic_v1.client_info.clientinfo.to_grpc_metadata": "https://googleapis.dev/python/google-api-core/latest/client_info.html#google.api_core.gapic_v1.client_info.ClientInfo.to_grpc_metadata",
