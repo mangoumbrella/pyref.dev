@@ -7,6 +7,7 @@
 - Support [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
 - Support [botocore](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html).
 - Support [charset-normalizer](https://charset-normalizer.readthedocs.io/en/latest/).
+- Support [cryptography](https://cryptography.io/en/latest/).
 - Support [google-api-core](https://googleapis.dev/python/google-api-core/latest/").
 - Support [packaging](https://packaging.pypa.io/en/stable/).
 - Support [protobuf](https://googleapis.dev/python/protobuf/latest/).

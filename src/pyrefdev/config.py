@@ -34,6 +34,7 @@ _packages = [
     Package(pypi="boto3", index_url="https://boto3.amazonaws.com/v1/documentation/api/latest/index.html", exclude_root_urls=["https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/"]),  # TODO: Support boto services
     Package(pypi="botocore", index_url="https://botocore.amazonaws.com/v1/documentation/api/latest/index.html", exclude_root_urls=["https://botocore.amazonaws.com/v1/documentation/api/latest/reference/services/"]),  # TODO: Support boto services
     Package(pypi="charset-normalizer", index_url="https://charset-normalizer.readthedocs.io/en/latest/"),
+    Package(pypi="cryptography", index_url="https://cryptography.io/en/latest/"),
     Package(pypi="google-api-core", namespaces=["google.api_core"], index_url="https://googleapis.dev/python/google-api-core/latest/"),
     Package(pypi="numpy", index_url="https://numpy.org/doc/stable/reference/index.html"),
     Package(pypi="packaging", index_url="https://packaging.pypa.io/en/stable/"),
