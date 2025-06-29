@@ -2,7 +2,6 @@ import builtins
 from collections import defaultdict
 from concurrent import futures
 import difflib
-import importlib
 import itertools
 import multiprocessing
 from pathlib import Path
