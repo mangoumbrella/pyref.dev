@@ -14,7 +14,7 @@ Nothing noticeable unreleased.
 - Support [anyio](https://anyio.readthedocs.io/en/stable/).
 - Support [apache-beam](https://beam.apache.org/releases/pydoc/current/).
 - Support [arrow](https://arrow.readthedocs.io/en/latest/).
-- Support [attrs]("https://www.attrs.org/en/stable/).
+- Support [attrs](https://www.attrs.org/en/stable/).
 - Support [azure-identity](https://azuresdkdocs.z19.web.core.windows.net/python/azure-identity/latest/index.html).
 - Support [boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
 - Support [botocore](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html).
