@@ -3,14 +3,14 @@ from pathlib import Path
 import queue
 import tempfile
 import threading
-from urllib import error, parse, request
+from urllib import error, parse
 
 import bs4
 from packaging import version
 from rich.progress import Progress, TaskID
 
 from pyrefdev.config import console, get_packages, Package
-from pyrefdev.indexer.pypi import fetch_package_version
+from pyrefdev.indexer.requests import fetch_package_version, urlopen
 from pyrefdev.indexer.schema import CrawlState
 
 
@@ -191,7 +191,7 @@ class _Crawler:
 
     def _fetch_and_save_url(self, url: str) -> tuple[Path, str, str] | None:
         try:
-            with request.urlopen(url, timeout=60) as f:
+            with urlopen(url) as f:
                 content = f.read().decode("utf-8", "backslashreplace")
         except error.URLError as e:
             console.print(

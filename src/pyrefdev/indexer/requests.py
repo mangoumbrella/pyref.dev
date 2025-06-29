@@ -6,11 +6,18 @@ from packaging import version
 from pyrefdev.config import console, Package
 
 
+def urlopen(url: str) -> str:
+    req = request.Request(
+        url, method="GET", headers={"User-Agent": "https://pyref.dev"}
+    )
+    return request.urlopen(req, timeout=60)
+
+
 def fetch_package_version(package: Package) -> version.Version | None:
     if package.is_cpython():
         return _fetch_latest_cpython_version()
     try:
-        with request.urlopen(f"https://pypi.org/pypi/{package.pypi}/json") as f:
+        with urlopen(f"https://pypi.org/pypi/{package.pypi}/json") as f:
             content = f.read().decode("utf-8")
         pypi_info = json.loads(content)
         return version.parse(pypi_info["info"]["version"])
@@ -23,7 +30,7 @@ def fetch_package_version(package: Package) -> version.Version | None:
 
 def _fetch_latest_cpython_version() -> version.Version | None:
     try:
-        with request.urlopen("https://endoflife.date/api/python.json") as f:
+        with urlopen("https://endoflife.date/api/python.json") as f:
             content = f.read().decode("utf-8")
         latest_version = version.parse("3.13.5")  # Known version as of 2025-06-28
         cycles = json.loads(content)
