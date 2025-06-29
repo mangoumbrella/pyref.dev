@@ -2,6 +2,7 @@ from pathlib import Path
 import re
 
 from pyrefdev.config import console, Package, SUPPORTED_PACKAGES
+from pyrefdev.mapping import MAPPING
 
 
 def update_landing_page(file: Path | None = None) -> None:
@@ -32,4 +33,18 @@ def update_landing_page_with_packages(
         file.read_text(),
         flags=re.DOTALL,
     )
+
+    num_packages = len(SUPPORTED_PACKAGES)
+    new_content = re.sub(
+        r'(class="stat-number">)([0-9]+(?:\.[0-9]+)*)(</span> packages)',
+        rf"\g<1>{num_packages:,}\g<3>",
+        new_content,
+    )
+    num_symbols = len(MAPPING)
+    new_content = re.sub(
+        r'(class="stat-number">)([0-9]+(?:\.[0-9]+)*)(</span> symbols)',
+        rf"\g<1>{num_symbols:,}\g<3>",
+        new_content,
+    )
+
     file.write_text(new_content)

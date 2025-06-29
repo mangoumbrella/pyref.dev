@@ -99,9 +99,37 @@
 
         .tagline {
             font-size: 1.4rem;
-            margin-bottom: 2.5rem;
+            margin-bottom: 1rem;
             color: var(--gray-600);
             font-weight: 500;
+        }
+
+        .stats {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            margin-bottom: 2.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stat {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.1rem;
+            color: var(--gray-600);
+        }
+
+        .stat-number {
+            font-weight: 700;
+            color: var(--python-blue);
+            font-size: 1.2rem;
+        }
+
+        .stat-icon {
+            width: 20px;
+            height: 20px;
+            opacity: 0.7;
         }
 
         p {
@@ -296,6 +324,18 @@
                 font-size: 1.2rem;
             }
 
+            .stats {
+                gap: 1.5rem;
+            }
+
+            .stat {
+                font-size: 1rem;
+            }
+
+            .stat-number {
+                font-size: 1.1rem;
+            }
+
             p {
                 font-size: 1.1rem;
             }
@@ -359,6 +399,11 @@
             .packages-grid {
                 grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             }
+
+            .stats {
+                flex-direction: column;
+                gap: 0.8rem;
+            }
         }
     </style>
 </head>
@@ -376,6 +421,26 @@
             <h1><span class="py-blue">pyref</span>.<span class="py-yellow">dev</span></h1>
         </div>
         <p class="tagline">A fast, convenient way to access Python reference docs.</p>
+        
+        <div class="stats">
+            <div class="stat">
+                <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="3" width="7" height="7"></rect>
+                    <rect x="14" y="14" width="7" height="7"></rect>
+                    <rect x="3" y="14" width="7" height="7"></rect>
+                </svg>
+                <span><span class="stat-number">85</span> packages</span>
+            </div>
+            <div class="stat">
+                <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+                <span><span class="stat-number">68,314</span> symbols</span>
+            </div>
+        </div>
+
         <p>Quickly jump to the official documentation for Python standard library modules and popular packages by using a simple URL pattern:</p>
         <div class="url-pattern">https://pyref.dev/&lt;fully.qualified.symbol.name&gt;</div>
 
