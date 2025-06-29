@@ -8,9 +8,12 @@
 - Support [botocore](https://botocore.amazonaws.com/v1/documentation/api/latest/index.html).
 - Support [charset-normalizer](https://charset-normalizer.readthedocs.io/en/latest/).
 - Support [cryptography](https://cryptography.io/en/latest/).
+- Support [fsspec](https://filesystem-spec.readthedocs.io/en/latest/").
 - Support [google-api-core](https://googleapis.dev/python/google-api-core/latest/").
 - Support [packaging](https://packaging.pypa.io/en/stable/).
 - Support [protobuf](https://googleapis.dev/python/protobuf/latest/).
+- Support [pydantic-core](https://docs.pydantic.dev/latest/").
+- Support [pydantic](https://docs.pydantic.dev/latest/").
 - Support [s3fs](https://s3fs.readthedocs.io/en/latest/).
 - Support [setuptools](https://setuptools.pypa.io/en/latest/).
 - Support [six](https://six.readthedocs.io/).
