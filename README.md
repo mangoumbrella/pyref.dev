@@ -18,10 +18,10 @@ Alternatively, you could also `pip install pyrefdev` and run the `pyrefdev` CLI 
 
 ## Examples
 
-* https://pyref.dev/json
-* https://pyref.dev/pathlib.Path
-* https://pyref.dev/datetime.datetime.strftime
-* https://pyref.dev/numpy.array
+* [pyref.dev/json](https://pyref.dev/json)
+* [pyref.dev/pathlib.Path](https://pyref.dev/pathlib.Path)
+* [pyref.dev/datetime.datetime.strftime](https://pyref.dev/datetime.datetime.strftime)
+* [pyref.dev/numpy.array](https://pyref.dev/numpy.array)
 
 ## Supported packages
 
