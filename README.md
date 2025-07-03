@@ -47,7 +47,7 @@ To update to a new version:
 ```bash
 > cd pyref.dev
 > git pull
-> uv sync --all-extras
+> uv sync --all-extras --locked
 > systemctl restart pyrefdev.service
 ```
 
