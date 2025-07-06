@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - Support [cyclopts](https://cyclopts.readthedocs.io/en/latest/).
+- Support [yib](https://yib.readthedocs.io/en/latest/).
 
 ## v2025.5
 

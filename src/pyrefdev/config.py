@@ -116,6 +116,7 @@ _packages = [
     Package(pypi="ipython", index_url="https://ipython.readthedocs.io/en/stable/"),
     Package(pypi="httplib2", index_url="https://httplib2.readthedocs.io/en/latest/"),
     Package(pypi="cyclopts", index_url="https://cyclopts.readthedocs.io/en/latest/"),
+    Package(pypi="yib", index_url="https://yib.readthedocs.io/en/latest/"),
     # ENTRY-LINE-MARKER
 ]
 # fmt: on
