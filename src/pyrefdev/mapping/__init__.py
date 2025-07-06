@@ -9,7 +9,7 @@ def load_mapping(verify_duplicates: bool) -> dict[str, str]:
         try:
             package_module = importlib.import_module(f"pyrefdev.mapping.{package}")
         except ImportError:
-            console.print(f"[yellow]WARNING:[/yellow] Missing mapping for {package}")
+            console.warning(f"Missing mapping for {package}")
             continue
         package_mapping = getattr(package_module, "MAPPING")
         if verify_duplicates:

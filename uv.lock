@@ -374,7 +374,7 @@ requires-dist = [
     { name = "packaging", specifier = ">=25.0" },
     { name = "rich", marker = "extra == 'indexer'", specifier = ">=14.0.0" },
     { name = "uvicorn", extras = ["standard"], marker = "extra == 'server'", specifier = ">=0.34.2,<1" },
-    { name = "yib", specifier = ">=0.2.0" },
+    { name = "yib", specifier = ">=0.3.0" },
 ]
 provides-extras = ["indexer", "server"]
 
@@ -752,12 +752,12 @@ wheels = [
 
 [[package]]
 name = "yib"
-version = "0.2.0"
+version = "0.3.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "rich" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/66/51/34df948886f288a2fdb7f3a7196e88767c3c78c782f0e5dce6448834051d/yib-0.2.0.tar.gz", hash = "sha256:b435b2e4fa27617fa8734ddef9efbb4e8232e488992ccedbb7b4bc6904f62cb2", size = 15176, upload-time = "2025-06-19T17:34:29.059Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/d1/75/889a8f942153c85ac915a5260ff1b10e7b981eb8ea05e92e42b8575bf7ea/yib-0.3.0.tar.gz", hash = "sha256:cb5217fdb6bc50cbc8ae3b7a7cdd29c757aff9d6b831a951c03c7530cb3b5fae", size = 15497, upload-time = "2025-07-06T01:12:42.415Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/35/ca/7dd67849c0940302b554833d1be67ba5515cb1627e70e0c0c52b4a1b7342/yib-0.2.0-py3-none-any.whl", hash = "sha256:ed8604794b666c442f4931f3a5ef3c79242e7d7f14040e40d7653b98a70226e3", size = 6511, upload-time = "2025-06-19T17:34:27.768Z" },
+    { url = "https://files.pythonhosted.org/packages/92/72/f04a955af20568349d72693dc8f5d26c7f0bb1cf2271e69b5feb2dc3caad/yib-0.3.0-py3-none-any.whl", hash = "sha256:bfe3e4a78b9fb84a3283e76c423439d6c4251d560545b7b54967b4c01d740620", size = 6593, upload-time = "2025-07-06T01:12:41.086Z" },
 ]

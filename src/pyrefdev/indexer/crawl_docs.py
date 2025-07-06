@@ -64,8 +64,8 @@ def crawl_docs(
                         )
                         crawl_state = None
                     elif package_version < crawled_version:
-                        console.print(
-                            f"[yellow]WARNING:[/yellow] {pkg}'s latest version {package_version!s} is older than previously crawled {crawl_state.package_version}"
+                        console.warning(
+                            f"{pkg}'s latest version {package_version!s} is older than previously crawled {crawl_state.package_version}"
                         )
                 else:
                     crawl_state = None
@@ -196,9 +196,7 @@ class _Crawler:
             with urlopen(url) as f:
                 content = f.read().decode("utf-8", "backslashreplace")
         except error.URLError as e:
-            console.print(
-                f"[yellow]WARNING:[/yellow] Failed to fetch url {url}, error: {e}"
-            )
+            console.warning(f"Failed to fetch url {url}, error: {e}")
             self._failed_urls.append(url)
             return None
         maybe_redirected_url = f.url
@@ -233,7 +231,7 @@ class _Crawler:
             existing_content = output.read_text()
             if content == existing_content:
                 return output
-            console.print(f"[yellow]WARNING:[/yellow] Overriding {output!s}")
+            console.warning(f"Overriding {output!s}")
         output.write_text(content)
         return output
 

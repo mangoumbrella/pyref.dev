@@ -35,9 +35,7 @@ def fetch_package_version(package: Package) -> version.Version | None:
         pypi_info = json.loads(content)
         return version.parse(pypi_info["info"]["version"])
     except error.URLError as e:
-        console.print(
-            f"[yellow]WARNING:[/yellow] Failed to fetch pypi version for {package.pypi}, error: {e}"
-        )
+        console.warning(f"Failed to fetch pypi version for {package.pypi}, error: {e}")
         return None
 
 
@@ -52,7 +50,5 @@ def _fetch_latest_cpython_version() -> version.Version | None:
                 latest_version = latest
         return latest_version
     except error.URLError as e:
-        console.print(
-            f"[yellow]WARNING:[/yellow] Failed to fetch latest CPython version, error: {e}"
-        )
+        console.warning(f"Failed to fetch latest CPython version, error: {e}")
         return None
