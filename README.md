@@ -14,7 +14,19 @@ It allows you to quickly jump to the official documentation for Python standard 
 https://pyref.dev/<fully.qualified.symbol.name>
 ```
 
-Alternatively, you could also `pip install pyrefdev` and run the `pyrefdev` CLI tool.
+You can also search for symbols using:
+
+```
+https://pyref.dev/is?symbol=<SYMBOL>
+```
+
+And if you are feeling lucky, ask it to redirect to the first result:
+
+```
+https://pyref.dev/is?lucky=true&symbol=<SYMBOL>
+```
+
+Lastly, you can `pip install pyrefdev` and run the `pyrefdev` CLI tool.
 
 ## Examples
 
