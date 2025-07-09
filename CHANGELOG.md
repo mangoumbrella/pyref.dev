@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Added a `-p/--print` flag to the `pyrefdev` CLI to print the URL instead of opening it in the browser.
 - Support [cyclopts](https://cyclopts.readthedocs.io/en/latest/).
 - Support [yib](https://yib.readthedocs.io/en/latest/).
 

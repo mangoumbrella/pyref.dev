@@ -416,6 +416,7 @@ wheels = [
 name = "pyrefdev"
 source = { editable = "." }
 dependencies = [
+    { name = "cyclopts" },
     { name = "jinja2" },
     { name = "packaging" },
     { name = "yib" },
@@ -424,7 +425,6 @@ dependencies = [
 [package.optional-dependencies]
 indexer = [
     { name = "beautifulsoup4" },
-    { name = "cyclopts" },
     { name = "rich" },
 ]
 server = [
@@ -440,7 +440,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "beautifulsoup4", marker = "extra == 'indexer'", specifier = ">=4.13.4" },
-    { name = "cyclopts", marker = "extra == 'indexer'", specifier = ">=3.19.0" },
+    { name = "cyclopts", specifier = ">=3.19.0" },
     { name = "fastapi", marker = "extra == 'server'", specifier = ">=0.115.12,<1" },
     { name = "jinja2", specifier = ">=3.1.6" },
     { name = "packaging", specifier = ">=25.0" },
