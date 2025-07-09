@@ -1,15 +1,26 @@
-from fastapi import FastAPI
-from fastapi.responses import RedirectResponse, FileResponse, PlainTextResponse
+from fastapi import FastAPI, Request
+from fastapi.responses import RedirectResponse, PlainTextResponse
+from fastapi.templating import Jinja2Templates
+import importlib.metadata
 
 from pyrefdev.mapping import MAPPING
 
 
 app = FastAPI()
+templates = Jinja2Templates(directory="templates")
 
 
 @app.get("/")
-async def root():
-    return FileResponse("index.html")
+async def root(request: Request):
+    try:
+        version = importlib.metadata.version("pyrefdev")
+        version = version.split("+")[0]  # Strip the git hash
+    except importlib.metadata.PackageNotFoundError:
+        version = "unknown"
+
+    return templates.TemplateResponse(
+        "index.html", {"request": request, "version": version}
+    )
 
 
 @app.get("/{symbol}")

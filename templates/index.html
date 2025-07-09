@@ -97,6 +97,17 @@
             position: relative;
         }
 
+        a {
+            text-decoration: none;
+            color: var(--python-blue);   
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: var(--python-green);
+        }
+
         .tagline {
             font-size: 1.4rem;
             margin-bottom: 1rem;
@@ -196,18 +207,10 @@
         }
 
         .examples-list a {
-            color: var(--python-blue);
-            text-decoration: none;
             font-family: var(--font-mono);
             font-size: 0.95rem;
-            transition: color 0.2s ease;
             word-break: break-all;
             display: inline-block;
-        }
-
-        .examples-list a:hover {
-            text-decoration: underline;
-            color: var(--python-green);
         }
 
         .supported-packages {
@@ -251,16 +254,9 @@
         .packages-grid a {
             display: block;
             padding: 0.75rem 1rem;
-            text-decoration: none;
-            color: var(--python-blue);
             font-weight: 500;
             font-size: 0.9rem;
-            transition: color 0.2s ease;
             border-radius: 6px;
-        }
-
-        .packages-grid a:hover {
-            color: var(--python-green);
         }
 
         .stdlib-package {
@@ -398,6 +394,22 @@
                 flex-direction: column;
                 gap: 0.8rem;
             }
+        }
+
+        .footer {
+            margin-bottom: 1rem;
+        }
+
+        .footer p {
+            text-align: center;
+            padding: 1rem 0 2rem 0;
+            color: var(--gray-600);
+            font-size: 0.85rem;
+            position: relative;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            margin: 0 auto 0.5rem;
+            padding: 0.2rem 0;
         }
     </style>
 </head>
@@ -542,5 +554,10 @@
             <!-- END PYPI PACKAGES -->
         </ul>
     </div>
+    
+    <footer class="footer">
+        <p>Website served with <a href="https://pypi.org/project/pyrefdev">pyrefdev</a> v{{ version }}</p>
+        <p>&copy; 2025 <a href="https://mangoumbrella.com">Mango Umbrella LLC</a> and the pyref.dev authors</p>
+    </footer>
 </body>
 </html>
