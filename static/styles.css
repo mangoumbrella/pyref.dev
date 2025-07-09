@@ -385,6 +385,7 @@ a:hover {
 
 .results-header {
     margin-bottom: 1.5rem;
+    padding-left: 2.5rem;
     color: var(--gray-600);
 }
 
@@ -542,6 +543,11 @@ a:hover {
 }
 
 @media (max-width: 600px) {
+    .container {
+        width: 95%;
+        padding: 2rem 1rem;
+    }
+
     .home h1 {
         font-size: 2.8rem;
     }
