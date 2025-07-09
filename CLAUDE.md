@@ -50,4 +50,5 @@ pyrefdev-indexer update-landing-page
 
 - Do not add tests unless explictly asked to.
 - When creating a new file with content, ensure the file has an extra new line at the end.
+- Do NOT add redundant comments describe what the cod does. When needed, DO add comments that explains "why".
 - Server deployment uses systemd and is configured in `pyrefdev.service`

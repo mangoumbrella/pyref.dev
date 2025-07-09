@@ -117,27 +117,51 @@ a:hover {
     color: var(--python-green);
 }
 
-/* GitHub link styles */
-.github-link {
+/* Base button styles */
+.btn {
     display: inline-flex;
     align-items: center;
-    background: var(--python-blue);
-    color: white;
     padding: 0.6rem 1.2rem;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
     font-size: 0.9rem;
     transition: all 0.3s ease;
-    border: 1px solid var(--python-blue);
+    cursor: pointer;
+    border: 2px solid transparent;
+    white-space: nowrap;
+    gap: 0.4rem;
     box-shadow: var(--shadow-sm);
 }
 
-.github-link:hover {
-    background: white;
-    color: var(--python-blue);
+.btn:hover {
     transform: translateY(-1px);
     box-shadow: var(--shadow-md);
+    text-decoration: none;
+}
+
+/* Primary button variant */
+.btn-primary {
+    background: var(--python-blue);
+    color: white;
+    border-color: var(--python-blue);
+}
+
+.btn-primary:hover {
+    background: white;
+    color: var(--python-blue);
+}
+
+/* Success button variant */
+.btn-success {
+    background: var(--python-green);
+    color: white;
+    border-color: var(--python-green);
+}
+
+.btn-success:hover {
+    background: white;
+    color: var(--python-green);
 }
 
 .github-link svg {
@@ -363,45 +387,15 @@ a:hover {
 }
 
 .search-button {
+    /* Uses .btn and .btn-primary base styles */
     padding: 1rem 1.2rem;
-    background: var(--python-blue);
-    color: white;
-    border: 2px solid var(--python-blue);
-    border-radius: 6px;
     font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-.search-button:hover {
-    background: white;
-    color: var(--python-blue);
 }
 
 .lucky-button {
+    /* Uses .btn and .btn-success base styles */
     padding: 1rem 1.2rem;
-    background: var(--python-green);
-    color: white;
-    border: 2px solid var(--python-green);
-    border-radius: 6px;
     font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    white-space: nowrap;
-    display: flex;
-    align-items: center;
-    gap: 0.4rem;
-}
-
-.lucky-button:hover {
-    background: white;
-    color: var(--python-green);
 }
 
 .results-header {
