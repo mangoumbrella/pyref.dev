@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 The project has several components:
 
-1. **Web Server** (`src/pyrefdev/server.py`): FastAPI application that serves redirects based on symbol lookup. `index.html` is the landing page of the server
+1. **Web Server** (`src/pyrefdev/server.py`): FastAPI application that serves redirects based on symbol lookup. `templates/index.html` is the landing page of the server, `static/styles.css` contains CSS styles
 2. **CLI Tool** (`src/pyrefdev/__main__.py`): Command-line interface that opens documentation in browser
 3. **Indexer** (`src/pyrefdev/indexer/`): Tools for crawling, parsing, and managing documentation mappings
 4. **Mapping System** (`src/pyrefdev/mapping/`): Individual Python files per package containing symbol-to-URL mappings
