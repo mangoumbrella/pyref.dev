@@ -44,6 +44,12 @@
                     {% for result in results %}
                         <div class="result-item{% if loop.index > 10 %} hidden-result{% endif %}">
                             <a href="{{ result.url }}" class="result-symbol">{{ result.symbol }}</a>
+                            <button class="copy-button" onclick="copyToClipboard('pyref.dev/{{ result.symbol }}')" title="Copy pyref.dev link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                    <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                                    <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                                </svg>
+                            </button>
                         </div>
                     {% endfor %}
                     {% if results|length > 10 %}
@@ -60,6 +66,11 @@
                 </div>
             {% endif %}
         {% endif %}
+    </div>
+
+    <!-- Notification popup -->
+    <div id="notification" class="notification hidden">
+        <span id="notification-text"></span>
     </div>
 
     <script>
@@ -83,6 +94,52 @@
             if (showMoreContainer) {
                 showMoreContainer.style.display = 'none';
             }
+        }
+
+        // Copy to clipboard function
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                // Show notification popup
+                showNotification(`Copied ${text}`);
+            }).catch(err => {
+                console.error('Failed to copy: ', err);
+                showNotification('Failed to copy to clipboard');
+            });
+        }
+
+        // Notification timeout variables
+        let notificationTimeout;
+        let hideTimeout;
+
+        // Show notification popup
+        function showNotification(message) {
+            const notification = document.getElementById('notification');
+            const notificationText = document.getElementById('notification-text');
+            
+            // Clear any existing timeouts
+            clearTimeout(notificationTimeout);
+            clearTimeout(hideTimeout);
+            
+            // Reset all classes
+            notification.classList.remove('show', 'hiding', 'hidden');
+            
+            notificationText.textContent = message;
+            
+            // Force reflow to ensure the element is rendered before adding the show class
+            notification.offsetHeight;
+            
+            setTimeout(() => {
+                notification.classList.add('show');
+            }, 10);
+            
+            notificationTimeout = setTimeout(() => {
+                notification.classList.remove('show');
+                notification.classList.add('hiding');
+                hideTimeout = setTimeout(() => {
+                    notification.classList.remove('hiding');
+                    notification.classList.add('hidden');
+                }, 300);
+            }, 2000);
         }
     </script>
 </body>
