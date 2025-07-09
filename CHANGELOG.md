@@ -2,7 +2,11 @@
 
 ## [Unreleased]
 
-- Added a search page to [pyref.dev](https://pyref.dev).
+Nothing noticeable unreleased.
+
+## v2025.7
+
+- Added search to [pyref.dev](https://pyref.dev).
 - When the symbol is not found, redirect to the search page.
 
 ## v2025.6
