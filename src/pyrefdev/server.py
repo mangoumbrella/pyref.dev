@@ -26,6 +26,34 @@ async def root(request: Request):
     )
 
 
+@app.get("/is")
+async def search_symbols(request: Request, symbol: str = ""):
+    if not symbol:
+        return templates.TemplateResponse(
+            "search.html", {"request": request, "symbol": "", "results": []}
+        )
+
+    # Search by substring for now.
+    results = []
+    symbol_lower = symbol.lower()
+    for key in MAPPING.keys():
+        if symbol_lower in key.lower():
+            results.append({"symbol": key, "url": MAPPING[key]})
+
+    # Sort results: exact match first, then by length.
+    results.sort(
+        key=lambda x: (
+            x["symbol"].lower() != symbol_lower,
+            len(x["symbol"]),
+            x["symbol"],
+        )
+    )
+
+    return templates.TemplateResponse(
+        "search.html", {"request": request, "symbol": symbol, "results": results}
+    )
+
+
 @app.get("/{symbol}")
 async def redirects(symbol: str):
     if url := MAPPING.get(symbol):

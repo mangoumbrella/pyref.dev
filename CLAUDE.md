@@ -48,4 +48,6 @@ pyrefdev-indexer update-landing-page
 
 ## Important Notes
 
+- Do not add tests unless explictly asked to.
+- When creating a new file with content, ensure the file has an extra new line at the end.
 - Server deployment uses systemd and is configured in `pyrefdev.service`
