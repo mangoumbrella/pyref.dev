@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - Added a search page to [pyref.dev](https://pyref.dev).
+- When the symbol is not found, redirect to the search page.
 
 ## v2025.6
 

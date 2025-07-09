@@ -88,4 +88,4 @@ async def redirects(symbol: str):
         return RedirectResponse(url)
     if url := MAPPING.get(symbol.lower()):
         return RedirectResponse(url)
-    return PlainTextResponse(content=f"{symbol} not found", status_code=404)
+    return RedirectResponse(f"/is?symbol={symbol}")
