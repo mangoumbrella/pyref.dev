@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-Nothing noticeable unreleased.
+- Added a search page to [pyref.dev](https://pyref.dev).
 
 ## v2025.6
 
