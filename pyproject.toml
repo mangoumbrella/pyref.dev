@@ -38,8 +38,9 @@ dependencies = [
 dynamic = ["version"]
 
 [project.urls]
-Home = "https://pyref.dev"
+Homepage = "https://pyref.dev"
 Source = "https://github.com/mangoumbrella/pyref.dev"
+Changelog = "https://github.com/mangoumbrella/pyref.dev/blob/main/CHANGELOG.md"
 
 [project.optional-dependencies]
 server = [
