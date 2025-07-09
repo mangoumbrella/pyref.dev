@@ -52,20 +52,31 @@ async def search_symbols(request: Request, symbol: str = ""):
         num_components = len(components)
 
         if symbol_path.lower() == symbol_lower:
-            return (0, 0, 0, num_components, len(symbol_path), symbol_path)
+            # Prioritize exact case matches over case-insensitive matches (only if search term has uppercase)
+            case_match_priority = 0 if (symbol != symbol_lower and symbol_path == symbol) else 1
+            return (0, 0, case_match_priority, num_components, len(symbol_path), symbol_path)
 
-        # Check for exact component matches
+        # Check for exact component matches (case-insensitive)
         exact_component_matches = []
+        exact_case_component_matches = []
         for i, component in enumerate(components):
             if component.lower() == symbol_lower:
                 # Position from right (0 = rightmost, higher = more left)
                 position_from_right = len(components) - 1 - i
                 exact_component_matches.append(position_from_right)
+                
+                # Check if it's also an exact case match (only if search term has uppercase)
+                if symbol != symbol_lower and component == symbol:
+                    exact_case_component_matches.append(position_from_right)
 
-        if exact_component_matches:
-            # Prioritize rightmost exact matches (smaller position_from_right)
-            best_position = min(exact_component_matches)
+        if exact_case_component_matches:
+            # Prioritize rightmost position, then exact case matches
+            best_position = min(exact_case_component_matches)
             return (1, best_position, 0, num_components, len(symbol_path), symbol_path)
+        elif exact_component_matches:
+            # Case-insensitive exact matches
+            best_position = min(exact_component_matches)
+            return (1, best_position, 1, num_components, len(symbol_path), symbol_path)
 
         # Check for component substring matches
         component_substring_matches = []
