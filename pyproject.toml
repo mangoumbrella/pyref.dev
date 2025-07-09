@@ -67,4 +67,5 @@ version = "{version}"
 [dependency-groups]
 dev = [
     "pytest>=8.4.1",
+    "pre-commit>=4.2.0",
 ]

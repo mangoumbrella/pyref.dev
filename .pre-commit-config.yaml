@@ -1,0 +1,10 @@
+repos:
+- repo: local
+  hooks:
+  - id: update-landing-page
+    name: Update landing page
+    language: system
+    entry: uv run pyrefdev-indexer update-landing-page
+    pass_filenames: false
+    files: \.(py|yaml)$
+    verbose: true
