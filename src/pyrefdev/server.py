@@ -3,6 +3,7 @@ from fastapi.responses import RedirectResponse, PlainTextResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import importlib.metadata
+from urllib import parse
 
 from pyrefdev.mapping import MAPPING
 
@@ -38,7 +39,12 @@ async def search_symbols(request: Request, symbol: str = ""):
     symbol_lower = symbol.lower()
     for key in MAPPING.keys():
         if symbol_lower in key.lower():
-            results.append({"symbol": key, "url": MAPPING[key]})
+            fragment = parse.urlparse(MAPPING[key]).fragment
+            if fragment.lower() == key.lower():
+                candidate = fragment
+            else:
+                candidate = key
+            results.append({"symbol": candidate, "url": MAPPING[key]})
 
     def ranking_key(result):
         symbol_path = result["symbol"]
