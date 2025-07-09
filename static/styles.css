@@ -383,6 +383,27 @@ a:hover {
     color: var(--python-blue);
 }
 
+.lucky-button {
+    padding: 1rem 1.2rem;
+    background: var(--python-green);
+    color: white;
+    border: 2px solid var(--python-green);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.lucky-button:hover {
+    background: white;
+    color: var(--python-green);
+}
+
 .results-header {
     margin-bottom: 1.5rem;
     padding-left: 2.5rem;
@@ -542,6 +563,27 @@ a:hover {
     }
 }
 
+@media (max-width: 740px) {
+    .search-form form {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .search-input {
+        width: 100%;
+    }
+
+    .search-button {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .lucky-button {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
 @media (max-width: 600px) {
     .container {
         width: 95%;
@@ -638,20 +680,6 @@ a:hover {
 
     .search-form {
         padding: 1.5rem;
-    }
-
-    .search-form form {
-        flex-direction: column;
-        gap: 1rem;
-    }
-
-    .search-input {
-        width: 100%;
-    }
-
-    .search-button {
-        width: 100%;
-        justify-content: center;
     }
 
     .results-list {

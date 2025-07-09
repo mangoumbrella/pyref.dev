@@ -28,7 +28,7 @@ async def root(request: Request):
 
 
 @app.get("/is")
-async def search_symbols(request: Request, symbol: str = ""):
+async def search_symbols(request: Request, symbol: str = "", lucky: bool = False):
     if not symbol:
         return templates.TemplateResponse(
             "search.html", {"request": request, "symbol": "", "results": []}
@@ -94,15 +94,23 @@ async def search_symbols(request: Request, symbol: str = ""):
 
     results.sort(key=ranking_key)
 
+    # If lucky=true and we have results, redirect to the first (best) result
+    if lucky and results:
+        return RedirectResponse(results[0]["url"])
+
     return templates.TemplateResponse(
         "search.html", {"request": request, "symbol": symbol, "results": results}
     )
 
 
 @app.get("/{symbol}")
-async def redirects(symbol: str):
+async def redirects(symbol: str, lucky: bool = False):
     if url := MAPPING.get(symbol):
         return RedirectResponse(url)
     if url := MAPPING.get(symbol.lower()):
         return RedirectResponse(url)
-    return RedirectResponse(f"/is?symbol={symbol}")
+
+    if lucky:
+        return RedirectResponse(f"/is?symbol={symbol}&lucky=true")
+    else:
+        return RedirectResponse(f"/is?symbol={symbol}")
