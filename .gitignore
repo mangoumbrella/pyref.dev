@@ -1,5 +1,5 @@
 .DS_Store
-docs/
+api-docs/
 
 # Hatch-managed version file
 src/pyrefdev/_version.py
