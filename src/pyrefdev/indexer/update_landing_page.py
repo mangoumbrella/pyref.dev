@@ -13,7 +13,7 @@ def update_landing_page_with_packages(
     packages: dict[str, Package], file: Path | None = None
 ) -> None:
     if file is None:
-        file = Path(__file__).parent.parent.parent.parent / "index.html"
+        file = Path(__file__).parent.parent.parent.parent / "templates" / "index.html"
         if not file.exists():
             console.fatal(f"{file} does not exist")
 
