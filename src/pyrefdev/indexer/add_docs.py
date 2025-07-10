@@ -53,13 +53,14 @@ _URL_PATTERN = re.compile(r"https?://([^\s/]+\.readthedocs\.io)\b")
 
 def _guess_index_url_or_die(package: str) -> str:
     pypi_info = fetch_pypi_json(package).get("info", {})
-    project_urls = list(pypi_info.get("project_urls", {}).values())
+    candidates = list(pypi_info.get("project_urls", {}).values())
+    candidates.append(pypi_info.get("description", ""))
 
     readthedocs_urls = set()
 
-    for url in project_urls:
-        if match := _URL_PATTERN.match(url):
-            readthedocs_urls.add(f"https://{match.group(1)}")
+    for url in candidates:
+        for match in _URL_PATTERN.findall(url):
+            readthedocs_urls.add(f"https://{match}")
 
     if len(readthedocs_urls) == 1:
         url = next(iter(readthedocs_urls))
