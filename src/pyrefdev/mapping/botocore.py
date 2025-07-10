@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.38.46"
 
+# fmt: off
 MAPPING = {
     "botocore": "https://botocore.amazonaws.com/v1/documentation/api/latest/index.html",
     "botocore.awsrequest": "https://botocore.amazonaws.com/v1/documentation/api/latest/reference/awsrequest.html",

@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.3.0"
 
+# fmt: off
 MAPPING = {
     "pandas": "https://pandas.pydata.org/docs/reference/index.html",
     "pandas.api.extensions.extensionarray": "https://pandas.pydata.org/docs/reference/api/pandas.api.extensions.ExtensionArray.html#pandas.api.extensions.ExtensionArray",

@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "7.9.1"
 
+# fmt: off
 MAPPING = {
     "coverage": "https://coverage.readthedocs.io/en/latest/",
     "coverage.__version__": "https://coverage.readthedocs.io/en/latest/api_module.html#coverage.__version__",

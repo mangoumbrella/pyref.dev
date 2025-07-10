@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.11.7"
 
+# fmt: off
 MAPPING = {
     "pydantic": "https://docs.pydantic.dev/latest/",
     "pydantic.__version__": "https://docs.pydantic.dev/latest/api/version/#pydantic.__version__",

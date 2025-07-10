@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.61.2"
 
+# fmt: off
 MAPPING = {
     "numba": "https://numba.readthedocs.io/en/stable/reference/index.html",
     "numba.carray": "https://numba.readthedocs.io/en/stable/reference/utils.html#numba.carray",

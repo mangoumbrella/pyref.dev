@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "10.7.0"
 
+# fmt: off
 MAPPING = {
     "more_itertools": "https://more-itertools.readthedocs.io/en/stable/",
     "more_itertools.adjacent": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.adjacent",

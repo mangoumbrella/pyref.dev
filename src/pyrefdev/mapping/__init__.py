@@ -1,11 +1,20 @@
+import dataclasses
 import importlib
 
 from pyrefdev.config import console, SUPPORTED_PACKAGES
 
 
-def load_mapping(verify_duplicates: bool) -> dict[str, str]:
+@dataclasses.dataclass(frozen=True, kw_only=True)
+class PackageInfo:
+    version: str
+    mapping: dict[str, str]
+
+
+def load_mapping(
+    verify_duplicates: bool,
+) -> tuple[dict[str, str], dict[str, PackageInfo]]:
     mapping = {}
-    mapping_by_package = {}
+    packages = {}
     for package in SUPPORTED_PACKAGES:
         try:
             package_module = importlib.import_module(f"pyrefdev.mapping.{package}")
@@ -20,8 +29,10 @@ def load_mapping(verify_duplicates: bool) -> dict[str, str]:
                     f"Found duplicated entries from {package}: {','.join(duplicates)}"
                 )
         mapping.update(package_mapping)
-        mapping_by_package[package] = package_mapping
-    return mapping, mapping_by_package
+        packages[package] = PackageInfo(
+            version=getattr(package_module, "VERSION"), mapping=package_mapping
+        )
+    return mapping, packages
 
 
-MAPPING, MAPPING_BY_PACKAGE = load_mapping(verify_duplicates=False)
+MAPPING, PACKAGE_INFO_MAPPING = load_mapping(verify_duplicates=False)

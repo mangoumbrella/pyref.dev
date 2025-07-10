@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.21.0"
 
+# fmt: off
 MAPPING = {
     "cyclopts": "https://cyclopts.readthedocs.io/en/latest/",
     "cyclopts.app": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.App",

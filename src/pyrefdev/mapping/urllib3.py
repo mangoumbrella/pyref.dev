@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.5.0"
 
+# fmt: off
 MAPPING = {
     "urllib3": "https://urllib3.readthedocs.io/en/stable/reference/index.html",
     "urllib3.connection": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.connection.html",

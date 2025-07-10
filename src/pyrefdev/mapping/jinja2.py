@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.1.6"
 
+# fmt: off
 MAPPING = {
     "jinja2": "https://jinja.palletsprojects.com/en/latest/",
     "jinja2.baseloader": "https://jinja.palletsprojects.com/en/latest/api/#jinja2.BaseLoader",

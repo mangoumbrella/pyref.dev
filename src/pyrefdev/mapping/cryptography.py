@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "45.0.4"
 
+# fmt: off
 MAPPING = {
     "cryptography": "https://cryptography.io/en/latest/",
     "cryptography.exceptions.alreadyfinalized": "https://cryptography.io/en/latest/exceptions/#cryptography.exceptions.AlreadyFinalized",

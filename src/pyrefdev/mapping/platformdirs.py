@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "4.3.8"
 
+# fmt: off
 MAPPING = {
     "platformdirs": "https://platformdirs.readthedocs.io/en/latest/",
     "platformdirs.android": "https://platformdirs.readthedocs.io/en/latest/api.html",

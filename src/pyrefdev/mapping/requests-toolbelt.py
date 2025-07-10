@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.0.0"
 
+# fmt: off
 MAPPING = {
     "requests_toolbelt": "https://toolbelt.readthedocs.io/en/latest/index.html",
     "requests_toolbelt.adapters": "https://toolbelt.readthedocs.io/en/latest/adapters.html",

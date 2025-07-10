@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.0.2"
 
+# fmt: off
 MAPPING = {
     "markupsafe": "https://markupsafe.palletsprojects.com/en/stable/",
     "markupsafe.escape": "https://markupsafe.palletsprojects.com/en/stable/escaping/#markupsafe.escape",

@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.6.0"
 
+# fmt: off
 MAPPING = {
     "pluggy": "https://pluggy.readthedocs.io/en/latest/",
     "pluggy.hookcaller": "https://pluggy.readthedocs.io/en/latest/api_reference.html#pluggy.HookCaller",

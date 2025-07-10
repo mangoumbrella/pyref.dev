@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.3.1"
 
+# fmt: off
 MAPPING = {
     "numpy": "https://numpy.org/doc/stable/reference/index.html",
     "numpy.__array_namespace_info__": "https://numpy.org/doc/stable/reference/generated/numpy.__array_namespace_info__.html#numpy.__array_namespace_info__",

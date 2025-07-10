@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.0.41"
 
+# fmt: off
 MAPPING = {
     "sqlalchemy": "https://docs.sqlalchemy.org/en/20/",
     "sqlalchemy.create_engine": "https://docs.sqlalchemy.org/en/20/core/engines.html#sqlalchemy.create_engine",

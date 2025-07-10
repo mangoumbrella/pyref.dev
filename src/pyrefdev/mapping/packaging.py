@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "25.0"
 
+# fmt: off
 MAPPING = {
     "packaging": "https://packaging.pypa.io/en/stable/",
     "packaging.licenses": "https://packaging.pypa.io/en/stable/licenses.html",

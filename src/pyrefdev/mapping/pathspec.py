@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.12.1"
 
+# fmt: off
 MAPPING = {
     "pathspec": "https://python-path-specification.readthedocs.io/en/latest/index.html",
     "pathspec.gitignore": "https://python-path-specification.readthedocs.io/en/latest/api.html#module-pathspec.gitignore",

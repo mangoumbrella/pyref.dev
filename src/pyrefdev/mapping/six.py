@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.17.0"
 
+# fmt: off
 MAPPING = {
     "six": "https://six.readthedocs.io/",
     "six.add_metaclass": "https://six.readthedocs.io/index.html#six.add_metaclass",

@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.2.3"
 
+# fmt: off
 MAPPING = {
     "pyparsing": "https://pyparsing-docs.readthedocs.io/en/latest/",
     "pyparsing.__compat__": "https://pyparsing-docs.readthedocs.io/en/latest/pyparsing.html#pyparsing.__compat__",

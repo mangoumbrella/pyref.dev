@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "20.0.0"
 
+# fmt: off
 MAPPING = {
     "pyarrow": "https://arrow.apache.org/docs/python/api.html",
     "pyarrow.acero.aggregatenodeoptions": "https://arrow.apache.org/docs/python/generated/pyarrow.acero.AggregateNodeOptions.html#pyarrow.acero.AggregateNodeOptions",

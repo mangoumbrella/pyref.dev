@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.73.1"
 
+# fmt: off
 MAPPING = {
     "grpc": "https://grpc.github.io/grpc/python/index.html",
     "grpc.access_token_call_credentials": "https://grpc.github.io/grpc/python/grpc.html#grpc.access_token_call_credentials",

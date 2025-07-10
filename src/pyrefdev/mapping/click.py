@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "8.2.1"
 
+# fmt: off
 MAPPING = {
     "click": "https://click.palletsprojects.com/en/stable/",
     "click.abort": "https://click.palletsprojects.com/en/stable/api/#click.Abort",

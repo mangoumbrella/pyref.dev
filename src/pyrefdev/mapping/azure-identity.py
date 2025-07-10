@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.23.0"
 
+# fmt: off
 MAPPING = {
     "azure.identity": "https://azuresdkdocs.z19.web.core.windows.net/python/azure-identity/latest/index.html",
     "azure.identity.aio": "https://azuresdkdocs.z19.web.core.windows.net/python/azure-identity/latest/azure.identity.aio.html",

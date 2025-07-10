@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "25.1.0"
 
+# fmt: off
 MAPPING = {
     "openssl": "https://www.pyopenssl.org/en/latest/",
     "openssl.crypto": "https://www.pyopenssl.org/en/latest/api/crypto.html",

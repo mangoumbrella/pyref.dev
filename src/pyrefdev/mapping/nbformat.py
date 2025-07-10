@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "5.10.4"
 
+# fmt: off
 MAPPING = {
     "nbformat": "https://nbformat.readthedocs.io/en/latest/",
     "nbformat.convert": "https://nbformat.readthedocs.io/en/latest/api.html#nbformat.convert",

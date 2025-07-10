@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.7.0"
 
+# fmt: off
 MAPPING = {
     "sklearn": "https://scikit-learn.org/stable/api/index.html",
     "sklearn.base": "https://scikit-learn.org/stable/api/sklearn.base.html",

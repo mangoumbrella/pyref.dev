@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.7.0"
 
+# fmt: off
 MAPPING = {
     "frozenlist": "https://frozenlist.aio-libs.org/en/latest/",
     "frozenlist.frozenlist": "https://frozenlist.aio-libs.org/en/latest/#frozenlist.FrozenList",

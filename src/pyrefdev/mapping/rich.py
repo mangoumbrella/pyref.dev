@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "14.0.0"
 
+# fmt: off
 MAPPING = {
     "rich": "https://rich.readthedocs.io/en/latest/",
     "rich.abc": "https://rich.readthedocs.io/en/latest/reference/abc.html",

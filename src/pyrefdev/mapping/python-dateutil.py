@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.9.0.post0"
 
+# fmt: off
 MAPPING = {
     "dateutil": "https://dateutil.readthedocs.io/en/stable/",
     "dateutil.easter": "https://dateutil.readthedocs.io/en/stable/easter.html",

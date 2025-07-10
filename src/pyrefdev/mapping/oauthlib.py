@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.3.1"
 
+# fmt: off
 MAPPING = {
     "oauthlib": "https://oauthlib.readthedocs.io/en/latest/",
     "oauthlib.oauth1.accesstokenendpoint": "https://oauthlib.readthedocs.io/en/latest/oauth1/endpoints/access_token.html#oauthlib.oauth1.AccessTokenEndpoint",

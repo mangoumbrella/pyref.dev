@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.3.0"
 
+# fmt: off
 MAPPING = {
     "arrow": "https://arrow.readthedocs.io/en/latest/",
     "arrow.api": "https://arrow.readthedocs.io/en/latest/api-guide.html#module-arrow.api",

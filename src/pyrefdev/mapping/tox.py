@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "4.27.0"
 
+# fmt: off
 MAPPING = {
     "tox": "https://tox.wiki/en/stable/",
     "tox.config": "https://tox.wiki/en/stable/plugins_api.html",

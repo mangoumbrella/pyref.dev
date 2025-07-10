@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.4.2"
 
+# fmt: off
 MAPPING = {
     "charset_normalizer": "https://charset-normalizer.readthedocs.io/en/latest/",
     "charset_normalizer.cd": "https://charset-normalizer.readthedocs.io/en/latest/api.html",

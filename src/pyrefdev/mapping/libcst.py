@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.8.2"
 
+# fmt: off
 MAPPING = {
     "libcst": "https://libcst.readthedocs.io/en/latest/",
     "libcst.add": "https://libcst.readthedocs.io/en/latest/nodes.html#libcst.Add",

@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.6.1"
 
+# fmt: off
 MAPPING = {
     "pyasn1": "https://pyasn1.readthedocs.io/en/latest/contents.html",
     "pyasn1.codec.ber": "https://pyasn1.readthedocs.io/en/latest/pyasn1/codec/ber/contents.html",

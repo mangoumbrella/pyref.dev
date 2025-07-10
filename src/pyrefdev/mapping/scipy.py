@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.16.0"
 
+# fmt: off
 MAPPING = {
     "scipy": "https://docs.scipy.org/doc/scipy/reference/index.html",
     "scipy.cluster": "https://docs.scipy.org/doc/scipy/reference/cluster.html",

@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.16.0"
 
+# fmt: off
 MAPPING = {
     "h11": "https://h11.readthedocs.io/en/latest/",
     "h11.client": "https://h11.readthedocs.io/en/latest/api.html#h11.CLIENT",

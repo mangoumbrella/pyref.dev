@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.65.0"
 
+# fmt: off
 MAPPING = {
     "apache_beam": "https://beam.apache.org/releases/pydoc/current/",
     "apache_beam.coders": "https://beam.apache.org/releases/pydoc/current/apache_beam.coders.html",

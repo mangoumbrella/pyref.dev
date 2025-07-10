@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.30.0"
 
+# fmt: off
 MAPPING = {
     "trio": "https://trio.readthedocs.io/en/stable/",
     "trio._subprocess": "https://trio.readthedocs.io/en/stable/reference-io.html",

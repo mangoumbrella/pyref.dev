@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.1.1"
 
+# fmt: off
 MAPPING = {
     "flask": "https://flask.palletsprojects.com/en/stable/",
     "flask.abort": "https://flask.palletsprojects.com/en/stable/api/#flask.abort",

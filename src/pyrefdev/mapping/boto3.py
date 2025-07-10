@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.38.46"
 
+# fmt: off
 MAPPING = {
     "boto3": "https://boto3.amazonaws.com/v1/documentation/api/latest/index.html",
     "boto3.client": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/boto3.html#boto3.client",

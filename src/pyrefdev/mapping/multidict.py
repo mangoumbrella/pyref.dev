@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "6.6.2"
 
+# fmt: off
 MAPPING = {
     "multidict": "https://multidict.aio-libs.org/en/stable/",
     "multidict.cimultidict": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.CIMultiDict",

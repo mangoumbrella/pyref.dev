@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.5"
 
+# fmt: off
 MAPPING = {
     "networkx": "https://networkx.org/documentation/stable/reference/index.html",
     "networkx.algorithms.approximation": "https://networkx.org/documentation/stable/reference/algorithms/approximation.html#module-networkx.algorithms.approximation",

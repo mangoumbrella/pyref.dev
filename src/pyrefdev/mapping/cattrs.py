@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "25.1.1"
 
+# fmt: off
 MAPPING = {
     "cattrs": "https://catt.rs/en/stable/",
     "cattrs.attributevalidationnote": "https://catt.rs/en/stable/cattrs.html#cattrs.AttributeValidationNote",

@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "25.3.0"
 
+# fmt: off
 MAPPING = {
     "attr": "https://www.attrs.org/en/stable/",
     "attr.asdict": "https://www.attrs.org/en/stable/api-attr.html#attr.asdict",

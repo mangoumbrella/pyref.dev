@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.12.0"
 
+# fmt: off
 MAPPING = {
     "aioitertools": "https://aioitertools.omnilib.dev/en/stable/",
     "aioitertools.asyncio": "https://aioitertools.omnilib.dev/en/stable/api.html#module-aioitertools.asyncio",

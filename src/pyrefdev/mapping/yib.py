@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.4.0"
 
+# fmt: off
 MAPPING = {
     "yib": "https://yib.readthedocs.io/en/latest/",
     "yib.yconsole": "https://yib.readthedocs.io/en/latest/yib.yconsole.html",

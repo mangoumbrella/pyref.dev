@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "6.1.0"
 
+# fmt: off
 MAPPING = {
     "cachetools": "https://cachetools.readthedocs.io/en/latest/",
     "cachetools.cache": "https://cachetools.readthedocs.io/en/latest/index.html#cachetools.Cache",

@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "80.9.0"
 
+# fmt: off
 MAPPING = {
     "setuptools": "https://setuptools.pypa.io/en/latest/",
     "setuptools.command": "https://setuptools.pypa.io/en/latest/userguide/extension.html",

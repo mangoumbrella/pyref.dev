@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.3.2"
 
+# fmt: off
 MAPPING = {
     "propcache": "https://propcache.aio-libs.org/en/latest/",
     "propcache.api": "https://propcache.aio-libs.org/en/latest/api/",

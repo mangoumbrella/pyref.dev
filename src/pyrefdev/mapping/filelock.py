@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.18.0"
 
+# fmt: off
 MAPPING = {
     "filelock": "https://py-filelock.readthedocs.io/en/latest/",
     "filelock.__version__": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.__version__",

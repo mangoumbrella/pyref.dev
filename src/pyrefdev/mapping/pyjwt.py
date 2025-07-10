@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.10.1"
 
+# fmt: off
 MAPPING = {
     "jwt": "https://pyjwt.readthedocs.io/en/stable/",
     "jwt.api_jwt": "https://pyjwt.readthedocs.io/en/stable/api.html",

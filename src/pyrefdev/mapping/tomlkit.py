@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.13.3"
 
+# fmt: off
 MAPPING = {
     "tomlkit": "https://tomlkit.readthedocs.io/en/latest/",
     "tomlkit.aot": "https://tomlkit.readthedocs.io/en/latest/api/#tomlkit.aot",

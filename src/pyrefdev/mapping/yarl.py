@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.20.1"
 
+# fmt: off
 MAPPING = {
     "yarl": "https://yarl.aio-libs.org/en/latest/",
     "yarl.cache_clear": "https://yarl.aio-libs.org/en/latest/api/#yarl.cache_clear",

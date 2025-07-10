@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.21.1"
 
+# fmt: off
 MAPPING = {
     "fastjsonschema": "https://horejsek.github.io/python-fastjsonschema/",
     "fastjsonschema.compile": "https://horejsek.github.io/python-fastjsonschema/index.html#fastjsonschema.compile",

@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.115.14"
 
+# fmt: off
 MAPPING = {
     "fastapi": "https://fastapi.tiangolo.com/reference/",
     "fastapi.apirouter": "https://fastapi.tiangolo.com/reference/apirouter/#fastapi.APIRouter",

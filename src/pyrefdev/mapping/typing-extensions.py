@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "4.14.0"
 
+# fmt: off
 MAPPING = {
     "typing_extensions": "https://typing-extensions.readthedocs.io/en/latest/",
     "typing_extensions.abstractset": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.AbstractSet",

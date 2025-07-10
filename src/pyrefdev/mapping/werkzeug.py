@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.1.3"
 
+# fmt: off
 MAPPING = {
     "werkzeug": "https://werkzeug.palletsprojects.com/en/stable/",
     "werkzeug.datastructures": "https://werkzeug.palletsprojects.com/en/stable/datastructures/",

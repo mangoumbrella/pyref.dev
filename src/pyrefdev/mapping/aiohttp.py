@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.12.13"
 
+# fmt: off
 MAPPING = {
     "aiohttp": "https://docs.aiohttp.org/en/stable/",
     "aiohttp.abc": "https://docs.aiohttp.org/en/stable/abc.html",

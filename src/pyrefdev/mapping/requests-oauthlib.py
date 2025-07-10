@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.0.0"
 
+# fmt: off
 MAPPING = {
     "requests_oauthlib": "https://requests-oauthlib.readthedocs.io/en/latest/",
     "requests_oauthlib.oauth1": "https://requests-oauthlib.readthedocs.io/en/latest/api.html#requests_oauthlib.OAuth1",

@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "8.4.1"
 
+# fmt: off
 MAPPING = {
     "pytest": "https://docs.pytest.org/en/stable/reference/index.html",
     "pytest.approx": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.approx",

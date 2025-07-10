@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.22.0"
 
+# fmt: off
 MAPPING = {
     "httplib2": "https://httplib2.readthedocs.io/en/latest/",
     "httplib2.cache": "https://httplib2.readthedocs.io/en/latest/libhttplib2.html",

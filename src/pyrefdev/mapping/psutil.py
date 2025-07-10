@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "7.0.0"
 
+# fmt: off
 MAPPING = {
     "psutil": "https://psutil.readthedocs.io/en/latest/",
     "psutil.above_normal_priority_class": "https://psutil.readthedocs.io/en/latest/#psutil.ABOVE_NORMAL_PRIORITY_CLASS",

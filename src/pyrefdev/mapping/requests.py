@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.32.4"
 
+# fmt: off
 MAPPING = {
     "requests": "https://requests.readthedocs.io/en/latest/",
     "requests.adapters": "https://requests.readthedocs.io/en/latest/api/",

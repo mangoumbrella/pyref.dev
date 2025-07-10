@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2025.5.1"
 
+# fmt: off
 MAPPING = {
     "s3fs": "https://s3fs.readthedocs.io/en/latest/",
     "s3fs.core": "https://s3fs.readthedocs.io/en/latest/api.html",

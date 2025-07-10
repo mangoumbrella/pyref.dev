@@ -156,7 +156,12 @@ def _parse_package(
 
     console.print(f"Found {len(symbol_to_urls)} symbols in {package.pypi}")
     _heuristically_fillin_modules(package, symbol_to_urls)
-    lines = _create_symbols_map(symbol_to_urls)
+
+    lines = [
+        f'VERSION = "{crawl_state.package_version}"',
+        "",
+    ]
+    lines.extend(_create_symbols_map(symbol_to_urls))
     mapping_file = Path(mapping.__file__).parent / f"{package.pypi}.py"
     if in_place:
         mapping_file.write_text("\n".join(itertools.chain(lines, [""])))
@@ -175,6 +180,8 @@ def _parse_package(
 def _heuristically_fillin_modules(
     package: Package, symbol_to_urls: dict[str, str]
 ) -> None:
+    if package.is_cpython():
+        return
     extra_module_to_urls: dict[str, str] = {}
     for symbol in symbol_to_urls:
         if symbol in package.namespaces:
@@ -210,7 +217,6 @@ def _create_symbols_map(symbol_to_urls: dict[str, str]) -> list[str]:
 
     lines = [
         "# fmt: off",
-        "",
         "MAPPING = {",
     ]
     previous_symbol = None

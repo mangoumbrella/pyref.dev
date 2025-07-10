@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.19.2"
 
+# fmt: off
 MAPPING = {
     "pygments": "https://pygments.org/docs/api/",
     "pygments.format": "https://pygments.org/docs/api/#pygments.format",

@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.40.3"
 
+# fmt: off
 MAPPING = {
     "google.auth": "https://googleapis.dev/python/google-auth/latest/",
     "google.auth._credentials_async": "https://googleapis.dev/python/google-auth/latest/reference/google.auth._credentials_async.html",

@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.10.3"
 
+# fmt: off
 MAPPING = {
     "matplotlib": "https://matplotlib.org/stable/api/index.html",
     "matplotlib._afm": "https://matplotlib.org/stable/api/_afm_api.html",

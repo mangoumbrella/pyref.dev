@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.25.1"
 
+# fmt: off
 MAPPING = {
     "rpds": "https://rpds.readthedocs.io/en/latest/",
     "rpds.hashtriemap": "https://rpds.readthedocs.io/en/latest/api/#rpds.HashTrieMap",

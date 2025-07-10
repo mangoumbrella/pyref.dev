@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "0.3.9"
 
+# fmt: off
 MAPPING = {
     "distlib": "https://distlib.readthedocs.io/en/latest/",
     "distlib.database": "https://distlib.readthedocs.io/en/latest/reference.html",

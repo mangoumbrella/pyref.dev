@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "4.24.0"
 
+# fmt: off
 MAPPING = {
     "jsonschema": "https://python-jsonschema.readthedocs.io/en/stable/",
     "jsonschema._format": "https://python-jsonschema.readthedocs.io/en/stable/api/",

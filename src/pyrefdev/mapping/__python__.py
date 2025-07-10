@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.13.5"
 
+# fmt: off
 MAPPING = {
     "__abs__": "https://docs.python.org/3/reference/datamodel.html#object.__abs__",
     "__add__": "https://docs.python.org/3/reference/datamodel.html#object.__add__",

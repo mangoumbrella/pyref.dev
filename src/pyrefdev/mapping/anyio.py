@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "4.9.0"
 
+# fmt: off
 MAPPING = {
     "anyio": "https://anyio.readthedocs.io/en/stable/",
     "anyio.abc": "https://anyio.readthedocs.io/en/stable/api.html",

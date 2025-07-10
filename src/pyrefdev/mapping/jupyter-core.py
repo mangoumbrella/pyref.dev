@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "5.8.1"
 
+# fmt: off
 MAPPING = {
     "jupyter_core": "https://jupyter-core.readthedocs.io/en/latest/",
     "jupyter_core.application": "https://jupyter-core.readthedocs.io/en/latest/api/jupyter_core.html#module-jupyter_core.application",

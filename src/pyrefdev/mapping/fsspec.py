@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2025.5.1"
 
+# fmt: off
 MAPPING = {
     "fsspec": "https://filesystem-spec.readthedocs.io/en/latest/",
     "fsspec.archive": "https://filesystem-spec.readthedocs.io/en/latest/api.html",

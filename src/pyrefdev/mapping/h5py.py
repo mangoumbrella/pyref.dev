@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "3.14.0"
 
+# fmt: off
 MAPPING = {
     "h5py": "https://docs.h5py.org/en/stable/",
     "h5py.attributemanager": "https://docs.h5py.org/en/stable/high/attr.html#h5py.AttributeManager",

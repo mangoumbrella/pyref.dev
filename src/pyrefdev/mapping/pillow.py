@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "11.2.1"
 
+# fmt: off
 MAPPING = {
     "pil": "https://pillow.readthedocs.io/en/stable/",
     "pil._binary": "https://pillow.readthedocs.io/en/stable/reference/internal_modules.html#module-PIL._binary",

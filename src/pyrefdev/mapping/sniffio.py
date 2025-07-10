@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "1.3.1"
 
+# fmt: off
 MAPPING = {
     "sniffio": "https://sniffio.readthedocs.io/en/latest/",
     "sniffio.asynclibrarynotfounderror": "https://sniffio.readthedocs.io/en/latest/index.html#sniffio.AsyncLibraryNotFoundError",

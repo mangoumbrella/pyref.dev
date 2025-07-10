@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "6.31.1"
 
+# fmt: off
 MAPPING = {
     "google.protobuf": "https://googleapis.dev/python/protobuf/latest/",
     "google.protobuf.any_pb2": "https://googleapis.dev/python/protobuf/latest/google/protobuf/any_pb2.html",

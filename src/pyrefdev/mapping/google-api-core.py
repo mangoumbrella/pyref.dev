@@ -1,5 +1,6 @@
-# fmt: off
+VERSION = "2.25.1"
 
+# fmt: off
 MAPPING = {
     "google.api_core": "https://googleapis.dev/python/google-api-core/latest/",
     "google.api_core.client_info": "https://googleapis.dev/python/google-api-core/latest/client_info.html#module-google.api_core.client_info",

@@ -7,7 +7,7 @@ from fastapi.templating import Jinja2Templates
 import importlib.metadata
 from urllib import parse
 
-from pyrefdev.mapping import MAPPING, MAPPING_BY_PACKAGE
+from pyrefdev.mapping import MAPPING, PACKAGE_INFO_MAPPING
 
 
 app = FastAPI()
@@ -109,8 +109,8 @@ async def search_symbols(request: Request, symbol: str = "", lucky: bool = False
 
 
 def _pick_random_url() -> str:
-    package = random.choice(list(MAPPING_BY_PACKAGE))
-    return random.choice(list(MAPPING_BY_PACKAGE[package].values()))
+    package = random.choice(list(PACKAGE_INFO_MAPPING))
+    return random.choice(list(PACKAGE_INFO_MAPPING[package].mapping.values()))
 
 
 @app.get("/{symbol}")
