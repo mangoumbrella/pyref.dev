@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Fixed symbols for [ipython](https://ipython.readthedocs.io/en/stable/).
 - When no symbol is specified, the lucky button now redirects to a random API reference URL.
 
 ## v2025.7

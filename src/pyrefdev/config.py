@@ -113,7 +113,7 @@ _packages = [
     Package(pypi="coverage", index_url="https://coverage.readthedocs.io/en/latest/"),
     Package(pypi="matplotlib", index_url="https://matplotlib.org/stable/api/index.html"),
     Package(pypi="networkx", index_url="https://networkx.org/documentation/stable/reference/index.html"),
-    Package(pypi="ipython", index_url="https://ipython.readthedocs.io/en/stable/"),
+    Package(pypi="ipython", index_url="https://ipython.readthedocs.io/en/stable/", namespaces=["IPython"]),
     Package(pypi="httplib2", index_url="https://httplib2.readthedocs.io/en/latest/"),
     Package(pypi="cyclopts", index_url="https://cyclopts.readthedocs.io/en/latest/"),
     Package(pypi="yib", index_url="https://yib.readthedocs.io/en/latest/"),
