@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-Nothing noticeable unreleased.
+- When no symbol is specified, the lucky button now redirects to a random API reference URL.
 
 ## v2025.7
 

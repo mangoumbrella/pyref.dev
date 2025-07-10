@@ -5,6 +5,7 @@ from pyrefdev.config import console, SUPPORTED_PACKAGES
 
 def load_mapping(verify_duplicates: bool) -> dict[str, str]:
     mapping = {}
+    mapping_by_package = {}
     for package in SUPPORTED_PACKAGES:
         try:
             package_module = importlib.import_module(f"pyrefdev.mapping.{package}")
@@ -18,8 +19,9 @@ def load_mapping(verify_duplicates: bool) -> dict[str, str]:
                 raise RuntimeError(
                     f"Found duplicated entries from {package}: {','.join(duplicates)}"
                 )
-        mapping.update(getattr(package_module, "MAPPING"))
-    return mapping
+        mapping.update(package_mapping)
+        mapping_by_package[package] = package_mapping
+    return mapping, mapping_by_package
 
 
-MAPPING = load_mapping(verify_duplicates=False)
+MAPPING, MAPPING_BY_PACKAGE = load_mapping(verify_duplicates=False)

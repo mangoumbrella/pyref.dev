@@ -1,11 +1,13 @@
+import random
+
 from fastapi import FastAPI, Request
-from fastapi.responses import RedirectResponse, PlainTextResponse
+from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import importlib.metadata
 from urllib import parse
 
-from pyrefdev.mapping import MAPPING
+from pyrefdev.mapping import MAPPING, MAPPING_BY_PACKAGE
 
 
 app = FastAPI()
@@ -30,9 +32,12 @@ async def root(request: Request):
 @app.get("/is")
 async def search_symbols(request: Request, symbol: str = "", lucky: bool = False):
     if not symbol:
-        return templates.TemplateResponse(
-            "search.html", {"request": request, "symbol": "", "results": []}
-        )
+        if lucky:
+            return RedirectResponse(_pick_random_url())
+        else:
+            return templates.TemplateResponse(
+                "search.html", {"request": request, "symbol": "", "results": []}
+            )
 
     # Search by substring for now.
     results = []
@@ -101,6 +106,11 @@ async def search_symbols(request: Request, symbol: str = "", lucky: bool = False
     return templates.TemplateResponse(
         "search.html", {"request": request, "symbol": symbol, "results": results}
     )
+
+
+def _pick_random_url() -> str:
+    package = random.choice(list(MAPPING_BY_PACKAGE))
+    return random.choice(list(MAPPING_BY_PACKAGE[package].values()))
 
 
 @app.get("/{symbol}")
