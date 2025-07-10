@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Support [passlib](https://passlib.readthedocs.io/en/stable/).
 - Fixed symbols for [ipython](https://ipython.readthedocs.io/en/stable/).
 - When no symbol is specified, the lucky button now redirects to a random API reference URL.
 
