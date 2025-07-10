@@ -8,7 +8,7 @@ from packaging import version
 from pyrefdev.config import console, Package
 
 
-def urlopen(url: str) -> str:
+def urlopen(url: str):
     req = request.Request(
         url, method="GET", headers={"User-Agent": "https://pyref.dev"}
     )
@@ -26,13 +26,17 @@ def urlopen(url: str) -> str:
                 raise
 
 
+def fetch_pypi_json(package: str) -> dict:
+    with urlopen(f"https://pypi.org/pypi/{package}/json") as f:
+        content = f.read().decode("utf-8")
+    return json.loads(content)
+
+
 def fetch_package_version(package: Package) -> version.Version | None:
     if package.is_cpython():
         return _fetch_latest_cpython_version()
     try:
-        with urlopen(f"https://pypi.org/pypi/{package.pypi}/json") as f:
-            content = f.read().decode("utf-8")
-        pypi_info = json.loads(content)
+        pypi_info = fetch_pypi_json(package.pypi)
         return version.parse(pypi_info["info"]["version"])
     except error.URLError as e:
         console.warning(f"Failed to fetch pypi version for {package.pypi}, error: {e}")

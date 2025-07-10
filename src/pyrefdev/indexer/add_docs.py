@@ -4,6 +4,7 @@ import re
 
 from pyrefdev import config
 from pyrefdev.config import console
+from pyrefdev.indexer.requests import fetch_pypi_json, urlopen
 from pyrefdev.indexer.update_docs import update_docs
 from pyrefdev.indexer.update_landing_page import update_landing_page_with_packages
 
@@ -15,13 +16,16 @@ def add_docs(
     *,
     package: str,
     docs_directory: Path | None = None,
-    url: str,
+    url: str | None = None,
     namespaces: list[str] | None = None,
     crawl: bool = True,
     num_threads_per_package: int | None = None,
 ) -> None:
     if package in config.SUPPORTED_PACKAGES:
         console.fatal(f"Package exists: {package}")
+
+    if url is None:
+        url = _guess_index_url_or_die(package)
 
     if namespaces:
         ns_content = ", ".join(f'"{ns}"' for ns in namespaces)
@@ -42,3 +46,30 @@ def add_docs(
             num_threads_per_package=num_threads_per_package,
         )
         update_landing_page_with_packages(config.SUPPORTED_PACKAGES)
+
+
+_URL_PATTERN = re.compile(r"https?://([^\s/]+\.readthedocs\.io)\b")
+
+
+def _guess_index_url_or_die(package: str) -> str:
+    pypi_info = fetch_pypi_json(package).get("info", {})
+    project_urls = list(pypi_info.get("project_urls", {}).values())
+
+    readthedocs_urls = set()
+
+    for url in project_urls:
+        if match := _URL_PATTERN.match(url):
+            readthedocs_urls.add(f"https://{match.group(1)}")
+
+    if len(readthedocs_urls) == 1:
+        url = next(iter(readthedocs_urls))
+        with urlopen(url) as f:
+            url = f.url  # Maybe redirected URL.
+        return url
+    elif len(readthedocs_urls) == 0:
+        console.fatal(f"No readthedocs.io URLs found for package: {package}")
+    else:
+        console.fatal(
+            f"Multiple readthedocs.io URLs found for package: {package}. URLs:\n"
+            + "\n".join(readthedocs_urls)
+        )
