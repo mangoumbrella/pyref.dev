@@ -1,7 +1,6 @@
 from concurrent import futures
 from pathlib import Path
 import queue
-import tempfile
 import threading
 from urllib import error, parse
 
@@ -10,53 +9,45 @@ from packaging import version
 from rich.progress import Progress, TaskID
 
 from pyrefdev.config import console, get_packages, Package
-from pyrefdev.indexer.requests import fetch_package_version, urlopen
-from pyrefdev.indexer.schema import CrawlState
+from pyrefdev.indexer.index import Index, IndexState, urlopen
 
 
 def crawl_docs(
     *,
     package: str | None = None,
-    docs_directory: Path | None = None,
     force: bool = False,
+    index: Index = Index(),
     num_parallel_packages: int = 2,
-    num_threads_per_package: int | None = None,
+    num_threads_per_package: int = 1,
 ) -> None:
     """Crawl the docs into a local directory."""
     if num_parallel_packages <= 0:
         raise ValueError(
             f"--num-parallel-packages must be > 0, found {num_parallel_packages}"
         )
-    if num_threads_per_package is None:
-        num_threads_per_package = 2
     if num_threads_per_package <= 0:
         raise ValueError(
             f"--num-threads-per-package must be > 0, found {num_threads_per_package}"
         )
 
-    if docs_directory:
-        if docs_directory.exists():
-            if not docs_directory.is_dir():
-                console.fatal(f"{docs_directory} is not a directory")
-    else:
-        docs_directory = Path(tempfile.mkdtemp(prefix="pyref.dev."))
-
-    console.print(f"Crawling documents into {docs_directory}")
+    console.print(f"Crawling documents into {index.docs_directory}")
     packages = get_packages(package)
     with Progress(console=console) as progress:
         task = progress.add_task(
             f"Crawling {len(packages)} packages", total=len(packages)
         )
+
         def crawl_package(pkg: Package):
             try:
-                package_version = fetch_package_version(pkg)
+                package_version = index.fetch_package_version(pkg)
                 if package_version is None:
                     return
-                subdir = docs_directory / pkg.pypi
+                subdir = index.docs_directory / pkg.pypi
                 subdir.mkdir(parents=True, exist_ok=True)
-                crawl_state_file = docs_directory / f"{pkg.pypi}.json"
-                if not force and crawl_state_file.exists():
-                    crawl_state = CrawlState.loads(crawl_state_file.read_text())
+                if (
+                    not force
+                    and (crawl_state := index.load_crawl_state(pkg.pypi)) is not None
+                ):
                     crawled_version = version.parse(crawl_state.package_version)
                     if package_version > crawled_version:
                         console.print(
@@ -72,12 +63,12 @@ def crawl_docs(
                 crawler = _Crawler(
                     pkg,
                     progress,
-                    docs_directory / pkg.pypi,
+                    index.docs_directory / pkg.pypi,
                     pkg.index_url,
                     crawl_state,
                 )
                 crawler.crawl(num_threads=num_threads_per_package)
-                crawler.save_crawl_state(package_version, crawl_state_file)
+                crawler.save_crawl_state(package_version)
             finally:
                 progress.advance(task)
 
@@ -94,7 +85,7 @@ class _Crawler:
         progress: Progress,
         docs_directory: Path,
         root_url: str,
-        crawl_state: CrawlState | None,
+        crawl_state: IndexState | None,
     ):
         self._package = package
         self._progress = progress
@@ -162,18 +153,18 @@ class _Crawler:
                     ] = url
             self._crawl_state.failed_urls = failed_urls
 
-    def save_crawl_state(self, package_version: version.Version, output: Path) -> None:
+    def save_crawl_state(self, package_version: version.Version, index: Index) -> None:
         if (state := self._crawl_state) is None:
             file_to_urls = {
                 str(file.relative_to(self._docs_directory)): url
                 for url, file in self._crawled_url_to_files.items()
             }
-            state = CrawlState(
+            state = IndexState(
                 package_version=str(package_version),
                 file_to_urls=file_to_urls,
                 failed_urls=self._failed_urls,
             )
-        output.write_text(state.dumps())
+        index.save_crawl_state(self._package.pypi, state)
 
     def _crawl_thread(self, task: TaskID) -> None:
         while True:

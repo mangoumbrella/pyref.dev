@@ -1,15 +1,13 @@
 import json
-from pathlib import Path
 
 from rich.progress import track
 
 from pyrefdev.config import console
-from pyrefdev.indexer.requests import urlopen
+from pyrefdev.indexer.index import Index, urlopen
 
 
-def crawl_pypi(*, docs_directory: Path) -> None:
-    pypi_directory = docs_directory / "__pypi__"
-    pypi_directory.mkdir(parents=True, exist_ok=True)
+def crawl_pypi(*, refresh: bool = True, index: Index = Index()) -> None:
+    """Crawl top 15000 PyPI packages."""
     with urlopen(
         "https://hugovk.github.io/top-pypi-packages/top-pypi-packages.min.json"
     ) as f:
@@ -19,6 +17,4 @@ def crawl_pypi(*, docs_directory: Path) -> None:
         rows, description=f"Reading {len(rows)} packages", console=console
     ):
         package_name = row["project"]
-        with urlopen(f"https://pypi.org/pypi/{package_name}/json") as f:
-            data = f.read()
-        (pypi_directory / f"{package_name}.json").write_bytes(data)
+        index.fetch_pypi_data(package_name, refresh=refresh)

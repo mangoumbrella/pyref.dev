@@ -6,6 +6,7 @@ from pyrefdev.mapping import MAPPING
 
 
 def update_landing_page(file: Path | None = None) -> None:
+    """Update the landing page."""
     update_landing_page_with_packages(SUPPORTED_PACKAGES, file)
 
 

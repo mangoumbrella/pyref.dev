@@ -1,31 +1,29 @@
 import multiprocessing
-from pathlib import Path
-import tempfile
 
 from pyrefdev.indexer.crawl_docs import crawl_docs
+from pyrefdev.indexer.index import Index
 from pyrefdev.indexer.parse_docs import parse_docs
 
 
 def update_docs(
     *,
     package: str | None = None,
-    docs_directory: Path | None = None,
+    index: Index = Index(),
     force: bool = False,
     num_parallel_packages: int = multiprocessing.cpu_count(),
-    num_threads_per_package: int | None = None,
+    num_threads_per_package: int = 1,
 ) -> None:
-    if docs_directory is None:
-        docs_directory = Path(tempfile.mkdtemp(prefix="pyref.dev."))
+    """Crawl and parse docs."""
     crawl_docs(
         package=package,
-        docs_directory=docs_directory,
+        index=index,
         force=force,
         num_parallel_packages=num_parallel_packages,
         num_threads_per_package=num_threads_per_package,
     )
     parse_docs(
         package=package,
-        docs_directory=docs_directory,
+        index=index,
         in_place=True,
         num_parallel_packages=num_parallel_packages,
     )

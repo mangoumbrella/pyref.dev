@@ -15,7 +15,7 @@ from rich.progress import Progress
 
 from pyrefdev import mapping
 from pyrefdev.config import console, get_packages, Package
-from pyrefdev.indexer.schema import CrawlState
+from pyrefdev.indexer.index import Index, IndexState
 
 
 _STDLIB_MODULES_NAMES = frozenset({*sys.stdlib_module_names, "test"})
@@ -65,11 +65,12 @@ class ProgressExecutor(futures.ThreadPoolExecutor):
 def parse_docs(
     *,
     package: str | None = None,
-    docs_directory: Path,
     in_place: bool = False,
+    index: Index = Index(),
     num_parallel_packages: int = multiprocessing.cpu_count(),
     num_threads_per_package: int = multiprocessing.cpu_count(),
 ) -> None:
+    """Parse crawled docs and update the mapping files."""
     if sys.version_info[:2] != (3, 13):
         console.fatal("pyrefdev-indexer parse_docs must be run on Python 3.13.")
 
@@ -88,7 +89,7 @@ def parse_docs(
                 _parse_package,
                 executor.progress,
                 pkg,
-                docs_directory / pkg.pypi,
+                index.docs_directory / pkg.pypi,
                 in_place=in_place,
                 num_threads_per_package=num_threads_per_package,
             )
@@ -107,7 +108,7 @@ def _parse_package(
     num_threads_per_package: int,
 ) -> None:
     crawl_state_file = package_docs.parent / f"{package.pypi}.json"
-    crawl_state = CrawlState.loads(crawl_state_file.read_text())
+    crawl_state = IndexState.loads(crawl_state_file.read_text())
     file_and_urls: list[tuple[str, str]] = list(crawl_state.file_to_urls.items())
     if package.is_cpython():
         symbol_to_urls: dict[str, str] = _SPECIAL_SYMBOLS.copy()
