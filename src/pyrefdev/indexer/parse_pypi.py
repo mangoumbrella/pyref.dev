@@ -5,12 +5,10 @@ from pyrefdev.config import SUPPORTED_PACKAGES
 
 def parse_pypi(*, index: Index = Index()) -> None:
     """Parse PyPI data and add new packages to the config."""
-    packages = []
     for pypi in index.get_pypi_packages():
         if pypi in SUPPORTED_PACKAGES:
             continue
         url = index.guess_index_url(pypi, should_die_if_not_found=False)
         if url is None:
             continue
-        packages.append((pypi, url, None))
-    update_config(packages)
+        update_config(pypi, url, None)

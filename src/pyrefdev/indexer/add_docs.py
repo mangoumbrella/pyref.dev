@@ -27,7 +27,7 @@ def add_docs(
 
     if url is None:
         url = index.guess_index_url(package, should_die_if_not_found=True)
-    update_config([(package, url, namespaces)])
+    update_config(package, url, namespaces)
 
     if crawl:
         importlib.reload(config)
@@ -39,20 +39,14 @@ def add_docs(
         update_landing_page_with_packages(config.SUPPORTED_PACKAGES)
 
 
-def update_config(configs: list[tuple[str, str, list[str] | None]]) -> None:
-    config_entries = []
-    for package, url, namespaces in configs:
-        if namespaces:
-            ns_content = ", ".join(f'"{ns}"' for ns in namespaces)
-            ns_str = f", namespaces=[{ns_content}]"
-        else:
-            ns_str = ""
-        config_entries.append(
-            f'    Package(pypi="{package}"{ns_str}, index_url="{url}"),'
-        )
+def update_config(package: str, url: str, namespaces: list[str] | None = None) -> None:
+    if namespaces:
+        ns_content = ", ".join(f'"{ns}"' for ns in namespaces)
+        ns_str = f", namespaces=[{ns_content}]"
+    else:
+        ns_str = ""
+    config_entry = f'\n    Package(pypi="{package}"{ns_str}, index_url="{url}"),'
     config_file = Path(config.__file__)
     config_content = config_file.read_text()
-    config_content = _MARKER.sub(
-        "\n" + "\n".join(config_entries) + r"\g<1>", config_content
-    )
+    config_content = _MARKER.sub(config_entry + r"\g<1>", config_content)
     config_file.write_text(config_content)
