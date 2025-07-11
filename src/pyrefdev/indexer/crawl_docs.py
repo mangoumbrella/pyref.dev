@@ -42,8 +42,6 @@ def crawl_docs(
                 package_version = index.fetch_package_version(pkg)
                 if package_version is None:
                     return
-                subdir = index.docs_directory / pkg.pypi
-                subdir.mkdir(parents=True, exist_ok=True)
                 if (
                     not force
                     and (crawl_state := index.load_crawl_state(pkg.pypi)) is not None
@@ -63,7 +61,7 @@ def crawl_docs(
                 crawler = _Crawler(
                     pkg,
                     progress,
-                    index.docs_directory / pkg.pypi,
+                    index,
                     pkg.index_url,
                     crawl_state,
                 )
@@ -83,13 +81,13 @@ class _Crawler:
         self,
         package: Package,
         progress: Progress,
-        docs_directory: Path,
+        index: Index,
         root_url: str,
         crawl_state: IndexState | None,
     ):
         self._package = package
         self._progress = progress
-        self._docs_directory = docs_directory
+        self._docs_directory = index.docs_directory / package.pypi
         self._root_url = root_url
         self._prefix = (
             root_url

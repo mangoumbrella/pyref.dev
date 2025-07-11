@@ -15,7 +15,7 @@ from rich.progress import Progress
 
 from pyrefdev import mapping
 from pyrefdev.config import console, get_packages, Package
-from pyrefdev.indexer.index import Index, IndexState
+from pyrefdev.indexer.index import Index
 
 
 _STDLIB_MODULES_NAMES = frozenset({*sys.stdlib_module_names, "test"})
@@ -89,7 +89,7 @@ def parse_docs(
                 _parse_package,
                 executor.progress,
                 pkg,
-                index.docs_directory / pkg.pypi,
+                index,
                 in_place=in_place,
                 num_threads_per_package=num_threads_per_package,
             )
@@ -102,13 +102,13 @@ def parse_docs(
 def _parse_package(
     progress: Progress,
     package: Package,
-    package_docs: Path,
+    index: Index,
     *,
     in_place: bool,
     num_threads_per_package: int,
 ) -> None:
-    crawl_state_file = package_docs.parent / f"{package.pypi}.json"
-    crawl_state = IndexState.loads(crawl_state_file.read_text())
+    crawl_state = index.load_crawl_state(package.pypi)
+    assert crawl_state is not None, f"No crawl state for {package.pypi}"
     file_and_urls: list[tuple[str, str]] = list(crawl_state.file_to_urls.items())
     if package.is_cpython():
         symbol_to_urls: dict[str, str] = _SPECIAL_SYMBOLS.copy()
@@ -118,6 +118,7 @@ def _parse_package(
         }
     parser = _Parser(package)
     lock = threading.RLock()
+    package_docs = index.docs_directory / package.pypi
 
     def parse(file, url):
         if package.is_cpython:
