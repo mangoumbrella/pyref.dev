@@ -6,6 +6,7 @@ import subprocess
 import tempfile
 import time
 from pathlib import Path
+from typing import Literal, overload
 from urllib import error, request
 
 from packaging import version
@@ -98,6 +99,9 @@ class Index:
         pypi_data_file.write_bytes(data)
         return data
 
+    def get_pypi_packages(self) -> list[str]:
+        return list(f.stem for f in self.docs_directory.glob("__pypi__/*.json"))
+
     def fetch_package_version(self, package: Package) -> version.Version | None:
         if package.is_cpython():
             return _fetch_latest_cpython_version()
@@ -111,10 +115,16 @@ class Index:
             )
             return None
 
-    def guess_index_url_or_die(self, package: str) -> str:
+    @overload
+    def guess_index_url(
+        self, package: str, *, should_die_if_not_found: Literal[True]
+    ) -> str: ...
+    def guess_index_url(
+        self, package: str, *, should_die_if_not_found: bool
+    ) -> str | None:
         data = self.fetch_pypi_data(package, refresh=False)
         pypi_info = json.loads(data).get("info", {})
-        candidates = list(pypi_info.get("project_urls", {}).values())
+        candidates = list((pypi_info.get("project_urls") or {}).values())
         candidates.append(pypi_info.get("description", ""))
 
         readthedocs_urls = set()
@@ -125,13 +135,19 @@ class Index:
 
         if len(readthedocs_urls) == 1:
             url = next(iter(readthedocs_urls))
-            with urlopen(url) as f:
-                url = f.url  # Maybe redirected URL.
-            return url
-        elif len(readthedocs_urls) == 0:
-            console.fatal(f"No readthedocs.io URLs found for package: {package}")
+            try:
+                with urlopen(url) as f:
+                    url = f.url  # Maybe redirected URL.
+                return url
+            except error.URLError as e:
+                console.warning(f"Failed to fetch {url}, error: {e}")
+                readthedocs_urls = []
+
+        msg_fn = console.fatal if should_die_if_not_found else console.warning
+        if len(readthedocs_urls) == 0:
+            msg_fn(f"No readthedocs.io URLs found for package: {package}")
         else:
-            console.fatal(
+            msg_fn(
                 f"Multiple readthedocs.io URLs found for package: {package}. URLs:\n"
                 + "\n".join(readthedocs_urls)
             )

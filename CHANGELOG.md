@@ -7,6 +7,7 @@
 - When no symbol is specified, the lucky button now redirects to a random API reference URL.
 - Indexer: in the `add-docs` command, guess the API docs based on PyPI package information when `--index-url` is not specified.
 - Indexer: add a `crawl-pypi` command to cache the PyPI package information.
+- Indexer: add a `parse-pypi` command to parse cached PyPI package information and update the config when API docs are found.
 
 ## v2025.7
 
