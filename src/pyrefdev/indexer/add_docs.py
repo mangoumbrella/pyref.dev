@@ -1,10 +1,11 @@
 import importlib
+import json
 from pathlib import Path
 import re
 
 from pyrefdev import config
 from pyrefdev.config import console
-from pyrefdev.indexer.requests import fetch_pypi_json, urlopen
+from pyrefdev.indexer.requests import fetch_pypi_data, urlopen
 from pyrefdev.indexer.update_docs import update_docs
 from pyrefdev.indexer.update_landing_page import update_landing_page_with_packages
 
@@ -25,7 +26,7 @@ def add_docs(
         console.fatal(f"Package exists: {package}")
 
     if url is None:
-        url = _guess_index_url_or_die(package)
+        url = _guess_index_url_or_die(package, docs_directory)
 
     if namespaces:
         ns_content = ", ".join(f'"{ns}"' for ns in namespaces)
@@ -51,8 +52,13 @@ def add_docs(
 _URL_PATTERN = re.compile(r"https?://([^\s/]+\.readthedocs\.io)\b")
 
 
-def _guess_index_url_or_die(package: str) -> str:
-    pypi_info = fetch_pypi_json(package).get("info", {})
+def _guess_index_url_or_die(package: str, docs_directory: Path) -> str:
+    pypi_data_file = docs_directory / "__pypi__" / f"{package}.json"
+    if pypi_data_file.exists():
+        data = pypi_data_file.read_bytes()
+    else:
+        data = fetch_pypi_data(package)
+    pypi_info = json.loads(data).get("info", {})
     candidates = list(pypi_info.get("project_urls", {}).values())
     candidates.append(pypi_info.get("description", ""))
 

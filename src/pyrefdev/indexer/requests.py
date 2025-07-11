@@ -26,17 +26,17 @@ def urlopen(url: str):
                 raise
 
 
-def fetch_pypi_json(package: str) -> dict:
+def fetch_pypi_data(package: str) -> bytes:
     with urlopen(f"https://pypi.org/pypi/{package}/json") as f:
-        content = f.read().decode("utf-8")
-    return json.loads(content)
+        return f.read()
 
 
 def fetch_package_version(package: Package) -> version.Version | None:
     if package.is_cpython():
         return _fetch_latest_cpython_version()
     try:
-        pypi_info = fetch_pypi_json(package.pypi)
+        data = fetch_pypi_data(package.pypi)
+        pypi_info = json.loads(data)
         return version.parse(pypi_info["info"]["version"])
     except error.URLError as e:
         console.warning(f"Failed to fetch pypi version for {package.pypi}, error: {e}")
