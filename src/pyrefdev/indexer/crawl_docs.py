@@ -2,6 +2,7 @@ from concurrent import futures
 from pathlib import Path
 import queue
 import threading
+import time
 from urllib import error, parse
 
 import bs4
@@ -17,8 +18,9 @@ def crawl_docs(
     package: str | None = None,
     force: bool = False,
     index: Index = Index(),
-    num_parallel_packages: int = 2,
+    num_parallel_packages: int = 1,
     num_threads_per_package: int = 1,
+    seconds_to_sleep_between_requests: float = 1.0,
 ) -> None:
     """Crawl the docs into a local directory."""
     if num_parallel_packages <= 0:
@@ -64,6 +66,7 @@ def crawl_docs(
                     index,
                     pkg.index_url,
                     crawl_state,
+                    seconds_to_sleep_between_requests,
                 )
                 crawler.crawl(num_threads=num_threads_per_package)
                 crawler.save_crawl_state(package_version, index)
@@ -84,6 +87,7 @@ class _Crawler:
         index: Index,
         root_url: str,
         crawl_state: IndexState | None,
+        seconds_to_sleep_between_requests: float,
     ):
         self._package = package
         self._progress = progress
@@ -94,6 +98,7 @@ class _Crawler:
             if root_url.endswith("/")
             else root_url.rsplit("/", maxsplit=1)[0] + "/"
         )
+        self._seconds_to_sleep_between_requests = seconds_to_sleep_between_requests
 
         self._seen_urls: set[str] = set()
         self._to_crawl_queue: queue.Queue[str] = queue.Queue()
@@ -184,6 +189,7 @@ class _Crawler:
         try:
             with urlopen(url) as f:
                 content = f.read().decode("utf-8", "backslashreplace")
+            time.sleep(self._seconds_to_sleep_between_requests)
         except error.URLError as e:
             console.warning(f"Failed to fetch url {url}, error: {e}")
             self._failed_urls.append(url)
