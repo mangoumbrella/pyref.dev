@@ -66,7 +66,7 @@ def crawl_docs(
                     crawl_state,
                 )
                 crawler.crawl(num_threads=num_threads_per_package)
-                crawler.save_crawl_state(package_version)
+                crawler.save_crawl_state(package_version, index)
             finally:
                 progress.advance(task)
 
