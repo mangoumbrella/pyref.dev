@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+Nothing noticeable unreleased.
+
+## v2025.8
+
 - When no symbol is specified, the lucky button now redirects to a random API reference URL.
 - Support [passlib](https://passlib.readthedocs.io/en/stable/).
 - Updated certain torch URLs with more detailed docs.
