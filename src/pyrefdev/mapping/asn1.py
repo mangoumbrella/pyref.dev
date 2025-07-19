@@ -1,0 +1,30 @@
+VERSION = "3.1.0"
+
+# fmt: off
+MAPPING = {
+    "asn1": "https://python-asn1.readthedocs.io/en/latest/",
+    "asn1.classes": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Classes",
+    "asn1.decoder": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Decoder",
+    "asn1.decoder.enter": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Decoder.enter",
+    "asn1.decoder.eof": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Decoder.eof",
+    "asn1.decoder.leave": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Decoder.leave",
+    "asn1.decoder.peek": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Decoder.peek",
+    "asn1.decoder.read": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Decoder.read",
+    "asn1.decoder.start": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Decoder.start",
+    "asn1.encoder": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Encoder",
+    "asn1.encoder.construct": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Encoder.construct",
+    "asn1.encoder.enter": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Encoder.enter",
+    "asn1.encoder.leave": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Encoder.leave",
+    "asn1.encoder.output": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Encoder.output",
+    "asn1.encoder.start": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Encoder.start",
+    "asn1.encoder.write": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Encoder.write",
+    "asn1.encoding": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Encoding",
+    "asn1.error": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Error",
+    "asn1.numbers": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Numbers",
+    "asn1.readflags": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.ReadFlags",
+    "asn1.tag": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Tag",
+    "asn1.tag.cls": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Tag.cls",
+    "asn1.tag.nr": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Tag.nr",
+    "asn1.tag.typ": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Tag.typ",
+    "asn1.types": "https://python-asn1.readthedocs.io/en/latest/reference/asn1.html#asn1.Types",
+}

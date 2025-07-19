@@ -2,7 +2,27 @@
 
 ## [Unreleased]
 
+- Support [alabaster](https://alabaster.readthedocs.io/en/latest/).
+- Support [androguard](https://androguard.readthedocs.io/en/latest/).
+- Support [asn1](https://python-asn1.readthedocs.io/en/latest/).
+- Support [asyncstdlib](https://asyncstdlib.readthedocs.io/en/stable/).
+- Support [bidict](https://bidict.readthedocs.io/en/main/).
+- Support [breathe](https://breathe.readthedocs.io/en/latest/).
+- Support [django-appconf](https://django-appconf.readthedocs.io/en/latest/).
+- Support [django-compressor](https://django-compressor.readthedocs.io/en/stable/).
+- Support [django-otp](https://django-otp-official.readthedocs.io/en/stable/).
+- Support [django-phonenumber-field](https://django-phonenumber-field.readthedocs.io/en/latest/).
+- Support [django-tables2](https://django-tables2.readthedocs.io/en/latest/).
+- Support [djangorestframework-simplejwt](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/).
+- Support [domdf-python-tools](https://domdf-python-tools.readthedocs.io/en/latest/).
 - Support [jax](https://docs.jax.dev/en/latest/jax.html).
+- Support [path](https://path.readthedocs.io/en/latest/).
+- Support [pikepdf](https://pikepdf.readthedocs.io/en/latest/).
+- Support [prompt-toolkit](https://python-prompt-toolkit.readthedocs.io/en/latest/).
+- Support [pydeequ](https://pydeequ.readthedocs.io/en/latest/).
+- Support [python-gitlab](https://python-gitlab.readthedocs.io/en/stable/).
+- Support [sigtools](https://sigtools.readthedocs.io/en/stable/).
+- Support [sounddevice](https://python-sounddevice.readthedocs.io/en/latest/).
 - Indexer: by default, only crawl and parse new packages.
 - Indexer: by default, sleep for 1 second between requests during crawl.
 
