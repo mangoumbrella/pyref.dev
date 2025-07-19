@@ -8,7 +8,7 @@ from pathlib import Path
 import re
 import sys
 import threading
-from urllib import parse
+from urllib.parse import urlparse, urlunparse
 
 import bs4
 from rich.progress import Progress
@@ -172,8 +172,13 @@ def _parse_package(
             before = mapping_file.read_text().splitlines(keepends=True)
         else:
             before = []
-        diffs = difflib.unified_diff(
-            before, [line + "\n" for line in lines], fromfile="before", tofile="after"
+        diffs = list(
+            difflib.unified_diff(
+                before,
+                [line + "\n" for line in lines],
+                fromfile="before",
+                tofile="after",
+            )
         )
         if diffs:
             console.print("".join(diffs))
@@ -209,7 +214,7 @@ def _heuristically_fillin_modules(
 
 
 def _remove_fragment(url: str) -> str:
-    return parse.urlunparse(parse.urlparse(url)._replace(fragment=""))
+    return urlunparse(urlparse(url)._replace(fragment=""))
 
 
 def _create_symbols_map(symbol_to_urls: dict[str, str]) -> list[str]:
