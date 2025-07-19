@@ -12,6 +12,7 @@ from urllib import error, request
 from packaging import version
 from cyclopts import Parameter
 
+from pyrefdev import __version__
 from pyrefdev.config import Package, console
 
 
@@ -20,7 +21,9 @@ _RTD_URL_PATTERN = re.compile(r"https?://([^\s/]+\.readthedocs\.io)\b")
 
 def urlopen(url: str):
     req = request.Request(
-        url, method="GET", headers={"User-Agent": "https://pyref.dev"}
+        url,
+        method="GET",
+        headers={"User-Agent": f"pyrefdev/{__version__} (+https://pyref.dev)"},
     )
     backoffs = [1, 2, 5, 15, 30, 60]
     while True:
