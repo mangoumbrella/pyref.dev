@@ -2,9 +2,10 @@
 
 ## [Unreleased]
 
-- Support [passlib](https://passlib.readthedocs.io/en/stable/).
-- Fixed symbols for [ipython](https://ipython.readthedocs.io/en/stable/).
 - When no symbol is specified, the lucky button now redirects to a random API reference URL.
+- Support [passlib](https://passlib.readthedocs.io/en/stable/).
+- Updated certain torch URLs with more detailed docs.
+- Fixed symbols for [ipython](https://ipython.readthedocs.io/en/stable/).
 - Indexer: in the `add-docs` command, guess the API docs based on PyPI package information when `--index-url` is not specified.
 - Indexer: add a `crawl-pypi` command to cache the PyPI package information.
 - Indexer: add a `parse-pypi` command to parse cached PyPI package information and update the config when API docs are found.

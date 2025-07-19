@@ -135,15 +135,16 @@ def _parse_package(
         )
         for symbol, fragment in symbols.items():
             with lock:
-                if symbol not in symbol_to_urls:
-                    if (
-                        fragment.startswith(_MODULE_FRAGMENT_PREFIX)
-                        and module_count == 1
-                    ):
-                        # This page contains a single module, let's redirect to this page without the anchor.
-                        symbol_to_urls[symbol] = f"{url}"
-                    else:
-                        symbol_to_urls[symbol] = f"{url}#{fragment}"
+                if (existing_url := symbol_to_urls.get(symbol)) and (
+                    # More components take precedence.
+                    existing_url.count("/") >= url.count("/")
+                ):
+                    continue
+                if fragment.startswith(_MODULE_FRAGMENT_PREFIX) and module_count == 1:
+                    # This page contains a single module, let's redirect to this page without the anchor.
+                    symbol_to_urls[symbol] = f"{url}"
+                else:
+                    symbol_to_urls[symbol] = f"{url}#{fragment}"
 
     with ProgressExecutor(
         f"Parsing {len(file_and_urls)} files for {package_docs}",
