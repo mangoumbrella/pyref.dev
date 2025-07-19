@@ -118,6 +118,7 @@ _packages = [
     Package(pypi="cyclopts", index_url="https://cyclopts.readthedocs.io/en/latest/"),
     Package(pypi="yib", index_url="https://yib.readthedocs.io/en/latest/"),
     Package(pypi="passlib", index_url="https://passlib.readthedocs.io/en/stable/"),
+    Package(pypi="jax", index_url="https://docs.jax.dev/en/latest/jax.html"),
     # ENTRY-LINE-MARKER
 ]
 # fmt: on
