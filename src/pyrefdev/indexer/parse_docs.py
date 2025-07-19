@@ -66,6 +66,7 @@ def parse_docs(
     *,
     package: str | None = None,
     in_place: bool = False,
+    reparse_all: bool = False,
     index: Index = Index(),
     num_parallel_packages: int = multiprocessing.cpu_count(),
     num_threads_per_package: int = multiprocessing.cpu_count(),
@@ -75,6 +76,11 @@ def parse_docs(
         console.fatal("pyrefdev-indexer parse_docs must be run on Python 3.13.")
 
     packages = get_packages(package)
+    if not reparse_all:
+        packages = [
+            pkg for pkg in packages if pkg.pypi not in mapping.PACKAGE_INFO_MAPPING
+        ]
+
     with (
         Progress(console=console) as progress,
         ProgressExecutor(

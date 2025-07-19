@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - Support [jax](https://docs.jax.dev/en/latest/jax.html).
+- Indexer: by default, only crawl and parse new packages.
 - Indexer: by default, sleep for 1 second between requests during crawl.
 
 ## v2025.8

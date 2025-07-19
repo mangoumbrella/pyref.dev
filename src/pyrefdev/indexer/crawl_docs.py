@@ -16,7 +16,8 @@ from pyrefdev.indexer.index import Index, IndexState, urlopen
 def crawl_docs(
     *,
     package: str | None = None,
-    force: bool = False,
+    upgrade: bool = False,
+    retry_failed_urls: bool = False,
     index: Index = Index(),
     num_parallel_packages: int = 1,
     num_threads_per_package: int = 1,
@@ -34,6 +35,9 @@ def crawl_docs(
 
     console.print(f"Crawling documents into {index.docs_directory}")
     packages = get_packages(package)
+    if not upgrade and not retry_failed_urls:
+        packages = [pkg for pkg in packages if index.load_crawl_state(pkg.pypi) is None]
+
     with Progress(console=console) as progress:
         task = progress.add_task(
             f"Crawling {len(packages)} packages", total=len(packages)
@@ -44,19 +48,17 @@ def crawl_docs(
                 package_version = index.fetch_package_version(pkg)
                 if package_version is None:
                     return
-                if (
-                    not force
-                    and (crawl_state := index.load_crawl_state(pkg.pypi)) is not None
-                ):
+                crawl_state = index.load_crawl_state(pkg.pypi)
+                if crawl_state is not None:
                     crawled_version = version.parse(crawl_state.package_version)
-                    if package_version > crawled_version:
+                    if upgrade and package_version > crawled_version:
                         console.print(
-                            f"{pkg} upgraded from {crawl_state.package_version} to {package_version!s}"
+                            f"{pkg.pypi} upgraded from {crawl_state.package_version} to {package_version!s}"
                         )
                         crawl_state = None
                     elif package_version < crawled_version:
                         console.warning(
-                            f"{pkg}'s latest version {package_version!s} is older than previously crawled {crawl_state.package_version}"
+                            f"{pkg.pypi}'s latest version {package_version!s} is older than previously crawled {crawl_state.package_version}"
                         )
                 else:
                     crawl_state = None
