@@ -193,11 +193,12 @@ class _Crawler:
                 content = f.read().decode("utf-8", "backslashreplace")
             time.sleep(self._seconds_to_sleep_between_requests)
         except error.URLError as e:
+            # TODO: Save HTTP error code.
             console.warning(f"Failed to fetch url {url}, error: {e}")
             self._failed_urls.append(url)
             return None
-        except TimeoutError as e:
-            console.warning(f"Timed out fetching url {url}, error: {e}")
+        except Exception as e:
+            console.warning(f"Failed to fetch url {url}, error: {e}")
             self._failed_urls.append(url)
             return None
         maybe_redirected_url = f.url
