@@ -196,6 +196,10 @@ class _Crawler:
             console.warning(f"Failed to fetch url {url}, error: {e}")
             self._failed_urls.append(url)
             return None
+        except TimeoutError as e:
+            console.warning(f"Timed out fetching url {url}, error: {e}")
+            self._failed_urls.append(url)
+            return None
         maybe_redirected_url = f.url
         if maybe_redirected_url != url and not self._should_crawl(maybe_redirected_url):
             return None

@@ -37,6 +37,11 @@ def urlopen(url: str):
                 time.sleep(backoff)
             else:
                 raise
+        except TimeoutError:
+            if not backoffs:
+                raise
+            backoff = backoffs.pop(0) * (0.9 + random.random() / 5.0)
+            time.sleep(backoff)
 
 
 @dataclasses.dataclass
