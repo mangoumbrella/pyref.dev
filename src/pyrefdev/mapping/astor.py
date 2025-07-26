@@ -1,0 +1,31 @@
+VERSION = "0.8.1"
+
+# fmt: off
+MAPPING = {
+    "astor": "https://astor.readthedocs.io/en/latest/",
+    "astor.astor": "https://astor.readthedocs.io/en/latest/index.html",
+    "astor.astor.code_to_ast": "https://astor.readthedocs.io/en/latest/index.html",
+    "astor.astor.code_to_ast.find_py_files": "https://astor.readthedocs.io/en/latest/index.html#astor.astor.code_to_ast.find_py_files",
+    "astor.astor.code_to_ast.get_file_info": "https://astor.readthedocs.io/en/latest/index.html#astor.astor.code_to_ast.get_file_info",
+    "astor.astor.code_to_ast.parse_file": "https://astor.readthedocs.io/en/latest/index.html#astor.astor.code_to_ast.parse_file",
+    "astor.astor.parse_file": "https://astor.readthedocs.io/en/latest/index.html#astor.astor.parse_file",
+    "astor.astor.parsefile": "https://astor.readthedocs.io/en/latest/index.html#astor.astor.parsefile",
+    "astor.code_to_ast": "https://astor.readthedocs.io/en/latest/index.html#astor.code_to_ast",
+    "astor.codetoast": "https://astor.readthedocs.io/en/latest/index.html#astor.codetoast",
+    "astor.dump": "https://astor.readthedocs.io/en/latest/index.html#astor.dump",
+    "astor.dump_tree": "https://astor.readthedocs.io/en/latest/index.html#astor.dump_tree",
+    "astor.file_util": "https://astor.readthedocs.io/en/latest/index.html",
+    "astor.file_util.codetoast": "https://astor.readthedocs.io/en/latest/index.html#astor.file_util.CodeToAst",
+    "astor.get_anyop": "https://astor.readthedocs.io/en/latest/index.html#astor.get_anyop",
+    "astor.get_binop": "https://astor.readthedocs.io/en/latest/index.html#astor.get_binop",
+    "astor.get_boolop": "https://astor.readthedocs.io/en/latest/index.html#astor.get_boolop",
+    "astor.get_cmpop": "https://astor.readthedocs.io/en/latest/index.html#astor.get_cmpop",
+    "astor.get_op_symbol": "https://astor.readthedocs.io/en/latest/index.html#astor.get_op_symbol",
+    "astor.get_unaryop": "https://astor.readthedocs.io/en/latest/index.html#astor.get_unaryop",
+    "astor.iter_node": "https://astor.readthedocs.io/en/latest/index.html#astor.iter_node",
+    "astor.node_util": "https://astor.readthedocs.io/en/latest/index.html",
+    "astor.node_util.explicitnodevisitor": "https://astor.readthedocs.io/en/latest/index.html#astor.node_util.ExplicitNodeVisitor",
+    "astor.strip_tree": "https://astor.readthedocs.io/en/latest/index.html#astor.strip_tree",
+    "astor.tree_walk": "https://astor.readthedocs.io/en/latest/index.html",
+    "astor.tree_walk.treewalk": "https://astor.readthedocs.io/en/latest/index.html#astor.tree_walk.TreeWalk",
+}

@@ -1,0 +1,30 @@
+VERSION = "0.18.0"
+
+# fmt: off
+MAPPING = {
+    "prettyprinter": "https://prettyprinter.readthedocs.io/en/latest/",
+    "prettyprinter.comment": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.comment",
+    "prettyprinter.cpprint": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.cpprint",
+    "prettyprinter.default_render_to_stream": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.default_render_to_stream",
+    "prettyprinter.get_default_config": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.get_default_config",
+    "prettyprinter.install_extras": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.install_extras",
+    "prettyprinter.isreadable": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.isreadable",
+    "prettyprinter.isrecursive": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.isrecursive",
+    "prettyprinter.pformat": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.pformat",
+    "prettyprinter.pprint": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.pprint",
+    "prettyprinter.pretty_call": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.pretty_call",
+    "prettyprinter.pretty_call_alt": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.pretty_call_alt",
+    "prettyprinter.pretty_repr": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.pretty_repr",
+    "prettyprinter.prettyprinter": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.PrettyPrinter",
+    "prettyprinter.prettyprinter.format": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.PrettyPrinter.format",
+    "prettyprinter.prettyprinter.isreadable": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.PrettyPrinter.isreadable",
+    "prettyprinter.prettyprinter.isrecursive": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.PrettyPrinter.isrecursive",
+    "prettyprinter.prettyprinter.pformat": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.PrettyPrinter.pformat",
+    "prettyprinter.prettyprinter.pprint": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.PrettyPrinter.pprint",
+    "prettyprinter.python_to_sdocs": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.python_to_sdocs",
+    "prettyprinter.register_pretty": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.register_pretty",
+    "prettyprinter.saferepr": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.saferepr",
+    "prettyprinter.set_default_config": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.set_default_config",
+    "prettyprinter.set_default_style": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.set_default_style",
+    "prettyprinter.trailing_comment": "https://prettyprinter.readthedocs.io/en/latest/api_reference.html#prettyprinter.trailing_comment",
+}

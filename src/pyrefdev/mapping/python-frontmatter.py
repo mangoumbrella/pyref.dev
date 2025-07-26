@@ -1,0 +1,31 @@
+VERSION = "1.1.0"
+
+# fmt: off
+MAPPING = {
+    "frontmatter": "https://python-frontmatter.readthedocs.io/en/latest/",
+    "frontmatter.check": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.check",
+    "frontmatter.checks": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.checks",
+    "frontmatter.default_handlers": "https://python-frontmatter.readthedocs.io/en/latest/handlers.html",
+    "frontmatter.default_handlers.basehandler": "https://python-frontmatter.readthedocs.io/en/latest/handlers.html#frontmatter.default_handlers.BaseHandler",
+    "frontmatter.default_handlers.basehandler.detect": "https://python-frontmatter.readthedocs.io/en/latest/handlers.html#frontmatter.default_handlers.BaseHandler.detect",
+    "frontmatter.default_handlers.basehandler.export": "https://python-frontmatter.readthedocs.io/en/latest/handlers.html#frontmatter.default_handlers.BaseHandler.export",
+    "frontmatter.default_handlers.basehandler.format": "https://python-frontmatter.readthedocs.io/en/latest/handlers.html#frontmatter.default_handlers.BaseHandler.format",
+    "frontmatter.default_handlers.basehandler.load": "https://python-frontmatter.readthedocs.io/en/latest/handlers.html#frontmatter.default_handlers.BaseHandler.load",
+    "frontmatter.default_handlers.basehandler.split": "https://python-frontmatter.readthedocs.io/en/latest/handlers.html#frontmatter.default_handlers.BaseHandler.split",
+    "frontmatter.default_handlers.jsonhandler": "https://python-frontmatter.readthedocs.io/en/latest/handlers.html#frontmatter.default_handlers.JSONHandler",
+    "frontmatter.default_handlers.tomlhandler": "https://python-frontmatter.readthedocs.io/en/latest/handlers.html#frontmatter.default_handlers.TOMLHandler",
+    "frontmatter.default_handlers.yamlhandler": "https://python-frontmatter.readthedocs.io/en/latest/handlers.html#frontmatter.default_handlers.YAMLHandler",
+    "frontmatter.dump": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.dump",
+    "frontmatter.dumps": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.dumps",
+    "frontmatter.load": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.load",
+    "frontmatter.loads": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.loads",
+    "frontmatter.parse": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.parse",
+    "frontmatter.post": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.Post",
+    "frontmatter.post.__delitem__": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.Post.__delitem__",
+    "frontmatter.post.__getitem__": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.Post.__getitem__",
+    "frontmatter.post.__setitem__": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.Post.__setitem__",
+    "frontmatter.post.get": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.Post.get",
+    "frontmatter.post.keys": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.Post.keys",
+    "frontmatter.post.to_dict": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.Post.to_dict",
+    "frontmatter.post.values": "https://python-frontmatter.readthedocs.io/en/latest/api.html#frontmatter.Post.values",
+}

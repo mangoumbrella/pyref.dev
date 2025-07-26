@@ -1,0 +1,30 @@
+VERSION = "1.3.0"
+
+# fmt: off
+MAPPING = {
+    "pytest_flake8": "https://pytest-flake8.readthedocs.io/en/latest/",
+    "pytest_flake8.check_file": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.check_file",
+    "pytest_flake8.flake8error": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8Error",
+    "pytest_flake8.flake8file": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8File",
+    "pytest_flake8.flake8file.collect": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8File.collect",
+    "pytest_flake8.flake8file.config": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8File.config",
+    "pytest_flake8.flake8file.name": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8File.name",
+    "pytest_flake8.flake8file.parent": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8File.parent",
+    "pytest_flake8.flake8file.path": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8File.path",
+    "pytest_flake8.flake8file.session": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8File.session",
+    "pytest_flake8.flake8item": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8Item",
+    "pytest_flake8.flake8item.config": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8Item.config",
+    "pytest_flake8.flake8item.name": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8Item.name",
+    "pytest_flake8.flake8item.parent": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8Item.parent",
+    "pytest_flake8.flake8item.path": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8Item.path",
+    "pytest_flake8.flake8item.reportinfo": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8Item.reportinfo",
+    "pytest_flake8.flake8item.repr_failure": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8Item.repr_failure",
+    "pytest_flake8.flake8item.runtest": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8Item.runtest",
+    "pytest_flake8.flake8item.session": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8Item.session",
+    "pytest_flake8.flake8item.setup": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Flake8Item.setup",
+    "pytest_flake8.ignorer": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.Ignorer",
+    "pytest_flake8.pytest_addoption": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.pytest_addoption",
+    "pytest_flake8.pytest_collect_file": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.pytest_collect_file",
+    "pytest_flake8.pytest_configure": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.pytest_configure",
+    "pytest_flake8.pytest_unconfigure": "https://pytest-flake8.readthedocs.io/en/latest/index.html#pytest_flake8.pytest_unconfigure",
+}

@@ -1,0 +1,32 @@
+VERSION = "0.7.3"
+
+# fmt: off
+MAPPING = {
+    "loguru": "https://loguru.readthedocs.io/en/stable/",
+    "loguru._logger": "https://loguru.readthedocs.io/en/stable/api/logger.html",
+    "loguru._logger.logger": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger",
+    "loguru._logger.logger.add": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.add",
+    "loguru._logger.logger.bind": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.bind",
+    "loguru._logger.logger.catch": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.catch",
+    "loguru._logger.logger.complete": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.complete",
+    "loguru._logger.logger.configure": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.configure",
+    "loguru._logger.logger.contextualize": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.contextualize",
+    "loguru._logger.logger.critical": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.critical",
+    "loguru._logger.logger.debug": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.debug",
+    "loguru._logger.logger.disable": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.disable",
+    "loguru._logger.logger.enable": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.enable",
+    "loguru._logger.logger.error": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.error",
+    "loguru._logger.logger.exception": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.exception",
+    "loguru._logger.logger.info": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.info",
+    "loguru._logger.logger.level": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.level",
+    "loguru._logger.logger.log": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.log",
+    "loguru._logger.logger.opt": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.opt",
+    "loguru._logger.logger.parse": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.parse",
+    "loguru._logger.logger.patch": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.patch",
+    "loguru._logger.logger.remove": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.remove",
+    "loguru._logger.logger.start": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.start",
+    "loguru._logger.logger.stop": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.stop",
+    "loguru._logger.logger.success": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.success",
+    "loguru._logger.logger.trace": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.trace",
+    "loguru._logger.logger.warning": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.warning",
+}

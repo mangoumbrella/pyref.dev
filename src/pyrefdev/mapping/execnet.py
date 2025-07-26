@@ -1,0 +1,30 @@
+VERSION = "2.1.1"
+
+# fmt: off
+MAPPING = {
+    "execnet": "https://execnet.readthedocs.io/en/latest/",
+    "execnet.dumps": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.dumps",
+    "execnet.gateway": "https://execnet.readthedocs.io/en/latest/basics.html",
+    "execnet.gateway.gateway": "https://execnet.readthedocs.io/en/latest/basics.html",
+    "execnet.gateway.gateway.reconfigure": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.gateway.Gateway.reconfigure",
+    "execnet.gateway.gateway.remote_exec": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.gateway.Gateway.remote_exec",
+    "execnet.gateway.gateway.remote_status": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.gateway.Gateway.remote_status",
+    "execnet.gateway_base": "https://execnet.readthedocs.io/en/latest/basics.html",
+    "execnet.gateway_base.channel": "https://execnet.readthedocs.io/en/latest/basics.html",
+    "execnet.gateway_base.channel.close": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.gateway_base.Channel.close",
+    "execnet.gateway_base.channel.makefile": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.gateway_base.Channel.makefile",
+    "execnet.gateway_base.channel.receive": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.gateway_base.Channel.receive",
+    "execnet.gateway_base.channel.remoteerror": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.gateway_base.Channel.RemoteError",
+    "execnet.gateway_base.channel.send": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.gateway_base.Channel.send",
+    "execnet.gateway_base.channel.setcallback": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.gateway_base.Channel.setcallback",
+    "execnet.gateway_base.channel.timeouterror": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.gateway_base.Channel.TimeoutError",
+    "execnet.gateway_base.channel.waitclose": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.gateway_base.Channel.waitclose",
+    "execnet.loads": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.loads",
+    "execnet.makegateway": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.makegateway",
+    "execnet.multi": "https://execnet.readthedocs.io/en/latest/basics.html",
+    "execnet.multi.group": "https://execnet.readthedocs.io/en/latest/basics.html",
+    "execnet.multi.group.terminate": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.multi.Group.terminate",
+    "execnet.rsync": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.RSync",
+    "execnet.rsync.add_target": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.RSync.add_target",
+    "execnet.rsync.send": "https://execnet.readthedocs.io/en/latest/basics.html#execnet.RSync.send",
+}

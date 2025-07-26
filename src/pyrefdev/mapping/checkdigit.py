@@ -1,0 +1,30 @@
+VERSION = "0.5.0"
+
+# fmt: off
+MAPPING = {
+    "checkdigit": "https://checkdigit.readthedocs.io/en/latest/",
+    "checkdigit.crc": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.crc.html",
+    "checkdigit.crc.calculate": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.crc.calculate.html#checkdigit.crc.calculate",
+    "checkdigit.crc.missing": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.crc.missing.html#checkdigit.crc.missing",
+    "checkdigit.crc.validate": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.crc.validate.html#checkdigit.crc.validate",
+    "checkdigit.gs1": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.gs1.html",
+    "checkdigit.gs1.calculate": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.gs1.calculate.html#checkdigit.gs1.calculate",
+    "checkdigit.gs1.missing": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.gs1.missing.html#checkdigit.gs1.missing",
+    "checkdigit.gs1.validate": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.gs1.validate.html#checkdigit.gs1.validate",
+    "checkdigit.isbn": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.isbn.html",
+    "checkdigit.isbn.calculate": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.isbn.calculate.html#checkdigit.isbn.calculate",
+    "checkdigit.isbn.missing": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.isbn.missing.html#checkdigit.isbn.missing",
+    "checkdigit.isbn.validate": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.isbn.validate.html#checkdigit.isbn.validate",
+    "checkdigit.luhn": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.luhn.html",
+    "checkdigit.luhn.calculate": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.luhn.calculate.html#checkdigit.luhn.calculate",
+    "checkdigit.luhn.missing": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.luhn.missing.html#checkdigit.luhn.missing",
+    "checkdigit.luhn.validate": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.luhn.validate.html#checkdigit.luhn.validate",
+    "checkdigit.parity": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.parity.html",
+    "checkdigit.parity.calculate": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.parity.calculate.html#checkdigit.parity.calculate",
+    "checkdigit.parity.missing": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.parity.missing.html#checkdigit.parity.missing",
+    "checkdigit.parity.validate": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.parity.validate.html#checkdigit.parity.validate",
+    "checkdigit.verhoeff": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.verhoeff.html",
+    "checkdigit.verhoeff.calculate": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.verhoeff.calculate.html#checkdigit.verhoeff.calculate",
+    "checkdigit.verhoeff.missing": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.verhoeff.missing.html#checkdigit.verhoeff.missing",
+    "checkdigit.verhoeff.validate": "https://checkdigit.readthedocs.io/en/latest/_autosummary/checkdigit.verhoeff.validate.html#checkdigit.verhoeff.validate",
+}

@@ -1,0 +1,31 @@
+VERSION = "1.0.1"
+
+# fmt: off
+MAPPING = {
+    "backoff_utils": "https://backoff-utils.readthedocs.io/en/latest/",
+    "backoff_utils._backoff": "https://backoff-utils.readthedocs.io/en/latest/api.html",
+    "backoff_utils._backoff.backoff": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils._backoff.backoff",
+    "backoff_utils._decorator": "https://backoff-utils.readthedocs.io/en/latest/api.html",
+    "backoff_utils._decorator.apply_backoff": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils._decorator.apply_backoff",
+    "backoff_utils.strategies": "https://backoff-utils.readthedocs.io/en/latest/api.html",
+    "backoff_utils.strategies.attempt": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.attempt",
+    "backoff_utils.strategies.backoffstrategy": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.BackoffStrategy",
+    "backoff_utils.strategies.backoffstrategy.delay": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.BackoffStrategy.delay",
+    "backoff_utils.strategies.exponent": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.exponent",
+    "backoff_utils.strategies.exponential": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.Exponential",
+    "backoff_utils.strategies.exponential.delay": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.Exponential.delay",
+    "backoff_utils.strategies.fibonacci": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.Fibonacci",
+    "backoff_utils.strategies.fibonacci.delay": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.Fibonacci.delay",
+    "backoff_utils.strategies.fixed": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.Fixed",
+    "backoff_utils.strategies.fixed.delay": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.Fixed.delay",
+    "backoff_utils.strategies.is_instantiated": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.IS_INSTANTIATED",
+    "backoff_utils.strategies.jitter": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.jitter",
+    "backoff_utils.strategies.linear": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.Linear",
+    "backoff_utils.strategies.linear.delay": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.Linear.delay",
+    "backoff_utils.strategies.minimum": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.minimum",
+    "backoff_utils.strategies.polynomial": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.Polynomial",
+    "backoff_utils.strategies.polynomial.delay": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.Polynomial.delay",
+    "backoff_utils.strategies.scale_factor": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.scale_factor",
+    "backoff_utils.strategies.sequence": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.sequence",
+    "backoff_utils.strategies.time_to_sleep": "https://backoff-utils.readthedocs.io/en/latest/api.html#backoff_utils.strategies.time_to_sleep",
+}

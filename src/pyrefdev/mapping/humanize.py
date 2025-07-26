@@ -1,0 +1,30 @@
+VERSION = "4.12.3"
+
+# fmt: off
+MAPPING = {
+    "humanize": "https://humanize.readthedocs.io/en/stable/",
+    "humanize.filesize": "https://humanize.readthedocs.io/en/stable/filesize/#humanize.filesize",
+    "humanize.filesize.naturalsize": "https://humanize.readthedocs.io/en/stable/filesize/#humanize.filesize.naturalsize",
+    "humanize.i18n": "https://humanize.readthedocs.io/en/stable/i18n/#humanize.i18n",
+    "humanize.i18n.activate": "https://humanize.readthedocs.io/en/stable/i18n/#humanize.i18n.activate",
+    "humanize.i18n.deactivate": "https://humanize.readthedocs.io/en/stable/i18n/#humanize.i18n.deactivate",
+    "humanize.i18n.decimal_separator": "https://humanize.readthedocs.io/en/stable/i18n/#humanize.i18n.decimal_separator",
+    "humanize.i18n.thousands_separator": "https://humanize.readthedocs.io/en/stable/i18n/#humanize.i18n.thousands_separator",
+    "humanize.lists": "https://humanize.readthedocs.io/en/stable/lists/#humanize.lists",
+    "humanize.lists.natural_list": "https://humanize.readthedocs.io/en/stable/lists/#humanize.lists.natural_list",
+    "humanize.number": "https://humanize.readthedocs.io/en/stable/number/#humanize.number",
+    "humanize.number.apnumber": "https://humanize.readthedocs.io/en/stable/number/#humanize.number.apnumber",
+    "humanize.number.clamp": "https://humanize.readthedocs.io/en/stable/number/#humanize.number.clamp",
+    "humanize.number.fractional": "https://humanize.readthedocs.io/en/stable/number/#humanize.number.fractional",
+    "humanize.number.intcomma": "https://humanize.readthedocs.io/en/stable/number/#humanize.number.intcomma",
+    "humanize.number.intword": "https://humanize.readthedocs.io/en/stable/number/#humanize.number.intword",
+    "humanize.number.metric": "https://humanize.readthedocs.io/en/stable/number/#humanize.number.metric",
+    "humanize.number.ordinal": "https://humanize.readthedocs.io/en/stable/number/#humanize.number.ordinal",
+    "humanize.number.scientific": "https://humanize.readthedocs.io/en/stable/number/#humanize.number.scientific",
+    "humanize.time": "https://humanize.readthedocs.io/en/stable/time/#humanize.time",
+    "humanize.time.naturaldate": "https://humanize.readthedocs.io/en/stable/time/#humanize.time.naturaldate",
+    "humanize.time.naturalday": "https://humanize.readthedocs.io/en/stable/time/#humanize.time.naturalday",
+    "humanize.time.naturaldelta": "https://humanize.readthedocs.io/en/stable/time/#humanize.time.naturaldelta",
+    "humanize.time.naturaltime": "https://humanize.readthedocs.io/en/stable/time/#humanize.time.naturaltime",
+    "humanize.time.precisedelta": "https://humanize.readthedocs.io/en/stable/time/#humanize.time.precisedelta",
+}

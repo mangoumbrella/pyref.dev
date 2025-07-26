@@ -1,0 +1,31 @@
+VERSION = "1.9.0"
+
+# fmt: off
+MAPPING = {
+    "urlextract": "https://urlextract.readthedocs.io/en/latest/",
+    "urlextract.urlextract": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract",
+    "urlextract.urlextract.add_enclosure": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.add_enclosure",
+    "urlextract.urlextract.allow_mixed_case_hostname": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.allow_mixed_case_hostname",
+    "urlextract.urlextract.extract_email": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.extract_email",
+    "urlextract.urlextract.extract_localhost": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.extract_localhost",
+    "urlextract.urlextract.find_urls": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.find_urls",
+    "urlextract.urlextract.gen_urls": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.gen_urls",
+    "urlextract.urlextract.get_after_tld_chars": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.get_after_tld_chars",
+    "urlextract.urlextract.get_enclosures": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.get_enclosures",
+    "urlextract.urlextract.get_stop_chars_left": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.get_stop_chars_left",
+    "urlextract.urlextract.get_stop_chars_left_from_scheme": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.get_stop_chars_left_from_scheme",
+    "urlextract.urlextract.get_stop_chars_right": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.get_stop_chars_right",
+    "urlextract.urlextract.get_version": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.get_version",
+    "urlextract.urlextract.has_urls": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.has_urls",
+    "urlextract.urlextract.ignore_list": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.ignore_list",
+    "urlextract.urlextract.load_ignore_list": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.load_ignore_list",
+    "urlextract.urlextract.load_permit_list": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.load_permit_list",
+    "urlextract.urlextract.permit_list": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.permit_list",
+    "urlextract.urlextract.remove_enclosure": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.remove_enclosure",
+    "urlextract.urlextract.set_after_tld_chars": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.set_after_tld_chars",
+    "urlextract.urlextract.set_stop_chars_left": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.set_stop_chars_left",
+    "urlextract.urlextract.set_stop_chars_left_from_scheme": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.set_stop_chars_left_from_scheme",
+    "urlextract.urlextract.set_stop_chars_right": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.set_stop_chars_right",
+    "urlextract.urlextract.update": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.update",
+    "urlextract.urlextract.update_when_older": "https://urlextract.readthedocs.io/en/latest/urlextract.html#urlextract.URLExtract.update_when_older",
+}

@@ -1,0 +1,32 @@
+VERSION = "2.1"
+
+# fmt: off
+MAPPING = {
+    "represent": "https://represent.readthedocs.io/en/latest/",
+    "represent.core": "https://represent.readthedocs.io/en/latest/modules/core.html",
+    "represent.core.autorepr": "https://represent.readthedocs.io/en/latest/modules/core.html#represent.core.autorepr",
+    "represent.core.reprhelpermixin": "https://represent.readthedocs.io/en/latest/modules/core.html#represent.core.ReprHelperMixin",
+    "represent.helper": "https://represent.readthedocs.io/en/latest/modules/helper.html",
+    "represent.helper.basereprhelper": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.BaseReprHelper",
+    "represent.helper.basereprhelper.keyword_from_attr": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.BaseReprHelper.keyword_from_attr",
+    "represent.helper.basereprhelper.keyword_with_value": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.BaseReprHelper.keyword_with_value",
+    "represent.helper.basereprhelper.positional_from_attr": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.BaseReprHelper.positional_from_attr",
+    "represent.helper.basereprhelper.positional_with_value": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.BaseReprHelper.positional_with_value",
+    "represent.helper.prettyreprhelper": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.PrettyReprHelper",
+    "represent.helper.prettyreprhelper.close": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.PrettyReprHelper.close",
+    "represent.helper.prettyreprhelper.keyword_from_attr": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.PrettyReprHelper.keyword_from_attr",
+    "represent.helper.prettyreprhelper.keyword_with_value": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.PrettyReprHelper.keyword_with_value",
+    "represent.helper.prettyreprhelper.open": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.PrettyReprHelper.open",
+    "represent.helper.prettyreprhelper.positional_from_attr": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.PrettyReprHelper.positional_from_attr",
+    "represent.helper.prettyreprhelper.positional_with_value": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.PrettyReprHelper.positional_with_value",
+    "represent.helper.reprhelper": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.ReprHelper",
+    "represent.helper.reprhelper.keyword_from_attr": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.ReprHelper.keyword_from_attr",
+    "represent.helper.reprhelper.keyword_with_value": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.ReprHelper.keyword_with_value",
+    "represent.helper.reprhelper.positional_from_attr": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.ReprHelper.positional_from_attr",
+    "represent.helper.reprhelper.positional_with_value": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.ReprHelper.positional_with_value",
+    "represent.helper.richreprhelper": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.RichReprHelper",
+    "represent.helper.richreprhelper.keyword_from_attr": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.RichReprHelper.keyword_from_attr",
+    "represent.helper.richreprhelper.keyword_with_value": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.RichReprHelper.keyword_with_value",
+    "represent.helper.richreprhelper.positional_from_attr": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.RichReprHelper.positional_from_attr",
+    "represent.helper.richreprhelper.positional_with_value": "https://represent.readthedocs.io/en/latest/modules/helper.html#represent.helper.RichReprHelper.positional_with_value",
+}

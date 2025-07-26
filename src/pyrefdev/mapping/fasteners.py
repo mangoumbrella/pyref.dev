@@ -1,0 +1,31 @@
+VERSION = "0.19"
+
+# fmt: off
+MAPPING = {
+    "fasteners": "https://fasteners.readthedocs.io/en/latest/",
+    "fasteners.lock": "https://fasteners.readthedocs.io/en/latest/api/inter_thread/",
+    "fasteners.lock.readerwriterlock": "https://fasteners.readthedocs.io/en/latest/api/inter_thread/#fasteners.lock.ReaderWriterLock",
+    "fasteners.lock.readerwriterlock.__init__": "https://fasteners.readthedocs.io/en/latest/api/inter_thread/#fasteners.lock.ReaderWriterLock.__init__",
+    "fasteners.lock.readerwriterlock.has_pending_writers": "https://fasteners.readthedocs.io/en/latest/api/inter_thread/#fasteners.lock.ReaderWriterLock.has_pending_writers",
+    "fasteners.lock.readerwriterlock.is_reader": "https://fasteners.readthedocs.io/en/latest/api/inter_thread/#fasteners.lock.ReaderWriterLock.is_reader",
+    "fasteners.lock.readerwriterlock.is_writer": "https://fasteners.readthedocs.io/en/latest/api/inter_thread/#fasteners.lock.ReaderWriterLock.is_writer",
+    "fasteners.lock.readerwriterlock.owner": "https://fasteners.readthedocs.io/en/latest/api/inter_thread/#fasteners.lock.ReaderWriterLock.owner",
+    "fasteners.lock.readerwriterlock.read_lock": "https://fasteners.readthedocs.io/en/latest/api/inter_thread/#fasteners.lock.ReaderWriterLock.read_lock",
+    "fasteners.lock.readerwriterlock.write_lock": "https://fasteners.readthedocs.io/en/latest/api/inter_thread/#fasteners.lock.ReaderWriterLock.write_lock",
+    "fasteners.process_lock": "https://fasteners.readthedocs.io/en/latest/api/inter_process/",
+    "fasteners.process_lock.interprocess_locked": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.interprocess_locked",
+    "fasteners.process_lock.interprocess_read_locked": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.interprocess_read_locked",
+    "fasteners.process_lock.interprocess_write_locked": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.interprocess_write_locked",
+    "fasteners.process_lock.interprocesslock": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.InterProcessLock",
+    "fasteners.process_lock.interprocesslock.__init__": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.InterProcessLock.__init__",
+    "fasteners.process_lock.interprocesslock.acquire": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.InterProcessLock.acquire",
+    "fasteners.process_lock.interprocesslock.release": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.InterProcessLock.release",
+    "fasteners.process_lock.interprocessreaderwriterlock": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.InterProcessReaderWriterLock",
+    "fasteners.process_lock.interprocessreaderwriterlock.__init__": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.InterProcessReaderWriterLock.__init__",
+    "fasteners.process_lock.interprocessreaderwriterlock.acquire_read_lock": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.InterProcessReaderWriterLock.acquire_read_lock",
+    "fasteners.process_lock.interprocessreaderwriterlock.acquire_write_lock": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.InterProcessReaderWriterLock.acquire_write_lock",
+    "fasteners.process_lock.interprocessreaderwriterlock.read_lock": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.InterProcessReaderWriterLock.read_lock",
+    "fasteners.process_lock.interprocessreaderwriterlock.release_read_lock": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.InterProcessReaderWriterLock.release_read_lock",
+    "fasteners.process_lock.interprocessreaderwriterlock.release_write_lock": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.InterProcessReaderWriterLock.release_write_lock",
+    "fasteners.process_lock.interprocessreaderwriterlock.write_lock": "https://fasteners.readthedocs.io/en/latest/api/inter_process/#fasteners.process_lock.InterProcessReaderWriterLock.write_lock",
+}

@@ -1,0 +1,33 @@
+VERSION = "3.0.0"
+
+# fmt: off
+MAPPING = {
+    "asttokens": "https://asttokens.readthedocs.io/en/stable/",
+    "asttokens.asttext": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTText",
+    "asttokens.asttext.get_text_positions": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTText.get_text_positions",
+    "asttokens.asttokens": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens",
+    "asttokens.asttokens.filename": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.filename",
+    "asttokens.asttokens.find_token": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.find_token",
+    "asttokens.asttokens.get_text_positions": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.get_text_positions",
+    "asttokens.asttokens.get_token": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.get_token",
+    "asttokens.asttokens.get_token_from_offset": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.get_token_from_offset",
+    "asttokens.asttokens.get_token_from_utf8": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.get_token_from_utf8",
+    "asttokens.asttokens.get_tokens": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.get_tokens",
+    "asttokens.asttokens.mark_tokens": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.mark_tokens",
+    "asttokens.asttokens.next_token": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.next_token",
+    "asttokens.asttokens.prev_token": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.prev_token",
+    "asttokens.asttokens.text": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.text",
+    "asttokens.asttokens.token_range": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.token_range",
+    "asttokens.asttokens.tokens": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.tokens",
+    "asttokens.asttokens.tree": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.ASTTokens.tree",
+    "asttokens.linenumbers": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.LineNumbers",
+    "asttokens.linenumbers.from_utf8_col": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.LineNumbers.from_utf8_col",
+    "asttokens.linenumbers.line_to_offset": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.LineNumbers.line_to_offset",
+    "asttokens.linenumbers.offset_to_line": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.LineNumbers.offset_to_line",
+    "asttokens.util": "https://asttokens.readthedocs.io/en/stable/api-index.html",
+    "asttokens.util.replace": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.util.replace",
+    "asttokens.util.token": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.util.Token",
+    "asttokens.util.token_repr": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.util.token_repr",
+    "asttokens.util.visit_tree": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.util.visit_tree",
+    "asttokens.util.walk": "https://asttokens.readthedocs.io/en/stable/api-index.html#asttokens.util.walk",
+}

@@ -1,0 +1,30 @@
+VERSION = "0.8.0"
+
+# fmt: off
+MAPPING = {
+    "flask_session": "https://flask-session.readthedocs.io/en/latest/",
+    "flask_session.base": "https://flask-session.readthedocs.io/en/latest/api.html",
+    "flask_session.base.serversidesession": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.base.ServerSideSession",
+    "flask_session.base.serversidesession.accessed": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.base.ServerSideSession.accessed",
+    "flask_session.base.serversidesession.modified": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.base.ServerSideSession.modified",
+    "flask_session.base.serversidesession.permanent": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.base.ServerSideSession.permanent",
+    "flask_session.base.serversidesession.sid": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.base.ServerSideSession.sid",
+    "flask_session.base.serversidesessioninterface": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.base.ServerSideSessionInterface",
+    "flask_session.base.serversidesessioninterface.regenerate": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.base.ServerSideSessionInterface.regenerate",
+    "flask_session.cachelib": "https://flask-session.readthedocs.io/en/latest/api.html",
+    "flask_session.cachelib.cachelibsessioninterface": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.cachelib.CacheLibSessionInterface",
+    "flask_session.dynamodb": "https://flask-session.readthedocs.io/en/latest/api.html",
+    "flask_session.dynamodb.dynamodbsessioninterface": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.dynamodb.DynamoDBSessionInterface",
+    "flask_session.filesystem": "https://flask-session.readthedocs.io/en/latest/api.html",
+    "flask_session.filesystem.filesystemsessioninterface": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.filesystem.FileSystemSessionInterface",
+    "flask_session.memcached": "https://flask-session.readthedocs.io/en/latest/api.html",
+    "flask_session.memcached.memcachedsessioninterface": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.memcached.MemcachedSessionInterface",
+    "flask_session.mongodb": "https://flask-session.readthedocs.io/en/latest/api.html",
+    "flask_session.mongodb.mongodbsessioninterface": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.mongodb.MongoDBSessionInterface",
+    "flask_session.redis": "https://flask-session.readthedocs.io/en/latest/api.html",
+    "flask_session.redis.redissessioninterface": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.redis.RedisSessionInterface",
+    "flask_session.session": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.Session",
+    "flask_session.session.init_app": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.Session.init_app",
+    "flask_session.sqlalchemy": "https://flask-session.readthedocs.io/en/latest/api.html",
+    "flask_session.sqlalchemy.sqlalchemysessioninterface": "https://flask-session.readthedocs.io/en/latest/api.html#flask_session.sqlalchemy.SqlAlchemySessionInterface",
+}

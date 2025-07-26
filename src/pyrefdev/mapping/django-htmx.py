@@ -1,0 +1,30 @@
+VERSION = "1.23.2"
+
+# fmt: off
+MAPPING = {
+    "django_htmx": "https://django-htmx.readthedocs.io/en/latest/",
+    "django_htmx.http": "https://django-htmx.readthedocs.io/en/latest/http.html",
+    "django_htmx.http.htmx_stop_polling": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.HTMX_STOP_POLLING",
+    "django_htmx.http.httpresponseclientredirect": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.HttpResponseClientRedirect",
+    "django_htmx.http.httpresponseclientrefresh": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.HttpResponseClientRefresh",
+    "django_htmx.http.httpresponselocation": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.HttpResponseLocation",
+    "django_htmx.http.httpresponsestoppolling": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.HttpResponseStopPolling",
+    "django_htmx.http.push_url": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.push_url",
+    "django_htmx.http.replace_url": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.replace_url",
+    "django_htmx.http.reswap": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.reswap",
+    "django_htmx.http.retarget": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.retarget",
+    "django_htmx.http.trigger_client_event": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.trigger_client_event",
+    "django_htmx.middleware": "https://django-htmx.readthedocs.io/en/latest/middleware.html",
+    "django_htmx.middleware.htmxdetails": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails",
+    "django_htmx.middleware.htmxdetails.__bool__": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.__bool__",
+    "django_htmx.middleware.htmxdetails.boosted": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.boosted",
+    "django_htmx.middleware.htmxdetails.current_url": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.current_url",
+    "django_htmx.middleware.htmxdetails.current_url_abs_path": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.current_url_abs_path",
+    "django_htmx.middleware.htmxdetails.history_restore_request": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.history_restore_request",
+    "django_htmx.middleware.htmxdetails.prompt": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.prompt",
+    "django_htmx.middleware.htmxdetails.target": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.target",
+    "django_htmx.middleware.htmxdetails.trigger": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.trigger",
+    "django_htmx.middleware.htmxdetails.trigger_name": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.trigger_name",
+    "django_htmx.middleware.htmxdetails.triggering_event": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.triggering_event",
+    "django_htmx.middleware.htmxmiddleware": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxMiddleware",
+}

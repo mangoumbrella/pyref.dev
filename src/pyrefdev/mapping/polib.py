@@ -1,0 +1,31 @@
+VERSION = "1.2.0"
+
+# fmt: off
+MAPPING = {
+    "polib": "https://polib.readthedocs.io/en/latest/",
+    "polib.detect_encoding": "https://polib.readthedocs.io/en/latest/api.html#polib.detect_encoding",
+    "polib.escape": "https://polib.readthedocs.io/en/latest/api.html#polib.escape",
+    "polib.moentry": "https://polib.readthedocs.io/en/latest/api.html#polib.MOEntry",
+    "polib.MOFile": "https://polib.readthedocs.io/en/latest/api.html#polib.MOFile",
+    "polib.mofile": "https://polib.readthedocs.io/en/latest/api.html#polib.mofile",
+    "polib.mofile.fuzzy_entries": "https://polib.readthedocs.io/en/latest/api.html#polib.MOFile.fuzzy_entries",
+    "polib.mofile.obsolete_entries": "https://polib.readthedocs.io/en/latest/api.html#polib.MOFile.obsolete_entries",
+    "polib.mofile.percent_translated": "https://polib.readthedocs.io/en/latest/api.html#polib.MOFile.percent_translated",
+    "polib.mofile.save": "https://polib.readthedocs.io/en/latest/api.html#polib.MOFile.save",
+    "polib.mofile.save_as_pofile": "https://polib.readthedocs.io/en/latest/api.html#polib.MOFile.save_as_pofile",
+    "polib.mofile.translated_entries": "https://polib.readthedocs.io/en/latest/api.html#polib.MOFile.translated_entries",
+    "polib.mofile.untranslated_entries": "https://polib.readthedocs.io/en/latest/api.html#polib.MOFile.untranslated_entries",
+    "polib.poentry": "https://polib.readthedocs.io/en/latest/api.html#polib.POEntry",
+    "polib.poentry.merge": "https://polib.readthedocs.io/en/latest/api.html#polib.POEntry.merge",
+    "polib.poentry.translated": "https://polib.readthedocs.io/en/latest/api.html#polib.POEntry.translated",
+    "polib.POFile": "https://polib.readthedocs.io/en/latest/api.html#polib.POFile",
+    "polib.pofile": "https://polib.readthedocs.io/en/latest/api.html#polib.pofile",
+    "polib.pofile.fuzzy_entries": "https://polib.readthedocs.io/en/latest/api.html#polib.POFile.fuzzy_entries",
+    "polib.pofile.merge": "https://polib.readthedocs.io/en/latest/api.html#polib.POFile.merge",
+    "polib.pofile.obsolete_entries": "https://polib.readthedocs.io/en/latest/api.html#polib.POFile.obsolete_entries",
+    "polib.pofile.percent_translated": "https://polib.readthedocs.io/en/latest/api.html#polib.POFile.percent_translated",
+    "polib.pofile.save_as_mofile": "https://polib.readthedocs.io/en/latest/api.html#polib.POFile.save_as_mofile",
+    "polib.pofile.translated_entries": "https://polib.readthedocs.io/en/latest/api.html#polib.POFile.translated_entries",
+    "polib.pofile.untranslated_entries": "https://polib.readthedocs.io/en/latest/api.html#polib.POFile.untranslated_entries",
+    "polib.unescape": "https://polib.readthedocs.io/en/latest/api.html#polib.unescape",
+}

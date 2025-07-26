@@ -1,0 +1,32 @@
+VERSION = "2.0.0"
+
+# fmt: off
+MAPPING = {
+    "trafilatura": "https://trafilatura.readthedocs.io/en/latest/",
+    "trafilatura.bare_extraction": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.bare_extraction",
+    "trafilatura.baseline": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.baseline",
+    "trafilatura.core": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+    "trafilatura.core.extract_comments": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.core.extract_comments",
+    "trafilatura.external": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+    "trafilatura.external.try_justext": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.external.try_justext",
+    "trafilatura.external.try_readability": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.external.try_readability",
+    "trafilatura.extract": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.extract",
+    "trafilatura.extract_metadata": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.extract_metadata",
+    "trafilatura.feeds": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+    "trafilatura.feeds.find_feed_urls": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.feeds.find_feed_urls",
+    "trafilatura.fetch_response": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.fetch_response",
+    "trafilatura.fetch_url": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.fetch_url",
+    "trafilatura.html2txt": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.html2txt",
+    "trafilatura.load_html": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.load_html",
+    "trafilatura.sitemaps": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+    "trafilatura.sitemaps.sitemap_search": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.sitemaps.sitemap_search",
+    "trafilatura.spider": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+    "trafilatura.spider.focused_crawler": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.spider.focused_crawler",
+    "trafilatura.utils": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+    "trafilatura.utils.decode_file": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.utils.decode_file",
+    "trafilatura.utils.sanitize": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.utils.sanitize",
+    "trafilatura.utils.trim": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.utils.trim",
+    "trafilatura.xml": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+    "trafilatura.xml.validate_tei": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.xml.validate_tei",
+    "trafilatura.xml.xmltotxt": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.xml.xmltotxt",
+}

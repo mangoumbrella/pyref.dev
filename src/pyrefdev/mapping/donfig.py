@@ -1,0 +1,33 @@
+VERSION = "0.8.1.post1"
+
+# fmt: off
+MAPPING = {
+    "donfig": "https://donfig.readthedocs.io/en/latest/",
+    "donfig.config_obj": "https://donfig.readthedocs.io/en/latest/api/donfig.html#module-donfig.config_obj",
+    "donfig.config_obj.canonical_name": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.canonical_name",
+    "donfig.config_obj.collect_env": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.collect_env",
+    "donfig.config_obj.collect_yaml": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.collect_yaml",
+    "donfig.config_obj.config": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config",
+    "donfig.config_obj.config.clear": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.clear",
+    "donfig.config_obj.config.collect": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.collect",
+    "donfig.config_obj.config.ensure_file": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.ensure_file",
+    "donfig.config_obj.config.expand_environment_variables": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.expand_environment_variables",
+    "donfig.config_obj.config.get": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.get",
+    "donfig.config_obj.config.merge": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.merge",
+    "donfig.config_obj.config.pprint": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.pprint",
+    "donfig.config_obj.config.refresh": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.refresh",
+    "donfig.config_obj.config.rename": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.rename",
+    "donfig.config_obj.config.serialize": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.serialize",
+    "donfig.config_obj.config.set": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.set",
+    "donfig.config_obj.config.to_dict": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.to_dict",
+    "donfig.config_obj.config.update": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.update",
+    "donfig.config_obj.config.update_defaults": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.Config.update_defaults",
+    "donfig.config_obj.configset": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.ConfigSet",
+    "donfig.config_obj.deserialize": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.deserialize",
+    "donfig.config_obj.expand_environment_variables": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.expand_environment_variables",
+    "donfig.config_obj.merge": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.merge",
+    "donfig.config_obj.serialize": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.serialize",
+    "donfig.config_obj.update": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.config_obj.update",
+    "donfig.utils": "https://donfig.readthedocs.io/en/latest/api/donfig.html#module-donfig.utils",
+    "donfig.utils.tmpfile": "https://donfig.readthedocs.io/en/latest/api/donfig.html#donfig.utils.tmpfile",
+}

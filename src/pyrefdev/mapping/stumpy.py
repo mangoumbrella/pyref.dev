@@ -1,0 +1,33 @@
+VERSION = "1.13.0"
+
+# fmt: off
+MAPPING = {
+    "stumpy": "https://stumpy.readthedocs.io/en/latest/",
+    "stumpy.allc": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.allc",
+    "stumpy.atsc": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.atsc",
+    "stumpy.floss": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.floss",
+    "stumpy.fluss": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.fluss",
+    "stumpy.gpu_mpdist": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.gpu_mpdist",
+    "stumpy.gpu_ostinato": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.gpu_ostinato",
+    "stumpy.gpu_stimp": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.gpu_stimp",
+    "stumpy.gpu_stump": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.gpu_stump",
+    "stumpy.mass": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.mass",
+    "stumpy.match": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.match",
+    "stumpy.mdl": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.mdl",
+    "stumpy.mmotifs": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.mmotifs",
+    "stumpy.motifs": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.motifs",
+    "stumpy.mpdist": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.mpdist",
+    "stumpy.mpdisted": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.mpdisted",
+    "stumpy.mstump": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.mstump",
+    "stumpy.mstumped": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.mstumped",
+    "stumpy.ostinato": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.ostinato",
+    "stumpy.ostinatoed": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.ostinatoed",
+    "stumpy.scrump": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.scrump",
+    "stumpy.snippets": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.snippets",
+    "stumpy.stimp": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.stimp",
+    "stumpy.stimped": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.stimped",
+    "stumpy.stump": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.stump",
+    "stumpy.stumped": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.stumped",
+    "stumpy.stumpi": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.stumpi",
+    "stumpy.subspace": "https://stumpy.readthedocs.io/en/latest/api.html#stumpy.subspace",
+}
