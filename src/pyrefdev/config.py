@@ -264,6 +264,7 @@ _packages = [
     Package(pypi="jupyter-core", index_url="https://jupyter-core.readthedocs.io/en/latest/"),
     Package(pypi="kazoo", index_url="https://kazoo.readthedocs.io/en/latest/"),
     Package(pypi="keyring", index_url="https://keyring.readthedocs.io/en/latest/"),
+    Package(pypi="kivy", index_url="https://kivy.org/doc/stable/"),
     Package(pypi="kivymd", index_url="https://kivymd.readthedocs.io/en/latest/"),
     Package(pypi="kiwisolver", index_url="https://kiwisolver.readthedocs.io/en/latest/"),
     Package(pypi="kneed", index_url="https://kneed.readthedocs.io/en/stable/"),

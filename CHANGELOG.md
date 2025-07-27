@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-Nothing noticeable unreleased.
+- Support [kivy](https://kivy.org/doc/stable/) (fixes #6, thanks @tshirtman for the report!)
 
 ## v2025.9
 
