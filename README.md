@@ -57,10 +57,7 @@ To set up a new server:
 To update to a new version:
 
 ```bash
-> cd pyref.dev
-> git pull
-> uv sync --all-extras --locked
-> systemctl restart pyrefdev.service
+git pull && git fetch --tags && uv pip install -e . && uv sync --all-extras --locked && systemctl restart pyrefdev.service
 ```
 
 ## Changelog
