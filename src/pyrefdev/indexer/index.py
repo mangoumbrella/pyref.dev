@@ -48,7 +48,8 @@ def urlopen(url: str):
 class IndexState:
     package_version: str
     file_to_urls: dict[str, str]
-    failed_urls: list[str]
+    # url -> error_code (e.g. "http-404", or "" for unknown)
+    failed_urls: dict[str, str]
 
     @classmethod
     def loads(cls, content: str) -> "IndexState":

@@ -109,7 +109,7 @@ class _Crawler:
 
         self._crawl_state = crawl_state
         if crawl_state is None:
-            self._failed_urls: list[str] = []
+            self._failed_urls: dict[str, str] = {}
         else:
             self._failed_urls = crawl_state.failed_urls
 
@@ -147,10 +147,10 @@ class _Crawler:
                     url: executor.submit(fetch_and_save, url)
                     for url in list(self._failed_urls)  # Need to create a copy
                 }
-            failed_urls = []
+            failed_urls = {}
             for url, f in url_to_futures.items():
                 if (result := f.result()) is None:
-                    failed_urls.append(url)
+                    failed_urls[url] = self._failed_urls.get(url, "")
                 else:
                     saved, _, _ = result
                     self._crawl_state.file_to_urls[
@@ -193,13 +193,13 @@ class _Crawler:
                 content = f.read().decode("utf-8", "backslashreplace")
             time.sleep(self._seconds_to_sleep_between_requests)
         except error.URLError as e:
-            # TODO: Save HTTP error code.
+            error_code = f"http-{e.code}" if hasattr(e, "code") else ""
             console.warning(f"Failed to fetch url {url}, error: {e}")
-            self._failed_urls.append(url)
+            self._failed_urls[url] = error_code
             return None
         except Exception as e:
             console.warning(f"Failed to fetch url {url}, error: {e}")
-            self._failed_urls.append(url)
+            self._failed_urls[url] = ""
             return None
         maybe_redirected_url = f.url
         if maybe_redirected_url != url and not self._should_crawl(maybe_redirected_url):
