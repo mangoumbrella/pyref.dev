@@ -13,11 +13,20 @@ from pyrefdev.config import console, get_packages, Package
 from pyrefdev.indexer.index import Index, IndexState, urlopen
 
 
+def _http_error_code(code: int) -> str:
+    """Generate HTTP error code string."""
+    return f"http-{code}"
+
+
+HTTP_404_ERROR = _http_error_code(404)
+
+
 def crawl_docs(
     *,
     package: str | None = None,
     upgrade: bool = False,
     retry_failed_urls: bool = False,
+    retry_http_404: bool = False,
     index: Index = Index(),
     num_parallel_packages: int = 1,
     num_threads_per_package: int = 1,
@@ -69,6 +78,7 @@ def crawl_docs(
                     pkg.index_url,
                     crawl_state,
                     seconds_to_sleep_between_requests,
+                    retry_http_404,
                 )
                 crawler.crawl(num_threads=num_threads_per_package)
                 crawler.save_crawl_state(package_version, index)
@@ -90,6 +100,7 @@ class _Crawler:
         root_url: str,
         crawl_state: IndexState | None,
         seconds_to_sleep_between_requests: float,
+        retry_http_404: bool,
     ):
         self._package = package
         self._progress = progress
@@ -101,6 +112,7 @@ class _Crawler:
             else root_url.rsplit("/", maxsplit=1)[0] + "/"
         )
         self._seconds_to_sleep_between_requests = seconds_to_sleep_between_requests
+        self._retry_http_404 = retry_http_404
 
         self._seen_urls: set[str] = set()
         self._to_crawl_queue: queue.Queue[str] = queue.Queue()
@@ -132,9 +144,20 @@ class _Crawler:
         else:
             if not self._failed_urls:
                 return
+            
+            # Filter URLs to retry based on retry_http_404 setting
+            urls_to_retry = []
+            for url, error_code in self._failed_urls.items():
+                if error_code == HTTP_404_ERROR and not self._retry_http_404:
+                    continue
+                urls_to_retry.append(url)
+            
+            if not urls_to_retry:
+                return
+                
             task = self._progress.add_task(
-                f"Retrying previously {len(self._failed_urls)} failed URLs",
-                total=len(self._failed_urls),
+                f"Retrying previously {len(urls_to_retry)} failed URLs",
+                total=len(urls_to_retry),
             )
 
             def fetch_and_save(url: str) -> tuple[Path, str, str] | None:
@@ -145,9 +168,15 @@ class _Crawler:
             with futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
                 url_to_futures = {
                     url: executor.submit(fetch_and_save, url)
-                    for url in list(self._failed_urls)  # Need to create a copy
+                    for url in urls_to_retry
                 }
             failed_urls = {}
+            
+            # Preserve 404 errors that weren't retried
+            for url, error_code in self._failed_urls.items():
+                if error_code == HTTP_404_ERROR and not self._retry_http_404:
+                    failed_urls[url] = error_code
+            
             for url, f in url_to_futures.items():
                 if (result := f.result()) is None:
                     failed_urls[url] = self._failed_urls.get(url, "")
@@ -193,7 +222,7 @@ class _Crawler:
                 content = f.read().decode("utf-8", "backslashreplace")
             time.sleep(self._seconds_to_sleep_between_requests)
         except error.URLError as e:
-            error_code = f"http-{e.code}" if hasattr(e, "code") else ""
+            error_code = _http_error_code(e.code) if hasattr(e, "code") else ""
             console.warning(f"Failed to fetch url {url}, error: {e}")
             self._failed_urls[url] = error_code
             return None
