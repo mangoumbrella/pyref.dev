@@ -3094,7 +3094,7 @@ MAPPING = {
     "torch.mtia.set_rng_state": "https://docs.pytorch.org/docs/stable/generated/torch.mtia.set_rng_state.html#torch.mtia.set_rng_state",
     "torch.mtia.set_stream": "https://docs.pytorch.org/docs/stable/generated/torch.mtia.set_stream.html#torch.mtia.set_stream",
     "torch.mtia.snapshot": "https://docs.pytorch.org/docs/stable/generated/torch.mtia.snapshot.html#torch.mtia.snapshot",
-    "torch.mtia.stream": "https://docs.pytorch.org/docs/stable/generated/torch.mtia.Stream.html#torch.mtia.stream",
+    "torch.mtia.stream": "https://docs.pytorch.org/docs/stable/generated/torch.mtia.stream.html#torch.mtia.stream",
     "torch.mtia.Stream": "https://docs.pytorch.org/docs/stable/mtia.html#torch.mtia.Stream",
     "torch.mtia.streamcontext": "https://docs.pytorch.org/docs/stable/generated/torch.mtia.StreamContext.html#torch.mtia.StreamContext",
     "torch.mtia.synchronize": "https://docs.pytorch.org/docs/stable/generated/torch.mtia.synchronize.html#torch.mtia.synchronize",
