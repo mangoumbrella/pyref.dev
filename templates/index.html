@@ -640,5 +640,17 @@
         <p>Website served with <a href="https://pypi.org/project/pyrefdev">pyrefdev</a> v{{ version }}</p>
         <p>&copy; 2025 <a href="https://mangoumbrella.com">Mango Umbrella LLC</a> and the pyref.dev authors</p>
     </footer>
+
+    <script>
+        document.addEventListener('keydown', function(event) {
+            if (event.key === '/' && !event.ctrlKey && !event.metaKey) {
+                // Only trigger if not typing in an input field
+                if (document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
+                    event.preventDefault();
+                    document.getElementById('search-input').focus();
+                }
+            }
+        });
+    </script>
 </body>
 </html>
