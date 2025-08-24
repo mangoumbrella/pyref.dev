@@ -367,6 +367,7 @@ _packages = [
     Package(pypi="plpygis", index_url="https://plpygis.readthedocs.io/en/stable/"),
     Package(pypi="pluggy", index_url="https://pluggy.readthedocs.io/en/latest/"),
     Package(pypi="plumbum", index_url="https://plumbum.readthedocs.io/en/latest/"),
+    Package(pypi="polars", index_url="https://docs.pola.rs/api/python/stable/reference/"),
     Package(pypi="polib", index_url="https://polib.readthedocs.io/en/latest/"),
     Package(pypi="polling2", index_url="https://polling2.readthedocs.io/en/latest/"),
     Package(pypi="portalocker", index_url="https://portalocker.readthedocs.io/en/latest/"),

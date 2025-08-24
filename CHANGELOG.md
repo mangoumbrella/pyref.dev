@@ -3,6 +3,7 @@
 ## [Unreleased]
 
 - Support [kivy](https://kivy.org/doc/stable/) (fixes [#6](https://github.com/mangoumbrella/pyref.dev/issues/6), thanks [@tshirtman](https://github.com/tshirtman) for the report).
+- Support [polars](https://docs.pola.rs/api/python/stable/reference/) (fixes [#7](https://github.com/mangoumbrella/pyref.dev/issues/7), thanks [@tshirtman](https://github.com/tshirtman) for the report).
 - Allow "/" key to focus search box. (fixes [#8](https://github.com/mangoumbrella/pyref.dev/issues/8), thanks [@treyhunner](https://github.com/treyhunner) for the request).
 
 ## v2025.9
