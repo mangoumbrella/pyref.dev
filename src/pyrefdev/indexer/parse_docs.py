@@ -72,8 +72,8 @@ def parse_docs(
     num_threads_per_package: int = multiprocessing.cpu_count(),
 ) -> None:
     """Parse crawled docs and update the mapping files."""
-    if sys.version_info[:2] != (3, 13):
-        console.fatal("pyrefdev-indexer parse_docs must be run on Python 3.13.")
+    if sys.version_info[:2] != (3, 14):
+        console.fatal("pyrefdev-indexer parse_docs must be run on Python 3.14.")
 
     packages = get_packages(package)
     if not reparse_all:
