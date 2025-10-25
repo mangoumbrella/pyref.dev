@@ -25,10 +25,13 @@ async def root(request: Request):
     except importlib.metadata.PackageNotFoundError:
         version = "unknown"
 
-    python_version = f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}"
-    
+    python_version = (
+        f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}"
+    )
+
     return templates.TemplateResponse(
-        "index.html", {"request": request, "version": version, "python_version": python_version}
+        "index.html",
+        {"request": request, "version": version, "python_version": python_version},
     )
 
 
@@ -61,8 +64,17 @@ async def search_symbols(request: Request, symbol: str = "", lucky: bool = False
 
         if symbol_path.lower() == symbol_lower:
             # Prioritize exact case matches over case-insensitive matches (only if search term has uppercase)
-            case_match_priority = 0 if (symbol != symbol_lower and symbol_path == symbol) else 1
-            return (0, 0, case_match_priority, num_components, len(symbol_path), symbol_path)
+            case_match_priority = (
+                0 if (symbol != symbol_lower and symbol_path == symbol) else 1
+            )
+            return (
+                0,
+                0,
+                case_match_priority,
+                num_components,
+                len(symbol_path),
+                symbol_path,
+            )
 
         # Check for exact component matches (case-insensitive)
         exact_component_matches = []
@@ -72,7 +84,7 @@ async def search_symbols(request: Request, symbol: str = "", lucky: bool = False
                 # Position from right (0 = rightmost, higher = more left)
                 position_from_right = len(components) - 1 - i
                 exact_component_matches.append(position_from_right)
-                
+
                 # Check if it's also an exact case match (only if search term has uppercase)
                 if symbol != symbol_lower and component == symbol:
                     exact_case_component_matches.append(position_from_right)

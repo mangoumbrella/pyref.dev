@@ -144,17 +144,17 @@ class _Crawler:
         else:
             if not self._failed_urls:
                 return
-            
+
             # Filter URLs to retry based on retry_http_404 setting
             urls_to_retry = []
             for url, error_code in self._failed_urls.items():
                 if error_code == HTTP_404_ERROR and not self._retry_http_404:
                     continue
                 urls_to_retry.append(url)
-            
+
             if not urls_to_retry:
                 return
-                
+
             task = self._progress.add_task(
                 f"Retrying previously {len(urls_to_retry)} failed URLs",
                 total=len(urls_to_retry),
@@ -167,16 +167,15 @@ class _Crawler:
 
             with futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
                 url_to_futures = {
-                    url: executor.submit(fetch_and_save, url)
-                    for url in urls_to_retry
+                    url: executor.submit(fetch_and_save, url) for url in urls_to_retry
                 }
             failed_urls = {}
-            
+
             # Preserve 404 errors that weren't retried
             for url, error_code in self._failed_urls.items():
                 if error_code == HTTP_404_ERROR and not self._retry_http_404:
                     failed_urls[url] = error_code
-            
+
             for url, f in url_to_futures.items():
                 if (result := f.result()) is None:
                     failed_urls[url] = self._failed_urls.get(url, "")
