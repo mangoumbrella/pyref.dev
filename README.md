@@ -48,8 +48,11 @@ For most of the cases, they are case-insensitive. However, for symbols like `typ
 To set up a new server:
 
 ```bash
+> curl -LsSf https://astral.sh/uv/install.sh | sh
 > git clone https://github.com/mangoumbrella/pyref.dev
 > cd pyref.dev
+> uv venv --python 3.14
+> uv sync --all-extras --locked
 > sudo cp pyrefdev.service /etc/systemd/system/pyrefdev.service
 > systemctl start pyrefdev.service
 ```
@@ -63,7 +66,7 @@ git pull && git fetch --tags && uv pip install -e . && uv sync --all-extras --lo
 To upgrade uv venv's Python version:
 
 ```bash
-uv venv --python 3.14.0
+uv venv --python 3.14
 ```
 
 ## Changelog
