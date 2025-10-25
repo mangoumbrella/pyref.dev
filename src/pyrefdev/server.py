@@ -1,4 +1,5 @@
 import random
+import sys
 
 from fastapi import FastAPI, Request
 from fastapi.responses import RedirectResponse
@@ -24,8 +25,10 @@ async def root(request: Request):
     except importlib.metadata.PackageNotFoundError:
         version = "unknown"
 
+    python_version = f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}"
+    
     return templates.TemplateResponse(
-        "index.html", {"request": request, "version": version}
+        "index.html", {"request": request, "version": version, "python_version": python_version}
     )
 
 
