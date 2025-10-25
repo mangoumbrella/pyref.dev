@@ -60,6 +60,12 @@ To update to a new version:
 git pull && git fetch --tags && uv pip install -e . && uv sync --all-extras --locked && systemctl restart pyrefdev.service
 ```
 
+To upgrade uv venv's Python version:
+
+```bash
+uv venv --python 3.14.0
+```
+
 ## Changelog
 
 See [CHANGELOG.md](https://github.com/mangoumbrella/pyref.dev/blob/main/CHANGELOG.md).
