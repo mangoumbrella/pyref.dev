@@ -30,9 +30,16 @@ async def root(request: Request):
         f"{sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}"
     )
 
+    packages = list(SUPPORTED_PACKAGES)
+
     return templates.TemplateResponse(
         "index.html",
-        {"request": request, "version": version, "python_version": python_version},
+        {
+            "request": request,
+            "version": version,
+            "python_version": python_version,
+            "packages": packages,
+        },
     )
 
 
