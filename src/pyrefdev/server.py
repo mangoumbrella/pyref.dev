@@ -8,6 +8,7 @@ from fastapi.templating import Jinja2Templates
 import importlib.metadata
 from urllib import parse
 
+from pyrefdev.config import SUPPORTED_PACKAGES
 from pyrefdev.mapping import MAPPING, PACKAGE_INFO_MAPPING
 
 
@@ -36,26 +37,46 @@ async def root(request: Request):
 
 
 @app.get("/is")
-async def search_symbols(request: Request, symbol: str = "", lucky: bool = False):
+async def search_symbols(
+    request: Request, symbol: str = "", lucky: bool = False, package: str = ""
+):
+    packages = list(SUPPORTED_PACKAGES)
+
     if not symbol:
         if lucky:
             return RedirectResponse(_pick_random_url())
         else:
             return templates.TemplateResponse(
-                "search.html", {"request": request, "symbol": "", "results": []}
+                "search.html",
+                {
+                    "request": request,
+                    "symbol": "",
+                    "results": [],
+                    "packages": packages,
+                    "selected_package": package,
+                },
             )
+
+    # Determine which mapping to search
+    if package:
+        if package in PACKAGE_INFO_MAPPING:
+            search_mapping = PACKAGE_INFO_MAPPING[package].mapping
+        else:
+            search_mapping = {}
+    else:
+        search_mapping = MAPPING
 
     # Search by substring for now.
     results = []
     symbol_lower = symbol.lower()
-    for key in MAPPING.keys():
+    for key in search_mapping.keys():
         if symbol_lower in key.lower():
-            fragment = parse.urlparse(MAPPING[key]).fragment
+            fragment = parse.urlparse(search_mapping[key]).fragment
             if fragment.lower() == key.lower():
                 candidate = fragment
             else:
                 candidate = key
-            results.append({"symbol": candidate, "url": MAPPING[key]})
+            results.append({"symbol": candidate, "url": search_mapping[key]})
 
     def ranking_key(result):
         symbol_path = result["symbol"]
@@ -119,7 +140,14 @@ async def search_symbols(request: Request, symbol: str = "", lucky: bool = False
         return RedirectResponse(results[0]["url"])
 
     return templates.TemplateResponse(
-        "search.html", {"request": request, "symbol": symbol, "results": results}
+        "search.html",
+        {
+            "request": request,
+            "symbol": symbol,
+            "results": results,
+            "packages": packages,
+            "selected_package": package,
+        },
     )
 
 
