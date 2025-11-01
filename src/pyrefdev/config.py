@@ -19,13 +19,13 @@ class Package:
             self.namespaces = [self.pypi.replace("-", "_")]
 
     def is_cpython(self):
-        return self.pypi == "__python__"
+        return self.pypi == "python"
 
 
 # fmt: off
 _packages = [
     Package(
-        pypi="__python__",
+        pypi="python",
         index_url="https://docs.python.org/3/library",
         exclude_root_urls=[
             "https://docs.python.org/3/copyright.html",  # Conflict with built-in copyright.
