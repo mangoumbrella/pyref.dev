@@ -34,12 +34,37 @@ pyrefdev <symbol>
 ```
 
 ### Indexer Operations
+
+Common workflow for adding a new package:
 ```bash
-pyrefdev-indexer add-docs --docs-directory api-docs --package <package> --url <API reference doc root URL>
-pyrefdev-indexer crawl-docs --docs-directory api-docs --package <package>
-pyrefdev-indexer parse-docs --docs-directory api-docs --package <package>
-pyrefdev-indexer update-docs --docs-directory api-docs --package <package>
+# Add a new package (crawls by default)
+pyrefdev-indexer add-docs --package <package> --url <API reference doc root URL>
+
+# Or add without crawling, then crawl separately
+pyrefdev-indexer add-docs --package <package> --url <API reference doc root URL> --no-crawl
+pyrefdev-indexer crawl-docs --package <package>
+
+# Parse the crawled docs to generate mappings
+pyrefdev-indexer parse-docs --package <package>
+
+# Or combine crawl + parse in one step
+pyrefdev-indexer update-docs --package <package>
+
+# Update the landing page after adding packages
 pyrefdev-indexer update-landing-page
+```
+
+Additional indexer commands:
+```bash
+# Crawl with retry options
+pyrefdev-indexer crawl-docs --package <package> --upgrade --retry-failed-urls
+
+# Parse with options
+pyrefdev-indexer parse-docs --package <package> --in-place --reparse-all
+
+# PyPI operations
+pyrefdev-indexer crawl-pypi      # Crawl top 15000 PyPI packages
+pyrefdev-indexer parse-pypi      # Parse PyPI data and add new packages to config
 ```
 
 ## Development Workflow
@@ -52,3 +77,4 @@ pyrefdev-indexer update-landing-page
 - When creating a new file with content, ensure the file has an extra new line at the end.
 - Do NOT add redundant comments describe what the cod does. When needed, DO add comments that explains "why".
 - Server deployment uses systemd and is configured in `pyrefdev.service`
+- **CSS Cache Busting**: Whenever you modify `static/styles.css`, you must increment the `?v=` version parameter in all `templates/*.html` files to ensure browsers load the updated styles
