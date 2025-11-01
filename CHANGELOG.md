@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-Nothing noticeable unreleased.
+- Support searching symbols by packages (fixes [#10](https://github.com/mangoumbrella/pyref.dev/issues/10), thanks [@treyhunner](https://github.com/treyhunner) for the request).
 
 ## v2025.10
 
