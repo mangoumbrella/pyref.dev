@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/static/logo128.png">
-    <link rel="stylesheet" href="/static/styles.css?v=2">
+    <link rel="stylesheet" href="/static/styles.css?v=3">
     <title>{% if symbol %}Search: {{ symbol }}{% else %}Search{% endif %} - pyref.dev</title>
 </head>
 <body>
@@ -52,7 +52,7 @@
 
         {% if symbol %}
             <div class="results-header">
-                <span class="results-count">{{ results|length }}</span> result{% if results|length != 1 %}s{% endif %} for "{{ symbol }}"{% if selected_package %} in <strong>{% if selected_package == "python" %}Standard Library{% else %}{{ selected_package }}{% endif %}</strong>{% endif %}
+                <span class="results-count">{{ results|length }}</span> result{% if results|length != 1 %}s{% endif %} for "{{ symbol }}"{% if selected_package %} in <strong>{% if package_url %}<a href="{{ package_url }}" target="_blank" rel="noopener noreferrer">{% endif %}{% if selected_package == "python" %}Standard Library{% else %}{{ selected_package }}{% endif %}{% if package_url %}</a>{% endif %}</strong>{% endif %}
             </div>
 
             {% if results %}

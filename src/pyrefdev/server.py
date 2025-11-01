@@ -46,6 +46,11 @@ async def search_symbols(
         if lucky:
             return RedirectResponse(_pick_random_url())
         else:
+            package_url = (
+                SUPPORTED_PACKAGES[package].index_url
+                if package and package in SUPPORTED_PACKAGES
+                else None
+            )
             return templates.TemplateResponse(
                 "search.html",
                 {
@@ -54,6 +59,7 @@ async def search_symbols(
                     "results": [],
                     "packages": packages,
                     "selected_package": package,
+                    "package_url": package_url,
                 },
             )
 
@@ -139,6 +145,11 @@ async def search_symbols(
     if lucky and results:
         return RedirectResponse(results[0]["url"])
 
+    package_url = (
+        SUPPORTED_PACKAGES[package].index_url
+        if package and package in SUPPORTED_PACKAGES
+        else None
+    )
     return templates.TemplateResponse(
         "search.html",
         {
@@ -147,6 +158,7 @@ async def search_symbols(
             "results": results,
             "packages": packages,
             "selected_package": package,
+            "package_url": package_url,
         },
     )
 

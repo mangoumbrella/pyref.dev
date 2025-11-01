@@ -440,6 +440,16 @@ a:hover {
     color: var(--python-blue);
 }
 
+.results-header strong a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.results-header strong a:hover {
+    color: var(--python-blue);
+    text-decoration: underline;
+}
+
 .results-list {
     background: white;
     border-radius: 10px;
