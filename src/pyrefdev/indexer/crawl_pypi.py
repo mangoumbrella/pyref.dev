@@ -1,5 +1,5 @@
 import json
-from urllib.error import HTTPError
+from urllib.error import HTTPError, URLError
 
 from rich.progress import track
 
@@ -25,3 +25,6 @@ def crawl_pypi(*, refresh: bool = True, index: Index = Index()) -> None:
                 console.warning(f"Package {package_name} not found")
                 continue
             raise
+        except URLError as e:
+            console.warning(f"Failed to fetch {package_name}: {e.reason}")
+            continue

@@ -37,7 +37,11 @@ def urlopen(url: str):
                 time.sleep(backoff)
             else:
                 raise
-        except TimeoutError:
+        except (TimeoutError, error.URLError) as e:
+            if isinstance(e, error.URLError) and not isinstance(
+                e.reason, (TimeoutError, OSError)
+            ):
+                raise
             if not backoffs:
                 raise
             backoff = backoffs.pop(0) * (0.9 + random.random() / 5.0)
