@@ -52,7 +52,7 @@
 
         {% if symbol %}
             <div class="results-header">
-                <span class="results-count">{{ results|length }}</span> result{% if results|length != 1 %}s{% endif %} for "{{ symbol }}"{% if selected_package %} in <strong>{{ selected_package }}</strong>{% endif %}
+                <span class="results-count">{{ results|length }}</span> result{% if results|length != 1 %}s{% endif %} for "{{ symbol }}"{% if selected_package %} in <strong>{% if selected_package == "python" %}Standard Library{% else %}{{ selected_package }}{% endif %}</strong>{% endif %}
             </div>
 
             {% if results %}
