@@ -12,7 +12,7 @@ def update_docs(
     upgrade: bool = False,
     retry_failed_urls: bool = False,
     num_parallel_packages: int = multiprocessing.cpu_count(),
-    num_threads_per_package: int = 1,
+    num_threads_per_package: int = multiprocessing.cpu_count(),
 ) -> None:
     """Crawl and parse docs."""
     crawl_docs(
@@ -20,12 +20,11 @@ def update_docs(
         index=index,
         upgrade=upgrade,
         retry_failed_urls=retry_failed_urls,
-        num_parallel_packages=num_parallel_packages,
-        num_threads_per_package=num_threads_per_package,
     )
     parse_docs(
         package=package,
         index=index,
         in_place=True,
         num_parallel_packages=num_parallel_packages,
+        num_threads_per_package=num_threads_per_package,
     )
