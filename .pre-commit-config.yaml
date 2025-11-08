@@ -7,6 +7,12 @@ repos:
     - id: ruff-format
 - repo: local
   hooks:
+  - id: type-check
+    name: Python type checking
+    language: system
+    entry: uvx ty check
+    pass_filenames: false
+    files: \.py$
   - id: update-landing-page
     name: Update landing page
     language: system
