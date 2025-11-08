@@ -621,12 +621,13 @@ _packages = [
 SUPPORTED_PACKAGES: dict[str, Package] = {
     pkg.pypi: pkg for pkg in _packages if pkg.indexed
 }
+ALL_PACKAGES: dict[str, Package] = {pkg.pypi: pkg for pkg in _packages}
 
 
 def get_packages(package: str | None) -> list[Package]:
     if package is None:
-        return list(SUPPORTED_PACKAGES.values())
+        return list(ALL_PACKAGES.values())
     else:
-        if package not in SUPPORTED_PACKAGES:
+        if package not in ALL_PACKAGES:
             console.fatal(f"No package named {package}")
-        return [SUPPORTED_PACKAGES[package]]
+        return [ALL_PACKAGES[package]]
