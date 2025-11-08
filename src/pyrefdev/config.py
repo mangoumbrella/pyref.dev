@@ -558,7 +558,7 @@ _packages = [
     Package(pypi="tidyexc", index_url="https://tidyexc.readthedocs.io/en/latest/"),
     Package(pypi="timezonefinder", index_url="https://timezonefinder.readthedocs.io/en/latest/"),
     Package(pypi="tld", index_url="https://tld.readthedocs.io/en/latest/"),
-    Package(pypi="tm1py", index_url="https://tm1py.readthedocs.io/en/latest/", indexed=False),
+    Package(pypi="tm1py", namespaces=["TM1py"], index_url="https://tm1py.readthedocs.io/en/latest/", indexed=False),
     Package(pypi="tomlkit", index_url="https://tomlkit.readthedocs.io/en/latest/"),
     Package(pypi="toolz", index_url="https://toolz.readthedocs.io/en/latest/"),
     Package(pypi="torch", index_url="https://docs.pytorch.org/docs/stable/index.html"),
