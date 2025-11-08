@@ -220,7 +220,7 @@ class _Crawler:
             with urlopen(url) as f:
                 content = f.read().decode("utf-8", "backslashreplace")
             time.sleep(self._seconds_to_sleep_between_requests)
-        except error.URLError as e:
+        except error.HTTPError as e:
             error_code = _http_error_code(e.code) if hasattr(e, "code") else ""
             console.warning(f"Failed to fetch url {url}, error: {e}")
             self._failed_urls[url] = error_code

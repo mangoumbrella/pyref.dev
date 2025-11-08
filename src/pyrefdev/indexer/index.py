@@ -132,9 +132,11 @@ class Index:
     def guess_index_url(
         self, package: str, *, should_die_if_not_found: Literal[True]
     ) -> str: ...
+    @overload
     def guess_index_url(
         self, package: str, *, should_die_if_not_found: bool
-    ) -> str | None:
+    ) -> str | None: ...
+    def guess_index_url(self, package, *, should_die_if_not_found):
         data = self.fetch_pypi_data(package, refresh=False)
         pypi_info = json.loads(data).get("info", {})
         candidates = list((pypi_info.get("project_urls") or {}).values())

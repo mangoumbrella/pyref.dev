@@ -11,7 +11,7 @@ def update_landing_page(file: Path | None = None) -> None:
 
 
 def update_landing_page_with_packages(
-    packages: dict[str, Package], file: Path | None = None
+    pkgs: dict[str, Package], file: Path | None = None
 ) -> None:
     if file is None:
         file = Path(__file__).parent.parent.parent.parent / "templates" / "index.html"
@@ -19,7 +19,7 @@ def update_landing_page_with_packages(
             console.fatal(f"{file} does not exist")
 
     packages = sorted(
-        (p for p in packages.values() if not p.is_cpython()),
+        (p for p in pkgs.values() if not p.is_cpython()),
         key=lambda p: p.pypi,
     )
     indent = "            "

@@ -9,7 +9,8 @@ def update_docs(
     *,
     package: str | None = None,
     index: Index = Index(),
-    force: bool = False,
+    upgrade: bool = False,
+    retry_failed_urls: bool = False,
     num_parallel_packages: int = multiprocessing.cpu_count(),
     num_threads_per_package: int = 1,
 ) -> None:
@@ -17,7 +18,8 @@ def update_docs(
     crawl_docs(
         package=package,
         index=index,
-        force=force,
+        upgrade=upgrade,
+        retry_failed_urls=retry_failed_urls,
         num_parallel_packages=num_parallel_packages,
         num_threads_per_package=num_threads_per_package,
     )
