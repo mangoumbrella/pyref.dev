@@ -3,7 +3,9 @@ from pyrefdev import config
 
 
 def test_no_duplicated_configs():
-    assert len(config._packages) == len(config.SUPPORTED_PACKAGES)
+    assert len([pkg for pkg in config._packages if pkg.indexed]) == len(
+        config.SUPPORTED_PACKAGES
+    )
 
 
 def test_no_duplicated_mappings():

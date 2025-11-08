@@ -45,7 +45,9 @@ def update_config(package: str, url: str, namespaces: list[str] | None = None) -
         ns_str = f", namespaces=[{ns_content}]"
     else:
         ns_str = ""
-    config_entry = f'\n    Package(pypi="{package}"{ns_str}, index_url="{url}"),'
+    config_entry = (
+        f'\n    Package(pypi="{package}"{ns_str}, index_url="{url}", indexed=False),'
+    )
     config_file = Path(config.__file__)
     config_content = config_file.read_text()
     config_content = _MARKER.sub(config_entry + r"\g<1>", config_content)
