@@ -1,4 +1,4 @@
-VERSION = "3.12.13"
+VERSION = "3.13.2"
 
 # fmt: off
 MAPPING = {
@@ -256,6 +256,7 @@ MAPPING = {
     "aiohttp.streamreader.readexactly": "https://docs.aiohttp.org/en/stable/streams.html#aiohttp.StreamReader.readexactly",
     "aiohttp.streamreader.readline": "https://docs.aiohttp.org/en/stable/streams.html#aiohttp.StreamReader.readline",
     "aiohttp.streamreader.readuntil": "https://docs.aiohttp.org/en/stable/streams.html#aiohttp.StreamReader.readuntil",
+    "aiohttp.streamreader.total_raw_bytes": "https://docs.aiohttp.org/en/stable/streams.html#aiohttp.StreamReader.total_raw_bytes",
     "aiohttp.streamreader.unread_data": "https://docs.aiohttp.org/en/stable/streams.html#aiohttp.StreamReader.unread_data",
     "aiohttp.tcpconnector": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.TCPConnector",
     "aiohttp.tcpconnector.cached_hosts": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.TCPConnector.cached_hosts",
