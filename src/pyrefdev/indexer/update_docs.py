@@ -13,7 +13,6 @@ def update_docs(
     package: str | None = None,
     force: bool = False,
     upgrade: bool = True,
-    retry_failed_urls: bool = True,
     retry_http_404: bool = False,
     index: Index = Index(),
     num_parallel_packages: int = multiprocessing.cpu_count(),
@@ -40,7 +39,7 @@ def update_docs(
             index=index,
             force=force,
             upgrade=upgrade,
-            retry_failed_urls=retry_failed_urls,
+            retry_failed_urls=True,
             retry_http_404=retry_http_404,
         )
         parse_docs(
