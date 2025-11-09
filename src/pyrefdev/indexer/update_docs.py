@@ -41,6 +41,7 @@ def update_docs(
             upgrade=upgrade,
             retry_failed_urls=True,
             retry_http_404=retry_http_404,
+            show_overall_progress=False,
         )
         parse_docs(
             package=pkg.pypi,

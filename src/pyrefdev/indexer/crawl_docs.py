@@ -32,6 +32,7 @@ def crawl_docs(
     num_parallel_packages: int = 1,
     num_threads_per_package: int = 1,
     seconds_to_sleep_between_requests: float = 1.0,
+    show_overall_progress: bool = True,
 ) -> None:
     """Crawl the docs into a local directory."""
     if num_parallel_packages <= 0:
@@ -49,9 +50,12 @@ def crawl_docs(
         packages = [pkg for pkg in packages if index.load_crawl_state(pkg.pypi) is None]
 
     with Progress(console=console) as progress:
-        task = progress.add_task(
-            f"Crawling {len(packages)} packages", total=len(packages)
-        )
+        if show_overall_progress:
+            task = progress.add_task(
+                f"Crawling {len(packages)} packages", total=len(packages)
+            )
+        else:
+            task = None
 
         def crawl_package(pkg: Package):
             try:
@@ -87,7 +91,8 @@ def crawl_docs(
                 crawler.crawl(num_threads=num_threads_per_package)
                 crawler.save_crawl_state(package_version, index)
             finally:
-                progress.advance(task)
+                if task is not None:
+                    progress.advance(task)
 
         with futures.ThreadPoolExecutor(max_workers=num_parallel_packages) as executor:
             fs = [executor.submit(crawl_package, pkg) for pkg in packages]
