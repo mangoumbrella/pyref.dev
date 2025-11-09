@@ -67,7 +67,7 @@ def crawl_docs(
     ) as progress:
         if show_overall_progress:
             task = progress.add_task(
-                f"Crawling {len(packages)} packages", total=len(packages)
+                f"Crawling {len(packages)} packages", total=len(packages), extra=""
             )
         else:
             task = None
