@@ -70,7 +70,7 @@ _packages = [
     Package(pypi="attrs-strict", index_url="https://attrs-strict.readthedocs.io/en/latest/"),
     Package(pypi="attrs", namespaces=["attrs", "attr"], index_url="https://www.attrs.org/en/stable/"),
     Package(pypi="audit-alembic", index_url="https://audit-alembic.readthedocs.io/en/latest/"),
-    Package(pypi="autobahn", index_url="https://autobahn.readthedocs.io/en/latest/"),
+    Package(pypi="autobahn", index_url="https://autobahn.readthedocs.io/en/latest/", exclude_root_urls=["https://autobahn.readthedocs.io/en/latest/_static/"]),
     Package(pypi="autodocsumm", index_url="https://autodocsumm.readthedocs.io/en/latest/"),
     Package(pypi="autoray", index_url="https://autoray.readthedocs.io/en/latest/"),
     Package(pypi="autosemver", index_url="https://autosemver.readthedocs.io/en/latest/"),
