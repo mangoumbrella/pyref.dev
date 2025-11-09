@@ -25,6 +25,7 @@ def update_docs(
     num_threads_per_package: int = multiprocessing.cpu_count(),
 ) -> None:
     """Crawl and parse docs."""
+    should_update_last_updated_package = package is None
     packages = get_packages(package)
     if (last_updated_package_name := index.load_last_updated_package()) is not None:
         package_names = [pkg.pypi for pkg in packages]
@@ -66,5 +67,6 @@ def update_docs(
                 show_overall_progress=False,
             )
             update_config()
-            index.save_last_updated_package(pkg.pypi)
+            if should_update_last_updated_package:
+                index.save_last_updated_package(pkg.pypi)
             progress.advance(task)
