@@ -24,6 +24,7 @@ HTTP_404_ERROR = _http_error_code(404)
 def crawl_docs(
     *,
     package: str | None = None,
+    force: bool = False,
     upgrade: bool = False,
     retry_failed_urls: bool = True,
     retry_http_404: bool = False,
@@ -44,7 +45,7 @@ def crawl_docs(
 
     console.print(f"Crawling documents into {index.docs_directory}")
     packages = get_packages(package)
-    if not upgrade and not retry_failed_urls:
+    if not force and not upgrade and not retry_failed_urls:
         packages = [pkg for pkg in packages if index.load_crawl_state(pkg.pypi) is None]
 
     with Progress(console=console) as progress:
@@ -60,7 +61,10 @@ def crawl_docs(
                 crawl_state = index.load_crawl_state(pkg.pypi)
                 if crawl_state is not None:
                     crawled_version = version.parse(crawl_state.package_version)
-                    if upgrade and package_version > crawled_version:
+                    if force:
+                        console.print(f"{pkg.pypi} forced to re-crawl")
+                        crawl_state = None
+                    elif upgrade and package_version > crawled_version:
                         console.print(
                             f"{pkg.pypi} upgraded from {crawl_state.package_version} to {package_version!s}"
                         )

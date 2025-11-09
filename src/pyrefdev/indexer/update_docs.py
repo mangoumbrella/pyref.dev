@@ -9,6 +9,7 @@ from pyrefdev.indexer.update_config import update_config
 def update_docs(
     *,
     package: str | None = None,
+    force: bool = False,
     upgrade: bool = False,
     retry_failed_urls: bool = True,
     retry_http_404: bool = False,
@@ -20,6 +21,7 @@ def update_docs(
     crawl_docs(
         package=package,
         index=index,
+        force=force,
         upgrade=upgrade,
         retry_failed_urls=retry_failed_urls,
         retry_http_404=retry_http_404,
