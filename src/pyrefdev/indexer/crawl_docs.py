@@ -7,7 +7,14 @@ from urllib import error, parse
 
 import bs4
 from packaging import version
-from rich.progress import Progress, TaskID
+from rich.progress import (
+    BarColumn,
+    Progress,
+    TaskID,
+    TaskProgressColumn,
+    TextColumn,
+    TimeRemainingColumn,
+)
 
 from pyrefdev.config import console, get_packages, Package
 from pyrefdev.indexer.index import Index, IndexState, urlopen
@@ -44,12 +51,20 @@ def crawl_docs(
             f"--num-threads-per-package must be > 0, found {num_threads_per_package}"
         )
 
-    console.print(f"Crawling documents into {index.docs_directory}")
+    if show_overall_progress:
+        console.print(f"Crawling documents into {index.docs_directory}")
     packages = get_packages(package)
     if not force and not upgrade and not retry_failed_urls:
         packages = [pkg for pkg in packages if index.load_crawl_state(pkg.pypi) is None]
 
-    with Progress(console=console) as progress:
+    with Progress(
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(bar_width=None),
+        TaskProgressColumn(),
+        TextColumn("{task.fields[extra]}"),
+        TimeRemainingColumn(),
+        console=console,
+    ) as progress:
         if show_overall_progress:
             task = progress.add_task(
                 f"Crawling {len(packages)} packages", total=len(packages)
@@ -139,7 +154,9 @@ class _Crawler:
             self._to_crawl_queue.put(self._root_url)
             self._seen_urls.add(self._root_url)
 
-            task = self._progress.add_task(f"Crawling {self._root_url}")
+            task = self._progress.add_task(
+                f"Crawling {self._root_url.removeprefix('https://')}", extra=""
+            )
             threads = []
             for _ in range(num_threads):
                 thread = threading.Thread(
@@ -214,13 +231,16 @@ class _Crawler:
             try:
                 saved = self._crawl_url(url)
             finally:
+                kwargs = {}
                 if saved is not None:
                     self._crawled_url_to_files[url] = saved
+                    kwargs["extra"] = str(saved)[-24:]
                 self._progress.update(
                     task,
                     total=len(self._seen_urls),
                     completed=len(self._crawled_url_to_files),
                     refresh=True,
+                    **kwargs,
                 )
                 self._to_crawl_queue.task_done()
 
@@ -270,7 +290,6 @@ class _Crawler:
             existing_content = output.read_text()
             if content == existing_content:
                 return output
-            console.warning(f"Overriding {output!s}")
         output.write_text(content)
         return output
 

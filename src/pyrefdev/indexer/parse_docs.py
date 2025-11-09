@@ -34,6 +34,7 @@ class ProgressExecutor(futures.ThreadPoolExecutor):
         thread_name_prefix="",
         initializer=None,
         initargs=(),
+        show_overall_progress: bool = True,
     ) -> None:
         super().__init__(
             max_workers=max_workers,
@@ -43,7 +44,10 @@ class ProgressExecutor(futures.ThreadPoolExecutor):
         )
         self.progress = progress
         self._transient = transient
-        self._task = self.progress.add_task(description=description, total=total)
+        if show_overall_progress:
+            self._task = self.progress.add_task(description=description, total=total)
+        else:
+            self._task = None
         self._exit_stack = None
 
     def submit(self, fn, /, *args, **kwargs):
@@ -51,7 +55,8 @@ class ProgressExecutor(futures.ThreadPoolExecutor):
             try:
                 return fn(*fn_args, **fn_kwargs)
             finally:
-                self.progress.advance(self._task)
+                if self._task is not None:
+                    self.progress.advance(self._task)
 
         return super().submit(fn_wrapper, *args, **kwargs)
 
@@ -70,6 +75,7 @@ def parse_docs(
     index: Index = Index(),
     num_parallel_packages: int = multiprocessing.cpu_count(),
     num_threads_per_package: int = multiprocessing.cpu_count(),
+    show_overall_progress: bool = True,
 ) -> None:
     """Parse crawled docs and update the mapping files."""
     if sys.version_info[:2] != (3, 14):
@@ -88,6 +94,7 @@ def parse_docs(
             progress=progress,
             total=len(packages),
             max_workers=num_parallel_packages,
+            show_overall_progress=show_overall_progress,
         ) as executor,
     ):
         fs = [

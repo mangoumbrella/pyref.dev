@@ -40,5 +40,3 @@ def update_config() -> None:
     if updated_content != config_content:
         config_file.write_text(updated_content)
         console.print("Updated config.py")
-    else:
-        console.print("No changes needed")

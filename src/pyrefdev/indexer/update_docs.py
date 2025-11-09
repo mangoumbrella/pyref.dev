@@ -4,7 +4,13 @@ from pyrefdev.indexer.crawl_docs import crawl_docs
 from pyrefdev.indexer.index import Index
 from pyrefdev.indexer.parse_docs import parse_docs
 from pyrefdev.config import console, get_packages
-from rich.progress import track
+from rich.progress import (
+    BarColumn,
+    Progress,
+    TaskProgressColumn,
+    TextColumn,
+    TimeRemainingColumn,
+)
 from pyrefdev.indexer.update_config import update_config
 
 
@@ -31,25 +37,34 @@ def update_docs(
             assert len(packages) == len(new_order)
             packages = new_order
 
-    for pkg in track(
-        packages, description=f"Updating {len(packages)} packages", console=console
-    ):
-        crawl_docs(
-            package=pkg.pypi,
-            index=index,
-            force=force,
-            upgrade=upgrade,
-            retry_failed_urls=True,
-            retry_http_404=retry_http_404,
-            show_overall_progress=False,
-        )
-        parse_docs(
-            package=pkg.pypi,
-            index=index,
-            in_place=True,
-            reparse=True,
-            num_parallel_packages=num_parallel_packages,
-            num_threads_per_package=num_threads_per_package,
-        )
-        update_config()
-        index.save_last_updated_package(pkg.pypi)
+    with Progress(
+        TextColumn("[progress.description]{task.description}"),
+        BarColumn(bar_width=None),
+        TaskProgressColumn(),
+        TimeRemainingColumn(),
+        console=console,
+        expand=True,
+    ) as progress:
+        task = progress.add_task(f"Updating {len(packages)} packages")
+        for pkg in packages:
+            crawl_docs(
+                package=pkg.pypi,
+                index=index,
+                force=force,
+                upgrade=upgrade,
+                retry_failed_urls=True,
+                retry_http_404=retry_http_404,
+                show_overall_progress=False,
+            )
+            parse_docs(
+                package=pkg.pypi,
+                index=index,
+                in_place=True,
+                reparse=True,
+                num_parallel_packages=num_parallel_packages,
+                num_threads_per_package=num_threads_per_package,
+                show_overall_progress=False,
+            )
+            update_config()
+            index.save_last_updated_package(pkg.pypi)
+            progress.advance(task)
