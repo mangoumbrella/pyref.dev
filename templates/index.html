@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/static/logo128.png">
-    <link rel="stylesheet" href="/static/styles.css?v=3">
+    <link rel="stylesheet" href="/static/styles.css?v=4">
     <title>pyref.dev - Python Reference Docs</title>
 </head>
 <body>
@@ -44,7 +44,7 @@
         <p>Quickly jump to the official documentation for Python standard library modules and popular packages by using a simple URL pattern:</p>
         <div class="url-pattern">pyref.dev/&lt;fully.qualified.symbol&gt;</div>
 
-        <p class="section-title">Examples</p>
+        <h2 class="section-title">Examples</h2>
         <ul class="examples-list">
             <li><a href="https://pyref.dev/json">pyref.dev/json</a></li>
             <li><a href="https://pyref.dev/pathlib.Path">pyref.dev/pathlib.Path</a></li>
@@ -52,7 +52,7 @@
             <li><a href="https://pyref.dev/numpy.array">pyref.dev/numpy.array</a></li>
         </ul>
 
-        <p class="section-title">You can also search symbols</p>
+        <h2 class="section-title">You can also search symbols</h2>
 
         <div class="search-form">
             <form method="get" action="/is">
@@ -83,7 +83,20 @@
             </form>
         </div>
 
-        <p id="supported-packages" class="section-title" style="margin-bottom: 0;">Supported packages</p>
+        <h2 class="section-title">Browser custom search engines</h2>
+        <p>
+            For even fastest lookups, add <a href="http://pyref.dev/">pyref.dev</a> as a custom search engine in your browser. Use <code>https://pyref.dev/%s</code> as the URL with <code>%s</code> in place of the query.
+            Then you can type a shortcut (e.g., <code>py</code>), <code>&lt;SPACE&gt;</space></code>, <code>SYMBOL</code> in your address bar to quickly jump to the documentation.
+            If you use Chrome, see <a href="https://support.google.com/chrome/answer/95426">instructions</a> on setting up custom search engines.
+        </p>
+        <p style="margin-bottom: 0.4rem;">Here are more advanced URL patterns:</p>
+        <ul>
+            <li><code>https://pyref.dev/is?symbol=%s</code>: Search for a symbol across all packages</li>
+            <li><code>https://pyref.dev/is?lucky=1&amp;symbol=%s</code>: Immediately navigate to first result</li>
+            <li><code>https://pyref.dev/is?lucky=1&amp;package=python&amp;symbol=%s</code>: Search only the standard library and navigate to first result</li>
+        </ul>
+
+        <h2 id="supported-packages" class="section-title" style="margin-top: 2rem; margin-bottom: 0;">Supported packages</h2>
     </div>
 
     <div class="supported-packages">

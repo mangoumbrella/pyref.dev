@@ -117,6 +117,17 @@ a:hover {
     color: var(--python-green);
 }
 
+/* Code element styles */
+code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background-color: var(--gray-100);
+    padding: 0.1rem 0.2rem;
+    border-radius: 4px;
+    border: 1px solid var(--gray-200);
+    color: var(--gray-800);
+}
+
 /* Base button styles */
 .btn {
     display: inline-flex;
@@ -172,21 +183,23 @@ a:hover {
 .home h1 {
     font-size: 3.5rem;
     font-weight: 800;
-    margin-bottom: 1rem;
+    margin-top: 1rem;
     letter-spacing: -0.05em;
 }
 
-.tagline {
-    font-size: 1.4rem;
+.home .tagline {
+    font-size: 1.2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     color: var(--gray-600);
     font-weight: 500;
 }
 
-.stats {
+.home .stats {
     display: flex;
     gap: 2rem;
     justify-content: center;
+    margin-top: 2rem;
     margin-bottom: 2.5rem;
     flex-wrap: wrap;
 }
@@ -212,7 +225,7 @@ a:hover {
 }
 
 .home p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
     color: var(--gray-600);
     max-width: 700px;
@@ -234,11 +247,19 @@ a:hover {
     word-break: break-all;
 }
 
-.section-title {
+h2.section-title {
     font-weight: 600;
-    color: var(--dark);
+    color: var(--gray-600);
+    margin-top: 1rem;
     margin-bottom: 1rem;
     font-size: 1.3rem;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    color: var(--gray-600);
+    font-size: 1rem;
 }
 
 .examples-list {
