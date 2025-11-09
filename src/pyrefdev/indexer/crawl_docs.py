@@ -25,7 +25,7 @@ def crawl_docs(
     *,
     package: str | None = None,
     upgrade: bool = False,
-    retry_failed_urls: bool = False,
+    retry_failed_urls: bool = True,
     retry_http_404: bool = False,
     index: Index = Index(),
     num_parallel_packages: int = 1,

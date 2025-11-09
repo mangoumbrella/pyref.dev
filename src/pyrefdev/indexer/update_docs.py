@@ -8,9 +8,10 @@ from pyrefdev.indexer.parse_docs import parse_docs
 def update_docs(
     *,
     package: str | None = None,
-    index: Index = Index(),
     upgrade: bool = False,
-    retry_failed_urls: bool = False,
+    retry_failed_urls: bool = True,
+    retry_http_404: bool = False,
+    index: Index = Index(),
     num_parallel_packages: int = multiprocessing.cpu_count(),
     num_threads_per_package: int = multiprocessing.cpu_count(),
 ) -> None:
@@ -20,6 +21,7 @@ def update_docs(
         index=index,
         upgrade=upgrade,
         retry_failed_urls=retry_failed_urls,
+        retry_http_404=retry_http_404,
     )
     parse_docs(
         package=package,
