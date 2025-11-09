@@ -2,8 +2,7 @@ import re
 from pathlib import Path
 
 from pyrefdev import config
-from pyrefdev.config import console
-from pyrefdev.mapping import PACKAGE_INFO_MAPPING
+from pyrefdev.config import console, ALL_PACKAGES
 
 
 _PACKAGE_LINE = re.compile(
@@ -13,12 +12,7 @@ _PACKAGE_LINE = re.compile(
 
 
 def update_config() -> None:
-    """Update indexed=False flags in config.py based on PACKAGE_INFO_MAPPING.
-
-    For each Package entry:
-    - If package exists in PACKAGE_INFO_MAPPING: remove indexed=False if present
-    - If package does not exist in PACKAGE_INFO_MAPPING: add indexed=False if not present
-    """
+    """Update indexed=False flags in config.py."""
     config_file = Path(config.__file__)
     config_content = config_file.read_text()
 
@@ -29,7 +23,7 @@ def update_config() -> None:
         indexed_false_flag = match.group(4)
         closing = match.group(5)
 
-        is_indexed = package_name in PACKAGE_INFO_MAPPING
+        is_indexed = package_name in ALL_PACKAGES
         has_indexed_false = indexed_false_flag is not None
 
         if is_indexed and has_indexed_false:
