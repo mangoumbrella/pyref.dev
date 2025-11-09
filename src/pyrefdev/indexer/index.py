@@ -89,6 +89,23 @@ class Index:
     def _ensure_directory(self) -> None:
         self.docs_directory.mkdir(parents=True, exist_ok=True)
         (self.docs_directory / "__pypi__").mkdir(parents=True, exist_ok=True)
+        (self.docs_directory / "__metadata__").mkdir(parents=True, exist_ok=True)
+
+    def load_last_updated_package(self) -> str | None:
+        self._ensure_directory()
+        metadata_file = (
+            self.docs_directory / "__metadata__" / "last_updated_package.txt"
+        )
+        if not metadata_file.exists():
+            return None
+        return metadata_file.read_text().strip()
+
+    def save_last_updated_package(self, package: str) -> None:
+        self._ensure_directory()
+        metadata_file = (
+            self.docs_directory / "__metadata__" / "last_updated_package.txt"
+        )
+        metadata_file.write_text(package)
 
     def load_crawl_state(self, package: str) -> IndexState | None:
         self._ensure_directory()
