@@ -141,7 +141,10 @@ def _parse_package(
             maybe_module_prefix = maybe_module.split(".")[0]
             if maybe_module_prefix in _STDLIB_MODULES_NAMES:
                 symbol_to_urls[maybe_module] = url
-        symbols = parser.parse_symbols((package_docs / file).read_text())
+        filepath = package_docs / file
+        if not filepath.exists():
+            filepath = Path(filepath.as_posix().lower())
+        symbols = parser.parse_symbols(filepath.read_text())
         module_count = sum(
             1 if fragment.startswith(_MODULE_FRAGMENT_PREFIX) else 0
             for fragment in symbols.values()
