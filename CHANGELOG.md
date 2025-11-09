@@ -3,34 +3,29 @@
 ## [Unreleased]
 
 - Support searching symbols by packages (fixes [#10](https://github.com/mangoumbrella/pyref.dev/issues/10), thanks [@treyhunner](https://github.com/treyhunner) for the request).
-- Support [zephyr-python-api](https://zephyr-python-api.readthedocs.io/en/latest/).
-- Support [sqlmesh](https://sqlmesh.readthedocs.io/en/stable/).
-- Support [jupyter-ai](https://jupyter-ai.readthedocs.io/en/v2/).
-- Support [python-retry](https://py-retry.readthedocs.io/en/latest/).
-- Support [stix2-validator](https://stix2-validator.readthedocs.io/en/latest/).
 - Support [audit-alembic](https://audit-alembic.readthedocs.io/en/latest/).
-- Support [pylabel](https://pylabel.readthedocs.io/en/latest/).
 - Support [causal-learn](https://causal-learn.readthedocs.io/en/latest/).
-- Support [splinebox](https://splinebox.readthedocs.io/en/stable/).
 - Support [django-authlib](https://django-authlib.readthedocs.io/en/latest/).
-- Support [rapidyaml](https://rapidyaml.readthedocs.io/latest/).
-- Support [django-trench](https://django-trench.readthedocs.io/en/latest/).
-- Support [mtcnn](https://mtcnn.readthedocs.io/en/latest/).
 - Support [django-guid](https://django-guid.readthedocs.io/en/latest/).
-- Support [python-barcode](https://python-barcode.readthedocs.io/en/stable/).
-- Support [mod-wsgi](https://modwsgi.readthedocs.io/en/master/).
-- Support [jenkins-job-builder](https://jenkins-job-builder.readthedocs.io/en/latest/).
-- Support [zyte-api](https://python-zyte-api.readthedocs.io/en/stable/).
-- Support [pyquil](https://pyquil-docs.rigetti.com/en/stable/).
-- Support [scrapinghub](https://python-scrapinghub.readthedocs.io/en/latest/).
-- Support [python-ldap](https://www.python-ldap.org/en/python-ldap-3.4.3/).
 - Support [django-pghistory](https://django-pghistory.readthedocs.io/en/3.8.3/).
-- Support [httpdbg](https://httpdbg.readthedocs.io/en/latest/).
-- Support [sphinx-thebe](https://sphinx-thebe.readthedocs.io/en/latest/).
-- Support [pytdc](https://tdc.readthedocs.io/en/main/).
+- Support [django-trench](https://django-trench.readthedocs.io/en/latest/).
 - Support [gpytorch](https://docs.gpytorch.ai/en/stable/).
-- Support [zope-testbrowser](https://zopetestbrowser.readthedocs.io/en/latest/).
+- Support [jupyter-ai](https://jupyter-ai.readthedocs.io/en/v2/).
+- Support [mtcnn](https://mtcnn.readthedocs.io/en/latest/).
+- Support [pylabel](https://pylabel.readthedocs.io/en/latest/).
+- Support [pyquil](https://pyquil-docs.rigetti.com/en/stable/).
+- Support [pytdc](https://tdc.readthedocs.io/en/main/).
+- Support [python-barcode](https://python-barcode.readthedocs.io/en/stable/).
+- Support [python-ldap](https://www.python-ldap.org/en/python-ldap-3.4.3/).
+- Support [python-retry](https://py-retry.readthedocs.io/en/latest/).
+- Support [scrapinghub](https://python-scrapinghub.readthedocs.io/en/latest/).
+- Support [splinebox](https://splinebox.readthedocs.io/en/stable/).
+- Support [sqlmesh](https://sqlmesh.readthedocs.io/en/stable/).
+- Support [stix2-validator](https://stix2-validator.readthedocs.io/en/latest/).
 - Support [tm1py](https://tm1py.readthedocs.io/en/latest/).
+- Support [zephyr-python-api](https://zephyr-python-api.readthedocs.io/en/latest/).
+- Support [zope-testbrowser](https://zopetestbrowser.readthedocs.io/en/latest/).
+- Support [zyte-api](https://python-zyte-api.readthedocs.io/en/stable/).
 
 ## v2025.10
 
