@@ -12,7 +12,7 @@ _PACKAGE_LINE = re.compile(
 )
 
 
-def update_configs() -> None:
+def update_config() -> None:
     """Update indexed=False flags in config.py based on PACKAGE_INFO_MAPPING.
 
     For each Package entry:
