@@ -380,7 +380,7 @@ a:hover {
 
 .search-input {
     flex: 1;
-    padding: 1rem;
+    padding: 0.6rem;
     border: 2px solid var(--gray-200);
     border-radius: 6px;
     font-size: 1.1rem;
@@ -394,7 +394,7 @@ a:hover {
 }
 
 .package-select {
-    padding: 1rem;
+    padding: 0.6rem;
     border: 2px solid var(--gray-200);
     border-radius: 6px;
     font-size: 1rem;
@@ -419,13 +419,13 @@ a:hover {
 
 .search-button {
     /* Uses .btn and .btn-primary base styles */
-    padding: 1rem 1.2rem;
+    padding: 0.6rem 1rem;
     font-size: 1rem;
 }
 
 .lucky-button {
     /* Uses .btn and .btn-success base styles */
-    padding: 1rem 1.2rem;
+    padding: 0.6rem 1rem;
     font-size: 1rem;
 }
 
