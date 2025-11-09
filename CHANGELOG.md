@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+Nothing noticeable unreleased.
+
+## v2025.11
+
 - Add instructions for setting up custom search engines (fixes [#9](https://github.com/mangoumbrella/pyref.dev/issues/9), thanks [@treyhunner](https://github.com/treyhunner) for the suggestion).
 - Support searching symbols by packages (fixes [#10](https://github.com/mangoumbrella/pyref.dev/issues/10), thanks [@treyhunner](https://github.com/treyhunner) for the request).
 - Support [audit-alembic](https://audit-alembic.readthedocs.io/en/latest/).
