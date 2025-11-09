@@ -3,6 +3,7 @@ import multiprocessing
 from pyrefdev.indexer.crawl_docs import crawl_docs
 from pyrefdev.indexer.index import Index
 from pyrefdev.indexer.parse_docs import parse_docs
+from pyrefdev.indexer.update_configs import update_configs
 
 
 def update_docs(
@@ -30,3 +31,4 @@ def update_docs(
         num_parallel_packages=num_parallel_packages,
         num_threads_per_package=num_threads_per_package,
     )
+    update_configs()
