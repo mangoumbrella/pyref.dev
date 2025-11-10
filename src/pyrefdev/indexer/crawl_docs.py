@@ -38,7 +38,7 @@ def crawl_docs(
     index: Index = Index(),
     num_parallel_packages: int = 1,
     num_threads_per_package: int = 1,
-    seconds_to_sleep_between_requests: float = 1.0,
+    seconds_to_sleep_between_requests: float = 5.0,
     show_overall_progress: bool = True,
 ) -> None:
     """Crawl the docs into a local directory."""

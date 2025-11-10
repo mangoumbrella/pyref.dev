@@ -21,6 +21,7 @@ def update_docs(
     upgrade: bool = True,
     retry_http_404: bool = False,
     index: Index = Index(),
+    seconds_to_sleep_between_requests: float = 5.0,
     num_parallel_packages: int = multiprocessing.cpu_count(),
     num_threads_per_package: int = multiprocessing.cpu_count(),
 ) -> None:
@@ -55,6 +56,7 @@ def update_docs(
                 upgrade=upgrade,
                 retry_failed_urls=True,
                 retry_http_404=retry_http_404,
+                seconds_to_sleep_between_requests=seconds_to_sleep_between_requests,
                 show_overall_progress=False,
             )
             parse_docs(
