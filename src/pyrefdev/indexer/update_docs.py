@@ -35,7 +35,7 @@ def update_docs(
         except ValueError:
             pass
         else:
-            new_order = packages[first_index:] + packages[:first_index]
+            new_order = packages[first_index + 1 :] + packages[: first_index + 1]
             assert len(packages) == len(new_order)
             packages = new_order
 
