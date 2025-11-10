@@ -17,6 +17,7 @@ from pyrefdev.config import Package, console
 
 
 _RTD_URL_PATTERN = re.compile(r"https?://([^\s/]+\.readthedocs\.io)\b")
+_MAX_BACKOFF_SECONDS = 86400  # 24 hours
 
 
 def urlopen(url: str):
@@ -25,15 +26,24 @@ def urlopen(url: str):
         method="GET",
         headers={"User-Agent": f"pyrefdev/{__version__} (+https://pyref.dev)"},
     )
-    backoffs = [1, 2, 5, 15, 30, 60]
+    backoffs = [1, 2, 5, 15, 30, 60, 120, 300, 600, 1800, 3600]
+    attempt = 0
+
     while True:
         try:
             return request.urlopen(req, timeout=60)
         except error.HTTPError as e:
-            if e.code == 429:  # Too Many Request
-                if not backoffs:
-                    raise
-                backoff = backoffs.pop(0) * (0.9 + random.random() / 5.0)
+            if e.code == 429:  # Too Many Requests
+                attempt += 1
+                if backoffs:
+                    backoff = backoffs.pop(0) * (0.9 + random.random() / 5.0)
+                else:
+                    backoff = _MAX_BACKOFF_SECONDS * (0.9 + random.random() / 5.0)
+
+                console.warning(
+                    f"HTTP 429 (Too Many Requests) for {url}. "
+                    f"Retrying in {backoff:.1f}s (attempt {attempt})..."
+                )
                 time.sleep(backoff)
             else:
                 raise
@@ -42,9 +52,17 @@ def urlopen(url: str):
                 e.reason, (TimeoutError, OSError)
             ):
                 raise
-            if not backoffs:
-                raise
-            backoff = backoffs.pop(0) * (0.9 + random.random() / 5.0)
+
+            attempt += 1
+            if backoffs:
+                backoff = backoffs.pop(0) * (0.9 + random.random() / 5.0)
+            else:
+                backoff = _MAX_BACKOFF_SECONDS * (0.9 + random.random() / 5.0)
+
+            console.warning(
+                f"Timeout/Network error for {url}. "
+                f"Retrying in {backoff:.1f}s (attempt {attempt})..."
+            )
             time.sleep(backoff)
 
 
