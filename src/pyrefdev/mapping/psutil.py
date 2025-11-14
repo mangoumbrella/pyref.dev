@@ -1,4 +1,4 @@
-VERSION = "7.0.0"
+VERSION = "7.1.3"
 
 # fmt: off
 MAPPING = {
@@ -115,6 +115,15 @@ MAPPING = {
     "psutil.process.wait": "https://psutil.readthedocs.io/en/latest/#psutil.Process.wait",
     "psutil.process_iter": "https://psutil.readthedocs.io/en/latest/#psutil.process_iter",
     "psutil.procfs_path": "https://psutil.readthedocs.io/en/latest/#psutil.PROCFS_PATH",
+    "psutil.psutil": "https://psutil.readthedocs.io/en/latest/",
+    "psutil.psutil.test": "https://psutil.readthedocs.io/en/latest/",
+    "psutil.psutil.test.memoryleaktestcase": "https://psutil.readthedocs.io/en/latest/#psutil.psutil.test.MemoryLeakTestCase",
+    "psutil.psutil.test.memoryleaktestcase.execute": "https://psutil.readthedocs.io/en/latest/#psutil.psutil.test.MemoryLeakTestCase.execute",
+    "psutil.psutil.test.memoryleaktestcase.retries": "https://psutil.readthedocs.io/en/latest/#psutil.psutil.test.MemoryLeakTestCase.retries",
+    "psutil.psutil.test.memoryleaktestcase.times": "https://psutil.readthedocs.io/en/latest/#psutil.psutil.test.MemoryLeakTestCase.times",
+    "psutil.psutil.test.memoryleaktestcase.tolerance": "https://psutil.readthedocs.io/en/latest/#psutil.psutil.test.MemoryLeakTestCase.tolerance",
+    "psutil.psutil.test.memoryleaktestcase.verbosity": "https://psutil.readthedocs.io/en/latest/#psutil.psutil.test.MemoryLeakTestCase.verbosity",
+    "psutil.psutil.test.memoryleaktestcase.warmup_times": "https://psutil.readthedocs.io/en/latest/#psutil.psutil.test.MemoryLeakTestCase.warmup_times",
     "psutil.realtime_priority_class": "https://psutil.readthedocs.io/en/latest/#psutil.REALTIME_PRIORITY_CLASS",
     "psutil.rlim_infinity": "https://psutil.readthedocs.io/en/latest/#psutil.RLIM_INFINITY",
     "psutil.rlimit_as": "https://psutil.readthedocs.io/en/latest/#psutil.RLIMIT_AS",

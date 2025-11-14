@@ -1,4 +1,4 @@
-VERSION = "2.7.0"
+VERSION = "2.7.2"
 
 # fmt: off
 MAPPING = {
@@ -113,6 +113,9 @@ MAPPING = {
     "pronto.literalpropertyvalue.__repr__": "https://pronto.readthedocs.io/en/stable/api/pronto.LiteralPropertyValue.html#pronto.LiteralPropertyValue.__repr__",
     "pronto.metadata": "https://pronto.readthedocs.io/en/stable/api/pronto.Metadata.html#pronto.Metadata",
     "pronto.metadata.__bool__": "https://pronto.readthedocs.io/en/stable/api/pronto.Metadata.html#pronto.Metadata.__bool__",
+    "pronto.metadata.__eq__": "https://pronto.readthedocs.io/en/stable/api/pronto.Metadata.html#pronto.Metadata.__eq__",
+    "pronto.metadata.__hash__": "https://pronto.readthedocs.io/en/stable/api/pronto.Metadata.html#pronto.Metadata.__hash__",
+    "pronto.metadata.__repr__": "https://pronto.readthedocs.io/en/stable/api/pronto.Metadata.html#pronto.Metadata.__repr__",
     "pronto.metadata.annotations": "https://pronto.readthedocs.io/en/stable/api/pronto.Metadata.html#pronto.Metadata.annotations",
     "pronto.metadata.auto_generated_by": "https://pronto.readthedocs.io/en/stable/api/pronto.Metadata.html#pronto.Metadata.auto_generated_by",
     "pronto.metadata.data_version": "https://pronto.readthedocs.io/en/stable/api/pronto.Metadata.html#pronto.Metadata.data_version",
@@ -205,6 +208,9 @@ MAPPING = {
     "pronto.relationship.transitive_over": "https://pronto.readthedocs.io/en/stable/api/pronto.Relationship.html#pronto.Relationship.transitive_over",
     "pronto.relationship.xrefs": "https://pronto.readthedocs.io/en/stable/api/pronto.Relationship.html#pronto.Relationship.xrefs",
     "pronto.relationshipdata": "https://pronto.readthedocs.io/en/stable/api/pronto.RelationshipData.html#pronto.RelationshipData",
+    "pronto.relationshipdata.__eq__": "https://pronto.readthedocs.io/en/stable/api/pronto.RelationshipData.html#pronto.RelationshipData.__eq__",
+    "pronto.relationshipdata.__hash__": "https://pronto.readthedocs.io/en/stable/api/pronto.RelationshipData.html#pronto.RelationshipData.__hash__",
+    "pronto.relationshipdata.__repr__": "https://pronto.readthedocs.io/en/stable/api/pronto.RelationshipData.html#pronto.RelationshipData.__repr__",
     "pronto.resourcepropertyvalue": "https://pronto.readthedocs.io/en/stable/api/pronto.ResourcePropertyValue.html#pronto.ResourcePropertyValue",
     "pronto.resourcepropertyvalue.__eq__": "https://pronto.readthedocs.io/en/stable/api/pronto.ResourcePropertyValue.html#pronto.ResourcePropertyValue.__eq__",
     "pronto.resourcepropertyvalue.__ge__": "https://pronto.readthedocs.io/en/stable/api/pronto.ResourcePropertyValue.html#pronto.ResourcePropertyValue.__ge__",
@@ -285,6 +291,9 @@ MAPPING = {
     "pronto.term.synonyms": "https://pronto.readthedocs.io/en/stable/api/pronto.Term.html#pronto.Term.synonyms",
     "pronto.term.xrefs": "https://pronto.readthedocs.io/en/stable/api/pronto.Term.html#pronto.Term.xrefs",
     "pronto.termdata": "https://pronto.readthedocs.io/en/stable/api/pronto.TermData.html#pronto.TermData",
+    "pronto.termdata.__eq__": "https://pronto.readthedocs.io/en/stable/api/pronto.TermData.html#pronto.TermData.__eq__",
+    "pronto.termdata.__hash__": "https://pronto.readthedocs.io/en/stable/api/pronto.TermData.html#pronto.TermData.__hash__",
+    "pronto.termdata.__repr__": "https://pronto.readthedocs.io/en/stable/api/pronto.TermData.html#pronto.TermData.__repr__",
     "pronto.termset": "https://pronto.readthedocs.io/en/stable/api/pronto.TermSet.html#pronto.TermSet",
     "pronto.termset.__eq__": "https://pronto.readthedocs.io/en/stable/api/pronto.TermSet.html#pronto.TermSet.__eq__",
     "pronto.termset.__ge__": "https://pronto.readthedocs.io/en/stable/api/pronto.TermSet.html#pronto.TermSet.__ge__",

@@ -1,4 +1,4 @@
-VERSION = "3.0.2"
+VERSION = "3.1.1"
 
 # fmt: off
 MAPPING = {
@@ -16,6 +16,7 @@ MAPPING = {
     "xgboost.booster.eval_set": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.Booster.eval_set",
     "xgboost.booster.feature_names": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.Booster.feature_names",
     "xgboost.booster.feature_types": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.Booster.feature_types",
+    "xgboost.booster.get_categories": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.Booster.get_categories",
     "xgboost.booster.get_dump": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.Booster.get_dump",
     "xgboost.booster.get_fscore": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.Booster.get_fscore",
     "xgboost.booster.get_score": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.Booster.get_score",
@@ -54,15 +55,20 @@ MAPPING = {
     "xgboost.callback.trainingcheckpoint.after_iteration": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.callback.TrainingCheckPoint.after_iteration",
     "xgboost.callback.trainingcheckpoint.before_training": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.callback.TrainingCheckPoint.before_training",
     "xgboost.collective": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#module-xgboost.collective",
+    "xgboost.collective.communicatorcontext": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.CommunicatorContext",
     "xgboost.collective.config": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.Config",
     "xgboost.collective.config.retry": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.Config.retry",
     "xgboost.collective.config.timeout": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.Config.timeout",
     "xgboost.collective.config.tracker_host_ip": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.Config.tracker_host_ip",
     "xgboost.collective.config.tracker_port": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.Config.tracker_port",
     "xgboost.collective.config.tracker_timeout": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.Config.tracker_timeout",
+    "xgboost.collective.finalize": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.finalize",
+    "xgboost.collective.get_rank": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.get_rank",
+    "xgboost.collective.get_world_size": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.get_world_size",
     "xgboost.collective.init": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.init",
     "xgboost.config_context": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.config_context",
     "xgboost.core": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#module-xgboost.core",
+    "xgboost.core.categories": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.core.Categories",
     "xgboost.cv": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.cv",
     "xgboost.dataiter": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DataIter",
     "xgboost.dataiter.get_callbacks": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DataIter.get_callbacks",
@@ -75,6 +81,7 @@ MAPPING = {
     "xgboost.dmatrix.feature_names": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.feature_names",
     "xgboost.dmatrix.feature_types": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.feature_types",
     "xgboost.dmatrix.get_base_margin": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.get_base_margin",
+    "xgboost.dmatrix.get_categories": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.get_categories",
     "xgboost.dmatrix.get_data": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.get_data",
     "xgboost.dmatrix.get_float_info": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.get_float_info",
     "xgboost.dmatrix.get_group": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.get_group",
@@ -100,6 +107,7 @@ MAPPING = {
     "xgboost.extmemquantiledmatrix.feature_names": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.ExtMemQuantileDMatrix.feature_names",
     "xgboost.extmemquantiledmatrix.feature_types": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.ExtMemQuantileDMatrix.feature_types",
     "xgboost.extmemquantiledmatrix.get_base_margin": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.ExtMemQuantileDMatrix.get_base_margin",
+    "xgboost.extmemquantiledmatrix.get_categories": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.ExtMemQuantileDMatrix.get_categories",
     "xgboost.extmemquantiledmatrix.get_data": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.ExtMemQuantileDMatrix.get_data",
     "xgboost.extmemquantiledmatrix.get_float_info": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.ExtMemQuantileDMatrix.get_float_info",
     "xgboost.extmemquantiledmatrix.get_group": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.ExtMemQuantileDMatrix.get_group",
@@ -130,6 +138,7 @@ MAPPING = {
     "xgboost.quantiledmatrix.feature_names": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.QuantileDMatrix.feature_names",
     "xgboost.quantiledmatrix.feature_types": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.QuantileDMatrix.feature_types",
     "xgboost.quantiledmatrix.get_base_margin": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.QuantileDMatrix.get_base_margin",
+    "xgboost.quantiledmatrix.get_categories": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.QuantileDMatrix.get_categories",
     "xgboost.quantiledmatrix.get_data": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.QuantileDMatrix.get_data",
     "xgboost.quantiledmatrix.get_float_info": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.QuantileDMatrix.get_float_info",
     "xgboost.quantiledmatrix.get_group": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.QuantileDMatrix.get_group",

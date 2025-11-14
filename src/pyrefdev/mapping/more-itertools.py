@@ -1,4 +1,4 @@
-VERSION = "10.7.0"
+VERSION = "10.8.0"
 
 # fmt: off
 MAPPING = {
@@ -8,6 +8,8 @@ MAPPING = {
     "more_itertools.all_unique": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.all_unique",
     "more_itertools.always_iterable": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.always_iterable",
     "more_itertools.always_reversible": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.always_reversible",
+    "more_itertools.argmax": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.argmax",
+    "more_itertools.argmin": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.argmin",
     "more_itertools.batched": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.batched",
     "more_itertools.before_and_after": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.before_and_after",
     "more_itertools.bucket": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.bucket",
@@ -26,6 +28,7 @@ MAPPING = {
     "more_itertools.convolve": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.convolve",
     "more_itertools.count_cycle": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.count_cycle",
     "more_itertools.countable": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.countable",
+    "more_itertools.derangements": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.derangements",
     "more_itertools.dft": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.dft",
     "more_itertools.difference": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.difference",
     "more_itertools.distinct_combinations": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.distinct_combinations",
@@ -37,6 +40,7 @@ MAPPING = {
     "more_itertools.duplicates_everseen": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.duplicates_everseen",
     "more_itertools.duplicates_justseen": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.duplicates_justseen",
     "more_itertools.exactly_n": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.exactly_n",
+    "more_itertools.extract": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.extract",
     "more_itertools.factor": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.factor",
     "more_itertools.filter_except": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.filter_except",
     "more_itertools.filter_map": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.filter_map",
@@ -53,6 +57,7 @@ MAPPING = {
     "more_itertools.interleave": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.interleave",
     "more_itertools.interleave_evenly": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.interleave_evenly",
     "more_itertools.interleave_longest": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.interleave_longest",
+    "more_itertools.interleave_randomly": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.interleave_randomly",
     "more_itertools.intersperse": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.intersperse",
     "more_itertools.is_prime": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.is_prime",
     "more_itertools.is_sorted": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.is_sorted",
@@ -116,6 +121,7 @@ MAPPING = {
     "more_itertools.roundrobin": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.roundrobin",
     "more_itertools.rstrip": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.rstrip",
     "more_itertools.run_length": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.run_length",
+    "more_itertools.running_median": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.running_median",
     "more_itertools.sample": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.sample",
     "more_itertools.seekable": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.seekable",
     "more_itertools.sequenceview": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.SequenceView",

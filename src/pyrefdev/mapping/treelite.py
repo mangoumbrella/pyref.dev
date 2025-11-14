@@ -1,4 +1,4 @@
-VERSION = "4.4.1"
+VERSION = "4.6.1"
 
 # fmt: off
 MAPPING = {
@@ -21,9 +21,6 @@ MAPPING = {
     "treelite.model.deserialize": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.deserialize",
     "treelite.model.deserialize_bytes": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.deserialize_bytes",
     "treelite.model.dump_as_json": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.dump_as_json",
-    "treelite.model.from_lightgbm": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.from_lightgbm",
-    "treelite.model.from_xgboost": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.from_xgboost",
-    "treelite.model.from_xgboost_json": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.from_xgboost_json",
     "treelite.model.get_header_accessor": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.get_header_accessor",
     "treelite.model.get_tree_accessor": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.get_tree_accessor",
     "treelite.model.get_tree_depth": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.get_tree_depth",
@@ -32,7 +29,6 @@ MAPPING = {
     "treelite.model.headeraccessor.get_field": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.model.HeaderAccessor.get_field",
     "treelite.model.headeraccessor.set_field": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.model.HeaderAccessor.set_field",
     "treelite.model.input_type": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.input_type",
-    "treelite.model.load": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.load",
     "treelite.model.num_feature": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.num_feature",
     "treelite.model.num_tree": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.num_tree",
     "treelite.model.output_type": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.output_type",
@@ -61,16 +57,6 @@ MAPPING = {
     "treelite.model_builder.postprocessorfunc.asdict": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.model_builder.PostProcessorFunc.asdict",
     "treelite.model_builder.treeannotation": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.model_builder.TreeAnnotation",
     "treelite.model_builder.treeannotation.asdict": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.model_builder.TreeAnnotation.asdict",
-    "treelite.modelbuilder": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.ModelBuilder",
-    "treelite.modelbuilder.append": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.ModelBuilder.append",
-    "treelite.modelbuilder.commit": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.ModelBuilder.commit",
-    "treelite.modelbuilder.insert": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.ModelBuilder.insert",
-    "treelite.modelbuilder.node": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.ModelBuilder.Node",
-    "treelite.modelbuilder.node.set_categorical_test_node": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.ModelBuilder.Node.set_categorical_test_node",
-    "treelite.modelbuilder.node.set_leaf_node": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.ModelBuilder.Node.set_leaf_node",
-    "treelite.modelbuilder.node.set_numerical_test_node": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.ModelBuilder.Node.set_numerical_test_node",
-    "treelite.modelbuilder.node.set_root": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.ModelBuilder.Node.set_root",
-    "treelite.modelbuilder.tree": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.ModelBuilder.Tree",
     "treelite.sklearn": "https://treelite.readthedocs.io/en/latest/treelite-api.html#module-treelite.sklearn",
     "treelite.sklearn.export_model": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.sklearn.export_model",
     "treelite.sklearn.import_model": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.sklearn.import_model",

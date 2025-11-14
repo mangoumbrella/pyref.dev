@@ -1,4 +1,4 @@
-VERSION = "14.0.0"
+VERSION = "14.2.0"
 
 # fmt: off
 MAPPING = {
@@ -132,6 +132,19 @@ MAPPING = {
     "rich.console.screencontext.update": "https://rich.readthedocs.io/en/latest/reference/console.html#rich.console.ScreenContext.update",
     "rich.console.screenupdate": "https://rich.readthedocs.io/en/latest/reference/console.html#rich.console.ScreenUpdate",
     "rich.console.themecontext": "https://rich.readthedocs.io/en/latest/reference/console.html#rich.console.ThemeContext",
+    "rich.control": "https://rich.readthedocs.io/en/latest/reference/control.html",
+    "rich.control.control": "https://rich.readthedocs.io/en/latest/reference/control.html#rich.control.Control",
+    "rich.control.control.alt_screen": "https://rich.readthedocs.io/en/latest/reference/control.html#rich.control.Control.alt_screen",
+    "rich.control.control.bell": "https://rich.readthedocs.io/en/latest/reference/control.html#rich.control.Control.bell",
+    "rich.control.control.clear": "https://rich.readthedocs.io/en/latest/reference/control.html#rich.control.Control.clear",
+    "rich.control.control.home": "https://rich.readthedocs.io/en/latest/reference/control.html#rich.control.Control.home",
+    "rich.control.control.move": "https://rich.readthedocs.io/en/latest/reference/control.html#rich.control.Control.move",
+    "rich.control.control.move_to": "https://rich.readthedocs.io/en/latest/reference/control.html#rich.control.Control.move_to",
+    "rich.control.control.move_to_column": "https://rich.readthedocs.io/en/latest/reference/control.html#rich.control.Control.move_to_column",
+    "rich.control.control.show_cursor": "https://rich.readthedocs.io/en/latest/reference/control.html#rich.control.Control.show_cursor",
+    "rich.control.control.title": "https://rich.readthedocs.io/en/latest/reference/control.html#rich.control.Control.title",
+    "rich.control.escape_control_codes": "https://rich.readthedocs.io/en/latest/reference/control.html#rich.control.escape_control_codes",
+    "rich.control.strip_control_codes": "https://rich.readthedocs.io/en/latest/reference/control.html#rich.control.strip_control_codes",
     "rich.emoji": "https://rich.readthedocs.io/en/latest/reference/emoji.html",
     "rich.emoji.emoji": "https://rich.readthedocs.io/en/latest/reference/emoji.html#rich.emoji.Emoji",
     "rich.emoji.emoji.replace": "https://rich.readthedocs.io/en/latest/reference/emoji.html#rich.emoji.Emoji.replace",

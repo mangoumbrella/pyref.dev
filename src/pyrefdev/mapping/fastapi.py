@@ -1,4 +1,4 @@
-VERSION = "0.115.14"
+VERSION = "0.121.1"
 
 # fmt: off
 MAPPING = {
@@ -443,6 +443,7 @@ MAPPING = {
     "fastapi.openapi.models.schema.writeonly": "https://fastapi.tiangolo.com/reference/openapi/models/#fastapi.openapi.models.Schema.writeOnly",
     "fastapi.openapi.models.schema.xml": "https://fastapi.tiangolo.com/reference/openapi/models/#fastapi.openapi.models.Schema.xml",
     "fastapi.openapi.models.schemaorbool": "https://fastapi.tiangolo.com/reference/openapi/models/#fastapi.openapi.models.SchemaOrBool",
+    "fastapi.openapi.models.schematype": "https://fastapi.tiangolo.com/reference/openapi/models/#fastapi.openapi.models.SchemaType",
     "fastapi.openapi.models.securitybase": "https://fastapi.tiangolo.com/reference/openapi/models/#fastapi.openapi.models.SecurityBase",
     "fastapi.openapi.models.securitybase.config": "https://fastapi.tiangolo.com/reference/openapi/models/#fastapi.openapi.models.SecurityBase.Config",
     "fastapi.openapi.models.securitybase.config.extra": "https://fastapi.tiangolo.com/reference/openapi/models/#fastapi.openapi.models.SecurityBase.Config.extra",
@@ -761,14 +762,14 @@ MAPPING = {
     "fastapi.status.http_410_gone": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_410_GONE",
     "fastapi.status.http_411_length_required": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_411_LENGTH_REQUIRED",
     "fastapi.status.http_412_precondition_failed": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_412_PRECONDITION_FAILED",
-    "fastapi.status.http_413_request_entity_too_large": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_413_REQUEST_ENTITY_TOO_LARGE",
-    "fastapi.status.http_414_request_uri_too_long": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_414_REQUEST_URI_TOO_LONG",
+    "fastapi.status.http_413_content_too_large": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_413_CONTENT_TOO_LARGE",
+    "fastapi.status.http_414_uri_too_long": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_414_URI_TOO_LONG",
     "fastapi.status.http_415_unsupported_media_type": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_415_UNSUPPORTED_MEDIA_TYPE",
-    "fastapi.status.http_416_requested_range_not_satisfiable": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_416_REQUESTED_RANGE_NOT_SATISFIABLE",
+    "fastapi.status.http_416_range_not_satisfiable": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_416_RANGE_NOT_SATISFIABLE",
     "fastapi.status.http_417_expectation_failed": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_417_EXPECTATION_FAILED",
     "fastapi.status.http_418_im_a_teapot": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_418_IM_A_TEAPOT",
     "fastapi.status.http_421_misdirected_request": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_421_MISDIRECTED_REQUEST",
-    "fastapi.status.http_422_unprocessable_entity": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_422_UNPROCESSABLE_ENTITY",
+    "fastapi.status.http_422_unprocessable_content": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_422_UNPROCESSABLE_CONTENT",
     "fastapi.status.http_423_locked": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_423_LOCKED",
     "fastapi.status.http_424_failed_dependency": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_424_FAILED_DEPENDENCY",
     "fastapi.status.http_425_too_early": "https://fastapi.tiangolo.com/reference/status/#fastapi.status.HTTP_425_TOO_EARLY",

@@ -1,4 +1,4 @@
-VERSION = "0.20"
+VERSION = "0.21"
 
 # fmt: off
 MAPPING = {
@@ -7,6 +7,7 @@ MAPPING = {
     "schemdraw.drawing": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.Drawing",
     "schemdraw.drawing.add": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.Drawing.add",
     "schemdraw.drawing.add_elements": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.Drawing.add_elements",
+    "schemdraw.drawing.add_svgdef": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.Drawing.add_svgdef",
     "schemdraw.drawing.config": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.Drawing.config",
     "schemdraw.drawing.container": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.Drawing.container",
     "schemdraw.drawing.draw": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.Drawing.draw",
@@ -57,8 +58,12 @@ MAPPING = {
     "schemdraw.elements.connectors.busconnect": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.connectors.BusConnect",
     "schemdraw.elements.connectors.busline": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.connectors.BusLine",
     "schemdraw.elements.connectors.coaxconnect": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.connectors.CoaxConnect",
+    "schemdraw.elements.connectors.da15": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.connectors.DA15",
     "schemdraw.elements.connectors.db25": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.connectors.DB25",
     "schemdraw.elements.connectors.db9": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.connectors.DB9",
+    "schemdraw.elements.connectors.dc37": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.connectors.DC37",
+    "schemdraw.elements.connectors.dd50": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.connectors.DD50",
+    "schemdraw.elements.connectors.de9": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.connectors.DE9",
     "schemdraw.elements.connectors.header": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.connectors.Header",
     "schemdraw.elements.connectors.jack": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.connectors.Jack",
     "schemdraw.elements.connectors.jumper": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.connectors.Jumper",
@@ -83,6 +88,7 @@ MAPPING = {
     "schemdraw.elements.element.fill": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.elements.Element.fill",
     "schemdraw.elements.element.flip": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.elements.Element.flip",
     "schemdraw.elements.element.get_bbox": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.elements.Element.get_bbox",
+    "schemdraw.elements.element.gradient_fill": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.elements.Element.gradient_fill",
     "schemdraw.elements.element.hold": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.elements.Element.hold",
     "schemdraw.elements.element.label": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.elements.Element.label",
     "schemdraw.elements.element.left": "https://schemdraw.readthedocs.io/en/stable/classes/drawing.html#schemdraw.elements.Element.left",
@@ -269,6 +275,7 @@ MAPPING = {
     "schemdraw.elements.twoterm.diode": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.twoterm.Diode",
     "schemdraw.elements.twoterm.diodeshockley": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.twoterm.DiodeShockley",
     "schemdraw.elements.twoterm.diodetunnel": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.twoterm.DiodeTunnel",
+    "schemdraw.elements.twoterm.diodetvs": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.twoterm.DiodeTVS",
     "schemdraw.elements.twoterm.fuse": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.twoterm.Fuse",
     "schemdraw.elements.twoterm.fuseiec": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.twoterm.FuseIEC",
     "schemdraw.elements.twoterm.fuseieee": "https://schemdraw.readthedocs.io/en/stable/classes/electrical.html#schemdraw.elements.twoterm.FuseIEEE",

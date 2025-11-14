@@ -1,4 +1,4 @@
-VERSION = "5.5.0"
+VERSION = "5.5.1"
 
 # fmt: off
 MAPPING = {
@@ -8,6 +8,7 @@ MAPPING = {
     "rest_framework_simplejwt.authentication.jwtauthentication": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.authentication.JWTAuthentication",
     "rest_framework_simplejwt.authentication.jwtauthentication.authenticate": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.authentication.JWTAuthentication.authenticate",
     "rest_framework_simplejwt.authentication.jwtauthentication.authenticate_header": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.authentication.JWTAuthentication.authenticate_header",
+    "rest_framework_simplejwt.authentication.jwtauthentication.default_error_messages": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.authentication.JWTAuthentication.default_error_messages",
     "rest_framework_simplejwt.authentication.jwtauthentication.get_header": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.authentication.JWTAuthentication.get_header",
     "rest_framework_simplejwt.authentication.jwtauthentication.get_raw_token": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.authentication.JWTAuthentication.get_raw_token",
     "rest_framework_simplejwt.authentication.jwtauthentication.get_user": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.authentication.JWTAuthentication.get_user",
@@ -40,6 +41,8 @@ MAPPING = {
     "rest_framework_simplejwt.models.tokenuser.user_permissions": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.models.TokenUser.user_permissions",
     "rest_framework_simplejwt.models.tokenuser.username": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.models.TokenUser.username",
     "rest_framework_simplejwt.serializers": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#module-rest_framework_simplejwt.serializers",
+    "rest_framework_simplejwt.serializers.default_on_login_failed": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.serializers.default_on_login_failed",
+    "rest_framework_simplejwt.serializers.default_on_login_success": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.serializers.default_on_login_success",
     "rest_framework_simplejwt.serializers.passwordfield": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.serializers.PasswordField",
     "rest_framework_simplejwt.serializers.tokenblacklistserializer": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.serializers.TokenBlacklistSerializer",
     "rest_framework_simplejwt.serializers.tokenblacklistserializer.token_class": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.serializers.TokenBlacklistSerializer.token_class",
@@ -61,6 +64,7 @@ MAPPING = {
     "rest_framework_simplejwt.serializers.tokenrefreshserializer.token_class": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.serializers.TokenRefreshSerializer.token_class",
     "rest_framework_simplejwt.serializers.tokenrefreshserializer.validate": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.serializers.TokenRefreshSerializer.validate",
     "rest_framework_simplejwt.serializers.tokenrefreshslidingserializer": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer",
+    "rest_framework_simplejwt.serializers.tokenrefreshslidingserializer.default_error_messages": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer.default_error_messages",
     "rest_framework_simplejwt.serializers.tokenrefreshslidingserializer.token_class": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer.token_class",
     "rest_framework_simplejwt.serializers.tokenrefreshslidingserializer.validate": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.serializers.TokenRefreshSlidingSerializer.validate",
     "rest_framework_simplejwt.serializers.tokenverifyserializer": "https://django-rest-framework-simplejwt.readthedocs.io/en/latest/rest_framework_simplejwt.html#rest_framework_simplejwt.serializers.TokenVerifySerializer",

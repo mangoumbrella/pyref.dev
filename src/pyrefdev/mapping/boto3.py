@@ -1,4 +1,4 @@
-VERSION = "1.38.46"
+VERSION = "1.40.70"
 
 # fmt: off
 MAPPING = {
@@ -31,8 +31,6 @@ MAPPING = {
     "boto3.dynamodb.conditions.key.lte": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/dynamodb.html#boto3.dynamodb.conditions.Key.lte",
     "boto3.dynamodb.types": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/dynamodb.html",
     "boto3.dynamodb.types.binary": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/dynamodb.html#boto3.dynamodb.types.Binary",
-    "boto3.nullhandler": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/boto3.html#boto3.NullHandler",
-    "boto3.nullhandler.emit": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/boto3.html#boto3.NullHandler.emit",
     "boto3.resource": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/boto3.html#boto3.resource",
     "boto3.resources.action": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/resources.html#module-boto3.resources.action",
     "boto3.resources.action.batchaction": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/core/resources.html#boto3.resources.action.BatchAction",
@@ -130,6 +128,7 @@ MAPPING = {
     "boto3.s3": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html",
     "boto3.s3.transfer": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html",
     "boto3.s3.transfer.s3transfer": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html#boto3.s3.transfer.S3Transfer",
+    "boto3.s3.transfer.s3transfer.allowed_copy_args": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html#boto3.s3.transfer.S3Transfer.ALLOWED_COPY_ARGS",
     "boto3.s3.transfer.s3transfer.allowed_download_args": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html#boto3.s3.transfer.S3Transfer.ALLOWED_DOWNLOAD_ARGS",
     "boto3.s3.transfer.s3transfer.allowed_upload_args": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html#boto3.s3.transfer.S3Transfer.ALLOWED_UPLOAD_ARGS",
     "boto3.s3.transfer.s3transfer.download_file": "https://boto3.amazonaws.com/v1/documentation/api/latest/reference/customizations/s3.html#boto3.s3.transfer.S3Transfer.download_file",

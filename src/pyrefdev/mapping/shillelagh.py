@@ -1,4 +1,4 @@
-VERSION = "1.4.0"
+VERSION = "1.4.3"
 
 # fmt: off
 MAPPING = {
@@ -426,9 +426,14 @@ MAPPING = {
     "shillelagh.backends.apsw.dialects.base.apswdialect.name": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.APSWDialect.name",
     "shillelagh.backends.apsw.dialects.base.apswdialect.supports_sane_rowcount": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.APSWDialect.supports_sane_rowcount",
     "shillelagh.backends.apsw.dialects.base.apswdialect.supports_statement_cache": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.APSWDialect.supports_statement_cache",
+    "shillelagh.backends.apsw.dialects.base.computedcolumn": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.ComputedColumn",
+    "shillelagh.backends.apsw.dialects.base.computedcolumn.persisted": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.ComputedColumn.persisted",
+    "shillelagh.backends.apsw.dialects.base.computedcolumn.sqltext": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.ComputedColumn.sqltext",
     "shillelagh.backends.apsw.dialects.base.get_adapter_for_table_name": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.get_adapter_for_table_name",
     "shillelagh.backends.apsw.dialects.base.sqlalchemycolumn": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.SQLAlchemyColumn",
     "shillelagh.backends.apsw.dialects.base.sqlalchemycolumn.autoincrement": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.SQLAlchemyColumn.autoincrement",
+    "shillelagh.backends.apsw.dialects.base.sqlalchemycolumn.comment": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.SQLAlchemyColumn.comment",
+    "shillelagh.backends.apsw.dialects.base.sqlalchemycolumn.computed": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.SQLAlchemyColumn.computed",
     "shillelagh.backends.apsw.dialects.base.sqlalchemycolumn.default": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.SQLAlchemyColumn.default",
     "shillelagh.backends.apsw.dialects.base.sqlalchemycolumn.name": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.SQLAlchemyColumn.name",
     "shillelagh.backends.apsw.dialects.base.sqlalchemycolumn.nullable": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.backends.apsw.dialects.html#shillelagh.backends.apsw.dialects.base.SQLAlchemyColumn.nullable",

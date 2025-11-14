@@ -3,7 +3,7 @@ VERSION = "0.9.6"
 # fmt: off
 MAPPING = {
     "flask_oauthlib": "https://flask-oauthlib.readthedocs.io/en/latest/",
-    "flask_oauthlib.client": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#module-flask_oauthlib.client",
+    "flask_oauthlib.client": "https://flask-oauthlib.readthedocs.io/en/latest/changelog.html#module-flask_oauthlib.client",
     "flask_oauthlib.client.oauth": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.client.OAuth",
     "flask_oauthlib.client.oauth.init_app": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.client.OAuth.init_app",
     "flask_oauthlib.client.oauth.remote_app": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.client.OAuth.remote_app",
@@ -24,7 +24,6 @@ MAPPING = {
     "flask_oauthlib.client.oauthremoteapp.tokengetter": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.client.OAuthRemoteApp.tokengetter",
     "flask_oauthlib.client.oauthresponse": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.client.OAuthResponse",
     "flask_oauthlib.client.oauthresponse.status": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.client.OAuthResponse.status",
-    "flask_oauthlib.contrib": "https://flask-oauthlib.readthedocs.io/en/latest/api.html",
     "flask_oauthlib.contrib.apps": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#module-flask_oauthlib.contrib.apps",
     "flask_oauthlib.contrib.apps.douban": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.contrib.apps.douban",
     "flask_oauthlib.contrib.apps.dropbox": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.contrib.apps.dropbox",
@@ -34,7 +33,7 @@ MAPPING = {
     "flask_oauthlib.contrib.apps.linkedin": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.contrib.apps.linkedin",
     "flask_oauthlib.contrib.apps.twitter": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.contrib.apps.twitter",
     "flask_oauthlib.contrib.apps.weibo": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.contrib.apps.weibo",
-    "flask_oauthlib.contrib.oauth2": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#module-flask_oauthlib.contrib.oauth2",
+    "flask_oauthlib.contrib.oauth2": "https://flask-oauthlib.readthedocs.io/en/latest/additional.html",
     "flask_oauthlib.contrib.oauth2.bind_cache_grant": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.contrib.oauth2.bind_cache_grant",
     "flask_oauthlib.contrib.oauth2.bind_sqlalchemy": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#flask_oauthlib.contrib.oauth2.bind_sqlalchemy",
     "flask_oauthlib.provider": "https://flask-oauthlib.readthedocs.io/en/latest/api.html#module-flask_oauthlib.provider",

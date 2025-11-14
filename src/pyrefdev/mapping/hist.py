@@ -1,4 +1,4 @@
-VERSION = "2.8.1"
+VERSION = "2.9.0"
 
 # fmt: off
 MAPPING = {
@@ -45,7 +45,6 @@ MAPPING = {
     "hist.axis.axesmixin.name": "https://hist.readthedocs.io/en/latest/reference/hist.axis.html#hist.axis.AxesMixin.name",
     "hist.axis.axisprotocol": "https://hist.readthedocs.io/en/latest/reference/hist.axis.html#hist.axis.AxisProtocol",
     "hist.axis.axisprotocol.label": "https://hist.readthedocs.io/en/latest/reference/hist.axis.html#hist.axis.AxisProtocol.label",
-    "hist.axis.axisprotocol.metadata": "https://hist.readthedocs.io/en/latest/reference/hist.axis.html#hist.axis.AxisProtocol.metadata",
     "hist.axis.axisprotocol.name": "https://hist.readthedocs.io/en/latest/reference/hist.axis.html#hist.axis.AxisProtocol.name",
     "hist.axis.boolean": "https://hist.readthedocs.io/en/latest/reference/hist.axis.html#hist.axis.Boolean",
     "hist.axis.intcategory": "https://hist.readthedocs.io/en/latest/reference/hist.axis.html#hist.axis.IntCategory",
@@ -255,7 +254,6 @@ MAPPING = {
     "hist.tag.rebin.factor": "https://hist.readthedocs.io/en/latest/reference/hist.tag.html#hist.tag.rebin.factor",
     "hist.tag.rebin.group_mapping": "https://hist.readthedocs.io/en/latest/reference/hist.tag.html#hist.tag.rebin.group_mapping",
     "hist.tag.rebin.groups": "https://hist.readthedocs.io/en/latest/reference/hist.tag.html#hist.tag.rebin.groups",
-    "hist.tag.slicer": "https://hist.readthedocs.io/en/latest/reference/hist.tag.html#hist.tag.Slicer",
     "hist.tag.sum": "https://hist.readthedocs.io/en/latest/reference/hist.tag.html#hist.tag.sum",
     "hist.version": "https://hist.readthedocs.io/en/latest/reference/hist.version.html",
 }

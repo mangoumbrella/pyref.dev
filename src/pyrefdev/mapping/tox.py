@@ -1,4 +1,4 @@
-VERSION = "4.27.0"
+VERSION = "4.32.0"
 
 # fmt: off
 MAPPING = {
@@ -191,6 +191,7 @@ MAPPING = {
     "tox.plugin.spec.tox_after_run_commands": "https://tox.wiki/en/stable/plugins.html#tox.plugin.spec.tox_after_run_commands",
     "tox.plugin.spec.tox_before_run_commands": "https://tox.wiki/en/stable/plugins.html#tox.plugin.spec.tox_before_run_commands",
     "tox.plugin.spec.tox_env_teardown": "https://tox.wiki/en/stable/plugins.html#tox.plugin.spec.tox_env_teardown",
+    "tox.plugin.spec.tox_extend_envs": "https://tox.wiki/en/stable/plugins.html#tox.plugin.spec.tox_extend_envs",
     "tox.plugin.spec.tox_on_install": "https://tox.wiki/en/stable/plugins.html#tox.plugin.spec.tox_on_install",
     "tox.plugin.spec.tox_register_tox_env": "https://tox.wiki/en/stable/plugins.html#tox.plugin.spec.tox_register_tox_env",
     "tox.report": "https://tox.wiki/en/stable/plugins_api.html",

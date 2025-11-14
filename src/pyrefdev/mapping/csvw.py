@@ -1,4 +1,4 @@
-VERSION = "3.5.1"
+VERSION = "3.7.0"
 
 # fmt: off
 MAPPING = {
@@ -78,6 +78,7 @@ MAPPING = {
     "csvw.dsv.unicodereaderwithlinenumber": "https://csvw.readthedocs.io/en/latest/dsv.html#csvw.dsv.UnicodeReaderWithLineNumber",
     "csvw.dsv.unicodewriter": "https://csvw.readthedocs.io/en/latest/dsv.html#csvw.dsv.UnicodeWriter",
     "csvw.dsv.unicodewriter.read": "https://csvw.readthedocs.io/en/latest/dsv.html#csvw.dsv.UnicodeWriter.read",
+    "csvw.dsv.unicodewriter.writerows": "https://csvw.readthedocs.io/en/latest/dsv.html#csvw.dsv.UnicodeWriter.writerows",
     "csvw.dsv_dialects": "https://csvw.readthedocs.io/en/latest/dsv.html#module-csvw.dsv_dialects",
     "csvw.dsv_dialects.dialect": "https://csvw.readthedocs.io/en/latest/dsv.html#csvw.dsv_dialects.Dialect",
     "csvw.frictionless": "https://csvw.readthedocs.io/en/latest/frictionless.html",

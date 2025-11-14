@@ -1,4 +1,4 @@
-VERSION = "0.28.0"
+VERSION = "0.29.0"
 
 # fmt: off
 MAPPING = {
@@ -21,6 +21,7 @@ MAPPING = {
     "drf_spectacular.extensions.openapiserializerfieldextension.get_name": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.extensions.OpenApiSerializerFieldExtension.get_name",
     "drf_spectacular.extensions.openapiserializerfieldextension.map_serializer_field": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.extensions.OpenApiSerializerFieldExtension.map_serializer_field",
     "drf_spectacular.extensions.openapiviewextension": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.extensions.OpenApiViewExtension",
+    "drf_spectacular.extensions.openapiviewextension.get_match": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.extensions.OpenApiViewExtension.get_match",
     "drf_spectacular.extensions.openapiviewextension.view_replacement": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.extensions.OpenApiViewExtension.view_replacement",
     "drf_spectacular.hooks": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#module-drf_spectacular.hooks",
     "drf_spectacular.hooks.postprocess_schema_enum_id_removal": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.hooks.postprocess_schema_enum_id_removal",

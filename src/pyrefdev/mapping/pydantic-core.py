@@ -1,4 +1,4 @@
-VERSION = "2.35.2"
+VERSION = "2.41.5"
 
 # fmt: off
 MAPPING = {
@@ -32,6 +32,8 @@ MAPPING = {
     "pydantic_core.core_schema.definitions_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.definitions_schema",
     "pydantic_core.core_schema.dict_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.dict_schema",
     "pydantic_core.core_schema.enum_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.enum_schema",
+    "pydantic_core.core_schema.fieldserializationinfo": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.FieldSerializationInfo",
+    "pydantic_core.core_schema.fieldserializationinfo.field_name": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.FieldSerializationInfo.field_name",
     "pydantic_core.core_schema.float_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.float_schema",
     "pydantic_core.core_schema.format_ser_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.format_ser_schema",
     "pydantic_core.core_schema.frozenset_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.frozenset_schema",
@@ -45,6 +47,7 @@ MAPPING = {
     "pydantic_core.core_schema.lax_or_strict_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.lax_or_strict_schema",
     "pydantic_core.core_schema.list_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.list_schema",
     "pydantic_core.core_schema.literal_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.literal_schema",
+    "pydantic_core.core_schema.missing_sentinel_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.missing_sentinel_schema",
     "pydantic_core.core_schema.model_field": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.model_field",
     "pydantic_core.core_schema.model_fields_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.model_fields_schema",
     "pydantic_core.core_schema.model_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.model_schema",
@@ -58,7 +61,17 @@ MAPPING = {
     "pydantic_core.core_schema.nullable_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.nullable_schema",
     "pydantic_core.core_schema.plain_serializer_function_ser_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.plain_serializer_function_ser_schema",
     "pydantic_core.core_schema.serializationinfo": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.SerializationInfo",
+    "pydantic_core.core_schema.serializationinfo.by_alias": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.SerializationInfo.by_alias",
     "pydantic_core.core_schema.serializationinfo.context": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.SerializationInfo.context",
+    "pydantic_core.core_schema.serializationinfo.exclude": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.SerializationInfo.exclude",
+    "pydantic_core.core_schema.serializationinfo.exclude_computed_fields": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.SerializationInfo.exclude_computed_fields",
+    "pydantic_core.core_schema.serializationinfo.exclude_defaults": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.SerializationInfo.exclude_defaults",
+    "pydantic_core.core_schema.serializationinfo.exclude_none": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.SerializationInfo.exclude_none",
+    "pydantic_core.core_schema.serializationinfo.exclude_unset": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.SerializationInfo.exclude_unset",
+    "pydantic_core.core_schema.serializationinfo.include": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.SerializationInfo.include",
+    "pydantic_core.core_schema.serializationinfo.mode": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.SerializationInfo.mode",
+    "pydantic_core.core_schema.serializationinfo.round_trip": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.SerializationInfo.round_trip",
+    "pydantic_core.core_schema.serializationinfo.serialize_as_any": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.SerializationInfo.serialize_as_any",
     "pydantic_core.core_schema.set_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.set_schema",
     "pydantic_core.core_schema.simple_ser_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.simple_ser_schema",
     "pydantic_core.core_schema.str_schema": "https://docs.pydantic.dev/latest/api/pydantic_core_schema/#pydantic_core.core_schema.str_schema",

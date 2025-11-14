@@ -1,4 +1,4 @@
-VERSION = "0.14.0"
+VERSION = "0.15.0"
 
 # fmt: off
 MAPPING = {
@@ -58,6 +58,7 @@ MAPPING = {
     "psygnal.containers.selection": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.Selection",
     "psygnal.containers.selection.active": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.Selection.active",
     "psygnal.containers.selection.clear": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.Selection.clear",
+    "psygnal.containers.selection.replace_selection": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.Selection.replace_selection",
     "psygnal.containers.selection.select_only": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.Selection.select_only",
     "psygnal.containers.selection.toggle": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.Selection.toggle",
     "psygnal.containers.setevents": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.SetEvents",
@@ -68,7 +69,6 @@ MAPPING = {
     "psygnal.emitlooperror": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/#psygnal.EmitLoopError",
     "psygnal.evented": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/#psygnal.evented",
     "psygnal.eventedmodel": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/#psygnal.EventedModel",
-    "psygnal.eventedmodel.enums_as_values": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/#psygnal.EventedModel.enums_as_values",
     "psygnal.eventedmodel.events": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/#psygnal.EventedModel.events",
     "psygnal.eventedmodel.reset": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/#psygnal.EventedModel.reset",
     "psygnal.eventedmodel.update": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/#psygnal.EventedModel.update",
@@ -117,6 +117,7 @@ MAPPING = {
     "psygnal.testing.assert_emitted_with": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/testing/#psygnal.testing.assert_emitted_with",
     "psygnal.testing.assert_ever_emitted_with": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/testing/#psygnal.testing.assert_ever_emitted_with",
     "psygnal.testing.assert_not_emitted": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/testing/#psygnal.testing.assert_not_emitted",
+    "psygnal.testing.connectkwargs": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/testing/#psygnal.testing.ConnectKwargs",
     "psygnal.testing.signaltester": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/testing/#psygnal.testing.SignalTester",
     "psygnal.testing.signaltester.assert_emitted": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/testing/#psygnal.testing.SignalTester.assert_emitted",
     "psygnal.testing.signaltester.assert_emitted_once": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/testing/#psygnal.testing.SignalTester.assert_emitted_once",

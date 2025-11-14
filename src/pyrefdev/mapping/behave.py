@@ -1,8 +1,19 @@
-VERSION = "1.2.6"
+VERSION = "1.3.3"
 
 # fmt: off
 MAPPING = {
     "behave": "https://behave.readthedocs.io/en/latest/",
+    "behave.configuration": "https://behave.readthedocs.io/en/latest/api/",
+    "behave.configuration.configuration": "https://behave.readthedocs.io/en/latest/api/#behave.configuration.Configuration",
+    "behave.configuration.configuration.build_name_re": "https://behave.readthedocs.io/en/latest/api/#behave.configuration.Configuration.build_name_re",
+    "behave.configuration.configuration.init": "https://behave.readthedocs.io/en/latest/api/#behave.configuration.Configuration.init",
+    "behave.configuration.configuration.setup_formats": "https://behave.readthedocs.io/en/latest/api/#behave.configuration.Configuration.setup_formats",
+    "behave.configuration.configuration.setup_logging": "https://behave.readthedocs.io/en/latest/api/#behave.configuration.Configuration.setup_logging",
+    "behave.configuration.configuration.setup_stage": "https://behave.readthedocs.io/en/latest/api/#behave.configuration.Configuration.setup_stage",
+    "behave.configuration.configuration.setup_tag_expression": "https://behave.readthedocs.io/en/latest/api/#behave.configuration.Configuration.setup_tag_expression",
+    "behave.configuration.configuration.show_bad_formats_and_fail": "https://behave.readthedocs.io/en/latest/api/#behave.configuration.Configuration.show_bad_formats_and_fail",
+    "behave.configuration.configuration.tag_expression": "https://behave.readthedocs.io/en/latest/api/#behave.configuration.Configuration.tag_expression",
+    "behave.configuration.configuration.update_userdata": "https://behave.readthedocs.io/en/latest/api/#behave.configuration.Configuration.update_userdata",
     "behave.fixture": "https://behave.readthedocs.io/en/latest/api/",
     "behave.fixture.fixture": "https://behave.readthedocs.io/en/latest/api/#behave.fixture.fixture",
     "behave.fixture.use_composite_fixture_with": "https://behave.readthedocs.io/en/latest/api/#behave.fixture.use_composite_fixture_with",

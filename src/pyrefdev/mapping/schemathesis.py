@@ -1,4 +1,4 @@
-VERSION = "4.0.11"
+VERSION = "4.5.1"
 
 # fmt: off
 MAPPING = {
@@ -16,6 +16,7 @@ MAPPING = {
     "schemathesis.authprovider.get": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.AuthProvider.get",
     "schemathesis.authprovider.set": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.AuthProvider.set",
     "schemathesis.baseschema": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema",
+    "schemathesis.baseschema.apply_auth": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.apply_auth",
     "schemathesis.baseschema.as_state_machine": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.as_state_machine",
     "schemathesis.baseschema.as_strategy": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.as_strategy",
     "schemathesis.baseschema.base_path": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.base_path",
@@ -25,6 +26,7 @@ MAPPING = {
     "schemathesis.baseschema.include": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.include",
     "schemathesis.baseschema.parametrize": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.parametrize",
     "schemathesis.case": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case",
+    "schemathesis.case.__setattr__": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.__setattr__",
     "schemathesis.case.as_curl_command": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.as_curl_command",
     "schemathesis.case.body": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.body",
     "schemathesis.case.call": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.call",
@@ -34,7 +36,9 @@ MAPPING = {
     "schemathesis.case.headers": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.headers",
     "schemathesis.case.id": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.id",
     "schemathesis.case.media_type": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.media_type",
+    "schemathesis.case.meta": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.meta",
     "schemathesis.case.method": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.method",
+    "schemathesis.case.multipart_content_types": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.multipart_content_types",
     "schemathesis.case.path": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.path",
     "schemathesis.case.path_parameters": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.path_parameters",
     "schemathesis.case.query": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.query",
@@ -42,6 +46,8 @@ MAPPING = {
     "schemathesis.check": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.check",
     "schemathesis.checkcontext": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.CheckContext",
     "schemathesis.checkcontext.config": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.CheckContext.config",
+    "schemathesis.deserializationcontext": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.DeserializationContext",
+    "schemathesis.deserializer": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.deserializer",
     "schemathesis.graphql": "https://schemathesis.readthedocs.io/en/stable/reference/python/",
     "schemathesis.graphql.from_asgi": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.graphql.from_asgi",
     "schemathesis.graphql.from_dict": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.graphql.from_dict",
@@ -84,7 +90,6 @@ MAPPING = {
     "schemathesis.response.verify": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.verify",
     "schemathesis.serializationcontext": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.SerializationContext",
     "schemathesis.serializationcontext.case": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.SerializationContext.case",
-    "schemathesis.serializer": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.serializer",
     "schemathesis.stateful": "https://schemathesis.readthedocs.io/en/stable/reference/python/",
     "schemathesis.stateful.apistatemachine": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.stateful.APIStateMachine",
     "schemathesis.stateful.apistatemachine.after_call": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.stateful.APIStateMachine.after_call",

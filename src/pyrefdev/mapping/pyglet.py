@@ -1,4 +1,4 @@
-VERSION = "2.1.6"
+VERSION = "2.1.11"
 
 # fmt: off
 MAPPING = {
@@ -84,10 +84,12 @@ MAPPING = {
     "pyglet.display.screen.display": "https://pyglet.readthedocs.io/en/latest/modules/display.html#pyglet.display.Screen.display",
     "pyglet.display.screen.get_best_config": "https://pyglet.readthedocs.io/en/latest/modules/display.html#pyglet.display.Screen.get_best_config",
     "pyglet.display.screen.get_closest_mode": "https://pyglet.readthedocs.io/en/latest/modules/display.html#pyglet.display.Screen.get_closest_mode",
+    "pyglet.display.screen.get_display_id": "https://pyglet.readthedocs.io/en/latest/modules/display.html#pyglet.display.Screen.get_display_id",
     "pyglet.display.screen.get_dpi": "https://pyglet.readthedocs.io/en/latest/modules/display.html#pyglet.display.Screen.get_dpi",
     "pyglet.display.screen.get_matching_configs": "https://pyglet.readthedocs.io/en/latest/modules/display.html#pyglet.display.Screen.get_matching_configs",
     "pyglet.display.screen.get_mode": "https://pyglet.readthedocs.io/en/latest/modules/display.html#pyglet.display.Screen.get_mode",
     "pyglet.display.screen.get_modes": "https://pyglet.readthedocs.io/en/latest/modules/display.html#pyglet.display.Screen.get_modes",
+    "pyglet.display.screen.get_monitor_name": "https://pyglet.readthedocs.io/en/latest/modules/display.html#pyglet.display.Screen.get_monitor_name",
     "pyglet.display.screen.get_scale": "https://pyglet.readthedocs.io/en/latest/modules/display.html#pyglet.display.Screen.get_scale",
     "pyglet.display.screen.height": "https://pyglet.readthedocs.io/en/latest/modules/display.html#pyglet.display.Screen.height",
     "pyglet.display.screen.restore_mode": "https://pyglet.readthedocs.io/en/latest/modules/display.html#pyglet.display.Screen.restore_mode",
@@ -954,6 +956,7 @@ MAPPING = {
     "pyglet.media.codecs.audioformat.__init__": "https://pyglet.readthedocs.io/en/latest/modules/media.html#pyglet.media.codecs.AudioFormat.__init__",
     "pyglet.media.codecs.audioformat.__new__": "https://pyglet.readthedocs.io/en/latest/modules/media.html#pyglet.media.codecs.AudioFormat.__new__",
     "pyglet.media.codecs.sourceinfo": "https://pyglet.readthedocs.io/en/latest/modules/media.html#pyglet.media.codecs.SourceInfo",
+    "pyglet.media.codecs.sourceinfo.__init__": "https://pyglet.readthedocs.io/en/latest/modules/media.html#pyglet.media.codecs.SourceInfo.__init__",
     "pyglet.media.codecs.staticmemorysource": "https://pyglet.readthedocs.io/en/latest/modules/media.html#pyglet.media.codecs.StaticMemorySource",
     "pyglet.media.codecs.staticmemorysource.__init__": "https://pyglet.readthedocs.io/en/latest/modules/media.html#pyglet.media.codecs.StaticMemorySource.__init__",
     "pyglet.media.codecs.staticmemorysource.get_audio_data": "https://pyglet.readthedocs.io/en/latest/modules/media.html#pyglet.media.codecs.StaticMemorySource.get_audio_data",

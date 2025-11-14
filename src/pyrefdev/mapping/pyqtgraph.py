@@ -263,7 +263,7 @@ MAPPING = {
     "pyqtgraph.graphicsitem.allchilditems": "https://pyqtgraph.readthedocs.io/en/latest/api_reference/graphicsItems/graphicsitem.html#pyqtgraph.GraphicsItem.allChildItems",
     "pyqtgraph.graphicsitem.changeparent": "https://pyqtgraph.readthedocs.io/en/latest/api_reference/graphicsItems/graphicsitem.html#pyqtgraph.GraphicsItem.changeParent",
     "pyqtgraph.graphicsitem.childrenshape": "https://pyqtgraph.readthedocs.io/en/latest/api_reference/graphicsItems/graphicsitem.html#pyqtgraph.GraphicsItem.childrenShape",
-    "pyqtgraph.graphicsitem.devicetransform": "https://pyqtgraph.readthedocs.io/en/latest/api_reference/graphicsItems/graphicsitem.html#pyqtgraph.GraphicsItem.deviceTransform",
+    "pyqtgraph.graphicsitem.devicetransform_": "https://pyqtgraph.readthedocs.io/en/latest/api_reference/graphicsItems/graphicsitem.html#pyqtgraph.GraphicsItem.deviceTransform_",
     "pyqtgraph.graphicsitem.generatesvg": "https://pyqtgraph.readthedocs.io/en/latest/api_reference/graphicsItems/graphicsitem.html#pyqtgraph.GraphicsItem.generateSvg",
     "pyqtgraph.graphicsitem.getboundingparents": "https://pyqtgraph.readthedocs.io/en/latest/api_reference/graphicsItems/graphicsitem.html#pyqtgraph.GraphicsItem.getBoundingParents",
     "pyqtgraph.graphicsitem.getviewbox": "https://pyqtgraph.readthedocs.io/en/latest/api_reference/graphicsItems/graphicsitem.html#pyqtgraph.GraphicsItem.getViewBox",

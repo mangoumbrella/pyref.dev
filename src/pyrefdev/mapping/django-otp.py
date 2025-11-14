@@ -1,4 +1,4 @@
-VERSION = "1.6.1"
+VERSION = "1.6.3"
 
 # fmt: off
 MAPPING = {
@@ -78,6 +78,7 @@ MAPPING = {
     "django_otp.plugins.otp_email.models.emaildevice.email": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_email.models.EmailDevice.email",
     "django_otp.plugins.otp_email.models.emaildevice.generate_challenge": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_email.models.EmailDevice.generate_challenge",
     "django_otp.plugins.otp_email.models.emaildevice.get_cooldown_duration": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_email.models.EmailDevice.get_cooldown_duration",
+    "django_otp.plugins.otp_email.models.emaildevice.get_subject": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_email.models.EmailDevice.get_subject",
     "django_otp.plugins.otp_email.models.emaildevice.get_throttle_factor": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_email.models.EmailDevice.get_throttle_factor",
     "django_otp.plugins.otp_email.models.emaildevice.multipleobjectsreturned": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_email.models.EmailDevice.MultipleObjectsReturned",
     "django_otp.plugins.otp_email.models.emaildevice.send_mail": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_email.models.EmailDevice.send_mail",

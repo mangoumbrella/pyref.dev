@@ -1,4 +1,4 @@
-VERSION = "0.1.43"
+VERSION = "0.1.47"
 
 # fmt: off
 MAPPING = {
@@ -6,6 +6,7 @@ MAPPING = {
     "vizro.actions": "https://vizro.readthedocs.io/en/stable/pages/API-reference/action-callables/#vizro.actions",
     "vizro.actions.export_data": "https://vizro.readthedocs.io/en/stable/pages/API-reference/action-callables/#vizro.actions.export_data",
     "vizro.actions.filter_interaction": "https://vizro.readthedocs.io/en/stable/pages/API-reference/action-callables/#vizro.actions.filter_interaction",
+    "vizro.actions.set_control": "https://vizro.readthedocs.io/en/stable/pages/API-reference/action-callables/#vizro.actions.set_control",
     "vizro.figures": "https://vizro.readthedocs.io/en/stable/pages/API-reference/figure-callables/#vizro.figures",
     "vizro.figures.kpi_card": "https://vizro.readthedocs.io/en/stable/pages/API-reference/figure-callables/#vizro.figures.kpi_card",
     "vizro.figures.kpi_card_reference": "https://vizro.readthedocs.io/en/stable/pages/API-reference/figure-callables/#vizro.figures.kpi_card_reference",
@@ -40,11 +41,13 @@ MAPPING = {
     "vizro.models.radioitems": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.RadioItems",
     "vizro.models.rangeslider": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.RangeSlider",
     "vizro.models.slider": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.Slider",
+    "vizro.models.switch": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.Switch",
     "vizro.models.table": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.Table",
     "vizro.models.tabs": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.Tabs",
     "vizro.models.text": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.Text",
     "vizro.models.tooltip": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.Tooltip",
     "vizro.models.types": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.types",
+    "vizro.models.types.actionstype": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.types.ActionsType",
     "vizro.models.types.actiontype": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.types.ActionType",
     "vizro.models.types.capture": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.types.capture",
     "vizro.models.types.capturedcallable": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.types.CapturedCallable",
@@ -59,6 +62,7 @@ MAPPING = {
     "vizro.models.types.navselectortype": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.types.NavSelectorType",
     "vizro.models.types.optionsdicttype": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.types.OptionsDictType",
     "vizro.models.types.optionstype": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.types.OptionsType",
+    "vizro.models.types.outputstype": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.types.OutputsType",
     "vizro.models.types.selectortype": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.types.SelectorType",
     "vizro.models.types.singlevaluetype": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.types.SingleValueType",
     "vizro.models.types.validate_captured_callable": "https://vizro.readthedocs.io/en/stable/pages/API-reference/models/#vizro.models.types.validate_captured_callable",

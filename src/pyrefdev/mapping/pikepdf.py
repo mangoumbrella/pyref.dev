@@ -1,4 +1,4 @@
-VERSION = "9.10.2"
+VERSION = "10.0.2"
 
 # fmt: off
 MAPPING = {
@@ -462,7 +462,6 @@ MAPPING = {
     "pikepdf.pdf.add_blank_page": "https://pikepdf.readthedocs.io/en/latest/api/main.html#pikepdf.Pdf.add_blank_page",
     "pikepdf.pdf.allow": "https://pikepdf.readthedocs.io/en/latest/api/main.html#pikepdf.Pdf.allow",
     "pikepdf.pdf.attachments": "https://pikepdf.readthedocs.io/en/latest/api/main.html#pikepdf.Pdf.attachments",
-    "pikepdf.pdf.check": "https://pikepdf.readthedocs.io/en/latest/api/main.html#pikepdf.Pdf.check",
     "pikepdf.pdf.check_linearization": "https://pikepdf.readthedocs.io/en/latest/api/main.html#pikepdf.Pdf.check_linearization",
     "pikepdf.pdf.check_pdf_syntax": "https://pikepdf.readthedocs.io/en/latest/api/main.html#pikepdf.Pdf.check_pdf_syntax",
     "pikepdf.pdf.close": "https://pikepdf.readthedocs.io/en/latest/api/main.html#pikepdf.Pdf.close",

@@ -1,4 +1,4 @@
-VERSION = "4.14.0"
+VERSION = "4.15.0"
 
 # fmt: off
 MAPPING = {
@@ -32,6 +32,7 @@ MAPPING = {
     "typing_extensions.deprecated": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.deprecated",
     "typing_extensions.deque": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Deque",
     "typing_extensions.dict": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Dict",
+    "typing_extensions.disjoint_base": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.disjoint_base",
     "typing_extensions.doc": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Doc",
     "typing_extensions.doc.documentation": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Doc.documentation",
     "typing_extensions.evaluate_forward_ref": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.evaluate_forward_ref",
@@ -76,6 +77,7 @@ MAPPING = {
     "typing_extensions.no_type_check": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.no_type_check",
     "typing_extensions.no_type_check_decorator": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.no_type_check_decorator",
     "typing_extensions.nodefault": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.NoDefault",
+    "typing_extensions.noextraitems": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.NoExtraItems",
     "typing_extensions.noreturn": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.NoReturn",
     "typing_extensions.notrequired": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.NotRequired",
     "typing_extensions.optional": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Optional",
@@ -110,6 +112,7 @@ MAPPING = {
     "typing_extensions.tuple": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Tuple",
     "typing_extensions.type": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Type",
     "typing_extensions.type_checking": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.TYPE_CHECKING",
+    "typing_extensions.type_repr": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.type_repr",
     "typing_extensions.typealias": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.TypeAlias",
     "typing_extensions.typealiastype": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.TypeAliasType",
     "typing_extensions.typeddict": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.TypedDict",

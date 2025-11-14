@@ -1,4 +1,4 @@
-VERSION = "0.24.4"
+VERSION = "0.25.2"
 
 # fmt: off
 MAPPING = {
@@ -213,6 +213,11 @@ MAPPING = {
     "pint.pint_eval.build_eval_tree": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.pint_eval.build_eval_tree",
     "pint.pint_eval.evaltreenode": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.pint_eval.EvalTreeNode",
     "pint.pint_eval.evaltreenode.evaluate": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.pint_eval.EvalTreeNode.evaluate",
+    "pint.pint_eval.iteratorlookahead": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.pint_eval.IteratorLookAhead",
+    "pint.pint_eval.iteratorlookahead.lookahead": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.pint_eval.IteratorLookAhead.lookahead",
+    "pint.pint_eval.plain_tokenizer": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.pint_eval.plain_tokenizer",
+    "pint.pint_eval.tokenizer": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.pint_eval.tokenizer",
+    "pint.pint_eval.uncertainty_tokenizer": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.pint_eval.uncertainty_tokenizer",
     "pint.pinterror": "https://pint.readthedocs.io/en/stable/api/base.html#pint.PintError",
     "pint.quantity": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity",
     "pint.quantity.check": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.check",
@@ -255,6 +260,8 @@ MAPPING = {
     "pint.registry_helpers.wraps": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.registry_helpers.wraps",
     "pint.set_application_registry": "https://pint.readthedocs.io/en/stable/api/base.html#pint.set_application_registry",
     "pint.testing": "https://pint.readthedocs.io/en/stable/api/specific.html#module-pint.testing",
+    "pint.testing.assert_allclose": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.testing.assert_allclose",
+    "pint.testing.assert_equal": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.testing.assert_equal",
     "pint.undefineduniterror": "https://pint.readthedocs.io/en/stable/api/base.html#pint.UndefinedUnitError",
     "pint.unit": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Unit",
     "pint.unit.dimensionality": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Unit.dimensionality",

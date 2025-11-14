@@ -1,4 +1,4 @@
-VERSION = "1.0.8.post1"
+VERSION = "1.1.0"
 
 # fmt: off
 MAPPING = {
@@ -13,6 +13,7 @@ MAPPING = {
     "usort.config.is_side_effect_import": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.is_side_effect_import",
     "usort.config.known": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.known",
     "usort.config.line_length": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.line_length",
+    "usort.config.magic_commas": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.magic_commas",
     "usort.config.merge_imports": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.merge_imports",
     "usort.config.side_effect_modules": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.side_effect_modules",
     "usort.config.side_effect_re": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.side_effect_re",
@@ -34,4 +35,6 @@ MAPPING = {
     "usort.usort_file": "https://usort.readthedocs.io/en/stable/api.html#usort.usort_file",
     "usort.usort_path": "https://usort.readthedocs.io/en/stable/api.html#usort.usort_path",
     "usort.usort_stdin": "https://usort.readthedocs.io/en/stable/api.html#usort.usort_stdin",
+    "usort.util": "https://usort.readthedocs.io/en/stable/api.html",
+    "usort.util.enable_libcst_native": "https://usort.readthedocs.io/en/stable/api.html#usort.util.enable_libcst_native",
 }

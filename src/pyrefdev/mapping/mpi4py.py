@@ -1,4 +1,4 @@
-VERSION = "4.1.0"
+VERSION = "4.1.1"
 
 # fmt: off
 MAPPING = {
@@ -805,14 +805,16 @@ MAPPING = {
     "mpi4py.mpi.order_fortran": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.ORDER_FORTRAN.html#mpi4py.MPI.ORDER_FORTRAN",
     "mpi4py.mpi.packed": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.PACKED.html#mpi4py.MPI.PACKED",
     "mpi4py.mpi.pcontrol": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Pcontrol.html#mpi4py.MPI.Pcontrol",
-    "mpi4py.mpi.pickle": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.pickle.html#mpi4py.MPI.Pickle",
-    "mpi4py.mpi.pickle.__new__": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.pickle.html#mpi4py.MPI.Pickle.__new__",
-    "mpi4py.mpi.pickle.dumps": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.pickle.html#mpi4py.MPI.Pickle.dumps",
-    "mpi4py.mpi.pickle.dumps_oob": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.pickle.html#mpi4py.MPI.Pickle.dumps_oob",
-    "mpi4py.mpi.pickle.loads": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.pickle.html#mpi4py.MPI.Pickle.loads",
-    "mpi4py.mpi.pickle.loads_oob": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.pickle.html#mpi4py.MPI.Pickle.loads_oob",
-    "mpi4py.mpi.pickle.protocol": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.pickle.html#mpi4py.MPI.Pickle.PROTOCOL",
-    "mpi4py.mpi.pickle.threshold": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.pickle.html#mpi4py.MPI.Pickle.THRESHOLD",
+    "mpi4py.MPI.Pickle": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Pickle.html#mpi4py.MPI.Pickle",
+    "mpi4py.MPI.pickle": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.pickle.html#mpi4py.MPI.pickle",
+    "mpi4py.mpi.pickle": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.pickle.html#mpi4py.MPI.pickle",
+    "mpi4py.mpi.pickle.__new__": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Pickle.html#mpi4py.MPI.Pickle.__new__",
+    "mpi4py.mpi.pickle.dumps": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Pickle.html#mpi4py.MPI.Pickle.dumps",
+    "mpi4py.mpi.pickle.dumps_oob": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Pickle.html#mpi4py.MPI.Pickle.dumps_oob",
+    "mpi4py.mpi.pickle.loads": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Pickle.html#mpi4py.MPI.Pickle.loads",
+    "mpi4py.mpi.pickle.loads_oob": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Pickle.html#mpi4py.MPI.Pickle.loads_oob",
+    "mpi4py.mpi.pickle.protocol": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Pickle.html#mpi4py.MPI.Pickle.PROTOCOL",
+    "mpi4py.mpi.pickle.threshold": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Pickle.html#mpi4py.MPI.Pickle.THRESHOLD",
     "mpi4py.mpi.prequest": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Prequest.html#mpi4py.MPI.Prequest",
     "mpi4py.mpi.prequest.__new__": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Prequest.html#mpi4py.MPI.Prequest.__new__",
     "mpi4py.mpi.prequest.parrived": "https://mpi4py.readthedocs.io/en/stable/reference/mpi4py.MPI.Prequest.html#mpi4py.MPI.Prequest.Parrived",

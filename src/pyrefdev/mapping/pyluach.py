@@ -1,4 +1,4 @@
-VERSION = "2.2.0"
+VERSION = "2.3.0"
 
 # fmt: off
 MAPPING = {
@@ -193,6 +193,7 @@ MAPPING = {
     "pyluach.hebrewcal.year.year": "https://pyluach.readthedocs.io/en/latest/hebrewcal.html#pyluach.hebrewcal.Year.year",
     "pyluach.hebrewcal.year.year_string": "https://pyluach.readthedocs.io/en/latest/hebrewcal.html#pyluach.hebrewcal.Year.year_string",
     "pyluach.parshios": "https://pyluach.readthedocs.io/en/latest/parshios.html",
+    "pyluach.parshios.four_parshios": "https://pyluach.readthedocs.io/en/latest/parshios.html#pyluach.parshios.four_parshios",
     "pyluach.parshios.getparsha": "https://pyluach.readthedocs.io/en/latest/parshios.html#pyluach.parshios.getparsha",
     "pyluach.parshios.getparsha_string": "https://pyluach.readthedocs.io/en/latest/parshios.html#pyluach.parshios.getparsha_string",
     "pyluach.parshios.iterparshios": "https://pyluach.readthedocs.io/en/latest/parshios.html#pyluach.parshios.iterparshios",

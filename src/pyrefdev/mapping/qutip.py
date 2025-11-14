@@ -1,4 +1,4 @@
-VERSION = "5.2.0"
+VERSION = "5.2.2"
 
 # fmt: off
 MAPPING = {
@@ -83,6 +83,7 @@ MAPPING = {
     "qutip.core.cy.qobjevo.qobjevo.to_list": "https://qutip.readthedocs.io/en/stable/apidoc/time_dep.html#qutip.core.cy.qobjevo.QobjEvo.to_list",
     "qutip.core.cy.qobjevo.qobjevo.trans": "https://qutip.readthedocs.io/en/stable/apidoc/time_dep.html#qutip.core.cy.qobjevo.QobjEvo.trans",
     "qutip.core.dimensions": "https://qutip.readthedocs.io/en/stable/apidoc/quantumobject.html#module-qutip.core.dimensions",
+    "qutip.core.dimensions.einsum": "https://qutip.readthedocs.io/en/stable/apidoc/quantumobject.html#qutip.core.dimensions.einsum",
     "qutip.core.dimensions.from_tensor_rep": "https://qutip.readthedocs.io/en/stable/apidoc/quantumobject.html#qutip.core.dimensions.from_tensor_rep",
     "qutip.core.dimensions.to_tensor_rep": "https://qutip.readthedocs.io/en/stable/apidoc/quantumobject.html#qutip.core.dimensions.to_tensor_rep",
     "qutip.core.drudelorentzenvironment": "https://qutip.readthedocs.io/en/stable/apidoc/environments.html#qutip.core.DrudeLorentzEnvironment",
@@ -225,6 +226,7 @@ MAPPING = {
     "qutip.core.qobj.qobj.data_as": "https://qutip.readthedocs.io/en/stable/apidoc/quantumobject.html#qutip.core.qobj.Qobj.data_as",
     "qutip.core.qobj.qobj.diag": "https://qutip.readthedocs.io/en/stable/apidoc/quantumobject.html#qutip.core.qobj.Qobj.diag",
     "qutip.core.qobj.qobj.dnorm": "https://qutip.readthedocs.io/en/stable/apidoc/quantumobject.html#qutip.core.qobj.Qobj.dnorm",
+    "qutip.core.qobj.qobj.drop_scalar_dims": "https://qutip.readthedocs.io/en/stable/apidoc/quantumobject.html#qutip.core.qobj.Qobj.drop_scalar_dims",
     "qutip.core.qobj.qobj.dual_chan": "https://qutip.readthedocs.io/en/stable/apidoc/quantumobject.html#qutip.core.qobj.Qobj.dual_chan",
     "qutip.core.qobj.qobj.eigenenergies": "https://qutip.readthedocs.io/en/stable/apidoc/quantumobject.html#qutip.core.qobj.Qobj.eigenenergies",
     "qutip.core.qobj.qobj.eigenstates": "https://qutip.readthedocs.io/en/stable/apidoc/quantumobject.html#qutip.core.qobj.Qobj.eigenstates",
@@ -464,7 +466,6 @@ MAPPING = {
     "qutip.solver.heom.heomsolver.run": "https://qutip.readthedocs.io/en/stable/apidoc/heom.html#qutip.solver.heom.HEOMSolver.run",
     "qutip.solver.heom.heomsolver.start": "https://qutip.readthedocs.io/en/stable/apidoc/heom.html#qutip.solver.heom.HEOMSolver.start",
     "qutip.solver.heom.heomsolver.steady_state": "https://qutip.readthedocs.io/en/stable/apidoc/heom.html#qutip.solver.heom.HEOMSolver.steady_state",
-    "qutip.solver.heom.heomsolver.sys_dims": "https://qutip.readthedocs.io/en/stable/apidoc/heom.html#qutip.solver.heom.HEOMSolver.sys_dims",
     "qutip.solver.heom.hierarchyados": "https://qutip.readthedocs.io/en/stable/apidoc/heom.html#qutip.solver.heom.HierarchyADOs",
     "qutip.solver.heom.hierarchyados.exps": "https://qutip.readthedocs.io/en/stable/apidoc/heom.html#qutip.solver.heom.HierarchyADOs.exps",
     "qutip.solver.heom.hierarchyados.filter": "https://qutip.readthedocs.io/en/stable/apidoc/heom.html#qutip.solver.heom.HierarchyADOs.filter",
@@ -484,6 +485,8 @@ MAPPING = {
     "qutip.solver.integrator.qutip_integrator": "https://qutip.readthedocs.io/en/stable/apidoc/solver.html",
     "qutip.solver.integrator.qutip_integrator.integratordiag": "https://qutip.readthedocs.io/en/stable/apidoc/solver.html#qutip.solver.integrator.qutip_integrator.IntegratorDiag",
     "qutip.solver.integrator.qutip_integrator.integratordiag.options": "https://qutip.readthedocs.io/en/stable/apidoc/solver.html#qutip.solver.integrator.qutip_integrator.IntegratorDiag.options",
+    "qutip.solver.integrator.qutip_integrator.integratortsit5": "https://qutip.readthedocs.io/en/stable/apidoc/solver.html#qutip.solver.integrator.qutip_integrator.IntegratorTsit5",
+    "qutip.solver.integrator.qutip_integrator.integratortsit5.options": "https://qutip.readthedocs.io/en/stable/apidoc/solver.html#qutip.solver.integrator.qutip_integrator.IntegratorTsit5.options",
     "qutip.solver.integrator.qutip_integrator.integratorvern7": "https://qutip.readthedocs.io/en/stable/apidoc/solver.html#qutip.solver.integrator.qutip_integrator.IntegratorVern7",
     "qutip.solver.integrator.qutip_integrator.integratorvern7.options": "https://qutip.readthedocs.io/en/stable/apidoc/solver.html#qutip.solver.integrator.qutip_integrator.IntegratorVern7.options",
     "qutip.solver.integrator.qutip_integrator.integratorvern9": "https://qutip.readthedocs.io/en/stable/apidoc/solver.html#qutip.solver.integrator.qutip_integrator.IntegratorVern9",

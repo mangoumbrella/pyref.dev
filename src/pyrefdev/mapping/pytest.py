@@ -1,4 +1,4 @@
-VERSION = "8.4.1"
+VERSION = "9.0.1"
 
 # fmt: off
 MAPPING = {
@@ -83,6 +83,7 @@ MAPPING = {
     "pytest.config.rootpath": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Config.rootpath",
     "pytest.config.stash": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Config.stash",
     "pytest.config.verbosity_assertions": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Config.VERBOSITY_ASSERTIONS",
+    "pytest.config.verbosity_subtests": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Config.VERBOSITY_SUBTESTS",
     "pytest.config.verbosity_test_cases": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Config.VERBOSITY_TEST_CASES",
     "pytest.deprecated_call": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.deprecated_call",
     "pytest.dir": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Dir",
@@ -120,12 +121,6 @@ MAPPING = {
     "pytest.exit": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.exit",
     "pytest.exit.exception": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.exit.Exception",
     "pytest.exitcode": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.ExitCode",
-    "pytest.exitcode.internal_error": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.ExitCode.INTERNAL_ERROR",
-    "pytest.exitcode.interrupted": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.ExitCode.INTERRUPTED",
-    "pytest.exitcode.no_tests_collected": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.ExitCode.NO_TESTS_COLLECTED",
-    "pytest.exitcode.ok": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.ExitCode.OK",
-    "pytest.exitcode.tests_failed": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.ExitCode.TESTS_FAILED",
-    "pytest.exitcode.usage_error": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.ExitCode.USAGE_ERROR",
     "pytest.fail": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.fail",
     "pytest.fail.exception": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.fail.Exception",
     "pytest.file": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.File",
@@ -389,6 +384,7 @@ MAPPING = {
     "pytest.pytester.makeini": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Pytester.makeini",
     "pytest.pytester.makepyfile": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Pytester.makepyfile",
     "pytest.pytester.makepyprojecttoml": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Pytester.makepyprojecttoml",
+    "pytest.pytester.maketoml": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Pytester.maketoml",
     "pytest.pytester.maketxtfile": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Pytester.maketxtfile",
     "pytest.pytester.mkdir": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Pytester.mkdir",
     "pytest.pytester.mkpydir": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Pytester.mkpydir",
@@ -495,6 +491,8 @@ MAPPING = {
     "pytest.stash.get": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Stash.get",
     "pytest.stash.setdefault": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Stash.setdefault",
     "pytest.stashkey": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.StashKey",
+    "pytest.subtests": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Subtests",
+    "pytest.subtests.test": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.Subtests.test",
     "pytest.tempdirfactory": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.TempdirFactory",
     "pytest.tempdirfactory.getbasetemp": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.TempdirFactory.getbasetemp",
     "pytest.tempdirfactory.mktemp": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.TempdirFactory.mktemp",

@@ -1,4 +1,4 @@
-VERSION = "3.14.0"
+VERSION = "3.15.1"
 
 # fmt: off
 MAPPING = {
@@ -38,6 +38,7 @@ MAPPING = {
     "h5py.dataset.file": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.file",
     "h5py.dataset.fillvalue": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.fillvalue",
     "h5py.dataset.fletcher32": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.fletcher32",
+    "h5py.dataset.flush": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.flush",
     "h5py.dataset.id": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.id",
     "h5py.dataset.is_scale": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.is_scale",
     "h5py.dataset.is_virtual": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.is_virtual",
@@ -51,6 +52,7 @@ MAPPING = {
     "h5py.dataset.parent": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.parent",
     "h5py.dataset.read_direct": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.read_direct",
     "h5py.dataset.ref": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.ref",
+    "h5py.dataset.refresh": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.refresh",
     "h5py.dataset.regionref": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.regionref",
     "h5py.dataset.resize": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.resize",
     "h5py.dataset.scaleoffset": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.scaleoffset",

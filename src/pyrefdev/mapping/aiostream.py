@@ -21,7 +21,7 @@ MAPPING = {
     "aiostream.core.stream": "https://aiostream.readthedocs.io/en/stable/core.html#aiostream.core.Stream",
     "aiostream.core.stream.stream": "https://aiostream.readthedocs.io/en/stable/core.html#aiostream.core.Stream.stream",
     "aiostream.core.streamcontext": "https://aiostream.readthedocs.io/en/stable/core.html#aiostream.core.streamcontext",
-    "aiostream.stream": "https://aiostream.readthedocs.io/en/stable/index.html",
+    "aiostream.stream": "https://aiostream.readthedocs.io/en/stable/presentation.html",
     "aiostream.stream.accumulate": "https://aiostream.readthedocs.io/en/stable/operators.html#aiostream.stream.accumulate",
     "aiostream.stream.action": "https://aiostream.readthedocs.io/en/stable/operators.html#aiostream.stream.action",
     "aiostream.stream.call": "https://aiostream.readthedocs.io/en/stable/operators.html#aiostream.stream.call",

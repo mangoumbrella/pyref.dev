@@ -1,4 +1,4 @@
-VERSION = "3.0.51"
+VERSION = "3.0.52"
 
 # fmt: off
 MAPPING = {
@@ -369,7 +369,6 @@ MAPPING = {
     "prompt_toolkit.layout.container.write_to_screen": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.layout.Container.write_to_screen",
     "prompt_toolkit.layout.dimension": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.layout.Dimension",
     "prompt_toolkit.layout.dimension.exact": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.layout.Dimension.exact",
-    "prompt_toolkit.layout.dimension.is_zero": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.layout.Dimension.is_zero",
     "prompt_toolkit.layout.dimension.zero": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.layout.Dimension.zero",
     "prompt_toolkit.layout.dummycontrol": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.layout.DummyControl",
     "prompt_toolkit.layout.dynamiccontainer": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.layout.DynamicContainer",
@@ -604,6 +603,7 @@ MAPPING = {
     "prompt_toolkit.selection.selectiontype.lines": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.selection.SelectionType.LINES",
     "prompt_toolkit.shortcuts": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#module-prompt_toolkit.shortcuts",
     "prompt_toolkit.shortcuts.button_dialog": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.shortcuts.button_dialog",
+    "prompt_toolkit.shortcuts.choice": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.shortcuts.choice",
     "prompt_toolkit.shortcuts.clear": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.shortcuts.clear",
     "prompt_toolkit.shortcuts.clear_title": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.shortcuts.clear_title",
     "prompt_toolkit.shortcuts.completestyle": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.shortcuts.CompleteStyle",
@@ -641,6 +641,7 @@ MAPPING = {
     "prompt_toolkit.styles.attrs.blink": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.styles.Attrs.blink",
     "prompt_toolkit.styles.attrs.bold": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.styles.Attrs.bold",
     "prompt_toolkit.styles.attrs.color": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.styles.Attrs.color",
+    "prompt_toolkit.styles.attrs.dim": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.styles.Attrs.dim",
     "prompt_toolkit.styles.attrs.hidden": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.styles.Attrs.hidden",
     "prompt_toolkit.styles.attrs.italic": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.styles.Attrs.italic",
     "prompt_toolkit.styles.attrs.reverse": "https://python-prompt-toolkit.readthedocs.io/en/latest/pages/reference.html#prompt_toolkit.styles.Attrs.reverse",

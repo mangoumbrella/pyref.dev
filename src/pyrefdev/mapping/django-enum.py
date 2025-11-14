@@ -1,4 +1,4 @@
-VERSION = "2.2.3"
+VERSION = "2.2.5"
 
 # fmt: off
 MAPPING = {
@@ -31,7 +31,6 @@ MAPPING = {
     "django_enum.drf.flagfield.to_representation": "https://django-enum.readthedocs.io/en/stable/reference/DRF.html#django_enum.drf.FlagField.to_representation",
     "django_enum.fields": "https://django-enum.readthedocs.io/en/stable/reference/fields.html",
     "django_enum.fields.bigintegerflagfield": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.BigIntegerFlagField",
-    "django_enum.fields.databasedefault": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.DatabaseDefault",
     "django_enum.fields.enumbigintegerfield": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumBigIntegerField",
     "django_enum.fields.enumcharfield": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumCharField",
     "django_enum.fields.enumcharfield.__init__": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumCharField.__init__",

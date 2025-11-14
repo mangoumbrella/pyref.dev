@@ -1,4 +1,4 @@
-VERSION = "2.0.0"
+VERSION = "2.0.2"
 
 # fmt: off
 MAPPING = {
@@ -6,6 +6,7 @@ MAPPING = {
     "maison.errors": "https://maison.readthedocs.io/en/latest/reference.html",
     "maison.errors.badtomlerror": "https://maison.readthedocs.io/en/latest/reference.html#maison.errors.BadTomlError",
     "maison.errors.noschemaerror": "https://maison.readthedocs.io/en/latest/reference.html#maison.errors.NoSchemaError",
+    "maison.errors.unsupportedconfigerror": "https://maison.readthedocs.io/en/latest/reference.html#maison.errors.UnsupportedConfigError",
     "maison.userconfig": "https://maison.readthedocs.io/en/latest/reference.html#maison.UserConfig",
     "maison.userconfig.discovered_paths": "https://maison.readthedocs.io/en/latest/reference.html#maison.UserConfig.discovered_paths",
     "maison.userconfig.path": "https://maison.readthedocs.io/en/latest/reference.html#maison.UserConfig.path",

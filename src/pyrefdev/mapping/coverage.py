@@ -1,4 +1,4 @@
-VERSION = "7.9.1"
+VERSION = "7.11.3"
 
 # fmt: off
 MAPPING = {
@@ -42,6 +42,7 @@ MAPPING = {
     "coverage.coveragedata.add_lines": "https://coverage.readthedocs.io/en/latest/api_coveragedata.html#coverage.CoverageData.add_lines",
     "coverage.coveragedata.arcs": "https://coverage.readthedocs.io/en/latest/api_coveragedata.html#coverage.CoverageData.arcs",
     "coverage.coveragedata.base_filename": "https://coverage.readthedocs.io/en/latest/api_coveragedata.html#coverage.CoverageData.base_filename",
+    "coverage.coveragedata.close": "https://coverage.readthedocs.io/en/latest/api_coveragedata.html#coverage.CoverageData.close",
     "coverage.coveragedata.contexts_by_lineno": "https://coverage.readthedocs.io/en/latest/api_coveragedata.html#coverage.CoverageData.contexts_by_lineno",
     "coverage.coveragedata.data_filename": "https://coverage.readthedocs.io/en/latest/api_coveragedata.html#coverage.CoverageData.data_filename",
     "coverage.coveragedata.dumps": "https://coverage.readthedocs.io/en/latest/api_coveragedata.html#coverage.CoverageData.dumps",

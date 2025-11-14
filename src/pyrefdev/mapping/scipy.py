@@ -1,4 +1,4 @@
-VERSION = "1.16.0"
+VERSION = "1.16.3"
 
 # fmt: off
 MAPPING = {
@@ -4098,7 +4098,8 @@ MAPPING = {
     "scipy.stats.tukey_hsd": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.tukey_hsd.html#scipy.stats.tukey_hsd",
     "scipy.stats.tukeylambda": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.tukeylambda.html#scipy.stats.tukeylambda",
     "scipy.stats.tvar": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.tvar.html#scipy.stats.tvar",
-    "scipy.stats.uniform": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.Uniform.html#scipy.stats.uniform",
+    "scipy.stats.Uniform": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.Uniform.html#scipy.stats.Uniform",
+    "scipy.stats.uniform": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.uniform.html#scipy.stats.uniform",
     "scipy.stats.uniform.a": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.Uniform.a.html#scipy.stats.Uniform.a",
     "scipy.stats.uniform.b": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.Uniform.b.html#scipy.stats.Uniform.b",
     "scipy.stats.uniform.ccdf": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.Uniform.ccdf.html#scipy.stats.Uniform.ccdf",

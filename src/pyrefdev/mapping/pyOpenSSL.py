@@ -1,4 +1,4 @@
-VERSION = "25.1.0"
+VERSION = "25.3.0"
 
 # fmt: off
 MAPPING = {
@@ -135,6 +135,7 @@ MAPPING = {
     "openssl.ssl.connection.get_client_ca_list": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.get_client_ca_list",
     "openssl.ssl.connection.get_context": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.get_context",
     "openssl.ssl.connection.get_finished": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.get_finished",
+    "openssl.ssl.connection.get_group_name": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.get_group_name",
     "openssl.ssl.connection.get_peer_cert_chain": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.get_peer_cert_chain",
     "openssl.ssl.connection.get_peer_certificate": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.get_peer_certificate",
     "openssl.ssl.connection.get_peer_finished": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.get_peer_finished",
@@ -165,6 +166,7 @@ MAPPING = {
     "openssl.ssl.connection.set_ciphertext_mtu": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.set_ciphertext_mtu",
     "openssl.ssl.connection.set_connect_state": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.set_connect_state",
     "openssl.ssl.connection.set_context": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.set_context",
+    "openssl.ssl.connection.set_info_callback": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.set_info_callback",
     "openssl.ssl.connection.set_session": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.set_session",
     "openssl.ssl.connection.set_shutdown": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.set_shutdown",
     "openssl.ssl.connection.set_tlsext_host_name": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Connection.set_tlsext_host_name",
@@ -181,6 +183,7 @@ MAPPING = {
     "openssl.ssl.context.add_client_ca": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.add_client_ca",
     "openssl.ssl.context.add_extra_chain_cert": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.add_extra_chain_cert",
     "openssl.ssl.context.check_privatekey": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.check_privatekey",
+    "openssl.ssl.context.clear_mode": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.clear_mode",
     "openssl.ssl.context.get_app_data": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.get_app_data",
     "openssl.ssl.context.get_cert_store": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.get_cert_store",
     "openssl.ssl.context.get_session_cache_mode": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.get_session_cache_mode",
@@ -208,6 +211,7 @@ MAPPING = {
     "openssl.ssl.context.set_session_cache_mode": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.set_session_cache_mode",
     "openssl.ssl.context.set_session_id": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.set_session_id",
     "openssl.ssl.context.set_timeout": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.set_timeout",
+    "openssl.ssl.context.set_tls13_ciphersuites": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.set_tls13_ciphersuites",
     "openssl.ssl.context.set_tlsext_servername_callback": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.set_tlsext_servername_callback",
     "openssl.ssl.context.set_tlsext_use_srtp": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.set_tlsext_use_srtp",
     "openssl.ssl.context.set_tmp_ecdh": "https://www.pyopenssl.org/en/latest/api/ssl.html#OpenSSL.SSL.Context.set_tmp_ecdh",

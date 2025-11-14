@@ -1,4 +1,4 @@
-VERSION = "4.13.2"
+VERSION = "4.15.4"
 
 # fmt: off
 MAPPING = {
@@ -395,6 +395,7 @@ MAPPING = {
     "pymongo.encryption.algorithm.indexed": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.Algorithm.INDEXED",
     "pymongo.encryption.algorithm.range": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.Algorithm.RANGE",
     "pymongo.encryption.algorithm.rangepreview": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.Algorithm.RANGEPREVIEW",
+    "pymongo.encryption.algorithm.textpreview": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.Algorithm.TEXTPREVIEW",
     "pymongo.encryption.algorithm.unindexed": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.Algorithm.UNINDEXED",
     "pymongo.encryption.clientencryption": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.ClientEncryption",
     "pymongo.encryption.clientencryption.add_key_alt_name": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.ClientEncryption.add_key_alt_name",
@@ -412,13 +413,20 @@ MAPPING = {
     "pymongo.encryption.clientencryption.rewrap_many_data_key": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.ClientEncryption.rewrap_many_data_key",
     "pymongo.encryption.querytype": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType",
     "pymongo.encryption.querytype.equality": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.EQUALITY",
+    "pymongo.encryption.querytype.prefixpreview": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.PREFIXPREVIEW",
     "pymongo.encryption.querytype.range": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.RANGE",
     "pymongo.encryption.querytype.rangepreview": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.RANGEPREVIEW",
+    "pymongo.encryption.querytype.substringpreview": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.SUBSTRINGPREVIEW",
+    "pymongo.encryption.querytype.suffixpreview": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.SUFFIXPREVIEW",
     "pymongo.encryption.rewrapmanydatakeyresult": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.RewrapManyDataKeyResult",
     "pymongo.encryption.rewrapmanydatakeyresult.bulk_write_result": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.RewrapManyDataKeyResult.bulk_write_result",
     "pymongo.encryption_options": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html",
     "pymongo.encryption_options.autoencryptionopts": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.AutoEncryptionOpts",
+    "pymongo.encryption_options.prefixopts": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.PrefixOpts",
     "pymongo.encryption_options.rangeopts": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.RangeOpts",
+    "pymongo.encryption_options.substringopts": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.SubstringOpts",
+    "pymongo.encryption_options.suffixopts": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.SuffixOpts",
+    "pymongo.encryption_options.textopts": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.TextOpts",
     "pymongo.errors": "https://pymongo.readthedocs.io/en/stable/api/pymongo/errors.html",
     "pymongo.errors.autoreconnect": "https://pymongo.readthedocs.io/en/stable/api/pymongo/errors.html#pymongo.errors.AutoReconnect",
     "pymongo.errors.bulkwriteerror": "https://pymongo.readthedocs.io/en/stable/api/pymongo/errors.html#pymongo.errors.BulkWriteError",

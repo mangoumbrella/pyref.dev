@@ -22,6 +22,7 @@ MAPPING = {
     "injector.injector.create_object": "https://injector.readthedocs.io/en/latest/api.html#injector.Injector.create_object",
     "injector.injector.get": "https://injector.readthedocs.io/en/latest/api.html#injector.Injector.get",
     "injector.instanceprovider": "https://injector.readthedocs.io/en/latest/api.html#injector.InstanceProvider",
+    "injector.invalidinterface": "https://injector.readthedocs.io/en/latest/api.html#injector.InvalidInterface",
     "injector.is_decorated_with_inject": "https://injector.readthedocs.io/en/latest/api.html#injector.is_decorated_with_inject",
     "injector.module": "https://injector.readthedocs.io/en/latest/api.html#injector.Module",
     "injector.module.configure": "https://injector.readthedocs.io/en/latest/api.html#injector.Module.configure",

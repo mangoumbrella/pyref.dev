@@ -1,4 +1,4 @@
-VERSION = "1.23.2"
+VERSION = "1.26.0"
 
 # fmt: off
 MAPPING = {
@@ -11,6 +11,7 @@ MAPPING = {
     "django_htmx.http.httpresponsestoppolling": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.HttpResponseStopPolling",
     "django_htmx.http.push_url": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.push_url",
     "django_htmx.http.replace_url": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.replace_url",
+    "django_htmx.http.reselect": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.reselect",
     "django_htmx.http.reswap": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.reswap",
     "django_htmx.http.retarget": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.retarget",
     "django_htmx.http.trigger_client_event": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.trigger_client_event",

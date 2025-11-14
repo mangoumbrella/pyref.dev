@@ -80,7 +80,7 @@ MAPPING = {
     "clize.parameters.one_of": "https://clize.readthedocs.io/en/stable/reference.html#clize.parameters.one_of",
     "clize.parameters.pass_name": "https://clize.readthedocs.io/en/stable/reference.html#clize.parameters.pass_name",
     "clize.parameters.value_inserter": "https://clize.readthedocs.io/en/stable/reference.html#clize.parameters.value_inserter",
-    "clize.parser": "https://clize.readthedocs.io/en/stable/api.html#module-clize.parser",
+    "clize.parser": "https://clize.readthedocs.io/en/stable/parser.html",
     "clize.parser.alternatecommandparameter": "https://clize.readthedocs.io/en/stable/api.html#clize.parser.AlternateCommandParameter",
     "clize.parser.appendarguments": "https://clize.readthedocs.io/en/stable/api.html#clize.parser.AppendArguments",
     "clize.parser.cliboundarguments": "https://clize.readthedocs.io/en/stable/api.html#clize.parser.CliBoundArguments",

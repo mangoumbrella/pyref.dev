@@ -1,4 +1,4 @@
-VERSION = "5.0.3"
+VERSION = "5.1.1"
 
 # fmt: off
 MAPPING = {
@@ -36,6 +36,8 @@ MAPPING = {
     "pyinstrument.renderers.framerenderer.processors": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.renderers.FrameRenderer.processors",
     "pyinstrument.renderers.framerenderer.render": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.renderers.FrameRenderer.render",
     "pyinstrument.renderers.htmlrenderer": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.renderers.HTMLRenderer",
+    "pyinstrument.renderers.htmlrenderer.preprocessor_options": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.renderers.HTMLRenderer.preprocessor_options",
+    "pyinstrument.renderers.htmlrenderer.preprocessors": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.renderers.HTMLRenderer.preprocessors",
     "pyinstrument.renderers.jsonrenderer": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.renderers.JSONRenderer",
     "pyinstrument.renderers.speedscoperenderer": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.renderers.SpeedscopeRenderer",
     "pyinstrument.session": "https://pyinstrument.readthedocs.io/en/latest/reference.html",

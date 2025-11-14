@@ -48,7 +48,7 @@ MAPPING = {
     "filterpy.hinfinity.hinfinityfilter.residual_of": "https://filterpy.readthedocs.io/en/latest/hinfinity/HInfinityFilter.html#filterpy.hinfinity.HInfinityFilter.residual_of",
     "filterpy.hinfinity.hinfinityfilter.update": "https://filterpy.readthedocs.io/en/latest/hinfinity/HInfinityFilter.html#filterpy.hinfinity.HInfinityFilter.update",
     "filterpy.hinfinity.hinfinityfilter.v": "https://filterpy.readthedocs.io/en/latest/hinfinity/HInfinityFilter.html#filterpy.hinfinity.HInfinityFilter.V",
-    "filterpy.kalman": "https://filterpy.readthedocs.io/en/latest/kalman/FadingKalmanFilter.html",
+    "filterpy.kalman": "https://filterpy.readthedocs.io/en/latest/kalman/ExtendedKalmanFilter.html",
     "filterpy.kalman.batch_filter": "https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html#filterpy.kalman.batch_filter",
     "filterpy.kalman.ensemblekalmanfilter": "https://filterpy.readthedocs.io/en/latest/kalman/EnsembleKalmanFilter.html#filterpy.kalman.EnsembleKalmanFilter",
     "filterpy.kalman.ensemblekalmanfilter.__init__": "https://filterpy.readthedocs.io/en/latest/kalman/EnsembleKalmanFilter.html#filterpy.kalman.EnsembleKalmanFilter.__init__",

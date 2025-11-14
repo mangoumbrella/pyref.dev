@@ -1,4 +1,4 @@
-VERSION = "9.8.0"
+VERSION = "9.10.3"
 
 # fmt: off
 MAPPING = {
@@ -25,6 +25,7 @@ MAPPING = {
     "copier._main.worker.__enter__": "https://copier.readthedocs.io/en/stable/reference/main/#copier._main.Worker.__enter__",
     "copier._main.worker.__exit__": "https://copier.readthedocs.io/en/stable/reference/main/#copier._main.Worker.__exit__",
     "copier._main.worker.all_exclusions": "https://copier.readthedocs.io/en/stable/reference/main/#copier._main.Worker.all_exclusions",
+    "copier._main.worker.all_skip_if_exists": "https://copier.readthedocs.io/en/stable/reference/main/#copier._main.Worker.all_skip_if_exists",
     "copier._main.worker.answers_relpath": "https://copier.readthedocs.io/en/stable/reference/main/#copier._main.Worker.answers_relpath",
     "copier._main.worker.jinja_env": "https://copier.readthedocs.io/en/stable/reference/main/#copier._main.Worker.jinja_env",
     "copier._main.worker.match_exclude": "https://copier.readthedocs.io/en/stable/reference/main/#copier._main.Worker.match_exclude",
@@ -136,6 +137,7 @@ MAPPING = {
     "copier.errors.copierwarning": "https://copier.readthedocs.io/en/stable/reference/errors/#copier.errors.CopierWarning",
     "copier.errors.dirtylocalwarning": "https://copier.readthedocs.io/en/stable/reference/errors/#copier.errors.DirtyLocalWarning",
     "copier.errors.extensionnotfounderror": "https://copier.readthedocs.io/en/stable/reference/errors/#copier.errors.ExtensionNotFoundError",
+    "copier.errors.forbiddenpatherror": "https://copier.readthedocs.io/en/stable/reference/errors/#copier.errors.ForbiddenPathError",
     "copier.errors.interactivesessionerror": "https://copier.readthedocs.io/en/stable/reference/errors/#copier.errors.InteractiveSessionError",
     "copier.errors.invalidconfigfileerror": "https://copier.readthedocs.io/en/stable/reference/errors/#copier.errors.InvalidConfigFileError",
     "copier.errors.invalidtypeerror": "https://copier.readthedocs.io/en/stable/reference/errors/#copier.errors.InvalidTypeError",

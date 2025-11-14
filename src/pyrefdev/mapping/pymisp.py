@@ -1,4 +1,4 @@
-VERSION = "2.5.12"
+VERSION = "2.5.17.2"
 
 # fmt: off
 MAPPING = {
@@ -383,6 +383,7 @@ MAPPING = {
     "pymisp.mispserver.update": "https://pymisp.readthedocs.io/en/latest/modules.html#pymisp.MISPServer.update",
     "pymisp.mispserver.update_not_jsonable": "https://pymisp.readthedocs.io/en/latest/modules.html#pymisp.MISPServer.update_not_jsonable",
     "pymisp.mispserver.values": "https://pymisp.readthedocs.io/en/latest/modules.html#pymisp.MISPServer.values",
+    "pymisp.mispservererror": "https://pymisp.readthedocs.io/en/latest/modules.html#pymisp.MISPServerError",
     "pymisp.mispshadowattribute": "https://pymisp.readthedocs.io/en/latest/modules.html#pymisp.MISPShadowAttribute",
     "pymisp.mispshadowattribute.clear": "https://pymisp.readthedocs.io/en/latest/modules.html#pymisp.MISPShadowAttribute.clear",
     "pymisp.mispshadowattribute.edited": "https://pymisp.readthedocs.io/en/latest/modules.html#pymisp.MISPShadowAttribute.edited",
@@ -761,6 +762,7 @@ MAPPING = {
     "pymisp.tools.abstractmispobjectgenerator.generate_attributes": "https://pymisp.readthedocs.io/en/latest/tools.html#pymisp.tools.AbstractMISPObjectGenerator.generate_attributes",
     "pymisp.tools.asnobject": "https://pymisp.readthedocs.io/en/latest/tools.html#pymisp.tools.ASNObject",
     "pymisp.tools.asnobject.generate_attributes": "https://pymisp.readthedocs.io/en/latest/tools.html#pymisp.tools.ASNObject.generate_attributes",
+    "pymisp.tools.csvloader": "https://pymisp.readthedocs.io/en/latest/tools.html#pymisp.tools.CSVLoader",
     "pymisp.tools.domainipobject": "https://pymisp.readthedocs.io/en/latest/tools.html#pymisp.tools.DomainIPObject",
     "pymisp.tools.domainipobject.generate_attributes": "https://pymisp.readthedocs.io/en/latest/tools.html#pymisp.tools.DomainIPObject.generate_attributes",
     "pymisp.tools.elfobject": "https://pymisp.readthedocs.io/en/latest/tools.html#pymisp.tools.ELFObject",

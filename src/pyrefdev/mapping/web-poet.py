@@ -1,4 +1,4 @@
-VERSION = "0.19.0"
+VERSION = "0.20.0"
 
 # fmt: off
 MAPPING = {
@@ -154,7 +154,7 @@ MAPPING = {
     "web_poet.pages.webpage.urljoin": "https://web-poet.readthedocs.io/en/stable/api-reference.html#web_poet.pages.WebPage.urljoin",
     "web_poet.pages.webpage.xpath": "https://web-poet.readthedocs.io/en/stable/api-reference.html#web_poet.pages.WebPage.xpath",
     "web_poet.requests": "https://web-poet.readthedocs.io/en/stable/api-reference.html#module-web_poet.requests",
-    "web_poet.requests.request_downloader_var": "https://web-poet.readthedocs.io/en/stable/api-reference.html#web_poet.requests.request_downloader_var",
+    "web_poet.requests.requestdownloadert": "https://web-poet.readthedocs.io/en/stable/api-reference.html#web_poet.requests.RequestDownloaderT",
     "web_poet.rules": "https://web-poet.readthedocs.io/en/stable/api-reference.html#module-web_poet.rules",
     "web_poet.rules.applyrule": "https://web-poet.readthedocs.io/en/stable/api-reference.html#web_poet.rules.ApplyRule",
     "web_poet.rules.consume_modules": "https://web-poet.readthedocs.io/en/stable/api-reference.html#web_poet.rules.consume_modules",

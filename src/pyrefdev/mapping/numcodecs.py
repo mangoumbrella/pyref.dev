@@ -1,4 +1,4 @@
-VERSION = "0.16.1"
+VERSION = "0.16.3"
 
 # fmt: off
 MAPPING = {
@@ -251,7 +251,6 @@ MAPPING = {
     "numcodecs.zstd.decompress": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.decompress",
     "numcodecs.zstd.zstd": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.Zstd",
     "numcodecs.zstd.zstd.codec_id": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.Zstd.codec_id",
-    "numcodecs.zstd.zstd.decode": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.Zstd.decode",
     "numcodecs.zstd.zstd.encode": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.Zstd.encode",
     "numcodecs.zstd.zstd.from_config": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.Zstd.from_config",
     "numcodecs.zstd.zstd.get_config": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.Zstd.get_config",

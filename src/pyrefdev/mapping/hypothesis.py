@@ -1,4 +1,4 @@
-VERSION = "6.136.0"
+VERSION = "6.147.0"
 
 # fmt: off
 MAPPING = {
@@ -26,8 +26,11 @@ MAPPING = {
     "hypothesis.errors.backendcannotproceed": "https://hypothesis.readthedocs.io/en/latest/reference/internals.html#hypothesis.errors.BackendCannotProceed",
     "hypothesis.errors.deadlineexceeded": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.DeadlineExceeded",
     "hypothesis.errors.didnotreproduce": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.DidNotReproduce",
+    "hypothesis.errors.flaky": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.Flaky",
     "hypothesis.errors.flakybackendfailure": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.FlakyBackendFailure",
-    "hypothesis.errors.hypothesisdeprecationwarning": "https://hypothesis.readthedocs.io/en/latest/compatibility.html#hypothesis.errors.HypothesisDeprecationWarning",
+    "hypothesis.errors.flakyfailure": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.FlakyFailure",
+    "hypothesis.errors.flakystrategydefinition": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.FlakyStrategyDefinition",
+    "hypothesis.errors.hypothesisdeprecationwarning": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.HypothesisDeprecationWarning",
     "hypothesis.errors.hypothesisexception": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.HypothesisException",
     "hypothesis.errors.invalidargument": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.InvalidArgument",
     "hypothesis.errors.resolutionfailed": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.ResolutionFailed",
@@ -138,9 +141,13 @@ MAPPING = {
     "hypothesis.internal.intervalsets": "https://hypothesis.readthedocs.io/en/latest/reference/internals.html",
     "hypothesis.internal.intervalsets.intervalset": "https://hypothesis.readthedocs.io/en/latest/reference/internals.html#hypothesis.internal.intervalsets.IntervalSet",
     "hypothesis.internal.observability": "https://hypothesis.readthedocs.io/en/latest/reference/internals.html",
+    "hypothesis.internal.observability.add_observability_callback": "https://hypothesis.readthedocs.io/en/latest/reference/internals.html#hypothesis.internal.observability.add_observability_callback",
     "hypothesis.internal.observability.observability_choices": "https://hypothesis.readthedocs.io/en/latest/reference/internals.html#hypothesis.internal.observability.OBSERVABILITY_CHOICES",
     "hypothesis.internal.observability.observability_collect_coverage": "https://hypothesis.readthedocs.io/en/latest/reference/internals.html#hypothesis.internal.observability.OBSERVABILITY_COLLECT_COVERAGE",
+    "hypothesis.internal.observability.observability_enabled": "https://hypothesis.readthedocs.io/en/latest/reference/internals.html#hypothesis.internal.observability.observability_enabled",
+    "hypothesis.internal.observability.remove_observability_callback": "https://hypothesis.readthedocs.io/en/latest/reference/internals.html#hypothesis.internal.observability.remove_observability_callback",
     "hypothesis.internal.observability.testcase_callbacks": "https://hypothesis.readthedocs.io/en/latest/reference/internals.html#hypothesis.internal.observability.TESTCASE_CALLBACKS",
+    "hypothesis.internal.observability.with_observability_callback": "https://hypothesis.readthedocs.io/en/latest/reference/internals.html#hypothesis.internal.observability.with_observability_callback",
     "hypothesis.is_hypothesis_test": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.is_hypothesis_test",
     "hypothesis.note": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.note",
     "hypothesis.phase": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.Phase",
@@ -161,6 +168,7 @@ MAPPING = {
     "hypothesis.settings.database": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.settings.database",
     "hypothesis.settings.deadline": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.settings.deadline",
     "hypothesis.settings.derandomize": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.settings.derandomize",
+    "hypothesis.settings.get_current_profile_name": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.settings.get_current_profile_name",
     "hypothesis.settings.get_profile": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.settings.get_profile",
     "hypothesis.settings.load_profile": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.settings.load_profile",
     "hypothesis.settings.max_examples": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.settings.max_examples",

@@ -1,4 +1,4 @@
-VERSION = "8.3.1"
+VERSION = "9.2.2"
 
 # fmt: off
 MAPPING = {
@@ -24,6 +24,7 @@ MAPPING = {
     "setuptools_scm.version.scmversion.node": "https://setuptools-scm.readthedocs.io/en/latest/extending/#setuptools_scm.version.ScmVersion.node",
     "setuptools_scm.version.scmversion.node_date": "https://setuptools-scm.readthedocs.io/en/latest/extending/#setuptools_scm.version.ScmVersion.node_date",
     "setuptools_scm.version.scmversion.preformatted": "https://setuptools-scm.readthedocs.io/en/latest/extending/#setuptools_scm.version.ScmVersion.preformatted",
+    "setuptools_scm.version.scmversion.short_node": "https://setuptools-scm.readthedocs.io/en/latest/extending/#setuptools_scm.version.ScmVersion.short_node",
     "setuptools_scm.version.scmversion.tag": "https://setuptools-scm.readthedocs.io/en/latest/extending/#setuptools_scm.version.ScmVersion.tag",
     "setuptools_scm.version.scmversion.time": "https://setuptools-scm.readthedocs.io/en/latest/extending/#setuptools_scm.version.ScmVersion.time",
 }

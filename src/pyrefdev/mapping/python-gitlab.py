@@ -1,4 +1,4 @@
-VERSION = "6.1.0"
+VERSION = "7.0.0"
 
 # fmt: off
 MAPPING = {
@@ -985,6 +985,7 @@ MAPPING = {
     "gitlab.v4.objects.projectreleaselinkmanager": "https://python-gitlab.readthedocs.io/en/stable/api/gitlab.v4.html#gitlab.v4.objects.ProjectReleaseLinkManager",
     "gitlab.v4.objects.projectreleasemanager": "https://python-gitlab.readthedocs.io/en/stable/api/gitlab.v4.html#gitlab.v4.objects.ProjectReleaseManager",
     "gitlab.v4.objects.projectremotemirror": "https://python-gitlab.readthedocs.io/en/stable/api/gitlab.v4.html#gitlab.v4.objects.ProjectRemoteMirror",
+    "gitlab.v4.objects.projectremotemirror.sync": "https://python-gitlab.readthedocs.io/en/stable/api/gitlab.v4.html#gitlab.v4.objects.ProjectRemoteMirror.sync",
     "gitlab.v4.objects.projectremotemirrormanager": "https://python-gitlab.readthedocs.io/en/stable/api/gitlab.v4.html#gitlab.v4.objects.ProjectRemoteMirrorManager",
     "gitlab.v4.objects.projectresourcegroup": "https://python-gitlab.readthedocs.io/en/stable/api/gitlab.v4.html#gitlab.v4.objects.ProjectResourceGroup",
     "gitlab.v4.objects.projectresourcegroup.upcoming_jobs": "https://python-gitlab.readthedocs.io/en/stable/api/gitlab.v4.html#gitlab.v4.objects.ProjectResourceGroup.upcoming_jobs",

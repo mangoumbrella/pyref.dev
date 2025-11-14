@@ -1,4 +1,4 @@
-VERSION = "0.6"
+VERSION = "0.7"
 
 # fmt: off
 MAPPING = {
@@ -19,6 +19,7 @@ MAPPING = {
     "mplcursors.cursor.highlight_kwargs": "https://mplcursors.readthedocs.io/en/stable/mplcursors.html#mplcursors.Cursor.highlight_kwargs",
     "mplcursors.cursor.remove": "https://mplcursors.readthedocs.io/en/stable/mplcursors.html#mplcursors.Cursor.remove",
     "mplcursors.cursor.remove_selection": "https://mplcursors.readthedocs.io/en/stable/mplcursors.html#mplcursors.Cursor.remove_selection",
+    "mplcursors.cursor.select_at": "https://mplcursors.readthedocs.io/en/stable/mplcursors.html#mplcursors.Cursor.select_at",
     "mplcursors.cursor.selections": "https://mplcursors.readthedocs.io/en/stable/mplcursors.html#mplcursors.Cursor.selections",
     "mplcursors.cursor.visible": "https://mplcursors.readthedocs.io/en/stable/mplcursors.html#mplcursors.Cursor.visible",
     "mplcursors.get_ann_text": "https://mplcursors.readthedocs.io/en/stable/mplcursors.html#mplcursors.get_ann_text",
