@@ -76,5 +76,5 @@ pyrefdev-indexer parse-pypi      # Parse PyPI data and add new packages to confi
 - Do not add tests unless explictly asked to.
 - When creating a new file with content, ensure the file has an extra new line at the end.
 - Do NOT add redundant comments describe what the cod does. When needed, DO add comments that explains "why".
-- Server deployment uses systemd and is configured in `pyrefdev.service`
+- Server deployment relies on nginx and systemd, and the config files are in `deploy/`.
 - **CSS Cache Busting**: Whenever you modify `static/styles.css`, you must increment the `?v=` version parameter in all `templates/*.html` files to ensure browsers load the updated styles

@@ -53,7 +53,9 @@ To set up a new server:
 > cd pyref.dev
 > uv venv --python 3.14
 > uv sync --all-extras --locked
-> sudo cp pyrefdev.service /etc/systemd/system/pyrefdev.service
+> sudo cp deploy/pyrefdev.service /etc/systemd/system/pyrefdev.service
+> sudo cp deploy/pyrefdev.conf /etc/nginx/sites-available/pyrefdev
+> sudo ln -sf /etc/nginx/sites-available/pyrefdev /etc/nginx/sites-enabled/pyrefdev
 > systemctl start pyrefdev.service
 ```
 

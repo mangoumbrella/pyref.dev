@@ -5,7 +5,8 @@ After=network.target
 [Service]
 User=root
 WorkingDirectory=/root/pyref.dev
-ExecStart=uv run uvicorn pyrefdev.server:app --host=0.0.0.0 --port=80
+# Bind to localhost only - nginx will handle external traffic
+ExecStart=uv run uvicorn pyrefdev.server:app --host=127.0.0.1 --port=8001
 Restart=always
 RestartSec=5
 StandardOutput=syslog
