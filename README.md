@@ -48,6 +48,8 @@ For most of the cases, they are case-insensitive. However, for symbols like `typ
 To set up a new server:
 
 ```bash
+> sudo apt update && sudo apt install nginx
+> sudo rm /etc/nginx/sites-available/default /etc/nginx/sites-enabled/default
 > curl -LsSf https://astral.sh/uv/install.sh | sh
 > git clone https://github.com/mangoumbrella/pyref.dev
 > cd pyref.dev
@@ -56,6 +58,7 @@ To set up a new server:
 > sudo cp deploy/pyrefdev.service /etc/systemd/system/pyrefdev.service
 > sudo cp deploy/pyrefdev.conf /etc/nginx/sites-available/pyrefdev
 > sudo ln -sf /etc/nginx/sites-available/pyrefdev /etc/nginx/sites-enabled/pyrefdev
+> systemctl start nginx.service
 > systemctl start pyrefdev.service
 ```
 
