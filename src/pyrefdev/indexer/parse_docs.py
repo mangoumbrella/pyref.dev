@@ -63,7 +63,7 @@ class ProgressExecutor(futures.ThreadPoolExecutor):
     def __exit__(self, exc_type, exc_val, exc_tb):
         result = super().__exit__(exc_type, exc_val, exc_tb)
         if self._transient:
-            self.progress.update(self._task, visible=False)
+            self.progress.update(self._task, visible=False)  # type: ignore[arg-type]
         return result
 
 
@@ -278,7 +278,7 @@ class _Parser:
         symbols = {}
         for element in soup.find_all(id=True):
             fragment = element["id"]
-            symbol = fragment.removeprefix(_MODULE_FRAGMENT_PREFIX)
+            symbol = fragment.removeprefix(_MODULE_FRAGMENT_PREFIX)  # type: ignore[union-attr]
             if self._is_symbol(symbol):
                 symbols[symbol] = fragment
         return symbols

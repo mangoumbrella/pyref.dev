@@ -311,7 +311,7 @@ class _Crawler:
         for link in soup.find_all("a"):
             if (href := link.get("href")) is None:
                 continue
-            absolute_href = parse.urljoin(current_url, href)
+            absolute_href = parse.urljoin(current_url, href)  # type: ignore[arg-type]
             # href could be full URL, absolute path, and relative path.
             parsed_href = parse.urlparse(absolute_href)
             # Remove the fragment.
