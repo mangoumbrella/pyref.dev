@@ -33,9 +33,9 @@ async def root(request: Request):
     packages = list(SUPPORTED_PACKAGES)
 
     return templates.TemplateResponse(
+        request,
         "index.html",
         {
-            "request": request,
             "version": version,
             "python_version": python_version,
             "packages": packages,
@@ -59,9 +59,9 @@ async def search_symbols(
                 else None
             )
             return templates.TemplateResponse(
+                request,
                 "search.html",
                 {
-                    "request": request,
                     "symbol": "",
                     "results": [],
                     "packages": packages,
@@ -158,9 +158,9 @@ async def search_symbols(
         else None
     )
     return templates.TemplateResponse(
+        request,
         "search.html",
         {
-            "request": request,
             "symbol": symbol,
             "results": results,
             "packages": packages,
