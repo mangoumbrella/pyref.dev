@@ -10,7 +10,7 @@ repos:
   - id: type-check
     name: Python type checking
     language: system
-    entry: uvx ty check
+    entry: uvx ty@0.0.63 check
     pass_filenames: false
     files: \.py$
   - id: update-landing-page
