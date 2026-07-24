@@ -3,6 +3,7 @@ from pathlib import Path
 import queue
 import threading
 import time
+from typing import Any
 from urllib import error, parse
 
 import bs4
@@ -231,7 +232,7 @@ class _Crawler:
             try:
                 saved = self._crawl_url(url)
             finally:
-                kwargs = {}
+                kwargs: dict[str, Any] = {}
                 if saved is not None:
                     self._crawled_url_to_files[url] = saved
                     kwargs["extra"] = str(saved)[-24:]
@@ -309,9 +310,10 @@ class _Crawler:
             return set()
         links = set()
         for link in soup.find_all("a"):
-            if (href := link.get("href")) is None:
+            href = link.get("href")
+            if not isinstance(href, str):
                 continue
-            absolute_href = parse.urljoin(current_url, href)  # type: ignore[arg-type]
+            absolute_href = parse.urljoin(current_url, href)
             # href could be full URL, absolute path, and relative path.
             parsed_href = parse.urlparse(absolute_href)
             # Remove the fragment.

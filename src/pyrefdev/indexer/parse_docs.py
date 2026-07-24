@@ -62,8 +62,8 @@ class ProgressExecutor(futures.ThreadPoolExecutor):
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         result = super().__exit__(exc_type, exc_val, exc_tb)
-        if self._transient:
-            self.progress.update(self._task, visible=False)  # type: ignore[arg-type]
+        if self._transient and self._task is not None:
+            self.progress.update(self._task, visible=False)
         return result
 
 
@@ -275,10 +275,12 @@ class _Parser:
             soup = bs4.BeautifulSoup(content, "html.parser")
         except bs4.ParserRejectedMarkup:
             return {}
-        symbols = {}
+        symbols: dict[str, str] = {}
         for element in soup.find_all(id=True):
             fragment = element["id"]
-            symbol = fragment.removeprefix(_MODULE_FRAGMENT_PREFIX)  # type: ignore[union-attr]
+            if not isinstance(fragment, str):
+                continue
+            symbol = fragment.removeprefix(_MODULE_FRAGMENT_PREFIX)
             if self._is_symbol(symbol):
                 symbols[symbol] = fragment
         return symbols
