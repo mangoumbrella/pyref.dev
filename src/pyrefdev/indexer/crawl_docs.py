@@ -140,7 +140,8 @@ class _Crawler:
         self._retry_http_404 = retry_http_404
 
         self._seen_urls: set[str] = set()
-        self._to_crawl_queue: queue.Queue[str] = queue.Queue()
+        # None is the sentinel that tells a worker thread to exit.
+        self._to_crawl_queue: queue.Queue[str | None] = queue.Queue()
         self._crawled_url_to_files: dict[str, Path] = {}
         self._lock = threading.RLock()
 
@@ -165,7 +166,14 @@ class _Crawler:
                 )
                 thread.start()
                 threads.append(thread)
-            self._to_crawl_queue.join()
+            try:
+                self._to_crawl_queue.join()
+            finally:
+                # Otherwise every package leaks num_threads blocked workers.
+                for _ in threads:
+                    self._to_crawl_queue.put(None)
+                for thread in threads:
+                    thread.join()
             self._progress.update(task, visible=False)
 
         else:
@@ -229,8 +237,16 @@ class _Crawler:
     def _crawl_thread(self, task: TaskID) -> None:
         while True:
             url = self._to_crawl_queue.get()
+            if url is None:
+                self._to_crawl_queue.task_done()
+                return
+            saved = None
             try:
                 saved = self._crawl_url(url)
+            except Exception as e:
+                # An escaping exception would skip task_done() and hang crawl.
+                console.warning(f"Failed to crawl url {url}, error: {e}")
+                self._failed_urls[url] = ""
             finally:
                 kwargs: dict[str, Any] = {}
                 if saved is not None:
