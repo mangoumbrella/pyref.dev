@@ -144,7 +144,7 @@ def _parse_package(
         filepath = package_docs / file
         if not filepath.exists():
             filepath = Path(filepath.as_posix().lower())
-        symbols = parser.parse_symbols(filepath.read_text())
+        symbols = parser.parse_symbols(filepath.read_text(encoding="utf-8"))
         module_count = sum(
             1 if fragment.startswith(_MODULE_FRAGMENT_PREFIX) else 0
             for fragment in symbols.values()

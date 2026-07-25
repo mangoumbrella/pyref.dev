@@ -18,6 +18,8 @@ from pyrefdev.config import Package, console
 
 _RTD_URL_PATTERN = re.compile(r"https?://([^\s/]+\.readthedocs\.io)\b")
 _BACKOFF_SECONDS = [1, 2, 5, 15, 30, 60, 120, 300, 600, 1800, 3600]
+# A 5xx surviving a few retries is a broken page, not a transient blip.
+_SERVER_ERROR_BACKOFF_SECONDS = [1, 5, 15]
 
 
 def urlopen(url: str):
@@ -26,30 +28,36 @@ def urlopen(url: str):
         method="GET",
         headers={"User-Agent": f"pyrefdev/{__version__} (+https://pyref.dev)"},
     )
-    backoffs = list(_BACKOFF_SECONDS)
     attempt = 0
 
     while True:
         try:
             return request.urlopen(req, timeout=60)
         except error.HTTPError as e:
-            if e.code != 429:  # Too Many Requests
+            if e.code == 429:  # Too Many Requests
+                backoffs = _BACKOFF_SECONDS
+            elif 500 <= e.code < 600:
+                backoffs = _SERVER_ERROR_BACKOFF_SECONDS
+            else:
                 raise
             last_error = e
-            reason = "HTTP 429 (Too Many Requests)"
+            reason = f"HTTP {e.code} ({e.reason})"
         except (TimeoutError, error.URLError) as e:
             if isinstance(e, error.URLError) and not isinstance(
                 e.reason, (TimeoutError, OSError)
             ):
                 raise
+            backoffs = _BACKOFF_SECONDS
             last_error = e
             reason = "Timeout/Network error"
 
-        attempt += 1
-        if not backoffs:
-            console.warning(f"{reason} for {url}. Giving up after {attempt} attempts.")
+        if attempt >= len(backoffs):
+            console.warning(
+                f"{reason} for {url}. Giving up after {attempt + 1} attempts."
+            )
             raise last_error
-        backoff = backoffs.pop(0) * (0.9 + random.random() / 5.0)
+        backoff = backoffs[attempt] * (0.9 + random.random() / 5.0)
+        attempt += 1
         console.warning(
             f"{reason} for {url}. Retrying in {backoff:.1f}s (attempt {attempt})..."
         )
@@ -120,12 +128,20 @@ class Index:
         crawl_state_file = self.docs_directory / f"{package}.json"
         if not crawl_state_file.exists():
             return None
-        return IndexState.loads(crawl_state_file.read_text())
+        try:
+            return IndexState.loads(crawl_state_file.read_text(encoding="utf-8"))
+        except (ValueError, TypeError) as e:
+            # A truncated or outdated state file should re-crawl, not crash.
+            console.warning(f"Ignoring unreadable crawl state for {package}: {e}")
+            return None
 
     def save_crawl_state(self, package: str, crawl_state: IndexState) -> None:
         self._ensure_directory()
         crawl_state_file = self.docs_directory / f"{package}.json"
-        crawl_state_file.write_text(crawl_state.dumps())
+        # Write atomically so an interrupt cannot truncate the previous state.
+        tmp_file = crawl_state_file.with_suffix(".json.tmp")
+        tmp_file.write_text(crawl_state.dumps(), encoding="utf-8")
+        tmp_file.replace(crawl_state_file)
 
     def fetch_pypi_data(self, package: str, *, refresh: bool) -> bytes:
         pypi_data_file = self.docs_directory / "__pypi__" / f"{package}.json"
