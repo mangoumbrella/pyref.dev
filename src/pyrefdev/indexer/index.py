@@ -17,7 +17,7 @@ from pyrefdev.config import Package, console
 
 
 _RTD_URL_PATTERN = re.compile(r"https?://([^\s/]+\.readthedocs\.io)\b")
-_MAX_BACKOFF_SECONDS = 86400  # 24 hours
+_BACKOFF_SECONDS = [1, 2, 5, 15, 30, 60, 120, 300, 600, 1800, 3600]
 
 
 def urlopen(url: str):
@@ -26,44 +26,34 @@ def urlopen(url: str):
         method="GET",
         headers={"User-Agent": f"pyrefdev/{__version__} (+https://pyref.dev)"},
     )
-    backoffs = [1, 2, 5, 15, 30, 60, 120, 300, 600, 1800, 3600]
+    backoffs = list(_BACKOFF_SECONDS)
     attempt = 0
 
     while True:
         try:
             return request.urlopen(req, timeout=60)
         except error.HTTPError as e:
-            if e.code == 429:  # Too Many Requests
-                attempt += 1
-                if backoffs:
-                    backoff = backoffs.pop(0) * (0.9 + random.random() / 5.0)
-                else:
-                    backoff = _MAX_BACKOFF_SECONDS * (0.9 + random.random() / 5.0)
-
-                console.warning(
-                    f"HTTP 429 (Too Many Requests) for {url}. "
-                    f"Retrying in {backoff:.1f}s (attempt {attempt})..."
-                )
-                time.sleep(backoff)
-            else:
+            if e.code != 429:  # Too Many Requests
                 raise
+            last_error = e
+            reason = "HTTP 429 (Too Many Requests)"
         except (TimeoutError, error.URLError) as e:
             if isinstance(e, error.URLError) and not isinstance(
                 e.reason, (TimeoutError, OSError)
             ):
                 raise
+            last_error = e
+            reason = "Timeout/Network error"
 
-            attempt += 1
-            if backoffs:
-                backoff = backoffs.pop(0) * (0.9 + random.random() / 5.0)
-            else:
-                backoff = _MAX_BACKOFF_SECONDS * (0.9 + random.random() / 5.0)
-
-            console.warning(
-                f"Timeout/Network error for {url}. "
-                f"Retrying in {backoff:.1f}s (attempt {attempt})..."
-            )
-            time.sleep(backoff)
+        attempt += 1
+        if not backoffs:
+            console.warning(f"{reason} for {url}. Giving up after {attempt} attempts.")
+            raise last_error
+        backoff = backoffs.pop(0) * (0.9 + random.random() / 5.0)
+        console.warning(
+            f"{reason} for {url}. Retrying in {backoff:.1f}s (attempt {attempt})..."
+        )
+        time.sleep(backoff)
 
 
 @dataclasses.dataclass
