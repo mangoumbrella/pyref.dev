@@ -262,35 +262,46 @@ class _Crawler:
             except Exception as e:
                 # An escaping exception would skip task_done() and hang crawl.
                 console.warning(f"Failed to crawl url {url}, error: {e}")
-                self._failed_urls[url] = ""
+                self._record_failure(url, "")
             finally:
-                kwargs: dict[str, Any] = {}
-                if saved is not None:
-                    self._crawled_url_to_files[url] = saved
-                    kwargs["extra"] = str(saved)[-24:]
-                self._progress.update(
-                    task,
-                    total=len(self._seen_urls),
-                    completed=len(self._crawled_url_to_files),
-                    refresh=True,
-                    **kwargs,
-                )
-                self._to_crawl_queue.task_done()
+                # task_done() last would be skipped if the update below raises.
+                try:
+                    kwargs: dict[str, Any] = {}
+                    with self._lock:
+                        if saved is not None:
+                            self._crawled_url_to_files[url] = saved
+                            kwargs["extra"] = str(saved)[-24:]
+                        total = len(self._seen_urls)
+                        completed = len(self._crawled_url_to_files)
+                    self._progress.update(
+                        task,
+                        total=total,
+                        completed=completed,
+                        refresh=True,
+                        **kwargs,
+                    )
+                finally:
+                    self._to_crawl_queue.task_done()
+
+    def _record_failure(self, url: str, error_code: str) -> None:
+        with self._lock:
+            self._failed_urls[url] = error_code
 
     def _fetch_and_save_url(self, url: str) -> tuple[Path, str, str] | None:
         try:
             with urlopen(url) as f:
                 content = f.read().decode("utf-8", "backslashreplace")
-            time.sleep(self._seconds_to_sleep_between_requests)
         except error.HTTPError as e:
-            error_code = _http_error_code(e.code) if hasattr(e, "code") else ""
             console.warning(f"Failed to fetch url {url}, error: {e}")
-            self._failed_urls[url] = error_code
+            self._record_failure(url, _http_error_code(e.code))
             return None
         except Exception as e:
             console.warning(f"Failed to fetch url {url}, error: {e}")
-            self._failed_urls[url] = ""
+            self._record_failure(url, "")
             return None
+        finally:
+            # Failures need pacing too, or a failing host gets hammered.
+            time.sleep(self._seconds_to_sleep_between_requests)
         maybe_redirected_url = f.url
         if maybe_redirected_url != url and not self._should_crawl(maybe_redirected_url):
             return None
@@ -299,7 +310,7 @@ class _Crawler:
         except OSError as e:
             # A URL can exceed NAME_MAX or collide with an existing directory.
             console.warning(f"Failed to save url {url}, error: {e}")
-            self._failed_urls[url] = ""
+            self._record_failure(url, "")
             return None
         return saved, maybe_redirected_url, content
 
@@ -307,9 +318,9 @@ class _Crawler:
         if (result := self._fetch_and_save_url(url)) is None:
             return None
         saved, maybe_redirected_url, content = result
-        self._seen_urls.add(maybe_redirected_url)
         new_links = self._parse_links(maybe_redirected_url, content)
         with self._lock:
+            self._seen_urls.add(maybe_redirected_url)
             for new_link in new_links:
                 if new_link in self._seen_urls:
                     continue
