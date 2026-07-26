@@ -104,8 +104,13 @@ def crawl_docs(
                     seconds_to_sleep_between_requests,
                     retry_http_404,
                 )
-                crawler.crawl(num_threads=num_threads_per_package)
-                crawler.save_crawl_state(package_version, index)
+                try:
+                    crawler.crawl(num_threads=num_threads_per_package)
+                finally:
+                    # Re-crawling from scratch costs hours at this rate limit.
+                    crawler.save_crawl_state(package_version, index)
+            except Exception as e:
+                console.warning(f"Failed to crawl {pkg.pypi}, error: {e}")
             finally:
                 if task is not None:
                     progress.advance(task)
@@ -174,6 +179,7 @@ class _Crawler:
                     self._to_crawl_queue.put(None)
                 for thread in threads:
                     thread.join()
+                self._record_pending_as_failed()
             self._progress.update(task, visible=False)
 
         else:
@@ -220,6 +226,16 @@ class _Crawler:
                         str(saved.relative_to(self._docs_directory))
                     ] = url
             self._crawl_state.failed_urls = failed_urls
+
+    def _record_pending_as_failed(self) -> None:
+        # An aborted crawl saves state, so unvisited URLs must stay retryable.
+        while True:
+            try:
+                url = self._to_crawl_queue.get_nowait()
+            except queue.Empty:
+                return
+            if url is not None:
+                self._failed_urls.setdefault(url, "")
 
     def save_crawl_state(self, package_version: version.Version, index: Index) -> None:
         if (state := self._crawl_state) is None:
@@ -278,7 +294,13 @@ class _Crawler:
         maybe_redirected_url = f.url
         if maybe_redirected_url != url and not self._should_crawl(maybe_redirected_url):
             return None
-        saved = self._save(maybe_redirected_url, content)
+        try:
+            saved = self._save(maybe_redirected_url, content)
+        except OSError as e:
+            # A URL can exceed NAME_MAX or collide with an existing directory.
+            console.warning(f"Failed to save url {url}, error: {e}")
+            self._failed_urls[url] = ""
+            return None
         return saved, maybe_redirected_url, content
 
     def _crawl_url(self, url: str) -> Path | None:
@@ -303,11 +325,11 @@ class _Crawler:
         if not relative_path.endswith(".html"):
             output = output / "index.html"
         output.parent.mkdir(parents=True, exist_ok=True)
-        if output.exists():
-            existing_content = output.read_text()
-            if content == existing_content:
-                return output
-        output.write_text(content)
+        # Bytes keep this independent of the locale's default encoding.
+        encoded = content.encode("utf-8")
+        if output.exists() and output.read_bytes() == encoded:
+            return output
+        output.write_bytes(encoded)
         return output
 
     def _should_crawl(self, url: str) -> bool:
@@ -329,9 +351,12 @@ class _Crawler:
             href = link.get("href")
             if not isinstance(href, str):
                 continue
-            absolute_href = parse.urljoin(current_url, href)
             # href could be full URL, absolute path, and relative path.
-            parsed_href = parse.urlparse(absolute_href)
+            try:
+                parsed_href = parse.urlparse(parse.urljoin(current_url, href))
+            except ValueError:
+                # A bad IPv6 literal in an href must not abort the page.
+                continue
             # Remove the fragment.
             parsed_href = parsed_href._replace(fragment="")
             links.add(parse.urlunparse(parsed_href))
