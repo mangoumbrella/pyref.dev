@@ -1,10 +1,12 @@
 import dataclasses
+import datetime
 import json
 import re
 import random
 import subprocess
 import tempfile
 import time
+from email import utils as email_utils
 from pathlib import Path
 from typing import Literal, overload
 from urllib import error, request
@@ -20,6 +22,24 @@ _RTD_URL_PATTERN = re.compile(r"https?://([^\s/]+\.readthedocs\.io)\b")
 _BACKOFF_SECONDS = [1, 2, 5, 15, 30, 60, 120, 300, 600, 1800, 3600]
 # A 5xx surviving a few retries is a broken page, not a transient blip.
 _SERVER_ERROR_BACKOFF_SECONDS = [1, 5, 15]
+_MAX_RETRY_AFTER_SECONDS = 300
+
+
+def _retry_after_seconds(e: error.HTTPError) -> float | None:
+    """Delay requested by a Retry-After header, which may be seconds or a date."""
+    value = e.headers.get("Retry-After") if e.headers else None
+    if not value:
+        return None
+    if value.strip().isdigit():
+        return float(value)
+    try:
+        retry_at = email_utils.parsedate_to_datetime(value)
+    except (TypeError, ValueError):
+        return None
+    if retry_at.tzinfo is None:
+        retry_at = retry_at.replace(tzinfo=datetime.timezone.utc)
+    now = datetime.datetime.now(datetime.timezone.utc)
+    return max((retry_at - now).total_seconds(), 0.0)
 
 
 def urlopen(url: str):
@@ -57,6 +77,11 @@ def urlopen(url: str):
             )
             raise last_error
         backoff = backoffs[attempt] * (0.9 + random.random() / 5.0)
+        if isinstance(last_error, error.HTTPError):
+            retry_after = _retry_after_seconds(last_error)
+            if retry_after is not None:
+                # Obey the server's pacing, but never let it stall the crawl.
+                backoff = min(max(retry_after, backoff), _MAX_RETRY_AFTER_SECONDS)
         attempt += 1
         console.warning(
             f"{reason} for {url}. Retrying in {backoff:.1f}s (attempt {attempt})..."
@@ -163,7 +188,8 @@ class Index:
             data = self.fetch_pypi_data(package.pypi, refresh=True)
             pypi_info = json.loads(data)
             return version.parse(pypi_info["info"]["version"])
-        except error.URLError as e:
+        # URLError is an OSError; InvalidVersion/JSONDecodeError are ValueErrors.
+        except (OSError, ValueError, KeyError, TypeError) as e:
             console.warning(
                 f"Failed to fetch pypi version for {package.pypi}, error: {e}"
             )
@@ -219,6 +245,6 @@ def _fetch_latest_cpython_version() -> version.Version | None:
             if (latest := version.parse(cycle["latest"])) > latest_version:
                 latest_version = latest
         return latest_version
-    except error.URLError as e:
+    except (OSError, ValueError, KeyError, TypeError) as e:
         console.warning(f"Failed to fetch latest CPython version, error: {e}")
         return None
