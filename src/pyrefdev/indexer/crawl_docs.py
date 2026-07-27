@@ -199,6 +199,7 @@ class _Crawler:
             task = self._progress.add_task(
                 f"Retrying previously {len(urls_to_retry)} failed URLs",
                 total=len(urls_to_retry),
+                extra="",
             )
 
             def fetch_and_save(url: str) -> tuple[Path, str, str] | None:
