@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+Nothing noticeable unreleased.
+
+## v2026.1
+
 - Support [starlette](https://starlette.dev/) (fixes [#12](https://github.com/mangoumbrella/pyref.dev/issues/12), thanks [@dhirschfeld](https://github.com/dhirschfeld) for the feature request).
 
 ## v2025.11
