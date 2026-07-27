@@ -15,6 +15,8 @@ from rich.progress import Progress
 
 from pyrefdev import mapping
 from pyrefdev.config import console, get_packages, Package
+from pyrefdev.indexer import objects_inv
+from pyrefdev.indexer.documented_imports import DocumentedImports
 from pyrefdev.indexer.index import Index
 
 
@@ -141,10 +143,7 @@ def _parse_package(
             maybe_module_prefix = maybe_module.split(".")[0]
             if maybe_module_prefix in _STDLIB_MODULES_NAMES:
                 symbol_to_urls[maybe_module] = url
-        filepath = package_docs / file
-        if not filepath.exists():
-            filepath = Path(filepath.as_posix().lower())
-        symbols = parser.parse_symbols(filepath.read_text(encoding="utf-8"))
+        symbols = parser.parse_symbols(_read_doc(package_docs, file))
         module_count = sum(
             1 if fragment.startswith(_MODULE_FRAGMENT_PREFIX) else 0
             for fragment in symbols.values()
@@ -173,6 +172,11 @@ def _parse_package(
         for f in fs:
             f.result()
 
+    if package.parse_documented_imports:
+        _add_documented_imports(package, package_docs, file_and_urls, symbol_to_urls)
+    if package.objects_inv_url:
+        _add_objects_inv_symbols(package, package_docs, symbol_to_urls)
+
     console.print(f"Found {len(symbol_to_urls)} symbols in {package.pypi}")
     _heuristically_fillin_modules(package, symbol_to_urls)
 
@@ -199,6 +203,47 @@ def _parse_package(
         )
         if diffs:
             console.print("".join(diffs))
+
+
+def _read_doc(package_docs: Path, file: str) -> str:
+    filepath = package_docs / file
+    if not filepath.exists():
+        filepath = Path(filepath.as_posix().lower())
+    return filepath.read_text(encoding="utf-8")
+
+
+def _add_documented_imports(
+    package: Package,
+    package_docs: Path,
+    file_and_urls: list[tuple[str, str]],
+    symbol_to_urls: dict[str, str],
+) -> None:
+    documented = DocumentedImports(package.namespaces)
+    for file, url in file_and_urls:
+        documented.add_page(url, _read_doc(package_docs, file))
+    for symbol, url in documented.symbols().items():
+        # An anchor found on the page itself is always more precise.
+        symbol_to_urls.setdefault(symbol, url)
+
+
+def _add_objects_inv_symbols(
+    package: Package, package_docs: Path, symbol_to_urls: dict[str, str]
+) -> None:
+    assert package.objects_inv_url is not None
+    inventory_file = package_docs / objects_inv.FILENAME
+    if not inventory_file.exists():
+        console.warning(f"No {objects_inv.FILENAME} crawled for {package.pypi}")
+        return
+    try:
+        inventory = objects_inv.parse(inventory_file.read_bytes())
+    except objects_inv.ObjectsInvError as e:
+        console.warning(f"Failed to parse {inventory_file}, error: {e}")
+        return
+    for entry in inventory.entries:
+        # The inventory is generated from the source, so it wins over the guesses
+        # made from the crawled HTML.
+        if entry.domain == "py" and _is_package_symbol(package, entry.name):
+            symbol_to_urls[entry.name] = entry.url(package.objects_inv_url)
 
 
 def _heuristically_fillin_modules(
@@ -286,22 +331,24 @@ class _Parser:
         return symbols
 
     def _is_symbol(self, symbol: str) -> bool:
-        if not re.match(
-            r"^([a-zA-Z_][a-zA-Z_0-9]*)(\.[a-zA-Z_][a-zA-Z_0-9]*)*$", symbol
-        ):
-            return False
-        if self._package.is_cpython():
-            prefix = symbol.split(".")[0]
-            if prefix in _STDLIB_MODULES_NAMES:
+        return _is_package_symbol(self._package, symbol)
+
+
+def _is_package_symbol(package: Package, symbol: str) -> bool:
+    if not re.match(r"^([a-zA-Z_][a-zA-Z_0-9]*)(\.[a-zA-Z_][a-zA-Z_0-9]*)*$", symbol):
+        return False
+    if package.is_cpython():
+        prefix = symbol.split(".")[0]
+        if prefix in _STDLIB_MODULES_NAMES:
+            return True
+        if prefix in dir(builtins):
+            return True
+        return False
+    else:
+        for ns in package.namespaces:
+            if symbol.startswith(ns + "."):
                 return True
-            if prefix in dir(builtins):
-                return True
-            return False
-        else:
-            for ns in self._package.namespaces:
-                if symbol.startswith(ns + "."):
-                    return True
-            return False
+        return False
 
 
 _SPECIAL_SYMBOLS = {

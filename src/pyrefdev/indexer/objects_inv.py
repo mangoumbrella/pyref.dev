@@ -9,6 +9,8 @@ import zlib
 from urllib.parse import urljoin
 
 
+FILENAME = "objects.inv"
+
 _NUM_HEADER_LINES = 4
 _INVENTORY_VERSION_LINE = re.compile(rb"^#\s*Sphinx inventory version (\S+)\s*$")
 _PROJECT_LINE = re.compile(rb"^#\s*Project:\s*(.*?)\s*$")
