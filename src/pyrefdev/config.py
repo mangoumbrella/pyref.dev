@@ -13,6 +13,11 @@ class Package:
     index_url: str
     namespaces: list[str] = dataclasses.field(default_factory=list)
     exclude_root_urls: list[str] = dataclasses.field(default_factory=list)
+    # A Sphinx inventory to merge into the mapping, e.g. "https://foo.dev/objects.inv".
+    objects_inv_url: str | None = None
+    # Mine the import statements out of the code examples. Only worth enabling for
+    # hand-written docs that have no per-symbol anchors to crawl.
+    parse_documented_imports: bool = False
     indexed: bool = True
 
     def __post_init__(self):
@@ -541,6 +546,7 @@ _packages = [
     Package(pypi="sqlmesh", index_url="https://sqlmesh.readthedocs.io/en/stable/"),
     Package(pypi="sqlparse", index_url="https://sqlparse.readthedocs.io/en/latest/"),
     Package(pypi="sshtunnel", index_url="https://sshtunnel.readthedocs.io/en/latest/"),
+    Package(pypi="starlette", index_url="https://starlette.dev/", objects_inv_url="https://starlette.dev/objects.inv", parse_documented_imports=True),
     Package(pypi="stix2-validator", namespaces=["stix2validator"], index_url="https://stix2-validator.readthedocs.io/en/latest/"),
     Package(pypi="stix2", index_url="https://stix2.readthedocs.io/en/latest/"),
     Package(pypi="stumpy", index_url="https://stumpy.readthedocs.io/en/latest/"),

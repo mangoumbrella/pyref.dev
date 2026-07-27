@@ -37,13 +37,13 @@ def update_landing_page_with_packages(
 
     num_packages = len(SUPPORTED_PACKAGES)
     new_content = re.sub(
-        r'(class="stat-number">)([0-9]+(?:\.[0-9]+)*)(</span> packages)',
+        r'(class="stat-number">)([0-9][0-9,]*(?:\.[0-9]+)*)(</span> packages)',
         rf"\g<1>{num_packages:,}\g<3>",
         new_content,
     )
     num_symbols = len(MAPPING)
     new_content = re.sub(
-        r'(class="stat-number">)([0-9]+(?:\.[0-9]+)*)(</span> symbols)',
+        r'(class="stat-number">)([0-9][0-9,]*(?:\.[0-9]+)*)(</span> symbols)',
         rf"\g<1>{num_symbols:,}\g<3>",
         new_content,
     )

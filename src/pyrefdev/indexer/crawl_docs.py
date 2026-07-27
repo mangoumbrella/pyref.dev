@@ -18,6 +18,7 @@ from rich.progress import (
 )
 
 from pyrefdev.config import console, get_packages, Package
+from pyrefdev.indexer import objects_inv
 from pyrefdev.indexer.index import Index, IndexState, urlopen
 
 
@@ -78,6 +79,8 @@ def crawl_docs(
                 package_version = index.fetch_package_version(pkg)
                 if package_version is None:
                     return
+                if pkg.objects_inv_url:
+                    _crawl_objects_inv(pkg, index)
                 crawl_state = index.load_crawl_state(pkg.pypi)
                 if crawl_state is not None:
                     crawled_version = version.parse(crawl_state.package_version)
@@ -119,6 +122,21 @@ def crawl_docs(
             fs = [executor.submit(crawl_package, pkg) for pkg in packages]
             for f in fs:
                 f.result()
+
+
+def _crawl_objects_inv(package: Package, index: Index) -> None:
+    """Save the Sphinx inventory next to the package's crawled pages."""
+    assert package.objects_inv_url is not None
+    try:
+        with urlopen(package.objects_inv_url) as f:
+            content = f.read()
+    except Exception as e:
+        # Docs without an inventory are still worth crawling.
+        console.warning(f"Failed to fetch {package.objects_inv_url}, error: {e}")
+        return
+    output = index.docs_directory / package.pypi / objects_inv.FILENAME
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_bytes(content)
 
 
 class _Crawler:
