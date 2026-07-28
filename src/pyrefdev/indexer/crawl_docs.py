@@ -30,6 +30,21 @@ def _http_error_code(code: int) -> str:
 
 HTTP_404_ERROR = _http_error_code(404)
 
+# SIGHUP arrives when a terminal window closes, which on a laptop is a far more
+# likely end to a crawl than Ctrl-C. SIGHUP is absent on Windows.
+_STOP_SIGNALS = tuple(
+    sig
+    for sig in (
+        signal.SIGINT,
+        signal.SIGTERM,
+        getattr(signal, "SIGHUP", None),
+    )
+    if sig is not None
+)
+
+# A hard kill never runs the final save, so keep a recent state on disk.
+_CHECKPOINT_SECONDS = 60.0
+
 
 def url_prefix(root_url: str) -> str:
     """The prefix a URL must start with to belong to a package's docs."""
@@ -81,27 +96,36 @@ def parse_links(current_url: str, content: str) -> set[str]:
 
 @contextlib.contextmanager
 def _handle_interrupt(stop: threading.Event) -> Iterator[None]:
-    """Turn the first Ctrl-C into a clean stop that preserves the frontier."""
+    """Turn the first stop signal into a clean stop that preserves the frontier."""
+    previous: dict[int, Any] = {}
+
+    def restore() -> None:
+        while previous:
+            sig, handler = previous.popitem()
+            signal.signal(sig, handler)
 
     def handler(signum, frame):
         if stop.is_set():
-            signal.signal(signal.SIGINT, previous)
+            restore()
             raise KeyboardInterrupt
         console.warning(
-            "Interrupted, saving progress. Press Ctrl-C again to abort immediately."
+            f"Received {signal.Signals(signum).name}, saving progress. "
+            "Signal again to abort immediately."
         )
         stop.set()
 
     try:
-        previous = signal.signal(signal.SIGINT, handler)
+        for sig in _STOP_SIGNALS:
+            previous[sig] = signal.signal(sig, handler)
     except ValueError:
         # Not the main thread, so the caller owns signal handling.
+        restore()
         yield
         return
     try:
         yield
     finally:
-        signal.signal(signal.SIGINT, previous)
+        restore()
 
 
 def crawl_docs(
@@ -189,6 +213,7 @@ def crawl_docs(
                     index,
                     pkg.index_url,
                     crawl_state,
+                    package_version,
                     seconds_to_sleep_between_requests,
                     retry_http_404,
                     stop,
@@ -200,7 +225,7 @@ def crawl_docs(
                     )
                 finally:
                     # Re-crawling from scratch costs hours at this rate limit.
-                    crawler.save_crawl_state(package_version, index)
+                    crawler.save_crawl_state()
             except Exception as e:
                 console.warning(f"Failed to crawl {pkg.pypi}, error: {e}")
             finally:
@@ -241,15 +266,18 @@ class _Crawler:
         index: Index,
         root_url: str,
         crawl_state: IndexState | None,
+        package_version: version.Version,
         seconds_to_sleep_between_requests: float,
         retry_http_404: bool,
         stop: threading.Event,
     ):
         self._package = package
         self._progress = progress
+        self._index = index
         self._docs_directory = index.docs_directory / package.pypi
         self._root_url = root_url
         self._prefix = url_prefix(root_url)
+        self._package_version = package_version
         self._seconds_to_sleep_between_requests = seconds_to_sleep_between_requests
         self._retry_http_404 = retry_http_404
         self._stop = stop
@@ -258,7 +286,7 @@ class _Crawler:
         # None is the sentinel that tells a worker thread to exit.
         self._to_crawl_queue: queue.Queue[str | None] = queue.Queue()
         self._lock = threading.RLock()
-        self._pending_urls: list[str] = []
+        self._finished = threading.Event()
         self._completed = False
 
         self._crawl_state = crawl_state
@@ -313,6 +341,8 @@ class _Crawler:
             )
             thread.start()
             threads.append(thread)
+        checkpoint = threading.Thread(target=self._checkpoint_thread, daemon=True)
+        checkpoint.start()
         try:
             self._to_crawl_queue.join()
             # Workers drain the queue without fetching once stopped, so an empty
@@ -324,31 +354,43 @@ class _Crawler:
                 self._to_crawl_queue.put(None)
             for thread in threads:
                 thread.join()
-            self._record_pending()
+            self._finished.set()
+            checkpoint.join()
         self._progress.update(task, visible=False)
 
-    def _record_pending(self) -> None:
-        # Whatever is left is the frontier the next run has to resume from.
-        while True:
-            try:
-                url = self._to_crawl_queue.get_nowait()
-            except queue.Empty:
-                return
-            if url is not None:
-                with self._lock:
-                    self._pending_urls.append(url)
+    def _checkpoint_thread(self) -> None:
+        while not self._finished.wait(_CHECKPOINT_SECONDS):
+            self.save_crawl_state()
 
-    def save_crawl_state(self, package_version: version.Version, index: Index) -> None:
+    def _unfinished_urls(self) -> list[str]:
+        """Seen URLs that have not reached a terminal state.
+
+        Derived rather than read off the queue so that a checkpoint taken while
+        workers are running still describes the whole remaining frontier,
+        including URLs being fetched right now.
+        """
+        with self._lock:
+            done = (
+                set(self._file_to_urls.values())
+                | set(self._failed_urls)
+                | set(self._redirects)
+            )
+            return sorted(self._seen_urls - done)
+
+    def save_crawl_state(self) -> None:
+        pending_urls = self._unfinished_urls()
         with self._lock:
             state = IndexState(
-                package_version=str(package_version),
+                package_version=str(self._package_version),
                 file_to_urls=dict(self._file_to_urls),
                 failed_urls=dict(self._failed_urls),
                 redirects=dict(self._redirects),
-                pending_urls=list(dict.fromkeys(self._pending_urls)),
-                completed=self._completed,
+                pending_urls=pending_urls,
+                # Never claim completion while work is outstanding, whatever the
+                # crawl loop thought.
+                completed=self._completed and not pending_urls,
             )
-        index.save_crawl_state(self._package.pypi, state)
+        self._index.save_crawl_state(self._package.pypi, state)
 
     def _crawl_thread(self, task: TaskID) -> None:
         while True:
@@ -357,9 +399,8 @@ class _Crawler:
                 self._to_crawl_queue.task_done()
                 return
             if self._stop.is_set():
-                # Drain without fetching so join() returns and the frontier survives.
-                with self._lock:
-                    self._pending_urls.append(url)
+                # Drain without fetching so join() returns. The URL stays in
+                # _seen_urls, so it is still part of the saved frontier.
                 self._to_crawl_queue.task_done()
                 continue
             result = None
@@ -419,6 +460,10 @@ class _Crawler:
             self._stop.wait(self._seconds_to_sleep_between_requests)
         maybe_redirected_url = f.url
         if maybe_redirected_url != url and not self._should_crawl(maybe_redirected_url):
+            # It led out of scope, but it was visited. Recording it keeps it out
+            # of the frontier instead of being refetched by every later run.
+            with self._lock:
+                self._redirects[url] = maybe_redirected_url
             return None
         try:
             saved = self._save(maybe_redirected_url, content)
