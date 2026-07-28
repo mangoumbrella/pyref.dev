@@ -5,6 +5,7 @@ import re
 import random
 import subprocess
 import tempfile
+import threading
 import time
 from email import utils as email_utils
 from pathlib import Path
@@ -42,7 +43,7 @@ def _retry_after_seconds(e: error.HTTPError) -> float | None:
     return max((retry_at - now).total_seconds(), 0.0)
 
 
-def urlopen(url: str):
+def urlopen(url: str, *, stop: threading.Event | None = None):
     req = request.Request(
         url,
         method="GET",
@@ -86,7 +87,11 @@ def urlopen(url: str):
         console.warning(
             f"{reason} for {url}. Retrying in {backoff:.1f}s (attempt {attempt})..."
         )
-        time.sleep(backoff)
+        if stop is None:
+            time.sleep(backoff)
+        elif stop.wait(backoff):
+            # The ladder runs for hours, so a stopped crawl must not sit through it.
+            raise last_error
 
 
 @dataclasses.dataclass
@@ -95,6 +100,12 @@ class IndexState:
     file_to_urls: dict[str, str]
     # url -> error_code (e.g. "http-404", or "" for unknown)
     failed_urls: dict[str, str]
+    # URLs that were discovered but never fetched, i.e. the frontier a stopped
+    # crawl has to resume from. Empty for a crawl that ran to exhaustion.
+    pending_urls: list[str] = dataclasses.field(default_factory=list)
+    # Defaults to False so that state written before this field existed is
+    # resumed rather than mistaken for a finished crawl.
+    completed: bool = False
 
     @classmethod
     def loads(cls, content: str) -> "IndexState":

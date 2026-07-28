@@ -1,9 +1,10 @@
 from concurrent import futures
 from pathlib import Path
+import contextlib
 import queue
+import signal
 import threading
-import time
-from typing import Any
+from typing import Any, Iterator
 from urllib import error, parse
 
 import bs4
@@ -28,6 +29,31 @@ def _http_error_code(code: int) -> str:
 
 
 HTTP_404_ERROR = _http_error_code(404)
+
+
+@contextlib.contextmanager
+def _handle_interrupt(stop: threading.Event) -> Iterator[None]:
+    """Turn the first Ctrl-C into a clean stop that preserves the frontier."""
+
+    def handler(signum, frame):
+        if stop.is_set():
+            signal.signal(signal.SIGINT, previous)
+            raise KeyboardInterrupt
+        console.warning(
+            "Interrupted, saving progress. Press Ctrl-C again to abort immediately."
+        )
+        stop.set()
+
+    try:
+        previous = signal.signal(signal.SIGINT, handler)
+    except ValueError:
+        # Not the main thread, so the caller owns signal handling.
+        yield
+        return
+    try:
+        yield
+    finally:
+        signal.signal(signal.SIGINT, previous)
 
 
 def crawl_docs(
@@ -57,16 +83,25 @@ def crawl_docs(
         console.print(f"Crawling documents into {index.docs_directory}")
     packages = get_packages(package)
     if not force and not upgrade and not retry_failed_urls:
-        packages = [pkg for pkg in packages if index.load_crawl_state(pkg.pypi) is None]
+        packages = [
+            pkg
+            for pkg in packages
+            if (state := index.load_crawl_state(pkg.pypi)) is None
+            or not state.completed
+        ]
 
-    with Progress(
-        TextColumn("[progress.description]{task.description}"),
-        BarColumn(bar_width=None),
-        TaskProgressColumn(),
-        TextColumn("{task.fields[extra]}"),
-        TimeRemainingColumn(),
-        console=console,
-    ) as progress:
+    stop = threading.Event()
+    with (
+        _handle_interrupt(stop),
+        Progress(
+            TextColumn("[progress.description]{task.description}"),
+            BarColumn(bar_width=None),
+            TaskProgressColumn(),
+            TextColumn("{task.fields[extra]}"),
+            TimeRemainingColumn(),
+            console=console,
+        ) as progress,
+    ):
         if show_overall_progress:
             task = progress.add_task(
                 f"Crawling {len(packages)} packages", total=len(packages), extra=""
@@ -75,12 +110,14 @@ def crawl_docs(
             task = None
 
         def crawl_package(pkg: Package):
+            if stop.is_set():
+                return
             try:
                 package_version = index.fetch_package_version(pkg)
                 if package_version is None:
                     return
                 if pkg.objects_inv_url:
-                    _crawl_objects_inv(pkg, index)
+                    _crawl_objects_inv(pkg, index, stop)
                 crawl_state = index.load_crawl_state(pkg.pypi)
                 if crawl_state is not None:
                     crawled_version = version.parse(crawl_state.package_version)
@@ -106,9 +143,13 @@ def crawl_docs(
                     crawl_state,
                     seconds_to_sleep_between_requests,
                     retry_http_404,
+                    stop,
                 )
                 try:
-                    crawler.crawl(num_threads=num_threads_per_package)
+                    crawler.crawl(
+                        num_threads=num_threads_per_package,
+                        retry_failed_urls=retry_failed_urls,
+                    )
                 finally:
                     # Re-crawling from scratch costs hours at this rate limit.
                     crawler.save_crawl_state(package_version, index)
@@ -123,12 +164,17 @@ def crawl_docs(
             for f in fs:
                 f.result()
 
+    if stop.is_set():
+        raise KeyboardInterrupt
 
-def _crawl_objects_inv(package: Package, index: Index) -> None:
+
+def _crawl_objects_inv(
+    package: Package, index: Index, stop: threading.Event | None = None
+) -> None:
     """Save the Sphinx inventory next to the package's crawled pages."""
     assert package.objects_inv_url is not None
     try:
-        with urlopen(package.objects_inv_url) as f:
+        with urlopen(package.objects_inv_url, stop=stop) as f:
             content = f.read()
     except Exception as e:
         # Docs without an inventory are still worth crawling.
@@ -149,6 +195,7 @@ class _Crawler:
         crawl_state: IndexState | None,
         seconds_to_sleep_between_requests: float,
         retry_http_404: bool,
+        stop: threading.Event,
     ):
         self._package = package
         self._progress = progress
@@ -161,111 +208,95 @@ class _Crawler:
         )
         self._seconds_to_sleep_between_requests = seconds_to_sleep_between_requests
         self._retry_http_404 = retry_http_404
+        self._stop = stop
 
         self._seen_urls: set[str] = set()
         # None is the sentinel that tells a worker thread to exit.
         self._to_crawl_queue: queue.Queue[str | None] = queue.Queue()
-        self._crawled_url_to_files: dict[str, Path] = {}
         self._lock = threading.RLock()
+        self._pending_urls: list[str] = []
+        self._completed = False
 
         self._crawl_state = crawl_state
         if crawl_state is None:
+            self._file_to_urls: dict[str, str] = {}
             self._failed_urls: dict[str, str] = {}
         else:
+            self._file_to_urls = crawl_state.file_to_urls
             self._failed_urls = crawl_state.failed_urls
+            # Already-fetched pages must not be fetched again on resume.
+            self._seen_urls.update(self._file_to_urls.values())
 
-    def crawl(self, *, num_threads: int) -> None:
+    def _initial_urls(self, *, retry_failed_urls: bool) -> list[str]:
+        """The frontier to start from: the root, or whatever the last run left."""
         if self._crawl_state is None:
-            self._to_crawl_queue.put(self._root_url)
-            self._seen_urls.add(self._root_url)
-
-            task = self._progress.add_task(
-                f"Crawling {self._root_url.removeprefix('https://')}", extra=""
+            return [self._root_url]
+        urls = list(self._crawl_state.pending_urls)
+        if retry_failed_urls:
+            urls.extend(
+                url
+                for url, error_code in self._failed_urls.items()
+                if error_code != HTTP_404_ERROR or self._retry_http_404
             )
-            threads = []
-            for _ in range(num_threads):
-                thread = threading.Thread(
-                    target=self._crawl_thread, args=(task,), daemon=True
-                )
-                thread.start()
-                threads.append(thread)
-            try:
-                self._to_crawl_queue.join()
-            finally:
-                # Otherwise every package leaks num_threads blocked workers.
-                for _ in threads:
-                    self._to_crawl_queue.put(None)
-                for thread in threads:
-                    thread.join()
-                self._record_pending_as_failed()
-            self._progress.update(task, visible=False)
+        return list(dict.fromkeys(urls))
 
-        else:
-            if not self._failed_urls:
-                return
+    def crawl(self, *, num_threads: int, retry_failed_urls: bool) -> None:
+        initial_urls = self._initial_urls(retry_failed_urls=retry_failed_urls)
+        if not initial_urls:
+            # An empty frontier means the previous run exhausted it.
+            self._completed = True
+            return
 
-            # Filter URLs to retry based on retry_http_404 setting
-            urls_to_retry = []
-            for url, error_code in self._failed_urls.items():
-                if error_code == HTTP_404_ERROR and not self._retry_http_404:
-                    continue
-                urls_to_retry.append(url)
+        for url in initial_urls:
+            self._seen_urls.add(url)
+            self._to_crawl_queue.put(url)
 
-            if not urls_to_retry:
-                return
-
-            task = self._progress.add_task(
-                f"Retrying previously {len(urls_to_retry)} failed URLs",
-                total=len(urls_to_retry),
-                extra="",
+        task = self._progress.add_task(
+            f"Crawling {self._root_url.removeprefix('https://')}",
+            total=len(self._seen_urls),
+            completed=len(self._file_to_urls),
+            extra="",
+        )
+        threads = []
+        for _ in range(num_threads):
+            thread = threading.Thread(
+                target=self._crawl_thread, args=(task,), daemon=True
             )
+            thread.start()
+            threads.append(thread)
+        try:
+            self._to_crawl_queue.join()
+            # Workers drain the queue without fetching once stopped, so an empty
+            # queue only means the crawl finished if nothing asked it to stop.
+            self._completed = not self._stop.is_set()
+        finally:
+            # Otherwise every package leaks num_threads blocked workers.
+            for _ in threads:
+                self._to_crawl_queue.put(None)
+            for thread in threads:
+                thread.join()
+            self._record_pending()
+        self._progress.update(task, visible=False)
 
-            def fetch_and_save(url: str) -> tuple[Path, str, str] | None:
-                result = self._fetch_and_save_url(url)
-                self._progress.advance(task)
-                return result
-
-            with futures.ThreadPoolExecutor(max_workers=num_threads) as executor:
-                url_to_futures = {
-                    url: executor.submit(fetch_and_save, url) for url in urls_to_retry
-                }
-            failed_urls = {}
-
-            # Preserve 404 errors that weren't retried
-            for url, error_code in self._failed_urls.items():
-                if error_code == HTTP_404_ERROR and not self._retry_http_404:
-                    failed_urls[url] = error_code
-
-            for url, f in url_to_futures.items():
-                if (result := f.result()) is None:
-                    failed_urls[url] = self._failed_urls.get(url, "")
-                else:
-                    saved, _, _ = result
-                    self._crawl_state.file_to_urls[
-                        str(saved.relative_to(self._docs_directory))
-                    ] = url
-            self._crawl_state.failed_urls = failed_urls
-
-    def _record_pending_as_failed(self) -> None:
-        # An aborted crawl saves state, so unvisited URLs must stay retryable.
+    def _record_pending(self) -> None:
+        # Whatever is left is the frontier the next run has to resume from.
         while True:
             try:
                 url = self._to_crawl_queue.get_nowait()
             except queue.Empty:
                 return
             if url is not None:
-                self._failed_urls.setdefault(url, "")
+                with self._lock:
+                    self._pending_urls.append(url)
 
     def save_crawl_state(self, package_version: version.Version, index: Index) -> None:
-        if (state := self._crawl_state) is None:
-            file_to_urls = {
-                str(file.relative_to(self._docs_directory)): url
-                for url, file in self._crawled_url_to_files.items()
-            }
+        with self._lock:
             state = IndexState(
                 package_version=str(package_version),
-                file_to_urls=file_to_urls,
-                failed_urls=self._failed_urls,
+                file_to_urls=dict(self._file_to_urls),
+                failed_urls=dict(self._failed_urls),
+                pending_urls=list(dict.fromkeys(self._pending_urls)),
+                completed=self._completed,
             )
         index.save_crawl_state(self._package.pypi, state)
 
@@ -275,6 +306,12 @@ class _Crawler:
             if url is None:
                 self._to_crawl_queue.task_done()
                 return
+            if self._stop.is_set():
+                # Drain without fetching so join() returns and the frontier survives.
+                with self._lock:
+                    self._pending_urls.append(url)
+                self._to_crawl_queue.task_done()
+                continue
             saved = None
             try:
                 saved = self._crawl_url(url)
@@ -288,10 +325,13 @@ class _Crawler:
                     kwargs: dict[str, Any] = {}
                     with self._lock:
                         if saved is not None:
-                            self._crawled_url_to_files[url] = saved
+                            relative = str(saved.relative_to(self._docs_directory))
+                            self._file_to_urls[relative] = url
+                            # A URL that succeeds is no longer a failure to retry.
+                            self._failed_urls.pop(url, None)
                             kwargs["extra"] = str(saved)[-24:]
                         total = len(self._seen_urls)
-                        completed = len(self._crawled_url_to_files)
+                        completed = len(self._file_to_urls)
                     self._progress.update(
                         task,
                         total=total,
@@ -308,7 +348,7 @@ class _Crawler:
 
     def _fetch_and_save_url(self, url: str) -> tuple[Path, str, str] | None:
         try:
-            with urlopen(url) as f:
+            with urlopen(url, stop=self._stop) as f:
                 content = f.read().decode("utf-8", "backslashreplace")
         except error.HTTPError as e:
             console.warning(f"Failed to fetch url {url}, error: {e}")
@@ -320,7 +360,7 @@ class _Crawler:
             return None
         finally:
             # Failures need pacing too, or a failing host gets hammered.
-            time.sleep(self._seconds_to_sleep_between_requests)
+            self._stop.wait(self._seconds_to_sleep_between_requests)
         maybe_redirected_url = f.url
         if maybe_redirected_url != url and not self._should_crawl(maybe_redirected_url):
             return None
