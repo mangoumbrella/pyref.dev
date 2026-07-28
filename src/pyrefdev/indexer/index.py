@@ -97,9 +97,15 @@ def urlopen(url: str, *, stop: threading.Event | None = None):
 @dataclasses.dataclass
 class IndexState:
     package_version: str
+    # file -> the URL the content actually came from, so that the file's path is
+    # always what save_path() derives from that URL. Relative links inside the
+    # file resolve against it correctly.
     file_to_urls: dict[str, str]
     # url -> error_code (e.g. "http-404", or "" for unknown)
     failed_urls: dict[str, str]
+    # requested url -> url it redirected to. Kept so a resumed crawl knows the
+    # requested URL was already visited even though the file records the target.
+    redirects: dict[str, str] = dataclasses.field(default_factory=dict)
     # URLs that were discovered but never fetched, i.e. the frontier a stopped
     # crawl has to resume from. Empty for a crawl that ran to exhaustion.
     pending_urls: list[str] = dataclasses.field(default_factory=list)

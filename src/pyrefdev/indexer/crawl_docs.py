@@ -31,6 +31,54 @@ def _http_error_code(code: int) -> str:
 HTTP_404_ERROR = _http_error_code(404)
 
 
+def url_prefix(root_url: str) -> str:
+    """The prefix a URL must start with to belong to a package's docs."""
+    if root_url.endswith("/"):
+        return root_url
+    return root_url.rsplit("/", maxsplit=1)[0] + "/"
+
+
+def save_path(url: str, prefix: str, docs_directory: Path) -> Path:
+    """Where a crawled URL is stored on disk."""
+    relative_path = url.removeprefix(prefix).removeprefix("/")
+    output = docs_directory / relative_path
+    if not relative_path.endswith(".html"):
+        output = output / "index.html"
+    return output
+
+
+def should_crawl(url: str, prefix: str, exclude_root_urls: list[str]) -> bool:
+    if not url.startswith(prefix):
+        return False
+    for exclude in exclude_root_urls:
+        if url.startswith(exclude):
+            return False
+    ext = url.rsplit("/", maxsplit=1)[-1].rsplit(".", maxsplit=1)[-1]
+    return (not ext) or (ext == "html")
+
+
+def parse_links(current_url: str, content: str) -> set[str]:
+    try:
+        soup = bs4.BeautifulSoup(content, "html.parser")
+    except bs4.ParserRejectedMarkup:
+        return set()
+    links = set()
+    for link in soup.find_all("a"):
+        href = link.get("href")
+        if not isinstance(href, str):
+            continue
+        # href could be full URL, absolute path, and relative path.
+        try:
+            parsed_href = parse.urlparse(parse.urljoin(current_url, href))
+        except ValueError:
+            # A bad IPv6 literal in an href must not abort the page.
+            continue
+        # Remove the fragment.
+        parsed_href = parsed_href._replace(fragment="")
+        links.add(parse.urlunparse(parsed_href))
+    return links
+
+
 @contextlib.contextmanager
 def _handle_interrupt(stop: threading.Event) -> Iterator[None]:
     """Turn the first Ctrl-C into a clean stop that preserves the frontier."""
@@ -201,11 +249,7 @@ class _Crawler:
         self._progress = progress
         self._docs_directory = index.docs_directory / package.pypi
         self._root_url = root_url
-        self._prefix = (
-            root_url
-            if root_url.endswith("/")
-            else root_url.rsplit("/", maxsplit=1)[0] + "/"
-        )
+        self._prefix = url_prefix(root_url)
         self._seconds_to_sleep_between_requests = seconds_to_sleep_between_requests
         self._retry_http_404 = retry_http_404
         self._stop = stop
@@ -221,11 +265,16 @@ class _Crawler:
         if crawl_state is None:
             self._file_to_urls: dict[str, str] = {}
             self._failed_urls: dict[str, str] = {}
+            self._redirects: dict[str, str] = {}
         else:
             self._file_to_urls = crawl_state.file_to_urls
             self._failed_urls = crawl_state.failed_urls
-            # Already-fetched pages must not be fetched again on resume.
+            self._redirects = crawl_state.redirects
+            # Already-fetched pages must not be fetched again on resume, and a
+            # URL that redirected counts as fetched under either of its names.
             self._seen_urls.update(self._file_to_urls.values())
+            self._seen_urls.update(self._redirects)
+            self._seen_urls.update(self._redirects.values())
 
     def _initial_urls(self, *, retry_failed_urls: bool) -> list[str]:
         """The frontier to start from: the root, or whatever the last run left."""
@@ -295,6 +344,7 @@ class _Crawler:
                 package_version=str(package_version),
                 file_to_urls=dict(self._file_to_urls),
                 failed_urls=dict(self._failed_urls),
+                redirects=dict(self._redirects),
                 pending_urls=list(dict.fromkeys(self._pending_urls)),
                 completed=self._completed,
             )
@@ -312,9 +362,9 @@ class _Crawler:
                     self._pending_urls.append(url)
                 self._to_crawl_queue.task_done()
                 continue
-            saved = None
+            result = None
             try:
-                saved = self._crawl_url(url)
+                result = self._crawl_url(url)
             except Exception as e:
                 # An escaping exception would skip task_done() and hang crawl.
                 console.warning(f"Failed to crawl url {url}, error: {e}")
@@ -324,9 +374,15 @@ class _Crawler:
                 try:
                     kwargs: dict[str, Any] = {}
                     with self._lock:
-                        if saved is not None:
+                        if result is not None:
+                            saved, final_url = result
                             relative = str(saved.relative_to(self._docs_directory))
-                            self._file_to_urls[relative] = url
+                            # The file is named after the URL the content came
+                            # from, so record that one and keep the redirect
+                            # separately rather than losing either name.
+                            self._file_to_urls[relative] = final_url
+                            if final_url != url:
+                                self._redirects[url] = final_url
                             # A URL that succeeds is no longer a failure to retry.
                             self._failed_urls.pop(url, None)
                             kwargs["extra"] = str(saved)[-24:]
@@ -373,7 +429,7 @@ class _Crawler:
             return None
         return saved, maybe_redirected_url, content
 
-    def _crawl_url(self, url: str) -> Path | None:
+    def _crawl_url(self, url: str) -> tuple[Path, str] | None:
         if (result := self._fetch_and_save_url(url)) is None:
             return None
         saved, maybe_redirected_url, content = result
@@ -387,13 +443,10 @@ class _Crawler:
                     continue
                 self._to_crawl_queue.put(new_link)
                 self._seen_urls.add(new_link)
-        return saved
+        return saved, maybe_redirected_url
 
     def _save(self, url: str, content: str) -> Path:
-        relative_path = url.removeprefix(self._prefix).removeprefix("/")
-        output = self._docs_directory / relative_path
-        if not relative_path.endswith(".html"):
-            output = output / "index.html"
+        output = save_path(url, self._prefix, self._docs_directory)
         output.parent.mkdir(parents=True, exist_ok=True)
         # Bytes keep this independent of the locale's default encoding.
         encoded = content.encode("utf-8")
@@ -403,31 +456,7 @@ class _Crawler:
         return output
 
     def _should_crawl(self, url: str) -> bool:
-        if not url.startswith(self._prefix):
-            return False
-        for exclude in self._package.exclude_root_urls:
-            if url.startswith(exclude):
-                return False
-        ext = url.rsplit("/", maxsplit=1)[-1].rsplit(".", maxsplit=1)[-1]
-        return (not ext) or (ext == "html")
+        return should_crawl(url, self._prefix, self._package.exclude_root_urls)
 
     def _parse_links(self, current_url: str, content: str) -> set[str]:
-        try:
-            soup = bs4.BeautifulSoup(content, "html.parser")
-        except bs4.ParserRejectedMarkup:
-            return set()
-        links = set()
-        for link in soup.find_all("a"):
-            href = link.get("href")
-            if not isinstance(href, str):
-                continue
-            # href could be full URL, absolute path, and relative path.
-            try:
-                parsed_href = parse.urlparse(parse.urljoin(current_url, href))
-            except ValueError:
-                # A bad IPv6 literal in an href must not abort the page.
-                continue
-            # Remove the fragment.
-            parsed_href = parsed_href._replace(fragment="")
-            links.add(parse.urlunparse(parsed_href))
-        return links
+        return parse_links(current_url, content)
