@@ -2,6 +2,7 @@
 
 ## [Unreleased]
 
+- Support [hijridate](https://hijridate.readthedocs.io/en/stable/)
 - Updated the following packages:
   - [autodocsumm](https://autodocsumm.readthedocs.io/en/latest/)
   - [autoray](https://autoray.readthedocs.io/en/latest/)
