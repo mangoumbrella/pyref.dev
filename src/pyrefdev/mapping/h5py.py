@@ -1,4 +1,4 @@
-VERSION = "3.15.1"
+VERSION = "3.16.0"
 
 # fmt: off
 MAPPING = {
@@ -21,6 +21,7 @@ MAPPING = {
     "h5py.check_opaque_dtype": "https://docs.h5py.org/en/stable/special.html#h5py.check_opaque_dtype",
     "h5py.check_string_dtype": "https://docs.h5py.org/en/stable/special.html#h5py.check_string_dtype",
     "h5py.check_vlen_dtype": "https://docs.h5py.org/en/stable/special.html#h5py.check_vlen_dtype",
+    "h5py.complex_compat_dtype": "https://docs.h5py.org/en/stable/special.html#h5py.complex_compat_dtype",
     "h5py.dataset": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset",
     "h5py.dataset.__bool__": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.__bool__",
     "h5py.dataset.__getitem__": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.__getitem__",
@@ -37,6 +38,8 @@ MAPPING = {
     "h5py.dataset.fields": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.fields",
     "h5py.dataset.file": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.file",
     "h5py.dataset.fillvalue": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.fillvalue",
+    "h5py.dataset.filter_ids": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.filter_ids",
+    "h5py.dataset.filter_names": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.filter_names",
     "h5py.dataset.fletcher32": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.fletcher32",
     "h5py.dataset.flush": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.flush",
     "h5py.dataset.id": "https://docs.h5py.org/en/stable/high/dataset.html#h5py.Dataset.id",

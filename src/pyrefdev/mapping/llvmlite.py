@@ -1,4 +1,4 @@
-VERSION = "0.45.1"
+VERSION = "0.48.0"
 
 # fmt: off
 MAPPING = {
@@ -113,14 +113,12 @@ MAPPING = {
     "llvmlite.binding.passmanagerbuilder.loop_vectorize": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PassManagerBuilder.loop_vectorize",
     "llvmlite.binding.passmanagerbuilder.opt_level": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PassManagerBuilder.opt_level",
     "llvmlite.binding.passmanagerbuilder.populate": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PassManagerBuilder.populate",
-    "llvmlite.binding.passmanagerbuilder.size_level": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PassManagerBuilder.size_level",
     "llvmlite.binding.passmanagerbuilder.slp_vectorize": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PassManagerBuilder.slp_vectorize",
     "llvmlite.binding.pipelinetuningoptions": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PipelineTuningOptions",
     "llvmlite.binding.pipelinetuningoptions.inlining_threshold": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PipelineTuningOptions.inlining_threshold",
     "llvmlite.binding.pipelinetuningoptions.loop_interleaving": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PipelineTuningOptions.loop_interleaving",
     "llvmlite.binding.pipelinetuningoptions.loop_unrolling": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PipelineTuningOptions.loop_unrolling",
     "llvmlite.binding.pipelinetuningoptions.loop_vectorization": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PipelineTuningOptions.loop_vectorization",
-    "llvmlite.binding.pipelinetuningoptions.size_level": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PipelineTuningOptions.size_level",
     "llvmlite.binding.pipelinetuningoptions.slp_vectorization": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PipelineTuningOptions.slp_vectorization",
     "llvmlite.binding.pipelinetuningoptions.speed_level": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/optimization-passes.html#llvmlite.binding.PipelineTuningOptions.speed_level",
     "llvmlite.binding.report_and_reset_timings": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/pass_timings.html#llvmlite.binding.report_and_reset_timings",
@@ -192,6 +190,7 @@ MAPPING = {
     "llvmlite.binding.valuekind.poison_value": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/value-references.html#llvmlite.binding.ValueKind.poison_value",
     "llvmlite.binding.valuekind.undef_value": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/value-references.html#llvmlite.binding.ValueKind.undef_value",
     "llvmlite.binding.valueref": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/value-references.html#llvmlite.binding.ValueRef",
+    "llvmlite.binding.valueref.add_function_attribute": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/value-references.html#llvmlite.binding.ValueRef.add_function_attribute",
     "llvmlite.binding.valueref.arguments": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/value-references.html#llvmlite.binding.ValueRef.arguments",
     "llvmlite.binding.valueref.attributes": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/value-references.html#llvmlite.binding.ValueRef.attributes",
     "llvmlite.binding.valueref.block": "https://llvmlite.readthedocs.io/en/latest/user-guide/binding/value-references.html#llvmlite.binding.ValueRef.block",

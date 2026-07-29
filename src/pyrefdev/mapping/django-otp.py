@@ -1,4 +1,4 @@
-VERSION = "1.6.3"
+VERSION = "1.7.0"
 
 # fmt: off
 MAPPING = {
@@ -81,6 +81,7 @@ MAPPING = {
     "django_otp.plugins.otp_email.models.emaildevice.get_subject": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_email.models.EmailDevice.get_subject",
     "django_otp.plugins.otp_email.models.emaildevice.get_throttle_factor": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_email.models.EmailDevice.get_throttle_factor",
     "django_otp.plugins.otp_email.models.emaildevice.multipleobjectsreturned": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_email.models.EmailDevice.MultipleObjectsReturned",
+    "django_otp.plugins.otp_email.models.emaildevice.notupdated": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_email.models.EmailDevice.NotUpdated",
     "django_otp.plugins.otp_email.models.emaildevice.send_mail": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_email.models.EmailDevice.send_mail",
     "django_otp.plugins.otp_hotp": "https://django-otp-official.readthedocs.io/en/stable/overview.html#module-django_otp.plugins.otp_hotp",
     "django_otp.plugins.otp_hotp.admin": "https://django-otp-official.readthedocs.io/en/stable/overview.html",
@@ -95,6 +96,7 @@ MAPPING = {
     "django_otp.plugins.otp_hotp.models.hotpdevice.get_throttle_factor": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_hotp.models.HOTPDevice.get_throttle_factor",
     "django_otp.plugins.otp_hotp.models.hotpdevice.key": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_hotp.models.HOTPDevice.key",
     "django_otp.plugins.otp_hotp.models.hotpdevice.multipleobjectsreturned": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_hotp.models.HOTPDevice.MultipleObjectsReturned",
+    "django_otp.plugins.otp_hotp.models.hotpdevice.notupdated": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_hotp.models.HOTPDevice.NotUpdated",
     "django_otp.plugins.otp_hotp.models.hotpdevice.tolerance": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_hotp.models.HOTPDevice.tolerance",
     "django_otp.plugins.otp_hotp.models.hotpdevice.verify_token": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_hotp.models.HOTPDevice.verify_token",
     "django_otp.plugins.otp_static": "https://django-otp-official.readthedocs.io/en/stable/overview.html#module-django_otp.plugins.otp_static",
@@ -105,12 +107,14 @@ MAPPING = {
     "django_otp.plugins.otp_static.models.staticdevice.doesnotexist": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticDevice.DoesNotExist",
     "django_otp.plugins.otp_static.models.staticdevice.get_throttle_factor": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticDevice.get_throttle_factor",
     "django_otp.plugins.otp_static.models.staticdevice.multipleobjectsreturned": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticDevice.MultipleObjectsReturned",
+    "django_otp.plugins.otp_static.models.staticdevice.notupdated": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticDevice.NotUpdated",
     "django_otp.plugins.otp_static.models.staticdevice.token_set": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticDevice.token_set",
     "django_otp.plugins.otp_static.models.staticdevice.verify_token": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticDevice.verify_token",
     "django_otp.plugins.otp_static.models.statictoken": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticToken",
     "django_otp.plugins.otp_static.models.statictoken.device": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticToken.device",
     "django_otp.plugins.otp_static.models.statictoken.doesnotexist": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticToken.DoesNotExist",
     "django_otp.plugins.otp_static.models.statictoken.multipleobjectsreturned": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticToken.MultipleObjectsReturned",
+    "django_otp.plugins.otp_static.models.statictoken.notupdated": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticToken.NotUpdated",
     "django_otp.plugins.otp_static.models.statictoken.random_token": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticToken.random_token",
     "django_otp.plugins.otp_static.models.statictoken.token": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_static.models.StaticToken.token",
     "django_otp.plugins.otp_totp": "https://django-otp-official.readthedocs.io/en/stable/overview.html#module-django_otp.plugins.otp_totp",
@@ -127,6 +131,7 @@ MAPPING = {
     "django_otp.plugins.otp_totp.models.totpdevice.key": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_totp.models.TOTPDevice.key",
     "django_otp.plugins.otp_totp.models.totpdevice.last_t": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_totp.models.TOTPDevice.last_t",
     "django_otp.plugins.otp_totp.models.totpdevice.multipleobjectsreturned": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_totp.models.TOTPDevice.MultipleObjectsReturned",
+    "django_otp.plugins.otp_totp.models.totpdevice.notupdated": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_totp.models.TOTPDevice.NotUpdated",
     "django_otp.plugins.otp_totp.models.totpdevice.step": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_totp.models.TOTPDevice.step",
     "django_otp.plugins.otp_totp.models.totpdevice.t0": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_totp.models.TOTPDevice.t0",
     "django_otp.plugins.otp_totp.models.totpdevice.tolerance": "https://django-otp-official.readthedocs.io/en/stable/overview.html#django_otp.plugins.otp_totp.models.TOTPDevice.tolerance",

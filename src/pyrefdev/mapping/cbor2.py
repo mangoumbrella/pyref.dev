@@ -1,4 +1,4 @@
-VERSION = "5.7.1"
+VERSION = "6.1.3"
 
 # fmt: off
 MAPPING = {
@@ -7,18 +7,12 @@ MAPPING = {
     "cbor2.cbordecodeerror": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBORDecodeError",
     "cbor2.cbordecoder": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBORDecoder",
     "cbor2.cbordecoder.decode": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBORDecoder.decode",
-    "cbor2.cbordecoder.decode_from_bytes": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBORDecoder.decode_from_bytes",
-    "cbor2.cbordecoder.immutable": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBORDecoder.immutable",
     "cbor2.cbordecoder.read": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBORDecoder.read",
-    "cbor2.cbordecoder.set_shareable": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBORDecoder.set_shareable",
-    "cbor2.cbordecodevalueerror": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBORDecodeValueError",
     "cbor2.cborencodeerror": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBOREncodeError",
     "cbor2.cborencoder": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBOREncoder",
-    "cbor2.cborencoder.disable_string_namespacing": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBOREncoder.disable_string_namespacing",
-    "cbor2.cborencoder.disable_string_referencing": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBOREncoder.disable_string_referencing",
-    "cbor2.cborencoder.disable_value_sharing": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBOREncoder.disable_value_sharing",
     "cbor2.cborencoder.encode": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBOREncoder.encode",
-    "cbor2.cborencoder.encode_canonical_map": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBOREncoder.encode_canonical_map",
+    "cbor2.cborencoder.encode_semantic": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBOREncoder.encode_semantic",
+    "cbor2.cborencoder.encode_sortable_item": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBOREncoder.encode_sortable_item",
     "cbor2.cborencoder.encode_sortable_key": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBOREncoder.encode_sortable_key",
     "cbor2.cborencoder.encode_to_bytes": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBOREncoder.encode_to_bytes",
     "cbor2.cborencoder.write": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBOREncoder.write",
@@ -29,8 +23,10 @@ MAPPING = {
     "cbor2.cbortag": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.CBORTag",
     "cbor2.dump": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.dump",
     "cbor2.dumps": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.dumps",
+    "cbor2.frozendict": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.frozendict",
     "cbor2.load": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.load",
     "cbor2.loads": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.loads",
+    "cbor2.shareable_decoder": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.shareable_decoder",
     "cbor2.shareable_encoder": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.shareable_encoder",
     "cbor2.undefined": "https://cbor2.readthedocs.io/en/latest/api.html#cbor2.undefined",
 }

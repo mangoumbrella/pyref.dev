@@ -1,4 +1,4 @@
-VERSION = "3.1.2"
+VERSION = "3.1.3"
 
 # fmt: off
 MAPPING = {
@@ -112,6 +112,7 @@ MAPPING = {
     "flask.ctx.requestcontext.copy": "https://flask.palletsprojects.com/en/stable/api/#flask.ctx.RequestContext.copy",
     "flask.ctx.requestcontext.match_request": "https://flask.palletsprojects.com/en/stable/api/#flask.ctx.RequestContext.match_request",
     "flask.ctx.requestcontext.pop": "https://flask.palletsprojects.com/en/stable/api/#flask.ctx.RequestContext.pop",
+    "flask.ctx.requestcontext.session": "https://flask.palletsprojects.com/en/stable/api/#flask.ctx.RequestContext.session",
     "flask.current_app": "https://flask.palletsprojects.com/en/stable/api/#flask.current_app",
     "flask.flash": "https://flask.palletsprojects.com/en/stable/api/#flask.flash",
     "flask.flask": "https://flask.palletsprojects.com/en/stable/api/",
@@ -447,10 +448,7 @@ MAPPING = {
     "flask.sessions.nullsession.setdefault": "https://flask.palletsprojects.com/en/stable/api/#flask.sessions.NullSession.setdefault",
     "flask.sessions.nullsession.update": "https://flask.palletsprojects.com/en/stable/api/#flask.sessions.NullSession.update",
     "flask.sessions.securecookiesession": "https://flask.palletsprojects.com/en/stable/api/#flask.sessions.SecureCookieSession",
-    "flask.sessions.securecookiesession.accessed": "https://flask.palletsprojects.com/en/stable/api/#flask.sessions.SecureCookieSession.accessed",
-    "flask.sessions.securecookiesession.get": "https://flask.palletsprojects.com/en/stable/api/#flask.sessions.SecureCookieSession.get",
     "flask.sessions.securecookiesession.modified": "https://flask.palletsprojects.com/en/stable/api/#flask.sessions.SecureCookieSession.modified",
-    "flask.sessions.securecookiesession.setdefault": "https://flask.palletsprojects.com/en/stable/api/#flask.sessions.SecureCookieSession.setdefault",
     "flask.sessions.securecookiesessioninterface": "https://flask.palletsprojects.com/en/stable/api/#flask.sessions.SecureCookieSessionInterface",
     "flask.sessions.securecookiesessioninterface.digest_method": "https://flask.palletsprojects.com/en/stable/api/#flask.sessions.SecureCookieSessionInterface.digest_method",
     "flask.sessions.securecookiesessioninterface.key_derivation": "https://flask.palletsprojects.com/en/stable/api/#flask.sessions.SecureCookieSessionInterface.key_derivation",

@@ -1,4 +1,4 @@
-VERSION = "7.11.3"
+VERSION = "7.15.2"
 
 # fmt: off
 MAPPING = {
@@ -107,6 +107,9 @@ MAPPING = {
     "coverage.numbits.numbits_intersection": "https://coverage.readthedocs.io/en/latest/dbschema.html#coverage.numbits.numbits_intersection",
     "coverage.numbits.numbits_to_nums": "https://coverage.readthedocs.io/en/latest/dbschema.html#coverage.numbits.numbits_to_nums",
     "coverage.numbits.numbits_union": "https://coverage.readthedocs.io/en/latest/dbschema.html#coverage.numbits.numbits_union",
+    "coverage.numbits.numbitsunionagg": "https://coverage.readthedocs.io/en/latest/dbschema.html#coverage.numbits.NumbitsUnionAgg",
+    "coverage.numbits.numbitsunionagg.finalize": "https://coverage.readthedocs.io/en/latest/dbschema.html#coverage.numbits.NumbitsUnionAgg.finalize",
+    "coverage.numbits.numbitsunionagg.step": "https://coverage.readthedocs.io/en/latest/dbschema.html#coverage.numbits.NumbitsUnionAgg.step",
     "coverage.numbits.nums_to_numbits": "https://coverage.readthedocs.io/en/latest/dbschema.html#coverage.numbits.nums_to_numbits",
     "coverage.numbits.register_sqlite_functions": "https://coverage.readthedocs.io/en/latest/dbschema.html#coverage.numbits.register_sqlite_functions",
     "coverage.plugin": "https://coverage.readthedocs.io/en/latest/api_plugin.html",

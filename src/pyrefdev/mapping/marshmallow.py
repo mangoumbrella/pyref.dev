@@ -1,4 +1,4 @@
-VERSION = "4.1.0"
+VERSION = "4.3.0"
 
 # fmt: off
 MAPPING = {
@@ -137,6 +137,10 @@ MAPPING = {
     "marshmallow.schema.validate": "https://marshmallow.readthedocs.io/en/latest/top_level.html#marshmallow.Schema.validate",
     "marshmallow.schemaopts": "https://marshmallow.readthedocs.io/en/latest/top_level.html#marshmallow.SchemaOpts",
     "marshmallow.types": "https://marshmallow.readthedocs.io/en/latest/marshmallow.types.html",
+    "marshmallow.types.errormessages": "https://marshmallow.readthedocs.io/en/latest/marshmallow.types.html#marshmallow.types.ErrorMessages",
+    "marshmallow.types.errormessagevalue": "https://marshmallow.readthedocs.io/en/latest/marshmallow.types.html#marshmallow.types.ErrorMessageValue",
+    "marshmallow.types.postloadcallable": "https://marshmallow.readthedocs.io/en/latest/marshmallow.types.html#marshmallow.types.PostLoadCallable",
+    "marshmallow.types.preloadcallable": "https://marshmallow.readthedocs.io/en/latest/marshmallow.types.html#marshmallow.types.PreLoadCallable",
     "marshmallow.types.rendermodule": "https://marshmallow.readthedocs.io/en/latest/marshmallow.types.html#marshmallow.types.RenderModule",
     "marshmallow.types.schemavalidator": "https://marshmallow.readthedocs.io/en/latest/marshmallow.types.html#marshmallow.types.SchemaValidator",
     "marshmallow.types.strsequenceorset": "https://marshmallow.readthedocs.io/en/latest/marshmallow.types.html#marshmallow.types.StrSequenceOrSet",

@@ -1,4 +1,4 @@
-VERSION = "8.3.0"
+VERSION = "8.4.2"
 
 # fmt: off
 MAPPING = {
@@ -30,6 +30,7 @@ MAPPING = {
     "click.command.collect_usage_pieces": "https://click.palletsprojects.com/en/stable/api/#click.Command.collect_usage_pieces",
     "click.command.context_class": "https://click.palletsprojects.com/en/stable/api/#click.Command.context_class",
     "click.command.context_settings": "https://click.palletsprojects.com/en/stable/api/#click.Command.context_settings",
+    "click.command.format_arguments": "https://click.palletsprojects.com/en/stable/api/#click.Command.format_arguments",
     "click.command.format_epilog": "https://click.palletsprojects.com/en/stable/api/#click.Command.format_epilog",
     "click.command.format_help": "https://click.palletsprojects.com/en/stable/api/#click.Command.format_help",
     "click.command.format_help_text": "https://click.palletsprojects.com/en/stable/api/#click.Command.format_help_text",
@@ -102,6 +103,7 @@ MAPPING = {
     "click.core.parametersource.default_map": "https://click.palletsprojects.com/en/stable/api/#click.core.ParameterSource.DEFAULT_MAP",
     "click.core.parametersource.environment": "https://click.palletsprojects.com/en/stable/api/#click.core.ParameterSource.ENVIRONMENT",
     "click.core.parametersource.prompt": "https://click.palletsprojects.com/en/stable/api/#click.core.ParameterSource.PROMPT",
+    "click.custom_version_option": "https://click.palletsprojects.com/en/stable/api/#click.custom_version_option",
     "click.datetime": "https://click.palletsprojects.com/en/stable/api/#click.DateTime",
     "click.decorators": "https://click.palletsprojects.com/en/stable/api/",
     "click.decorators.pass_meta_key": "https://click.palletsprojects.com/en/stable/api/#click.decorators.pass_meta_key",
@@ -116,6 +118,7 @@ MAPPING = {
     "click.get_app_dir": "https://click.palletsprojects.com/en/stable/api/#click.get_app_dir",
     "click.get_binary_stream": "https://click.palletsprojects.com/en/stable/api/#click.get_binary_stream",
     "click.get_current_context": "https://click.palletsprojects.com/en/stable/api/#click.get_current_context",
+    "click.get_pager_file": "https://click.palletsprojects.com/en/stable/api/#click.get_pager_file",
     "click.get_text_stream": "https://click.palletsprojects.com/en/stable/api/#click.get_text_stream",
     "click.getchar": "https://click.palletsprojects.com/en/stable/api/#click.getchar",
     "click.Group": "https://click.palletsprojects.com/en/stable/api/#click.Group",
@@ -154,6 +157,7 @@ MAPPING = {
     "click.launch": "https://click.palletsprojects.com/en/stable/api/#click.launch",
     "click.make_pass_decorator": "https://click.palletsprojects.com/en/stable/api/#click.make_pass_decorator",
     "click.multicommand": "https://click.palletsprojects.com/en/stable/api/#click.MultiCommand",
+    "click.nosuchcommand": "https://click.palletsprojects.com/en/stable/api/#click.NoSuchCommand",
     "click.nosuchoption": "https://click.palletsprojects.com/en/stable/api/#click.NoSuchOption",
     "click.open_file": "https://click.palletsprojects.com/en/stable/api/#click.open_file",
     "click.Option": "https://click.palletsprojects.com/en/stable/api/#click.Option",

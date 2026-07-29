@@ -1,14 +1,30 @@
-VERSION = "2.2.0"
+VERSION = "5.0.0"
 
 # fmt: off
 MAPPING = {
     "coolname": "https://coolname.readthedocs.io/en/latest/",
+    "coolname.configurationerror": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.ConfigurationError",
     "coolname.generate": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.generate",
     "coolname.generate_slug": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.generate_slug",
     "coolname.get_combinations_count": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.get_combinations_count",
+    "coolname.initializationerror": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.InitializationError",
+    "coolname.loader": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html",
+    "coolname.loader.filter_config": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.loader.filter_config",
+    "coolname.loader.load_config": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.loader.load_config",
+    "coolname.loader.save_config_as_module": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.loader.save_config_as_module",
     "coolname.randomgenerator": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.RandomGenerator",
     "coolname.randomgenerator.generate": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.RandomGenerator.generate",
     "coolname.randomgenerator.generate_slug": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.RandomGenerator.generate_slug",
     "coolname.randomgenerator.get_combinations_count": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.RandomGenerator.get_combinations_count",
+    "coolname.randomgenerator.random": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.RandomGenerator.random",
+    "coolname.randomgenerator.render": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.RandomGenerator.render",
+    "coolname.randomgenerator.write": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.RandomGenerator.write",
     "coolname.replace_random": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.replace_random",
+    "coolname.types": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html",
+    "coolname.types.coolnameconfiglistt": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.types.CoolnameConfigListT",
+    "coolname.types.coolnameconfigt": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.types.CoolnameConfigT",
+    "coolname.types.randomseedargt": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.types.RandomSeedArgT",
+    "coolname.types.randomt": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.types.RandomT",
+    "coolname.types.randomt.randrange": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.types.RandomT.randrange",
+    "coolname.types.randomt.seed": "https://coolname.readthedocs.io/en/latest/classes-and-functions.html#coolname.types.RandomT.seed",
 }

@@ -1,10 +1,12 @@
-VERSION = "1.1.1"
+VERSION = "3.0.2"
 
 # fmt: off
 MAPPING = {
     "bleak": "https://bleak.readthedocs.io/en/latest/",
     "bleak.args": "https://bleak.readthedocs.io/en/latest/api/args.html",
     "bleak.args.bluez": "https://bleak.readthedocs.io/en/latest/api/args.html#module-bleak.args.bluez",
+    "bleak.args.bluez.bluezclientargs": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZClientArgs",
+    "bleak.args.bluez.bluezclientargs.adapter": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZClientArgs.adapter",
     "bleak.args.bluez.bluezdiscoveryfilters": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZDiscoveryFilters",
     "bleak.args.bluez.bluezdiscoveryfilters.discoverable": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZDiscoveryFilters.Discoverable",
     "bleak.args.bluez.bluezdiscoveryfilters.duplicatedata": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZDiscoveryFilters.DuplicateData",
@@ -13,7 +15,10 @@ MAPPING = {
     "bleak.args.bluez.bluezdiscoveryfilters.rssi": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZDiscoveryFilters.RSSI",
     "bleak.args.bluez.bluezdiscoveryfilters.transport": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZDiscoveryFilters.Transport",
     "bleak.args.bluez.bluezdiscoveryfilters.uuids": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZDiscoveryFilters.UUIDs",
+    "bleak.args.bluez.blueznotifyargs": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZNotifyArgs",
+    "bleak.args.bluez.blueznotifyargs.use_start_notify": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZNotifyArgs.use_start_notify",
     "bleak.args.bluez.bluezscannerargs": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZScannerArgs",
+    "bleak.args.bluez.bluezscannerargs.adapter": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZScannerArgs.adapter",
     "bleak.args.bluez.bluezscannerargs.filters": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZScannerArgs.filters",
     "bleak.args.bluez.bluezscannerargs.or_patterns": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.BlueZScannerArgs.or_patterns",
     "bleak.args.bluez.orpattern": "https://bleak.readthedocs.io/en/latest/api/args.html#bleak.args.bluez.OrPattern",
@@ -230,6 +235,7 @@ MAPPING = {
     "bleak.bleakscanner.discovered_devices": "https://bleak.readthedocs.io/en/latest/api/scanner.html#bleak.BleakScanner.discovered_devices",
     "bleak.bleakscanner.discovered_devices_and_advertisement_data": "https://bleak.readthedocs.io/en/latest/api/scanner.html#bleak.BleakScanner.discovered_devices_and_advertisement_data",
     "bleak.bleakscanner.extraargs": "https://bleak.readthedocs.io/en/latest/api/scanner.html#bleak.BleakScanner.ExtraArgs",
+    "bleak.bleakscanner.extraargs.adapter": "https://bleak.readthedocs.io/en/latest/api/scanner.html#bleak.BleakScanner.ExtraArgs.adapter",
     "bleak.bleakscanner.extraargs.backend": "https://bleak.readthedocs.io/en/latest/api/scanner.html#bleak.BleakScanner.ExtraArgs.backend",
     "bleak.bleakscanner.extraargs.bluez": "https://bleak.readthedocs.io/en/latest/api/scanner.html#bleak.BleakScanner.ExtraArgs.bluez",
     "bleak.bleakscanner.extraargs.cb": "https://bleak.readthedocs.io/en/latest/api/scanner.html#bleak.BleakScanner.ExtraArgs.cb",
@@ -257,6 +263,9 @@ MAPPING = {
     "bleak.exc.bleakdbuserror.dbus_error_details": "https://bleak.readthedocs.io/en/latest/api/index.html#bleak.exc.BleakDBusError.dbus_error_details",
     "bleak.exc.bleakdevicenotfounderror": "https://bleak.readthedocs.io/en/latest/api/index.html#bleak.exc.BleakDeviceNotFoundError",
     "bleak.exc.bleakerror": "https://bleak.readthedocs.io/en/latest/api/index.html#bleak.exc.BleakError",
+    "bleak.exc.bleakgattprotocolerror": "https://bleak.readthedocs.io/en/latest/api/index.html#bleak.exc.BleakGATTProtocolError",
+    "bleak.exc.bleakgattprotocolerror.code": "https://bleak.readthedocs.io/en/latest/api/index.html#bleak.exc.BleakGATTProtocolError.code",
+    "bleak.exc.bleakgattprotocolerrorcode": "https://bleak.readthedocs.io/en/latest/api/index.html#bleak.exc.BleakGATTProtocolErrorCode",
     "bleak.uuids": "https://bleak.readthedocs.io/en/latest/api/index.html#module-bleak.uuids",
     "bleak.uuids.normalize_uuid_16": "https://bleak.readthedocs.io/en/latest/api/index.html#bleak.uuids.normalize_uuid_16",
     "bleak.uuids.normalize_uuid_32": "https://bleak.readthedocs.io/en/latest/api/index.html#bleak.uuids.normalize_uuid_32",

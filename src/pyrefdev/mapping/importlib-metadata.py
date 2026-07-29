@@ -1,4 +1,4 @@
-VERSION = "8.7.0"
+VERSION = "9.0.0"
 
 # fmt: off
 MAPPING = {
@@ -37,12 +37,20 @@ MAPPING = {
     "importlib_metadata.entry_points": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.entry_points",
     "importlib_metadata.files": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.files",
     "importlib_metadata.metadata": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.metadata",
+    "importlib_metadata.metadatanotfound": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.MetadataNotFound",
     "importlib_metadata.packagemetadata": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackageMetadata",
     "importlib_metadata.packagemetadata.get": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackageMetadata.get",
     "importlib_metadata.packagemetadata.get_all": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackageMetadata.get_all",
     "importlib_metadata.packagemetadata.json": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackageMetadata.json",
     "importlib_metadata.packagenotfounderror": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackageNotFoundError",
     "importlib_metadata.packagenotfounderror.name": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackageNotFoundError.name",
+    "importlib_metadata.packagepath": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackagePath",
+    "importlib_metadata.packagepath.dist": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackagePath.dist",
+    "importlib_metadata.packagepath.hash": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackagePath.hash",
+    "importlib_metadata.packagepath.locate": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackagePath.locate",
+    "importlib_metadata.packagepath.read_binary": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackagePath.read_binary",
+    "importlib_metadata.packagepath.read_text": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackagePath.read_text",
+    "importlib_metadata.packagepath.size": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.PackagePath.size",
     "importlib_metadata.packages_distributions": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.packages_distributions",
     "importlib_metadata.requires": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.requires",
     "importlib_metadata.simplepath": "https://importlib-metadata.readthedocs.io/en/latest/api.html#importlib_metadata.SimplePath",

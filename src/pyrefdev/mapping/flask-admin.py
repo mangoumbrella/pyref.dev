@@ -1,4 +1,4 @@
-VERSION = "2.0.1"
+VERSION = "2.2.0"
 
 # fmt: off
 MAPPING = {
@@ -763,6 +763,8 @@ MAPPING = {
     "flask_admin.model.basemodelview.validate_form": "https://flask-admin.readthedocs.io/en/stable/api/mod_model/#flask_admin.model.BaseModelView.validate_form",
     "flask_admin.model.template": "https://flask-admin.readthedocs.io/en/stable/api/mod_model_template/",
     "flask_admin.model.template.macro": "https://flask-admin.readthedocs.io/en/stable/api/mod_model_template/#flask_admin.model.template.macro",
+    "flask_admin.theme": "https://flask-admin.readthedocs.io/en/stable/api/mod_theme/",
+    "flask_admin.theme.bootstraptheme": "https://flask-admin.readthedocs.io/en/stable/api/mod_theme/#flask_admin.theme.BootstrapTheme",
     "flask_admin.tools": "https://flask-admin.readthedocs.io/en/stable/api/mod_tools/",
     "flask_admin.tools.import_attribute": "https://flask-admin.readthedocs.io/en/stable/api/mod_tools/#flask_admin.tools.import_attribute",
     "flask_admin.tools.import_module": "https://flask-admin.readthedocs.io/en/stable/api/mod_tools/#flask_admin.tools.import_module",

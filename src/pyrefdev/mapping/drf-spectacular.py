@@ -1,4 +1,4 @@
-VERSION = "0.29.0"
+VERSION = "0.30.0"
 
 # fmt: off
 MAPPING = {
@@ -84,6 +84,9 @@ MAPPING = {
     "drf_spectacular.types.openapitypes.regex": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.types.OpenApiTypes.REGEX",
     "drf_spectacular.types.openapitypes.str": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.types.OpenApiTypes.STR",
     "drf_spectacular.types.openapitypes.time": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.types.OpenApiTypes.TIME",
+    "drf_spectacular.types.openapitypes.uint16": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.types.OpenApiTypes.UINT16",
+    "drf_spectacular.types.openapitypes.uint32": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.types.OpenApiTypes.UINT32",
+    "drf_spectacular.types.openapitypes.uint64": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.types.OpenApiTypes.UINT64",
     "drf_spectacular.types.openapitypes.uri": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.types.OpenApiTypes.URI",
     "drf_spectacular.types.openapitypes.uri_ref": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.types.OpenApiTypes.URI_REF",
     "drf_spectacular.types.openapitypes.uri_tpl": "https://drf-spectacular.readthedocs.io/en/latest/drf_spectacular.html#drf_spectacular.types.OpenApiTypes.URI_TPL",

@@ -1,4 +1,4 @@
-VERSION = "5.2.1"
+VERSION = "6.0.0"
 
 # fmt: off
 MAPPING = {
@@ -70,8 +70,10 @@ MAPPING = {
     "eth_typing.encoding.primitives": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.encoding.Primitives",
     "eth_typing.enums": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#module-eth_typing.enums",
     "eth_typing.enums.forkname": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName",
+    "eth_typing.enums.forkname.amsterdam": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.Amsterdam",
     "eth_typing.enums.forkname.arrowglacier": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.ArrowGlacier",
     "eth_typing.enums.forkname.berlin": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.Berlin",
+    "eth_typing.enums.forkname.bogota": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.Bogota",
     "eth_typing.enums.forkname.byzantium": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.Byzantium",
     "eth_typing.enums.forkname.cancun": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.Cancun",
     "eth_typing.enums.forkname.constantinople": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.Constantinople",
@@ -84,6 +86,7 @@ MAPPING = {
     "eth_typing.enums.forkname.istanbul": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.Istanbul",
     "eth_typing.enums.forkname.london": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.London",
     "eth_typing.enums.forkname.metropolis": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.Metropolis",
+    "eth_typing.enums.forkname.osaka": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.Osaka",
     "eth_typing.enums.forkname.paris": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.Paris",
     "eth_typing.enums.forkname.prague": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.Prague",
     "eth_typing.enums.forkname.shanghai": "https://eth-typing.readthedocs.io/en/stable/eth_typing.html#eth_typing.enums.ForkName.Shanghai",

@@ -1,4 +1,4 @@
-VERSION = "1.26.0"
+VERSION = "1.28.0"
 
 # fmt: off
 MAPPING = {
@@ -23,6 +23,8 @@ MAPPING = {
     "django_htmx.middleware.htmxdetails.current_url_abs_path": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.current_url_abs_path",
     "django_htmx.middleware.htmxdetails.history_restore_request": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.history_restore_request",
     "django_htmx.middleware.htmxdetails.prompt": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.prompt",
+    "django_htmx.middleware.htmxdetails.request_type": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.request_type",
+    "django_htmx.middleware.htmxdetails.source": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.source",
     "django_htmx.middleware.htmxdetails.target": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.target",
     "django_htmx.middleware.htmxdetails.trigger": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.trigger",
     "django_htmx.middleware.htmxdetails.trigger_name": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.trigger_name",

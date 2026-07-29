@@ -1,4 +1,4 @@
-VERSION = "10.8.0"
+VERSION = "11.1.0"
 
 # fmt: off
 MAPPING = {
@@ -21,6 +21,7 @@ MAPPING = {
     "more_itertools.collapse": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.collapse",
     "more_itertools.combination_index": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.combination_index",
     "more_itertools.combination_with_replacement_index": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.combination_with_replacement_index",
+    "more_itertools.concurrent_tee": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.concurrent_tee",
     "more_itertools.consecutive_groups": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.consecutive_groups",
     "more_itertools.constrained_batches": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.constrained_batches",
     "more_itertools.consume": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.consume",
@@ -110,6 +111,7 @@ MAPPING = {
     "more_itertools.quantify": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.quantify",
     "more_itertools.random_combination": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.random_combination",
     "more_itertools.random_combination_with_replacement": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.random_combination_with_replacement",
+    "more_itertools.random_derangement": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.random_derangement",
     "more_itertools.random_permutation": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.random_permutation",
     "more_itertools.random_product": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.random_product",
     "more_itertools.repeat_each": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.repeat_each",
@@ -121,13 +123,19 @@ MAPPING = {
     "more_itertools.roundrobin": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.roundrobin",
     "more_itertools.rstrip": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.rstrip",
     "more_itertools.run_length": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.run_length",
+    "more_itertools.running_max": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.running_max",
+    "more_itertools.running_mean": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.running_mean",
     "more_itertools.running_median": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.running_median",
+    "more_itertools.running_min": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.running_min",
+    "more_itertools.running_statistics": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.running_statistics",
     "more_itertools.sample": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.sample",
     "more_itertools.seekable": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.seekable",
     "more_itertools.sequenceview": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.SequenceView",
+    "more_itertools.serialize": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.serialize",
     "more_itertools.set_partitions": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.set_partitions",
     "more_itertools.side_effect": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.side_effect",
     "more_itertools.sieve": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.sieve",
+    "more_itertools.sized_iterator": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.sized_iterator",
     "more_itertools.sliced": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.sliced",
     "more_itertools.sliding_window": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.sliding_window",
     "more_itertools.sort_together": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.sort_together",
@@ -144,6 +152,7 @@ MAPPING = {
     "more_itertools.substrings": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.substrings",
     "more_itertools.substrings_indexes": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.substrings_indexes",
     "more_itertools.sum_of_squares": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.sum_of_squares",
+    "more_itertools.synchronized": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.synchronized",
     "more_itertools.tabulate": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.tabulate",
     "more_itertools.tail": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.tail",
     "more_itertools.take": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.take",
@@ -163,6 +172,5 @@ MAPPING = {
     "more_itertools.windowed_complete": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.windowed_complete",
     "more_itertools.with_iter": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.with_iter",
     "more_itertools.zip_broadcast": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.zip_broadcast",
-    "more_itertools.zip_equal": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.zip_equal",
     "more_itertools.zip_offset": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.zip_offset",
 }

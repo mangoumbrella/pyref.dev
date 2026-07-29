@@ -1,13 +1,9 @@
-VERSION = "2.2.5"
+VERSION = "2.4.3"
 
 # fmt: off
 MAPPING = {
     "django_enum": "https://django-enum.readthedocs.io/en/stable/",
     "django_enum.choices": "https://django-enum.readthedocs.io/en/stable/reference/choices.html",
-    "django_enum.choices.djangoenumpropertiesmeta": "https://django-enum.readthedocs.io/en/stable/reference/choices.html#django_enum.choices.DjangoEnumPropertiesMeta",
-    "django_enum.choices.djangoenumpropertiesmeta.choices": "https://django-enum.readthedocs.io/en/stable/reference/choices.html#django_enum.choices.DjangoEnumPropertiesMeta.choices",
-    "django_enum.choices.djangoenumpropertiesmeta.names": "https://django-enum.readthedocs.io/en/stable/reference/choices.html#django_enum.choices.DjangoEnumPropertiesMeta.names",
-    "django_enum.choices.djangosymmetricmixin": "https://django-enum.readthedocs.io/en/stable/reference/choices.html#django_enum.choices.DjangoSymmetricMixin",
     "django_enum.choices.flagchoices": "https://django-enum.readthedocs.io/en/stable/reference/choices.html#django_enum.choices.FlagChoices",
     "django_enum.choices.floatchoices": "https://django-enum.readthedocs.io/en/stable/reference/choices.html#django_enum.choices.FloatChoices",
     "django_enum.choices.integerchoices": "https://django-enum.readthedocs.io/en/stable/reference/choices.html#django_enum.choices.IntegerChoices",
@@ -70,11 +66,13 @@ MAPPING = {
     "django_enum.fields.enumfield.coerce": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.coerce",
     "django_enum.fields.enumfield.constrained": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.constrained",
     "django_enum.fields.enumfield.constraint_name": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.constraint_name",
+    "django_enum.fields.enumfield.contribute_to_class": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.contribute_to_class",
     "django_enum.fields.enumfield.deconstruct": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.deconstruct",
     "django_enum.fields.enumfield.descriptor_class": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.descriptor_class",
     "django_enum.fields.enumfield.enum": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.enum",
     "django_enum.fields.enumfield.formfield": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.formfield",
     "django_enum.fields.enumfield.from_db_value": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.from_db_value",
+    "django_enum.fields.enumfield.get_choices": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.get_choices",
     "django_enum.fields.enumfield.get_db_prep_value": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.get_db_prep_value",
     "django_enum.fields.enumfield.get_default": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.get_default",
     "django_enum.fields.enumfield.get_prep_value": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.EnumField.get_prep_value",
@@ -106,6 +104,7 @@ MAPPING = {
     "django_enum.fields.flagfield.__init__": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.FlagField.__init__",
     "django_enum.fields.flagfield.contribute_to_class": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.FlagField.contribute_to_class",
     "django_enum.fields.flagfield.formfield": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.FlagField.formfield",
+    "django_enum.fields.flagfield.get_choices": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.FlagField.get_choices",
     "django_enum.fields.integerflagfield": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.IntegerFlagField",
     "django_enum.fields.intenumfield": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.IntEnumField",
     "django_enum.fields.intenumfield.__init__": "https://django-enum.readthedocs.io/en/stable/reference/fields.html#django_enum.fields.IntEnumField.__init__",
@@ -125,6 +124,7 @@ MAPPING = {
     "django_enum.filters.enumflagfilter.field_class": "https://django-enum.readthedocs.io/en/stable/reference/filters.html#django_enum.filters.EnumFlagFilter.field_class",
     "django_enum.filters.enumflagfilter.filter": "https://django-enum.readthedocs.io/en/stable/reference/filters.html#django_enum.filters.EnumFlagFilter.filter",
     "django_enum.filters.enumflagfilter.is_noop": "https://django-enum.readthedocs.io/en/stable/reference/filters.html#django_enum.filters.EnumFlagFilter.is_noop",
+    "django_enum.filters.enumflagfilter.parent": "https://django-enum.readthedocs.io/en/stable/reference/filters.html#django_enum.filters.EnumFlagFilter.parent",
     "django_enum.filters.filterset": "https://django-enum.readthedocs.io/en/stable/reference/filters.html#django_enum.filters.FilterSet",
     "django_enum.filters.filterset._meta": "https://django-enum.readthedocs.io/en/stable/reference/filters.html#django_enum.filters.FilterSet._meta",
     "django_enum.filters.filterset.base_filters": "https://django-enum.readthedocs.io/en/stable/reference/filters.html#django_enum.filters.FilterSet.base_filters",

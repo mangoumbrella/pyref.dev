@@ -1,4 +1,4 @@
-VERSION = "0.19.1"
+VERSION = "0.19.2"
 
 # fmt: off
 MAPPING = {
@@ -128,6 +128,7 @@ MAPPING = {
     "ecdsa.ellipticcurve.point.double": "https://ecdsa.readthedocs.io/en/latest/ecdsa.ellipticcurve.html#ecdsa.ellipticcurve.Point.double",
     "ecdsa.ellipticcurve.point.from_bytes": "https://ecdsa.readthedocs.io/en/latest/ecdsa.ellipticcurve.html#ecdsa.ellipticcurve.Point.from_bytes",
     "ecdsa.ellipticcurve.point.order": "https://ecdsa.readthedocs.io/en/latest/ecdsa.ellipticcurve.html#ecdsa.ellipticcurve.Point.order",
+    "ecdsa.ellipticcurve.point.to_affine": "https://ecdsa.readthedocs.io/en/latest/ecdsa.ellipticcurve.html#ecdsa.ellipticcurve.Point.to_affine",
     "ecdsa.ellipticcurve.point.to_bytes": "https://ecdsa.readthedocs.io/en/latest/ecdsa.ellipticcurve.html#ecdsa.ellipticcurve.Point.to_bytes",
     "ecdsa.ellipticcurve.point.x": "https://ecdsa.readthedocs.io/en/latest/ecdsa.ellipticcurve.html#ecdsa.ellipticcurve.Point.x",
     "ecdsa.ellipticcurve.point.y": "https://ecdsa.readthedocs.io/en/latest/ecdsa.ellipticcurve.html#ecdsa.ellipticcurve.Point.y",

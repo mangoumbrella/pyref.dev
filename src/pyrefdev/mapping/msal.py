@@ -1,4 +1,4 @@
-VERSION = "1.34.0"
+VERSION = "1.37.0"
 
 # fmt: off
 MAPPING = {
@@ -14,6 +14,7 @@ MAPPING = {
     "msal.clientapplication.acquire_token_by_authorization_code.params": "https://msal-python.readthedocs.io/en/latest/",
     "msal.clientapplication.acquire_token_by_authorization_code.params.claims_challenge": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_by_authorization_code.params.claims_challenge",
     "msal.clientapplication.acquire_token_by_authorization_code.params.code": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_by_authorization_code.params.code",
+    "msal.clientapplication.acquire_token_by_authorization_code.params.forwarded_client_claims": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_by_authorization_code.params.forwarded_client_claims",
     "msal.clientapplication.acquire_token_by_authorization_code.params.nonce": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_by_authorization_code.params.nonce",
     "msal.clientapplication.acquire_token_by_authorization_code.params.scopes": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_by_authorization_code.params.scopes",
     "msal.clientapplication.acquire_token_by_refresh_token": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_by_refresh_token",
@@ -34,6 +35,7 @@ MAPPING = {
     "msal.clientapplication.acquire_token_silent_with_error.params.auth_scheme": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_silent_with_error.params.auth_scheme",
     "msal.clientapplication.acquire_token_silent_with_error.params.claims_challenge": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_silent_with_error.params.claims_challenge",
     "msal.clientapplication.acquire_token_silent_with_error.params.force_refresh": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_silent_with_error.params.force_refresh",
+    "msal.clientapplication.acquire_token_silent_with_error.params.forwarded_client_claims": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_silent_with_error.params.forwarded_client_claims",
     "msal.clientapplication.acquire_token_silent_with_error.params.scopes": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.acquire_token_silent_with_error.params.scopes",
     "msal.clientapplication.get_accounts": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.get_accounts",
     "msal.clientapplication.get_accounts.params": "https://msal-python.readthedocs.io/en/latest/",
@@ -83,13 +85,24 @@ MAPPING = {
     "msal.clientapplication.params.verify": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.params.verify",
     "msal.clientapplication.remove_account": "https://msal-python.readthedocs.io/en/latest/#msal.ClientApplication.remove_account",
     "msal.confidentialclientapplication": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication",
+    "msal.confidentialclientapplication.acquire_token_by_user_federated_identity_credential": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_by_user_federated_identity_credential",
+    "msal.confidentialclientapplication.acquire_token_by_user_federated_identity_credential.params": "https://msal-python.readthedocs.io/en/latest/",
+    "msal.confidentialclientapplication.acquire_token_by_user_federated_identity_credential.params.assertion": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_by_user_federated_identity_credential.params.assertion",
+    "msal.confidentialclientapplication.acquire_token_by_user_federated_identity_credential.params.claims_challenge": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_by_user_federated_identity_credential.params.claims_challenge",
+    "msal.confidentialclientapplication.acquire_token_by_user_federated_identity_credential.params.forwarded_client_claims": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_by_user_federated_identity_credential.params.forwarded_client_claims",
+    "msal.confidentialclientapplication.acquire_token_by_user_federated_identity_credential.params.scopes": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_by_user_federated_identity_credential.params.scopes",
+    "msal.confidentialclientapplication.acquire_token_by_user_federated_identity_credential.params.user_object_id": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_by_user_federated_identity_credential.params.user_object_id",
+    "msal.confidentialclientapplication.acquire_token_by_user_federated_identity_credential.params.username": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_by_user_federated_identity_credential.params.username",
     "msal.confidentialclientapplication.acquire_token_for_client": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_for_client",
     "msal.confidentialclientapplication.acquire_token_for_client.params": "https://msal-python.readthedocs.io/en/latest/",
     "msal.confidentialclientapplication.acquire_token_for_client.params.claims_challenge": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_for_client.params.claims_challenge",
+    "msal.confidentialclientapplication.acquire_token_for_client.params.fmi_path": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_for_client.params.fmi_path",
+    "msal.confidentialclientapplication.acquire_token_for_client.params.forwarded_client_claims": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_for_client.params.forwarded_client_claims",
     "msal.confidentialclientapplication.acquire_token_for_client.params.scopes": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_for_client.params.scopes",
     "msal.confidentialclientapplication.acquire_token_on_behalf_of": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_on_behalf_of",
     "msal.confidentialclientapplication.acquire_token_on_behalf_of.params": "https://msal-python.readthedocs.io/en/latest/",
     "msal.confidentialclientapplication.acquire_token_on_behalf_of.params.claims_challenge": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_on_behalf_of.params.claims_challenge",
+    "msal.confidentialclientapplication.acquire_token_on_behalf_of.params.forwarded_client_claims": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_on_behalf_of.params.forwarded_client_claims",
     "msal.confidentialclientapplication.acquire_token_on_behalf_of.params.scopes": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_on_behalf_of.params.scopes",
     "msal.confidentialclientapplication.acquire_token_on_behalf_of.params.user_assertion": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.acquire_token_on_behalf_of.params.user_assertion",
     "msal.confidentialclientapplication.remove_tokens_for_client": "https://msal-python.readthedocs.io/en/latest/#msal.ConfidentialClientApplication.remove_tokens_for_client",

@@ -1,4 +1,4 @@
-VERSION = "7.1.0"
+VERSION = "7.3.0"
 
 # fmt: off
 MAPPING = {
@@ -77,6 +77,7 @@ MAPPING = {
     "ipykernel.debugger.debugpymessagequeue.get_message": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.debugger.DebugpyMessageQueue.get_message",
     "ipykernel.debugger.debugpymessagequeue.header": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.debugger.DebugpyMessageQueue.HEADER",
     "ipykernel.debugger.debugpymessagequeue.header_length": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.debugger.DebugpyMessageQueue.HEADER_LENGTH",
+    "ipykernel.debugger.debugpymessagequeue.message_queue": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.debugger.DebugpyMessageQueue.message_queue",
     "ipykernel.debugger.debugpymessagequeue.put_tcp_frame": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.debugger.DebugpyMessageQueue.put_tcp_frame",
     "ipykernel.debugger.debugpymessagequeue.separator": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.debugger.DebugpyMessageQueue.SEPARATOR",
     "ipykernel.debugger.debugpymessagequeue.separator_length": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.debugger.DebugpyMessageQueue.SEPARATOR_LENGTH",
@@ -95,10 +96,12 @@ MAPPING = {
     "ipykernel.displayhook.zmqshelldisplayhook.msg": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.displayhook.ZMQShellDisplayHook.msg",
     "ipykernel.displayhook.zmqshelldisplayhook.parent_header": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.displayhook.ZMQShellDisplayHook.parent_header",
     "ipykernel.displayhook.zmqshelldisplayhook.pub_socket": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.displayhook.ZMQShellDisplayHook.pub_socket",
+    "ipykernel.displayhook.zmqshelldisplayhook.register_hook": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.displayhook.ZMQShellDisplayHook.register_hook",
     "ipykernel.displayhook.zmqshelldisplayhook.session": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.displayhook.ZMQShellDisplayHook.session",
     "ipykernel.displayhook.zmqshelldisplayhook.set_parent": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.displayhook.ZMQShellDisplayHook.set_parent",
     "ipykernel.displayhook.zmqshelldisplayhook.start_displayhook": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.displayhook.ZMQShellDisplayHook.start_displayhook",
     "ipykernel.displayhook.zmqshelldisplayhook.topic": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.displayhook.ZMQShellDisplayHook.topic",
+    "ipykernel.displayhook.zmqshelldisplayhook.unregister_hook": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.displayhook.ZMQShellDisplayHook.unregister_hook",
     "ipykernel.displayhook.zmqshelldisplayhook.write_format_data": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.displayhook.ZMQShellDisplayHook.write_format_data",
     "ipykernel.displayhook.zmqshelldisplayhook.write_output_prompt": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.displayhook.ZMQShellDisplayHook.write_output_prompt",
     "ipykernel.embed": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#module-ipykernel.embed",
@@ -306,6 +309,8 @@ MAPPING = {
     "ipykernel.kernelapp.ipkernelapp.context": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelapp.IPKernelApp.context",
     "ipykernel.kernelapp.ipkernelapp.control_socket": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelapp.IPKernelApp.control_socket",
     "ipykernel.kernelapp.ipkernelapp.control_thread": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelapp.IPKernelApp.control_thread",
+    "ipykernel.kernelapp.ipkernelapp.curve_publickey": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelapp.IPKernelApp.curve_publickey",
+    "ipykernel.kernelapp.ipkernelapp.curve_secretkey": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelapp.IPKernelApp.curve_secretkey",
     "ipykernel.kernelapp.ipkernelapp.debug_shell_socket": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelapp.IPKernelApp.debug_shell_socket",
     "ipykernel.kernelapp.ipkernelapp.debugpy_socket": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelapp.IPKernelApp.debugpy_socket",
     "ipykernel.kernelapp.ipkernelapp.displayhook_class": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelapp.IPKernelApp.displayhook_class",
@@ -377,6 +382,7 @@ MAPPING = {
     "ipykernel.kernelbase.kernel.eventloop": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelbase.Kernel.eventloop",
     "ipykernel.kernelbase.kernel.execute_request": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelbase.Kernel.execute_request",
     "ipykernel.kernelbase.kernel.execution_count": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelbase.Kernel.execution_count",
+    "ipykernel.kernelbase.kernel.filter_internal_frames": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelbase.Kernel.filter_internal_frames",
     "ipykernel.kernelbase.kernel.finish_metadata": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelbase.Kernel.finish_metadata",
     "ipykernel.kernelbase.kernel.get_parent": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelbase.Kernel.get_parent",
     "ipykernel.kernelbase.kernel.get_process_metric_value": "https://ipykernel.readthedocs.io/en/stable/api/ipykernel.html#ipykernel.kernelbase.Kernel.get_process_metric_value",

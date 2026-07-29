@@ -1,4 +1,4 @@
-VERSION = "1.76.0"
+VERSION = "1.83.0"
 
 # fmt: off
 MAPPING = {
@@ -63,6 +63,7 @@ MAPPING = {
     "grpc.aio.serverinterceptor.intercept_service": "https://grpc.github.io/grpc/python/grpc_asyncio.html#grpc.aio.ServerInterceptor.intercept_service",
     "grpc.aio.servicercontext": "https://grpc.github.io/grpc/python/grpc_asyncio.html#grpc.aio.ServicerContext",
     "grpc.aio.servicercontext.abort": "https://grpc.github.io/grpc/python/grpc_asyncio.html#grpc.aio.ServicerContext.abort",
+    "grpc.aio.servicercontext.abort_with_status": "https://grpc.github.io/grpc/python/grpc_asyncio.html#grpc.aio.ServicerContext.abort_with_status",
     "grpc.aio.servicercontext.add_done_callback": "https://grpc.github.io/grpc/python/grpc_asyncio.html#grpc.aio.ServicerContext.add_done_callback",
     "grpc.aio.servicercontext.auth_context": "https://grpc.github.io/grpc/python/grpc_asyncio.html#grpc.aio.ServicerContext.auth_context",
     "grpc.aio.servicercontext.cancelled": "https://grpc.github.io/grpc/python/grpc_asyncio.html#grpc.aio.ServicerContext.cancelled",

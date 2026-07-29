@@ -90,6 +90,7 @@ MAPPING = {
     "behave.model.scenario": "https://behave.readthedocs.io/en/latest/api/#behave.model.Scenario",
     "behave.model.scenario.description": "https://behave.readthedocs.io/en/latest/api/#behave.model.Scenario.description",
     "behave.model.scenario.duration": "https://behave.readthedocs.io/en/latest/api/#behave.model.Scenario.duration",
+    "behave.model.scenario.effective_tags": "https://behave.readthedocs.io/en/latest/api/#behave.model.Scenario.effective_tags",
     "behave.model.scenario.feature": "https://behave.readthedocs.io/en/latest/api/#behave.model.Scenario.feature",
     "behave.model.scenario.filename": "https://behave.readthedocs.io/en/latest/api/#behave.model.Scenario.filename",
     "behave.model.scenario.hook_failed": "https://behave.readthedocs.io/en/latest/api/#behave.model.Scenario.hook_failed",

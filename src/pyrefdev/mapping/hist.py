@@ -1,4 +1,4 @@
-VERSION = "2.9.0"
+VERSION = "2.10.1"
 
 # fmt: off
 MAPPING = {
@@ -22,6 +22,8 @@ MAPPING = {
     "hist.accumulators.weightedsum.fill": "https://hist.readthedocs.io/en/latest/reference/hist.accumulators.html#hist.accumulators.WeightedSum.fill",
     "hist.accumulators.weightedsum.value": "https://hist.readthedocs.io/en/latest/reference/hist.accumulators.html#hist.accumulators.WeightedSum.value",
     "hist.accumulators.weightedsum.variance": "https://hist.readthedocs.io/en/latest/reference/hist.accumulators.html#hist.accumulators.WeightedSum.variance",
+    "hist.at": "https://hist.readthedocs.io/en/latest/reference/hist.html#hist.at",
+    "hist.at.value": "https://hist.readthedocs.io/en/latest/reference/hist.html#hist.at.value",
     "hist.axestuple": "https://hist.readthedocs.io/en/latest/reference/hist.axestuple.html",
     "hist.axestuple.arraytuple": "https://hist.readthedocs.io/en/latest/reference/hist.axestuple.html#hist.axestuple.ArrayTuple",
     "hist.axestuple.arraytuple.broadcast": "https://hist.readthedocs.io/en/latest/reference/hist.axestuple.html#hist.axestuple.ArrayTuple.broadcast",
@@ -82,7 +84,6 @@ MAPPING = {
     "hist.basehist.basehist.show": "https://hist.readthedocs.io/en/latest/reference/hist.basehist.html#hist.basehist.BaseHist.show",
     "hist.basehist.basehist.sort": "https://hist.readthedocs.io/en/latest/reference/hist.basehist.html#hist.basehist.BaseHist.sort",
     "hist.basehist.basehist.stack": "https://hist.readthedocs.io/en/latest/reference/hist.basehist.html#hist.basehist.BaseHist.stack",
-    "hist.basehist.basehist.sum": "https://hist.readthedocs.io/en/latest/reference/hist.basehist.html#hist.basehist.BaseHist.sum",
     "hist.basehist.basehist.t": "https://hist.readthedocs.io/en/latest/reference/hist.basehist.html#hist.basehist.BaseHist.T",
     "hist.basehist.density": "https://hist.readthedocs.io/en/latest/reference/hist.html#hist.BaseHist.density",
     "hist.basehist.fill": "https://hist.readthedocs.io/en/latest/reference/hist.html#hist.BaseHist.fill",
@@ -102,7 +103,6 @@ MAPPING = {
     "hist.basehist.show": "https://hist.readthedocs.io/en/latest/reference/hist.html#hist.BaseHist.show",
     "hist.basehist.sort": "https://hist.readthedocs.io/en/latest/reference/hist.html#hist.BaseHist.sort",
     "hist.basehist.stack": "https://hist.readthedocs.io/en/latest/reference/hist.html#hist.BaseHist.stack",
-    "hist.basehist.sum": "https://hist.readthedocs.io/en/latest/reference/hist.html#hist.BaseHist.sum",
     "hist.basehist.supportslessthan": "https://hist.readthedocs.io/en/latest/reference/hist.basehist.html#hist.basehist.SupportsLessThan",
     "hist.basehist.t": "https://hist.readthedocs.io/en/latest/reference/hist.html#hist.BaseHist.T",
     "hist.classichist": "https://hist.readthedocs.io/en/latest/reference/hist.classichist.html",
@@ -150,6 +150,7 @@ MAPPING = {
     "hist.quick_construct.constructproxy.double": "https://hist.readthedocs.io/en/latest/reference/hist.quick_construct.html#hist.quick_construct.ConstructProxy.Double",
     "hist.quick_construct.constructproxy.int64": "https://hist.readthedocs.io/en/latest/reference/hist.quick_construct.html#hist.quick_construct.ConstructProxy.Int64",
     "hist.quick_construct.constructproxy.mean": "https://hist.readthedocs.io/en/latest/reference/hist.quick_construct.html#hist.quick_construct.ConstructProxy.Mean",
+    "hist.quick_construct.constructproxy.multicell": "https://hist.readthedocs.io/en/latest/reference/hist.quick_construct.html#hist.quick_construct.ConstructProxy.MultiCell",
     "hist.quick_construct.constructproxy.unlimited": "https://hist.readthedocs.io/en/latest/reference/hist.quick_construct.html#hist.quick_construct.ConstructProxy.Unlimited",
     "hist.quick_construct.constructproxy.weight": "https://hist.readthedocs.io/en/latest/reference/hist.quick_construct.html#hist.quick_construct.ConstructProxy.Weight",
     "hist.quick_construct.constructproxy.weightedmean": "https://hist.readthedocs.io/en/latest/reference/hist.quick_construct.html#hist.quick_construct.ConstructProxy.WeightedMean",
@@ -205,6 +206,8 @@ MAPPING = {
     "hist.storage.int64.accumulator": "https://hist.readthedocs.io/en/latest/reference/hist.storage.html#hist.storage.Int64.accumulator",
     "hist.storage.mean": "https://hist.readthedocs.io/en/latest/reference/hist.storage.html#hist.storage.Mean",
     "hist.storage.mean.accumulator": "https://hist.readthedocs.io/en/latest/reference/hist.storage.html#hist.storage.Mean.accumulator",
+    "hist.storage.multicell": "https://hist.readthedocs.io/en/latest/reference/hist.storage.html#hist.storage.MultiCell",
+    "hist.storage.multicell.accumulator": "https://hist.readthedocs.io/en/latest/reference/hist.storage.html#hist.storage.MultiCell.accumulator",
     "hist.storage.storage": "https://hist.readthedocs.io/en/latest/reference/hist.storage.html#hist.storage.Storage",
     "hist.storage.storage.accumulator": "https://hist.readthedocs.io/en/latest/reference/hist.storage.html#hist.storage.Storage.accumulator",
     "hist.storage.unlimited": "https://hist.readthedocs.io/en/latest/reference/hist.storage.html#hist.storage.Unlimited",

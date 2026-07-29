@@ -1,4 +1,4 @@
-VERSION = "2.6.0"
+VERSION = "2.7.1"
 
 # fmt: off
 MAPPING = {
@@ -18,6 +18,7 @@ MAPPING = {
     "cookiecutter.exceptions.configdoesnotexistexception": "https://cookiecutter.readthedocs.io/en/stable/cookiecutter.html#cookiecutter.exceptions.ConfigDoesNotExistException",
     "cookiecutter.exceptions.contextdecodingexception": "https://cookiecutter.readthedocs.io/en/stable/cookiecutter.html#cookiecutter.exceptions.ContextDecodingException",
     "cookiecutter.exceptions.cookiecutterexception": "https://cookiecutter.readthedocs.io/en/stable/cookiecutter.html#cookiecutter.exceptions.CookiecutterException",
+    "cookiecutter.exceptions.emptydirnameexception": "https://cookiecutter.readthedocs.io/en/stable/cookiecutter.html#cookiecutter.exceptions.EmptyDirNameException",
     "cookiecutter.exceptions.failedhookexception": "https://cookiecutter.readthedocs.io/en/stable/cookiecutter.html#cookiecutter.exceptions.FailedHookException",
     "cookiecutter.exceptions.invalidconfiguration": "https://cookiecutter.readthedocs.io/en/stable/cookiecutter.html#cookiecutter.exceptions.InvalidConfiguration",
     "cookiecutter.exceptions.invalidmodeexception": "https://cookiecutter.readthedocs.io/en/stable/cookiecutter.html#cookiecutter.exceptions.InvalidModeException",
