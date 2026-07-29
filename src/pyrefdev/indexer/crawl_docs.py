@@ -154,6 +154,10 @@ def crawl_docs(
     if show_overall_progress:
         console.print(f"Crawling documents into {index.docs_directory}")
     packages = get_packages(package)
+    for pkg in packages:
+        if pkg.do_not_update:
+            console.print(f"Skipping {pkg.pypi}: {pkg.do_not_update_reason}")
+    packages = [pkg for pkg in packages if not pkg.do_not_update]
     if not force and not upgrade and not retry_failed_urls:
         packages = [
             pkg
