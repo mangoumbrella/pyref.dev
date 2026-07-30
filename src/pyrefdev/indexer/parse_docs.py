@@ -187,6 +187,13 @@ def _parse_package(
     lines.extend(_create_symbols_map(symbol_to_urls))
     mapping_file = Path(mapping.__file__).parent / f"{package.pypi}.py"
     if in_place:
+        if _would_erase_mapping(package, symbol_to_urls):
+            console.warning(
+                f"Not writing {mapping_file.name}: the crawled docs yielded no "
+                f"symbol beyond the seeds, which would erase the existing mapping. "
+                f"Re-crawl {package.pypi} to rebuild it."
+            )
+            return
         mapping_file.write_text("\n".join(itertools.chain(lines, [""])))
     else:
         if mapping_file.exists():
@@ -203,6 +210,20 @@ def _parse_package(
         )
         if diffs:
             console.print("".join(diffs))
+
+
+def _would_erase_mapping(package: Package, symbol_to_urls: dict[str, str]) -> bool:
+    """Whether writing this mapping would drop symbols that are already shipped.
+
+    Parsing zero crawled files still produces the seed entries, so an empty parse
+    is indistinguishable from a package that genuinely documents nothing unless
+    the mapping already on disk is consulted.
+    """
+    seeds = _SPECIAL_SYMBOLS if package.is_cpython() else set(package.namespaces)
+    if set(symbol_to_urls) - set(seeds):
+        return False
+    previous = mapping.PACKAGE_INFO_MAPPING.get(package.pypi)
+    return previous is not None and len(previous.mapping) > len(symbol_to_urls)
 
 
 def _read_doc(package_docs: Path, file: str) -> str:

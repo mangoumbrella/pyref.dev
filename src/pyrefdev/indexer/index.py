@@ -113,6 +113,16 @@ class IndexState:
     # resumed rather than mistaken for a finished crawl.
     completed: bool = False
 
+    def recorded_nothing(self) -> bool:
+        """Whether no URL in this state ever reached a terminal outcome.
+
+        Saving a page, failing to fetch one, and following a redirect out of the
+        docs all leave a trace, so a state with none of them never observed the
+        site at all. Resuming one finds an empty frontier and would declare the
+        crawl finished without making a single request.
+        """
+        return not (self.file_to_urls or self.failed_urls or self.redirects)
+
     @classmethod
     def loads(cls, content: str) -> "IndexState":
         return cls(**json.loads(content))

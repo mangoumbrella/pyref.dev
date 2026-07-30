@@ -209,6 +209,12 @@ def crawl_docs(
                         console.warning(
                             f"{pkg.pypi}'s latest version {package_version!s} is older than previously crawled {crawl_state.package_version}"
                         )
+                    if crawl_state is not None and crawl_state.recorded_nothing():
+                        console.warning(
+                            f"{pkg.pypi}'s crawl state recorded no page, error or "
+                            f"redirect, re-crawling from {pkg.index_url}"
+                        )
+                        crawl_state = None
                 else:
                     crawl_state = None
                 crawler = _Crawler(
