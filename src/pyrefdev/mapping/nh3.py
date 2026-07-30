@@ -1,4 +1,4 @@
-VERSION = "0.3.2"
+VERSION = "0.3.6"
 
 # fmt: off
 MAPPING = {
@@ -10,5 +10,6 @@ MAPPING = {
     "nh3.clean_text": "https://nh3.readthedocs.io/en/latest/#nh3.clean_text",
     "nh3.cleaner": "https://nh3.readthedocs.io/en/latest/#nh3.Cleaner",
     "nh3.cleaner.clean": "https://nh3.readthedocs.io/en/latest/#nh3.Cleaner.clean",
+    "nh3.escape": "https://nh3.readthedocs.io/en/latest/#nh3.escape",
     "nh3.is_html": "https://nh3.readthedocs.io/en/latest/#nh3.is_html",
 }

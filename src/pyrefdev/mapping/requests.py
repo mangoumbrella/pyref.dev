@@ -1,4 +1,4 @@
-VERSION = "2.32.5"
+VERSION = "2.34.2"
 
 # fmt: off
 MAPPING = {
@@ -103,7 +103,6 @@ MAPPING = {
     "requests.response.encoding": "https://requests.readthedocs.io/en/latest/api/#requests.Response.encoding",
     "requests.response.headers": "https://requests.readthedocs.io/en/latest/api/#requests.Response.headers",
     "requests.response.history": "https://requests.readthedocs.io/en/latest/api/#requests.Response.history",
-    "requests.response.is_permanent_redirect": "https://requests.readthedocs.io/en/latest/api/#requests.Response.is_permanent_redirect",
     "requests.response.is_redirect": "https://requests.readthedocs.io/en/latest/api/#requests.Response.is_redirect",
     "requests.response.iter_content": "https://requests.readthedocs.io/en/latest/api/#requests.Response.iter_content",
     "requests.response.iter_lines": "https://requests.readthedocs.io/en/latest/api/#requests.Response.iter_lines",

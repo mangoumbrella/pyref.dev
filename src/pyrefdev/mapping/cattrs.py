@@ -1,4 +1,4 @@
-VERSION = "25.3.0"
+VERSION = "26.1.0"
 
 # fmt: off
 MAPPING = {
@@ -216,6 +216,16 @@ MAPPING = {
     "cattrs.preconf.tomlkit.tomlkitconverter.omit_if_default": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.tomlkit.TomlkitConverter.omit_if_default",
     "cattrs.preconf.tomlkit.tomlkitconverter.type_overrides": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.tomlkit.TomlkitConverter.type_overrides",
     "cattrs.preconf.tomlkit.tomlkitconverter.use_alias": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.tomlkit.TomlkitConverter.use_alias",
+    "cattrs.preconf.tomllib": "https://catt.rs/en/stable/cattrs.preconf.html#module-cattrs.preconf.tomllib",
+    "cattrs.preconf.tomllib.configure_converter": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.tomllib.configure_converter",
+    "cattrs.preconf.tomllib.make_converter": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.tomllib.make_converter",
+    "cattrs.preconf.tomllib.tomllibconverter": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.tomllib.TomllibConverter",
+    "cattrs.preconf.tomllib.tomllibconverter.dumps": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.tomllib.TomllibConverter.dumps",
+    "cattrs.preconf.tomllib.tomllibconverter.forbid_extra_keys": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.tomllib.TomllibConverter.forbid_extra_keys",
+    "cattrs.preconf.tomllib.tomllibconverter.loads": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.tomllib.TomllibConverter.loads",
+    "cattrs.preconf.tomllib.tomllibconverter.omit_if_default": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.tomllib.TomllibConverter.omit_if_default",
+    "cattrs.preconf.tomllib.tomllibconverter.type_overrides": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.tomllib.TomllibConverter.type_overrides",
+    "cattrs.preconf.tomllib.tomllibconverter.use_alias": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.tomllib.TomllibConverter.use_alias",
     "cattrs.preconf.ujson": "https://catt.rs/en/stable/cattrs.preconf.html#module-cattrs.preconf.ujson",
     "cattrs.preconf.ujson.configure_converter": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.ujson.configure_converter",
     "cattrs.preconf.ujson.make_converter": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.ujson.make_converter",

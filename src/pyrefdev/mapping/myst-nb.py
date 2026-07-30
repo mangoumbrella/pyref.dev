@@ -1,4 +1,4 @@
-VERSION = "1.3.0"
+VERSION = "1.4.0"
 
 # fmt: off
 MAPPING = {
@@ -121,7 +121,6 @@ MAPPING = {
     "myst_nb.sphinx_.parser": "https://myst-nb.readthedocs.io/en/latest/reference/api.html#myst_nb.sphinx_.Parser",
     "myst_nb.sphinx_.parser.config_section": "https://myst-nb.readthedocs.io/en/latest/reference/api.html#myst_nb.sphinx_.Parser.config_section",
     "myst_nb.sphinx_.parser.config_section_dependencies": "https://myst-nb.readthedocs.io/en/latest/reference/api.html#myst_nb.sphinx_.Parser.config_section_dependencies",
-    "myst_nb.sphinx_.parser.env": "https://myst-nb.readthedocs.io/en/latest/reference/api.html#myst_nb.sphinx_.Parser.env",
     "myst_nb.sphinx_.parser.parse": "https://myst-nb.readthedocs.io/en/latest/reference/api.html#myst_nb.sphinx_.Parser.parse",
     "myst_nb.sphinx_.parser.supported": "https://myst-nb.readthedocs.io/en/latest/reference/api.html#myst_nb.sphinx_.Parser.supported",
 }

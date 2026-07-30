@@ -1,4 +1,4 @@
-VERSION = "2.0.6"
+VERSION = "2.1.1"
 
 # fmt: off
 MAPPING = {
@@ -12,6 +12,9 @@ MAPPING = {
     "osmnx.convert.graph_to_gdfs": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.convert.graph_to_gdfs",
     "osmnx.convert.to_digraph": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.convert.to_digraph",
     "osmnx.convert.to_undirected": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.convert.to_undirected",
+    "osmnx.convert.validate_features_gdf": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.convert.validate_features_gdf",
+    "osmnx.convert.validate_graph": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.convert.validate_graph",
+    "osmnx.convert.validate_node_edge_gdfs": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.convert.validate_node_edge_gdfs",
     "osmnx.distance": "https://osmnx.readthedocs.io/en/stable/user-reference.html#module-osmnx.distance",
     "osmnx.distance.add_edge_lengths": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.distance.add_edge_lengths",
     "osmnx.distance.euclidean": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.distance.euclidean",

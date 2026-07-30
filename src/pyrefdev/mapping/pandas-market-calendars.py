@@ -1,4 +1,4 @@
-VERSION = "5.1.3"
+VERSION = "5.4.0"
 
 # fmt: off
 MAPPING = {
@@ -33,6 +33,8 @@ MAPPING = {
     "pandas_market_calendars.mark_session": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.mark_session",
     "pandas_market_calendars.market_calendar": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#module-pandas_market_calendars.market_calendar",
     "pandas_market_calendars.market_calendar.default": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.DEFAULT",
+    "pandas_market_calendars.market_calendar.holidaycalendar": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.HolidayCalendar",
+    "pandas_market_calendars.market_calendar.holidaycalendar.holidays": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.HolidayCalendar.holidays",
     "pandas_market_calendars.market_calendar.marketcalendar": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar",
     "pandas_market_calendars.market_calendar.marketcalendar.add_time": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.add_time",
     "pandas_market_calendars.market_calendar.marketcalendar.adhoc_holidays": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.adhoc_holidays",
@@ -48,6 +50,7 @@ MAPPING = {
     "pandas_market_calendars.market_calendar.marketcalendar.close_time_on": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.close_time_on",
     "pandas_market_calendars.market_calendar.marketcalendar.date_range_htf": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.date_range_htf",
     "pandas_market_calendars.market_calendar.marketcalendar.days_at_time": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.days_at_time",
+    "pandas_market_calendars.market_calendar.marketcalendar.discontinued_market_times": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.discontinued_market_times",
     "pandas_market_calendars.market_calendar.marketcalendar.early_closes": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.early_closes",
     "pandas_market_calendars.market_calendar.marketcalendar.factory": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.factory",
     "pandas_market_calendars.market_calendar.marketcalendar.full_name": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.full_name",
@@ -78,6 +81,7 @@ MAPPING = {
     "pandas_market_calendars.market_calendar.marketcalendar.remove_time": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.remove_time",
     "pandas_market_calendars.market_calendar.marketcalendar.schedule": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.schedule",
     "pandas_market_calendars.market_calendar.marketcalendar.schedule_from_days": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.schedule_from_days",
+    "pandas_market_calendars.market_calendar.marketcalendar.sources": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.sources",
     "pandas_market_calendars.market_calendar.marketcalendar.special_closes": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.special_closes",
     "pandas_market_calendars.market_calendar.marketcalendar.special_closes_adhoc": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.special_closes_adhoc",
     "pandas_market_calendars.market_calendar.marketcalendar.special_dates": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.market_calendar.MarketCalendar.special_dates",
@@ -106,6 +110,7 @@ MAPPING = {
     "pandas_market_calendars.marketcalendar.close_time_on": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.close_time_on",
     "pandas_market_calendars.marketcalendar.date_range_htf": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.date_range_htf",
     "pandas_market_calendars.marketcalendar.days_at_time": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.days_at_time",
+    "pandas_market_calendars.marketcalendar.discontinued_market_times": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.discontinued_market_times",
     "pandas_market_calendars.marketcalendar.early_closes": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.early_closes",
     "pandas_market_calendars.marketcalendar.factory": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.factory",
     "pandas_market_calendars.marketcalendar.full_name": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.full_name",
@@ -136,6 +141,7 @@ MAPPING = {
     "pandas_market_calendars.marketcalendar.remove_time": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.remove_time",
     "pandas_market_calendars.marketcalendar.schedule": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.schedule",
     "pandas_market_calendars.marketcalendar.schedule_from_days": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.schedule_from_days",
+    "pandas_market_calendars.marketcalendar.sources": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.sources",
     "pandas_market_calendars.marketcalendar.special_closes": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.special_closes",
     "pandas_market_calendars.marketcalendar.special_closes_adhoc": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.special_closes_adhoc",
     "pandas_market_calendars.marketcalendar.special_dates": "https://pandas-market-calendars.readthedocs.io/en/latest/pandas_market_calendars.html#pandas_market_calendars.MarketCalendar.special_dates",

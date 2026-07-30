@@ -1,8 +1,13 @@
-VERSION = "1.1.3"
+VERSION = "1.1.5"
 
 # fmt: off
 MAPPING = {
     "pytest_httpserver": "https://pytest-httpserver.readthedocs.io/en/latest/",
+    "pytest_httpserver.bakedhttpserver": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BakedHTTPServer",
+    "pytest_httpserver.bakedhttpserver.bake": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BakedHTTPServer.bake",
+    "pytest_httpserver.bakedhttpserver.expect_oneshot_request": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BakedHTTPServer.expect_oneshot_request",
+    "pytest_httpserver.bakedhttpserver.expect_ordered_request": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BakedHTTPServer.expect_ordered_request",
+    "pytest_httpserver.bakedhttpserver.expect_request": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BakedHTTPServer.expect_request",
     "pytest_httpserver.blockinghttpserver": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BlockingHTTPServer",
     "pytest_httpserver.blockinghttpserver.add_assertion": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BlockingHTTPServer.add_assertion",
     "pytest_httpserver.blockinghttpserver.application": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BlockingHTTPServer.application",
@@ -38,6 +43,7 @@ MAPPING = {
     "pytest_httpserver.httpserver.add_assertion": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.add_assertion",
     "pytest_httpserver.httpserver.application": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.application",
     "pytest_httpserver.httpserver.assert_request_made": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.assert_request_made",
+    "pytest_httpserver.httpserver.bake": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.bake",
     "pytest_httpserver.httpserver.check": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.check",
     "pytest_httpserver.httpserver.check_assertions": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.check_assertions",
     "pytest_httpserver.httpserver.check_handler_errors": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.check_handler_errors",
@@ -96,6 +102,7 @@ MAPPING = {
     "pytest_httpserver.httpserver.thread_target": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.thread_target",
     "pytest_httpserver.httpserver.url_for": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.url_for",
     "pytest_httpserver.httpserver.wait": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.wait",
+    "pytest_httpserver.httpserver.wait_for_server_ready": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.wait_for_server_ready",
     "pytest_httpserver.httpservererror": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServerError",
     "pytest_httpserver.nohandlererror": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.NoHandlerError",
     "pytest_httpserver.requesthandler": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.RequestHandler",
@@ -109,6 +116,7 @@ MAPPING = {
     "pytest_httpserver.requestmatcher.match": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.RequestMatcher.match",
     "pytest_httpserver.requestmatcher.match_data": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.RequestMatcher.match_data",
     "pytest_httpserver.requestmatcher.match_json": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.RequestMatcher.match_json",
+    "pytest_httpserver.requestmatcherkwargs": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.RequestMatcherKwargs",
     "pytest_httpserver.uripattern": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.URIPattern",
     "pytest_httpserver.uripattern.match": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.URIPattern.match",
     "pytest_httpserver.waitingsettings": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.WaitingSettings",

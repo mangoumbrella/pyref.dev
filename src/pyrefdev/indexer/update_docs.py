@@ -28,6 +28,10 @@ def update_docs(
     """Crawl and parse docs."""
     should_update_last_updated_package = package is None
     packages = get_packages(package)
+    for pkg in packages:
+        if pkg.do_not_update:
+            console.print(f"Skipping {pkg.pypi}: {pkg.do_not_update_reason}")
+    packages = [pkg for pkg in packages if not pkg.do_not_update]
     if (last_updated_package_name := index.load_last_updated_package()) is not None:
         package_names = [pkg.pypi for pkg in packages]
         try:

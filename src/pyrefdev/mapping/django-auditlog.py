@@ -1,4 +1,4 @@
-VERSION = "3.3.0"
+VERSION = "3.4.1"
 
 # fmt: off
 MAPPING = {
@@ -20,10 +20,6 @@ MAPPING = {
     "auditlog.models.auditloghistoryfield": "https://django-auditlog.readthedocs.io/en/latest/internals.html#auditlog.models.AuditlogHistoryField",
     "auditlog.models.auditloghistoryfield.bulk_related_objects": "https://django-auditlog.readthedocs.io/en/latest/internals.html#auditlog.models.AuditlogHistoryField.bulk_related_objects",
     "auditlog.models.logentry": "https://django-auditlog.readthedocs.io/en/latest/internals.html#auditlog.models.LogEntry",
-    "auditlog.models.logentry.action": "https://django-auditlog.readthedocs.io/en/latest/internals.html#auditlog.models.LogEntry.Action",
-    "auditlog.models.logentry.changes_dict": "https://django-auditlog.readthedocs.io/en/latest/internals.html#auditlog.models.LogEntry.changes_dict",
-    "auditlog.models.logentry.changes_display_dict": "https://django-auditlog.readthedocs.io/en/latest/internals.html#auditlog.models.LogEntry.changes_display_dict",
-    "auditlog.models.logentry.changes_str": "https://django-auditlog.readthedocs.io/en/latest/internals.html#auditlog.models.LogEntry.changes_str",
     "auditlog.models.logentry.doesnotexist": "https://django-auditlog.readthedocs.io/en/latest/internals.html#auditlog.models.LogEntry.DoesNotExist",
     "auditlog.models.logentry.multipleobjectsreturned": "https://django-auditlog.readthedocs.io/en/latest/internals.html#auditlog.models.LogEntry.MultipleObjectsReturned",
     "auditlog.models.logentrymanager": "https://django-auditlog.readthedocs.io/en/latest/internals.html#auditlog.models.LogEntryManager",

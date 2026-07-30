@@ -1,4 +1,4 @@
-VERSION = "2.2.0"
+VERSION = "2.3.1"
 
 # fmt: off
 MAPPING = {
@@ -19,7 +19,9 @@ MAPPING = {
     "parfive.sessionconfig.aiohttp_session_generator": "https://parfive.readthedocs.io/en/stable/api/parfive.SessionConfig.html#parfive.SessionConfig.aiohttp_session_generator",
     "parfive.sessionconfig.chunksize": "https://parfive.readthedocs.io/en/stable/api/parfive.SessionConfig.html#parfive.SessionConfig.chunksize",
     "parfive.sessionconfig.done_callbacks": "https://parfive.readthedocs.io/en/stable/api/parfive.SessionConfig.html#parfive.SessionConfig.done_callbacks",
+    "parfive.sessionconfig.env": "https://parfive.readthedocs.io/en/stable/api/parfive.SessionConfig.html#parfive.SessionConfig.env",
     "parfive.sessionconfig.file_progress": "https://parfive.readthedocs.io/en/stable/api/parfive.SessionConfig.html#parfive.SessionConfig.file_progress",
+    "parfive.sessionconfig.headers": "https://parfive.readthedocs.io/en/stable/api/parfive.SessionConfig.html#parfive.SessionConfig.headers",
     "parfive.sessionconfig.http_proxy": "https://parfive.readthedocs.io/en/stable/api/parfive.SessionConfig.html#parfive.SessionConfig.http_proxy",
     "parfive.sessionconfig.https_proxy": "https://parfive.readthedocs.io/en/stable/api/parfive.SessionConfig.html#parfive.SessionConfig.https_proxy",
     "parfive.sessionconfig.log_level": "https://parfive.readthedocs.io/en/stable/api/parfive.SessionConfig.html#parfive.SessionConfig.log_level",

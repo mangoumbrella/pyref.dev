@@ -1,10 +1,11 @@
-VERSION = "6.2.0"
+VERSION = "6.14.2"
 
 # fmt: off
 MAPPING = {
     "pypdf": "https://pypdf.readthedocs.io/en/stable/",
     "pypdf._doc_common": "https://pypdf.readthedocs.io/en/stable/modules/PdfDocCommon.html",
     "pypdf._doc_common.pdfdoccommon": "https://pypdf.readthedocs.io/en/stable/modules/PdfDocCommon.html#pypdf._doc_common.PdfDocCommon",
+    "pypdf._doc_common.pdfdoccommon.are_permissions_valid": "https://pypdf.readthedocs.io/en/stable/modules/PdfDocCommon.html#pypdf._doc_common.PdfDocCommon.are_permissions_valid",
     "pypdf._doc_common.pdfdoccommon.attachment_list": "https://pypdf.readthedocs.io/en/stable/modules/PdfDocCommon.html#pypdf._doc_common.PdfDocCommon.attachment_list",
     "pypdf._doc_common.pdfdoccommon.attachments": "https://pypdf.readthedocs.io/en/stable/modules/PdfDocCommon.html#pypdf._doc_common.PdfDocCommon.attachments",
     "pypdf._doc_common.pdfdoccommon.decode_permissions": "https://pypdf.readthedocs.io/en/stable/modules/PdfDocCommon.html#pypdf._doc_common.PdfDocCommon.decode_permissions",
@@ -41,6 +42,8 @@ MAPPING = {
     "pypdf._page.imagefile.data": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.ImageFile.data",
     "pypdf._page.imagefile.image": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.ImageFile.image",
     "pypdf._page.imagefile.indirect_reference": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.ImageFile.indirect_reference",
+    "pypdf._page.imagefile.is_displayed": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.ImageFile.is_displayed",
+    "pypdf._page.imagefile.is_inline": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.ImageFile.is_inline",
     "pypdf._page.imagefile.name": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.ImageFile.name",
     "pypdf._page.imagefile.replace": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.ImageFile.replace",
     "pypdf._page.pageobject": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject",
@@ -57,6 +60,7 @@ MAPPING = {
     "pypdf._page.pageobject.hash_bin": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.hash_bin",
     "pypdf._page.pageobject.hash_value_data": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.hash_value_data",
     "pypdf._page.pageobject.images": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.images",
+    "pypdf._page.pageobject.inline_images": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.inline_images",
     "pypdf._page.pageobject.mediabox": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.mediabox",
     "pypdf._page.pageobject.merge_page": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.merge_page",
     "pypdf._page.pageobject.merge_rotated_page": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.merge_rotated_page",
@@ -238,6 +242,7 @@ MAPPING = {
     "pypdf.generic.booleanobject.clone": "https://pypdf.readthedocs.io/en/stable/modules/generic.html#pypdf.generic.BooleanObject.clone",
     "pypdf.generic.booleanobject.hash_bin": "https://pypdf.readthedocs.io/en/stable/modules/generic.html#pypdf.generic.BooleanObject.hash_bin",
     "pypdf.generic.booleanobject.read_from_stream": "https://pypdf.readthedocs.io/en/stable/modules/generic.html#pypdf.generic.BooleanObject.read_from_stream",
+    "pypdf.generic.booleanobject.value": "https://pypdf.readthedocs.io/en/stable/modules/generic.html#pypdf.generic.BooleanObject.value",
     "pypdf.generic.booleanobject.write_to_stream": "https://pypdf.readthedocs.io/en/stable/modules/generic.html#pypdf.generic.BooleanObject.write_to_stream",
     "pypdf.generic.bytestringobject": "https://pypdf.readthedocs.io/en/stable/modules/generic.html#pypdf.generic.ByteStringObject",
     "pypdf.generic.bytestringobject.clone": "https://pypdf.readthedocs.io/en/stable/modules/generic.html#pypdf.generic.ByteStringObject.clone",
@@ -458,6 +463,7 @@ MAPPING = {
     "pypdf.passwordtype.user_password": "https://pypdf.readthedocs.io/en/stable/modules/PdfReader.html#pypdf.PasswordType.USER_PASSWORD",
     "pypdf.pdfreader": "https://pypdf.readthedocs.io/en/stable/modules/PdfReader.html#pypdf.PdfReader",
     "pypdf.pdfreader.add_form_topname": "https://pypdf.readthedocs.io/en/stable/modules/PdfReader.html#pypdf.PdfReader.add_form_topname",
+    "pypdf.pdfreader.are_permissions_valid": "https://pypdf.readthedocs.io/en/stable/modules/PdfReader.html#pypdf.PdfReader.are_permissions_valid",
     "pypdf.pdfreader.attachment_list": "https://pypdf.readthedocs.io/en/stable/modules/PdfReader.html#pypdf.PdfReader.attachment_list",
     "pypdf.pdfreader.attachments": "https://pypdf.readthedocs.io/en/stable/modules/PdfReader.html#pypdf.PdfReader.attachments",
     "pypdf.pdfreader.cache_get_indirect_object": "https://pypdf.readthedocs.io/en/stable/modules/PdfReader.html#pypdf.PdfReader.cache_get_indirect_object",
@@ -515,6 +521,7 @@ MAPPING = {
     "pypdf.pdfwriter.add_uri": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.add_uri",
     "pypdf.pdfwriter.append": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.append",
     "pypdf.pdfwriter.append_pages_from_reader": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.append_pages_from_reader",
+    "pypdf.pdfwriter.are_permissions_valid": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.are_permissions_valid",
     "pypdf.pdfwriter.attachment_list": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.attachment_list",
     "pypdf.pdfwriter.attachments": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.attachments",
     "pypdf.pdfwriter.clean_page": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.clean_page",

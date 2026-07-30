@@ -1,4 +1,4 @@
-VERSION = "0.14.3"
+VERSION = "0.14.4"
 
 # fmt: off
 MAPPING = {
@@ -105,6 +105,7 @@ MAPPING = {
     "mizani.transforms.datetime_trans.transform": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.datetime_trans.transform",
     "mizani.transforms.datetime_trans.tzinfo": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.datetime_trans.tzinfo",
     "mizani.transforms.exp_trans": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.exp_trans",
+    "mizani.transforms.exp_trans.base": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.exp_trans.base",
     "mizani.transforms.exp_trans.inverse": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.exp_trans.inverse",
     "mizani.transforms.exp_trans.transform": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.exp_trans.transform",
     "mizani.transforms.gettrans": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.gettrans",
@@ -118,6 +119,7 @@ MAPPING = {
     "mizani.transforms.log1p_trans.transform": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.log1p_trans.transform",
     "mizani.transforms.log2_trans": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.log2_trans",
     "mizani.transforms.log_trans": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.log_trans",
+    "mizani.transforms.log_trans.base": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.log_trans.base",
     "mizani.transforms.log_trans.inverse": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.log_trans.inverse",
     "mizani.transforms.log_trans.transform": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.log_trans.transform",
     "mizani.transforms.logit_trans": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.logit_trans",
@@ -130,6 +132,7 @@ MAPPING = {
     "mizani.transforms.probability_trans.transform": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.probability_trans.transform",
     "mizani.transforms.probit_trans": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.probit_trans",
     "mizani.transforms.pseudo_log_trans": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.pseudo_log_trans",
+    "mizani.transforms.pseudo_log_trans.base": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.pseudo_log_trans.base",
     "mizani.transforms.pseudo_log_trans.inverse": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.pseudo_log_trans.inverse",
     "mizani.transforms.pseudo_log_trans.minor_breaks": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.pseudo_log_trans.minor_breaks",
     "mizani.transforms.pseudo_log_trans.transform": "https://mizani.readthedocs.io/en/stable/transforms.html#mizani.transforms.pseudo_log_trans.transform",

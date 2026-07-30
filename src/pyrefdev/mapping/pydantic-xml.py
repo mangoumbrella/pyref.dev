@@ -1,4 +1,4 @@
-VERSION = "2.18.0"
+VERSION = "2.21.0"
 
 # fmt: off
 MAPPING = {
@@ -16,6 +16,7 @@ MAPPING = {
     "pydantic_xml.create_model": "https://pydantic-xml.readthedocs.io/en/latest/pages/api.html#pydantic_xml.create_model",
     "pydantic_xml.element": "https://pydantic-xml.readthedocs.io/en/latest/pages/api.html#pydantic_xml.element",
     "pydantic_xml.modelerror": "https://pydantic-xml.readthedocs.io/en/latest/pages/api.html#pydantic_xml.ModelError",
+    "pydantic_xml.noxml": "https://pydantic-xml.readthedocs.io/en/latest/pages/api.html#pydantic_xml.NoXml",
     "pydantic_xml.parsingerror": "https://pydantic-xml.readthedocs.io/en/latest/pages/api.html#pydantic_xml.ParsingError",
     "pydantic_xml.rootxmlmodel": "https://pydantic-xml.readthedocs.io/en/latest/pages/api.html#pydantic_xml.RootXmlModel",
     "pydantic_xml.rootxmlmodel.model_config": "https://pydantic-xml.readthedocs.io/en/latest/pages/api.html#pydantic_xml.RootXmlModel.model_config",

@@ -19,10 +19,18 @@ class Package:
     # hand-written docs that have no per-symbol anchors to crawl.
     parse_documented_imports: bool = False
     indexed: bool = True
+    # Skip crawling/updating this package's docs.
+    do_not_update: bool = False
+    do_not_update_reason: str = ""
 
     def __post_init__(self):
         if not self.namespaces:
             self.namespaces = [self.pypi.replace("-", "_")]
+        if self.do_not_update and not self.do_not_update_reason:
+            raise ValueError(
+                f"{self.pypi}: do_not_update_reason must be set when do_not_update "
+                "is True"
+            )
 
     def is_cpython(self):
         return self.pypi == "python"
@@ -129,7 +137,7 @@ _packages = [
     Package(pypi="curated-transformers", index_url="https://curated-transformers.readthedocs.io/en/latest/"),
     Package(pypi="cyclopts", index_url="https://cyclopts.readthedocs.io/en/latest/"),
     Package(pypi="cython", index_url="https://cython.readthedocs.io/en/latest/"),
-    Package(pypi="dataclass-wizard", index_url="https://dataclass-wizard.readthedocs.io/en/latest/"),
+    Package(pypi="dataclass-wizard", index_url="https://dcw.ritviknag.com/en/latest/"),
     Package(pypi="dataset", index_url="https://dataset.readthedocs.io/en/latest/"),
     Package(pypi="dateparser", index_url="https://dateparser.readthedocs.io/en/latest/"),
     Package(pypi="dbfread", index_url="https://dbfread.readthedocs.io/en/latest/"),
@@ -208,7 +216,7 @@ _packages = [
     Package(pypi="flask-sitemap", index_url="https://flask-sitemap.readthedocs.io/en/latest/"),
     Package(pypi="flask-socketio", index_url="https://flask-socketio.readthedocs.io/en/latest/"),
     Package(pypi="flask", index_url="https://flask.palletsprojects.com/en/stable/"),
-    Package(pypi="flatdict", index_url="https://flatdict.readthedocs.io/en/stable/"),
+    Package(pypi="flatdict", index_url="https://flatdict.readthedocs.io/en/stable/", do_not_update=True, do_not_update_reason="https://flatdict.readthedocs.io returns 404 as of 2026-07-29"),
     Package(pypi="flupy", index_url="https://flupy.readthedocs.io/en/latest/"),
     Package(pypi="frozenlist", index_url="https://frozenlist.aio-libs.org/en/latest/"),
     Package(pypi="fsspec", index_url="https://filesystem-spec.readthedocs.io/en/latest/"),
@@ -237,7 +245,8 @@ _packages = [
     Package(pypi="haggis", index_url="https://haggis.readthedocs.io/en/stable/"),
     Package(pypi="hdbscan", index_url="https://hdbscan.readthedocs.io/en/latest/"),
     Package(pypi="hexbytes", index_url="https://hexbytes.readthedocs.io/en/stable/"),
-    Package(pypi="hijri-converter", index_url="https://hijri-converter.readthedocs.io/en/stable/"),
+    Package(pypi="hijri-converter", index_url="https://hijri-converter.readthedocs.io/en/stable/", do_not_update=True, do_not_update_reason="hijri-converter was replaced by hijridate"),
+    Package(pypi="hijridate", index_url="https://hijridate.readthedocs.io/en/stable/"),
     Package(pypi="hist", index_url="https://hist.readthedocs.io/en/latest/"),
     Package(pypi="holidays", index_url="https://holidays.readthedocs.io/en/latest/"),
     Package(pypi="honcho", index_url="https://honcho.readthedocs.io/en/latest/"),
@@ -342,14 +351,14 @@ _packages = [
     Package(pypi="ocrmypdf", index_url="https://ocrmypdf.readthedocs.io/en/latest/"),
     Package(pypi="olefile", index_url="https://olefile.readthedocs.io/en/latest/"),
     Package(pypi="openapi-core", index_url="https://openapi-core.readthedocs.io/en/latest/"),
-    Package(pypi="ops", index_url="https://ops.readthedocs.io/en/latest/"),
+    Package(pypi="ops", index_url="https://canonical.com/juju/docs/ops/latest/reference"),
     Package(pypi="optax", index_url="https://optax.readthedocs.io/en/latest/"),
     Package(pypi="optree", index_url="https://optree.readthedocs.io/en/latest/"),
     Package(pypi="optuna-integration", index_url="https://optuna-integration.readthedocs.io/en/latest/"),
     Package(pypi="osmnx", index_url="https://osmnx.readthedocs.io/en/stable/"),
     Package(pypi="outcome", index_url="https://outcome.readthedocs.io/en/latest/"),
     Package(pypi="packaging", index_url="https://packaging.pypa.io/en/stable/"),
-    Package(pypi="pamqp", index_url="https://pamqp.readthedocs.io/en/stable/"),
+    Package(pypi="pamqp", index_url="https://gmr.github.io/pamqp/"),
     Package(pypi="pandapower", index_url="https://pandapower.readthedocs.io/en/latest/"),
     Package(pypi="pandas-datareader", index_url="https://pandas-datareader.readthedocs.io/en/latest/"),
     Package(pypi="pandas-market-calendars", index_url="https://pandas-market-calendars.readthedocs.io/en/latest/"),
@@ -395,7 +404,7 @@ _packages = [
     Package(pypi="property-manager", index_url="https://property-manager.readthedocs.io/en/latest/"),
     Package(pypi="protobuf", namespaces=["google.protobuf"], index_url="https://googleapis.dev/python/protobuf/latest/"),
     Package(pypi="prov", index_url="https://prov.readthedocs.io/en/latest/"),
-    Package(pypi="psutil", index_url="https://psutil.readthedocs.io/en/latest/"),
+    Package(pypi="psutil", index_url="https://psutil.io/"),
     Package(pypi="psygnal", index_url="https://psygnal.readthedocs.io/en/latest/"),
     Package(pypi="py-ecc", index_url="https://py-ecc.readthedocs.io/en/latest/"),
     Package(pypi="py", index_url="https://py.readthedocs.io/en/latest/"),
@@ -403,9 +412,9 @@ _packages = [
     Package(pypi="pyairtable", index_url="https://pyairtable.readthedocs.io/en/stable/"),
     Package(pypi="pyarrow", index_url="https://arrow.apache.org/docs/python/api.html"),
     Package(pypi="pyasn1", index_url="https://pyasn1.readthedocs.io/en/latest/contents.html"),
-    Package(pypi="pydantic-core", index_url="https://docs.pydantic.dev/latest/"),
+    Package(pypi="pydantic-core", index_url="https://pydantic.dev/docs/validation/latest"),
     Package(pypi="pydantic-xml", index_url="https://pydantic-xml.readthedocs.io/en/latest/"),
-    Package(pypi="pydantic", index_url="https://docs.pydantic.dev/latest/"),
+    Package(pypi="pydantic", index_url="https://pydantic.dev/docs/validation/latest"),
     Package(pypi="pydata-google-auth", index_url="https://pydata-google-auth.readthedocs.io/en/latest/"),
     Package(pypi="pydata-sphinx-theme", index_url="https://pydata-sphinx-theme.readthedocs.io/en/stable/"),
     Package(pypi="pydeequ", index_url="https://pydeequ.readthedocs.io/en/latest/"),
@@ -420,7 +429,7 @@ _packages = [
     Package(pypi="pyhdfe", index_url="https://pyhdfe.readthedocs.io/en/stable/"),
     Package(pypi="pyhmmer", index_url="https://pyhmmer.readthedocs.io/en/stable/"),
     Package(pypi="pyinstrument", index_url="https://pyinstrument.readthedocs.io/en/latest/"),
-    Package(pypi="pyjson5", index_url="https://pyjson5.readthedocs.io/en/latest/"),
+    Package(pypi="pyjson5", index_url="https://pyjson5.k6i.de/en/latest/"),
     Package(pypi="pyjwt", namespaces=["jwt"], index_url="https://pyjwt.readthedocs.io/en/stable/"),
     Package(pypi="pylabel", index_url="https://pylabel.readthedocs.io/en/latest/"),
     Package(pypi="pylatexenc", index_url="https://pylatexenc.readthedocs.io/en/latest/"),
@@ -473,7 +482,7 @@ _packages = [
     Package(pypi="python-dateutil", namespaces=["dateutil"], index_url="https://dateutil.readthedocs.io/en/stable/"),
     Package(pypi="python-frontmatter", namespaces=["frontmatter"], index_url="https://python-frontmatter.readthedocs.io/en/latest/"),
     Package(pypi="python-gitlab", namespaces=["gitlab"], index_url="https://python-gitlab.readthedocs.io/en/stable/"),
-    Package(pypi="python-ldap", namespaces=["ldap"], index_url="https://www.python-ldap.org/en/python-ldap-3.4.3/"),
+    Package(pypi="python-ldap", namespaces=["ldap"], index_url="https://www.python-ldap.org/en/latest"),
     Package(pypi="python-retry", index_url="https://py-retry.readthedocs.io/en/latest/"),
     Package(pypi="python-statemachine", index_url="https://python-statemachine.readthedocs.io/en/latest/"),
     Package(pypi="python-utils", index_url="https://python-utils.readthedocs.io/en/latest/"),

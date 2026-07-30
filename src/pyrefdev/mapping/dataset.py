@@ -1,4 +1,4 @@
-VERSION = "1.6.2"
+VERSION = "2.0.0"
 
 # fmt: off
 MAPPING = {
@@ -6,6 +6,7 @@ MAPPING = {
     "dataset.connect": "https://dataset.readthedocs.io/en/latest/api.html#dataset.connect",
     "dataset.database": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Database",
     "dataset.database.begin": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Database.begin",
+    "dataset.database.close": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Database.close",
     "dataset.database.commit": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Database.commit",
     "dataset.database.create_table": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Database.create_table",
     "dataset.database.get_table": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Database.get_table",
@@ -13,6 +14,7 @@ MAPPING = {
     "dataset.database.query": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Database.query",
     "dataset.database.rollback": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Database.rollback",
     "dataset.database.tables": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Database.tables",
+    "dataset.database.views": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Database.views",
     "dataset.table": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Table",
     "dataset.table.__iter__": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Table.__iter__",
     "dataset.table.__len__": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Table.__len__",
@@ -26,6 +28,7 @@ MAPPING = {
     "dataset.table.distinct": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Table.distinct",
     "dataset.table.drop": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Table.drop",
     "dataset.table.drop_column": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Table.drop_column",
+    "dataset.table.exists": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Table.exists",
     "dataset.table.find": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Table.find",
     "dataset.table.find_one": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Table.find_one",
     "dataset.table.has_column": "https://dataset.readthedocs.io/en/latest/api.html#dataset.Table.has_column",

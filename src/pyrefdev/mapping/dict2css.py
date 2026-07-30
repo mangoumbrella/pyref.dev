@@ -1,4 +1,4 @@
-VERSION = "0.3.0.post1"
+VERSION = "0.6.0"
 
 # fmt: off
 MAPPING = {
@@ -12,15 +12,12 @@ MAPPING = {
     "dict2css.important": "https://dict2css.readthedocs.io/en/latest/api/dict2css.html#dict2css.IMPORTANT",
     "dict2css.load": "https://dict2css.readthedocs.io/en/latest/api/dict2css.html#dict2css.load",
     "dict2css.loads": "https://dict2css.readthedocs.io/en/latest/api/dict2css.html#dict2css.loads",
-    "dict2css.make_style": "https://dict2css.readthedocs.io/en/latest/api/dict2css.html#dict2css.make_style",
     "dict2css.serializer": "https://dict2css.readthedocs.io/en/latest/api/serializer.html",
     "dict2css.serializer.cssserializer": "https://dict2css.readthedocs.io/en/latest/api/serializer.html#dict2css.serializer.CSSSerializer",
+    "dict2css.serializer.cssserializer.default": "https://dict2css.readthedocs.io/en/latest/api/serializer.html#dict2css.serializer.CSSSerializer.default",
+    "dict2css.serializer.cssserializer.encode": "https://dict2css.readthedocs.io/en/latest/api/serializer.html#dict2css.serializer.CSSSerializer.encode",
+    "dict2css.serializer.cssserializer.iterencode": "https://dict2css.readthedocs.io/en/latest/api/serializer.html#dict2css.serializer.CSSSerializer.iterencode",
     "dict2css.serializer.cssserializer.reset_style": "https://dict2css.readthedocs.io/en/latest/api/serializer.html#dict2css.serializer.CSSSerializer.reset_style",
     "dict2css.serializer.cssserializer.use": "https://dict2css.readthedocs.io/en/latest/api/serializer.html#dict2css.serializer.CSSSerializer.use",
     "dict2css.style": "https://dict2css.readthedocs.io/en/latest/api/dict2css.html#dict2css.Style",
-    "dict2css.stylesheet": "https://dict2css.readthedocs.io/en/latest/api/dict2css.html#dict2css.StyleSheet",
-    "dict2css.stylesheet.add": "https://dict2css.readthedocs.io/en/latest/api/dict2css.html#dict2css.StyleSheet.add",
-    "dict2css.stylesheet.add_media_styles": "https://dict2css.readthedocs.io/en/latest/api/dict2css.html#dict2css.StyleSheet.add_media_styles",
-    "dict2css.stylesheet.add_style": "https://dict2css.readthedocs.io/en/latest/api/dict2css.html#dict2css.StyleSheet.add_style",
-    "dict2css.stylesheet.tostring": "https://dict2css.readthedocs.io/en/latest/api/dict2css.html#dict2css.StyleSheet.tostring",
 }

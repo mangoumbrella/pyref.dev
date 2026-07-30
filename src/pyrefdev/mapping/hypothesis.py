@@ -1,9 +1,12 @@
-VERSION = "6.147.0"
+VERSION = "6.163.0"
 
 # fmt: off
 MAPPING = {
     "hypothesis": "https://hypothesis.readthedocs.io/en/latest/",
     "hypothesis.assume": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.assume",
+    "hypothesis.core": "https://hypothesis.readthedocs.io/en/latest/reference/api.html",
+    "hypothesis.core.hypothesishandle": "https://hypothesis.readthedocs.io/en/latest/reference/api.html",
+    "hypothesis.core.hypothesishandle.fuzz_one_input": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.core.HypothesisHandle.fuzz_one_input",
     "hypothesis.currently_in_test_context": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.currently_in_test_context",
     "hypothesis.database": "https://hypothesis.readthedocs.io/en/latest/reference/api.html",
     "hypothesis.database.backgroundwritedatabase": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.database.BackgroundWriteDatabase",
@@ -33,6 +36,7 @@ MAPPING = {
     "hypothesis.errors.hypothesisdeprecationwarning": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.HypothesisDeprecationWarning",
     "hypothesis.errors.hypothesisexception": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.HypothesisException",
     "hypothesis.errors.invalidargument": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.InvalidArgument",
+    "hypothesis.errors.noninteractiveexamplewarning": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.NonInteractiveExampleWarning",
     "hypothesis.errors.resolutionfailed": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.ResolutionFailed",
     "hypothesis.errors.unsatisfiable": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.Unsatisfiable",
     "hypothesis.event": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.event",

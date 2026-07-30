@@ -1,4 +1,4 @@
-VERSION = "1.8.0"
+VERSION = "1.8.1"
 
 # fmt: off
 MAPPING = {
@@ -119,6 +119,7 @@ MAPPING = {
     "pysubs2.ssafile.fps": "https://pysubs2.readthedocs.io/en/latest/api-reference.html#pysubs2.SSAFile.fps",
     "pysubs2.ssafile.from_file": "https://pysubs2.readthedocs.io/en/latest/api-reference.html#pysubs2.SSAFile.from_file",
     "pysubs2.ssafile.from_string": "https://pysubs2.readthedocs.io/en/latest/api-reference.html#pysubs2.SSAFile.from_string",
+    "pysubs2.ssafile.graphics_opaque": "https://pysubs2.readthedocs.io/en/latest/api-reference.html#pysubs2.SSAFile.graphics_opaque",
     "pysubs2.ssafile.import_styles": "https://pysubs2.readthedocs.io/en/latest/api-reference.html#pysubs2.SSAFile.import_styles",
     "pysubs2.ssafile.info": "https://pysubs2.readthedocs.io/en/latest/api-reference.html#pysubs2.SSAFile.info",
     "pysubs2.ssafile.load": "https://pysubs2.readthedocs.io/en/latest/api-reference.html#pysubs2.SSAFile.load",

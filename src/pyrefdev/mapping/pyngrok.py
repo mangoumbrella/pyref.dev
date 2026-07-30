@@ -1,4 +1,4 @@
-VERSION = "7.4.1"
+VERSION = "8.1.2"
 
 # fmt: off
 MAPPING = {
@@ -53,7 +53,7 @@ MAPPING = {
     "pyngrok.exception.pyngroksecurityerror": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.exception.PyngrokSecurityError",
     "pyngrok.installer": "https://pyngrok.readthedocs.io/en/latest/api.html#module-pyngrok.installer",
     "pyngrok.installer._download_file": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.installer._download_file",
-    "pyngrok.installer._install_ngrok_zip": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.installer._install_ngrok_zip",
+    "pyngrok.installer._install_ngrok_archive": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.installer._install_ngrok_archive",
     "pyngrok.installer.get_arch": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.installer.get_arch",
     "pyngrok.installer.get_default_config": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.installer.get_default_config",
     "pyngrok.installer.get_default_ngrok_dir": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.installer.get_default_ngrok_dir",
@@ -99,7 +99,6 @@ MAPPING = {
     "pyngrok.ngrok.ngroktunnel.public_url": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.NgrokTunnel.public_url",
     "pyngrok.ngrok.ngroktunnel.pyngrok_config": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.NgrokTunnel.pyngrok_config",
     "pyngrok.ngrok.ngroktunnel.refresh_metrics": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.NgrokTunnel.refresh_metrics",
-    "pyngrok.ngrok.ngroktunnel.uri": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.NgrokTunnel.uri",
     "pyngrok.ngrok.run": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.run",
     "pyngrok.ngrok.set_api_key": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.set_api_key",
     "pyngrok.ngrok.set_auth_token": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.set_auth_token",

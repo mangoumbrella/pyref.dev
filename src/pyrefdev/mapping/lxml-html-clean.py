@@ -1,4 +1,4 @@
-VERSION = "0.4.3"
+VERSION = "0.4.5"
 
 # fmt: off
 MAPPING = {
@@ -25,6 +25,8 @@ MAPPING = {
     "lxml_html_clean.clean.clean_html": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.clean_html",
     "lxml_html_clean.clean.cleaner": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner",
     "lxml_html_clean.clean.cleaner._comments_re": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._comments_re",
+    "lxml_html_clean.clean.cleaner._css_unicode_escape_re": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._css_unicode_escape_re",
+    "lxml_html_clean.clean.cleaner._decode_css_unicode_escapes": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._decode_css_unicode_escapes",
     "lxml_html_clean.clean.cleaner._find_comments": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._find_comments",
     "lxml_html_clean.clean.cleaner._has_sneaky_javascript": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._has_sneaky_javascript",
     "lxml_html_clean.clean.cleaner._kill_elements": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._kill_elements",

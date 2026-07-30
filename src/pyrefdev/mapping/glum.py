@@ -1,4 +1,4 @@
-VERSION = "3.1.2"
+VERSION = "3.4.1"
 
 # fmt: off
 MAPPING = {
@@ -116,6 +116,7 @@ MAPPING = {
     "glum.generalizedlinearregressorcv.get_metadata_routing": "https://glum.readthedocs.io/en/latest/glm.html#glum.GeneralizedLinearRegressorCV.get_metadata_routing",
     "glum.generalizedlinearregressorcv.get_params": "https://glum.readthedocs.io/en/latest/glm.html#glum.GeneralizedLinearRegressorCV.get_params",
     "glum.generalizedlinearregressorcv.intercept_": "https://glum.readthedocs.io/en/latest/glm.html#glum.GeneralizedLinearRegressorCV.intercept_",
+    "glum.generalizedlinearregressorcv.intercept_path_": "https://glum.readthedocs.io/en/latest/glm.html#glum.GeneralizedLinearRegressorCV.intercept_path_",
     "glum.generalizedlinearregressorcv.l1_ratio_": "https://glum.readthedocs.io/en/latest/glm.html#glum.GeneralizedLinearRegressorCV.l1_ratio_",
     "glum.generalizedlinearregressorcv.linear_predictor": "https://glum.readthedocs.io/en/latest/glm.html#glum.GeneralizedLinearRegressorCV.linear_predictor",
     "glum.generalizedlinearregressorcv.link_instance": "https://glum.readthedocs.io/en/latest/glm.html#glum.GeneralizedLinearRegressorCV.link_instance",
@@ -126,6 +127,7 @@ MAPPING = {
     "glum.generalizedlinearregressorcv.score": "https://glum.readthedocs.io/en/latest/glm.html#glum.GeneralizedLinearRegressorCV.score",
     "glum.generalizedlinearregressorcv.set_params": "https://glum.readthedocs.io/en/latest/glm.html#glum.GeneralizedLinearRegressorCV.set_params",
     "glum.generalizedlinearregressorcv.std_errors": "https://glum.readthedocs.io/en/latest/glm.html#glum.GeneralizedLinearRegressorCV.std_errors",
+    "glum.generalizedlinearregressorcv.train_deviance_path_": "https://glum.readthedocs.io/en/latest/glm.html#glum.GeneralizedLinearRegressorCV.train_deviance_path_",
     "glum.generalizedlinearregressorcv.wald_test": "https://glum.readthedocs.io/en/latest/glm.html#glum.GeneralizedLinearRegressorCV.wald_test",
     "glum.get_link": "https://glum.readthedocs.io/en/latest/glm.html#glum.get_link",
     "glum.identitylink": "https://glum.readthedocs.io/en/latest/glm.html#glum.IdentityLink",

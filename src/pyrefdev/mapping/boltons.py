@@ -1,4 +1,4 @@
-VERSION = "25.0.0"
+VERSION = "26.1.0"
 
 # fmt: off
 MAPPING = {
@@ -343,6 +343,7 @@ MAPPING = {
     "boltons.strutils.gunzip_bytes": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.gunzip_bytes",
     "boltons.strutils.gzip_bytes": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.gzip_bytes",
     "boltons.strutils.html2text": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.html2text",
+    "boltons.strutils.human_readable_list": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.human_readable_list",
     "boltons.strutils.indent": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.indent",
     "boltons.strutils.int_ranges_from_int_list": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.int_ranges_from_int_list",
     "boltons.strutils.is_ascii": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.is_ascii",

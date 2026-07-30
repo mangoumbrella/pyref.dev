@@ -1,4 +1,4 @@
-VERSION = "1.14.2"
+VERSION = "1.15.2"
 
 # fmt: off
 MAPPING = {
@@ -125,6 +125,8 @@ MAPPING = {
     "gpytorch.likelihoods.likelihood.pyro_model": "https://docs.gpytorch.ai/en/stable/likelihoods.html#gpytorch.likelihoods.Likelihood.pyro_model",
     "gpytorch.likelihoods.multitaskgaussianlikelihood": "https://docs.gpytorch.ai/en/stable/likelihoods.html#gpytorch.likelihoods.MultitaskGaussianLikelihood",
     "gpytorch.likelihoods.multitaskgaussianlikelihood.marginal": "https://docs.gpytorch.ai/en/stable/likelihoods.html#gpytorch.likelihoods.MultitaskGaussianLikelihood.marginal",
+    "gpytorch.likelihoods.negativebinomiallikelihood": "https://docs.gpytorch.ai/en/stable/likelihoods.html#gpytorch.likelihoods.NegativeBinomialLikelihood",
+    "gpytorch.likelihoods.poissonlikelihood": "https://docs.gpytorch.ai/en/stable/likelihoods.html#gpytorch.likelihoods.PoissonLikelihood",
     "gpytorch.likelihoods.softmaxlikelihood": "https://docs.gpytorch.ai/en/stable/likelihoods.html#gpytorch.likelihoods.SoftmaxLikelihood",
     "gpytorch.likelihoods.studenttlikelihood": "https://docs.gpytorch.ai/en/stable/likelihoods.html#gpytorch.likelihoods.StudentTLikelihood",
     "gpytorch.means": "https://docs.gpytorch.ai/en/stable/means.html",
