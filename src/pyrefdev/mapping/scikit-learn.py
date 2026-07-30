@@ -1,10 +1,11 @@
-VERSION = "1.7.2"
+VERSION = "1.9.0"
 
 # fmt: off
 MAPPING = {
     "sklearn": "https://scikit-learn.org/stable/api/index.html",
     "sklearn.base": "https://scikit-learn.org/stable/api/sklearn.base.html",
     "sklearn.calibration": "https://scikit-learn.org/stable/api/sklearn.calibration.html",
+    "sklearn.callback": "https://scikit-learn.org/stable/api/sklearn.callback.html",
     "sklearn.cluster": "https://scikit-learn.org/stable/api/sklearn.cluster.html",
     "sklearn.compose": "https://scikit-learn.org/stable/api/sklearn.compose.html",
     "sklearn.covariance": "https://scikit-learn.org/stable/api/sklearn.covariance.html",

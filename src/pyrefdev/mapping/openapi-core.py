@@ -1,10 +1,11 @@
-VERSION = "0.19.5"
+VERSION = "0.23.1"
 
 # fmt: off
 MAPPING = {
     "openapi_core": "https://openapi-core.readthedocs.io/en/latest/",
     "openapi_core.config": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config",
     "openapi_core.config.__init__": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config.__init__",
+    "openapi_core.config.additional_properties_default_policy": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config.additional_properties_default_policy",
     "openapi_core.config.extra_format_unmarshallers": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config.extra_format_unmarshallers",
     "openapi_core.config.extra_format_validators": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config.extra_format_validators",
     "openapi_core.config.extra_media_type_deserializers": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config.extra_media_type_deserializers",
@@ -12,6 +13,7 @@ MAPPING = {
     "openapi_core.config.path_finder_cls": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config.path_finder_cls",
     "openapi_core.config.request_unmarshaller_cls": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config.request_unmarshaller_cls",
     "openapi_core.config.request_validator_cls": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config.request_validator_cls",
+    "openapi_core.config.response_properties_default_policy": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config.response_properties_default_policy",
     "openapi_core.config.response_unmarshaller_cls": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config.response_unmarshaller_cls",
     "openapi_core.config.response_validator_cls": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config.response_validator_cls",
     "openapi_core.config.schema_casters_factory": "https://openapi-core.readthedocs.io/en/latest/reference/configurations/#openapi_core.Config.schema_casters_factory",
@@ -43,6 +45,7 @@ MAPPING = {
     "openapi_core.protocols.baserequest.content_type": "https://openapi-core.readthedocs.io/en/latest/reference/protocols/#openapi_core.protocols.BaseRequest.content_type",
     "openapi_core.protocols.baserequest.method": "https://openapi-core.readthedocs.io/en/latest/reference/protocols/#openapi_core.protocols.BaseRequest.method",
     "openapi_core.protocols.baserequest.parameters": "https://openapi-core.readthedocs.io/en/latest/reference/protocols/#openapi_core.protocols.BaseRequest.parameters",
+    "openapi_core.protocols.headerstype": "https://openapi-core.readthedocs.io/en/latest/reference/protocols/#openapi_core.protocols.HeadersType",
     "openapi_core.protocols.request": "https://openapi-core.readthedocs.io/en/latest/reference/protocols/#openapi_core.protocols.Request",
     "openapi_core.protocols.request.body": "https://openapi-core.readthedocs.io/en/latest/reference/protocols/#openapi_core.protocols.Request.body",
     "openapi_core.protocols.request.content_type": "https://openapi-core.readthedocs.io/en/latest/reference/protocols/#openapi_core.protocols.Request.content_type",

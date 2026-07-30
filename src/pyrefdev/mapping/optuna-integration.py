@@ -1,15 +1,8 @@
-VERSION = "4.6.0"
+VERSION = "4.9.0"
 
 # fmt: off
 MAPPING = {
     "optuna_integration": "https://optuna-integration.readthedocs.io/en/latest/",
-    "optuna_integration.allennlp": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.allennlp.dump_best_config.html",
-    "optuna_integration.allennlp.dump_best_config": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.allennlp.dump_best_config.html#optuna_integration.allennlp.dump_best_config",
-    "optuna_integration.allennlpexecutor": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.AllenNLPExecutor.html#optuna_integration.AllenNLPExecutor",
-    "optuna_integration.allennlpexecutor.run": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.AllenNLPExecutor.html#optuna_integration.AllenNLPExecutor.run",
-    "optuna_integration.allennlppruningcallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.AllenNLPPruningCallback.html#optuna_integration.AllenNLPPruningCallback",
-    "optuna_integration.allennlppruningcallback.on_epoch": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.AllenNLPPruningCallback.html#optuna_integration.AllenNLPPruningCallback.on_epoch",
-    "optuna_integration.allennlppruningcallback.register": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.AllenNLPPruningCallback.html#optuna_integration.AllenNLPPruningCallback.register",
     "optuna_integration.botorch.ehvi_candidates_func": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.botorch.ehvi_candidates_func.html#optuna_integration.botorch.ehvi_candidates_func",
     "optuna_integration.botorch.logei_candidates_func": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.botorch.logei_candidates_func.html#optuna_integration.botorch.logei_candidates_func",
     "optuna_integration.botorch.qehvi_candidates_func": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.botorch.qehvi_candidates_func.html#optuna_integration.botorch.qehvi_candidates_func",
@@ -29,9 +22,6 @@ MAPPING = {
     "optuna_integration.catboostpruningcallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.CatBoostPruningCallback.html#optuna_integration.CatBoostPruningCallback",
     "optuna_integration.catboostpruningcallback.after_iteration": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.CatBoostPruningCallback.html#optuna_integration.CatBoostPruningCallback.after_iteration",
     "optuna_integration.catboostpruningcallback.check_pruned": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.CatBoostPruningCallback.html#optuna_integration.CatBoostPruningCallback.check_pruned",
-    "optuna_integration.chainermnstudy": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.ChainerMNStudy.html#optuna_integration.ChainerMNStudy",
-    "optuna_integration.chainermnstudy.optimize": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.ChainerMNStudy.html#optuna_integration.ChainerMNStudy.optimize",
-    "optuna_integration.chainerpruningextension": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.ChainerPruningExtension.html#optuna_integration.ChainerPruningExtension",
     "optuna_integration.cometcallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.CometCallback.html#optuna_integration.CometCallback",
     "optuna_integration.daskstorage": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.DaskStorage.html#optuna_integration.DaskStorage",
     "optuna_integration.daskstorage.check_trial_is_updatable": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.DaskStorage.html#optuna_integration.DaskStorage.check_trial_is_updatable",
@@ -63,8 +53,6 @@ MAPPING = {
     "optuna_integration.daskstorage.set_trial_state_values": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.DaskStorage.html#optuna_integration.DaskStorage.set_trial_state_values",
     "optuna_integration.daskstorage.set_trial_system_attr": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.DaskStorage.html#optuna_integration.DaskStorage.set_trial_system_attr",
     "optuna_integration.daskstorage.set_trial_user_attr": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.DaskStorage.html#optuna_integration.DaskStorage.set_trial_user_attr",
-    "optuna_integration.fastaipruningcallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.FastAIPruningCallback.html#optuna_integration.FastAIPruningCallback",
-    "optuna_integration.fastaiv2pruningcallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.FastAIV2PruningCallback.html#optuna_integration.FastAIV2PruningCallback",
     "optuna_integration.keraspruningcallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.KerasPruningCallback.html#optuna_integration.KerasPruningCallback",
     "optuna_integration.lightgbm.lightgbmtuner": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.lightgbm.LightGBMTuner.html#optuna_integration.lightgbm.LightGBMTuner",
     "optuna_integration.lightgbm.lightgbmtuner.best_params": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.lightgbm.LightGBMTuner.html#optuna_integration.lightgbm.LightGBMTuner.best_params",
@@ -82,7 +70,6 @@ MAPPING = {
     "optuna_integration.lightgbmpruningcallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.LightGBMPruningCallback.html#optuna_integration.LightGBMPruningCallback",
     "optuna_integration.mlflowcallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.MLflowCallback.html#optuna_integration.MLflowCallback",
     "optuna_integration.mlflowcallback.track_in_mlflow": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.MLflowCallback.html#optuna_integration.MLflowCallback.track_in_mlflow",
-    "optuna_integration.mxnetpruningcallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.MXNetPruningCallback.html#optuna_integration.MXNetPruningCallback",
     "optuna_integration.optunasearchcv": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.OptunaSearchCV.html#optuna_integration.OptunaSearchCV",
     "optuna_integration.optunasearchcv.best_estimator_": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.OptunaSearchCV.html#optuna_integration.OptunaSearchCV.best_estimator_",
     "optuna_integration.optunasearchcv.best_index_": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.OptunaSearchCV.html#optuna_integration.OptunaSearchCV.best_index_",
@@ -135,6 +122,8 @@ MAPPING = {
     "optuna_integration.torchdistributedtrial.suggest_loguniform": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TorchDistributedTrial.html#optuna_integration.TorchDistributedTrial.suggest_loguniform",
     "optuna_integration.torchdistributedtrial.suggest_uniform": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TorchDistributedTrial.html#optuna_integration.TorchDistributedTrial.suggest_uniform",
     "optuna_integration.torchdistributedtrial.system_attrs": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TorchDistributedTrial.html#optuna_integration.TorchDistributedTrial.system_attrs",
+    "optuna_integration.trackiocallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TrackioCallback.html#optuna_integration.TrackioCallback",
+    "optuna_integration.trackiocallback.track_in_trackio": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TrackioCallback.html#optuna_integration.TrackioCallback.track_in_trackio",
     "optuna_integration.weightsandbiasescallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.WeightsAndBiasesCallback.html#optuna_integration.WeightsAndBiasesCallback",
     "optuna_integration.weightsandbiasescallback.track_in_wandb": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.WeightsAndBiasesCallback.html#optuna_integration.WeightsAndBiasesCallback.track_in_wandb",
     "optuna_integration.xgboostpruningcallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.XGBoostPruningCallback.html#optuna_integration.XGBoostPruningCallback",

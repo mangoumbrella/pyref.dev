@@ -1,4 +1,4 @@
-VERSION = "17.3.0"
+VERSION = "17.4.0"
 
 # fmt: off
 MAPPING = {
@@ -9,6 +9,7 @@ MAPPING = {
     "oauthenticator.auth0.auth0oauthenticator.admin_users": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.admin_users",
     "oauthenticator.auth0.auth0oauthenticator.allow_all": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.allow_all",
     "oauthenticator.auth0.auth0oauthenticator.allow_existing_users": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.allow_existing_users",
+    "oauthenticator.auth0.auth0oauthenticator.allow_unverified_email": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.allow_unverified_email",
     "oauthenticator.auth0.auth0oauthenticator.allowed_groups": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.allowed_groups",
     "oauthenticator.auth0.auth0oauthenticator.allowed_scopes": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.allowed_scopes",
     "oauthenticator.auth0.auth0oauthenticator.allowed_users": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.allowed_users",
@@ -22,6 +23,7 @@ MAPPING = {
     "oauthenticator.auth0.auth0oauthenticator.auto_login_oauth2_authorize": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.auto_login_oauth2_authorize",
     "oauthenticator.auth0.auth0oauthenticator.basic_auth": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.basic_auth",
     "oauthenticator.auth0.auth0oauthenticator.blocked_users": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.blocked_users",
+    "oauthenticator.auth0.auth0oauthenticator.check_allowed": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.check_allowed",
     "oauthenticator.auth0.auth0oauthenticator.client_id": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.client_id",
     "oauthenticator.auth0.auth0oauthenticator.client_secret": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.client_secret",
     "oauthenticator.auth0.auth0oauthenticator.custom_403_message": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.Auth0OAuthenticator.custom_403_message",
@@ -62,6 +64,7 @@ MAPPING = {
     "oauthenticator.auth0.localauth0oauthenticator.admin_users": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.LocalAuth0OAuthenticator.admin_users",
     "oauthenticator.auth0.localauth0oauthenticator.allow_all": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.LocalAuth0OAuthenticator.allow_all",
     "oauthenticator.auth0.localauth0oauthenticator.allow_existing_users": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.LocalAuth0OAuthenticator.allow_existing_users",
+    "oauthenticator.auth0.localauth0oauthenticator.allow_unverified_email": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.LocalAuth0OAuthenticator.allow_unverified_email",
     "oauthenticator.auth0.localauth0oauthenticator.allowed_groups": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.LocalAuth0OAuthenticator.allowed_groups",
     "oauthenticator.auth0.localauth0oauthenticator.allowed_scopes": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.LocalAuth0OAuthenticator.allowed_scopes",
     "oauthenticator.auth0.localauth0oauthenticator.allowed_users": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.auth0.html#oauthenticator.auth0.LocalAuth0OAuthenticator.allowed_users",
@@ -136,6 +139,7 @@ MAPPING = {
     "oauthenticator.azuread.azureadoauthenticator.enable_auth_state": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.AzureAdOAuthenticator.enable_auth_state",
     "oauthenticator.azuread.azureadoauthenticator.enable_pkce": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.AzureAdOAuthenticator.enable_pkce",
     "oauthenticator.azuread.azureadoauthenticator.extra_authorize_params": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.AzureAdOAuthenticator.extra_authorize_params",
+    "oauthenticator.azuread.azureadoauthenticator.graph_url": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.AzureAdOAuthenticator.graph_url",
     "oauthenticator.azuread.azureadoauthenticator.http_request_kwargs": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.AzureAdOAuthenticator.http_request_kwargs",
     "oauthenticator.azuread.azureadoauthenticator.login_service": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.AzureAdOAuthenticator.login_service",
     "oauthenticator.azuread.azureadoauthenticator.logout_redirect_url": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.AzureAdOAuthenticator.logout_redirect_url",
@@ -190,6 +194,7 @@ MAPPING = {
     "oauthenticator.azuread.localazureadoauthenticator.enable_auth_state": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.LocalAzureAdOAuthenticator.enable_auth_state",
     "oauthenticator.azuread.localazureadoauthenticator.enable_pkce": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.LocalAzureAdOAuthenticator.enable_pkce",
     "oauthenticator.azuread.localazureadoauthenticator.extra_authorize_params": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.LocalAzureAdOAuthenticator.extra_authorize_params",
+    "oauthenticator.azuread.localazureadoauthenticator.graph_url": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.LocalAzureAdOAuthenticator.graph_url",
     "oauthenticator.azuread.localazureadoauthenticator.group_whitelist": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.LocalAzureAdOAuthenticator.group_whitelist",
     "oauthenticator.azuread.localazureadoauthenticator.http_request_kwargs": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.LocalAzureAdOAuthenticator.http_request_kwargs",
     "oauthenticator.azuread.localazureadoauthenticator.login_service": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.azuread.html#oauthenticator.azuread.LocalAzureAdOAuthenticator.login_service",
@@ -939,6 +944,7 @@ MAPPING = {
     "oauthenticator.google.googleoauthenticator.allow_existing_users": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.GoogleOAuthenticator.allow_existing_users",
     "oauthenticator.google.googleoauthenticator.allowed_google_groups": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.GoogleOAuthenticator.allowed_google_groups",
     "oauthenticator.google.googleoauthenticator.allowed_groups": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.GoogleOAuthenticator.allowed_groups",
+    "oauthenticator.google.googleoauthenticator.allowed_hosted_domains": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.GoogleOAuthenticator.allowed_hosted_domains",
     "oauthenticator.google.googleoauthenticator.allowed_scopes": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.GoogleOAuthenticator.allowed_scopes",
     "oauthenticator.google.googleoauthenticator.allowed_users": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.GoogleOAuthenticator.allowed_users",
     "oauthenticator.google.googleoauthenticator.any_allow_config": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.GoogleOAuthenticator.any_allow_config",
@@ -1002,6 +1008,7 @@ MAPPING = {
     "oauthenticator.google.localgoogleoauthenticator.allow_existing_users": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.LocalGoogleOAuthenticator.allow_existing_users",
     "oauthenticator.google.localgoogleoauthenticator.allowed_google_groups": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.LocalGoogleOAuthenticator.allowed_google_groups",
     "oauthenticator.google.localgoogleoauthenticator.allowed_groups": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.LocalGoogleOAuthenticator.allowed_groups",
+    "oauthenticator.google.localgoogleoauthenticator.allowed_hosted_domains": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.LocalGoogleOAuthenticator.allowed_hosted_domains",
     "oauthenticator.google.localgoogleoauthenticator.allowed_scopes": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.LocalGoogleOAuthenticator.allowed_scopes",
     "oauthenticator.google.localgoogleoauthenticator.allowed_users": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.LocalGoogleOAuthenticator.allowed_users",
     "oauthenticator.google.localgoogleoauthenticator.any_allow_config": "https://oauthenticator.readthedocs.io/en/latest/reference/api/gen/oauthenticator.google.html#oauthenticator.google.LocalGoogleOAuthenticator.any_allow_config",

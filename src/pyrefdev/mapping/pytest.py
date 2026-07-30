@@ -1,4 +1,4 @@
-VERSION = "9.0.1"
+VERSION = "9.1.1"
 
 # fmt: off
 MAPPING = {
@@ -427,12 +427,14 @@ MAPPING = {
     "pytest.pytestpluginmanager.load_setuptools_entrypoints": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestPluginManager.load_setuptools_entrypoints",
     "pytest.pytestpluginmanager.project_name": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestPluginManager.project_name",
     "pytest.pytestpluginmanager.register": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestPluginManager.register",
+    "pytest.pytestpluginmanager.rewrite_hook": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestPluginManager.rewrite_hook",
     "pytest.pytestpluginmanager.set_blocked": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestPluginManager.set_blocked",
+    "pytest.pytestpluginmanager.skipped_plugins": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestPluginManager.skipped_plugins",
     "pytest.pytestpluginmanager.subset_hook_caller": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestPluginManager.subset_hook_caller",
     "pytest.pytestpluginmanager.trace": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestPluginManager.trace",
     "pytest.pytestpluginmanager.unblock": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestPluginManager.unblock",
     "pytest.pytestpluginmanager.unregister": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestPluginManager.unregister",
-    "pytest.pytestremovedin9warning": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestRemovedIn9Warning",
+    "pytest.pytestremovedin10warning": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestRemovedIn10Warning",
     "pytest.pytestreturnnotnonewarning": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestReturnNotNoneWarning",
     "pytest.pytestunhandledthreadexceptionwarning": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestUnhandledThreadExceptionWarning",
     "pytest.pytestunknownmarkwarning": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.PytestUnknownMarkWarning",
@@ -458,6 +460,7 @@ MAPPING = {
     "pytest.recwarn": "https://docs.pytest.org/en/stable/reference/reference.html",
     "pytest.recwarn.recwarn": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.recwarn.recwarn",
     "pytest.register_assert_rewrite": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.register_assert_rewrite",
+    "pytest.register_fixture": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.register_fixture",
     "pytest.runresult": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.RunResult",
     "pytest.runresult.assert_outcomes": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.RunResult.assert_outcomes",
     "pytest.runresult.duration": "https://docs.pytest.org/en/stable/reference/reference.html#pytest.RunResult.duration",

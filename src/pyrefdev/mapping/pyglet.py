@@ -1,4 +1,4 @@
-VERSION = "2.1.11"
+VERSION = "2.1.15"
 
 # fmt: off
 MAPPING = {
@@ -479,6 +479,21 @@ MAPPING = {
     "pyglet.graphics.vertexdomain.vertexlist.set_instance_source": "https://pyglet.readthedocs.io/en/latest/modules/graphics/vertexdomain.html#pyglet.graphics.vertexdomain.VertexList.set_instance_source",
     "pyglet.graphics.vertexdomain.vertexlist.start": "https://pyglet.readthedocs.io/en/latest/modules/graphics/vertexdomain.html#pyglet.graphics.vertexdomain.VertexList.start",
     "pyglet.gui": "https://pyglet.readthedocs.io/en/latest/modules/gui.html",
+    "pyglet.gui.frame": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame",
+    "pyglet.gui.frame.__init__": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.__init__",
+    "pyglet.gui.frame.add_widget": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.add_widget",
+    "pyglet.gui.frame.enable": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.enable",
+    "pyglet.gui.frame.on_key_press": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.on_key_press",
+    "pyglet.gui.frame.on_key_release": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.on_key_release",
+    "pyglet.gui.frame.on_mouse_drag": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.on_mouse_drag",
+    "pyglet.gui.frame.on_mouse_motion": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.on_mouse_motion",
+    "pyglet.gui.frame.on_mouse_press": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.on_mouse_press",
+    "pyglet.gui.frame.on_mouse_release": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.on_mouse_release",
+    "pyglet.gui.frame.on_mouse_scroll": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.on_mouse_scroll",
+    "pyglet.gui.frame.on_text": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.on_text",
+    "pyglet.gui.frame.on_text_motion": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.on_text_motion",
+    "pyglet.gui.frame.on_text_motion_select": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.on_text_motion_select",
+    "pyglet.gui.frame.remove_widget": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.Frame.remove_widget",
     "pyglet.gui.pushbutton": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.PushButton",
     "pyglet.gui.pushbutton.__init__": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.PushButton.__init__",
     "pyglet.gui.pushbutton.on_mouse_drag": "https://pyglet.readthedocs.io/en/latest/modules/gui.html#pyglet.gui.PushButton.on_mouse_drag",

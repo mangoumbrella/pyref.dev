@@ -1,4 +1,4 @@
-VERSION = "0.17.0"
+VERSION = "0.19.1"
 
 # fmt: off
 MAPPING = {
@@ -19,6 +19,14 @@ MAPPING = {
     "optree.functools.partial": "https://optree.readthedocs.io/en/latest/functools.html#optree.functools.partial",
     "optree.functools.reduce": "https://optree.readthedocs.io/en/latest/functools.html#optree.functools.reduce",
     "optree.integrations": "https://optree.readthedocs.io/en/latest/integrations.html",
+    "optree.integrations.attrs": "https://optree.readthedocs.io/en/latest/integrations.html",
+    "optree.integrations.attrs.attrsentry": "https://optree.readthedocs.io/en/latest/integrations.html#optree.integrations.attrs.AttrsEntry",
+    "optree.integrations.attrs.define": "https://optree.readthedocs.io/en/latest/integrations.html#optree.integrations.attrs.define",
+    "optree.integrations.attrs.field": "https://optree.readthedocs.io/en/latest/integrations.html#optree.integrations.attrs.field",
+    "optree.integrations.attrs.frozen": "https://optree.readthedocs.io/en/latest/integrations.html#optree.integrations.attrs.frozen",
+    "optree.integrations.attrs.make_class": "https://optree.readthedocs.io/en/latest/integrations.html#optree.integrations.attrs.make_class",
+    "optree.integrations.attrs.mutable": "https://optree.readthedocs.io/en/latest/integrations.html#optree.integrations.attrs.mutable",
+    "optree.integrations.attrs.register_node": "https://optree.readthedocs.io/en/latest/integrations.html#optree.integrations.attrs.register_node",
     "optree.integrations.jax": "https://optree.readthedocs.io/en/latest/integrations.html",
     "optree.integrations.jax.tree_ravel": "https://optree.readthedocs.io/en/latest/integrations.html#optree.integrations.jax.tree_ravel",
     "optree.integrations.numpy": "https://optree.readthedocs.io/en/latest/integrations.html",

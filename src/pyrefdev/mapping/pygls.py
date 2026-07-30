@@ -1,4 +1,4 @@
-VERSION = "2.0.0"
+VERSION = "2.1.1"
 
 # fmt: off
 MAPPING = {
@@ -264,7 +264,16 @@ MAPPING = {
     "pygls.workspace": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html",
     "pygls.workspace.textdocument": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument",
     "pygls.workspace.textdocument.apply_change": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument.apply_change",
+    "pygls.workspace.textdocument.client_position_at_offset": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument.client_position_at_offset",
     "pygls.workspace.textdocument.offset_at_position": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument.offset_at_position",
+    "pygls.workspace.textdocument.offset_at_server_position": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument.offset_at_server_position",
+    "pygls.workspace.textdocument.position_from_client_units": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument.position_from_client_units",
+    "pygls.workspace.textdocument.position_to_client_units": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument.position_to_client_units",
+    "pygls.workspace.textdocument.range_from_client_units": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument.range_from_client_units",
+    "pygls.workspace.textdocument.range_to_client_units": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument.range_to_client_units",
+    "pygls.workspace.textdocument.server_position_at_offset": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument.server_position_at_offset",
+    "pygls.workspace.textdocument.text_in_client_range": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument.text_in_client_range",
+    "pygls.workspace.textdocument.text_in_server_range": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument.text_in_server_range",
     "pygls.workspace.textdocument.word_at_position": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.TextDocument.word_at_position",
     "pygls.workspace.workspace": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.Workspace",
     "pygls.workspace.workspace.get_notebook_document": "https://pygls.readthedocs.io/en/latest/pygls/api-reference/workspace.html#pygls.workspace.Workspace.get_notebook_document",

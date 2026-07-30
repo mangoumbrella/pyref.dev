@@ -1,4 +1,4 @@
-VERSION = "1.2.2"
+VERSION = "1.3.1"
 
 # fmt: off
 MAPPING = {
@@ -48,6 +48,7 @@ MAPPING = {
     "rstcheck_core.config.rstcheckconfigfile.join_regex_str": "https://rstcheck-core.readthedocs.io/en/latest/autoapidoc/rstcheck_core/#rstcheck_core.config.RstcheckConfigFile.join_regex_str",
     "rstcheck_core.config.rstcheckconfigfile.model_config": "https://rstcheck-core.readthedocs.io/en/latest/autoapidoc/rstcheck_core/#rstcheck_core.config.RstcheckConfigFile.model_config",
     "rstcheck_core.config.rstcheckconfigfile.report_level": "https://rstcheck-core.readthedocs.io/en/latest/autoapidoc/rstcheck_core/#rstcheck_core.config.RstcheckConfigFile.report_level",
+    "rstcheck_core.config.rstcheckconfigfile.sphinx_source_dir": "https://rstcheck-core.readthedocs.io/en/latest/autoapidoc/rstcheck_core/#rstcheck_core.config.RstcheckConfigFile.sphinx_source_dir",
     "rstcheck_core.config.rstcheckconfigfile.split_str": "https://rstcheck-core.readthedocs.io/en/latest/autoapidoc/rstcheck_core/#rstcheck_core.config.RstcheckConfigFile.split_str",
     "rstcheck_core.config.rstcheckconfigfile.valid_report_level": "https://rstcheck-core.readthedocs.io/en/latest/autoapidoc/rstcheck_core/#rstcheck_core.config.RstcheckConfigFile.valid_report_level",
     "rstcheck_core.inline_config": "https://rstcheck-core.readthedocs.io/en/latest/autoapidoc/rstcheck_core/#module-rstcheck_core.inline_config",

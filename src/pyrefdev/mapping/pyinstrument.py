@@ -1,4 +1,4 @@
-VERSION = "5.1.1"
+VERSION = "5.1.3"
 
 # fmt: off
 MAPPING = {
@@ -44,6 +44,7 @@ MAPPING = {
     "pyinstrument.session.session": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.session.Session",
     "pyinstrument.session.session.combine": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.session.Session.combine",
     "pyinstrument.session.session.load": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.session.Session.load",
+    "pyinstrument.session.session.resample": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.session.Session.resample",
     "pyinstrument.session.session.root_frame": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.session.Session.root_frame",
     "pyinstrument.session.session.save": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.session.Session.save",
     "pyinstrument.session.session.shorten_path": "https://pyinstrument.readthedocs.io/en/latest/reference.html#pyinstrument.session.Session.shorten_path",

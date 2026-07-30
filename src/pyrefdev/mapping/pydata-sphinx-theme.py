@@ -1,10 +1,11 @@
-VERSION = "0.16.1"
+VERSION = "0.20.0"
 
 # fmt: off
 MAPPING = {
     "pydata_sphinx_theme": "https://pydata-sphinx-theme.readthedocs.io/en/stable/",
     "pydata_sphinx_theme.__version__": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/index.html#pydata_sphinx_theme.__version__",
     "pydata_sphinx_theme._fix_canonical_url": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/index.html#pydata_sphinx_theme._fix_canonical_url",
+    "pydata_sphinx_theme.add_shorten_xform": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/index.html#pydata_sphinx_theme.add_shorten_xform",
     "pydata_sphinx_theme.edit_this_page": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/edit_this_page/index.html",
     "pydata_sphinx_theme.edit_this_page.setup_edit_url": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/edit_this_page/index.html#pydata_sphinx_theme.edit_this_page.setup_edit_url",
     "pydata_sphinx_theme.logo": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/logo/index.html",
