@@ -1,4 +1,4 @@
-VERSION = "1.14.0"
+VERSION = "1.15.0"
 
 # fmt: off
 MAPPING = {
@@ -30,6 +30,7 @@ MAPPING = {
     "aiortc.rtccertificate.generatecertificate": "https://aiortc.readthedocs.io/en/latest/api.html#aiortc.RTCCertificate.generateCertificate",
     "aiortc.rtccertificate.getfingerprints": "https://aiortc.readthedocs.io/en/latest/api.html#aiortc.RTCCertificate.getFingerprints",
     "aiortc.rtcconfiguration": "https://aiortc.readthedocs.io/en/latest/api.html#aiortc.RTCConfiguration",
+    "aiortc.rtcconfiguration.alwaysnegotiatedatachannels": "https://aiortc.readthedocs.io/en/latest/api.html#aiortc.RTCConfiguration.alwaysNegotiateDataChannels",
     "aiortc.rtcconfiguration.bundlepolicy": "https://aiortc.readthedocs.io/en/latest/api.html#aiortc.RTCConfiguration.bundlePolicy",
     "aiortc.rtcconfiguration.iceservers": "https://aiortc.readthedocs.io/en/latest/api.html#aiortc.RTCConfiguration.iceServers",
     "aiortc.rtcdatachannel": "https://aiortc.readthedocs.io/en/latest/api.html#aiortc.RTCDataChannel",

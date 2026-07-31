@@ -1,4 +1,4 @@
-VERSION = "2.5.0"
+VERSION = "2.7.0"
 
 # fmt: off
 MAPPING = {
@@ -63,6 +63,8 @@ MAPPING = {
     "urllib3.exceptions.insecureplatformwarning": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.exceptions.html#urllib3.exceptions.InsecurePlatformWarning",
     "urllib3.exceptions.insecurerequestwarning": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.exceptions.html#urllib3.exceptions.InsecureRequestWarning",
     "urllib3.exceptions.invalidchunklength": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.exceptions.html#urllib3.exceptions.InvalidChunkLength",
+    "urllib3.exceptions.invalidchunklength.expected": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.exceptions.html#urllib3.exceptions.InvalidChunkLength.expected",
+    "urllib3.exceptions.invalidchunklength.partial": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.exceptions.html#urllib3.exceptions.InvalidChunkLength.partial",
     "urllib3.exceptions.invalidheader": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.exceptions.html#urllib3.exceptions.InvalidHeader",
     "urllib3.exceptions.locationparseerror": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.exceptions.html#urllib3.exceptions.LocationParseError",
     "urllib3.exceptions.locationvalueerror": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.exceptions.html#urllib3.exceptions.LocationValueError",
@@ -150,6 +152,7 @@ MAPPING = {
     "urllib3.poolmanager.poolkey.key_ssl_minimum_version": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.poolmanager.html#urllib3.poolmanager.PoolKey.key_ssl_minimum_version",
     "urllib3.poolmanager.poolkey.key_ssl_version": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.poolmanager.html#urllib3.poolmanager.PoolKey.key_ssl_version",
     "urllib3.poolmanager.poolkey.key_timeout": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.poolmanager.html#urllib3.poolmanager.PoolKey.key_timeout",
+    "urllib3.poolmanager.pools": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.poolmanager.html#urllib3.PoolManager.pools",
     "urllib3.poolmanager.proxy": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.poolmanager.html#urllib3.PoolManager.proxy",
     "urllib3.poolmanager.proxy_config": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.poolmanager.html#urllib3.PoolManager.proxy_config",
     "urllib3.poolmanager.request": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.poolmanager.html#urllib3.PoolManager.request",
@@ -189,6 +192,7 @@ MAPPING = {
     "urllib3.response.gzipdecoder": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.GzipDecoder",
     "urllib3.response.httpresponse": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.HTTPResponse",
     "urllib3.response.httpresponse.auto_close": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.HTTPResponse.auto_close",
+    "urllib3.response.httpresponse.chunk_left": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.HTTPResponse.chunk_left",
     "urllib3.response.httpresponse.close": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.HTTPResponse.close",
     "urllib3.response.httpresponse.closed": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.HTTPResponse.closed",
     "urllib3.response.httpresponse.connection": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.response.html#urllib3.response.HTTPResponse.connection",
@@ -244,6 +248,7 @@ MAPPING = {
     "urllib3.util.retry.default_allowed_methods": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Retry.DEFAULT_ALLOWED_METHODS",
     "urllib3.util.retry.default_backoff_max": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Retry.DEFAULT_BACKOFF_MAX",
     "urllib3.util.retry.default_remove_headers_on_redirect": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Retry.DEFAULT_REMOVE_HEADERS_ON_REDIRECT",
+    "urllib3.util.retry.default_retry_after_max": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Retry.DEFAULT_RETRY_AFTER_MAX",
     "urllib3.util.retry.from_int": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Retry.from_int",
     "urllib3.util.retry.get_backoff_time": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Retry.get_backoff_time",
     "urllib3.util.retry.get_retry_after": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Retry.get_retry_after",

@@ -1,4 +1,4 @@
-VERSION = "0.13.1"
+VERSION = "0.13.2"
 
 # fmt: off
 MAPPING = {
@@ -17,6 +17,7 @@ MAPPING = {
     "tld.base.registry.items": "https://tld.readthedocs.io/en/latest/tld.html#tld.base.Registry.items",
     "tld.base.registry.registry": "https://tld.readthedocs.io/en/latest/tld.html#tld.base.Registry.REGISTRY",
     "tld.base.registry.reset": "https://tld.readthedocs.io/en/latest/tld.html#tld.base.Registry.reset",
+    "tld.base.registry.values": "https://tld.readthedocs.io/en/latest/tld.html#tld.base.Registry.values",
     "tld.conf": "https://tld.readthedocs.io/en/latest/tld.html#module-tld.conf",
     "tld.conf.get_setting": "https://tld.readthedocs.io/en/latest/tld.html#tld.conf.get_setting",
     "tld.conf.reset_settings": "https://tld.readthedocs.io/en/latest/tld.html#tld.conf.reset_settings",
@@ -41,6 +42,7 @@ MAPPING = {
     "tld.registry.registry.items": "https://tld.readthedocs.io/en/latest/tld.html#tld.registry.Registry.items",
     "tld.registry.registry.registry": "https://tld.readthedocs.io/en/latest/tld.html#tld.registry.Registry.REGISTRY",
     "tld.registry.registry.reset": "https://tld.readthedocs.io/en/latest/tld.html#tld.registry.Registry.reset",
+    "tld.registry.registry.values": "https://tld.readthedocs.io/en/latest/tld.html#tld.registry.Registry.values",
     "tld.reset_tld_names": "https://tld.readthedocs.io/en/latest/tld.html#tld.reset_tld_names",
     "tld.result": "https://tld.readthedocs.io/en/latest/tld.html#module-tld.result",
     "tld.Result": "https://tld.readthedocs.io/en/latest/tld.html#tld.Result",

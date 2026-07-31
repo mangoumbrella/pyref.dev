@@ -1,4 +1,4 @@
-VERSION = "1.4.3"
+VERSION = "1.4.5"
 
 # fmt: off
 MAPPING = {
@@ -20,6 +20,8 @@ MAPPING = {
     "shillelagh.adapters.api.datasette.is_datasette": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.html#shillelagh.adapters.api.datasette.is_datasette",
     "shillelagh.adapters.api.datasette.is_known_domain": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.html#shillelagh.adapters.api.datasette.is_known_domain",
     "shillelagh.adapters.api.gsheets": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#module-shillelagh.adapters.api.gsheets",
+    "shillelagh.adapters.api.gsheets.exceptions": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#module-shillelagh.adapters.api.gsheets.exceptions",
+    "shillelagh.adapters.api.gsheets.exceptions.dateparseerror": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.exceptions.DateParseError",
     "shillelagh.adapters.api.gsheets.fields": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#module-shillelagh.adapters.api.gsheets.fields",
     "shillelagh.adapters.api.gsheets.fields.gsheetsboolean": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.GSheetsBoolean",
     "shillelagh.adapters.api.gsheets.fields.gsheetsboolean.db_api_type": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.GSheetsBoolean.db_api_type",
@@ -46,6 +48,7 @@ MAPPING = {
     "shillelagh.adapters.api.gsheets.fields.gsheetsduration.quote": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.GSheetsDuration.quote",
     "shillelagh.adapters.api.gsheets.fields.gsheetsduration.type": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.GSheetsDuration.type",
     "shillelagh.adapters.api.gsheets.fields.gsheetsfield": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.GSheetsField",
+    "shillelagh.adapters.api.gsheets.fields.gsheetsfield.pattern": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.GSheetsField.pattern",
     "shillelagh.adapters.api.gsheets.fields.gsheetsfield.pattern_substitutions": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.GSheetsField.pattern_substitutions",
     "shillelagh.adapters.api.gsheets.fields.gsheetsnumber": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.GSheetsNumber",
     "shillelagh.adapters.api.gsheets.fields.gsheetsnumber.db_api_type": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.GSheetsNumber.db_api_type",
@@ -65,6 +68,7 @@ MAPPING = {
     "shillelagh.adapters.api.gsheets.fields.gsheetstime.parse": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.GSheetsTime.parse",
     "shillelagh.adapters.api.gsheets.fields.gsheetstime.quote": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.GSheetsTime.quote",
     "shillelagh.adapters.api.gsheets.fields.gsheetstime.type": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.GSheetsTime.type",
+    "shillelagh.adapters.api.gsheets.fields.parse_gviz_date": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.html#shillelagh.adapters.api.gsheets.fields.parse_gviz_date",
     "shillelagh.adapters.api.gsheets.parsing": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.parsing.html#module-shillelagh.adapters.api.gsheets.parsing",
     "shillelagh.adapters.api.gsheets.parsing.base": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.parsing.html#module-shillelagh.adapters.api.gsheets.parsing.base",
     "shillelagh.adapters.api.gsheets.parsing.base.invalidpattern": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.api.gsheets.parsing.html#shillelagh.adapters.api.gsheets.parsing.base.InvalidPattern",
@@ -372,6 +376,7 @@ MAPPING = {
     "shillelagh.adapters.file.csvfile.csvfile.supports_offset": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.file.html#shillelagh.adapters.file.csvfile.CSVFile.supports_offset",
     "shillelagh.adapters.file.csvfile.csvfile.supports_requested_columns": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.file.html#shillelagh.adapters.file.csvfile.CSVFile.supports_requested_columns",
     "shillelagh.adapters.file.csvfile.rowtracker": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.file.html#shillelagh.adapters.file.csvfile.RowTracker",
+    "shillelagh.adapters.file.csvfile.rowtracker.last_row": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.file.html#shillelagh.adapters.file.csvfile.RowTracker.last_row",
     "shillelagh.adapters.memory": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.memory.html#module-shillelagh.adapters.memory",
     "shillelagh.adapters.memory.virtual": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.memory.html#module-shillelagh.adapters.memory.virtual",
     "shillelagh.adapters.memory.virtual.int_to_base26": "https://shillelagh.readthedocs.io/en/latest/api/shillelagh.adapters.memory.html#shillelagh.adapters.memory.virtual.int_to_base26",

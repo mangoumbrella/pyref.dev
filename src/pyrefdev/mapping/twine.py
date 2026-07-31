@@ -1,4 +1,4 @@
-VERSION = "6.2.0"
+VERSION = "7.0.0"
 
 # fmt: off
 MAPPING = {
@@ -71,6 +71,7 @@ MAPPING = {
     "twine.exceptions.redirectdetected.from_args": "https://twine.readthedocs.io/en/stable/internal/twine.exceptions.html#twine.exceptions.RedirectDetected.from_args",
     "twine.exceptions.trustedpublishingfailure": "https://twine.readthedocs.io/en/stable/internal/twine.exceptions.html#twine.exceptions.TrustedPublishingFailure",
     "twine.exceptions.twineexception": "https://twine.readthedocs.io/en/stable/internal/twine.exceptions.html#twine.exceptions.TwineException",
+    "twine.exceptions.unabletoreadconfigurationfile": "https://twine.readthedocs.io/en/stable/internal/twine.exceptions.html#twine.exceptions.UnableToReadConfigurationFile",
     "twine.exceptions.unreachablerepositoryurldetected": "https://twine.readthedocs.io/en/stable/internal/twine.exceptions.html#twine.exceptions.UnreachableRepositoryURLDetected",
     "twine.exceptions.unsupportedconfiguration": "https://twine.readthedocs.io/en/stable/internal/twine.exceptions.html#twine.exceptions.UnsupportedConfiguration",
     "twine.exceptions.unsupportedconfiguration.builder": "https://twine.readthedocs.io/en/stable/internal/twine.exceptions.html#twine.exceptions.UnsupportedConfiguration.Builder",
@@ -105,10 +106,13 @@ MAPPING = {
     "twine.package.packagefile.__init__": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageFile.__init__",
     "twine.package.packagefile.add_attestations": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageFile.add_attestations",
     "twine.package.packagefile.add_gpg_signature": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageFile.add_gpg_signature",
+    "twine.package.packagefile.attestations": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageFile.attestations",
     "twine.package.packagefile.from_filename": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageFile.from_filename",
+    "twine.package.packagefile.gpg_signature": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageFile.gpg_signature",
     "twine.package.packagefile.metadata_dictionary": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageFile.metadata_dictionary",
     "twine.package.packagefile.run_gpg": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageFile.run_gpg",
     "twine.package.packagefile.sign": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageFile.sign",
+    "twine.package.packagefile.version": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageFile.version",
     "twine.package.packagemetadata": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageMetadata",
     "twine.package.packagemetadata.attestations": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageMetadata.attestations",
     "twine.package.packagemetadata.author": "https://twine.readthedocs.io/en/stable/internal/twine.package.html#twine.package.PackageMetadata.author",
@@ -177,6 +181,8 @@ MAPPING = {
     "twine.settings.settings.verify_feature_capability": "https://twine.readthedocs.io/en/stable/internal/twine.settings.html#twine.settings.Settings.verify_feature_capability",
     "twine.utils": "https://twine.readthedocs.io/en/stable/internal/twine.utils.html",
     "twine.utils._config_from_repository_url": "https://twine.readthedocs.io/en/stable/internal/twine.utils.html#twine.utils._config_from_repository_url",
+    "twine.utils._parse_config": "https://twine.readthedocs.io/en/stable/internal/twine.utils.html#twine.utils._parse_config",
+    "twine.utils._parse_file": "https://twine.readthedocs.io/en/stable/internal/twine.utils.html#twine.utils._parse_file",
     "twine.utils._validate_repository_url": "https://twine.readthedocs.io/en/stable/internal/twine.utils.html#twine.utils._validate_repository_url",
     "twine.utils.check_status_code": "https://twine.readthedocs.io/en/stable/internal/twine.utils.html#twine.utils.check_status_code",
     "twine.utils.environmentdefault": "https://twine.readthedocs.io/en/stable/internal/twine.utils.html#twine.utils.EnvironmentDefault",

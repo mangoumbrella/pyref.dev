@@ -1,4 +1,4 @@
-VERSION = "80.9.0"
+VERSION = "83.0.0"
 
 # fmt: off
 MAPPING = {
@@ -15,6 +15,7 @@ MAPPING = {
     "setuptools.command.build.subcommand.get_source_files": "https://setuptools.pypa.io/en/latest/userguide/extension.html#setuptools.command.build.SubCommand.get_source_files",
     "setuptools.command.build.subcommand.initialize_options": "https://setuptools.pypa.io/en/latest/userguide/extension.html#setuptools.command.build.SubCommand.initialize_options",
     "setuptools.command.build.subcommand.run": "https://setuptools.pypa.io/en/latest/userguide/extension.html#setuptools.command.build.SubCommand.run",
+    "setuptools.command.dry_run": "https://setuptools.pypa.io/en/latest/userguide/extension.html#setuptools.Command.dry_run",
     "setuptools.command.finalize_options": "https://setuptools.pypa.io/en/latest/userguide/extension.html#setuptools.Command.finalize_options",
     "setuptools.command.initialize_options": "https://setuptools.pypa.io/en/latest/userguide/extension.html#setuptools.Command.initialize_options",
     "setuptools.command.run": "https://setuptools.pypa.io/en/latest/userguide/extension.html#setuptools.Command.run",

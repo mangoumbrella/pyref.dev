@@ -1,4 +1,4 @@
-VERSION = "0.2.5"
+VERSION = "0.2.6"
 
 # fmt: off
 MAPPING = {
@@ -30,6 +30,7 @@ MAPPING = {
     "archspec.cpu.detect.partial_uarch": "https://archspec.readthedocs.io/en/latest/apidocs.html#archspec.cpu.detect.partial_uarch",
     "archspec.cpu.detect.proc_cpuinfo": "https://archspec.readthedocs.io/en/latest/apidocs.html#archspec.cpu.detect.proc_cpuinfo",
     "archspec.cpu.detect.sysctl_info": "https://archspec.readthedocs.io/en/latest/apidocs.html#archspec.cpu.detect.sysctl_info",
+    "archspec.cpu.detect.why_not": "https://archspec.readthedocs.io/en/latest/apidocs.html#archspec.cpu.detect.why_not",
     "archspec.cpu.generic_microarchitecture": "https://archspec.readthedocs.io/en/latest/apidocs.html#archspec.cpu.generic_microarchitecture",
     "archspec.cpu.host": "https://archspec.readthedocs.io/en/latest/apidocs.html#archspec.cpu.host",
     "archspec.cpu.invalidcompilerversion": "https://archspec.readthedocs.io/en/latest/apidocs.html#archspec.cpu.InvalidCompilerVersion",
@@ -70,4 +71,5 @@ MAPPING = {
     "archspec.cpu.schema.targets_json_schema": "https://archspec.readthedocs.io/en/latest/apidocs.html#archspec.cpu.schema.TARGETS_JSON_SCHEMA",
     "archspec.cpu.unsupportedmicroarchitecture": "https://archspec.readthedocs.io/en/latest/apidocs.html#archspec.cpu.UnsupportedMicroarchitecture",
     "archspec.cpu.version_components": "https://archspec.readthedocs.io/en/latest/apidocs.html#archspec.cpu.version_components",
+    "archspec.cpu.why_not": "https://archspec.readthedocs.io/en/latest/apidocs.html#archspec.cpu.why_not",
 }
