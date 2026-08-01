@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+Nothing noticeable unreleased.
+
+## v2026.2
+
 - Support [hijridate](https://hijridate.readthedocs.io/en/stable/)
 - Updated the following packages:
   - [aiodocker](https://aiodocker.readthedocs.io/en/latest/)
