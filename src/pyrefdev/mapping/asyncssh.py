@@ -1,4 +1,4 @@
-VERSION = "2.21.1"
+VERSION = "2.24.0"
 
 # fmt: off
 MAPPING = {
@@ -14,12 +14,14 @@ MAPPING = {
     "asyncssh.connectionlost": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.ConnectionLost",
     "asyncssh.create_connection": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.create_connection",
     "asyncssh.create_server": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.create_server",
+    "asyncssh.create_sshsig": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.create_sshsig",
     "asyncssh.disconnecterror": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.DisconnectError",
     "asyncssh.generate_private_key": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.generate_private_key",
     "asyncssh.get_server_auth_methods": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.get_server_auth_methods",
     "asyncssh.get_server_host_key": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.get_server_host_key",
     "asyncssh.hostkeynotverifiable": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.HostKeyNotVerifiable",
     "asyncssh.illegalusername": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.IllegalUserName",
+    "asyncssh.import_allowed_signers": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.import_allowed_signers",
     "asyncssh.import_authorized_keys": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.import_authorized_keys",
     "asyncssh.import_certificate": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.import_certificate",
     "asyncssh.import_known_hosts": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.import_known_hosts",
@@ -44,6 +46,7 @@ MAPPING = {
     "asyncssh.processerror": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.ProcessError",
     "asyncssh.protocolerror": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.ProtocolError",
     "asyncssh.protocolnotsupported": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.ProtocolNotSupported",
+    "asyncssh.read_allowed_signers": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.read_allowed_signers",
     "asyncssh.read_authorized_keys": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.read_authorized_keys",
     "asyncssh.read_certificate": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.read_certificate",
     "asyncssh.read_certificate_list": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.read_certificate_list",
@@ -229,6 +232,7 @@ MAPPING = {
     "asyncssh.sshagentkeypair.get_key_type": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHAgentKeyPair.get_key_type",
     "asyncssh.sshagentkeypair.remove": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHAgentKeyPair.remove",
     "asyncssh.sshagentkeypair.set_comment": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHAgentKeyPair.set_comment",
+    "asyncssh.sshallowedsigners": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHAllowedSigners",
     "asyncssh.sshauthorizedkeys": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHAuthorizedKeys",
     "asyncssh.sshcertificate": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHCertificate",
     "asyncssh.sshcertificate.append_certificate": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHCertificate.append_certificate",
@@ -508,6 +512,7 @@ MAPPING = {
     "asyncssh.sshserverprocess.is_closing": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHServerProcess.is_closing",
     "asyncssh.sshserverprocess.logger": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHServerProcess.logger",
     "asyncssh.sshserverprocess.redirect": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHServerProcess.redirect",
+    "asyncssh.sshserverprocess.set_redirect_pid": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHServerProcess.set_redirect_pid",
     "asyncssh.sshserverprocess.stderr": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHServerProcess.stderr",
     "asyncssh.sshserverprocess.stdin": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHServerProcess.stdin",
     "asyncssh.sshserverprocess.stdout": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHServerProcess.stdout",
@@ -650,4 +655,5 @@ MAPPING = {
     "asyncssh.sshwriter.writelines": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.SSHWriter.writelines",
     "asyncssh.terminalsizechanged": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.TerminalSizeChanged",
     "asyncssh.timeouterror": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.TimeoutError",
+    "asyncssh.validate_sshsig": "https://asyncssh.readthedocs.io/en/latest/api.html#asyncssh.validate_sshsig",
 }

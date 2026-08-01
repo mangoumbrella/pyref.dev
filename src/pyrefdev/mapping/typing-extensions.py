@@ -1,4 +1,4 @@
-VERSION = "4.15.0"
+VERSION = "4.16.0"
 
 # fmt: off
 MAPPING = {
@@ -28,6 +28,7 @@ MAPPING = {
     "typing_extensions.contextmanager": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.ContextManager",
     "typing_extensions.coroutine": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Coroutine",
     "typing_extensions.counter": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Counter",
+    "typing_extensions.dataclass_transform": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.dataclass_transform",
     "typing_extensions.defaultdict": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.DefaultDict",
     "typing_extensions.deprecated": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.deprecated",
     "typing_extensions.deque": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Deque",
@@ -84,7 +85,6 @@ MAPPING = {
     "typing_extensions.ordereddict": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.OrderedDict",
     "typing_extensions.overload": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.overload",
     "typing_extensions.override": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.override",
-    "typing_extensions.paramspec": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.ParamSpec",
     "typing_extensions.paramspecargs": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.ParamSpecArgs",
     "typing_extensions.paramspeckwargs": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.ParamSpecKwargs",
     "typing_extensions.pattern": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Pattern",
@@ -96,7 +96,7 @@ MAPPING = {
     "typing_extensions.reversible": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Reversible",
     "typing_extensions.runtime_checkable": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.runtime_checkable",
     "typing_extensions.self": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Self",
-    "typing_extensions.sentinel": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Sentinel",
+    "typing_extensions.sentinel": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.sentinel",
     "typing_extensions.sequence": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Sequence",
     "typing_extensions.set": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Set",
     "typing_extensions.sized": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Sized",
@@ -123,7 +123,6 @@ MAPPING = {
     "typing_extensions.typeform": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.TypeForm",
     "typing_extensions.typeguard": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.TypeGuard",
     "typing_extensions.typeis": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.TypeIs",
-    "typing_extensions.typevartuple": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.TypeVarTuple",
     "typing_extensions.union": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Union",
     "typing_extensions.unpack": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.Unpack",
     "typing_extensions.valuesview": "https://typing-extensions.readthedocs.io/en/latest/#typing_extensions.ValuesView",

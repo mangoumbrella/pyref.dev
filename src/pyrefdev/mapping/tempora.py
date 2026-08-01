@@ -1,4 +1,4 @@
-VERSION = "5.8.1"
+VERSION = "5.12.0"
 
 # fmt: off
 MAPPING = {
@@ -36,6 +36,7 @@ MAPPING = {
     "tempora.schedule.periodiccommandfixeddelay.daily_at": "https://tempora.readthedocs.io/en/latest/index.html#tempora.schedule.PeriodicCommandFixedDelay.daily_at",
     "tempora.schedule.scheduler": "https://tempora.readthedocs.io/en/latest/index.html#tempora.schedule.Scheduler",
     "tempora.schedule.scheduler.add": "https://tempora.readthedocs.io/en/latest/index.html#tempora.schedule.Scheduler.add",
+    "tempora.schedule.scheduler.queue": "https://tempora.readthedocs.io/en/latest/index.html#tempora.schedule.Scheduler.queue",
     "tempora.schedule.scheduler.run": "https://tempora.readthedocs.io/en/latest/index.html#tempora.schedule.Scheduler.run",
     "tempora.schedule.scheduler.run_pending": "https://tempora.readthedocs.io/en/latest/index.html#tempora.schedule.Scheduler.run_pending",
     "tempora.strftime": "https://tempora.readthedocs.io/en/latest/index.html#tempora.strftime",
@@ -47,6 +48,7 @@ MAPPING = {
     "tempora.timing.backoffdelay.reset": "https://tempora.readthedocs.io/en/latest/index.html#tempora.timing.BackoffDelay.reset",
     "tempora.timing.intervalgovernor": "https://tempora.readthedocs.io/en/latest/index.html#tempora.timing.IntervalGovernor",
     "tempora.timing.intervalgovernor.decorate": "https://tempora.readthedocs.io/en/latest/index.html#tempora.timing.IntervalGovernor.decorate",
+    "tempora.timing.intervalgovernor.last_call": "https://tempora.readthedocs.io/en/latest/index.html#tempora.timing.IntervalGovernor.last_call",
     "tempora.timing.stopwatch": "https://tempora.readthedocs.io/en/latest/index.html#tempora.timing.Stopwatch",
     "tempora.timing.stopwatch.reset": "https://tempora.readthedocs.io/en/latest/index.html#tempora.timing.Stopwatch.reset",
     "tempora.timing.stopwatch.split": "https://tempora.readthedocs.io/en/latest/index.html#tempora.timing.Stopwatch.split",

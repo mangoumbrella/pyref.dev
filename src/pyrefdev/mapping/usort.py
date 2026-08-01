@@ -1,4 +1,4 @@
-VERSION = "1.1.0"
+VERSION = "1.1.3"
 
 # fmt: off
 MAPPING = {
@@ -6,6 +6,7 @@ MAPPING = {
     "usort.config": "https://usort.readthedocs.io/en/stable/api.html#usort.Config",
     "usort.config.categories": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.categories",
     "usort.config.category": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.category",
+    "usort.config.collapse_blank_lines_in_category": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.collapse_blank_lines_in_category",
     "usort.config.default_category": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.default_category",
     "usort.config.excludes": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.excludes",
     "usort.config.find": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.find",
@@ -15,6 +16,7 @@ MAPPING = {
     "usort.config.line_length": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.line_length",
     "usort.config.magic_commas": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.magic_commas",
     "usort.config.merge_imports": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.merge_imports",
+    "usort.config.preserve_inline_comments": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.preserve_inline_comments",
     "usort.config.side_effect_modules": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.side_effect_modules",
     "usort.config.side_effect_re": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.side_effect_re",
     "usort.config.update_from_config": "https://usort.readthedocs.io/en/stable/api.html#usort.Config.update_from_config",

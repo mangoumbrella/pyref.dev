@@ -1,4 +1,4 @@
-VERSION = "11.4.0"
+VERSION = "11.5.1"
 
 # fmt: off
 MAPPING = {
@@ -18,6 +18,7 @@ MAPPING = {
     "aleph_alpha_client.asyncclient.get_version": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.AsyncClient.get_version",
     "aleph_alpha_client.asyncclient.instructable_embed": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.AsyncClient.instructable_embed",
     "aleph_alpha_client.asyncclient.models": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.AsyncClient.models",
+    "aleph_alpha_client.asyncclient.rerank": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.AsyncClient.rerank",
     "aleph_alpha_client.asyncclient.semantic_embed": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.AsyncClient.semantic_embed",
     "aleph_alpha_client.asyncclient.sse_data_prefix": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.AsyncClient.SSE_DATA_PREFIX",
     "aleph_alpha_client.asyncclient.tokenize": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.AsyncClient.tokenize",
@@ -70,6 +71,7 @@ MAPPING = {
     "aleph_alpha_client.client.get_version": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.Client.get_version",
     "aleph_alpha_client.client.instructable_embed": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.Client.instructable_embed",
     "aleph_alpha_client.client.models": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.Client.models",
+    "aleph_alpha_client.client.rerank": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.Client.rerank",
     "aleph_alpha_client.client.semantic_embed": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.Client.semantic_embed",
     "aleph_alpha_client.client.tokenize": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.Client.tokenize",
     "aleph_alpha_client.client.tokenizer": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.Client.tokenizer",
@@ -265,6 +267,24 @@ MAPPING = {
     "aleph_alpha_client.prompttemplate.placeholder": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.PromptTemplate.placeholder",
     "aleph_alpha_client.prompttemplate.to_prompt": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.PromptTemplate.to_prompt",
     "aleph_alpha_client.quotaerror": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.QuotaError",
+    "aleph_alpha_client.rerankrequest": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankRequest",
+    "aleph_alpha_client.rerankrequest.documents": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankRequest.documents",
+    "aleph_alpha_client.rerankrequest.query": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankRequest.query",
+    "aleph_alpha_client.rerankrequest.to_json": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankRequest.to_json",
+    "aleph_alpha_client.rerankrequest.top_n": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankRequest.top_n",
+    "aleph_alpha_client.rerankresponse": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankResponse",
+    "aleph_alpha_client.rerankresponse.from_json": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankResponse.from_json",
+    "aleph_alpha_client.rerankresponse.results": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankResponse.results",
+    "aleph_alpha_client.rerankresponse.usage": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankResponse.usage",
+    "aleph_alpha_client.rerankresult": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankResult",
+    "aleph_alpha_client.rerankresult.from_json": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankResult.from_json",
+    "aleph_alpha_client.rerankresult.index": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankResult.index",
+    "aleph_alpha_client.rerankresult.relevance_score": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankResult.relevance_score",
+    "aleph_alpha_client.rerankusage": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankUsage",
+    "aleph_alpha_client.rerankusage.completion_tokens": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankUsage.completion_tokens",
+    "aleph_alpha_client.rerankusage.from_json": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankUsage.from_json",
+    "aleph_alpha_client.rerankusage.prompt_tokens": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankUsage.prompt_tokens",
+    "aleph_alpha_client.rerankusage.total_tokens": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.RerankUsage.total_tokens",
     "aleph_alpha_client.semanticembeddingrequest": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.SemanticEmbeddingRequest",
     "aleph_alpha_client.semanticembeddingrequest.compress_to_size": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.SemanticEmbeddingRequest.compress_to_size",
     "aleph_alpha_client.semanticembeddingrequest.contextual_control_threshold": "https://aleph-alpha-client.readthedocs.io/en/latest/aleph_alpha_client.html#aleph_alpha_client.SemanticEmbeddingRequest.contextual_control_threshold",

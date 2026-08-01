@@ -1,8 +1,10 @@
-VERSION = "4.4.4"
+VERSION = "4.6.0"
 
 # fmt: off
 MAPPING = {
     "typeguard": "https://typeguard.readthedocs.io/en/stable/",
+    "typeguard.check_argument_types": "https://typeguard.readthedocs.io/en/stable/api.html#typeguard.check_argument_types",
+    "typeguard.check_return_type": "https://typeguard.readthedocs.io/en/stable/api.html#typeguard.check_return_type",
     "typeguard.check_type": "https://typeguard.readthedocs.io/en/stable/api.html#typeguard.check_type",
     "typeguard.check_type_internal": "https://typeguard.readthedocs.io/en/stable/api.html#typeguard.check_type_internal",
     "typeguard.checker_lookup_functions": "https://typeguard.readthedocs.io/en/stable/api.html#typeguard.checker_lookup_functions",

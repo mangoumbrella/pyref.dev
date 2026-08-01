@@ -1,12 +1,10 @@
-VERSION = "25.7"
+VERSION = "26.2"
 
 # fmt: off
 MAPPING = {
     "xsdata": "https://xsdata.readthedocs.io/en/latest/",
     "xsdata.cli": "https://xsdata.readthedocs.io/en/latest/api/cli/#xsdata.cli",
     "xsdata.cli.cli": "https://xsdata.readthedocs.io/en/latest/api/cli/#xsdata.cli.cli",
-    "xsdata.cli.deprecateddefaultgroup": "https://xsdata.readthedocs.io/en/latest/api/cli/#xsdata.cli.DeprecatedDefaultGroup",
-    "xsdata.cli.deprecateddefaultgroup.get_command": "https://xsdata.readthedocs.io/en/latest/api/cli/#xsdata.cli.DeprecatedDefaultGroup.get_command",
     "xsdata.cli.download": "https://xsdata.readthedocs.io/en/latest/api/cli/#xsdata.cli.download",
     "xsdata.cli.generate": "https://xsdata.readthedocs.io/en/latest/api/cli/#xsdata.cli.generate",
     "xsdata.cli.init_config": "https://xsdata.readthedocs.io/en/latest/api/cli/#xsdata.cli.init_config",
@@ -166,7 +164,6 @@ MAPPING = {
     "xsdata.codegen.handlers.rename_duplicate_classes.renameduplicateclasses.add_abstract_suffix": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/rename_duplicate_classes/#xsdata.codegen.handlers.rename_duplicate_classes.RenameDuplicateClasses.add_abstract_suffix",
     "xsdata.codegen.handlers.rename_duplicate_classes.renameduplicateclasses.add_numeric_suffix": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/rename_duplicate_classes/#xsdata.codegen.handlers.rename_duplicate_classes.RenameDuplicateClasses.add_numeric_suffix",
     "xsdata.codegen.handlers.rename_duplicate_classes.renameduplicateclasses.get_reserved": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/rename_duplicate_classes/#xsdata.codegen.handlers.rename_duplicate_classes.RenameDuplicateClasses.get_reserved",
-    "xsdata.codegen.handlers.rename_duplicate_classes.renameduplicateclasses.merge_classes": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/rename_duplicate_classes/#xsdata.codegen.handlers.rename_duplicate_classes.RenameDuplicateClasses.merge_classes",
     "xsdata.codegen.handlers.rename_duplicate_classes.renameduplicateclasses.next_qname": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/rename_duplicate_classes/#xsdata.codegen.handlers.rename_duplicate_classes.RenameDuplicateClasses.next_qname",
     "xsdata.codegen.handlers.rename_duplicate_classes.renameduplicateclasses.rename_class": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/rename_duplicate_classes/#xsdata.codegen.handlers.rename_duplicate_classes.RenameDuplicateClasses.rename_class",
     "xsdata.codegen.handlers.rename_duplicate_classes.renameduplicateclasses.rename_classes": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/rename_duplicate_classes/#xsdata.codegen.handlers.rename_duplicate_classes.RenameDuplicateClasses.rename_classes",
@@ -819,6 +816,7 @@ MAPPING = {
     "xsdata.formats.dataclass.parsers.nodes.element.elementnode.build_element_node": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/nodes/element/#xsdata.formats.dataclass.parsers.nodes.element.ElementNode.build_element_node",
     "xsdata.formats.dataclass.parsers.nodes.element.elementnode.build_node": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/nodes/element/#xsdata.formats.dataclass.parsers.nodes.element.ElementNode.build_node",
     "xsdata.formats.dataclass.parsers.nodes.element.elementnode.child": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/nodes/element/#xsdata.formats.dataclass.parsers.nodes.element.ElementNode.child",
+    "xsdata.formats.dataclass.parsers.nodes.element.elementnode.pop_wrapper": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/nodes/element/#xsdata.formats.dataclass.parsers.nodes.element.ElementNode.pop_wrapper",
     "xsdata.formats.dataclass.parsers.nodes.element.elementnode.prepare_generic_value": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/nodes/element/#xsdata.formats.dataclass.parsers.nodes.element.ElementNode.prepare_generic_value",
     "xsdata.formats.dataclass.parsers.nodes.primitive": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/nodes/primitive/#xsdata.formats.dataclass.parsers.nodes.primitive",
     "xsdata.formats.dataclass.parsers.nodes.primitive.primitivenode": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/nodes/primitive/#xsdata.formats.dataclass.parsers.nodes.primitive.PrimitiveNode",
@@ -1176,7 +1174,6 @@ MAPPING = {
     "xsdata.models.mixins.elementbase.substitutions": "https://xsdata.readthedocs.io/en/latest/api/models/mixins/#xsdata.models.mixins.ElementBase.substitutions",
     "xsdata.models.mixins.elementbase.xs_prefix": "https://xsdata.readthedocs.io/en/latest/api/models/mixins/#xsdata.models.mixins.ElementBase.xs_prefix",
     "xsdata.models.mixins.extract_metadata": "https://xsdata.readthedocs.io/en/latest/api/models/mixins/#xsdata.models.mixins.extract_metadata",
-    "xsdata.models.mixins.text_node": "https://xsdata.readthedocs.io/en/latest/api/models/mixins/#xsdata.models.mixins.text_node",
     "xsdata.models.wsdl": "https://xsdata.readthedocs.io/en/latest/api/models/wsdl/#xsdata.models.wsdl",
     "xsdata.models.wsdl.binding": "https://xsdata.readthedocs.io/en/latest/api/models/wsdl/#xsdata.models.wsdl.Binding",
     "xsdata.models.wsdl.binding.unique_operations": "https://xsdata.readthedocs.io/en/latest/api/models/wsdl/#xsdata.models.wsdl.Binding.unique_operations",
@@ -1339,6 +1336,8 @@ MAPPING = {
     "xsdata.utils.click.loghandler.emit": "https://xsdata.readthedocs.io/en/latest/api/utils/click/#xsdata.utils.click.LogHandler.emit",
     "xsdata.utils.click.loghandler.emit_warnings": "https://xsdata.readthedocs.io/en/latest/api/utils/click/#xsdata.utils.click.LogHandler.emit_warnings",
     "xsdata.utils.click.model_options": "https://xsdata.readthedocs.io/en/latest/api/utils/click/#xsdata.utils.click.model_options",
+    "xsdata.utils.click.url": "https://xsdata.readthedocs.io/en/latest/api/utils/click/#xsdata.utils.click.URL",
+    "xsdata.utils.click.url.convert": "https://xsdata.readthedocs.io/en/latest/api/utils/click/#xsdata.utils.click.URL.convert",
     "xsdata.utils.collections": "https://xsdata.readthedocs.io/en/latest/api/utils/collections/#xsdata.utils.collections",
     "xsdata.utils.collections.apply": "https://xsdata.readthedocs.io/en/latest/api/utils/collections/#xsdata.utils.collections.apply",
     "xsdata.utils.collections.connected_components": "https://xsdata.readthedocs.io/en/latest/api/utils/collections/#xsdata.utils.collections.connected_components",
@@ -1383,7 +1382,6 @@ MAPPING = {
     "xsdata.utils.downloader": "https://xsdata.readthedocs.io/en/latest/api/utils/downloader/#xsdata.utils.downloader",
     "xsdata.utils.downloader.downloader": "https://xsdata.readthedocs.io/en/latest/api/utils/downloader/#xsdata.utils.downloader.Downloader",
     "xsdata.utils.downloader.downloader.__init__": "https://xsdata.readthedocs.io/en/latest/api/utils/downloader/#xsdata.utils.downloader.Downloader.__init__",
-    "xsdata.utils.downloader.downloader.adjust_base_path": "https://xsdata.readthedocs.io/en/latest/api/utils/downloader/#xsdata.utils.downloader.Downloader.adjust_base_path",
     "xsdata.utils.downloader.downloader.adjust_imports": "https://xsdata.readthedocs.io/en/latest/api/utils/downloader/#xsdata.utils.downloader.Downloader.adjust_imports",
     "xsdata.utils.downloader.downloader.parse_definitions": "https://xsdata.readthedocs.io/en/latest/api/utils/downloader/#xsdata.utils.downloader.Downloader.parse_definitions",
     "xsdata.utils.downloader.downloader.parse_schema": "https://xsdata.readthedocs.io/en/latest/api/utils/downloader/#xsdata.utils.downloader.Downloader.parse_schema",

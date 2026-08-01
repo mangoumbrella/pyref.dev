@@ -1,4 +1,4 @@
-VERSION = "1.5.6"
+VERSION = "1.5.8"
 
 # fmt: off
 MAPPING = {
@@ -8,6 +8,7 @@ MAPPING = {
     "sqllineage.core.analyzer": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/analyzer.html",
     "sqllineage.core.analyzer.lineageanalyzer": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/analyzer.html#sqllineage.core.analyzer.LineageAnalyzer",
     "sqllineage.core.analyzer.lineageanalyzer.analyze": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/analyzer.html#sqllineage.core.analyzer.LineageAnalyzer.analyze",
+    "sqllineage.core.analyzer.lineageanalyzer.statements": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/analyzer.html#sqllineage.core.analyzer.LineageAnalyzer.statements",
     "sqllineage.core.holders": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/holder.html",
     "sqllineage.core.holders.sqllineageholder": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/holder.html#sqllineage.core.holders.SQLLineageHolder",
     "sqllineage.core.holders.sqllineageholder.column_lineage_graph": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/holder.html#sqllineage.core.holders.SQLLineageHolder.column_lineage_graph",

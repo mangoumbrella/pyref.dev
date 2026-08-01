@@ -1,4 +1,4 @@
-VERSION = "3.1.1"
+VERSION = "3.3.0"
 
 # fmt: off
 MAPPING = {
@@ -62,6 +62,7 @@ MAPPING = {
     "xgboost.collective.config.tracker_host_ip": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.Config.tracker_host_ip",
     "xgboost.collective.config.tracker_port": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.Config.tracker_port",
     "xgboost.collective.config.tracker_timeout": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.Config.tracker_timeout",
+    "xgboost.collective.config.worker_port": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.Config.worker_port",
     "xgboost.collective.finalize": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.finalize",
     "xgboost.collective.get_rank": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.get_rank",
     "xgboost.collective.get_world_size": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.collective.get_world_size",

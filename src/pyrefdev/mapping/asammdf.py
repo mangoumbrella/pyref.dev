@@ -1,4 +1,4 @@
-VERSION = "8.7.2"
+VERSION = "8.8.22"
 
 # fmt: off
 MAPPING = {
@@ -65,5 +65,7 @@ MAPPING = {
     "asammdf.signal.signal.interp": "https://asammdf.readthedocs.io/en/latest/api.html#asammdf.signal.Signal.interp",
     "asammdf.signal.signal.physical": "https://asammdf.readthedocs.io/en/latest/api.html#asammdf.signal.Signal.physical",
     "asammdf.signal.signal.plot": "https://asammdf.readthedocs.io/en/latest/api.html#asammdf.signal.Signal.plot",
+    "asammdf.signal.signal.raw": "https://asammdf.readthedocs.io/en/latest/api.html#asammdf.signal.Signal.raw",
+    "asammdf.signal.signal.scaled": "https://asammdf.readthedocs.io/en/latest/api.html#asammdf.signal.Signal.scaled",
     "asammdf.signal.signal.validate": "https://asammdf.readthedocs.io/en/latest/api.html#asammdf.signal.Signal.validate",
 }

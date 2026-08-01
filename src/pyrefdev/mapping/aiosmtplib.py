@@ -1,4 +1,4 @@
-VERSION = "5.0.0"
+VERSION = "5.1.2"
 
 # fmt: off
 MAPPING = {
@@ -29,6 +29,7 @@ MAPPING = {
     "aiosmtplib.smtp.auth_crammd5": "https://aiosmtplib.readthedocs.io/en/latest/reference.html#aiosmtplib.SMTP.auth_crammd5",
     "aiosmtplib.smtp.auth_login": "https://aiosmtplib.readthedocs.io/en/latest/reference.html#aiosmtplib.SMTP.auth_login",
     "aiosmtplib.smtp.auth_plain": "https://aiosmtplib.readthedocs.io/en/latest/reference.html#aiosmtplib.SMTP.auth_plain",
+    "aiosmtplib.smtp.auth_xoauth2": "https://aiosmtplib.readthedocs.io/en/latest/reference.html#aiosmtplib.SMTP.auth_xoauth2",
     "aiosmtplib.smtp.close": "https://aiosmtplib.readthedocs.io/en/latest/reference.html#aiosmtplib.SMTP.close",
     "aiosmtplib.smtp.connect": "https://aiosmtplib.readthedocs.io/en/latest/reference.html#aiosmtplib.SMTP.connect",
     "aiosmtplib.smtp.data": "https://aiosmtplib.readthedocs.io/en/latest/reference.html#aiosmtplib.SMTP.data",

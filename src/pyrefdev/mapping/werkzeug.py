@@ -1,4 +1,4 @@
-VERSION = "3.1.3"
+VERSION = "3.1.8"
 
 # fmt: off
 MAPPING = {
@@ -83,7 +83,6 @@ MAPPING = {
     "werkzeug.datastructures.immutabledict": "https://werkzeug.palletsprojects.com/en/stable/datastructures/#werkzeug.datastructures.ImmutableDict",
     "werkzeug.datastructures.immutabledict.copy": "https://werkzeug.palletsprojects.com/en/stable/datastructures/#werkzeug.datastructures.ImmutableDict.copy",
     "werkzeug.datastructures.immutablelist": "https://werkzeug.palletsprojects.com/en/stable/datastructures/#werkzeug.datastructures.ImmutableList",
-    "werkzeug.datastructures.immutablemultidict": "https://werkzeug.palletsprojects.com/en/stable/datastructures/#werkzeug.datastructures.ImmutableMultiDict",
     "werkzeug.datastructures.immutableorderedmultidict": "https://werkzeug.palletsprojects.com/en/stable/datastructures/#werkzeug.datastructures.ImmutableOrderedMultiDict",
     "werkzeug.datastructures.immutabletypeconversiondict": "https://werkzeug.palletsprojects.com/en/stable/datastructures/#werkzeug.datastructures.ImmutableTypeConversionDict",
     "werkzeug.datastructures.immutabletypeconversiondict.copy": "https://werkzeug.palletsprojects.com/en/stable/datastructures/#werkzeug.datastructures.ImmutableTypeConversionDict.copy",
@@ -304,7 +303,6 @@ MAPPING = {
     "werkzeug.routing.rulefactory": "https://werkzeug.palletsprojects.com/en/stable/routing/#werkzeug.routing.RuleFactory",
     "werkzeug.routing.rulefactory.get_rules": "https://werkzeug.palletsprojects.com/en/stable/routing/#werkzeug.routing.RuleFactory.get_rules",
     "werkzeug.routing.ruletemplate": "https://werkzeug.palletsprojects.com/en/stable/routing/#werkzeug.routing.RuleTemplate",
-    "werkzeug.routing.statemachinematcher": "https://werkzeug.palletsprojects.com/en/stable/routing/#werkzeug.routing.StateMachineMatcher",
     "werkzeug.routing.subdomain": "https://werkzeug.palletsprojects.com/en/stable/routing/#werkzeug.routing.Subdomain",
     "werkzeug.routing.submount": "https://werkzeug.palletsprojects.com/en/stable/routing/#werkzeug.routing.Submount",
     "werkzeug.routing.unicodeconverter": "https://werkzeug.palletsprojects.com/en/stable/routing/#werkzeug.routing.UnicodeConverter",
