@@ -19,6 +19,7 @@ def update_docs(
     package: str | None = None,
     force: bool = False,
     upgrade: bool = True,
+    only_unindexed: bool = False,
     retry_http_404: bool = False,
     index: Index = Index(),
     seconds_to_sleep_between_requests: float = 5.0,
@@ -26,12 +27,14 @@ def update_docs(
     num_threads_per_package: int = multiprocessing.cpu_count(),
 ) -> None:
     """Crawl and parse docs."""
-    should_update_last_updated_package = package is None
+    should_update_last_updated_package = package is None and not only_unindexed
     packages = get_packages(package)
     for pkg in packages:
         if pkg.do_not_update:
             console.print(f"Skipping {pkg.pypi}: {pkg.do_not_update_reason}")
     packages = [pkg for pkg in packages if not pkg.do_not_update]
+    if only_unindexed:
+        packages = [pkg for pkg in packages if not pkg.indexed]
     if (last_updated_package_name := index.load_last_updated_package()) is not None:
         package_names = [pkg.pypi for pkg in packages]
         try:
