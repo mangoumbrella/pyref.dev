@@ -2,13 +2,24 @@ import re
 from pathlib import Path
 
 from pyrefdev import config
-from pyrefdev.config import console, ALL_PACKAGES
+from pyrefdev.config import console
 
 
 _PACKAGE_LINE = re.compile(
     r'^(\s*Package\(pypi="([^"]+)")(.*?)(, indexed=False)?(\),?)$',
     re.MULTILINE,
 )
+_MAPPING_DIRECTORY = Path(config.__file__).parent / "mapping"
+
+
+def _is_indexed(package_name: str) -> bool:
+    """Whether a package has a mapping, which is what ``indexed`` records.
+
+    This reads the directory rather than pyrefdev.mapping: that module only
+    loads SUPPORTED_PACKAGES, which is derived from the very flag being updated,
+    and it is a stale snapshot of a mapping parse_docs may have just written.
+    """
+    return (_MAPPING_DIRECTORY / f"{package_name}.py").exists()
 
 
 def update_config() -> None:
@@ -23,7 +34,7 @@ def update_config() -> None:
         indexed_false_flag = match.group(4)
         closing = match.group(5)
 
-        is_indexed = package_name in ALL_PACKAGES
+        is_indexed = _is_indexed(package_name)
         has_indexed_false = indexed_false_flag is not None
 
         if is_indexed and has_indexed_false:
