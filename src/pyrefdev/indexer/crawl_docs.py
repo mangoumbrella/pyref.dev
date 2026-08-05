@@ -133,6 +133,7 @@ def crawl_docs(
     package: str | None = None,
     force: bool = False,
     upgrade: bool = False,
+    only_unindexed: bool = False,
     retry_failed_urls: bool = True,
     retry_http_404: bool = False,
     index: Index = Index(),
@@ -158,6 +159,8 @@ def crawl_docs(
         if pkg.do_not_update:
             console.print(f"Skipping {pkg.pypi}: {pkg.do_not_update_reason}")
     packages = [pkg for pkg in packages if not pkg.do_not_update]
+    if only_unindexed:
+        packages = [pkg for pkg in packages if not pkg.indexed]
     if not force and not upgrade and not retry_failed_urls:
         packages = [
             pkg
