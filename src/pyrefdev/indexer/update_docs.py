@@ -54,7 +54,9 @@ def update_docs(
         console=console,
         expand=True,
     ) as progress:
-        task = progress.add_task(f"Updating {len(packages)} packages")
+        task = progress.add_task(
+            f"Updating {len(packages)} packages", total=len(packages)
+        )
         for pkg in packages:
             crawl_docs(
                 package=pkg.pypi,
