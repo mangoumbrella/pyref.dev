@@ -344,7 +344,7 @@ class _Crawler:
         task = self._progress.add_task(
             f"Crawling {self._root_url.removeprefix('https://')}",
             total=len(self._seen_urls),
-            completed=len(self._file_to_urls),
+            completed=len(self._done_urls()),
             extra="",
         )
         threads = []
@@ -383,12 +383,22 @@ class _Crawler:
         including URLs being fetched right now.
         """
         with self._lock:
-            done = (
+            return sorted(self._seen_urls - self._done_urls())
+
+    def _done_urls(self) -> set[str]:
+        """Seen URLs that have reached a terminal state.
+
+        Both ends of a redirect count: an out-of-scope target is never fetched
+        under its own name, so leaving it out would keep it in the frontier
+        forever.
+        """
+        with self._lock:
+            return (
                 set(self._file_to_urls.values())
                 | set(self._failed_urls)
                 | set(self._redirects)
+                | set(self._redirects.values())
             )
-            return sorted(self._seen_urls - done)
 
     def save_crawl_state(self) -> None:
         pending_urls = self._unfinished_urls()
@@ -441,7 +451,7 @@ class _Crawler:
                             self._failed_urls.pop(url, None)
                             kwargs["extra"] = str(saved)[-24:]
                         total = len(self._seen_urls)
-                        completed = len(self._file_to_urls)
+                        completed = len(self._done_urls())
                     self._progress.update(
                         task,
                         total=total,
