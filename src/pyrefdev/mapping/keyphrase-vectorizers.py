@@ -1,0 +1,32 @@
+VERSION = "0.0.13"
+
+# fmt: off
+MAPPING = {
+    "keyphrase_vectorizers": "https://keyphrase-vectorizers.readthedocs.io/en/stable/",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#module-keyphrase_vectorizers.keyphrase_count_vectorizer",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer.keyphrasecountvectorizer": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_count_vectorizer.KeyphraseCountVectorizer",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer.keyphrasecountvectorizer.build_tokenizer": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_count_vectorizer.KeyphraseCountVectorizer.build_tokenizer",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer.keyphrasecountvectorizer.fit": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_count_vectorizer.KeyphraseCountVectorizer.fit",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer.keyphrasecountvectorizer.fit_transform": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_count_vectorizer.KeyphraseCountVectorizer.fit_transform",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer.keyphrasecountvectorizer.get_feature_names": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_count_vectorizer.KeyphraseCountVectorizer.get_feature_names",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer.keyphrasecountvectorizer.get_feature_names_out": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_count_vectorizer.KeyphraseCountVectorizer.get_feature_names_out",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer.keyphrasecountvectorizer.get_params": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_count_vectorizer.KeyphraseCountVectorizer.get_params",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer.keyphrasecountvectorizer.inverse_transform": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_count_vectorizer.KeyphraseCountVectorizer.inverse_transform",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer.keyphrasecountvectorizer.partial_fit": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_count_vectorizer.KeyphraseCountVectorizer.partial_fit",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer.keyphrasecountvectorizer.set_params": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_count_vectorizer.KeyphraseCountVectorizer.set_params",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer.keyphrasecountvectorizer.transform": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_count_vectorizer.KeyphraseCountVectorizer.transform",
+    "keyphrase_vectorizers.keyphrase_count_vectorizer.keyphrasecountvectorizer.update_bow": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_count_vectorizer.KeyphraseCountVectorizer.update_bow",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#module-keyphrase_vectorizers.keyphrase_tfidf_vectorizer",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer.keyphrasetfidfvectorizer": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_tfidf_vectorizer.KeyphraseTfidfVectorizer",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer.keyphrasetfidfvectorizer.build_tokenizer": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_tfidf_vectorizer.KeyphraseTfidfVectorizer.build_tokenizer",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer.keyphrasetfidfvectorizer.fit": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_tfidf_vectorizer.KeyphraseTfidfVectorizer.fit",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer.keyphrasetfidfvectorizer.fit_transform": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_tfidf_vectorizer.KeyphraseTfidfVectorizer.fit_transform",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer.keyphrasetfidfvectorizer.get_feature_names": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_tfidf_vectorizer.KeyphraseTfidfVectorizer.get_feature_names",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer.keyphrasetfidfvectorizer.get_feature_names_out": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_tfidf_vectorizer.KeyphraseTfidfVectorizer.get_feature_names_out",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer.keyphrasetfidfvectorizer.get_params": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_tfidf_vectorizer.KeyphraseTfidfVectorizer.get_params",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer.keyphrasetfidfvectorizer.inverse_transform": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_tfidf_vectorizer.KeyphraseTfidfVectorizer.inverse_transform",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer.keyphrasetfidfvectorizer.partial_fit": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_tfidf_vectorizer.KeyphraseTfidfVectorizer.partial_fit",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer.keyphrasetfidfvectorizer.set_params": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_tfidf_vectorizer.KeyphraseTfidfVectorizer.set_params",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer.keyphrasetfidfvectorizer.transform": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_tfidf_vectorizer.KeyphraseTfidfVectorizer.transform",
+    "keyphrase_vectorizers.keyphrase_tfidf_vectorizer.keyphrasetfidfvectorizer.update_bow": "https://keyphrase-vectorizers.readthedocs.io/en/stable/api.html#keyphrase_vectorizers.keyphrase_tfidf_vectorizer.KeyphraseTfidfVectorizer.update_bow",
+}

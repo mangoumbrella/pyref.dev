@@ -1,0 +1,32 @@
+VERSION = "0.2.1"
+
+# fmt: off
+MAPPING = {
+    "arcp": "https://arcp.readthedocs.io/en/stable/",
+    "arcp.arcp_hash": "https://arcp.readthedocs.io/en/stable/arcp.html#arcp.arcp_hash",
+    "arcp.arcp_location": "https://arcp.readthedocs.io/en/stable/arcp.html#arcp.arcp_location",
+    "arcp.arcp_name": "https://arcp.readthedocs.io/en/stable/arcp.html#arcp.arcp_name",
+    "arcp.arcp_random": "https://arcp.readthedocs.io/en/stable/arcp.html#arcp.arcp_random",
+    "arcp.arcp_uuid": "https://arcp.readthedocs.io/en/stable/arcp.html#arcp.arcp_uuid",
+    "arcp.generate": "https://arcp.readthedocs.io/en/stable/generate.html#module-arcp.generate",
+    "arcp.generate.arcp_hash": "https://arcp.readthedocs.io/en/stable/generate.html#arcp.generate.arcp_hash",
+    "arcp.generate.arcp_location": "https://arcp.readthedocs.io/en/stable/generate.html#arcp.generate.arcp_location",
+    "arcp.generate.arcp_name": "https://arcp.readthedocs.io/en/stable/generate.html#arcp.generate.arcp_name",
+    "arcp.generate.arcp_random": "https://arcp.readthedocs.io/en/stable/generate.html#arcp.generate.arcp_random",
+    "arcp.generate.arcp_uuid": "https://arcp.readthedocs.io/en/stable/generate.html#arcp.generate.arcp_uuid",
+    "arcp.is_arcp_uri": "https://arcp.readthedocs.io/en/stable/arcp.html#arcp.is_arcp_uri",
+    "arcp.parse": "https://arcp.readthedocs.io/en/stable/parse.html#module-arcp.parse",
+    "arcp.parse.arcpparseresult": "https://arcp.readthedocs.io/en/stable/parse.html#arcp.parse.ARCPParseResult",
+    "arcp.parse.arcpparseresult.hash": "https://arcp.readthedocs.io/en/stable/parse.html#arcp.parse.ARCPParseResult.hash",
+    "arcp.parse.arcpparseresult.name": "https://arcp.readthedocs.io/en/stable/parse.html#arcp.parse.ARCPParseResult.name",
+    "arcp.parse.arcpparseresult.ni": "https://arcp.readthedocs.io/en/stable/parse.html#arcp.parse.ARCPParseResult.ni",
+    "arcp.parse.arcpparseresult.ni_uri": "https://arcp.readthedocs.io/en/stable/parse.html#arcp.parse.ARCPParseResult.ni_uri",
+    "arcp.parse.arcpparseresult.ni_well_known": "https://arcp.readthedocs.io/en/stable/parse.html#arcp.parse.ARCPParseResult.ni_well_known",
+    "arcp.parse.arcpparseresult.nih_uri": "https://arcp.readthedocs.io/en/stable/parse.html#arcp.parse.ARCPParseResult.nih_uri",
+    "arcp.parse.arcpparseresult.prefix": "https://arcp.readthedocs.io/en/stable/parse.html#arcp.parse.ARCPParseResult.prefix",
+    "arcp.parse.arcpparseresult.uuid": "https://arcp.readthedocs.io/en/stable/parse.html#arcp.parse.ARCPParseResult.uuid",
+    "arcp.parse.is_arcp_uri": "https://arcp.readthedocs.io/en/stable/parse.html#arcp.parse.is_arcp_uri",
+    "arcp.parse.parse_arcp": "https://arcp.readthedocs.io/en/stable/parse.html#arcp.parse.parse_arcp",
+    "arcp.parse.urlparse": "https://arcp.readthedocs.io/en/stable/parse.html#arcp.parse.urlparse",
+    "arcp.parse_arcp": "https://arcp.readthedocs.io/en/stable/arcp.html#arcp.parse_arcp",
+}

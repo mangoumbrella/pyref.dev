@@ -1,0 +1,32 @@
+VERSION = "4.0.1"
+
+# fmt: off
+MAPPING = {
+    "ulid": "https://python-ulid.readthedocs.io/en/stable/",
+    "ulid.basemonotonicpolicy": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.BaseMonotonicPolicy",
+    "ulid.default_generator": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.default_generator",
+    "ulid.laxmonotonicpolicy": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.LaxMonotonicPolicy",
+    "ulid.monotonicitypolicy": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.MonotonicityPolicy",
+    "ulid.monotonicitypolicy.resolve_randomness": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.MonotonicityPolicy.resolve_randomness",
+    "ulid.purerandompolicy": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.PureRandomPolicy",
+    "ulid.strictmonotonicpolicy": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.StrictMonotonicPolicy",
+    "ulid.ulid": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID",
+    "ulid.ulid.datetime": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.datetime",
+    "ulid.ulid.from_bytes": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.from_bytes",
+    "ulid.ulid.from_datetime": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.from_datetime",
+    "ulid.ulid.from_hex": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.from_hex",
+    "ulid.ulid.from_int": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.from_int",
+    "ulid.ulid.from_str": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.from_str",
+    "ulid.ulid.from_timestamp": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.from_timestamp",
+    "ulid.ulid.from_uuid": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.from_uuid",
+    "ulid.ulid.from_uuid7": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.from_uuid7",
+    "ulid.ulid.hex": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.hex",
+    "ulid.ulid.milliseconds": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.milliseconds",
+    "ulid.ulid.parse": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.parse",
+    "ulid.ulid.timestamp": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.timestamp",
+    "ulid.ulid.to_uuid": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.to_uuid",
+    "ulid.ulid.to_uuid4": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.to_uuid4",
+    "ulid.ulid.to_uuid7": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.to_uuid7",
+    "ulid.ulidgenerator": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULIDGenerator",
+    "ulid.ulidgenerator.generate": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULIDGenerator.generate",
+}

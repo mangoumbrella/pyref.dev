@@ -1,0 +1,32 @@
+VERSION = "24.0.2"
+
+# fmt: off
+MAPPING = {
+    "ert": "https://ert.readthedocs.io/en/latest/",
+    "ert.config.ert_script": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html",
+    "ert.config.ert_script.ertscript": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.ErtScript",
+    "ert.config.workflow_config": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html",
+    "ert.config.workflow_config.workflowconfigs": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.WorkflowConfigs",
+    "ert.config.workflow_fixtures": "https://ert.readthedocs.io/en/latest/reference/workflows/workflows.html",
+    "ert.config.workflow_fixtures.workflowfixtures": "https://ert.readthedocs.io/en/latest/reference/workflows/workflows.html#ert.config.workflow_fixtures.WorkflowFixtures",
+    "ert.config.workflow_fixtures.workflowfixtures.ensemble": "https://ert.readthedocs.io/en/latest/reference/workflows/workflows.html#ert.config.workflow_fixtures.WorkflowFixtures.ensemble",
+    "ert.config.workflow_fixtures.workflowfixtures.es_settings": "https://ert.readthedocs.io/en/latest/reference/workflows/workflows.html#ert.config.workflow_fixtures.WorkflowFixtures.es_settings",
+    "ert.config.workflow_fixtures.workflowfixtures.storage": "https://ert.readthedocs.io/en/latest/reference/workflows/workflows.html#ert.config.workflow_fixtures.WorkflowFixtures.storage",
+    "ert.config.workflow_fixtures.workflowfixtures.workflow_args": "https://ert.readthedocs.io/en/latest/reference/workflows/workflows.html#ert.config.workflow_fixtures.WorkflowFixtures.workflow_args",
+    "ert.ertscript": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.ErtScript",
+    "ert.ertscript.cleanup": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.ErtScript.cleanup",
+    "ert.ertscript.run": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.ErtScript.run",
+    "ert.ertscript.validate": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.ErtScript.validate",
+    "ert.plugins": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html",
+    "ert.plugins.hook_specifications": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html",
+    "ert.plugins.hook_specifications.jobs": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html",
+    "ert.plugins.hook_specifications.jobs.ertscript_workflow": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.plugins.hook_specifications.jobs.ertscript_workflow",
+    "ert.plugins.hook_specifications.logging": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html",
+    "ert.plugins.hook_specifications.logging.add_log_handle_to_root": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.plugins.hook_specifications.logging.add_log_handle_to_root",
+    "ert.plugins.hook_specifications.net_utils": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html",
+    "ert.plugins.hook_specifications.net_utils.get_ip_address": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.plugins.hook_specifications.net_utils.get_ip_address",
+    "ert.workflowconfigs": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.WorkflowConfigs",
+    "ert.workflowconfigs.__init__": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.WorkflowConfigs.__init__",
+    "ert.workflowconfigs.__new__": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.WorkflowConfigs.__new__",
+    "ert.workflowconfigs.add_workflow": "https://ert.readthedocs.io/en/latest/getting_started/howto/plugin_system.html#ert.WorkflowConfigs.add_workflow",
+}

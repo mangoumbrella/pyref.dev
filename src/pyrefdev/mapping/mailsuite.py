@@ -1,0 +1,30 @@
+VERSION = "2.2.2"
+
+# fmt: off
+MAPPING = {
+    "mailsuite": "https://seanthegeek.net/mailsuite/",
+    "mailsuite.imap": "https://seanthegeek.net/mailsuite/api.html#module-mailsuite.imap",
+    "mailsuite.imap.imapclient": "https://seanthegeek.net/mailsuite/api.html#mailsuite.imap.IMAPClient",
+    "mailsuite.imap.imapclient.create_folder": "https://seanthegeek.net/mailsuite/api.html#mailsuite.imap.IMAPClient.create_folder",
+    "mailsuite.imap.imapclient.delete_messages": "https://seanthegeek.net/mailsuite/api.html#mailsuite.imap.IMAPClient.delete_messages",
+    "mailsuite.imap.imapclient.fetch_message": "https://seanthegeek.net/mailsuite/api.html#mailsuite.imap.IMAPClient.fetch_message",
+    "mailsuite.imap.imapclient.move_messages": "https://seanthegeek.net/mailsuite/api.html#mailsuite.imap.IMAPClient.move_messages",
+    "mailsuite.imap.imapclient.reset_connection": "https://seanthegeek.net/mailsuite/api.html#mailsuite.imap.IMAPClient.reset_connection",
+    "mailsuite.imap.maxretriesexceeded": "https://seanthegeek.net/mailsuite/api.html#mailsuite.imap.MaxRetriesExceeded",
+    "mailsuite.smtp": "https://seanthegeek.net/mailsuite/api.html#module-mailsuite.smtp",
+    "mailsuite.smtp.send_email": "https://seanthegeek.net/mailsuite/api.html#mailsuite.smtp.send_email",
+    "mailsuite.smtp.smtperror": "https://seanthegeek.net/mailsuite/api.html#mailsuite.smtp.SMTPError",
+    "mailsuite.utils": "https://seanthegeek.net/mailsuite/api.html#module-mailsuite.utils",
+    "mailsuite.utils.convert_outlook_msg": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.convert_outlook_msg",
+    "mailsuite.utils.create_email": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.create_email",
+    "mailsuite.utils.decode_base64": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.decode_base64",
+    "mailsuite.utils.emailparsererror": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.EmailParserError",
+    "mailsuite.utils.from_trusted_domain": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.from_trusted_domain",
+    "mailsuite.utils.get_filename_safe_string": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.get_filename_safe_string",
+    "mailsuite.utils.get_reverse_dns": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.get_reverse_dns",
+    "mailsuite.utils.is_outlook_msg": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.is_outlook_msg",
+    "mailsuite.utils.parse_authentication_results": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.parse_authentication_results",
+    "mailsuite.utils.parse_dkim_signature": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.parse_dkim_signature",
+    "mailsuite.utils.parse_email": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.parse_email",
+    "mailsuite.utils.query_dns": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.query_dns",
+}

@@ -1,0 +1,31 @@
+VERSION = "1.0.8"
+
+# fmt: off
+MAPPING = {
+    "shiv": "https://shiv.readthedocs.io/en/stable/",
+    "shiv.bootstrap": "https://shiv.readthedocs.io/en/stable/api.html#module-shiv.bootstrap",
+    "shiv.bootstrap.bootstrap": "https://shiv.readthedocs.io/en/stable/api.html#shiv.bootstrap.bootstrap",
+    "shiv.bootstrap.cache_path": "https://shiv.readthedocs.io/en/stable/api.html#shiv.bootstrap.cache_path",
+    "shiv.bootstrap.current_zipfile": "https://shiv.readthedocs.io/en/stable/api.html#shiv.bootstrap.current_zipfile",
+    "shiv.bootstrap.ensure_no_modify": "https://shiv.readthedocs.io/en/stable/api.html#shiv.bootstrap.ensure_no_modify",
+    "shiv.bootstrap.environment": "https://shiv.readthedocs.io/en/stable/api.html#module-shiv.bootstrap.environment",
+    "shiv.bootstrap.extend_python_path": "https://shiv.readthedocs.io/en/stable/api.html#shiv.bootstrap.extend_python_path",
+    "shiv.bootstrap.extract_site_packages": "https://shiv.readthedocs.io/en/stable/api.html#shiv.bootstrap.extract_site_packages",
+    "shiv.bootstrap.import_string": "https://shiv.readthedocs.io/en/stable/api.html#shiv.bootstrap.import_string",
+    "shiv.bootstrap.interpreter": "https://shiv.readthedocs.io/en/stable/api.html#module-shiv.bootstrap.interpreter",
+    "shiv.bootstrap.prepend_pythonpath": "https://shiv.readthedocs.io/en/stable/api.html#shiv.bootstrap.prepend_pythonpath",
+    "shiv.bootstrap.run": "https://shiv.readthedocs.io/en/stable/api.html#shiv.bootstrap.run",
+    "shiv.builder": "https://shiv.readthedocs.io/en/stable/api.html#module-shiv.builder",
+    "shiv.builder.create_archive": "https://shiv.readthedocs.io/en/stable/api.html#shiv.builder.create_archive",
+    "shiv.builder.rglob_follow_symlinks": "https://shiv.readthedocs.io/en/stable/api.html#shiv.builder.rglob_follow_symlinks",
+    "shiv.builder.write_file_prefix": "https://shiv.readthedocs.io/en/stable/api.html#shiv.builder.write_file_prefix",
+    "shiv.builder.write_to_zipapp": "https://shiv.readthedocs.io/en/stable/api.html#shiv.builder.write_to_zipapp",
+    "shiv.cli": "https://shiv.readthedocs.io/en/stable/api.html#module-shiv.cli",
+    "shiv.cli.console_script_exists": "https://shiv.readthedocs.io/en/stable/api.html#shiv.cli.console_script_exists",
+    "shiv.cli.copytree": "https://shiv.readthedocs.io/en/stable/api.html#shiv.cli.copytree",
+    "shiv.cli.find_entry_point": "https://shiv.readthedocs.io/en/stable/api.html#shiv.cli.find_entry_point",
+    "shiv.constants": "https://shiv.readthedocs.io/en/stable/api.html#module-shiv.constants",
+    "shiv.pip": "https://shiv.readthedocs.io/en/stable/api.html#module-shiv.pip",
+    "shiv.pip.clean_pip_env": "https://shiv.readthedocs.io/en/stable/api.html#shiv.pip.clean_pip_env",
+    "shiv.pip.install": "https://shiv.readthedocs.io/en/stable/api.html#shiv.pip.install",
+}

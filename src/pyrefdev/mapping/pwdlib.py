@@ -1,0 +1,33 @@
+VERSION = "0.3.1"
+
+# fmt: off
+MAPPING = {
+    "pwdlib": "https://frankie567.github.io/pwdlib/",
+    "pwdlib._hash": "https://frankie567.github.io/pwdlib/reference/pwdlib/",
+    "pwdlib._hash.passwordhash": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash",
+    "pwdlib._hash.passwordhash.__init__": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash.__init__",
+    "pwdlib._hash.passwordhash.hash": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash.hash",
+    "pwdlib._hash.passwordhash.recommended": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash.recommended",
+    "pwdlib._hash.passwordhash.verify": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash.verify",
+    "pwdlib._hash.passwordhash.verify_and_update": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash.verify_and_update",
+    "pwdlib.exceptions": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions",
+    "pwdlib.exceptions.hashernotavailable": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.HasherNotAvailable",
+    "pwdlib.exceptions.hashernotavailable.__init__": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.HasherNotAvailable.__init__",
+    "pwdlib.exceptions.pwdliberror": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.PwdlibError",
+    "pwdlib.exceptions.pwdliberror.__init__": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.PwdlibError.__init__",
+    "pwdlib.exceptions.unknownhasherror": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.UnknownHashError",
+    "pwdlib.exceptions.unknownhasherror.__init__": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.UnknownHashError.__init__",
+    "pwdlib.hashers": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/",
+    "pwdlib.hashers.argon2": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.argon2",
+    "pwdlib.hashers.argon2.argon2hasher": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.argon2.Argon2Hasher",
+    "pwdlib.hashers.argon2.argon2hasher.__init__": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.argon2.Argon2Hasher.__init__",
+    "pwdlib.hashers.bcrypt": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.bcrypt",
+    "pwdlib.hashers.bcrypt.bcrypthasher": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.bcrypt.BcryptHasher",
+    "pwdlib.hashers.bcrypt.bcrypthasher.__init__": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.bcrypt.BcryptHasher.__init__",
+    "pwdlib.passwordhash": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash",
+    "pwdlib.passwordhash.__init__": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash.__init__",
+    "pwdlib.passwordhash.hash": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash.hash",
+    "pwdlib.passwordhash.recommended": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash.recommended",
+    "pwdlib.passwordhash.verify": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash.verify",
+    "pwdlib.passwordhash.verify_and_update": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash.verify_and_update",
+}

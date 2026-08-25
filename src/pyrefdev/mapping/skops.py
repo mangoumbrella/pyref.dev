@@ -1,0 +1,32 @@
+VERSION = "0.14.0"
+
+# fmt: off
+MAPPING = {
+    "skops": "https://skops.readthedocs.io/en/stable/",
+    "skops.card": "https://skops.readthedocs.io/en/stable/modules/classes.html#module-skops.card",
+    "skops.card._model_card": "https://skops.readthedocs.io/en/stable/modules/classes.html",
+    "skops.card._model_card.card": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card",
+    "skops.card.card": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card",
+    "skops.card.card.add": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.add",
+    "skops.card.card.add_fairlearn_metric_frame": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.add_fairlearn_metric_frame",
+    "skops.card.card.add_hyperparams": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.add_hyperparams",
+    "skops.card.card.add_metrics": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.add_metrics",
+    "skops.card.card.add_model_plot": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.add_model_plot",
+    "skops.card.card.add_permutation_importances": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.add_permutation_importances",
+    "skops.card.card.add_plot": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.add_plot",
+    "skops.card.card.add_table": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.add_table",
+    "skops.card.card.delete": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.delete",
+    "skops.card.card.get_model": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.get_model",
+    "skops.card.card.get_toc": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.get_toc",
+    "skops.card.card.render": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.render",
+    "skops.card.card.save": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.save",
+    "skops.card.card.select": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.Card.select",
+    "skops.card.parse_modelcard": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.card.parse_modelcard",
+    "skops.io": "https://skops.readthedocs.io/en/stable/modules/classes.html#module-skops.io",
+    "skops.io.dump": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.io.dump",
+    "skops.io.dumps": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.io.dumps",
+    "skops.io.get_untrusted_types": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.io.get_untrusted_types",
+    "skops.io.load": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.io.load",
+    "skops.io.loads": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.io.loads",
+    "skops.io.visualize": "https://skops.readthedocs.io/en/stable/modules/classes.html#skops.io.visualize",
+}

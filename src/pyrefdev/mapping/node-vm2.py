@@ -1,0 +1,32 @@
+VERSION = "0.4.7"
+
+# fmt: off
+MAPPING = {
+    "node_vm2": "https://node-vm2.readthedocs.io/en/stable/",
+    "node_vm2.basevm": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.BaseVM",
+    "node_vm2.basevm.__enter__": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.BaseVM.__enter__",
+    "node_vm2.basevm.__exit__": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.BaseVM.__exit__",
+    "node_vm2.basevm.create": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.BaseVM.create",
+    "node_vm2.basevm.destroy": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.BaseVM.destroy",
+    "node_vm2.eval": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.eval",
+    "node_vm2.nodevm": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.NodeVM",
+    "node_vm2.nodevm.code": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.NodeVM.code",
+    "node_vm2.nodevm.event_que": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.NodeVM.event_que",
+    "node_vm2.nodevm.run": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.NodeVM.run",
+    "node_vm2.nodevmmodule": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.NodeVMModule",
+    "node_vm2.nodevmmodule.__enter__": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.NodeVMModule.__enter__",
+    "node_vm2.nodevmmodule.__exit__": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.NodeVMModule.__exit__",
+    "node_vm2.nodevmmodule.call": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.NodeVMModule.call",
+    "node_vm2.nodevmmodule.call_member": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.NodeVMModule.call_member",
+    "node_vm2.nodevmmodule.destroy": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.NodeVMModule.destroy",
+    "node_vm2.nodevmmodule.get": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.NodeVMModule.get",
+    "node_vm2.nodevmmodule.get_member": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.NodeVMModule.get_member",
+    "node_vm2.vm": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.VM",
+    "node_vm2.vm.call": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.VM.call",
+    "node_vm2.vm.run": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.VM.run",
+    "node_vm2.vmserver": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.VMServer",
+    "node_vm2.vmserver.__enter__": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.VMServer.__enter__",
+    "node_vm2.vmserver.__exit__": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.VMServer.__exit__",
+    "node_vm2.vmserver.close": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.VMServer.close",
+    "node_vm2.vmserver.start": "https://node-vm2.readthedocs.io/en/stable/index.html#node_vm2.VMServer.start",
+}

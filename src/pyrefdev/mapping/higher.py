@@ -1,0 +1,30 @@
+VERSION = "0.2.1"
+
+# fmt: off
+MAPPING = {
+    "higher": "https://higher.readthedocs.io/en/stable/",
+    "higher.innerloop_ctx": "https://higher.readthedocs.io/en/stable/toplevel.html#higher.innerloop_ctx",
+    "higher.optim": "https://higher.readthedocs.io/en/stable/optim.html#module-higher.optim",
+    "higher.optim.apply_trainable_opt_params": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.apply_trainable_opt_params",
+    "higher.optim.create_diff_optim": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.create_diff_optim",
+    "higher.optim.differentiableadadelta": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.DifferentiableAdadelta",
+    "higher.optim.differentiableadagrad": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.DifferentiableAdagrad",
+    "higher.optim.differentiableadam": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.DifferentiableAdam",
+    "higher.optim.differentiableadamax": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.DifferentiableAdamax",
+    "higher.optim.differentiableasgd": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.DifferentiableASGD",
+    "higher.optim.differentiableoptimizer": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.DifferentiableOptimizer",
+    "higher.optim.differentiableoptimizer.step": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.DifferentiableOptimizer.step",
+    "higher.optim.differentiablermsprop": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.DifferentiableRMSprop",
+    "higher.optim.differentiablerprop": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.DifferentiableRprop",
+    "higher.optim.differentiablesgd": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.DifferentiableSGD",
+    "higher.optim.get_diff_optim": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.get_diff_optim",
+    "higher.optim.get_trainable_opt_params": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.get_trainable_opt_params",
+    "higher.optim.register_optim": "https://higher.readthedocs.io/en/stable/optim.html#higher.optim.register_optim",
+    "higher.patch": "https://higher.readthedocs.io/en/stable/patch.html#module-higher.patch",
+    "higher.patch.buffer_sync": "https://higher.readthedocs.io/en/stable/patch.html#higher.patch.buffer_sync",
+    "higher.patch.make_functional": "https://higher.readthedocs.io/en/stable/patch.html#higher.patch.make_functional",
+    "higher.patch.monkeypatch": "https://higher.readthedocs.io/en/stable/patch.html#higher.patch.monkeypatch",
+    "higher.utils": "https://higher.readthedocs.io/en/stable/utils.html#module-higher.utils",
+    "higher.utils.flatten": "https://higher.readthedocs.io/en/stable/utils.html#higher.utils.flatten",
+    "higher.utils.get_func_params": "https://higher.readthedocs.io/en/stable/utils.html#higher.utils.get_func_params",
+}

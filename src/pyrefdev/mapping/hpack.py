@@ -1,0 +1,33 @@
+VERSION = "4.2.0"
+
+# fmt: off
+MAPPING = {
+    "hpack": "https://python-hyper.org/projects/hpack/en/stable/",
+    "hpack.decoder": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.Decoder",
+    "hpack.decoder.decode": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.Decoder.decode",
+    "hpack.decoder.header_table_size": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.Decoder.header_table_size",
+    "hpack.encoder": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.Encoder",
+    "hpack.encoder.encode": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.Encoder.encode",
+    "hpack.encoder.header_table_size": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.Encoder.header_table_size",
+    "hpack.exceptions": "https://python-hyper.org/projects/hpack/en/stable/api.html",
+    "hpack.exceptions.hpackdecodingerror": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.HPACKDecodingError",
+    "hpack.exceptions.hpackerror": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.HPACKError",
+    "hpack.exceptions.invalidtableindex": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.InvalidTableIndex",
+    "hpack.exceptions.invalidtableindexerror": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.InvalidTableIndexError",
+    "hpack.exceptions.invalidtablesizeerror": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.InvalidTableSizeError",
+    "hpack.exceptions.oversizedheaderlisterror": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.OversizedHeaderListError",
+    "hpack.headertuple": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.HeaderTuple",
+    "hpack.hpack": "https://python-hyper.org/projects/hpack/en/stable/api.html",
+    "hpack.hpack.decoder": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.Decoder",
+    "hpack.hpack.encoder": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.Encoder",
+    "hpack.hpackdecodingerror": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.HPACKDecodingError",
+    "hpack.hpackerror": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.HPACKError",
+    "hpack.invalidtableindex": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.InvalidTableIndex",
+    "hpack.invalidtableindexerror": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.InvalidTableIndexError",
+    "hpack.invalidtablesizeerror": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.InvalidTableSizeError",
+    "hpack.neverindexedheadertuple": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.NeverIndexedHeaderTuple",
+    "hpack.oversizedheaderlisterror": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.OversizedHeaderListError",
+    "hpack.struct": "https://python-hyper.org/projects/hpack/en/stable/api.html",
+    "hpack.struct.headertuple": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.HeaderTuple",
+    "hpack.struct.neverindexedheadertuple": "https://python-hyper.org/projects/hpack/en/stable/api.html#hpack.NeverIndexedHeaderTuple",
+}

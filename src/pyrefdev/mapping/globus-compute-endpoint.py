@@ -1,0 +1,33 @@
+VERSION = "4.15.0"
+
+# fmt: off
+MAPPING = {
+    "globus_compute_endpoint": "https://globus-compute.readthedocs.io/en/stable/",
+    "globus_compute_endpoint.endpoint": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html",
+    "globus_compute_endpoint.endpoint.config": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html",
+    "globus_compute_endpoint.endpoint.config.config": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html",
+    "globus_compute_endpoint.endpoint.config.config.baseconfig": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html#globus_compute_endpoint.endpoint.config.config.BaseConfig",
+    "globus_compute_endpoint.endpoint.config.config.managerendpointconfig": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html#globus_compute_endpoint.endpoint.config.config.ManagerEndpointConfig",
+    "globus_compute_endpoint.endpoint.config.config.userendpointconfig": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html#globus_compute_endpoint.endpoint.config.config.UserEndpointConfig",
+    "globus_compute_endpoint.endpoint.config.pam": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html",
+    "globus_compute_endpoint.endpoint.config.pam.pamconfiguration": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html#globus_compute_endpoint.endpoint.config.pam.PamConfiguration",
+    "globus_compute_endpoint.engines.globus_compute": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html",
+    "globus_compute_endpoint.engines.globus_compute.globuscomputeengine": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine",
+    "globus_compute_endpoint.engines.globus_mpi": "https://globus-compute.readthedocs.io/en/stable/reference/mpi_engine.html",
+    "globus_compute_endpoint.engines.globus_mpi.globusmpiengine": "https://globus-compute.readthedocs.io/en/stable/reference/mpi_engine.html#globus_compute_endpoint.engines.GlobusMPIEngine",
+    "globus_compute_endpoint.engines.globuscomputeengine": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine",
+    "globus_compute_endpoint.engines.globuscomputeengine.assert_ha_compliant": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.assert_ha_compliant",
+    "globus_compute_endpoint.engines.globuscomputeengine.containerized_launch_cmd": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.containerized_launch_cmd",
+    "globus_compute_endpoint.engines.globuscomputeengine.get_connected_managers": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.get_connected_managers",
+    "globus_compute_endpoint.engines.globuscomputeengine.get_connected_managers_packages": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.get_connected_managers_packages",
+    "globus_compute_endpoint.engines.globuscomputeengine.get_outstanding_breakdown": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.get_outstanding_breakdown",
+    "globus_compute_endpoint.engines.globuscomputeengine.get_status_report": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.get_status_report",
+    "globus_compute_endpoint.engines.globuscomputeengine.get_total_active_managers": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.get_total_active_managers",
+    "globus_compute_endpoint.engines.globuscomputeengine.get_total_idle_workers": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.get_total_idle_workers",
+    "globus_compute_endpoint.engines.globuscomputeengine.get_total_live_workers": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.get_total_live_workers",
+    "globus_compute_endpoint.engines.globuscomputeengine.get_total_managers": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.get_total_managers",
+    "globus_compute_endpoint.engines.globuscomputeengine.get_total_tasks_outstanding": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.get_total_tasks_outstanding",
+    "globus_compute_endpoint.engines.globuscomputeengine.get_total_tasks_pending": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.get_total_tasks_pending",
+    "globus_compute_endpoint.engines.globuscomputeengine.scaling_enabled": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine.scaling_enabled",
+    "globus_compute_endpoint.engines.globusmpiengine": "https://globus-compute.readthedocs.io/en/stable/reference/mpi_engine.html#globus_compute_endpoint.engines.GlobusMPIEngine",
+}

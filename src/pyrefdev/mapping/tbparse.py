@@ -1,0 +1,32 @@
+VERSION = "0.0.9"
+
+# fmt: off
+MAPPING = {
+    "tbparse": "https://tbparse.readthedocs.io/en/stable/",
+    "tbparse.summary_reader": "https://tbparse.readthedocs.io/en/stable/pages/api.html",
+    "tbparse.summary_reader.summaryreader": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader",
+    "tbparse.summaryreader": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader",
+    "tbparse.summaryreader.audio": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.audio",
+    "tbparse.summaryreader.buckets_to_histogram_dict": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.buckets_to_histogram_dict",
+    "tbparse.summaryreader.children": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.children",
+    "tbparse.summaryreader.get_events": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.get_events",
+    "tbparse.summaryreader.get_raw_events": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.get_raw_events",
+    "tbparse.summaryreader.get_raw_tags": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.get_raw_tags",
+    "tbparse.summaryreader.get_tags": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.get_tags",
+    "tbparse.summaryreader.histogram_to_bins": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.histogram_to_bins",
+    "tbparse.summaryreader.histogram_to_cdf": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.histogram_to_cdf",
+    "tbparse.summaryreader.histogram_to_pdf": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.histogram_to_pdf",
+    "tbparse.summaryreader.histograms": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.histograms",
+    "tbparse.summaryreader.hparams": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.hparams",
+    "tbparse.summaryreader.images": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.images",
+    "tbparse.summaryreader.log_path": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.log_path",
+    "tbparse.summaryreader.raw_events": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.raw_events",
+    "tbparse.summaryreader.raw_tags": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.raw_tags",
+    "tbparse.summaryreader.scalars": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.scalars",
+    "tbparse.summaryreader.tags": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.tags",
+    "tbparse.summaryreader.tensor_to_audio": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.tensor_to_audio",
+    "tbparse.summaryreader.tensor_to_histogram": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.tensor_to_histogram",
+    "tbparse.summaryreader.tensor_to_image": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.tensor_to_image",
+    "tbparse.summaryreader.tensors": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.tensors",
+    "tbparse.summaryreader.text": "https://tbparse.readthedocs.io/en/stable/pages/api.html#tbparse.SummaryReader.text",
+}

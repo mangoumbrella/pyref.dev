@@ -1,0 +1,32 @@
+VERSION = "1.7.0"
+
+# fmt: off
+MAPPING = {
+    "oic": "https://pyoidc.readthedocs.io/en/stable/",
+    "oic.utils": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html",
+    "oic.utils.settings": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#module-oic.utils.settings",
+    "oic.utils.settings.clientsettings": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.ClientSettings",
+    "oic.utils.settings.clientsettings.model_computed_fields": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.ClientSettings.model_computed_fields",
+    "oic.utils.settings.clientsettings.requests_session": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.ClientSettings.requests_session",
+    "oic.utils.settings.oauthclientsettings": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OauthClientSettings",
+    "oic.utils.settings.oauthclientsettings.model_computed_fields": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OauthClientSettings.model_computed_fields",
+    "oic.utils.settings.oauthconsumersettings": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OauthConsumerSettings",
+    "oic.utils.settings.oauthconsumersettings.model_computed_fields": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OauthConsumerSettings.model_computed_fields",
+    "oic.utils.settings.oauthprovidersettings": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OauthProviderSettings",
+    "oic.utils.settings.oauthprovidersettings.model_computed_fields": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OauthProviderSettings.model_computed_fields",
+    "oic.utils.settings.oauthserversettings": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OauthServerSettings",
+    "oic.utils.settings.oauthserversettings.model_computed_fields": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OauthServerSettings.model_computed_fields",
+    "oic.utils.settings.oicclientsettings": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OicClientSettings",
+    "oic.utils.settings.oicclientsettings.model_computed_fields": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OicClientSettings.model_computed_fields",
+    "oic.utils.settings.oicprovidersettings": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OicProviderSettings",
+    "oic.utils.settings.oicprovidersettings.model_computed_fields": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OicProviderSettings.model_computed_fields",
+    "oic.utils.settings.oicserversettings": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OicServerSettings",
+    "oic.utils.settings.oicserversettings.model_computed_fields": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.OicServerSettings.model_computed_fields",
+    "oic.utils.settings.pyoidcsettings": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.PyoidcSettings",
+    "oic.utils.settings.pyoidcsettings.client_cert": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.PyoidcSettings.client_cert",
+    "oic.utils.settings.pyoidcsettings.model_computed_fields": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.PyoidcSettings.model_computed_fields",
+    "oic.utils.settings.pyoidcsettings.timeout": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.PyoidcSettings.timeout",
+    "oic.utils.settings.pyoidcsettings.verify_ssl": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.PyoidcSettings.verify_ssl",
+    "oic.utils.settings.serversettings": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.ServerSettings",
+    "oic.utils.settings.serversettings.model_computed_fields": "https://pyoidc.readthedocs.io/en/stable/contrib/settings.html#oic.utils.settings.ServerSettings.model_computed_fields",
+}
