@@ -1,0 +1,31 @@
+VERSION = "2.9.0"
+
+# fmt: off
+MAPPING = {
+    "aiida": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/",
+    "aiida.cmdline": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.cmdline.__all__": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html#aiida.cmdline.__all__",
+    "aiida.cmdline.params": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.cmdline.params.arguments": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.cmdline.params.arguments.__all__": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html#aiida.cmdline.params.arguments.__all__",
+    "aiida.cmdline.params.options": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.cmdline.params.options.__all__": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html#aiida.cmdline.params.options.__all__",
+    "aiida.common": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.common.__all__": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html#aiida.common.__all__",
+    "aiida.engine": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.engine.__all__": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html#aiida.engine.__all__",
+    "aiida.manage": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.manage.__all__": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html#aiida.manage.__all__",
+    "aiida.orm": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.orm.__all__": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html#aiida.orm.__all__",
+    "aiida.parsers": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.parsers.__all__": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html#aiida.parsers.__all__",
+    "aiida.plugins": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.plugins.__all__": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html#aiida.plugins.__all__",
+    "aiida.schedulers": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.schedulers.__all__": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html#aiida.schedulers.__all__",
+    "aiida.tools": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.tools.__all__": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html#aiida.tools.__all__",
+    "aiida.transports": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html",
+    "aiida.transports.__all__": "https://aiida.readthedocs.io/projects/aiida-core/en/stable/reference/api/public.html#aiida.transports.__all__",
+}

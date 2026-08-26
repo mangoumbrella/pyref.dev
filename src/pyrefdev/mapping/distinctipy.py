@@ -1,0 +1,30 @@
+VERSION = "1.3.4"
+
+# fmt: off
+MAPPING = {
+    "distinctipy": "https://distinctipy.readthedocs.io/en/stable/",
+    "distinctipy.colorblind": "https://distinctipy.readthedocs.io/en/stable/api.html#module-distinctipy.colorblind",
+    "distinctipy.colorblind.colorblind_filter": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.colorblind.colorblind_filter",
+    "distinctipy.colorblind.simulate_clusters": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.colorblind.simulate_clusters",
+    "distinctipy.colorblind.simulate_colors": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.colorblind.simulate_colors",
+    "distinctipy.colorblind.simulate_image": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.colorblind.simulate_image",
+    "distinctipy.colorsets": "https://distinctipy.readthedocs.io/en/stable/api.html#module-distinctipy.colorsets",
+    "distinctipy.colorsets.get_colormap": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.colorsets.get_colormap",
+    "distinctipy.colorsets.get_colors": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.colorsets.get_colors",
+    "distinctipy.colorsets.list_colorsets": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.colorsets.list_colorsets",
+    "distinctipy.colorsets.set_palette": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.colorsets.set_palette",
+    "distinctipy.distinctipy": "https://distinctipy.readthedocs.io/en/stable/api.html#module-distinctipy.distinctipy",
+    "distinctipy.distinctipy.color_distance": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.distinctipy.color_distance",
+    "distinctipy.distinctipy.color_swatch": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.distinctipy.color_swatch",
+    "distinctipy.distinctipy.distinct_color": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.distinctipy.distinct_color",
+    "distinctipy.distinctipy.get_colormap": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.distinctipy.get_colormap",
+    "distinctipy.distinctipy.get_colors": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.distinctipy.get_colors",
+    "distinctipy.distinctipy.get_hex": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.distinctipy.get_hex",
+    "distinctipy.distinctipy.get_random_color": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.distinctipy.get_random_color",
+    "distinctipy.distinctipy.get_rgb256": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.distinctipy.get_rgb256",
+    "distinctipy.distinctipy.get_text_color": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.distinctipy.get_text_color",
+    "distinctipy.distinctipy.invert_colors": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.distinctipy.invert_colors",
+    "distinctipy.examples": "https://distinctipy.readthedocs.io/en/stable/api.html#module-distinctipy.examples",
+    "distinctipy.examples.compare_clusters": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.examples.compare_clusters",
+    "distinctipy.examples.compare_colors": "https://distinctipy.readthedocs.io/en/stable/api.html#distinctipy.examples.compare_colors",
+}

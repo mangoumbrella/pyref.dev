@@ -1,0 +1,32 @@
+VERSION = "0.3.4"
+
+# fmt: off
+MAPPING = {
+    "csv23": "https://csv23.readthedocs.io/en/stable/",
+    "csv23.dictreader": "https://csv23.readthedocs.io/en/stable/api.html#csv23.DictReader",
+    "csv23.dictwriter": "https://csv23.readthedocs.io/en/stable/api.html#csv23.DictWriter",
+    "csv23.extras": "https://csv23.readthedocs.io/en/stable/api.html",
+    "csv23.extras.namedtuplereader": "https://csv23.readthedocs.io/en/stable/api.html#csv23.NamedTupleReader",
+    "csv23.extras.namedtuplewriter": "https://csv23.readthedocs.io/en/stable/api.html#csv23.NamedTupleWriter",
+    "csv23.iterrows": "https://csv23.readthedocs.io/en/stable/api.html#csv23.iterrows",
+    "csv23.namedtuplereader": "https://csv23.readthedocs.io/en/stable/api.html#csv23.NamedTupleReader",
+    "csv23.namedtuplereader.__next__": "https://csv23.readthedocs.io/en/stable/api.html#csv23.NamedTupleReader.__next__",
+    "csv23.namedtuplereader.dialect": "https://csv23.readthedocs.io/en/stable/api.html#csv23.NamedTupleReader.dialect",
+    "csv23.namedtuplereader.line_num": "https://csv23.readthedocs.io/en/stable/api.html#csv23.NamedTupleReader.line_num",
+    "csv23.namedtuplereader.row_cls": "https://csv23.readthedocs.io/en/stable/api.html#csv23.NamedTupleReader.row_cls",
+    "csv23.namedtuplewriter": "https://csv23.readthedocs.io/en/stable/api.html#csv23.NamedTupleWriter",
+    "csv23.namedtuplewriter.dialect": "https://csv23.readthedocs.io/en/stable/api.html#csv23.NamedTupleWriter.dialect",
+    "csv23.namedtuplewriter.writerow": "https://csv23.readthedocs.io/en/stable/api.html#csv23.NamedTupleWriter.writerow",
+    "csv23.namedtuplewriter.writerows": "https://csv23.readthedocs.io/en/stable/api.html#csv23.NamedTupleWriter.writerows",
+    "csv23.open_csv": "https://csv23.readthedocs.io/en/stable/api.html#csv23.open_csv",
+    "csv23.open_reader": "https://csv23.readthedocs.io/en/stable/api.html#csv23.open_reader",
+    "csv23.open_writer": "https://csv23.readthedocs.io/en/stable/api.html#csv23.open_writer",
+    "csv23.read_csv": "https://csv23.readthedocs.io/en/stable/api.html#csv23.read_csv",
+    "csv23.reader": "https://csv23.readthedocs.io/en/stable/api.html#csv23.reader",
+    "csv23.readers": "https://csv23.readthedocs.io/en/stable/api.html",
+    "csv23.readers.dictreader": "https://csv23.readthedocs.io/en/stable/api.html#csv23.DictReader",
+    "csv23.write_csv": "https://csv23.readthedocs.io/en/stable/api.html#csv23.write_csv",
+    "csv23.writer": "https://csv23.readthedocs.io/en/stable/api.html#csv23.writer",
+    "csv23.writers": "https://csv23.readthedocs.io/en/stable/api.html",
+    "csv23.writers.dictwriter": "https://csv23.readthedocs.io/en/stable/api.html#csv23.DictWriter",
+}

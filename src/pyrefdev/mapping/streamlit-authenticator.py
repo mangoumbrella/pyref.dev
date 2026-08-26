@@ -1,0 +1,33 @@
+VERSION = "0.4.2"
+
+# fmt: off
+MAPPING = {
+    "streamlit_authenticator": "https://streamlit-authenticator.readthedocs.io/en/stable/",
+    "streamlit_authenticator.utilities": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html",
+    "streamlit_authenticator.utilities.hasher": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#module-streamlit_authenticator.utilities.hasher",
+    "streamlit_authenticator.utilities.hasher.hasher": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.hasher.Hasher",
+    "streamlit_authenticator.utilities.hasher.hasher.check_pw": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.hasher.Hasher.check_pw",
+    "streamlit_authenticator.utilities.hasher.hasher.hash": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.hasher.Hasher.hash",
+    "streamlit_authenticator.utilities.hasher.hasher.hash_list": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.hasher.Hasher.hash_list",
+    "streamlit_authenticator.utilities.hasher.hasher.hash_passwords": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.hasher.Hasher.hash_passwords",
+    "streamlit_authenticator.utilities.hasher.hasher.is_hash": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.hasher.Hasher.is_hash",
+    "streamlit_authenticator.utilities.validator": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#module-streamlit_authenticator.utilities.validator",
+    "streamlit_authenticator.utilities.validator.validator": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.validator.Validator",
+    "streamlit_authenticator.utilities.validator.validator.diagnose_password": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.validator.Validator.diagnose_password",
+    "streamlit_authenticator.utilities.validator.validator.validate_email": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.validator.Validator.validate_email",
+    "streamlit_authenticator.utilities.validator.validator.validate_length": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.validator.Validator.validate_length",
+    "streamlit_authenticator.utilities.validator.validator.validate_name": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.validator.Validator.validate_name",
+    "streamlit_authenticator.utilities.validator.validator.validate_password": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.validator.Validator.validate_password",
+    "streamlit_authenticator.utilities.validator.validator.validate_username": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.utilities.validator.Validator.validate_username",
+    "streamlit_authenticator.views": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html",
+    "streamlit_authenticator.views.authentication_view": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#module-streamlit_authenticator.views.authentication_view",
+    "streamlit_authenticator.views.authentication_view.authenticate": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.views.authentication_view.Authenticate",
+    "streamlit_authenticator.views.authentication_view.authenticate.experimental_guest_login": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.views.authentication_view.Authenticate.experimental_guest_login",
+    "streamlit_authenticator.views.authentication_view.authenticate.forgot_password": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.views.authentication_view.Authenticate.forgot_password",
+    "streamlit_authenticator.views.authentication_view.authenticate.forgot_username": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.views.authentication_view.Authenticate.forgot_username",
+    "streamlit_authenticator.views.authentication_view.authenticate.login": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.views.authentication_view.Authenticate.login",
+    "streamlit_authenticator.views.authentication_view.authenticate.logout": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.views.authentication_view.Authenticate.logout",
+    "streamlit_authenticator.views.authentication_view.authenticate.register_user": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.views.authentication_view.Authenticate.register_user",
+    "streamlit_authenticator.views.authentication_view.authenticate.reset_password": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.views.authentication_view.Authenticate.reset_password",
+    "streamlit_authenticator.views.authentication_view.authenticate.update_user_details": "https://streamlit-authenticator.readthedocs.io/en/stable/index.html#streamlit_authenticator.views.authentication_view.Authenticate.update_user_details",
+}

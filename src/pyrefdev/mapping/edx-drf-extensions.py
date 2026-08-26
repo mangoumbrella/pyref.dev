@@ -1,0 +1,33 @@
+VERSION = "10.6.0"
+
+# fmt: off
+MAPPING = {
+    "edx_rest_framework_extensions": "https://edx-drf-extensions.readthedocs.io/en/stable/",
+    "edx_rest_framework_extensions.auth": "https://edx-drf-extensions.readthedocs.io/en/stable/authentication.html#module-edx_rest_framework_extensions.auth",
+    "edx_rest_framework_extensions.middleware": "https://edx-drf-extensions.readthedocs.io/en/stable/middleware.html#module-edx_rest_framework_extensions.middleware",
+    "edx_rest_framework_extensions.middleware.requestcustomattributesmiddleware": "https://edx-drf-extensions.readthedocs.io/en/stable/middleware.html#edx_rest_framework_extensions.middleware.RequestCustomAttributesMiddleware",
+    "edx_rest_framework_extensions.middleware.requestcustomattributesmiddleware.process_exception": "https://edx-drf-extensions.readthedocs.io/en/stable/middleware.html#edx_rest_framework_extensions.middleware.RequestCustomAttributesMiddleware.process_exception",
+    "edx_rest_framework_extensions.middleware.requestcustomattributesmiddleware.process_request": "https://edx-drf-extensions.readthedocs.io/en/stable/middleware.html#edx_rest_framework_extensions.middleware.RequestCustomAttributesMiddleware.process_request",
+    "edx_rest_framework_extensions.middleware.requestcustomattributesmiddleware.process_response": "https://edx-drf-extensions.readthedocs.io/en/stable/middleware.html#edx_rest_framework_extensions.middleware.RequestCustomAttributesMiddleware.process_response",
+    "edx_rest_framework_extensions.middleware.requestcustomattributesmiddleware.process_view": "https://edx-drf-extensions.readthedocs.io/en/stable/middleware.html#edx_rest_framework_extensions.middleware.RequestCustomAttributesMiddleware.process_view",
+    "edx_rest_framework_extensions.middleware.requestmetricsmiddleware": "https://edx-drf-extensions.readthedocs.io/en/stable/middleware.html#edx_rest_framework_extensions.middleware.RequestMetricsMiddleware",
+    "edx_rest_framework_extensions.permissions": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#module-edx_rest_framework_extensions.permissions",
+    "edx_rest_framework_extensions.permissions.isstaff": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.IsStaff",
+    "edx_rest_framework_extensions.permissions.isstaff.has_permission": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.IsStaff.has_permission",
+    "edx_rest_framework_extensions.permissions.issuperuser": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.IsSuperuser",
+    "edx_rest_framework_extensions.permissions.issuperuser.has_permission": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.IsSuperuser.has_permission",
+    "edx_rest_framework_extensions.permissions.isuserinurl": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.IsUserInUrl",
+    "edx_rest_framework_extensions.permissions.isuserinurl.has_permission": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.IsUserInUrl.has_permission",
+    "edx_rest_framework_extensions.permissions.jwthascontentorgfilterforrequestedcourse": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.JwtHasContentOrgFilterForRequestedCourse",
+    "edx_rest_framework_extensions.permissions.jwthascontentorgfilterforrequestedcourse.has_permission": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.JwtHasContentOrgFilterForRequestedCourse.has_permission",
+    "edx_rest_framework_extensions.permissions.jwthasscope": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.JwtHasScope",
+    "edx_rest_framework_extensions.permissions.jwthasscope.has_permission": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.JwtHasScope.has_permission",
+    "edx_rest_framework_extensions.permissions.jwthasuserfilterforrequesteduser": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.JwtHasUserFilterForRequestedUser",
+    "edx_rest_framework_extensions.permissions.jwthasuserfilterforrequesteduser.has_permission": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.JwtHasUserFilterForRequestedUser.has_permission",
+    "edx_rest_framework_extensions.permissions.jwtrestrictedapplication": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.JwtRestrictedApplication",
+    "edx_rest_framework_extensions.permissions.jwtrestrictedapplication.has_permission": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.JwtRestrictedApplication.has_permission",
+    "edx_rest_framework_extensions.permissions.loginredirectifunauthenticated": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.LoginRedirectIfUnauthenticated",
+    "edx_rest_framework_extensions.permissions.notjwtrestrictedapplication": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.NotJwtRestrictedApplication",
+    "edx_rest_framework_extensions.permissions.notjwtrestrictedapplication.has_permission": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.NotJwtRestrictedApplication.has_permission",
+    "edx_rest_framework_extensions.utils": "https://edx-drf-extensions.readthedocs.io/en/stable/utils.html#module-edx_rest_framework_extensions.utils",
+}

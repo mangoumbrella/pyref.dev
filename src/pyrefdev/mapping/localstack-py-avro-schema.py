@@ -1,0 +1,30 @@
+VERSION = "3.9.19"
+
+# fmt: off
+MAPPING = {
+    "py_avro_schema": "https://py-avro-schema.readthedocs.io/en/stable/",
+    "py_avro_schema._schemas": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html",
+    "py_avro_schema._schemas.option": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option",
+    "py_avro_schema._schemas.typenotsupportederror": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.TypeNotSupportedError",
+    "py_avro_schema._typing": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html",
+    "py_avro_schema._typing.decimalmeta": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.DecimalMeta",
+    "py_avro_schema._typing.decimaltype": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.DecimalType",
+    "py_avro_schema.decimalmeta": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.DecimalMeta",
+    "py_avro_schema.decimaltype": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.DecimalType",
+    "py_avro_schema.generate": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.generate",
+    "py_avro_schema.option": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option",
+    "py_avro_schema.option.auto_namespace_module": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.AUTO_NAMESPACE_MODULE",
+    "py_avro_schema.option.defaults_mandatory": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.DEFAULTS_MANDATORY",
+    "py_avro_schema.option.float_32": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.FLOAT_32",
+    "py_avro_schema.option.int_32": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.INT_32",
+    "py_avro_schema.option.json_append_newline": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.JSON_APPEND_NEWLINE",
+    "py_avro_schema.option.json_indent_2": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.JSON_INDENT_2",
+    "py_avro_schema.option.json_sort_keys": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.JSON_SORT_KEYS",
+    "py_avro_schema.option.logical_json_string": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.LOGICAL_JSON_STRING",
+    "py_avro_schema.option.milliseconds": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.MILLISECONDS",
+    "py_avro_schema.option.no_auto_namespace": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.NO_AUTO_NAMESPACE",
+    "py_avro_schema.option.no_doc": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.NO_DOC",
+    "py_avro_schema.option.use_class_alias": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.USE_CLASS_ALIAS",
+    "py_avro_schema.option.use_field_alias": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.Option.USE_FIELD_ALIAS",
+    "py_avro_schema.typenotsupportederror": "https://py-avro-schema.readthedocs.io/en/stable/py_avro_schema.html#py_avro_schema.TypeNotSupportedError",
+}

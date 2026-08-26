@@ -1,0 +1,30 @@
+VERSION = "3.0.0"
+
+# fmt: off
+MAPPING = {
+    "edx_api_doc_tools": "https://edx-api-doc-tools.readthedocs.io/en/stable/",
+    "edx_api_doc_tools.apischemagenerator": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.ApiSchemaGenerator",
+    "edx_api_doc_tools.apischemagenerator.determine_path_prefix": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.ApiSchemaGenerator.determine_path_prefix",
+    "edx_api_doc_tools.apischemagenerator.get_endpoints": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.ApiSchemaGenerator.get_endpoints",
+    "edx_api_doc_tools.conf_utils": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html",
+    "edx_api_doc_tools.conf_utils.apischemagenerator": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.ApiSchemaGenerator",
+    "edx_api_doc_tools.data": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html",
+    "edx_api_doc_tools.data.parameterlocation": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.ParameterLocation",
+    "edx_api_doc_tools.exclude_schema": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.exclude_schema",
+    "edx_api_doc_tools.exclude_schema_for": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.exclude_schema_for",
+    "edx_api_doc_tools.exclude_schema_for_all": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.exclude_schema_for_all",
+    "edx_api_doc_tools.get_docs_cache_timeout": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.get_docs_cache_timeout",
+    "edx_api_doc_tools.get_docs_urls": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.get_docs_urls",
+    "edx_api_doc_tools.is_schema_request": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.is_schema_request",
+    "edx_api_doc_tools.make_api_info": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.make_api_info",
+    "edx_api_doc_tools.make_docs_data_view": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.make_docs_data_view",
+    "edx_api_doc_tools.make_docs_ui_view": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.make_docs_ui_view",
+    "edx_api_doc_tools.make_docs_urls": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.make_docs_urls",
+    "edx_api_doc_tools.parameter": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.parameter",
+    "edx_api_doc_tools.parameterlocation": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.ParameterLocation",
+    "edx_api_doc_tools.path_parameter": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.path_parameter",
+    "edx_api_doc_tools.query_parameter": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.query_parameter",
+    "edx_api_doc_tools.schema": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.schema",
+    "edx_api_doc_tools.schema_for": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.schema_for",
+    "edx_api_doc_tools.string_parameter": "https://edx-api-doc-tools.readthedocs.io/en/stable/api.html#edx_api_doc_tools.string_parameter",
+}

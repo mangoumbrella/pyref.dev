@@ -1,0 +1,32 @@
+VERSION = "1.3.0"
+
+# fmt: off
+MAPPING = {
+    "dqsegdb2": "https://dqsegdb2.readthedocs.io/en/stable/",
+    "dqsegdb2.api": "https://dqsegdb2.readthedocs.io/en/stable/api/#module-dqsegdb2.api",
+    "dqsegdb2.api.active_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.active_path/#dqsegdb2.api.active_path",
+    "dqsegdb2.api.flags_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.flags_path/#dqsegdb2.api.flags_path",
+    "dqsegdb2.api.ifos_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.ifos_path/#dqsegdb2.api.ifos_path",
+    "dqsegdb2.api.insert_history_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.insert_history_path/#dqsegdb2.api.insert_history_path",
+    "dqsegdb2.api.known_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.known_path/#dqsegdb2.api.known_path",
+    "dqsegdb2.api.metadata_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.metadata_path/#dqsegdb2.api.metadata_path",
+    "dqsegdb2.api.report_active_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.report_active_path/#dqsegdb2.api.report_active_path",
+    "dqsegdb2.api.report_coverage_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.report_coverage_path/#dqsegdb2.api.report_coverage_path",
+    "dqsegdb2.api.report_db_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.report_db_path/#dqsegdb2.api.report_db_path",
+    "dqsegdb2.api.report_flags_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.report_flags_path/#dqsegdb2.api.report_flags_path",
+    "dqsegdb2.api.report_known_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.report_known_path/#dqsegdb2.api.report_known_path",
+    "dqsegdb2.api.report_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.report_path/#dqsegdb2.api.report_path",
+    "dqsegdb2.api.report_process_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.report_process_path/#dqsegdb2.api.report_process_path",
+    "dqsegdb2.api.resources_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.resources_path/#dqsegdb2.api.resources_path",
+    "dqsegdb2.api.versions_path": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.api.versions_path/#dqsegdb2.api.versions_path",
+    "dqsegdb2.query_ifos": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.query_ifos/#dqsegdb2.query_ifos",
+    "dqsegdb2.query_names": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.query_names/#dqsegdb2.query_names",
+    "dqsegdb2.query_segments": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.query_segments/#dqsegdb2.query_segments",
+    "dqsegdb2.query_versions": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.query_versions/#dqsegdb2.query_versions",
+    "dqsegdb2.requests": "https://dqsegdb2.readthedocs.io/en/stable/requests/#module-dqsegdb2.requests",
+    "dqsegdb2.requests.get_json": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.requests.get_json/#dqsegdb2.requests.get_json",
+    "dqsegdb2.requests.session": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.requests.Session/#dqsegdb2.requests.Session",
+    "dqsegdb2.session": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.Session/#dqsegdb2.Session",
+    "dqsegdb2.utils": "https://dqsegdb2.readthedocs.io/en/stable/utils/#module-dqsegdb2.utils",
+    "dqsegdb2.utils.get_default_host": "https://dqsegdb2.readthedocs.io/en/stable/api/dqsegdb2.utils.get_default_host/#dqsegdb2.utils.get_default_host",
+}

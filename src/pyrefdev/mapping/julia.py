@@ -1,0 +1,31 @@
+VERSION = "0.6.2"
+
+# fmt: off
+MAPPING = {
+    "julia": "https://pyjulia.readthedocs.io/en/stable/",
+    "julia.api": "https://pyjulia.readthedocs.io/en/stable/api.html",
+    "julia.api.julia": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.Julia",
+    "julia.api.julia.__init__": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.Julia.__init__",
+    "julia.api.julia.eval": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.Julia.eval",
+    "julia.api.julia.help": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.Julia.help",
+    "julia.api.julia.using": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.Julia.using",
+    "julia.api.juliaerror": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.JuliaError",
+    "julia.api.juliainfo": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.JuliaInfo",
+    "julia.api.juliainfo.bindir": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.JuliaInfo.bindir",
+    "julia.api.juliainfo.is_compatible_python": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.JuliaInfo.is_compatible_python",
+    "julia.api.juliainfo.julia": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.JuliaInfo.julia",
+    "julia.api.juliainfo.libjulia_path": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.JuliaInfo.libjulia_path",
+    "julia.api.juliainfo.libpython_path": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.JuliaInfo.libpython_path",
+    "julia.api.juliainfo.load": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.JuliaInfo.load",
+    "julia.api.juliainfo.python": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.JuliaInfo.python",
+    "julia.api.juliainfo.sysimage": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.JuliaInfo.sysimage",
+    "julia.api.libjulia": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.LibJulia",
+    "julia.api.libjulia.bindir": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.LibJulia.bindir",
+    "julia.api.libjulia.init_julia": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.LibJulia.init_julia",
+    "julia.api.libjulia.libjulia_path": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.LibJulia.libjulia_path",
+    "julia.api.libjulia.load": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.LibJulia.load",
+    "julia.api.libjulia.sysimage": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.api.LibJulia.sysimage",
+    "julia.install": "https://pyjulia.readthedocs.io/en/stable/api.html#julia.install",
+    "julia.julia_py": "https://pyjulia.readthedocs.io/en/stable/sysimage.html#module-julia.julia_py",
+    "julia.sysimage": "https://pyjulia.readthedocs.io/en/stable/sysimage.html#module-julia.sysimage",
+}

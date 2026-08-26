@@ -1,0 +1,30 @@
+VERSION = "0.42.1"
+
+# fmt: off
+MAPPING = {
+    "sqlalchemy_utils": "https://sqlalchemy-utils.readthedocs.io/en/stable/",
+    "sqlalchemy_utils.listeners": "https://sqlalchemy-utils.readthedocs.io/en/stable/listeners.html#module-sqlalchemy_utils.listeners",
+    "sqlalchemy_utils.primitives": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html",
+    "sqlalchemy_utils.primitives.country": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.primitives.country",
+    "sqlalchemy_utils.primitives.currency": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.primitives.currency",
+    "sqlalchemy_utils.primitives.ltree": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.primitives.ltree",
+    "sqlalchemy_utils.types": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types",
+    "sqlalchemy_utils.types.arrow": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.arrow",
+    "sqlalchemy_utils.types.choice": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.choice",
+    "sqlalchemy_utils.types.color": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.color",
+    "sqlalchemy_utils.types.country": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.country",
+    "sqlalchemy_utils.types.currency": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.currency",
+    "sqlalchemy_utils.types.encrypted": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html",
+    "sqlalchemy_utils.types.encrypted.encrypted_type": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.encrypted.encrypted_type",
+    "sqlalchemy_utils.types.ip_address": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.ip_address",
+    "sqlalchemy_utils.types.json": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.json",
+    "sqlalchemy_utils.types.locale": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.locale",
+    "sqlalchemy_utils.types.ltree": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.ltree",
+    "sqlalchemy_utils.types.password": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.password",
+    "sqlalchemy_utils.types.scalar_list": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.scalar_list",
+    "sqlalchemy_utils.types.timezone": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.timezone",
+    "sqlalchemy_utils.types.ts_vector": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.ts_vector",
+    "sqlalchemy_utils.types.url": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.url",
+    "sqlalchemy_utils.types.uuid": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.uuid",
+    "sqlalchemy_utils.types.weekdays": "https://sqlalchemy-utils.readthedocs.io/en/stable/data_types.html#module-sqlalchemy_utils.types.weekdays",
+}

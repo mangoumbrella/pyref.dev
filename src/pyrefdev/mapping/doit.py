@@ -1,0 +1,32 @@
+VERSION = "0.37.0"
+
+# fmt: off
+MAPPING = {
+    "doit": "https://pydoit.org/",
+    "doit.cmd_base": "https://pydoit.org/extending.html",
+    "doit.cmd_base.command": "https://pydoit.org/extending.html#doit.cmd_base.Command",
+    "doit.cmd_base.command.execute": "https://pydoit.org/extending.html#doit.cmd_base.Command.execute",
+    "doit.cmd_base.taskloader2": "https://pydoit.org/extending.html#doit.cmd_base.TaskLoader2",
+    "doit.cmd_base.taskloader2.load_doit_config": "https://pydoit.org/extending.html#doit.cmd_base.TaskLoader2.load_doit_config",
+    "doit.cmd_base.taskloader2.load_tasks": "https://pydoit.org/extending.html#doit.cmd_base.TaskLoader2.load_tasks",
+    "doit.cmd_base.taskloader2.setup": "https://pydoit.org/extending.html#doit.cmd_base.TaskLoader2.setup",
+    "doit.dependency": "https://pydoit.org/globals.html",
+    "doit.dependency.dbmdb": "https://pydoit.org/globals.html#doit.dependency.DbmDB",
+    "doit.dependency.dependency": "https://pydoit.org/globals.html#doit.dependency.Dependency",
+    "doit.dependency.dependency.get_result": "https://pydoit.org/globals.html#doit.dependency.Dependency.get_result",
+    "doit.dependency.dependency.get_value": "https://pydoit.org/globals.html#doit.dependency.Dependency.get_value",
+    "doit.dependency.dependency.get_values": "https://pydoit.org/globals.html#doit.dependency.Dependency.get_values",
+    "doit.dependency.doit": "https://pydoit.org/globals.html",
+    "doit.dependency.doit.dependency": "https://pydoit.org/globals.html",
+    "doit.dependency.doit.dependency.dbmdb": "https://pydoit.org/globals.html",
+    "doit.dependency.doit.dependency.dbmdb.dbmdb": "https://pydoit.org/globals.html",
+    "doit.dependency.doit.dependency.dbmdb.dbmdb.get": "https://pydoit.org/globals.html#doit.dependency.doit.dependency.DbmDB.DbmDB.get",
+    "doit.dependency.doit.dependency.dbmdb.dbmdb.remove": "https://pydoit.org/globals.html#doit.dependency.doit.dependency.DbmDB.DbmDB.remove",
+    "doit.dependency.doit.dependency.dbmdb.dbmdb.set": "https://pydoit.org/globals.html#doit.dependency.doit.dependency.DbmDB.DbmDB.set",
+    "doit.globals": "https://pydoit.org/globals.html",
+    "doit.globals.globals": "https://pydoit.org/globals.html#doit.globals.Globals",
+    "doit.tools": "https://pydoit.org/tools.html",
+    "doit.tools.interactive": "https://pydoit.org/tools.html#doit.tools.Interactive",
+    "doit.tools.longrunning": "https://pydoit.org/tools.html#doit.tools.LongRunning",
+    "doit.tools.pythoninteractiveaction": "https://pydoit.org/tools.html#doit.tools.PythonInteractiveAction",
+}

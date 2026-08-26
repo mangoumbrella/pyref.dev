@@ -1,0 +1,32 @@
+VERSION = "0.6.1"
+
+# fmt: off
+MAPPING = {
+    "mkdocs_gen_files": "https://oprypin.github.io/mkdocs-gen-files/",
+    "mkdocs_gen_files.editor": "https://oprypin.github.io/mkdocs-gen-files/api.html",
+    "mkdocs_gen_files.editor.fileseditor": "https://oprypin.github.io/mkdocs-gen-files/api.html#mkdocs_gen_files.editor.FilesEditor",
+    "mkdocs_gen_files.editor.fileseditor.config": "https://oprypin.github.io/mkdocs-gen-files/api.html#mkdocs_gen_files.editor.FilesEditor.config",
+    "mkdocs_gen_files.editor.fileseditor.current": "https://oprypin.github.io/mkdocs-gen-files/api.html#mkdocs_gen_files.editor.FilesEditor.current",
+    "mkdocs_gen_files.editor.fileseditor.directory": "https://oprypin.github.io/mkdocs-gen-files/api.html#mkdocs_gen_files.editor.FilesEditor.directory",
+    "mkdocs_gen_files.editor.fileseditor.files": "https://oprypin.github.io/mkdocs-gen-files/api.html#mkdocs_gen_files.editor.FilesEditor.files",
+    "mkdocs_gen_files.editor.fileseditor.open": "https://oprypin.github.io/mkdocs-gen-files/api.html#mkdocs_gen_files.editor.FilesEditor.open",
+    "mkdocs_gen_files.editor.fileseditor.set_edit_path": "https://oprypin.github.io/mkdocs-gen-files/api.html#mkdocs_gen_files.editor.FilesEditor.set_edit_path",
+    "mkdocs_gen_files.fileseditor": "https://oprypin.github.io/mkdocs-gen-files/api.html#mkdocs_gen_files.editor.FilesEditor",
+    "mkdocs_gen_files.Nav": "https://oprypin.github.io/mkdocs-gen-files/extras.html",
+    "mkdocs_gen_files.nav": "https://oprypin.github.io/mkdocs-gen-files/extras.html",
+    "mkdocs_gen_files.nav.__setitem__": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.__setitem__",
+    "mkdocs_gen_files.nav.build_literate_nav": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.build_literate_nav",
+    "mkdocs_gen_files.nav.item": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.Item",
+    "mkdocs_gen_files.nav.item.filename": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.Item.filename",
+    "mkdocs_gen_files.nav.item.level": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.Item.level",
+    "mkdocs_gen_files.nav.item.title": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.Item.title",
+    "mkdocs_gen_files.nav.items": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.items",
+    "mkdocs_gen_files.nav.nav": "https://oprypin.github.io/mkdocs-gen-files/extras.html",
+    "mkdocs_gen_files.nav.nav.__setitem__": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.__setitem__",
+    "mkdocs_gen_files.nav.nav.build_literate_nav": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.build_literate_nav",
+    "mkdocs_gen_files.nav.nav.item": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.Item",
+    "mkdocs_gen_files.nav.nav.item.filename": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.Item.filename",
+    "mkdocs_gen_files.nav.nav.item.level": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.Item.level",
+    "mkdocs_gen_files.nav.nav.item.title": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.Item.title",
+    "mkdocs_gen_files.nav.nav.items": "https://oprypin.github.io/mkdocs-gen-files/extras.html#mkdocs_gen_files.Nav.items",
+}

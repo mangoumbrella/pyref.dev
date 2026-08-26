@@ -1,0 +1,30 @@
+VERSION = "0.7.1"
+
+# fmt: off
+MAPPING = {
+    "service_objects": "https://django-service-objects.readthedocs.io/en/stable/",
+    "service_objects.errors": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#module-service_objects.errors",
+    "service_objects.errors.invalidinputserror": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.errors.InvalidInputsError",
+    "service_objects.fields": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#module-service_objects.fields",
+    "service_objects.fields.dictfield": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.fields.DictField",
+    "service_objects.fields.dictfield.clean": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.fields.DictField.clean",
+    "service_objects.fields.listfield": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.fields.ListField",
+    "service_objects.fields.listfield.clean": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.fields.ListField.clean",
+    "service_objects.fields.modelfield": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.fields.ModelField",
+    "service_objects.fields.modelfield.clean": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.fields.ModelField.clean",
+    "service_objects.fields.multipleformfield": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.fields.MultipleFormField",
+    "service_objects.fields.multipleformfield.clean": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.fields.MultipleFormField.clean",
+    "service_objects.fields.multiplemodelfield": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.fields.MultipleModelField",
+    "service_objects.fields.multiplemodelfield.clean": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.fields.MultipleModelField.clean",
+    "service_objects.services": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#module-service_objects.services",
+    "service_objects.services.modelservice": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.services.ModelService",
+    "service_objects.services.service": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.services.Service",
+    "service_objects.services.service.execute": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.services.Service.execute",
+    "service_objects.services.service.post_process": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.services.Service.post_process",
+    "service_objects.services.service.process": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.services.Service.process",
+    "service_objects.services.service.service_clean": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.services.Service.service_clean",
+    "service_objects.views": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#module-service_objects.views",
+    "service_objects.views.createserviceview": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.views.CreateServiceView",
+    "service_objects.views.serviceview": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.views.ServiceView",
+    "service_objects.views.updateserviceview": "https://django-service-objects.readthedocs.io/en/stable/pages/reference.html#service_objects.views.UpdateServiceView",
+}

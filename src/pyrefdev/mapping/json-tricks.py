@@ -1,0 +1,32 @@
+VERSION = "3.17.3"
+
+# fmt: off
+MAPPING = {
+    "json_tricks": "https://json-tricks.readthedocs.io/en/stable/",
+    "json_tricks.comment": "https://json-tricks.readthedocs.io/en/stable/index.html",
+    "json_tricks.comment.strip_comments": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.comment.strip_comments",
+    "json_tricks.decoders": "https://json-tricks.readthedocs.io/en/stable/index.html",
+    "json_tricks.decoders.classinstancehook": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.decoders.ClassInstanceHook",
+    "json_tricks.decoders.enuminstancehook": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.decoders.EnumInstanceHook",
+    "json_tricks.decoders.json_date_time_hook": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.decoders.json_date_time_hook",
+    "json_tricks.encoders": "https://json-tricks.readthedocs.io/en/stable/index.html",
+    "json_tricks.encoders.class_instance_encode": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.encoders.class_instance_encode",
+    "json_tricks.encoders.enum_instance_encode": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.encoders.enum_instance_encode",
+    "json_tricks.encoders.json_date_time_encode": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.encoders.json_date_time_encode",
+    "json_tricks.nonp": "https://json-tricks.readthedocs.io/en/stable/index.html",
+    "json_tricks.nonp.dump": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.nonp.dump",
+    "json_tricks.nonp.dumps": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.nonp.dumps",
+    "json_tricks.nonp.load": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.nonp.load",
+    "json_tricks.nonp.loads": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.nonp.loads",
+    "json_tricks.np": "https://json-tricks.readthedocs.io/en/stable/index.html",
+    "json_tricks.np.dump": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.np.dump",
+    "json_tricks.np.dumps": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.np.dumps",
+    "json_tricks.np.json_numpy_obj_hook": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.np.json_numpy_obj_hook",
+    "json_tricks.np.load": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.np.load",
+    "json_tricks.np.loads": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.np.loads",
+    "json_tricks.np.numpy_encode": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.np.numpy_encode",
+    "json_tricks.np_utils": "https://json-tricks.readthedocs.io/en/stable/index.html",
+    "json_tricks.np_utils.encode_scalars_inplace": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.np_utils.encode_scalars_inplace",
+    "json_tricks.utils": "https://json-tricks.readthedocs.io/en/stable/index.html",
+    "json_tricks.utils.encode_intenums_inplace": "https://json-tricks.readthedocs.io/en/stable/index.html#json_tricks.utils.encode_intenums_inplace",
+}

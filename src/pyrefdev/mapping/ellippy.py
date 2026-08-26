@@ -1,0 +1,32 @@
+VERSION = "1.1.1"
+
+# fmt: off
+MAPPING = {
+    "ellippy": "https://p-sira.github.io/ellippy/",
+    "ellippy.bulirsch": "https://p-sira.github.io/ellippy/index.html#module-ellippy.bulirsch",
+    "ellippy.bulirsch.cel": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.cel.html#ellippy.bulirsch.cel",
+    "ellippy.bulirsch.cel1": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.cel1.html#ellippy.bulirsch.cel1",
+    "ellippy.bulirsch.cel2": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.cel2.html#ellippy.bulirsch.cel2",
+    "ellippy.bulirsch.el1": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.el1.html#ellippy.bulirsch.el1",
+    "ellippy.bulirsch.el2": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.el2.html#ellippy.bulirsch.el2",
+    "ellippy.bulirsch.el3": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.el3.html#ellippy.bulirsch.el3",
+    "ellippy.carlson": "https://p-sira.github.io/ellippy/index.html#module-ellippy.carlson",
+    "ellippy.carlson.elliprc": "https://p-sira.github.io/ellippy/functions/ellippy.carlson.elliprc.html#ellippy.carlson.elliprc",
+    "ellippy.carlson.elliprd": "https://p-sira.github.io/ellippy/functions/ellippy.carlson.elliprd.html#ellippy.carlson.elliprd",
+    "ellippy.carlson.elliprf": "https://p-sira.github.io/ellippy/functions/ellippy.carlson.elliprf.html#ellippy.carlson.elliprf",
+    "ellippy.carlson.elliprg": "https://p-sira.github.io/ellippy/functions/ellippy.carlson.elliprg.html#ellippy.carlson.elliprg",
+    "ellippy.carlson.elliprj": "https://p-sira.github.io/ellippy/functions/ellippy.carlson.elliprj.html#ellippy.carlson.elliprj",
+    "ellippy.legendre": "https://p-sira.github.io/ellippy/index.html#module-ellippy.legendre",
+    "ellippy.legendre.ellipd": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellipd.html#ellippy.legendre.ellipd",
+    "ellippy.legendre.ellipdinc": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellipdinc.html#ellippy.legendre.ellipdinc",
+    "ellippy.legendre.ellipe": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellipe.html#ellippy.legendre.ellipe",
+    "ellippy.legendre.ellipeinc": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellipeinc.html#ellippy.legendre.ellipeinc",
+    "ellippy.legendre.ellipf": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellipf.html#ellippy.legendre.ellipf",
+    "ellippy.legendre.ellipk": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellipk.html#ellippy.legendre.ellipk",
+    "ellippy.legendre.ellippi": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellippi.html#ellippy.legendre.ellippi",
+    "ellippy.legendre.ellippiinc": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellippiinc.html#ellippy.legendre.ellippiinc",
+    "ellippy.legendre.ellippiinc_bulirsch": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellippiinc_bulirsch.html#ellippy.legendre.ellippiinc_bulirsch",
+    "ellippy.misc": "https://p-sira.github.io/ellippy/index.html#module-ellippy.misc",
+    "ellippy.misc.heuman_lambda": "https://p-sira.github.io/ellippy/functions/ellippy.misc.heuman_lambda.html#ellippy.misc.heuman_lambda",
+    "ellippy.misc.jacobi_zeta": "https://p-sira.github.io/ellippy/functions/ellippy.misc.jacobi_zeta.html#ellippy.misc.jacobi_zeta",
+}

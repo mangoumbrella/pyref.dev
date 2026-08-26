@@ -1,0 +1,31 @@
+VERSION = "0.21.0"
+
+# fmt: off
+MAPPING = {
+    "rasterstats": "https://pythonhosted.org/rasterstats/",
+    "rasterstats.gen_point_query": "https://pythonhosted.org/rasterstats/rasterstats.html#rasterstats.gen_point_query",
+    "rasterstats.gen_zonal_stats": "https://pythonhosted.org/rasterstats/rasterstats.html#rasterstats.gen_zonal_stats",
+    "rasterstats.io": "https://pythonhosted.org/rasterstats/rasterstats.io.html#module-rasterstats.io",
+    "rasterstats.io.boundless_array": "https://pythonhosted.org/rasterstats/rasterstats.io.html#rasterstats.io.boundless_array",
+    "rasterstats.io.bounds_window": "https://pythonhosted.org/rasterstats/rasterstats.io.html#rasterstats.io.bounds_window",
+    "rasterstats.io.parse_feature": "https://pythonhosted.org/rasterstats/rasterstats.io.html#rasterstats.io.parse_feature",
+    "rasterstats.io.raster": "https://pythonhosted.org/rasterstats/rasterstats.io.html#rasterstats.io.Raster",
+    "rasterstats.io.raster.index": "https://pythonhosted.org/rasterstats/rasterstats.io.html#rasterstats.io.Raster.index",
+    "rasterstats.io.raster.read": "https://pythonhosted.org/rasterstats/rasterstats.io.html#rasterstats.io.Raster.read",
+    "rasterstats.io.read_featurecollection": "https://pythonhosted.org/rasterstats/rasterstats.io.html#rasterstats.io.read_featurecollection",
+    "rasterstats.io.read_features": "https://pythonhosted.org/rasterstats/rasterstats.io.html#rasterstats.io.read_features",
+    "rasterstats.io.rowcol": "https://pythonhosted.org/rasterstats/rasterstats.io.html#rasterstats.io.rowcol",
+    "rasterstats.io.window_bounds": "https://pythonhosted.org/rasterstats/rasterstats.io.html#rasterstats.io.window_bounds",
+    "rasterstats.io.wrap_geom": "https://pythonhosted.org/rasterstats/rasterstats.io.html#rasterstats.io.wrap_geom",
+    "rasterstats.point_query": "https://pythonhosted.org/rasterstats/rasterstats.html#rasterstats.point_query",
+    "rasterstats.raster_stats": "https://pythonhosted.org/rasterstats/rasterstats.html#rasterstats.raster_stats",
+    "rasterstats.utils": "https://pythonhosted.org/rasterstats/rasterstats.utils.html#module-rasterstats.utils",
+    "rasterstats.utils.boxify_points": "https://pythonhosted.org/rasterstats/rasterstats.utils.html#rasterstats.utils.boxify_points",
+    "rasterstats.utils.check_stats": "https://pythonhosted.org/rasterstats/rasterstats.utils.html#rasterstats.utils.check_stats",
+    "rasterstats.utils.get_percentile": "https://pythonhosted.org/rasterstats/rasterstats.utils.html#rasterstats.utils.get_percentile",
+    "rasterstats.utils.key_assoc_val": "https://pythonhosted.org/rasterstats/rasterstats.utils.html#rasterstats.utils.key_assoc_val",
+    "rasterstats.utils.rasterize_geom": "https://pythonhosted.org/rasterstats/rasterstats.utils.html#rasterstats.utils.rasterize_geom",
+    "rasterstats.utils.remap_categories": "https://pythonhosted.org/rasterstats/rasterstats.utils.html#rasterstats.utils.remap_categories",
+    "rasterstats.utils.stats_to_csv": "https://pythonhosted.org/rasterstats/rasterstats.utils.html#rasterstats.utils.stats_to_csv",
+    "rasterstats.zonal_stats": "https://pythonhosted.org/rasterstats/rasterstats.html#rasterstats.zonal_stats",
+}
