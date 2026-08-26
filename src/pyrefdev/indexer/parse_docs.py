@@ -179,6 +179,7 @@ def _parse_package(
 
     console.print(f"Found {len(symbol_to_urls)} symbols in {package.pypi}")
     _heuristically_fillin_modules(package, symbol_to_urls)
+    _drop_excluded_symbols(package, symbol_to_urls)
 
     lines = [
         f'VERSION = "{crawl_state.package_version}"',
@@ -294,6 +295,21 @@ def _heuristically_fillin_modules(
             if len(urls) == 1:
                 extra_module_to_urls[module] = next(iter(urls))
     symbol_to_urls.update(extra_module_to_urls)
+
+
+def _drop_excluded_symbols(package: Package, symbol_to_urls: dict[str, str]) -> None:
+    if not package.exclude_symbols:
+        return
+    # The mapping keys are lowercased, so a symbol conflicts with another package
+    # regardless of how either one spells it.
+    excluded = {symbol.lower() for symbol in package.exclude_symbols}
+    dropped = {symbol for symbol in symbol_to_urls if symbol.lower() in excluded}
+    for symbol in dropped:
+        del symbol_to_urls[symbol]
+    if unmatched := excluded - {symbol.lower() for symbol in dropped}:
+        console.warning(
+            f"{package.pypi}: exclude_symbols never matched: {', '.join(sorted(unmatched))}"
+        )
 
 
 def _remove_fragment(url: str) -> str:

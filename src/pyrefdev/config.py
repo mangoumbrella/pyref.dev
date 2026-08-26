@@ -13,6 +13,9 @@ class Package:
     index_url: str
     namespaces: list[str] = dataclasses.field(default_factory=list)
     exclude_root_urls: list[str] = dataclasses.field(default_factory=list)
+    # Symbols to drop from the mapping, matched case-insensitively. Use it when two
+    # packages claim the same symbol, so that the more popular one owns it.
+    exclude_symbols: list[str] = dataclasses.field(default_factory=list)
     # A Sphinx inventory to merge into the mapping, e.g. "https://foo.dev/objects.inv".
     objects_inv_url: str | None = None
     # Mine the import statements out of the code examples. Only worth enabling for
@@ -1101,7 +1104,7 @@ _packages = [
     Package(pypi="nox", index_url="https://nox.thea.codes/en/stable/", objects_inv_url="https://nox.thea.codes/en/stable/objects.inv"),
     Package(pypi="nox-poetry", index_url="https://nox-poetry.readthedocs.io/en/stable/"),
     Package(pypi="nptdms", index_url="https://nptdms.readthedocs.io/en/stable/", objects_inv_url="https://nptdms.readthedocs.io/en/stable/objects.inv"),
-    Package(pypi="nrel-pysam", namespaces=["PySAM"], index_url="https://nrel-pysam.readthedocs.io/en/latest/", objects_inv_url="https://nrel-pysam.readthedocs.io/en/latest/objects.inv"),
+    Package(pypi="nrel-pysam", namespaces=["PySAM"], index_url="https://nrel-pysam.readthedocs.io/en/latest/", objects_inv_url="https://nrel-pysam.readthedocs.io/en/latest/objects.inv", exclude_symbols=["PySAM"]),  # "pysam" belongs to the more popular pysam package.
     Package(pypi="ntc-templates", index_url="https://ntc-templates.readthedocs.io/en/latest/"),
     Package(pypi="numba", index_url="https://numba.readthedocs.io/en/stable/reference/index.html"),
     Package(pypi="numcodecs", index_url="https://numcodecs.readthedocs.io/en/stable/"),

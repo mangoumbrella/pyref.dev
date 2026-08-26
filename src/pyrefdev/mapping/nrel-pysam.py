@@ -2,7 +2,6 @@ VERSION = "7.1.1.post1"
 
 # fmt: off
 MAPPING = {
-    "pysam": "https://nrel-pysam.readthedocs.io/en/latest/",
     "pysam.battery": "https://nrel-pysam.readthedocs.io/en/latest/modules/Battery.html#module-PySAM.Battery",
     "pysam.battery.battery": "https://nrel-pysam.readthedocs.io/en/latest/modules/Battery.html#PySAM.Battery.Battery",
     "pysam.battery.battery.adjustmentfactors": "https://nrel-pysam.readthedocs.io/en/latest/modules/Battery.html#PySAM.Battery.Battery.AdjustmentFactors",
