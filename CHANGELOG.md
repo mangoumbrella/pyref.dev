@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+Nothing noticeable unreleased.
+
+## v2026.3
+
 - Support the following packages:
   - [access](https://access.readthedocs.io/en/stable/)
   - [ada-url](https://ada-url.readthedocs.io/en/stable/)
