@@ -1,16 +1,28 @@
 [Unit]
 Description=Web server for pyref.dev
 After=network.target
+# Bound the restart rate so a crash loop cannot re-thrash memory indefinitely.
+StartLimitIntervalSec=300
+StartLimitBurst=5
 
 [Service]
 User=root
 WorkingDirectory=/root/pyref.dev
+# Regenerate the symbol index when the mapping files have changed. This is a
+# no-op when the index already matches them, so restarts stay fast.
+ExecStartPre=/root/.local/bin/uv run pyrefdev-indexer build-index
 # Bind to localhost only - nginx will handle external traffic
 ExecStart=/root/.local/bin/uv run uvicorn pyrefdev.server:app --host=127.0.0.1 --port=8001
 Restart=always
 RestartSec=5
-StandardOutput=syslog
-StandardError=syslog
+# A full rebuild takes ~20s and runs before the service reports readiness.
+TimeoutStartSec=300
+# Serving from the prebuilt index takes ~85MB. The cap confines a memory
+# regression to this cgroup, so the OOM killer cannot pick sshd instead.
+MemoryHigh=320M
+MemoryMax=384M
+StandardOutput=journal
+StandardError=journal
 SyslogIdentifier=pyref.dev
 
 [Install]

@@ -6,7 +6,7 @@ import cyclopts
 from cyclopts import Parameter
 
 import pyrefdev
-from pyrefdev.mapping import MAPPING
+from pyrefdev import mapping
 
 
 app = cyclopts.App("pyrefdev", help=pyrefdev.__doc__)
@@ -26,9 +26,7 @@ def main(
         ),
     ] = False,
 ):
-    if not (url := MAPPING.get(symbol)):
-        url = MAPPING.get(symbol.lower())
-    if url:
+    if url := mapping.lookup(symbol):
         if should_print:
             print(url)
         else:

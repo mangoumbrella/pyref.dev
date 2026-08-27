@@ -1,6 +1,10 @@
 .DS_Store
 api-docs/
 
+# Built by `pyrefdev-indexer build-index`
+src/pyrefdev/mapping/index.sqlite
+src/pyrefdev/mapping/index.sqlite.partial
+
 # Hatch-managed version file
 src/pyrefdev/_version.py
 
