@@ -61,7 +61,7 @@ pyrefdev-indexer update-docs --package <package>
 pyrefdev-indexer update-landing-page
 
 # Rebuild the symbol index the server queries (do this last, after the
-# mapping files are final). The deployed service also does this on restart.
+# mapping files are final).
 pyrefdev-indexer build-index
 ```
 
@@ -91,6 +91,6 @@ pyrefdev-indexer parse-pypi      # Parse PyPI data and add new packages to confi
 - **Symbol index**: the server queries a SQLite index (`src/pyrefdev/mapping/index.sqlite`,
   gitignored) built by `pyrefdev-indexer build-index`. The per-package files in
   `src/pyrefdev/mapping/` remain the source of truth; the index is a derived artifact.
-  Deploys need no extra step: `ExecStartPre` in `deploy/pyrefdev.service` rebuilds it when
-  the mapping files have changed, keyed off their names, sizes, and mtimes.
+  Deploys rebuild it explicitly (see README.md); the command is a no-op when the index
+  already matches the mapping files, keyed off their names, sizes, and mtimes.
 - **CSS Cache Busting**: Whenever you modify `static/styles.css`, you must increment the `?v=` version parameter in all `templates/*.html` files to ensure browsers load the updated styles
