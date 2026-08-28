@@ -55,6 +55,7 @@ To set up a new server:
 > cd pyref.dev
 > uv venv --python 3.14
 > uv sync --all-extras --locked
+> uv run pyrefdev-indexer build-index
 > sudo cp deploy/pyrefdev.service /etc/systemd/system/pyrefdev.service
 > sudo cp deploy/pyrefdev.conf /etc/nginx/sites-available/pyrefdev
 > sudo ln -sf /etc/nginx/sites-available/pyrefdev /etc/nginx/sites-enabled/pyrefdev
@@ -65,7 +66,7 @@ To set up a new server:
 To update to a new version:
 
 ```bash
-git pull && git fetch --tags && uv pip install -e . && uv sync --all-extras --locked && systemctl restart pyrefdev.service
+git pull && git fetch --tags && uv pip install -e . && uv sync --all-extras --locked && uv run pyrefdev-indexer build-index && systemctl restart pyrefdev.service
 ```
 
 To upgrade uv venv's Python version:
