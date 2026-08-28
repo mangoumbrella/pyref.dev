@@ -86,7 +86,7 @@ def parse_docs(
     packages = get_packages(package)
     if not reparse:
         packages = [
-            pkg for pkg in packages if pkg.pypi not in mapping.PACKAGE_INFO_MAPPING
+            pkg for pkg in packages if mapping.load_package_mapping(pkg.pypi) is None
         ]
 
     with (
@@ -223,7 +223,7 @@ def _would_erase_mapping(package: Package, symbol_to_urls: dict[str, str]) -> bo
     seeds = _SPECIAL_SYMBOLS if package.is_cpython() else set(package.namespaces)
     if set(symbol_to_urls) - set(seeds):
         return False
-    previous = mapping.PACKAGE_INFO_MAPPING.get(package.pypi)
+    previous = mapping.load_package_mapping(package.pypi)
     return previous is not None and len(previous.mapping) > len(symbol_to_urls)
 
 

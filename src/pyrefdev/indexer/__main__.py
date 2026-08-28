@@ -2,6 +2,7 @@ import cyclopts
 
 import pyrefdev
 from pyrefdev.indexer.add_docs import add_docs
+from pyrefdev.indexer.build_index import build_index
 from pyrefdev.indexer.crawl_docs import crawl_docs
 from pyrefdev.indexer.crawl_pypi import crawl_pypi
 from pyrefdev.indexer.parse_docs import parse_docs
@@ -19,6 +20,7 @@ app = cyclopts.App(
     console=console,
 )
 app.command(add_docs)
+app.command(build_index)
 app.command(crawl_docs)
 app.command(crawl_pypi)
 app.command(parse_docs)

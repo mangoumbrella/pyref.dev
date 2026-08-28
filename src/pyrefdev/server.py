@@ -1,4 +1,3 @@
-import random
 import sys
 
 from fastapi import FastAPI, Request
@@ -6,14 +5,28 @@ from fastapi.responses import RedirectResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import importlib.metadata
-from urllib import parse
 
+from pyrefdev import mapping
 from pyrefdev.config import SUPPORTED_PACKAGES
-from pyrefdev.mapping import MAPPING, PACKAGE_INFO_MAPPING
 
 
 app = FastAPI()
 app.mount("/static", StaticFiles(directory="static"), name="static")
+
+# Resolve the backend at import so the service log records which one is in
+# use before any request arrives.
+_backend_name = mapping.backend().name
+print(
+    f"pyref.dev serving {mapping.symbol_count():,} symbols "
+    f"via the {_backend_name} backend",
+    flush=True,
+)
+if _backend_name != "sqlite":
+    print(
+        f"WARNING: no index at {mapping.index_path()}, falling back to loading "
+        "every mapping module (~420MB). Run `pyrefdev-indexer build-index`.",
+        flush=True,
+    )
 
 templates = Jinja2Templates(directory="templates")
 
@@ -51,7 +64,7 @@ async def search_symbols(
 
     if not symbol:
         if lucky:
-            return RedirectResponse(_pick_random_url())
+            return RedirectResponse(mapping.random_url())
         else:
             package_url = (
                 SUPPORTED_PACKAGES[package].index_url
@@ -70,26 +83,12 @@ async def search_symbols(
                 },
             )
 
-    # Determine which mapping to search
-    if package:
-        if package in PACKAGE_INFO_MAPPING:
-            search_mapping = PACKAGE_INFO_MAPPING[package].mapping
-        else:
-            search_mapping = {}
-    else:
-        search_mapping = MAPPING
-
     # Search by substring for now.
-    results = []
     symbol_lower = symbol.lower()
-    for key in search_mapping.keys():
-        if symbol_lower in key.lower():
-            fragment = parse.urlparse(search_mapping[key]).fragment
-            if fragment.lower() == key.lower():
-                candidate = fragment
-            else:
-                candidate = key
-            results.append({"symbol": candidate, "url": search_mapping[key]})
+    results = [
+        {"symbol": result.symbol, "url": result.url}
+        for result in mapping.search(symbol, package=package)
+    ]
 
     def ranking_key(result):
         symbol_path = result["symbol"]
@@ -170,16 +169,9 @@ async def search_symbols(
     )
 
 
-def _pick_random_url() -> str:
-    package = random.choice(list(PACKAGE_INFO_MAPPING))
-    return random.choice(list(PACKAGE_INFO_MAPPING[package].mapping.values()))
-
-
 @app.get("/{symbol}")
 async def redirects(symbol: str, lucky: bool = False):
-    if url := MAPPING.get(symbol):
-        return RedirectResponse(url)
-    if url := MAPPING.get(symbol.lower()):
+    if url := mapping.lookup(symbol):
         return RedirectResponse(url)
 
     if lucky:
