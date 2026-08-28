@@ -1,3 +1,5 @@
+import os
+
 import pytest
 
 from pyrefdev import mapping
@@ -9,6 +11,8 @@ from pyrefdev.indexer import build_index as build_index_module
 # query layer needs to distinguish: mixed casing, underscores, dotted paths and
 # more than one package to scope a search to.
 SMALL_PACKAGES = ["attrs", "chardet", "click", "packaging"]
+
+_STALE_TIME = 1_000_000_000
 
 
 @pytest.fixture(scope="session")
@@ -43,3 +47,17 @@ def module_backend(small_packages):
         return mapping._ModuleBackend()
     finally:
         mapping.SUPPORTED_PACKAGES = original
+
+
+@pytest.fixture
+def rebuildable_index(small_index, tmp_path):
+    """A private copy of the index, for tests that rebuild it.
+
+    Rebuilding the session-scoped index would swap the file out from under the
+    backends bound to it, which Windows refuses outright.
+    """
+    copy = tmp_path / "index.sqlite"
+    copy.write_bytes(small_index.read_bytes())
+    # Backdated so that "was it rewritten?" does not rest on clock resolution.
+    os.utime(copy, (_STALE_TIME, _STALE_TIME))
+    return copy

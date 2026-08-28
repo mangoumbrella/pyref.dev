@@ -98,18 +98,19 @@ def test_index_path_honours_the_environment(tmp_path, monkeypatch):
     assert mapping.index_path() == tmp_path / "custom.sqlite"
 
 
-def test_rebuild_is_skipped_when_fresh(small_index, small_packages, monkeypatch):
+def test_rebuild_is_skipped_when_fresh(rebuildable_index, small_packages, monkeypatch):
     monkeypatch.setattr(build_index_module, "SUPPORTED_PACKAGES", small_packages)
-    before = small_index.stat().st_mtime_ns
-    build_index(small_index)
-    assert small_index.stat().st_mtime_ns == before
+    before = rebuildable_index.stat().st_mtime_ns
+    build_index(rebuildable_index)
+    assert rebuildable_index.stat().st_mtime_ns == before
 
 
-def test_force_rebuilds_a_fresh_index(small_index, small_packages, monkeypatch):
+def test_force_rebuilds_a_fresh_index(rebuildable_index, small_packages, monkeypatch):
     monkeypatch.setattr(build_index_module, "SUPPORTED_PACKAGES", small_packages)
-    before = small_index.stat().st_mtime_ns
-    build_index(small_index, force=True)
-    assert small_index.stat().st_mtime_ns != before
+    before = rebuildable_index.stat().st_mtime_ns
+    build_index(rebuildable_index, force=True)
+    assert rebuildable_index.stat().st_mtime_ns != before
+    assert mapping._SqliteBackend(rebuildable_index).lookup("click.Argument")
 
 
 def test_fingerprint_tracks_mapping_files(small_packages, monkeypatch, tmp_path):
@@ -162,18 +163,18 @@ def test_fingerprint_of_a_corrupt_index(tmp_path):
     assert build_index_module._fingerprint_of(corrupt) is None
 
 
-def test_a_failed_build_leaves_the_index_intact(small_index, monkeypatch):
+def test_a_failed_build_leaves_the_index_intact(rebuildable_index, monkeypatch):
     """The rebuild goes to a temporary file, so a crash cannot corrupt the index."""
-    before = small_index.read_bytes()
+    before = rebuildable_index.read_bytes()
 
     def explode(package):
         raise RuntimeError("simulated failure")
 
     monkeypatch.setattr(mapping, "load_package_mapping", explode)
     with pytest.raises(RuntimeError):
-        build_index(small_index, force=True)
-    assert small_index.read_bytes() == before
-    assert mapping._SqliteBackend(small_index).lookup("click.Argument")
+        build_index(rebuildable_index, force=True)
+    assert rebuildable_index.read_bytes() == before
+    assert mapping._SqliteBackend(rebuildable_index).lookup("click.Argument")
 
 
 def test_duplicate_symbols_are_reported(tmp_path):
