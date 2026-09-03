@@ -136,7 +136,7 @@ def _parse_package(
     package_docs = index.docs_directory / package.pypi
 
     def parse(file, url):
-        if package.is_cpython:
+        if package.is_cpython():
             maybe_module = url.removeprefix(
                 "https://docs.python.org/3/library/"
             ).removesuffix(".html")
