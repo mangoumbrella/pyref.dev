@@ -1,4 +1,4 @@
-VERSION = "0.18.3"
+VERSION = "0.19.0"
 
 # fmt: off
 MAPPING = {
@@ -13,8 +13,6 @@ MAPPING = {
     "pypac.os_settings.file_url_to_local_path": "https://pypac.readthedocs.io/en/latest/api.html#pypac.os_settings.file_url_to_local_path",
     "pypac.os_settings.notdarwinerror": "https://pypac.readthedocs.io/en/latest/api.html#pypac.os_settings.NotDarwinError",
     "pypac.os_settings.notwindowserror": "https://pypac.readthedocs.io/en/latest/api.html#pypac.os_settings.NotWindowsError",
-    "pypac.os_settings.on_darwin": "https://pypac.readthedocs.io/en/latest/api.html#pypac.os_settings.ON_DARWIN",
-    "pypac.os_settings.on_windows": "https://pypac.readthedocs.io/en/latest/api.html#pypac.os_settings.ON_WINDOWS",
     "pypac.pac_context_for_url": "https://pypac.readthedocs.io/en/latest/api.html#pypac.pac_context_for_url",
     "pypac.pacsession": "https://pypac.readthedocs.io/en/latest/api.html#pypac.PACSession",
     "pypac.pacsession.do_proxy_failover": "https://pypac.readthedocs.io/en/latest/api.html#pypac.PACSession.do_proxy_failover",

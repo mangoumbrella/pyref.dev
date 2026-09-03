@@ -1,4 +1,4 @@
-VERSION = "4.15.0"
+VERSION = "4.16.0"
 
 # fmt: off
 MAPPING = {
@@ -11,6 +11,8 @@ MAPPING = {
     "globus_compute_endpoint.endpoint.config.config.userendpointconfig": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html#globus_compute_endpoint.endpoint.config.config.UserEndpointConfig",
     "globus_compute_endpoint.endpoint.config.pam": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html",
     "globus_compute_endpoint.endpoint.config.pam.pamconfiguration": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html#globus_compute_endpoint.endpoint.config.pam.PamConfiguration",
+    "globus_compute_endpoint.endpoint.config.path_config": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html",
+    "globus_compute_endpoint.endpoint.config.path_config.pathconfiguration": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html#globus_compute_endpoint.endpoint.config.path_config.PathConfiguration",
     "globus_compute_endpoint.engines.globus_compute": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html",
     "globus_compute_endpoint.engines.globus_compute.globuscomputeengine": "https://globus-compute.readthedocs.io/en/stable/reference/engine.html#globus_compute_endpoint.engines.GlobusComputeEngine",
     "globus_compute_endpoint.engines.globus_mpi": "https://globus-compute.readthedocs.io/en/stable/reference/mpi_engine.html",

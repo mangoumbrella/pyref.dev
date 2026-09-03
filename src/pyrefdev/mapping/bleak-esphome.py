@@ -1,4 +1,4 @@
-VERSION = "3.9.7"
+VERSION = "4.0.0"
 
 # fmt: off
 MAPPING = {
@@ -6,6 +6,10 @@ MAPPING = {
     "bleak_esphome.apiconnectionmanager": "https://bleak-esphome.readthedocs.io/en/stable/api.html#bleak_esphome.APIConnectionManager",
     "bleak_esphome.apiconnectionmanager.start": "https://bleak-esphome.readthedocs.io/en/stable/api.html#bleak_esphome.APIConnectionManager.start",
     "bleak_esphome.apiconnectionmanager.stop": "https://bleak-esphome.readthedocs.io/en/stable/api.html#bleak_esphome.APIConnectionManager.stop",
+    "bleak_esphome.backend": "https://bleak-esphome.readthedocs.io/en/stable/api.html",
+    "bleak_esphome.backend.device": "https://bleak-esphome.readthedocs.io/en/stable/api.html",
+    "bleak_esphome.backend.device.esphomebluetoothdevice": "https://bleak-esphome.readthedocs.io/en/stable/api.html",
+    "bleak_esphome.backend.device.esphomebluetoothdevice.async_set_unavailable": "https://bleak-esphome.readthedocs.io/en/stable/api.html#bleak_esphome.backend.device.ESPHomeBluetoothDevice.async_set_unavailable",
     "bleak_esphome.connect_scanner": "https://bleak-esphome.readthedocs.io/en/stable/api.html#bleak_esphome.connect_scanner",
     "bleak_esphome.connection_manager": "https://bleak-esphome.readthedocs.io/en/stable/api.html",
     "bleak_esphome.connection_manager.apiconnectionmanager": "https://bleak-esphome.readthedocs.io/en/stable/api.html#bleak_esphome.APIConnectionManager",

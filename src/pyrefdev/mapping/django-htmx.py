@@ -1,4 +1,4 @@
-VERSION = "1.28.0"
+VERSION = "1.29.0"
 
 # fmt: off
 MAPPING = {
@@ -9,6 +9,7 @@ MAPPING = {
     "django_htmx.http.httpresponseclientrefresh": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.HttpResponseClientRefresh",
     "django_htmx.http.httpresponselocation": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.HttpResponseLocation",
     "django_htmx.http.httpresponsestoppolling": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.HttpResponseStopPolling",
+    "django_htmx.http.ptag": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.ptag",
     "django_htmx.http.push_url": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.push_url",
     "django_htmx.http.replace_url": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.replace_url",
     "django_htmx.http.reselect": "https://django-htmx.readthedocs.io/en/latest/http.html#django_htmx.http.reselect",
@@ -23,6 +24,7 @@ MAPPING = {
     "django_htmx.middleware.htmxdetails.current_url_abs_path": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.current_url_abs_path",
     "django_htmx.middleware.htmxdetails.history_restore_request": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.history_restore_request",
     "django_htmx.middleware.htmxdetails.prompt": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.prompt",
+    "django_htmx.middleware.htmxdetails.ptag": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.ptag",
     "django_htmx.middleware.htmxdetails.request_type": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.request_type",
     "django_htmx.middleware.htmxdetails.source": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.source",
     "django_htmx.middleware.htmxdetails.target": "https://django-htmx.readthedocs.io/en/latest/middleware.html#django_htmx.middleware.HtmxDetails.target",

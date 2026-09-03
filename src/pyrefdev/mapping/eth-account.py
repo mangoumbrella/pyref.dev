@@ -1,4 +1,4 @@
-VERSION = "0.13.7"
+VERSION = "0.14.0"
 
 # fmt: off
 MAPPING = {
@@ -21,12 +21,6 @@ MAPPING = {
     "eth_account.account.account.sign_typed_data": "https://eth-account.readthedocs.io/en/stable/eth_account.html#eth_account.account.Account.sign_typed_data",
     "eth_account.account.account.unsafe_sign_hash": "https://eth-account.readthedocs.io/en/stable/eth_account.html#eth_account.account.Account.unsafe_sign_hash",
     "eth_account.datastructures": "https://eth-account.readthedocs.io/en/stable/eth_account.html#module-eth_account.datastructures",
-    "eth_account.datastructures.custompydanticmodel": "https://eth-account.readthedocs.io/en/stable/eth_account.html#eth_account.datastructures.CustomPydanticModel",
-    "eth_account.datastructures.custompydanticmodel.model_config": "https://eth-account.readthedocs.io/en/stable/eth_account.html#eth_account.datastructures.CustomPydanticModel.model_config",
-    "eth_account.datastructures.custompydanticmodel.model_json_schema": "https://eth-account.readthedocs.io/en/stable/eth_account.html#eth_account.datastructures.CustomPydanticModel.model_json_schema",
-    "eth_account.datastructures.custompydanticmodel.recursive_model_dump": "https://eth-account.readthedocs.io/en/stable/eth_account.html#eth_account.datastructures.CustomPydanticModel.recursive_model_dump",
-    "eth_account.datastructures.omitjsonschema": "https://eth-account.readthedocs.io/en/stable/eth_account.html#eth_account.datastructures.OmitJsonSchema",
-    "eth_account.datastructures.omitjsonschema.handle_invalid_for_json_schema": "https://eth-account.readthedocs.io/en/stable/eth_account.html#eth_account.datastructures.OmitJsonSchema.handle_invalid_for_json_schema",
     "eth_account.datastructures.signedmessage": "https://eth-account.readthedocs.io/en/stable/eth_account.html#eth_account.datastructures.SignedMessage",
     "eth_account.datastructures.signedsetcodeauthorization": "https://eth-account.readthedocs.io/en/stable/eth_account.html#eth_account.datastructures.SignedSetCodeAuthorization",
     "eth_account.datastructures.signedsetcodeauthorization.address": "https://eth-account.readthedocs.io/en/stable/eth_account.html#eth_account.datastructures.SignedSetCodeAuthorization.address",
@@ -107,6 +101,7 @@ MAPPING = {
     "eth_account.typed_transactions.blob_transactions.blob_transaction.blobtransaction.transaction_type": "https://eth-account.readthedocs.io/en/stable/eth_account.typed_transactions.html#eth_account.typed_transactions.blob_transactions.blob_transaction.BlobTransaction.transaction_type",
     "eth_account.typed_transactions.blob_transactions.blob_transaction.blobtransaction.unsigned_transaction_fields": "https://eth-account.readthedocs.io/en/stable/eth_account.typed_transactions.html#eth_account.typed_transactions.blob_transactions.blob_transaction.BlobTransaction.unsigned_transaction_fields",
     "eth_account.typed_transactions.blob_transactions.blob_transaction.blobtransaction.vrs": "https://eth-account.readthedocs.io/en/stable/eth_account.typed_transactions.html#eth_account.typed_transactions.blob_transactions.blob_transaction.BlobTransaction.vrs",
+    "eth_account.typed_transactions.blob_transactions.blob_transaction.blobtransaction.wrapper_version": "https://eth-account.readthedocs.io/en/stable/eth_account.typed_transactions.html#eth_account.typed_transactions.blob_transactions.blob_transaction.BlobTransaction.wrapper_version",
     "eth_account.typed_transactions.dynamic_fee_transaction": "https://eth-account.readthedocs.io/en/stable/eth_account.typed_transactions.html#module-eth_account.typed_transactions.dynamic_fee_transaction",
     "eth_account.typed_transactions.dynamic_fee_transaction.dynamicfeetransaction": "https://eth-account.readthedocs.io/en/stable/eth_account.typed_transactions.html#eth_account.typed_transactions.dynamic_fee_transaction.DynamicFeeTransaction",
     "eth_account.typed_transactions.dynamic_fee_transaction.dynamicfeetransaction.as_dict": "https://eth-account.readthedocs.io/en/stable/eth_account.typed_transactions.html#eth_account.typed_transactions.dynamic_fee_transaction.DynamicFeeTransaction.as_dict",

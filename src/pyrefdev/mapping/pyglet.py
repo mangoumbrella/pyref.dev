@@ -1,4 +1,4 @@
-VERSION = "2.1.15"
+VERSION = "2.1.16"
 
 # fmt: off
 MAPPING = {
@@ -920,6 +920,7 @@ MAPPING = {
     "pyglet.math.quaternion.z": "https://pyglet.readthedocs.io/en/latest/modules/math.html#pyglet.math.Quaternion.z",
     "pyglet.math.vec2": "https://pyglet.readthedocs.io/en/latest/modules/math.html#pyglet.math.Vec2",
     "pyglet.math.vec2.clamp": "https://pyglet.readthedocs.io/en/latest/modules/math.html#pyglet.math.Vec2.clamp",
+    "pyglet.math.vec2.cross": "https://pyglet.readthedocs.io/en/latest/modules/math.html#pyglet.math.Vec2.cross",
     "pyglet.math.vec2.distance": "https://pyglet.readthedocs.io/en/latest/modules/math.html#pyglet.math.Vec2.distance",
     "pyglet.math.vec2.dot": "https://pyglet.readthedocs.io/en/latest/modules/math.html#pyglet.math.Vec2.dot",
     "pyglet.math.vec2.from_heading": "https://pyglet.readthedocs.io/en/latest/modules/math.html#pyglet.math.Vec2.from_heading",

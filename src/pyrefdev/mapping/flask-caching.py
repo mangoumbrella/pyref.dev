@@ -1,4 +1,4 @@
-VERSION = "2.4.1"
+VERSION = "2.5.0"
 
 # fmt: off
 MAPPING = {
@@ -26,6 +26,7 @@ MAPPING = {
     "flask_caching.cache.cached": "https://flask-caching.readthedocs.io/en/latest/api/#flask_caching.Cache.cached",
     "flask_caching.cache.clear": "https://flask-caching.readthedocs.io/en/latest/api/#flask_caching.Cache.clear",
     "flask_caching.cache.delete": "https://flask-caching.readthedocs.io/en/latest/api/#flask_caching.Cache.delete",
+    "flask_caching.cache.delete_cached": "https://flask-caching.readthedocs.io/en/latest/api/#flask_caching.Cache.delete_cached",
     "flask_caching.cache.delete_many": "https://flask-caching.readthedocs.io/en/latest/api/#flask_caching.Cache.delete_many",
     "flask_caching.cache.delete_memoized": "https://flask-caching.readthedocs.io/en/latest/api/#flask_caching.Cache.delete_memoized",
     "flask_caching.cache.delete_memoized_verhash": "https://flask-caching.readthedocs.io/en/latest/api/#flask_caching.Cache.delete_memoized_verhash",

@@ -1,4 +1,4 @@
-VERSION = "3.14.0"
+VERSION = "3.15.0"
 
 # fmt: off
 MAPPING = {
@@ -139,6 +139,7 @@ MAPPING = {
     "pymodbus.pdu.bit_message.readcoilsrequest.encode": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.ReadCoilsRequest.encode",
     "pymodbus.pdu.bit_message.readcoilsrequest.function_code": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.ReadCoilsRequest.function_code",
     "pymodbus.pdu.bit_message.readcoilsrequest.get_response_pdu_size": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.ReadCoilsRequest.get_response_pdu_size",
+    "pymodbus.pdu.bit_message.readcoilsrequest.max_count": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.ReadCoilsRequest.MAX_COUNT",
     "pymodbus.pdu.bit_message.readcoilsrequest.rtu_frame_size": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.ReadCoilsRequest.rtu_frame_size",
     "pymodbus.pdu.bit_message.readcoilsresponse": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.ReadCoilsResponse",
     "pymodbus.pdu.bit_message.readcoilsresponse.decode": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.ReadCoilsResponse.decode",
@@ -158,6 +159,7 @@ MAPPING = {
     "pymodbus.pdu.bit_message.writemultiplecoilsrequest.encode": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.WriteMultipleCoilsRequest.encode",
     "pymodbus.pdu.bit_message.writemultiplecoilsrequest.function_code": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.WriteMultipleCoilsRequest.function_code",
     "pymodbus.pdu.bit_message.writemultiplecoilsrequest.get_response_pdu_size": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.WriteMultipleCoilsRequest.get_response_pdu_size",
+    "pymodbus.pdu.bit_message.writemultiplecoilsrequest.max_count": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.WriteMultipleCoilsRequest.MAX_COUNT",
     "pymodbus.pdu.bit_message.writemultiplecoilsrequest.rtu_byte_count_pos": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.WriteMultipleCoilsRequest.rtu_byte_count_pos",
     "pymodbus.pdu.bit_message.writemultiplecoilsresponse": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.WriteMultipleCoilsResponse",
     "pymodbus.pdu.bit_message.writemultiplecoilsresponse.decode": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.bit_message.WriteMultipleCoilsResponse.decode",
@@ -440,6 +442,7 @@ MAPPING = {
     "pymodbus.pdu.register_message.readholdingregistersrequest.encode": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadHoldingRegistersRequest.encode",
     "pymodbus.pdu.register_message.readholdingregistersrequest.function_code": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadHoldingRegistersRequest.function_code",
     "pymodbus.pdu.register_message.readholdingregistersrequest.get_response_pdu_size": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadHoldingRegistersRequest.get_response_pdu_size",
+    "pymodbus.pdu.register_message.readholdingregistersrequest.max_count": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadHoldingRegistersRequest.MAX_COUNT",
     "pymodbus.pdu.register_message.readholdingregistersrequest.rtu_frame_size": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadHoldingRegistersRequest.rtu_frame_size",
     "pymodbus.pdu.register_message.readholdingregistersresponse": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadHoldingRegistersResponse",
     "pymodbus.pdu.register_message.readholdingregistersresponse.decode": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadHoldingRegistersResponse.decode",
@@ -456,6 +459,8 @@ MAPPING = {
     "pymodbus.pdu.register_message.readwritemultipleregistersrequest.encode": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadWriteMultipleRegistersRequest.encode",
     "pymodbus.pdu.register_message.readwritemultipleregistersrequest.function_code": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadWriteMultipleRegistersRequest.function_code",
     "pymodbus.pdu.register_message.readwritemultipleregistersrequest.get_response_pdu_size": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadWriteMultipleRegistersRequest.get_response_pdu_size",
+    "pymodbus.pdu.register_message.readwritemultipleregistersrequest.max_read_count": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadWriteMultipleRegistersRequest.MAX_READ_COUNT",
+    "pymodbus.pdu.register_message.readwritemultipleregistersrequest.max_write_count": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadWriteMultipleRegistersRequest.MAX_WRITE_COUNT",
     "pymodbus.pdu.register_message.readwritemultipleregistersrequest.rtu_byte_count_pos": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadWriteMultipleRegistersRequest.rtu_byte_count_pos",
     "pymodbus.pdu.register_message.readwritemultipleregistersresponse": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadWriteMultipleRegistersResponse",
     "pymodbus.pdu.register_message.readwritemultipleregistersresponse.function_code": "https://pymodbus.readthedocs.io/en/latest/source/library/pymodbus.html#pymodbus.pdu.register_message.ReadWriteMultipleRegistersResponse.function_code",

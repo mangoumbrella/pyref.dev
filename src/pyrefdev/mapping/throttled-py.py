@@ -1,4 +1,4 @@
-VERSION = "3.4.1"
+VERSION = "3.5.0"
 
 # fmt: off
 MAPPING = {
@@ -64,6 +64,9 @@ MAPPING = {
     "throttled.throttled.__call__": "https://throttled-py.readthedocs.io/en/stable/api.html#throttled.Throttled.__call__",
     "throttled.throttled.__enter__": "https://throttled-py.readthedocs.io/en/stable/api.html#throttled.Throttled.__enter__",
     "throttled.throttled.__init__": "https://throttled-py.readthedocs.io/en/stable/api.html#throttled.Throttled.__init__",
+    "throttled.throttled.contrib": "https://throttled-py.readthedocs.io/en/stable/api.html",
+    "throttled.throttled.contrib.flask": "https://throttled-py.readthedocs.io/en/stable/api.html",
+    "throttled.throttled.contrib.flask.ratelimitexceedederror": "https://throttled-py.readthedocs.io/en/stable/api.html#throttled.throttled.contrib.flask.RateLimitExceededError",
     "throttled.throttled.limit": "https://throttled-py.readthedocs.io/en/stable/api.html#throttled.Throttled.limit",
     "throttled.throttled.peek": "https://throttled-py.readthedocs.io/en/stable/api.html#throttled.Throttled.peek",
     "throttled.throttled.throttled": "https://throttled-py.readthedocs.io/en/stable/api.html#throttled.Throttled",

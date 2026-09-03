@@ -1,4 +1,4 @@
-VERSION = "5.15.1"
+VERSION = "5.16.1"
 
 # fmt: off
 MAPPING = {
@@ -129,6 +129,7 @@ MAPPING = {
     "traitlets.mytrait.validate": "https://traitlets.readthedocs.io/en/stable/defining_traits.html#traitlets.MyTrait.validate",
     "traitlets.objectname": "https://traitlets.readthedocs.io/en/stable/trait_types.html#traitlets.ObjectName",
     "traitlets.observe": "https://traitlets.readthedocs.io/en/stable/api.html#traitlets.observe",
+    "traitlets.path": "https://traitlets.readthedocs.io/en/stable/trait_types.html#traitlets.Path",
     "traitlets.set": "https://traitlets.readthedocs.io/en/stable/trait_types.html#traitlets.Set",
     "traitlets.set.__init__": "https://traitlets.readthedocs.io/en/stable/trait_types.html#traitlets.Set.__init__",
     "traitlets.signature_has_traits": "https://traitlets.readthedocs.io/en/stable/utils.html#traitlets.signature_has_traits",

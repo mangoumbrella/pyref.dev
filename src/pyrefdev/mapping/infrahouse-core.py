@@ -1,4 +1,4 @@
-VERSION = "1.1.2"
+VERSION = "1.3.0"
 
 # fmt: off
 MAPPING = {
@@ -17,7 +17,9 @@ MAPPING = {
     "infrahouse_core.aws.asg.asg.exists": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.asg.ASG.exists",
     "infrahouse_core.aws.asg.asg.instance_refreshes": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.asg.ASG.instance_refreshes",
     "infrahouse_core.aws.asg.asg.instances": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.asg.ASG.instances",
+    "infrahouse_core.aws.asg.asg.launch_tags": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.asg.ASG.launch_tags",
     "infrahouse_core.aws.asg.asg.record_lifecycle_action_heartbeat": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.asg.ASG.record_lifecycle_action_heartbeat",
+    "infrahouse_core.aws.asg.asg.tags": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.asg.ASG.tags",
     "infrahouse_core.aws.asg_instance": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#module-infrahouse_core.aws.asg_instance",
     "infrahouse_core.aws.asg_instance.asginstance": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.asg_instance.ASGInstance",
     "infrahouse_core.aws.asg_instance.asginstance.asg_name": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.asg_instance.ASGInstance.asg_name",
@@ -103,6 +105,7 @@ MAPPING = {
     "infrahouse_core.aws.ec2_instance.ec2instance": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ec2_instance.EC2Instance",
     "infrahouse_core.aws.ec2_instance.ec2instance.add_tag": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ec2_instance.EC2Instance.add_tag",
     "infrahouse_core.aws.ec2_instance.ec2instance.availability_zone": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ec2_instance.EC2Instance.availability_zone",
+    "infrahouse_core.aws.ec2_instance.ec2instance.cloud_init_status": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ec2_instance.EC2Instance.cloud_init_status",
     "infrahouse_core.aws.ec2_instance.ec2instance.delete": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ec2_instance.EC2Instance.delete",
     "infrahouse_core.aws.ec2_instance.ec2instance.ec2_client": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ec2_instance.EC2Instance.ec2_client",
     "infrahouse_core.aws.ec2_instance.ec2instance.execute_command": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ec2_instance.EC2Instance.execute_command",
@@ -115,6 +118,7 @@ MAPPING = {
     "infrahouse_core.aws.ec2_instance.ec2instance.ssm_client": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ec2_instance.EC2Instance.ssm_client",
     "infrahouse_core.aws.ec2_instance.ec2instance.state": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ec2_instance.EC2Instance.state",
     "infrahouse_core.aws.ec2_instance.ec2instance.tags": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ec2_instance.EC2Instance.tags",
+    "infrahouse_core.aws.ec2_instance.ec2instance.wait_for_bootstrap": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ec2_instance.EC2Instance.wait_for_bootstrap",
     "infrahouse_core.aws.ecr_repository": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#module-infrahouse_core.aws.ecr_repository",
     "infrahouse_core.aws.ecr_repository.ecrimage": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ecr_repository.ECRImage",
     "infrahouse_core.aws.ecr_repository.ecrimage.digest": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.ecr_repository.ECRImage.digest",
@@ -179,6 +183,10 @@ MAPPING = {
     "infrahouse_core.aws.eventbridge_rule.eventbridgerule.rule_name": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.eventbridge_rule.EventBridgeRule.rule_name",
     "infrahouse_core.aws.exceptions": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#module-infrahouse_core.aws.exceptions",
     "infrahouse_core.aws.exceptions.ihawsexception": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.exceptions.IHAWSException",
+    "infrahouse_core.aws.exceptions.ihbootstrapexception": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.exceptions.IHBootstrapException",
+    "infrahouse_core.aws.exceptions.ihbootstrapfailed": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.exceptions.IHBootstrapFailed",
+    "infrahouse_core.aws.exceptions.ihbootstraptimeout": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.exceptions.IHBootstrapTimeout",
+    "infrahouse_core.aws.exceptions.ihbootstrapunknown": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.exceptions.IHBootstrapUnknown",
     "infrahouse_core.aws.exceptions.ihdynamodbexception": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.exceptions.IHDynamoDBException",
     "infrahouse_core.aws.exceptions.ihitemnotfound": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.exceptions.IHItemNotFound",
     "infrahouse_core.aws.exceptions.ihsecretnotfound": "https://infrahouse-core.readthedocs.io/en/latest/infrahouse_core.aws.html#infrahouse_core.aws.exceptions.IHSecretNotFound",

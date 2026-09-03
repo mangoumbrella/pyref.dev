@@ -1,4 +1,4 @@
-VERSION = "0.23.1"
+VERSION = "0.24.1"
 
 # fmt: off
 MAPPING = {
@@ -129,8 +129,6 @@ MAPPING = {
     "bidict.orderedbidict.__module__": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidict.__module__",
     "bidict.orderedbidict.__orig_bases__": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidict.__orig_bases__",
     "bidict.orderedbidict.clear": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidict.clear",
-    "bidict.orderedbidict.items": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidict.items",
-    "bidict.orderedbidict.keys": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidict.keys",
     "bidict.orderedbidict.move_to_end": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidict.move_to_end",
     "bidict.orderedbidict.popitem": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidict.popitem",
     "bidict.orderedbidictbase": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidictBase",
@@ -141,6 +139,9 @@ MAPPING = {
     "bidict.orderedbidictbase.__module__": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidictBase.__module__",
     "bidict.orderedbidictbase.__orig_bases__": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidictBase.__orig_bases__",
     "bidict.orderedbidictbase.__reversed__": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidictBase.__reversed__",
+    "bidict.orderedbidictbase.items": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidictBase.items",
+    "bidict.orderedbidictbase.keys": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidictBase.keys",
+    "bidict.orderedbidictbase.values": "https://bidict.readthedocs.io/en/main/api.html#bidict.OrderedBidictBase.values",
     "bidict.raise": "https://bidict.readthedocs.io/en/main/api.html#bidict.RAISE",
     "bidict.valueduplicationerror": "https://bidict.readthedocs.io/en/main/api.html#bidict.ValueDuplicationError",
     "bidict.valueduplicationerror.__annotations__": "https://bidict.readthedocs.io/en/main/api.html#bidict.ValueDuplicationError.__annotations__",

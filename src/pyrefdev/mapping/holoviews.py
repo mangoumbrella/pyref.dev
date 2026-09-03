@@ -1,4 +1,4 @@
-VERSION = "1.23.1"
+VERSION = "1.23.2"
 
 # fmt: off
 MAPPING = {
@@ -66,6 +66,12 @@ MAPPING = {
     "holoviews.core.aarectangle.top": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.AARectangle.top",
     "holoviews.core.accessors": "https://holoviews.org/reference_manual/holoviews.core.accessors.html#module-holoviews.core.accessors",
     "holoviews.core.accessors.apply": "https://holoviews.org/reference_manual/holoviews.core.accessors.html#holoviews.core.accessors.Apply",
+    "holoviews.core.accessors.apply.aggregate": "https://holoviews.org/reference_manual/holoviews.core.accessors.html#holoviews.core.accessors.Apply.aggregate",
+    "holoviews.core.accessors.apply.opts": "https://holoviews.org/reference_manual/holoviews.core.accessors.html#holoviews.core.accessors.Apply.opts",
+    "holoviews.core.accessors.apply.reduce": "https://holoviews.org/reference_manual/holoviews.core.accessors.html#holoviews.core.accessors.Apply.reduce",
+    "holoviews.core.accessors.apply.sample": "https://holoviews.org/reference_manual/holoviews.core.accessors.html#holoviews.core.accessors.Apply.sample",
+    "holoviews.core.accessors.apply.select": "https://holoviews.org/reference_manual/holoviews.core.accessors.html#holoviews.core.accessors.Apply.select",
+    "holoviews.core.accessors.apply.transform": "https://holoviews.org/reference_manual/holoviews.core.accessors.html#holoviews.core.accessors.Apply.transform",
     "holoviews.core.accessors.redim": "https://holoviews.org/reference_manual/holoviews.core.accessors.html#holoviews.core.accessors.Redim",
     "holoviews.core.accessors.redim.replace_dimensions": "https://holoviews.org/reference_manual/holoviews.core.accessors.html#holoviews.core.accessors.Redim.replace_dimensions",
     "holoviews.core.adjointlayout": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.AdjointLayout",
@@ -79,6 +85,12 @@ MAPPING = {
     "holoviews.core.adjointlayout.right": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.AdjointLayout.right",
     "holoviews.core.adjointlayout.top": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.AdjointLayout.top",
     "holoviews.core.apply": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.Apply",
+    "holoviews.core.apply.aggregate": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.Apply.aggregate",
+    "holoviews.core.apply.opts": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.Apply.opts",
+    "holoviews.core.apply.reduce": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.Apply.reduce",
+    "holoviews.core.apply.sample": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.Apply.sample",
+    "holoviews.core.apply.select": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.Apply.select",
+    "holoviews.core.apply.transform": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.Apply.transform",
     "holoviews.core.attrtree": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.AttrTree",
     "holoviews.core.attrtree.filter": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.AttrTree.filter",
     "holoviews.core.attrtree.fixed": "https://holoviews.org/reference_manual/holoviews.core.html#holoviews.core.AttrTree.fixed",

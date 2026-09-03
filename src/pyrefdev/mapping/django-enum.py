@@ -1,4 +1,4 @@
-VERSION = "2.4.3"
+VERSION = "2.5.0"
 
 # fmt: off
 MAPPING = {
@@ -173,13 +173,11 @@ MAPPING = {
     "django_enum.forms.nonstrictselectmultiple": "https://django-enum.readthedocs.io/en/stable/reference/widgets.html#django_enum.forms.NonStrictSelectMultiple",
     "django_enum.query": "https://django-enum.readthedocs.io/en/stable/reference/query.html",
     "django_enum.query.hasallflagslookup": "https://django-enum.readthedocs.io/en/stable/reference/query.html#django_enum.query.HasAllFlagsLookup",
-    "django_enum.query.hasallflagslookup.get_rhs_op": "https://django-enum.readthedocs.io/en/stable/reference/query.html#django_enum.query.HasAllFlagsLookup.get_rhs_op",
+    "django_enum.query.hasallflagslookup.as_sql": "https://django-enum.readthedocs.io/en/stable/reference/query.html#django_enum.query.HasAllFlagsLookup.as_sql",
     "django_enum.query.hasallflagslookup.lookup_name": "https://django-enum.readthedocs.io/en/stable/reference/query.html#django_enum.query.HasAllFlagsLookup.lookup_name",
-    "django_enum.query.hasallflagslookup.process_lhs": "https://django-enum.readthedocs.io/en/stable/reference/query.html#django_enum.query.HasAllFlagsLookup.process_lhs",
     "django_enum.query.hasanyflagslookup": "https://django-enum.readthedocs.io/en/stable/reference/query.html#django_enum.query.HasAnyFlagsLookup",
-    "django_enum.query.hasanyflagslookup.get_rhs_op": "https://django-enum.readthedocs.io/en/stable/reference/query.html#django_enum.query.HasAnyFlagsLookup.get_rhs_op",
+    "django_enum.query.hasanyflagslookup.as_sql": "https://django-enum.readthedocs.io/en/stable/reference/query.html#django_enum.query.HasAnyFlagsLookup.as_sql",
     "django_enum.query.hasanyflagslookup.lookup_name": "https://django-enum.readthedocs.io/en/stable/reference/query.html#django_enum.query.HasAnyFlagsLookup.lookup_name",
-    "django_enum.query.hasanyflagslookup.process_rhs": "https://django-enum.readthedocs.io/en/stable/reference/query.html#django_enum.query.HasAnyFlagsLookup.process_rhs",
     "django_enum.urls": "https://django-enum.readthedocs.io/en/stable/reference/urls.html",
     "django_enum.urls.register_enum_converter": "https://django-enum.readthedocs.io/en/stable/reference/urls.html#django_enum.urls.register_enum_converter",
     "django_enum.utils": "https://django-enum.readthedocs.io/en/stable/reference/utils.html",

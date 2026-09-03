@@ -1,4 +1,4 @@
-VERSION = "17.8.1"
+VERSION = "17.11.0"
 
 # fmt: off
 MAPPING = {
@@ -12,24 +12,16 @@ MAPPING = {
     "ocrmypdf._options.ocroptions.model_config": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.model_config",
     "ocrmypdf._options.ocroptions.model_dump_json_safe": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.model_dump_json_safe",
     "ocrmypdf._options.ocroptions.model_validate_json_safe": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.model_validate_json_safe",
+    "ocrmypdf._options.ocroptions.propagate_clean_final": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.propagate_clean_final",
     "ocrmypdf._options.ocroptions.redo_ocr": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.redo_ocr",
     "ocrmypdf._options.ocroptions.register_plugin_models": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.register_plugin_models",
     "ocrmypdf._options.ocroptions.skip_text": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.skip_text",
-    "ocrmypdf._options.ocroptions.validate_clean_final": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_clean_final",
-    "ocrmypdf._options.ocroptions.validate_jobs": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_jobs",
     "ocrmypdf._options.ocroptions.validate_languages": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_languages",
-    "ocrmypdf._options.ocroptions.validate_max_image_mpixels": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_max_image_mpixels",
     "ocrmypdf._options.ocroptions.validate_metadata_unicode": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_metadata_unicode",
-    "ocrmypdf._options.ocroptions.validate_output_type": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_output_type",
     "ocrmypdf._options.ocroptions.validate_output_type_compatibility": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_output_type_compatibility",
-    "ocrmypdf._options.ocroptions.validate_oversample": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_oversample",
     "ocrmypdf._options.ocroptions.validate_pages_format": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_pages_format",
-    "ocrmypdf._options.ocroptions.validate_pdf_renderer": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_pdf_renderer",
-    "ocrmypdf._options.ocroptions.validate_rasterizer": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_rasterizer",
     "ocrmypdf._options.ocroptions.validate_redo_ocr_options": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_redo_ocr_options",
-    "ocrmypdf._options.ocroptions.validate_rotate_pages_threshold": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_rotate_pages_threshold",
     "ocrmypdf._options.ocroptions.validate_unpaper_args": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_unpaper_args",
-    "ocrmypdf._options.ocroptions.validate_verbose": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf._options.OcrOptions.validate_verbose",
     "ocrmypdf.api": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#module-ocrmypdf.api",
     "ocrmypdf.api.check_options": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf.api.check_options",
     "ocrmypdf.api.configure_logging": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf.api.configure_logging",
@@ -104,6 +96,7 @@ MAPPING = {
     "ocrmypdf.helpers.pikepdf_enable_mmap": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf.helpers.pikepdf_enable_mmap",
     "ocrmypdf.helpers.pikepdf_get_bool": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf.helpers.pikepdf_get_bool",
     "ocrmypdf.helpers.pikepdf_get_int": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf.helpers.pikepdf_get_int",
+    "ocrmypdf.helpers.release_free_memory": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf.helpers.release_free_memory",
     "ocrmypdf.helpers.remove_all_log_handlers": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf.helpers.remove_all_log_handlers",
     "ocrmypdf.helpers.resolution": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf.helpers.Resolution",
     "ocrmypdf.helpers.resolution.flip_axis": "https://ocrmypdf.readthedocs.io/en/latest/apiref.html#ocrmypdf.helpers.Resolution.flip_axis",
@@ -176,6 +169,7 @@ MAPPING = {
     "ocrmypdf.pluginspec.executor": "https://ocrmypdf.readthedocs.io/en/latest/plugins.html#ocrmypdf.pluginspec.Executor",
     "ocrmypdf.pluginspec.executor.__call__": "https://ocrmypdf.readthedocs.io/en/latest/plugins.html#ocrmypdf.pluginspec.Executor.__call__",
     "ocrmypdf.pluginspec.executor.pbar_class": "https://ocrmypdf.readthedocs.io/en/latest/plugins.html#ocrmypdf.pluginspec.Executor.pbar_class",
+    "ocrmypdf.pluginspec.executor.pool_lock": "https://ocrmypdf.readthedocs.io/en/latest/plugins.html#ocrmypdf.pluginspec.Executor.pool_lock",
     "ocrmypdf.pluginspec.filter_ocr_image": "https://ocrmypdf.readthedocs.io/en/latest/plugins.html#ocrmypdf.pluginspec.filter_ocr_image",
     "ocrmypdf.pluginspec.filter_page_image": "https://ocrmypdf.readthedocs.io/en/latest/plugins.html#ocrmypdf.pluginspec.filter_page_image",
     "ocrmypdf.pluginspec.filter_pdf_page": "https://ocrmypdf.readthedocs.io/en/latest/plugins.html#ocrmypdf.pluginspec.filter_pdf_page",

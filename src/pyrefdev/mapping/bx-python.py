@@ -1,4 +1,4 @@
-VERSION = "0.14.0"
+VERSION = "0.15.1"
 
 # fmt: off
 MAPPING = {
@@ -756,14 +756,11 @@ MAPPING = {
     "bx.phylo.phast_tests.test_parser": "https://bx-python.readthedocs.io/en/stable/lib/bx.phylo.phast_tests.html#bx.phylo.phast_tests.test_parser",
     "bx.pwm": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.html#module-bx.pwm",
     "bx.pwm.bed_score_aligned_pwm": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.bed_score_aligned_pwm.html#module-bx.pwm.bed_score_aligned_pwm",
-    "bx.pwm.bed_score_aligned_pwm.isnan": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.bed_score_aligned_pwm.html#bx.pwm.bed_score_aligned_pwm.isnan",
     "bx.pwm.bed_score_aligned_pwm.main": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.bed_score_aligned_pwm.html#bx.pwm.bed_score_aligned_pwm.main",
     "bx.pwm.bed_score_aligned_string": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.bed_score_aligned_string.html#module-bx.pwm.bed_score_aligned_string",
-    "bx.pwm.bed_score_aligned_string.isnan": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.bed_score_aligned_string.html#bx.pwm.bed_score_aligned_string.isnan",
     "bx.pwm.bed_score_aligned_string.main": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.bed_score_aligned_string.html#bx.pwm.bed_score_aligned_string.main",
     "bx.pwm.maf_select_motifs": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.maf_select_motifs.html#module-bx.pwm.maf_select_motifs",
     "bx.pwm.maf_select_motifs.format_tabular": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.maf_select_motifs.html#bx.pwm.maf_select_motifs.format_tabular",
-    "bx.pwm.maf_select_motifs.isnan": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.maf_select_motifs.html#bx.pwm.maf_select_motifs.isnan",
     "bx.pwm.maf_select_motifs.mafwrite": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.maf_select_motifs.html#bx.pwm.maf_select_motifs.mafwrite",
     "bx.pwm.maf_select_motifs.main": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.maf_select_motifs.html#bx.pwm.maf_select_motifs.main",
     "bx.pwm.position_weight_matrix": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.position_weight_matrix.html#module-bx.pwm.position_weight_matrix",
@@ -803,17 +800,14 @@ MAPPING = {
     "bx.pwm.position_weight_matrix.score_align_motif": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.position_weight_matrix.html#bx.pwm.position_weight_matrix.score_align_motif",
     "bx.pwm.position_weight_matrix.sum_of_squares": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.position_weight_matrix.html#bx.pwm.position_weight_matrix.sum_of_squares",
     "bx.pwm.pwm_score_maf": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_maf.html#module-bx.pwm.pwm_score_maf",
-    "bx.pwm.pwm_score_maf.isnan": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_maf.html#bx.pwm.pwm_score_maf.isnan",
     "bx.pwm.pwm_score_maf.mafblockscorer": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_maf.html#bx.pwm.pwm_score_maf.MafBlockScorer",
     "bx.pwm.pwm_score_maf.mafmotifscorer": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_maf.html#bx.pwm.pwm_score_maf.MafMotifScorer",
     "bx.pwm.pwm_score_maf.mafmotifselect": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_maf.html#bx.pwm.pwm_score_maf.MafMotifSelect",
     "bx.pwm.pwm_score_maf.mafscorer": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_maf.html#bx.pwm.pwm_score_maf.MafScorer",
     "bx.pwm.pwm_score_maf.main": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_maf.html#bx.pwm.pwm_score_maf.main",
     "bx.pwm.pwm_score_motifs": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_motifs.html#module-bx.pwm.pwm_score_motifs",
-    "bx.pwm.pwm_score_motifs.isnan": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_motifs.html#bx.pwm.pwm_score_motifs.isnan",
     "bx.pwm.pwm_score_motifs.main": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_motifs.html#bx.pwm.pwm_score_motifs.main",
     "bx.pwm.pwm_score_positions": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_positions.html#module-bx.pwm.pwm_score_positions",
-    "bx.pwm.pwm_score_positions.isnan": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_positions.html#bx.pwm.pwm_score_positions.isnan",
     "bx.pwm.pwm_score_positions.main": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_score_positions.html#bx.pwm.pwm_score_positions.main",
     "bx.pwm.pwm_tests": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_tests.html#module-bx.pwm.pwm_tests",
     "bx.pwm.pwm_tests.pwmtestcase": "https://bx-python.readthedocs.io/en/stable/lib/bx.pwm.pwm_tests.html#bx.pwm.pwm_tests.PWMTestCase",

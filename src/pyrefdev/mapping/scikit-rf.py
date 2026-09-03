@@ -2142,6 +2142,7 @@ MAPPING = {
     "skrf.network.network.plot_s_db_time": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.network.Network.plot_s_db_time.html#skrf.network.Network.plot_s_db_time",
     "skrf.network.network.plot_s_deg": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.network.Network.plot_s_deg.html#skrf.network.Network.plot_s_deg",
     "skrf.network.network.plot_s_deg_unwrap": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.network.Network.plot_s_deg_unwrap.html#skrf.network.Network.plot_s_deg_unwrap",
+    "skrf.network.network.plot_s_error": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.network.Network.plot_s_error.html#skrf.network.Network.plot_s_error",
     "skrf.network.network.plot_s_im": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.network.Network.plot_s_im.html#skrf.network.Network.plot_s_im",
     "skrf.network.network.plot_s_mag": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.network.Network.plot_s_mag.html#skrf.network.Network.plot_s_mag",
     "skrf.network.network.plot_s_polar": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.network.Network.plot_s_polar.html#skrf.network.Network.plot_s_polar",

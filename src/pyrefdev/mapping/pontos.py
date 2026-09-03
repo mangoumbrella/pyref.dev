@@ -1,4 +1,4 @@
-VERSION = "26.5.0"
+VERSION = "26.8.4"
 
 # fmt: off
 MAPPING = {
@@ -1417,8 +1417,12 @@ MAPPING = {
     "pontos.version.commands._java.javaversioncommand": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.JavaVersionCommand",
     "pontos.version.commands._javascript": "https://greenbone.github.io/pontos/pontos/version/commands.html",
     "pontos.version.commands._javascript.javascriptversioncommand": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.JavaScriptVersionCommand",
+    "pontos.version.commands._poetry": "https://greenbone.github.io/pontos/pontos/version/commands.html",
+    "pontos.version.commands._poetry.poetryversioncommand": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PoetryVersionCommand",
     "pontos.version.commands._python": "https://greenbone.github.io/pontos/pontos/version/commands.html",
     "pontos.version.commands._python.pythonversioncommand": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PythonVersionCommand",
+    "pontos.version.commands._uv": "https://greenbone.github.io/pontos/pontos/version/commands.html",
+    "pontos.version.commands._uv.uvversioncommand": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.UvVersionCommand",
     "pontos.version.commands.cargoversioncommand": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.CargoVersionCommand",
     "pontos.version.commands.cargoversioncommand.get_current_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.CargoVersionCommand.get_current_version",
     "pontos.version.commands.cargoversioncommand.update_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.CargoVersionCommand.update_version",
@@ -1440,11 +1444,23 @@ MAPPING = {
     "pontos.version.commands.javaversioncommand.get_current_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.JavaVersionCommand.get_current_version",
     "pontos.version.commands.javaversioncommand.update_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.JavaVersionCommand.update_version",
     "pontos.version.commands.javaversioncommand.verify_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.JavaVersionCommand.verify_version",
+    "pontos.version.commands.poetryversioncommand": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PoetryVersionCommand",
+    "pontos.version.commands.poetryversioncommand.get_version_from_pyproject_toml": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PoetryVersionCommand.get_version_from_pyproject_toml",
+    "pontos.version.commands.poetryversioncommand.project_found": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PoetryVersionCommand.project_found",
+    "pontos.version.commands.poetryversioncommand.update_pyproject_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PoetryVersionCommand.update_pyproject_version",
+    "pontos.version.commands.poetryversioncommand.update_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PoetryVersionCommand.update_version",
     "pontos.version.commands.projecttype": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.ProjectType",
     "pontos.version.commands.pythonversioncommand": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PythonVersionCommand",
     "pontos.version.commands.pythonversioncommand.get_current_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PythonVersionCommand.get_current_version",
-    "pontos.version.commands.pythonversioncommand.update_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PythonVersionCommand.update_version",
+    "pontos.version.commands.pythonversioncommand.get_version_from_pyproject_toml": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PythonVersionCommand.get_version_from_pyproject_toml",
+    "pontos.version.commands.pythonversioncommand.update_pyproject_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PythonVersionCommand.update_pyproject_version",
+    "pontos.version.commands.pythonversioncommand.update_version_file": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PythonVersionCommand.update_version_file",
     "pontos.version.commands.pythonversioncommand.verify_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.PythonVersionCommand.verify_version",
+    "pontos.version.commands.uvversioncommand": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.UvVersionCommand",
+    "pontos.version.commands.uvversioncommand.get_version_from_pyproject_toml": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.UvVersionCommand.get_version_from_pyproject_toml",
+    "pontos.version.commands.uvversioncommand.project_found": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.UvVersionCommand.project_found",
+    "pontos.version.commands.uvversioncommand.update_pyproject_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.UvVersionCommand.update_pyproject_version",
+    "pontos.version.commands.uvversioncommand.update_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.UvVersionCommand.update_version",
     "pontos.version.commands.versioncommand": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.VersionCommand",
     "pontos.version.commands.versioncommand.get_current_version": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.VersionCommand.get_current_version",
     "pontos.version.commands.versioncommand.project_found": "https://greenbone.github.io/pontos/pontos/version/commands.html#pontos.version.commands.VersionCommand.project_found",

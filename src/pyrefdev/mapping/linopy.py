@@ -1,4 +1,4 @@
-VERSION = "0.9.0"
+VERSION = "0.9.1"
 
 # fmt: off
 MAPPING = {
@@ -53,6 +53,11 @@ MAPPING = {
     "linopy.constraints.csrconstraint.to_polars": "https://linopy.readthedocs.io/en/stable/generated/linopy.constraints.CSRConstraint.to_polars.html#linopy.constraints.CSRConstraint.to_polars",
     "linopy.constraints.csrconstraint.vars": "https://linopy.readthedocs.io/en/stable/generated/linopy.constraints.CSRConstraint.vars.html#linopy.constraints.CSRConstraint.vars",
     "linopy.evolvingapiwarning": "https://linopy.readthedocs.io/en/stable/generated/linopy.EvolvingAPIWarning.html#linopy.EvolvingAPIWarning",
+    "linopy.expressions.expressions": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.Expressions.html#linopy.expressions.Expressions",
+    "linopy.expressions.expressions.__init__": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.Expressions.html#linopy.expressions.Expressions.__init__",
+    "linopy.expressions.expressions.add": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.Expressions.add.html#linopy.expressions.Expressions.add",
+    "linopy.expressions.expressions.remove": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.Expressions.remove.html#linopy.expressions.Expressions.remove",
+    "linopy.expressions.expressions.solution": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.Expressions.solution.html#linopy.expressions.Expressions.solution",
     "linopy.expressions.linearexpression": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.LinearExpression.html#linopy.expressions.LinearExpression",
     "linopy.expressions.linearexpression.__init__": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.LinearExpression.html#linopy.expressions.LinearExpression.__init__",
     "linopy.expressions.linearexpression.coeffs": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.LinearExpression.coeffs.html#linopy.expressions.LinearExpression.coeffs",
@@ -60,6 +65,7 @@ MAPPING = {
     "linopy.expressions.linearexpression.from_tuples": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.LinearExpression.from_tuples.html#linopy.expressions.LinearExpression.from_tuples",
     "linopy.expressions.linearexpression.groupby": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.LinearExpression.groupby.html#linopy.expressions.LinearExpression.groupby",
     "linopy.expressions.linearexpression.has_terms": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.LinearExpression.has_terms.html#linopy.expressions.LinearExpression.has_terms",
+    "linopy.expressions.linearexpression.name": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.LinearExpression.name.html#linopy.expressions.LinearExpression.name",
     "linopy.expressions.linearexpression.nterm": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.LinearExpression.nterm.html#linopy.expressions.LinearExpression.nterm",
     "linopy.expressions.linearexpression.rolling": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.LinearExpression.rolling.html#linopy.expressions.LinearExpression.rolling",
     "linopy.expressions.linearexpression.solution": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.LinearExpression.solution.html#linopy.expressions.LinearExpression.solution",
@@ -73,6 +79,7 @@ MAPPING = {
     "linopy.expressions.quadraticexpression.coeffs": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.QuadraticExpression.coeffs.html#linopy.expressions.QuadraticExpression.coeffs",
     "linopy.expressions.quadraticexpression.const": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.QuadraticExpression.const.html#linopy.expressions.QuadraticExpression.const",
     "linopy.expressions.quadraticexpression.has_terms": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.QuadraticExpression.has_terms.html#linopy.expressions.QuadraticExpression.has_terms",
+    "linopy.expressions.quadraticexpression.name": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.QuadraticExpression.name.html#linopy.expressions.QuadraticExpression.name",
     "linopy.expressions.quadraticexpression.nterm": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.QuadraticExpression.nterm.html#linopy.expressions.QuadraticExpression.nterm",
     "linopy.expressions.quadraticexpression.solution": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.QuadraticExpression.solution.html#linopy.expressions.QuadraticExpression.solution",
     "linopy.expressions.quadraticexpression.to_matrix": "https://linopy.readthedocs.io/en/stable/generated/linopy.expressions.QuadraticExpression.to_matrix.html#linopy.expressions.QuadraticExpression.to_matrix",
@@ -83,6 +90,7 @@ MAPPING = {
     "linopy.model.model": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.html#linopy.model.Model",
     "linopy.model.model.__init__": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.html#linopy.model.Model.__init__",
     "linopy.model.model.add_constraints": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.add_constraints.html#linopy.model.Model.add_constraints",
+    "linopy.model.model.add_expressions": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.add_expressions.html#linopy.model.Model.add_expressions",
     "linopy.model.model.add_objective": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.add_objective.html#linopy.model.Model.add_objective",
     "linopy.model.model.add_piecewise_formulation": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.add_piecewise_formulation.html#linopy.model.Model.add_piecewise_formulation",
     "linopy.model.model.add_sos_constraints": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.add_sos_constraints.html#linopy.model.Model.add_sos_constraints",
@@ -92,12 +100,14 @@ MAPPING = {
     "linopy.model.model.constraints": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.constraints.html#linopy.model.Model.constraints",
     "linopy.model.model.copy": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.copy.html#linopy.model.Model.copy",
     "linopy.model.model.dual": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.dual.html#linopy.model.Model.dual",
+    "linopy.model.model.expressions": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.expressions.html#linopy.model.Model.expressions",
     "linopy.model.model.format_infeasibilities": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.format_infeasibilities.html#linopy.model.Model.format_infeasibilities",
     "linopy.model.model.is_linear": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.is_linear.html#linopy.model.Model.is_linear",
     "linopy.model.model.is_quadratic": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.is_quadratic.html#linopy.model.Model.is_quadratic",
     "linopy.model.model.objective": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.objective.html#linopy.model.Model.objective",
     "linopy.model.model.reformulate_sos_constraints": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.reformulate_sos_constraints.html#linopy.model.Model.reformulate_sos_constraints",
     "linopy.model.model.remove_constraints": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.remove_constraints.html#linopy.model.Model.remove_constraints",
+    "linopy.model.model.remove_expressions": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.remove_expressions.html#linopy.model.Model.remove_expressions",
     "linopy.model.model.remove_objective": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.remove_objective.html#linopy.model.Model.remove_objective",
     "linopy.model.model.remove_sos_constraints": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.remove_sos_constraints.html#linopy.model.Model.remove_sos_constraints",
     "linopy.model.model.remove_variables": "https://linopy.readthedocs.io/en/stable/generated/linopy.model.Model.remove_variables.html#linopy.model.Model.remove_variables",

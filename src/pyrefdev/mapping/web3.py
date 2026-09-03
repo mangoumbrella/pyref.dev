@@ -1,4 +1,4 @@
-VERSION = "7.16.0"
+VERSION = "8.0.0"
 
 # fmt: off
 MAPPING = {
@@ -87,8 +87,6 @@ MAPPING = {
     "web3.eth.eth.get_transaction_by_block": "https://web3py.readthedocs.io/en/stable/web3.eth.html#web3.eth.Eth.get_transaction_by_block",
     "web3.eth.eth.get_transaction_count": "https://web3py.readthedocs.io/en/stable/web3.eth.html#web3.eth.Eth.get_transaction_count",
     "web3.eth.eth.get_transaction_receipt": "https://web3py.readthedocs.io/en/stable/web3.eth.html#web3.eth.Eth.get_transaction_receipt",
-    "web3.eth.eth.get_uncle_by_block": "https://web3py.readthedocs.io/en/stable/web3.eth.html#web3.eth.Eth.get_uncle_by_block",
-    "web3.eth.eth.get_uncle_count": "https://web3py.readthedocs.io/en/stable/web3.eth.html#web3.eth.Eth.get_uncle_count",
     "web3.eth.eth.max_priority_fee": "https://web3py.readthedocs.io/en/stable/web3.eth.html#web3.eth.Eth.max_priority_fee",
     "web3.eth.eth.modify_transaction": "https://web3py.readthedocs.io/en/stable/web3.eth.html#web3.eth.Eth.modify_transaction",
     "web3.eth.eth.replace_transaction": "https://web3py.readthedocs.io/en/stable/web3.eth.html#web3.eth.Eth.replace_transaction",
@@ -154,8 +152,6 @@ MAPPING = {
     "web3.providers.eth_tester.ethereumtesterprovider": "https://web3py.readthedocs.io/en/stable/providers.html#web3.providers.eth_tester.EthereumTesterProvider",
     "web3.providers.ipc": "https://web3py.readthedocs.io/en/stable/providers.html",
     "web3.providers.ipc.ipcprovider": "https://web3py.readthedocs.io/en/stable/providers.html#web3.providers.ipc.IPCProvider",
-    "web3.providers.legacy_websocket": "https://web3py.readthedocs.io/en/stable/providers.html",
-    "web3.providers.legacy_websocket.legacywebsocketprovider": "https://web3py.readthedocs.io/en/stable/providers.html#web3.providers.legacy_websocket.LegacyWebSocketProvider",
     "web3.providers.persistent.asyncipcprovider": "https://web3py.readthedocs.io/en/stable/providers.html#web3.providers.persistent.AsyncIPCProvider",
     "web3.providers.persistent.persistent_connection": "https://web3py.readthedocs.io/en/stable/providers.html",
     "web3.providers.persistent.persistent_connection.persistentconnection": "https://web3py.readthedocs.io/en/stable/providers.html#web3.providers.persistent.persistent_connection.PersistentConnection",

@@ -1,4 +1,4 @@
-VERSION = "2.5.0"
+VERSION = "2.6.0"
 
 # fmt: off
 MAPPING = {
@@ -46,7 +46,7 @@ MAPPING = {
     "stravalib.client.client.get_athlete_zones": "https://stravalib.readthedocs.io/en/stable/reference/api/stravalib.client.Client.html#stravalib.client.Client.get_athlete_zones",
     "stravalib.client.client.get_club": "https://stravalib.readthedocs.io/en/stable/reference/api/stravalib.client.Client.get_club.html#stravalib.client.Client.get_club",
     "stravalib.client.client.get_club_activities": "https://stravalib.readthedocs.io/en/stable/reference/api/stravalib.client.Client.get_club_activities.html#stravalib.client.Client.get_club_activities",
-    "stravalib.client.client.get_club_admins": "https://stravalib.readthedocs.io/en/stable/reference/api/stravalib.client.Client.html#stravalib.client.Client.get_club_admins",
+    "stravalib.client.client.get_club_admins": "https://stravalib.readthedocs.io/en/stable/reference/api/stravalib.client.Client.get_club_admins.html#stravalib.client.Client.get_club_admins",
     "stravalib.client.client.get_club_members": "https://stravalib.readthedocs.io/en/stable/reference/api/stravalib.client.Client.get_club_members.html#stravalib.client.Client.get_club_members",
     "stravalib.client.client.get_effort_streams": "https://stravalib.readthedocs.io/en/stable/reference/api/stravalib.client.Client.get_effort_streams.html#stravalib.client.Client.get_effort_streams",
     "stravalib.client.client.get_gear": "https://stravalib.readthedocs.io/en/stable/reference/api/stravalib.client.Client.get_gear.html#stravalib.client.Client.get_gear",
@@ -93,6 +93,17 @@ MAPPING = {
     "stravalib.exc.activityuploadfailed.add_note": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ActivityUploadFailed.add_note",
     "stravalib.exc.activityuploadfailed.args": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ActivityUploadFailed.args",
     "stravalib.exc.activityuploadfailed.with_traceback": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ActivityUploadFailed.with_traceback",
+    "stravalib.exc.applicationinactive": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ApplicationInactive",
+    "stravalib.exc.applicationinactive.add_note": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ApplicationInactive.add_note",
+    "stravalib.exc.applicationinactive.args": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ApplicationInactive.args",
+    "stravalib.exc.applicationinactive.characters_written": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ApplicationInactive.characters_written",
+    "stravalib.exc.applicationinactive.errno": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ApplicationInactive.errno",
+    "stravalib.exc.applicationinactive.filename": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ApplicationInactive.filename",
+    "stravalib.exc.applicationinactive.filename2": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ApplicationInactive.filename2",
+    "stravalib.exc.applicationinactive.request": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ApplicationInactive.request",
+    "stravalib.exc.applicationinactive.response": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ApplicationInactive.response",
+    "stravalib.exc.applicationinactive.strerror": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ApplicationInactive.strerror",
+    "stravalib.exc.applicationinactive.with_traceback": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.ApplicationInactive.with_traceback",
     "stravalib.exc.autherror": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.AuthError",
     "stravalib.exc.autherror.add_note": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.AuthError.add_note",
     "stravalib.exc.autherror.args": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.AuthError.args",
@@ -157,6 +168,8 @@ MAPPING = {
     "stravalib.exc.unboundentity.with_traceback": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.UnboundEntity.with_traceback",
     "stravalib.exc.warn_attribute_unofficial": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.warn_attribute_unofficial",
     "stravalib.exc.warn_method_deprecation": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.warn_method_deprecation",
+    "stravalib.exc.warn_method_removal": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.warn_method_removal",
+    "stravalib.exc.warn_method_restricted": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.warn_method_restricted",
     "stravalib.exc.warn_method_unofficial": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.warn_method_unofficial",
     "stravalib.exc.warn_param_deprecation": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.warn_param_deprecation",
     "stravalib.exc.warn_param_unofficial": "https://stravalib.readthedocs.io/en/stable/reference/exceptions.html#stravalib.exc.warn_param_unofficial",

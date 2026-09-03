@@ -1,4 +1,4 @@
-VERSION = "2.0.1"
+VERSION = "2.0.2"
 
 # fmt: off
 MAPPING = {
@@ -153,6 +153,7 @@ MAPPING = {
     "spectree.spec.spectree": "https://0b01001001.github.io/spectree/spectree.html#spectree.spec.SpecTree",
     "spectree.spec.spectree.__init__": "https://0b01001001.github.io/spectree/spectree.html#spectree.spec.SpecTree.__init__",
     "spectree.spec.spectree.bypass": "https://0b01001001.github.io/spectree/spectree.html#spectree.spec.SpecTree.bypass",
+    "spectree.spec.spectree.get_function_metadata": "https://0b01001001.github.io/spectree/spectree.html#spectree.spec.SpecTree.get_function_metadata",
     "spectree.spec.spectree.register": "https://0b01001001.github.io/spectree/spectree.html#spectree.spec.SpecTree.register",
     "spectree.spec.spectree.spec": "https://0b01001001.github.io/spectree/spectree.html#spectree.spec.SpecTree.spec",
     "spectree.spec.spectree.validate": "https://0b01001001.github.io/spectree/spectree.html#spectree.spec.SpecTree.validate",
@@ -163,6 +164,7 @@ MAPPING = {
     "spectree.utils.get_multidict_items": "https://0b01001001.github.io/spectree/utils.html#spectree.utils.get_multidict_items",
     "spectree.utils.get_multidict_items_starlette": "https://0b01001001.github.io/spectree/utils.html#spectree.utils.get_multidict_items_starlette",
     "spectree.utils.get_nested_key": "https://0b01001001.github.io/spectree/utils.html#spectree.utils.get_nested_key",
+    "spectree.utils.get_request_model_hints": "https://0b01001001.github.io/spectree/utils.html#spectree.utils.get_request_model_hints",
     "spectree.utils.get_security": "https://0b01001001.github.io/spectree/utils.html#spectree.utils.get_security",
     "spectree.utils.has_model": "https://0b01001001.github.io/spectree/utils.html#spectree.utils.has_model",
     "spectree.utils.hash_module_path": "https://0b01001001.github.io/spectree/utils.html#spectree.utils.hash_module_path",

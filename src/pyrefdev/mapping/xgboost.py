@@ -1,4 +1,4 @@
-VERSION = "3.3.0"
+VERSION = "3.4.1"
 
 # fmt: off
 MAPPING = {
@@ -78,7 +78,6 @@ MAPPING = {
     "xgboost.dataiter.reraise": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DataIter.reraise",
     "xgboost.dataiter.reset": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DataIter.reset",
     "xgboost.dmatrix": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix",
-    "xgboost.dmatrix.data_split_mode": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.data_split_mode",
     "xgboost.dmatrix.feature_names": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.feature_names",
     "xgboost.dmatrix.feature_types": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.feature_types",
     "xgboost.dmatrix.get_base_margin": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.get_base_margin",
@@ -104,7 +103,6 @@ MAPPING = {
     "xgboost.dmatrix.set_weight": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.set_weight",
     "xgboost.dmatrix.slice": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.DMatrix.slice",
     "xgboost.extmemquantiledmatrix": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.ExtMemQuantileDMatrix",
-    "xgboost.extmemquantiledmatrix.data_split_mode": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.ExtMemQuantileDMatrix.data_split_mode",
     "xgboost.extmemquantiledmatrix.feature_names": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.ExtMemQuantileDMatrix.feature_names",
     "xgboost.extmemquantiledmatrix.feature_types": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.ExtMemQuantileDMatrix.feature_types",
     "xgboost.extmemquantiledmatrix.get_base_margin": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.ExtMemQuantileDMatrix.get_base_margin",
@@ -135,7 +133,6 @@ MAPPING = {
     "xgboost.plot_tree": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.plot_tree",
     "xgboost.plotting": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#module-xgboost.plotting",
     "xgboost.quantiledmatrix": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.QuantileDMatrix",
-    "xgboost.quantiledmatrix.data_split_mode": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.QuantileDMatrix.data_split_mode",
     "xgboost.quantiledmatrix.feature_names": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.QuantileDMatrix.feature_names",
     "xgboost.quantiledmatrix.feature_types": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.QuantileDMatrix.feature_types",
     "xgboost.quantiledmatrix.get_base_margin": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.QuantileDMatrix.get_base_margin",
@@ -351,6 +348,7 @@ MAPPING = {
     "xgboost.xgbclassifier.apply": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBClassifier.apply",
     "xgboost.xgbclassifier.best_iteration": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBClassifier.best_iteration",
     "xgboost.xgbclassifier.best_score": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBClassifier.best_score",
+    "xgboost.xgbclassifier.classes_": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBClassifier.classes_",
     "xgboost.xgbclassifier.coef_": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBClassifier.coef_",
     "xgboost.xgbclassifier.evals_result": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBClassifier.evals_result",
     "xgboost.xgbclassifier.feature_importances_": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBClassifier.feature_importances_",
@@ -424,6 +422,7 @@ MAPPING = {
     "xgboost.xgbrfclassifier.apply": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBRFClassifier.apply",
     "xgboost.xgbrfclassifier.best_iteration": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBRFClassifier.best_iteration",
     "xgboost.xgbrfclassifier.best_score": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBRFClassifier.best_score",
+    "xgboost.xgbrfclassifier.classes_": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBRFClassifier.classes_",
     "xgboost.xgbrfclassifier.coef_": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBRFClassifier.coef_",
     "xgboost.xgbrfclassifier.evals_result": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBRFClassifier.evals_result",
     "xgboost.xgbrfclassifier.feature_importances_": "https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBRFClassifier.feature_importances_",

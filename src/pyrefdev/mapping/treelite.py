@@ -1,4 +1,4 @@
-VERSION = "4.7.0"
+VERSION = "4.7.2"
 
 # fmt: off
 MAPPING = {
@@ -17,6 +17,7 @@ MAPPING = {
     "treelite.gtil.predict_per_tree": "https://treelite.readthedocs.io/en/latest/treelite-gtil-api.html#treelite.gtil.predict_per_tree",
     "treelite.model": "https://treelite.readthedocs.io/en/latest/treelite-api.html",
     "treelite.Model": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model",
+    "treelite.model.attributes": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.attributes",
     "treelite.model.concatenate": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.concatenate",
     "treelite.model.deserialize": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.deserialize",
     "treelite.model.deserialize_bytes": "https://treelite.readthedocs.io/en/latest/treelite-api.html#treelite.Model.deserialize_bytes",

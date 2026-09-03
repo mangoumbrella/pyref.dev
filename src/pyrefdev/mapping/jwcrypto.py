@@ -1,13 +1,13 @@
-VERSION = "1.5.8"
+VERSION = "1.5.9"
 
 # fmt: off
 MAPPING = {
     "jwcrypto": "https://jwcrypto.readthedocs.io/en/stable/",
-    "jwcrypto.common": "https://jwcrypto.readthedocs.io/en/stable/common.html",
     "jwcrypto.common.base64url_decode": "https://jwcrypto.readthedocs.io/en/stable/common.html#jwcrypto.common.base64url_decode",
     "jwcrypto.common.base64url_encode": "https://jwcrypto.readthedocs.io/en/stable/common.html#jwcrypto.common.base64url_encode",
     "jwcrypto.common.invalidcekeylength": "https://jwcrypto.readthedocs.io/en/stable/common.html#jwcrypto.common.InvalidCEKeyLength",
     "jwcrypto.common.invalidjwaalgorithm": "https://jwcrypto.readthedocs.io/en/stable/common.html#jwcrypto.common.InvalidJWAAlgorithm",
+    "jwcrypto.common.invalidjwedata": "https://jwcrypto.readthedocs.io/en/stable/jwe.html#jwcrypto.jwe.InvalidJWEData",
     "jwcrypto.common.invalidjwekeylength": "https://jwcrypto.readthedocs.io/en/stable/common.html#jwcrypto.common.InvalidJWEKeyLength",
     "jwcrypto.common.invalidjwekeytype": "https://jwcrypto.readthedocs.io/en/stable/common.html#jwcrypto.common.InvalidJWEKeyType",
     "jwcrypto.common.invalidjweoperation": "https://jwcrypto.readthedocs.io/en/stable/common.html#jwcrypto.common.InvalidJWEOperation",

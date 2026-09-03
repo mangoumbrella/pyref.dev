@@ -1,4 +1,4 @@
-VERSION = "8.9.0"
+VERSION = "8.9.4"
 
 # fmt: off
 MAPPING = {
@@ -3455,6 +3455,8 @@ MAPPING = {
     "enterprise.overrides.learner_home.enterprisecustomerdata.name": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.overrides.html#enterprise.overrides.learner_home.EnterpriseCustomerData.name",
     "enterprise.overrides.learner_home.enterprisecustomerdata.slug": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.overrides.html#enterprise.overrides.learner_home.EnterpriseCustomerData.slug",
     "enterprise.overrides.learner_home.enterprisecustomerdata.uuid": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.overrides.html#enterprise.overrides.learner_home.EnterpriseCustomerData.uuid",
+    "enterprise.overrides.programs": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.overrides.html#module-enterprise.overrides.programs",
+    "enterprise.overrides.programs.enterprise_get_enterprise_course_ids": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.overrides.html#enterprise.overrides.programs.enterprise_get_enterprise_course_ids",
     "enterprise.roles_api": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.html#module-enterprise.roles_api",
     "enterprise.roles_api.admin_role": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.html#enterprise.roles_api.admin_role",
     "enterprise.roles_api.assign_admin_role": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.html#enterprise.roles_api.assign_admin_role",

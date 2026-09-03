@@ -1,4 +1,4 @@
-VERSION = "4.24.3"
+VERSION = "4.25.2"
 
 # fmt: off
 MAPPING = {
@@ -27,6 +27,7 @@ MAPPING = {
     "schemathesis.baseschema.build_request_url": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.build_request_url",
     "schemathesis.baseschema.compute_fuzz_operation_weights": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.compute_fuzz_operation_weights",
     "schemathesis.baseschema.create_extra_data_source": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.create_extra_data_source",
+    "schemathesis.baseschema.declared_base_url": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.declared_base_url",
     "schemathesis.baseschema.evaluate_server_error": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.evaluate_server_error",
     "schemathesis.baseschema.exclude": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.exclude",
     "schemathesis.baseschema.get_coverage_capabilities": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.get_coverage_capabilities",

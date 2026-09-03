@@ -1,4 +1,4 @@
-VERSION = "1.11.6"
+VERSION = "1.11.8"
 
 # fmt: off
 MAPPING = {
@@ -68,6 +68,7 @@ MAPPING = {
     "hatch_pip_compile.plugin.pipcompileenvironment.constraint_env": "https://juftin.com/hatch-pip-compile/reference/plugin/#hatch_pip_compile.plugin.PipCompileEnvironment.constraint_env",
     "hatch_pip_compile.plugin.pipcompileenvironment.dependencies_in_sync": "https://juftin.com/hatch-pip-compile/reference/plugin/#hatch_pip_compile.plugin.PipCompileEnvironment.dependencies_in_sync",
     "hatch_pip_compile.plugin.pipcompileenvironment.dependency_hash": "https://juftin.com/hatch-pip-compile/reference/plugin/#hatch_pip_compile.plugin.PipCompileEnvironment.dependency_hash",
+    "hatch_pip_compile.plugin.pipcompileenvironment.get_env_var_option": "https://juftin.com/hatch-pip-compile/reference/plugin/#hatch_pip_compile.plugin.PipCompileEnvironment.get_env_var_option",
     "hatch_pip_compile.plugin.pipcompileenvironment.get_option_types": "https://juftin.com/hatch-pip-compile/reference/plugin/#hatch_pip_compile.plugin.PipCompileEnvironment.get_option_types",
     "hatch_pip_compile.plugin.pipcompileenvironment.get_piptools_environment": "https://juftin.com/hatch-pip-compile/reference/plugin/#hatch_pip_compile.plugin.PipCompileEnvironment.get_piptools_environment",
     "hatch_pip_compile.plugin.pipcompileenvironment.install_project": "https://juftin.com/hatch-pip-compile/reference/plugin/#hatch_pip_compile.plugin.PipCompileEnvironment.install_project",

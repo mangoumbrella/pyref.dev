@@ -1,4 +1,4 @@
-VERSION = "4.47.0"
+VERSION = "4.48.0"
 
 # fmt: off
 MAPPING = {
@@ -286,7 +286,6 @@ MAPPING = {
     "selenium.webdriver.common._bidi.serialization.record.from_json": "https://selenium-python-api-docs.readthedocs.io/en/latest/selenium_webdriver_common__bidi/selenium.webdriver.common._bidi.serialization.html#selenium.webdriver.common._bidi.serialization.Record.from_json",
     "selenium.webdriver.common._bidi.serialization.register": "https://selenium-python-api-docs.readthedocs.io/en/latest/selenium_webdriver_common__bidi/selenium.webdriver.common._bidi.serialization.html#selenium.webdriver.common._bidi.serialization.register",
     "selenium.webdriver.common._bidi.serialization.resolve": "https://selenium-python-api-docs.readthedocs.io/en/latest/selenium_webdriver_common__bidi/selenium.webdriver.common._bidi.serialization.html#selenium.webdriver.common._bidi.serialization.resolve",
-    "selenium.webdriver.common._bidi.serialization.strict_inbound": "https://selenium-python-api-docs.readthedocs.io/en/latest/selenium_webdriver_common__bidi/selenium.webdriver.common._bidi.serialization.html#selenium.webdriver.common._bidi.serialization.strict_inbound",
     "selenium.webdriver.common._bidi.serialization.union": "https://selenium-python-api-docs.readthedocs.io/en/latest/selenium_webdriver_common__bidi/selenium.webdriver.common._bidi.serialization.html#selenium.webdriver.common._bidi.serialization.Union",
     "selenium.webdriver.common._bidi.serialization.union.build": "https://selenium-python-api-docs.readthedocs.io/en/latest/selenium_webdriver_common__bidi/selenium.webdriver.common._bidi.serialization.html#selenium.webdriver.common._bidi.serialization.Union.build",
     "selenium.webdriver.common._bidi.serialization.union.from_json": "https://selenium-python-api-docs.readthedocs.io/en/latest/selenium_webdriver_common__bidi/selenium.webdriver.common._bidi.serialization.html#selenium.webdriver.common._bidi.serialization.Union.from_json",

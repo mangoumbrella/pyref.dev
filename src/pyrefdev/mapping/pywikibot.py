@@ -1,4 +1,4 @@
-VERSION = "11.6.0"
+VERSION = "11.7.0"
 
 # fmt: off
 MAPPING = {
@@ -519,6 +519,9 @@ MAPPING = {
     "pywikibot.site._extensions.echomixin": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.site.html#pywikibot.site._extensions.EchoMixin",
     "pywikibot.site._extensions.echomixin.notifications": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.site.html#pywikibot.site._extensions.EchoMixin.notifications",
     "pywikibot.site._extensions.echomixin.notifications_mark_read": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.site.html#pywikibot.site._extensions.EchoMixin.notifications_mark_read",
+    "pywikibot.site._extensions.flaggedrevsmixin": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.site.html#pywikibot.site._extensions.FlaggedRevsMixin",
+    "pywikibot.site._extensions.flaggedrevsmixin.review_revision": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.site.html#pywikibot.site._extensions.FlaggedRevsMixin.review_revision",
+    "pywikibot.site._extensions.flaggedrevsmixin.stable_revid": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.site.html#pywikibot.site._extensions.FlaggedRevsMixin.stable_revid",
     "pywikibot.site._extensions.geodatamixin": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.site.html#pywikibot.site._extensions.GeoDataMixin",
     "pywikibot.site._extensions.geodatamixin.loadcoordinfo": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.site.html#pywikibot.site._extensions.GeoDataMixin.loadcoordinfo",
     "pywikibot.site._extensions.globalusagemixin": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.site.html#pywikibot.site._extensions.GlobalUsageMixin",
@@ -688,6 +691,7 @@ MAPPING = {
     "pywikibot.specialbots": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.specialbots.html",
     "pywikibot.specialbots._unlink": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.specialbots.html",
     "pywikibot.specialbots._unlink.baseunlinkbot": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.specialbots.html#specialbots.BaseUnlinkBot",
+    "pywikibot.specialbots._unlink.editreplacementerror": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.specialbots.html#specialbots.EditReplacementError",
     "pywikibot.specialbots._unlink.interactiveunlink": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.specialbots.html#specialbots.InteractiveUnlink",
     "pywikibot.specialbots._upload": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.specialbots.html",
     "pywikibot.specialbots._upload.uploadrobot": "https://doc.wikimedia.org/pywikibot/stable/api_ref/pywikibot.specialbots.html#specialbots.UploadRobot",

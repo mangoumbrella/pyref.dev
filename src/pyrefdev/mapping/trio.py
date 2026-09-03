@@ -1,4 +1,4 @@
-VERSION = "0.33.0"
+VERSION = "0.34.0"
 
 # fmt: off
 MAPPING = {
@@ -330,14 +330,9 @@ MAPPING = {
     "trio.socketlistener.aclose": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SocketListener.aclose",
     "trio.socketlistener.socket": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SocketListener.socket",
     "trio.socketstream": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SocketStream",
-    "trio.socketstream.aclose": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SocketStream.aclose",
     "trio.socketstream.getsockopt": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SocketStream.getsockopt",
-    "trio.socketstream.receive_some": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SocketStream.receive_some",
-    "trio.socketstream.send_all": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SocketStream.send_all",
-    "trio.socketstream.send_eof": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SocketStream.send_eof",
     "trio.socketstream.setsockopt": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SocketStream.setsockopt",
     "trio.socketstream.socket": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SocketStream.socket",
-    "trio.socketstream.wait_send_all_might_not_block": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SocketStream.wait_send_all_might_not_block",
     "trio.ssllistener": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SSLListener",
     "trio.ssllistener.accept": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SSLListener.accept",
     "trio.ssllistener.aclose": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.SSLListener.aclose",

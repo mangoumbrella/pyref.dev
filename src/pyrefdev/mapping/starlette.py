@@ -1,4 +1,4 @@
-VERSION = "1.3.1"
+VERSION = "1.6.0"
 
 # fmt: off
 MAPPING = {
@@ -24,6 +24,8 @@ MAPPING = {
     "starlette.middleware.authentication.authenticationmiddleware": "https://starlette.dev/authentication/",
     "starlette.middleware.base": "https://starlette.dev/middleware/",
     "starlette.middleware.base.basehttpmiddleware": "https://starlette.dev/middleware/#basehttpmiddleware",
+    "starlette.middleware.body_limit": "https://starlette.dev/middleware/",
+    "starlette.middleware.body_limit.requestbodylimitmiddleware": "https://starlette.dev/middleware/#requestbodylimitmiddleware",
     "starlette.middleware.cors": "https://starlette.dev/middleware/",
     "starlette.middleware.cors.corsmiddleware": "https://starlette.dev/middleware/#corsmiddleware",
     "starlette.middleware.gzip": "https://starlette.dev/middleware/",

@@ -1,4 +1,4 @@
-VERSION = "8.0.1"
+VERSION = "8.0.2"
 
 # fmt: off
 MAPPING = {
@@ -440,6 +440,7 @@ MAPPING = {
     "edx_django_utils.monitoring.tests.test_backends.testbackendsconfig.test_type": "https://docs.openedx.org/projects/edx-django-utils/en/latest/edx_django_utils.monitoring.tests.html#edx_django_utils.monitoring.tests.test_backends.TestBackendsConfig.test_type",
     "edx_django_utils.monitoring.tests.test_backends.testbackendsconfig.test_wrong_class": "https://docs.openedx.org/projects/edx-django-utils/en/latest/edx_django_utils.monitoring.tests.html#edx_django_utils.monitoring.tests.test_backends.TestBackendsConfig.test_wrong_class",
     "edx_django_utils.monitoring.tests.test_backends.testbackendsfanout": "https://docs.openedx.org/projects/edx-django-utils/en/latest/edx_django_utils.monitoring.tests.html#edx_django_utils.monitoring.tests.test_backends.TestBackendsFanOut",
+    "edx_django_utils.monitoring.tests.test_backends.testbackendsfanout.test_create_span": "https://docs.openedx.org/projects/edx-django-utils/en/latest/edx_django_utils.monitoring.tests.html#edx_django_utils.monitoring.tests.test_backends.TestBackendsFanOut.test_create_span",
     "edx_django_utils.monitoring.tests.test_backends.testbackendsfanout.test_record_exception": "https://docs.openedx.org/projects/edx-django-utils/en/latest/edx_django_utils.monitoring.tests.html#edx_django_utils.monitoring.tests.test_backends.TestBackendsFanOut.test_record_exception",
     "edx_django_utils.monitoring.tests.test_backends.testbackendsfanout.test_set_custom_attribute": "https://docs.openedx.org/projects/edx-django-utils/en/latest/edx_django_utils.monitoring.tests.html#edx_django_utils.monitoring.tests.test_backends.TestBackendsFanOut.test_set_custom_attribute",
     "edx_django_utils.monitoring.tests.test_monitoring_support": "https://docs.openedx.org/projects/edx-django-utils/en/latest/edx_django_utils.monitoring.tests.html#module-edx_django_utils.monitoring.tests.test_monitoring_support",

@@ -1,4 +1,4 @@
-VERSION = "2.1.0"
+VERSION = "2.2.0"
 
 # fmt: off
 MAPPING = {
@@ -759,6 +759,8 @@ MAPPING = {
     "griffe._internal.expressions.exprformatted.canonical_name": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.canonical_name",
     "griffe._internal.expressions.exprformatted.canonical_path": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.canonical_path",
     "griffe._internal.expressions.exprformatted.classname": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.classname",
+    "griffe._internal.expressions.exprformatted.conversion": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.conversion",
+    "griffe._internal.expressions.exprformatted.format_spec": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.format_spec",
     "griffe._internal.expressions.exprformatted.is_classvar": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.is_classvar",
     "griffe._internal.expressions.exprformatted.is_generator": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.is_generator",
     "griffe._internal.expressions.exprformatted.is_iterator": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.is_iterator",
@@ -775,6 +777,7 @@ MAPPING = {
     "griffe._internal.expressions.exprgeneratorexp.classname": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.classname",
     "griffe._internal.expressions.exprgeneratorexp.element": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.element",
     "griffe._internal.expressions.exprgeneratorexp.generators": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.generators",
+    "griffe._internal.expressions.exprgeneratorexp.implicit": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.implicit",
     "griffe._internal.expressions.exprgeneratorexp.is_classvar": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.is_classvar",
     "griffe._internal.expressions.exprgeneratorexp.is_generator": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.is_generator",
     "griffe._internal.expressions.exprgeneratorexp.is_iterator": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.is_iterator",
@@ -804,6 +807,8 @@ MAPPING = {
     "griffe._internal.expressions.exprinterpolation.canonical_name": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.canonical_name",
     "griffe._internal.expressions.exprinterpolation.canonical_path": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.canonical_path",
     "griffe._internal.expressions.exprinterpolation.classname": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.classname",
+    "griffe._internal.expressions.exprinterpolation.conversion": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.conversion",
+    "griffe._internal.expressions.exprinterpolation.format_spec": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.format_spec",
     "griffe._internal.expressions.exprinterpolation.is_classvar": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.is_classvar",
     "griffe._internal.expressions.exprinterpolation.is_generator": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.is_generator",
     "griffe._internal.expressions.exprinterpolation.is_iterator": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.is_iterator",
@@ -2687,6 +2692,8 @@ MAPPING = {
     "griffe.exprformatted.canonical_name": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.canonical_name",
     "griffe.exprformatted.canonical_path": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.canonical_path",
     "griffe.exprformatted.classname": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.classname",
+    "griffe.exprformatted.conversion": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.conversion",
+    "griffe.exprformatted.format_spec": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.format_spec",
     "griffe.exprformatted.is_classvar": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.is_classvar",
     "griffe.exprformatted.is_generator": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.is_generator",
     "griffe.exprformatted.is_iterator": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprFormatted.is_iterator",
@@ -2703,6 +2710,7 @@ MAPPING = {
     "griffe.exprgeneratorexp.classname": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.classname",
     "griffe.exprgeneratorexp.element": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.element",
     "griffe.exprgeneratorexp.generators": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.generators",
+    "griffe.exprgeneratorexp.implicit": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.implicit",
     "griffe.exprgeneratorexp.is_classvar": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.is_classvar",
     "griffe.exprgeneratorexp.is_generator": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.is_generator",
     "griffe.exprgeneratorexp.is_iterator": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprGeneratorExp.is_iterator",
@@ -2732,6 +2740,8 @@ MAPPING = {
     "griffe.exprinterpolation.canonical_name": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.canonical_name",
     "griffe.exprinterpolation.canonical_path": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.canonical_path",
     "griffe.exprinterpolation.classname": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.classname",
+    "griffe.exprinterpolation.conversion": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.conversion",
+    "griffe.exprinterpolation.format_spec": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.format_spec",
     "griffe.exprinterpolation.is_classvar": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.is_classvar",
     "griffe.exprinterpolation.is_generator": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.is_generator",
     "griffe.exprinterpolation.is_iterator": "https://mkdocstrings.github.io/griffe/reference/api/expressions/#griffe.ExprInterpolation.is_iterator",

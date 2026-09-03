@@ -1,4 +1,4 @@
-VERSION = "2.14.6"
+VERSION = "2.14.11"
 
 # fmt: off
 MAPPING = {
@@ -85,6 +85,8 @@ MAPPING = {
     "uipath.platform.context_grounding._context_grounding_service.contextgroundingservice.start_deep_rag_async": "https://uipath.github.io/uipath-python/core/context_grounding/#uipath.platform.context_grounding._context_grounding_service.ContextGroundingService.start_deep_rag_async",
     "uipath.platform.context_grounding._context_grounding_service.contextgroundingservice.start_deep_rag_ephemeral": "https://uipath.github.io/uipath-python/core/context_grounding/#uipath.platform.context_grounding._context_grounding_service.ContextGroundingService.start_deep_rag_ephemeral",
     "uipath.platform.context_grounding._context_grounding_service.contextgroundingservice.start_deep_rag_ephemeral_async": "https://uipath.github.io/uipath-python/core/context_grounding/#uipath.platform.context_grounding._context_grounding_service.ContextGroundingService.start_deep_rag_ephemeral_async",
+    "uipath.platform.context_grounding._context_grounding_service.contextgroundingservice.start_deep_rag_from_attachments": "https://uipath.github.io/uipath-python/core/context_grounding/#uipath.platform.context_grounding._context_grounding_service.ContextGroundingService.start_deep_rag_from_attachments",
+    "uipath.platform.context_grounding._context_grounding_service.contextgroundingservice.start_deep_rag_from_attachments_async": "https://uipath.github.io/uipath-python/core/context_grounding/#uipath.platform.context_grounding._context_grounding_service.ContextGroundingService.start_deep_rag_from_attachments_async",
     "uipath.platform.context_grounding._context_grounding_service.contextgroundingservice.unified_search": "https://uipath.github.io/uipath-python/core/context_grounding/#uipath.platform.context_grounding._context_grounding_service.ContextGroundingService.unified_search",
     "uipath.platform.context_grounding._context_grounding_service.contextgroundingservice.unified_search_async": "https://uipath.github.io/uipath-python/core/context_grounding/#uipath.platform.context_grounding._context_grounding_service.ContextGroundingService.unified_search_async",
     "uipath.platform.context_grounding.contextgroundingservice": "https://uipath.github.io/uipath-python/core/context_grounding/#uipath.platform.context_grounding._context_grounding_service.ContextGroundingService",

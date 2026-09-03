@@ -1,4 +1,4 @@
-VERSION = "0.20.0"
+VERSION = "0.21.0"
 
 # fmt: off
 MAPPING = {
@@ -26,6 +26,11 @@ MAPPING = {
     "pydata_sphinx_theme.short_link.shortenlinktransform.supported_platform": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/short_link/index.html#pydata_sphinx_theme.short_link.ShortenLinkTransform.supported_platform",
     "pydata_sphinx_theme.toctree": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html",
     "pydata_sphinx_theme.toctree._get_ancestor_pagename": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree._get_ancestor_pagename",
+    "pydata_sphinx_theme.toctree._move_current_markers": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree._move_current_markers",
+    "pydata_sphinx_theme.toctree._patch_cached_sidebar": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree._patch_cached_sidebar",
+    "pydata_sphinx_theme.toctree._set_current_chain": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree._set_current_chain",
+    "pydata_sphinx_theme.toctree._sidebar_cache": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree._sidebar_cache",
+    "pydata_sphinx_theme.toctree._sidebar_cache_key": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree._sidebar_cache_key",
     "pydata_sphinx_theme.toctree.add_collapse_checkboxes": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree.add_collapse_checkboxes",
     "pydata_sphinx_theme.toctree.add_inline_math": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree.add_inline_math",
     "pydata_sphinx_theme.toctree.add_toctree_functions": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree.add_toctree_functions",

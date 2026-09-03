@@ -1,4 +1,4 @@
-VERSION = "8.10.20260814121804"
+VERSION = "8.10.20260825112551"
 
 # fmt: off
 MAPPING = {
@@ -66,6 +66,7 @@ MAPPING = {
     "schema_salad.codegen.field_sort_order": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen/index.html#schema_salad.codegen.FIELD_SORT_ORDER",
     "schema_salad.codegen_base": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#module-schema_salad.codegen_base",
     "schema_salad.codegen_base.codegenbase": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#schema_salad.codegen_base.CodeGenBase",
+    "schema_salad.codegen_base.codegenbase.add_extend": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#schema_salad.codegen_base.CodeGenBase.add_extend",
     "schema_salad.codegen_base.codegenbase.add_lazy_init": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#schema_salad.codegen_base.CodeGenBase.add_lazy_init",
     "schema_salad.codegen_base.codegenbase.add_vocab": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#schema_salad.codegen_base.CodeGenBase.add_vocab",
     "schema_salad.codegen_base.codegenbase.begin_class": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#schema_salad.codegen_base.CodeGenBase.begin_class",
@@ -75,6 +76,7 @@ MAPPING = {
     "schema_salad.codegen_base.codegenbase.declare_type": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#schema_salad.codegen_base.CodeGenBase.declare_type",
     "schema_salad.codegen_base.codegenbase.end_class": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#schema_salad.codegen_base.CodeGenBase.end_class",
     "schema_salad.codegen_base.codegenbase.epilogue": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#schema_salad.codegen_base.CodeGenBase.epilogue",
+    "schema_salad.codegen_base.codegenbase.extended_by": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#schema_salad.codegen_base.CodeGenBase.extended_by",
     "schema_salad.codegen_base.codegenbase.idmap_loader": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#schema_salad.codegen_base.CodeGenBase.idmap_loader",
     "schema_salad.codegen_base.codegenbase.lazy_inits": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#schema_salad.codegen_base.CodeGenBase.lazy_inits",
     "schema_salad.codegen_base.codegenbase.prologue": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/codegen_base/index.html#schema_salad.codegen_base.CodeGenBase.prologue",
@@ -611,7 +613,6 @@ MAPPING = {
     "schema_salad.python_codegen.pythoncodegen.current_class_is_abstract": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/python_codegen/index.html#schema_salad.python_codegen.PythonCodeGen.current_class_is_abstract",
     "schema_salad.python_codegen.pythoncodegen.declare_field": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/python_codegen/index.html#schema_salad.python_codegen.PythonCodeGen.declare_field",
     "schema_salad.python_codegen.pythoncodegen.declare_id_field": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/python_codegen/index.html#schema_salad.python_codegen.PythonCodeGen.declare_id_field",
-    "schema_salad.python_codegen.pythoncodegen.dynamic_loaders": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/python_codegen/index.html#schema_salad.python_codegen.PythonCodeGen.dynamic_loaders",
     "schema_salad.python_codegen.pythoncodegen.end_class": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/python_codegen/index.html#schema_salad.python_codegen.PythonCodeGen.end_class",
     "schema_salad.python_codegen.pythoncodegen.epilogue": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/python_codegen/index.html#schema_salad.python_codegen.PythonCodeGen.epilogue",
     "schema_salad.python_codegen.pythoncodegen.idfield": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/python_codegen/index.html#schema_salad.python_codegen.PythonCodeGen.idfield",

@@ -1,4 +1,4 @@
-VERSION = "1.18.0"
+VERSION = "1.18.1"
 
 # fmt: off
 MAPPING = {
@@ -1301,7 +1301,6 @@ MAPPING = {
     "scipy.linalg.lapack.zhesv": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.lapack.zhesv.html#scipy.linalg.lapack.zhesv",
     "scipy.linalg.lapack.zhesv_lwork": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.lapack.zhesv_lwork.html#scipy.linalg.lapack.zhesv_lwork",
     "scipy.linalg.lapack.zhesvx": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.lapack.zhesvx.html#scipy.linalg.lapack.zhesvx",
-    "scipy.linalg.lapack.zhesvx_lwork": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.lapack.zhesvx_lwork.html#scipy.linalg.lapack.zhesvx_lwork",
     "scipy.linalg.lapack.zhetrd": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.lapack.zhetrd.html#scipy.linalg.lapack.zhetrd",
     "scipy.linalg.lapack.zhetrd_lwork": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.lapack.zhetrd_lwork.html#scipy.linalg.lapack.zhetrd_lwork",
     "scipy.linalg.lapack.zhetrf": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.lapack.zhetrf.html#scipy.linalg.lapack.zhetrf",

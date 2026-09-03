@@ -1,4 +1,4 @@
-VERSION = "0.18.2"
+VERSION = "0.18.3"
 
 # fmt: off
 MAPPING = {
@@ -30,6 +30,7 @@ MAPPING = {
     "unearth.finder.packagefinder.add_find_links": "https://unearth.readthedocs.io/en/latest/api/finder.html#unearth.finder.PackageFinder.add_find_links",
     "unearth.finder.packagefinder.add_index_url": "https://unearth.readthedocs.io/en/latest/api/finder.html#unearth.finder.PackageFinder.add_index_url",
     "unearth.finder.packagefinder.build_evaluator": "https://unearth.readthedocs.io/en/latest/api/finder.html#unearth.finder.PackageFinder.build_evaluator",
+    "unearth.finder.packagefinder.download": "https://unearth.readthedocs.io/en/latest/api/finder.html#unearth.finder.PackageFinder.download",
     "unearth.finder.packagefinder.download_and_unpack": "https://unearth.readthedocs.io/en/latest/api/finder.html#unearth.finder.PackageFinder.download_and_unpack",
     "unearth.finder.packagefinder.find_all_packages": "https://unearth.readthedocs.io/en/latest/api/finder.html#unearth.finder.PackageFinder.find_all_packages",
     "unearth.finder.packagefinder.find_best_match": "https://unearth.readthedocs.io/en/latest/api/finder.html#unearth.finder.PackageFinder.find_best_match",

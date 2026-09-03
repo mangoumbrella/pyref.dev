@@ -1,4 +1,4 @@
-VERSION = "1.6.2"
+VERSION = "1.6.3"
 
 # fmt: off
 MAPPING = {
@@ -29,7 +29,6 @@ MAPPING = {
     "deltalake._internal.maptype.key_type": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.MapType.key_type",
     "deltalake._internal.maptype.to_arrow": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.MapType.to_arrow",
     "deltalake._internal.maptype.to_json": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.MapType.to_json",
-    "deltalake._internal.maptype.type": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.MapType.type",
     "deltalake._internal.maptype.value_contains_null": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.MapType.value_contains_null",
     "deltalake._internal.maptype.value_type": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.MapType.value_type",
     "deltalake._internal.primitivetype": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.PrimitiveType",
@@ -143,7 +142,6 @@ MAPPING = {
     "deltalake.schema.maptype.key_type": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.MapType.key_type",
     "deltalake.schema.maptype.to_arrow": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.MapType.to_arrow",
     "deltalake.schema.maptype.to_json": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.MapType.to_json",
-    "deltalake.schema.maptype.type": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.MapType.type",
     "deltalake.schema.maptype.value_contains_null": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.MapType.value_contains_null",
     "deltalake.schema.maptype.value_type": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.MapType.value_type",
     "deltalake.schema.primitivetype": "https://delta-io.github.io/delta-rs/api/schema/#deltalake.schema.PrimitiveType",
@@ -205,6 +203,7 @@ MAPPING = {
     "deltalake.table.tablealterer.add_columns": "https://delta-io.github.io/delta-rs/api/delta_table/delta_table_alterer/#deltalake.table.TableAlterer.add_columns",
     "deltalake.table.tablealterer.add_constraint": "https://delta-io.github.io/delta-rs/api/delta_table/delta_table_alterer/#deltalake.table.TableAlterer.add_constraint",
     "deltalake.table.tablealterer.add_feature": "https://delta-io.github.io/delta-rs/api/delta_table/delta_table_alterer/#deltalake.table.TableAlterer.add_feature",
+    "deltalake.table.tablealterer.drop_column_not_null": "https://delta-io.github.io/delta-rs/api/delta_table/delta_table_alterer/#deltalake.table.TableAlterer.drop_column_not_null",
     "deltalake.table.tablealterer.drop_constraint": "https://delta-io.github.io/delta-rs/api/delta_table/delta_table_alterer/#deltalake.table.TableAlterer.drop_constraint",
     "deltalake.table.tablealterer.set_column_metadata": "https://delta-io.github.io/delta-rs/api/delta_table/delta_table_alterer/#deltalake.table.TableAlterer.set_column_metadata",
     "deltalake.table.tablealterer.set_table_description": "https://delta-io.github.io/delta-rs/api/delta_table/delta_table_alterer/#deltalake.table.TableAlterer.set_table_description",

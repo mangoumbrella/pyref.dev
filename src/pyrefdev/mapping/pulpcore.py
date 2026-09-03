@@ -1,4 +1,4 @@
-VERSION = "3.116.0"
+VERSION = "3.116.1"
 
 # fmt: off
 MAPPING = {
@@ -1011,6 +1011,8 @@ MAPPING = {
     "pulpcore.app.viewsets.asyncupdatemixin": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/viewsets/#pulpcore.app.viewsets.base.AsyncUpdateMixin",
     "pulpcore.app.viewsets.base": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/viewsets/#pulpcore.app.viewsets.base",
     "pulpcore.app.viewsets.base.asynccreatemixin": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/viewsets/#pulpcore.app.viewsets.base.AsyncCreateMixin",
+    "pulpcore.app.viewsets.base.asynccreatemixin.async_reserved_resources": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/viewsets/#pulpcore.app.viewsets.base.AsyncReservedObjectMixin.async_reserved_resources",
+    "pulpcore.app.viewsets.base.asynccreatemixin.async_shared_resources": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/viewsets/#pulpcore.app.viewsets.base.AsyncReservedObjectMixin.async_shared_resources",
     "pulpcore.app.viewsets.base.asynccreatemixin.create": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/viewsets/#pulpcore.app.viewsets.base.AsyncCreateMixin.create",
     "pulpcore.app.viewsets.base.asyncoperationresponseserializer": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/serializers/#pulpcore.app.serializers.base.AsyncOperationResponseSerializer",
     "pulpcore.app.viewsets.base.asyncremovemixin": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/viewsets/#pulpcore.app.viewsets.base.AsyncRemoveMixin",

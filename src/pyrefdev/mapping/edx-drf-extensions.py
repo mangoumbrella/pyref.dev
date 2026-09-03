@@ -1,4 +1,4 @@
-VERSION = "10.6.0"
+VERSION = "10.7.0"
 
 # fmt: off
 MAPPING = {
@@ -29,5 +29,11 @@ MAPPING = {
     "edx_rest_framework_extensions.permissions.loginredirectifunauthenticated": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.LoginRedirectIfUnauthenticated",
     "edx_rest_framework_extensions.permissions.notjwtrestrictedapplication": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.NotJwtRestrictedApplication",
     "edx_rest_framework_extensions.permissions.notjwtrestrictedapplication.has_permission": "https://edx-drf-extensions.readthedocs.io/en/stable/permissions.html#edx_rest_framework_extensions.permissions.NotJwtRestrictedApplication.has_permission",
+    "edx_rest_framework_extensions.scoping": "https://edx-drf-extensions.readthedocs.io/en/stable/scoping.html#module-edx_rest_framework_extensions.scoping",
+    "edx_rest_framework_extensions.scoping.scopedquerysetmixin": "https://edx-drf-extensions.readthedocs.io/en/stable/scoping.html#edx_rest_framework_extensions.scoping.ScopedQuerysetMixin",
+    "edx_rest_framework_extensions.scoping.scopedquerysetmixin.get_queryset": "https://edx-drf-extensions.readthedocs.io/en/stable/scoping.html#edx_rest_framework_extensions.scoping.ScopedQuerysetMixin.get_queryset",
+    "edx_rest_framework_extensions.scoping.scopedquerysetmixin.scoping_policy": "https://edx-drf-extensions.readthedocs.io/en/stable/scoping.html#edx_rest_framework_extensions.scoping.ScopedQuerysetMixin.scoping_policy",
+    "edx_rest_framework_extensions.scoping.scopingpolicy": "https://edx-drf-extensions.readthedocs.io/en/stable/scoping.html#edx_rest_framework_extensions.scoping.ScopingPolicy",
+    "edx_rest_framework_extensions.scoping.scopingpolicy.scope": "https://edx-drf-extensions.readthedocs.io/en/stable/scoping.html#edx_rest_framework_extensions.scoping.ScopingPolicy.scope",
     "edx_rest_framework_extensions.utils": "https://edx-drf-extensions.readthedocs.io/en/stable/utils.html#module-edx_rest_framework_extensions.utils",
 }
