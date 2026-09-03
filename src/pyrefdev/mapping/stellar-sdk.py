@@ -1,4 +1,4 @@
-VERSION = "15.0.0"
+VERSION = "16.0.0"
 
 # fmt: off
 MAPPING = {
@@ -505,11 +505,13 @@ MAPPING = {
     "stellar_sdk.contract.contract_client_async.contractclientasync": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClientAsync",
     "stellar_sdk.contract.contractclient": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClient",
     "stellar_sdk.contract.contractclient.create_contract": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClient.create_contract",
+    "stellar_sdk.contract.contractclient.create_contract_from_external_ref": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClient.create_contract_from_external_ref",
     "stellar_sdk.contract.contractclient.create_stellar_asset_contract_from_asset": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClient.create_stellar_asset_contract_from_asset",
     "stellar_sdk.contract.contractclient.invoke": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClient.invoke",
     "stellar_sdk.contract.contractclient.upload_contract_wasm": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClient.upload_contract_wasm",
     "stellar_sdk.contract.contractclientasync": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClientAsync",
     "stellar_sdk.contract.contractclientasync.create_contract": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClientAsync.create_contract",
+    "stellar_sdk.contract.contractclientasync.create_contract_from_external_ref": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClientAsync.create_contract_from_external_ref",
     "stellar_sdk.contract.contractclientasync.create_stellar_asset_contract_from_asset": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClientAsync.create_stellar_asset_contract_from_asset",
     "stellar_sdk.contract.contractclientasync.invoke": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClientAsync.invoke",
     "stellar_sdk.contract.contractclientasync.upload_contract_wasm": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.contract.ContractClientAsync.upload_contract_wasm",
@@ -1128,6 +1130,7 @@ MAPPING = {
     "stellar_sdk.sorobanserver.get_contract_wasm": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServer.get_contract_wasm",
     "stellar_sdk.sorobanserver.get_contract_wasm_by_hash": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServer.get_contract_wasm_by_hash",
     "stellar_sdk.sorobanserver.get_events": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServer.get_events",
+    "stellar_sdk.sorobanserver.get_external_ref_wasm_hash": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServer.get_external_ref_wasm_hash",
     "stellar_sdk.sorobanserver.get_fee_stats": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServer.get_fee_stats",
     "stellar_sdk.sorobanserver.get_health": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServer.get_health",
     "stellar_sdk.sorobanserver.get_latest_ledger": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServer.get_latest_ledger",
@@ -1152,6 +1155,7 @@ MAPPING = {
     "stellar_sdk.sorobanserverasync.get_contract_wasm": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServerAsync.get_contract_wasm",
     "stellar_sdk.sorobanserverasync.get_contract_wasm_by_hash": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServerAsync.get_contract_wasm_by_hash",
     "stellar_sdk.sorobanserverasync.get_events": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServerAsync.get_events",
+    "stellar_sdk.sorobanserverasync.get_external_ref_wasm_hash": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServerAsync.get_external_ref_wasm_hash",
     "stellar_sdk.sorobanserverasync.get_fee_stats": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServerAsync.get_fee_stats",
     "stellar_sdk.sorobanserverasync.get_health": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServerAsync.get_health",
     "stellar_sdk.sorobanserverasync.get_latest_ledger": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.SorobanServerAsync.get_latest_ledger",
@@ -1225,6 +1229,7 @@ MAPPING = {
     "stellar_sdk.transaction_builder.transactionbuilder.append_clawback_op": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.transaction_builder.TransactionBuilder.append_clawback_op",
     "stellar_sdk.transaction_builder.transactionbuilder.append_create_account_op": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.transaction_builder.TransactionBuilder.append_create_account_op",
     "stellar_sdk.transaction_builder.transactionbuilder.append_create_claimable_balance_op": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.transaction_builder.TransactionBuilder.append_create_claimable_balance_op",
+    "stellar_sdk.transaction_builder.transactionbuilder.append_create_contract_from_external_ref_op": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.transaction_builder.TransactionBuilder.append_create_contract_from_external_ref_op",
     "stellar_sdk.transaction_builder.transactionbuilder.append_create_contract_op": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.transaction_builder.TransactionBuilder.append_create_contract_op",
     "stellar_sdk.transaction_builder.transactionbuilder.append_create_passive_sell_offer_op": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.transaction_builder.TransactionBuilder.append_create_passive_sell_offer_op",
     "stellar_sdk.transaction_builder.transactionbuilder.append_create_stellar_asset_contract_from_asset_op": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.transaction_builder.TransactionBuilder.append_create_stellar_asset_contract_from_asset_op",
@@ -1498,6 +1503,8 @@ MAPPING = {
     "stellar_sdk.xdr.contract_event_v0.contracteventv0": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.xdr.contract_event_v0.ContractEventV0",
     "stellar_sdk.xdr.contract_executable": "https://stellar-sdk.readthedocs.io/en/stable/api.html",
     "stellar_sdk.xdr.contract_executable.contractexecutable": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.xdr.contract_executable.ContractExecutable",
+    "stellar_sdk.xdr.contract_executable_external_ref": "https://stellar-sdk.readthedocs.io/en/stable/api.html",
+    "stellar_sdk.xdr.contract_executable_external_ref.contractexecutableexternalref": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.xdr.contract_executable_external_ref.ContractExecutableExternalRef",
     "stellar_sdk.xdr.contract_executable_type": "https://stellar-sdk.readthedocs.io/en/stable/api.html",
     "stellar_sdk.xdr.contract_executable_type.contractexecutabletype": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.xdr.contract_executable_type.ContractExecutableType",
     "stellar_sdk.xdr.contract_id": "https://stellar-sdk.readthedocs.io/en/stable/api.html",
@@ -2102,6 +2109,8 @@ MAPPING = {
     "stellar_sdk.xdr.stellar_value.stellarvalue": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.xdr.stellar_value.StellarValue",
     "stellar_sdk.xdr.stellar_value_ext": "https://stellar-sdk.readthedocs.io/en/stable/api.html",
     "stellar_sdk.xdr.stellar_value_ext.stellarvalueext": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.xdr.stellar_value_ext.StellarValueExt",
+    "stellar_sdk.xdr.stellar_value_proposed_value": "https://stellar-sdk.readthedocs.io/en/stable/api.html",
+    "stellar_sdk.xdr.stellar_value_proposed_value.stellarvalueproposedvalue": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.xdr.stellar_value_proposed_value.StellarValueProposedValue",
     "stellar_sdk.xdr.stellar_value_type": "https://stellar-sdk.readthedocs.io/en/stable/api.html",
     "stellar_sdk.xdr.stellar_value_type.stellarvaluetype": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.xdr.stellar_value_type.StellarValueType",
     "stellar_sdk.xdr.stored_debug_transaction_set": "https://stellar-sdk.readthedocs.io/en/stable/api.html",

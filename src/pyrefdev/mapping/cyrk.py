@@ -1,4 +1,4 @@
-VERSION = "0.17.1"
+VERSION = "0.18.1"
 
 # fmt: off
 MAPPING = {
@@ -32,10 +32,13 @@ MAPPING = {
     "cyrk.cy.common.cyrkerrorcodes.incompatible_input": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.INCOMPATIBLE_INPUT",
     "cyrk.cy.common.cyrkerrorcodes.initializing": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.INITIALIZING",
     "cyrk.cy.common.cyrkerrorcodes.integration_not_successful": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.INTEGRATION_NOT_SUCCESSFUL",
+    "cyrk.cy.common.cyrkerrorcodes.jacobian_is_singular": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.JACOBIAN_IS_SINGULAR",
+    "cyrk.cy.common.cyrkerrorcodes.lsoda_internal_error": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.LSODA_INTERNAL_ERROR",
     "cyrk.cy.common.cyrkerrorcodes.max_iterations_hit": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.MAX_ITERATIONS_HIT",
     "cyrk.cy.common.cyrkerrorcodes.max_steps_sysarch_exceeded": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.MAX_STEPS_SYSARCH_EXCEEDED",
     "cyrk.cy.common.cyrkerrorcodes.max_steps_user_exceeded": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.MAX_STEPS_USER_EXCEEDED",
     "cyrk.cy.common.cyrkerrorcodes.memory_allocation_error": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.MEMORY_ALLOCATION_ERROR",
+    "cyrk.cy.common.cyrkerrorcodes.newton_convergence_error": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.NEWTON_CONVERGENCE_ERROR",
     "cyrk.cy.common.cyrkerrorcodes.no_error": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.NO_ERROR",
     "cyrk.cy.common.cyrkerrorcodes.number_of_equations_is_zero": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.NUMBER_OF_EQUATIONS_IS_ZERO",
     "cyrk.cy.common.cyrkerrorcodes.optimize_convergence_error": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.OPTIMIZE_CONVERGENCE_ERROR",
@@ -53,8 +56,11 @@ MAPPING = {
     "cyrk.cy.cysolver_api": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#module-CyRK.cy.cysolver_api",
     "cyrk.cy.cysolver_api.odemethod": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod",
     "cyrk.cy.cysolver_api.odemethod.base_method": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.BASE_METHOD",
+    "cyrk.cy.cysolver_api.odemethod.bdf": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.BDF",
     "cyrk.cy.cysolver_api.odemethod.dop853": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.DOP853",
+    "cyrk.cy.cysolver_api.odemethod.lsoda": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.LSODA",
     "cyrk.cy.cysolver_api.odemethod.no_method_set": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.NO_METHOD_SET",
+    "cyrk.cy.cysolver_api.odemethod.radau": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.RADAU",
     "cyrk.cy.cysolver_api.odemethod.rk23": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.RK23",
     "cyrk.cy.cysolver_api.odemethod.rk45": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.RK45",
     "cyrk.cy.cysolver_api.odemethod.rk_base_method": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.RK_BASE_METHOD",

@@ -1,4 +1,4 @@
-VERSION = "0.11.0"
+VERSION = "0.11.1"
 
 # fmt: off
 MAPPING = {
@@ -309,7 +309,6 @@ MAPPING = {
     "jax.experimental.pallas.mosaic_gpu.nd_loop": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.nd_loop.html#jax.experimental.pallas.mosaic_gpu.nd_loop",
     "jax.experimental.pallas.mosaic_gpu.planar_snake": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.planar_snake.html#jax.experimental.pallas.mosaic_gpu.planar_snake",
     "jax.experimental.pallas.mosaic_gpu.query_cluster_cancel": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.query_cluster_cancel.html#jax.experimental.pallas.mosaic_gpu.query_cluster_cancel",
-    "jax.experimental.pallas.mosaic_gpu.semaphore_signal_parallel": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.semaphore_signal_parallel.html#jax.experimental.pallas.mosaic_gpu.semaphore_signal_parallel",
     "jax.experimental.pallas.mosaic_gpu.semaphoresignal": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.SemaphoreSignal.html#jax.experimental.pallas.mosaic_gpu.SemaphoreSignal",
     "jax.experimental.pallas.mosaic_gpu.semaphoresignal.__init__": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.SemaphoreSignal.html#jax.experimental.pallas.mosaic_gpu.SemaphoreSignal.__init__",
     "jax.experimental.pallas.mosaic_gpu.semaphoretype": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.SemaphoreType.html#jax.experimental.pallas.mosaic_gpu.SemaphoreType",
@@ -551,6 +550,7 @@ MAPPING = {
     "jax.export.register_namedtuple_serialization": "https://docs.jax.dev/en/latest/_autosummary/jax.export.register_namedtuple_serialization.html#jax.export.register_namedtuple_serialization",
     "jax.export.register_pytree_node_serialization": "https://docs.jax.dev/en/latest/_autosummary/jax.export.register_pytree_node_serialization.html#jax.export.register_pytree_node_serialization",
     "jax.export.symbolic_args_specs": "https://docs.jax.dev/en/latest/_autosummary/jax.export.symbolic_args_specs.html#jax.export.symbolic_args_specs",
+    "jax.export.symbolic_dim_bounds": "https://docs.jax.dev/en/latest/_autosummary/jax.export.symbolic_dim_bounds.html#jax.export.symbolic_dim_bounds",
     "jax.export.symbolic_shape": "https://docs.jax.dev/en/latest/_autosummary/jax.export.symbolic_shape.html#jax.export.symbolic_shape",
     "jax.export.symbolicscope": "https://docs.jax.dev/en/latest/_autosummary/jax.export.SymbolicScope.html#jax.export.SymbolicScope",
     "jax.export.symbolicscope.__init__": "https://docs.jax.dev/en/latest/_autosummary/jax.export.SymbolicScope.html#jax.export.SymbolicScope.__init__",
@@ -569,9 +569,6 @@ MAPPING = {
     "jax.extend.core.abstracttoken": "https://docs.jax.dev/en/latest/_autosummary/jax.extend.core.AbstractToken.html#jax.extend.core.AbstractToken",
     "jax.extend.core.abstracttoken.__init__": "https://docs.jax.dev/en/latest/_autosummary/jax.extend.core.AbstractToken.html#jax.extend.core.AbstractToken.__init__",
     "jax.extend.core.array_types": "https://docs.jax.dev/en/latest/_autosummary/jax.extend.core.array_types.html#jax.extend.core.array_types",
-    "jax.extend.core.call_impl": "https://docs.jax.dev/en/latest/_autosummary/jax.extend.core.call_impl.html#jax.extend.core.call_impl",
-    "jax.extend.core.callprimitive": "https://docs.jax.dev/en/latest/_autosummary/jax.extend.core.CallPrimitive.html#jax.extend.core.CallPrimitive",
-    "jax.extend.core.callprimitive.__init__": "https://docs.jax.dev/en/latest/_autosummary/jax.extend.core.CallPrimitive.html#jax.extend.core.CallPrimitive.__init__",
     "jax.extend.core.check_jaxpr": "https://docs.jax.dev/en/latest/_autosummary/jax.extend.core.check_jaxpr.html#jax.extend.core.check_jaxpr",
     "jax.extend.core.closedjaxpr": "https://docs.jax.dev/en/latest/_autosummary/jax.extend.core.ClosedJaxpr.html#jax.extend.core.ClosedJaxpr",
     "jax.extend.core.concrete_or_error": "https://docs.jax.dev/en/latest/_autosummary/jax.extend.core.concrete_or_error.html#jax.extend.core.concrete_or_error",
@@ -1464,6 +1461,7 @@ MAPPING = {
     "jax.numpy.tanh": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.tanh.html#jax.numpy.tanh",
     "jax.numpy.tensordot": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.tensordot.html#jax.numpy.tensordot",
     "jax.numpy.tile": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.tile.html#jax.numpy.tile",
+    "jax.numpy.top_k": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.top_k.html#jax.numpy.top_k",
     "jax.numpy.trace": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.trace.html#jax.numpy.trace",
     "jax.numpy.transpose": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.transpose.html#jax.numpy.transpose",
     "jax.numpy.trapezoid": "https://docs.jax.dev/en/latest/_autosummary/jax.numpy.trapezoid.html#jax.numpy.trapezoid",

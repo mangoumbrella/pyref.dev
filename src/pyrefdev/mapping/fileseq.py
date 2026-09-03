@@ -1,4 +1,4 @@
-VERSION = "3.3.0"
+VERSION = "3.4.0"
 
 # fmt: off
 MAPPING = {
@@ -36,6 +36,7 @@ MAPPING = {
     "fileseq.filesequence.basefilesequence.index": "https://fileseq.readthedocs.io/en/stable/api.html#fileseq.filesequence.BaseFileSequence.index",
     "fileseq.filesequence.basefilesequence.invertedframerange": "https://fileseq.readthedocs.io/en/stable/api.html#fileseq.filesequence.BaseFileSequence.invertedFrameRange",
     "fileseq.filesequence.basefilesequence.pad_map": "https://fileseq.readthedocs.io/en/stable/api.html#fileseq.filesequence.BaseFileSequence.PAD_MAP",
+    "fileseq.filesequence.basefilesequence.paddedframe": "https://fileseq.readthedocs.io/en/stable/api.html#fileseq.filesequence.BaseFileSequence.paddedFrame",
     "fileseq.filesequence.basefilesequence.padding": "https://fileseq.readthedocs.io/en/stable/api.html#fileseq.filesequence.BaseFileSequence.padding",
     "fileseq.filesequence.basefilesequence.padstyle": "https://fileseq.readthedocs.io/en/stable/api.html#fileseq.filesequence.BaseFileSequence.padStyle",
     "fileseq.filesequence.basefilesequence.parsepadding": "https://fileseq.readthedocs.io/en/stable/api.html#fileseq.filesequence.BaseFileSequence.parsePadding",

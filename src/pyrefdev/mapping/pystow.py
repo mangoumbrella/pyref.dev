@@ -1,4 +1,4 @@
-VERSION = "0.9.0"
+VERSION = "0.9.2"
 
 # fmt: off
 MAPPING = {
@@ -123,6 +123,7 @@ MAPPING = {
     "pystow.utils.get_np_io": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.get_np_io.html#pystow.utils.get_np_io",
     "pystow.utils.get_offending_hexdigests": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.get_offending_hexdigests.html#pystow.utils.get_offending_hexdigests",
     "pystow.utils.get_soup": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.get_soup.html#pystow.utils.get_soup",
+    "pystow.utils.get_xml_root": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.get_xml_root.html#pystow.utils.get_xml_root",
     "pystow.utils.getenv_path": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.getenv_path.html#pystow.utils.getenv_path",
     "pystow.utils.gunzip": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.gunzip.html#pystow.utils.gunzip",
     "pystow.utils.gzip_compress": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.gzip_compress.html#pystow.utils.gzip_compress",
@@ -145,6 +146,7 @@ MAPPING = {
     "pystow.utils.iter_tarred_files": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.iter_tarred_files.html#pystow.utils.iter_tarred_files",
     "pystow.utils.iter_zipped_csvs": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.iter_zipped_csvs.html#pystow.utils.iter_zipped_csvs",
     "pystow.utils.iter_zipped_files": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.iter_zipped_files.html#pystow.utils.iter_zipped_files",
+    "pystow.utils.iterparse_xml": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.iterparse_xml.html#pystow.utils.iterparse_xml",
     "pystow.utils.mkdir": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.mkdir.html#pystow.utils.mkdir",
     "pystow.utils.mock_envvar": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.mock_envvar.html#pystow.utils.mock_envvar",
     "pystow.utils.mock_home": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.mock_home.html#pystow.utils.mock_home",
@@ -169,6 +171,7 @@ MAPPING = {
     "pystow.utils.read_rdf": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_rdf.html#pystow.utils.read_rdf",
     "pystow.utils.read_tarfile_csv": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_tarfile_csv.html#pystow.utils.read_tarfile_csv",
     "pystow.utils.read_tarfile_xml": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_tarfile_xml.html#pystow.utils.read_tarfile_xml",
+    "pystow.utils.read_xml": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_xml.html#pystow.utils.read_xml",
     "pystow.utils.read_zip_np": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_zip_np.html#pystow.utils.read_zip_np",
     "pystow.utils.read_zipfile_csv": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_zipfile_csv.html#pystow.utils.read_zipfile_csv",
     "pystow.utils.read_zipfile_rdf": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_zipfile_rdf.html#pystow.utils.read_zipfile_rdf",

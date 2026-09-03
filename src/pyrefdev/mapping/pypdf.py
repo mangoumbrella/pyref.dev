@@ -1,4 +1,4 @@
-VERSION = "6.14.2"
+VERSION = "6.16.2"
 
 # fmt: off
 MAPPING = {
@@ -47,6 +47,7 @@ MAPPING = {
     "pypdf._page.imagefile.name": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.ImageFile.name",
     "pypdf._page.imagefile.replace": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.ImageFile.replace",
     "pypdf._page.pageobject": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject",
+    "pypdf._page.pageobject.add_action": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.add_action",
     "pypdf._page.pageobject.add_transformation": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.add_transformation",
     "pypdf._page.pageobject.annotations": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.annotations",
     "pypdf._page.pageobject.artbox": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.artbox",
@@ -54,6 +55,7 @@ MAPPING = {
     "pypdf._page.pageobject.compress_content_streams": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.compress_content_streams",
     "pypdf._page.pageobject.create_blank_page": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.create_blank_page",
     "pypdf._page.pageobject.cropbox": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.cropbox",
+    "pypdf._page.pageobject.delete_action": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.delete_action",
     "pypdf._page.pageobject.extract_text": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.extract_text",
     "pypdf._page.pageobject.extract_xform_text": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.extract_xform_text",
     "pypdf._page.pageobject.get_contents": "https://pypdf.readthedocs.io/en/stable/modules/PageObject.html#pypdf._page.PageObject.get_contents",
@@ -101,6 +103,12 @@ MAPPING = {
     "pypdf._protocols.pdfwriterprotocol.incremental": "https://pypdf.readthedocs.io/en/stable/modules/generic.html#pypdf._protocols.PdfWriterProtocol.incremental",
     "pypdf._protocols.pdfwriterprotocol.write": "https://pypdf.readthedocs.io/en/stable/modules/generic.html#pypdf._protocols.PdfWriterProtocol.write",
     "pypdf._protocols.xmpinformationprotocol": "https://pypdf.readthedocs.io/en/stable/modules/generic.html#pypdf._protocols.XmpInformationProtocol",
+    "pypdf.actions": "https://pypdf.readthedocs.io/en/stable/modules/actions.html",
+    "pypdf.actions.action": "https://pypdf.readthedocs.io/en/stable/modules/actions.html#pypdf.actions.Action",
+    "pypdf.actions.javascript": "https://pypdf.readthedocs.io/en/stable/modules/actions.html#pypdf.actions.JavaScript",
+    "pypdf.actions.pagetrigger": "https://pypdf.readthedocs.io/en/stable/modules/actions.html#pypdf.actions.PageTrigger",
+    "pypdf.actions.pagetrigger.close": "https://pypdf.readthedocs.io/en/stable/modules/actions.html#pypdf.actions.PageTrigger.CLOSE",
+    "pypdf.actions.pagetrigger.open": "https://pypdf.readthedocs.io/en/stable/modules/actions.html#pypdf.actions.PageTrigger.OPEN",
     "pypdf.annotations": "https://pypdf.readthedocs.io/en/stable/modules/annotations.html",
     "pypdf.annotations.annotationdictionary": "https://pypdf.readthedocs.io/en/stable/modules/annotations.html#pypdf.annotations.AnnotationDictionary",
     "pypdf.annotations.annotationdictionary.flags": "https://pypdf.readthedocs.io/en/stable/modules/annotations.html#pypdf.annotations.AnnotationDictionary.flags",
@@ -269,6 +277,7 @@ MAPPING = {
     "pypdf.generic.destination.node": "https://pypdf.readthedocs.io/en/stable/modules/Destination.html#pypdf.generic.Destination.node",
     "pypdf.generic.destination.outline_count": "https://pypdf.readthedocs.io/en/stable/modules/Destination.html#pypdf.generic.Destination.outline_count",
     "pypdf.generic.destination.page": "https://pypdf.readthedocs.io/en/stable/modules/Destination.html#pypdf.generic.Destination.page",
+    "pypdf.generic.destination.remove_from_tree": "https://pypdf.readthedocs.io/en/stable/modules/Destination.html#pypdf.generic.Destination.remove_from_tree",
     "pypdf.generic.destination.right": "https://pypdf.readthedocs.io/en/stable/modules/Destination.html#pypdf.generic.Destination.right",
     "pypdf.generic.destination.title": "https://pypdf.readthedocs.io/en/stable/modules/Destination.html#pypdf.generic.Destination.title",
     "pypdf.generic.destination.top": "https://pypdf.readthedocs.io/en/stable/modules/Destination.html#pypdf.generic.Destination.top",

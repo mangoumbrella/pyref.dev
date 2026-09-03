@@ -1,4 +1,4 @@
-VERSION = "6.5.1"
+VERSION = "7.0.1"
 
 # fmt: off
 MAPPING = {
@@ -34,9 +34,11 @@ MAPPING = {
     "json2xml.dicttoxml.serializerconfig.cdata": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.cdata",
     "json2xml.dicttoxml.serializerconfig.custom_root": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.custom_root",
     "json2xml.dicttoxml.serializerconfig.ids": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.ids",
+    "json2xml.dicttoxml.serializerconfig.indent": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.indent",
     "json2xml.dicttoxml.serializerconfig.item_func": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.item_func",
     "json2xml.dicttoxml.serializerconfig.item_wrap": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.item_wrap",
     "json2xml.dicttoxml.serializerconfig.list_headers": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.list_headers",
+    "json2xml.dicttoxml.serializerconfig.max_output_bytes": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.max_output_bytes",
     "json2xml.dicttoxml.serializerconfig.obj": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.obj",
     "json2xml.dicttoxml.serializerconfig.root": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.root",
     "json2xml.dicttoxml.serializerconfig.xml_namespaces": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.xml_namespaces",

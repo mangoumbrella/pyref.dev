@@ -1,4 +1,4 @@
-VERSION = "2.18.16"
+VERSION = "2.20.4"
 
 # fmt: off
 MAPPING = {
@@ -340,6 +340,7 @@ MAPPING = {
     "mteb.models.model_meta.modelmeta.from_cross_encoder": "https://docs.mteb.org/api/model/#mteb.models.model_meta.ModelMeta.from_cross_encoder",
     "mteb.models.model_meta.modelmeta.from_hub": "https://docs.mteb.org/api/model/#mteb.models.model_meta.ModelMeta.from_hub",
     "mteb.models.model_meta.modelmeta.from_sentence_transformer_model": "https://docs.mteb.org/api/model/#mteb.models.model_meta.ModelMeta.from_sentence_transformer_model",
+    "mteb.models.model_meta.modelmeta.from_sparse_encoder_model": "https://docs.mteb.org/api/model/#mteb.models.model_meta.ModelMeta.from_sparse_encoder_model",
     "mteb.models.model_meta.modelmeta.get_training_datasets": "https://docs.mteb.org/api/model/#mteb.models.model_meta.ModelMeta.get_training_datasets",
     "mteb.models.model_meta.modelmeta.is_cross_encoder": "https://docs.mteb.org/api/model/#mteb.models.model_meta.ModelMeta.is_cross_encoder",
     "mteb.models.model_meta.modelmeta.is_zero_shot_on": "https://docs.mteb.org/api/model/#mteb.models.model_meta.ModelMeta.is_zero_shot_on",
@@ -375,6 +376,20 @@ MAPPING = {
     "mteb.models.models_protocols.searchprotocol.mteb_model_meta": "https://docs.mteb.org/api/model/#mteb.models.SearchProtocol.mteb_model_meta",
     "mteb.models.models_protocols.searchprotocol.search": "https://docs.mteb.org/api/model/#mteb.models.SearchProtocol.search",
     "mteb.models.mtebmodels": "https://docs.mteb.org/api/model/#mteb.models.MTEBModels",
+    "mteb.models.openai_wrappers": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/",
+    "mteb.models.openai_wrappers.openaiapiencodewrapper": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPIEncodeWrapper",
+    "mteb.models.openai_wrappers.openaiapiencodewrapper.__init__": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPIEncodeWrapper.__init__",
+    "mteb.models.openai_wrappers.openaiapiencodewrapper.encode": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPIEncodeWrapper.encode",
+    "mteb.models.openai_wrappers.openaiapirerankwrapper": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPIRerankWrapper",
+    "mteb.models.openai_wrappers.openaiapirerankwrapper.__init__": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPIRerankWrapper.__init__",
+    "mteb.models.openai_wrappers.openaiapirerankwrapper.predict": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPIRerankWrapper.predict",
+    "mteb.models.openai_wrappers.openaiapitokenembedwrapper": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPITokenEmbedWrapper",
+    "mteb.models.openai_wrappers.openaiapitokenembedwrapper.__init__": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPITokenEmbedWrapper.__init__",
+    "mteb.models.openai_wrappers.openaiapitokenembedwrapper.index": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPITokenEmbedWrapper.index",
+    "mteb.models.openai_wrappers.openaiapitokenembedwrapper.search": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPITokenEmbedWrapper.search",
+    "mteb.models.openaiapiencodewrapper": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPIEncodeWrapper",
+    "mteb.models.openaiapirerankwrapper": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPIRerankWrapper",
+    "mteb.models.openaiapitokenembedwrapper": "https://docs.mteb.org/get_started/advanced_usage/openai_api_wrappers/#mteb.models.openai_wrappers.OpenAIAPITokenEmbedWrapper",
     "mteb.models.search_encoder_index": "https://docs.mteb.org/api/model/",
     "mteb.models.search_encoder_index.faisssearchindex": "https://docs.mteb.org/api/model/#mteb.models.search_encoder_index.search_indexes.faiss_search_index.FaissSearchIndex",
     "mteb.models.search_encoder_index.indexencodersearchprotocol": "https://docs.mteb.org/api/model/#mteb.models.search_encoder_index.search_backend_protocol.IndexEncoderSearchProtocol",

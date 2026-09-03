@@ -1,4 +1,4 @@
-VERSION = "1.5.0"
+VERSION = "1.5.1"
 
 # fmt: off
 MAPPING = {
@@ -5048,7 +5048,7 @@ MAPPING = {
     "obspy.core.util.misc.captureio.writelines": "https://docs.obspy.org/packages/autogen/obspy.core.util.misc.CaptureIO.writelines.html#obspy.core.util.misc.CaptureIO.writelines",
     "obspy.core.util.misc.catchoutput": "https://docs.obspy.org/packages/autogen/obspy.core.util.misc.CatchOutput.html#obspy.core.util.misc.CatchOutput",
     "obspy.core.util.misc.complexify_string": "https://docs.obspy.org/packages/autogen/obspy.core.util.misc.complexify_string.html#obspy.core.util.misc.complexify_string",
-    "obspy.core.util.misc.eig": "https://docs.obspy.org/master/packages/autogen/obspy.core.util.misc.eig.html#obspy.core.util.misc.eig",
+    "obspy.core.util.misc.eig": "https://docs.obspy.org/packages/autogen/obspy.core.util.misc.eig.html#obspy.core.util.misc.eig",
     "obspy.core.util.misc.factorize_int": "https://docs.obspy.org/packages/autogen/obspy.core.util.misc.factorize_int.html#obspy.core.util.misc.factorize_int",
     "obspy.core.util.misc.flat_not_masked_contiguous": "https://docs.obspy.org/packages/autogen/obspy.core.util.misc.flat_not_masked_contiguous.html#obspy.core.util.misc.flat_not_masked_contiguous",
     "obspy.core.util.misc.get_untracked_files_from_git": "https://docs.obspy.org/packages/autogen/obspy.core.util.misc.get_untracked_files_from_git.html#obspy.core.util.misc.get_untracked_files_from_git",
@@ -8167,6 +8167,8 @@ MAPPING = {
     "obspy.signal.spectral_estimation.get_idc_infra_low_noise": "https://docs.obspy.org/packages/autogen/obspy.signal.spectral_estimation.get_idc_infra_low_noise.html#obspy.signal.spectral_estimation.get_idc_infra_low_noise",
     "obspy.signal.spectral_estimation.get_nhnm": "https://docs.obspy.org/packages/autogen/obspy.signal.spectral_estimation.get_nhnm.html#obspy.signal.spectral_estimation.get_nhnm",
     "obspy.signal.spectral_estimation.get_nlnm": "https://docs.obspy.org/packages/autogen/obspy.signal.spectral_estimation.get_nlnm.html#obspy.signal.spectral_estimation.get_nlnm",
+    "obspy.signal.spectral_estimation.get_rhnm": "https://docs.obspy.org/master/packages/autogen/obspy.signal.spectral_estimation.get_rhnm.html#obspy.signal.spectral_estimation.get_rhnm",
+    "obspy.signal.spectral_estimation.get_rlnm": "https://docs.obspy.org/master/packages/autogen/obspy.signal.spectral_estimation.get_rlnm.html#obspy.signal.spectral_estimation.get_rlnm",
     "obspy.signal.spectral_estimation.ppsd": "https://docs.obspy.org/packages/autogen/obspy.signal.spectral_estimation.PPSD.html#obspy.signal.spectral_estimation.PPSD",
     "obspy.signal.spectral_estimation.ppsd.__check_histogram": "https://docs.obspy.org/packages/autogen/obspy.signal.spectral_estimation.PPSD.html#obspy.signal.spectral_estimation.PPSD.__check_histogram",
     "obspy.signal.spectral_estimation.ppsd.__check_time_present": "https://docs.obspy.org/packages/autogen/obspy.signal.spectral_estimation.PPSD.html#obspy.signal.spectral_estimation.PPSD.__check_time_present",

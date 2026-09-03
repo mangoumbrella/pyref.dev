@@ -1,4 +1,4 @@
-VERSION = "3.20.5"
+VERSION = "3.20.8"
 
 # fmt: off
 MAPPING = {
@@ -332,6 +332,7 @@ MAPPING = {
     "flexget.components.archives.utils.needrarfile": "https://flexget.readthedocs.io/en/stable/api/flexget.components.archives.utils.html#flexget.components.archives.utils.NeedRarFile",
     "flexget.components.archives.utils.open_archive": "https://flexget.readthedocs.io/en/stable/api/flexget.components.archives.utils.html#flexget.components.archives.utils.open_archive",
     "flexget.components.archives.utils.patherror": "https://flexget.readthedocs.io/en/stable/api/flexget.components.archives.utils.html#flexget.components.archives.utils.PathError",
+    "flexget.components.archives.utils.pathtraversalerror": "https://flexget.readthedocs.io/en/stable/api/flexget.components.archives.utils.html#flexget.components.archives.utils.PathTraversalError",
     "flexget.components.archives.utils.rararchive": "https://flexget.readthedocs.io/en/stable/api/flexget.components.archives.utils.html#flexget.components.archives.utils.RarArchive",
     "flexget.components.archives.utils.rararchive.check_import": "https://flexget.readthedocs.io/en/stable/api/flexget.components.archives.utils.html#flexget.components.archives.utils.RarArchive.check_import",
     "flexget.components.archives.utils.rararchive.open": "https://flexget.readthedocs.io/en/stable/api/flexget.components.archives.utils.html#flexget.components.archives.utils.RarArchive.open",
@@ -2520,6 +2521,8 @@ MAPPING = {
     "flexget.components.series.metainfo_series.register_plugin": "https://flexget.readthedocs.io/en/stable/api/flexget.components.series.metainfo_series.html#flexget.components.series.metainfo_series.register_plugin",
     "flexget.components.series.next_series_episodes": "https://flexget.readthedocs.io/en/stable/api/flexget.components.series.next_series_episodes.html#module-flexget.components.series.next_series_episodes",
     "flexget.components.series.next_series_episodes.nextseriesepisodes": "https://flexget.readthedocs.io/en/stable/api/flexget.components.series.next_series_episodes.html#flexget.components.series.next_series_episodes.NextSeriesEpisodes",
+    "flexget.components.series.next_series_episodes.nextseriesepisodes._component_candidates": "https://flexget.readthedocs.io/en/stable/api/flexget.components.series.next_series_episodes.html#flexget.components.series.next_series_episodes.NextSeriesEpisodes._component_candidates",
+    "flexget.components.series.next_series_episodes.nextseriesepisodes._extract_quality_strings": "https://flexget.readthedocs.io/en/stable/api/flexget.components.series.next_series_episodes.html#flexget.components.series.next_series_episodes.NextSeriesEpisodes._extract_quality_strings",
     "flexget.components.series.next_series_episodes.nextseriesepisodes.ep_identifiers": "https://flexget.readthedocs.io/en/stable/api/flexget.components.series.next_series_episodes.html#flexget.components.series.next_series_episodes.NextSeriesEpisodes.ep_identifiers",
     "flexget.components.series.next_series_episodes.nextseriesepisodes.on_search_complete": "https://flexget.readthedocs.io/en/stable/api/flexget.components.series.next_series_episodes.html#flexget.components.series.next_series_episodes.NextSeriesEpisodes.on_search_complete",
     "flexget.components.series.next_series_episodes.nextseriesepisodes.on_task_input": "https://flexget.readthedocs.io/en/stable/api/flexget.components.series.next_series_episodes.html#flexget.components.series.next_series_episodes.NextSeriesEpisodes.on_task_input",

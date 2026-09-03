@@ -1,4 +1,4 @@
-VERSION = "5.0.0"
+VERSION = "5.1.0"
 
 # fmt: off
 MAPPING = {
@@ -321,6 +321,8 @@ MAPPING = {
     "trimesh.exchange.gltf.export_glb": "https://trimesh.org/trimesh.exchange.gltf.html#trimesh.exchange.gltf.export_glb",
     "trimesh.exchange.gltf.export_gltf": "https://trimesh.org/trimesh.exchange.gltf.html#trimesh.exchange.gltf.export_gltf",
     "trimesh.exchange.gltf.extensions": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#module-trimesh.exchange.gltf.extensions",
+    "trimesh.exchange.gltf.extensions.draco_decode": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.draco_decode",
+    "trimesh.exchange.gltf.extensions.draco_encode": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.draco_encode",
     "trimesh.exchange.gltf.extensions.handle_extensions": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.handle_extensions",
     "trimesh.exchange.gltf.extensions.materialcontext": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.MaterialContext",
     "trimesh.exchange.gltf.extensions.materialcontext.data": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.MaterialContext.data",
@@ -332,8 +334,8 @@ MAPPING = {
     "trimesh.exchange.gltf.extensions.primitivecontext.mesh_kwargs": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.PrimitiveContext.mesh_kwargs",
     "trimesh.exchange.gltf.extensions.primitivecontext.primitive": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.PrimitiveContext.primitive",
     "trimesh.exchange.gltf.extensions.primitiveexportcontext": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.PrimitiveExportContext",
+    "trimesh.exchange.gltf.extensions.primitiveexportcontext.arrays": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.PrimitiveExportContext.arrays",
     "trimesh.exchange.gltf.extensions.primitiveexportcontext.buffer_items": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.PrimitiveExportContext.buffer_items",
-    "trimesh.exchange.gltf.extensions.primitiveexportcontext.include_normals": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.PrimitiveExportContext.include_normals",
     "trimesh.exchange.gltf.extensions.primitiveexportcontext.mesh": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.PrimitiveExportContext.mesh",
     "trimesh.exchange.gltf.extensions.primitiveexportcontext.name": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.PrimitiveExportContext.name",
     "trimesh.exchange.gltf.extensions.primitiveexportcontext.primitive": "https://trimesh.org/trimesh.exchange.gltf.extensions.html#trimesh.exchange.gltf.extensions.PrimitiveExportContext.primitive",
@@ -484,6 +486,13 @@ MAPPING = {
     "trimesh.interval.union": "https://trimesh.org/trimesh.interval.html#trimesh.interval.union",
     "trimesh.iteration": "https://trimesh.org/trimesh.iteration.html#module-trimesh.iteration",
     "trimesh.iteration.chain": "https://trimesh.org/trimesh.iteration.html#trimesh.iteration.chain",
+    "trimesh.iteration.indexeddict": "https://trimesh.org/trimesh.iteration.html#trimesh.iteration.IndexedDict",
+    "trimesh.iteration.indexeddict.__init__": "https://trimesh.org/trimesh.iteration.html#trimesh.iteration.IndexedDict.__init__",
+    "trimesh.iteration.indexeddict.clear": "https://trimesh.org/trimesh.iteration.html#trimesh.iteration.IndexedDict.clear",
+    "trimesh.iteration.indexeddict.index": "https://trimesh.org/trimesh.iteration.html#trimesh.iteration.IndexedDict.index",
+    "trimesh.iteration.indexeddict.move_to_end": "https://trimesh.org/trimesh.iteration.html#trimesh.iteration.IndexedDict.move_to_end",
+    "trimesh.iteration.indexeddict.pop": "https://trimesh.org/trimesh.iteration.html#trimesh.iteration.IndexedDict.pop",
+    "trimesh.iteration.indexeddict.popitem": "https://trimesh.org/trimesh.iteration.html#trimesh.iteration.IndexedDict.popitem",
     "trimesh.iteration.reduce_cascade": "https://trimesh.org/trimesh.iteration.html#trimesh.iteration.reduce_cascade",
     "trimesh.load": "https://trimesh.org/trimesh.html#trimesh.load",
     "trimesh.load_mesh": "https://trimesh.org/trimesh.html#trimesh.load_mesh",

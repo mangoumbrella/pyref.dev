@@ -1,4 +1,4 @@
-VERSION = "2.13.4"
+VERSION = "2.13.5"
 
 # fmt: off
 MAPPING = {
@@ -317,6 +317,7 @@ MAPPING = {
     "pydantic.json_schema.generatejsonschema.defs_ref_fallbacks": "https://pydantic.dev/docs/validation/2.5/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.defs_ref_fallbacks",
     "pydantic.json_schema.generatejsonschema.defs_to_core_refs": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.defs_to_core_refs",
     "pydantic.json_schema.generatejsonschema.dict_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.dict_schema",
+    "pydantic.json_schema.generatejsonschema.ellipsis_schema": "https://pydantic.dev/docs/validation/dev/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.ellipsis_schema",
     "pydantic.json_schema.generatejsonschema.emit_warning": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.emit_warning",
     "pydantic.json_schema.generatejsonschema.encode_default": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.encode_default",
     "pydantic.json_schema.generatejsonschema.enum_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.enum_schema",
@@ -325,6 +326,7 @@ MAPPING = {
     "pydantic.json_schema.generatejsonschema.field_title_should_be_set": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.field_title_should_be_set",
     "pydantic.json_schema.generatejsonschema.float_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.float_schema",
     "pydantic.json_schema.generatejsonschema.fraction_schema": "https://pydantic.dev/docs/validation/dev/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.fraction_schema",
+    "pydantic.json_schema.generatejsonschema.frozendict_schema": "https://pydantic.dev/docs/validation/dev/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.frozendict_schema",
     "pydantic.json_schema.generatejsonschema.frozenset_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.frozenset_schema",
     "pydantic.json_schema.generatejsonschema.function_after_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.function_after_schema",
     "pydantic.json_schema.generatejsonschema.function_before_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.function_before_schema",
@@ -360,6 +362,8 @@ MAPPING = {
     "pydantic.json_schema.generatejsonschema.model_fields_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.model_fields_schema",
     "pydantic.json_schema.generatejsonschema.model_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.model_schema",
     "pydantic.json_schema.generatejsonschema.multi_host_url_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.multi_host_url_schema",
+    "pydantic.json_schema.generatejsonschema.named_tuple_field_schema": "https://pydantic.dev/docs/validation/dev/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.named_tuple_field_schema",
+    "pydantic.json_schema.generatejsonschema.named_tuple_schema": "https://pydantic.dev/docs/validation/dev/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.named_tuple_schema",
     "pydantic.json_schema.generatejsonschema.none_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.none_schema",
     "pydantic.json_schema.generatejsonschema.normalize_name": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.normalize_name",
     "pydantic.json_schema.generatejsonschema.nullable_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic/json_schema/#pydantic.json_schema.GenerateJsonSchema.nullable_schema",

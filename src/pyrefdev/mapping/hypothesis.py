@@ -1,4 +1,4 @@
-VERSION = "6.163.0"
+VERSION = "6.165.10"
 
 # fmt: off
 MAPPING = {
@@ -37,6 +37,7 @@ MAPPING = {
     "hypothesis.errors.hypothesisexception": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.HypothesisException",
     "hypothesis.errors.invalidargument": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.InvalidArgument",
     "hypothesis.errors.noninteractiveexamplewarning": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.NonInteractiveExampleWarning",
+    "hypothesis.errors.nonroundtrippablecharacterswarning": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.NonRoundTrippableCharactersWarning",
     "hypothesis.errors.resolutionfailed": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.ResolutionFailed",
     "hypothesis.errors.unsatisfiable": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.errors.Unsatisfiable",
     "hypothesis.event": "https://hypothesis.readthedocs.io/en/latest/reference/api.html#hypothesis.event",

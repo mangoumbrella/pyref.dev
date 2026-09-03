@@ -1,4 +1,4 @@
-VERSION = "0.9.23"
+VERSION = "0.9.25"
 
 # fmt: off
 MAPPING = {
@@ -311,6 +311,7 @@ MAPPING = {
     "placo.dynamicssolver.set_qdd_safe": "https://placo.readthedocs.io/en/stable/placo/placo__dynamics.html#placo.DynamicsSolver.set_qdd_safe",
     "placo.dynamicssolver.set_torque_limit": "https://placo.readthedocs.io/en/stable/placo/placo__dynamics.html#placo.DynamicsSolver.set_torque_limit",
     "placo.dynamicssolver.solve": "https://placo.readthedocs.io/en/stable/placo/placo__dynamics.html#placo.DynamicsSolver.solve",
+    "placo.dynamicssolver.tasks_count": "https://placo.readthedocs.io/en/stable/placo/placo__dynamics.html#placo.DynamicsSolver.tasks_count",
     "placo.dynamicssolver.torque_cost": "https://placo.readthedocs.io/en/stable/placo/placo__dynamics.html#placo.DynamicsSolver.torque_cost",
     "placo.dynamicssolverresult": "https://placo.readthedocs.io/en/stable/placo/placo__dynamics.html#placo.DynamicsSolverResult",
     "placo.dynamicssolverresult.qdd": "https://placo.readthedocs.io/en/stable/placo/placo__dynamics.html#placo.DynamicsSolverResult.qdd",

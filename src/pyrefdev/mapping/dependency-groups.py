@@ -1,4 +1,4 @@
-VERSION = "1.3.1"
+VERSION = "1.3.2"
 
 # fmt: off
 MAPPING = {
@@ -8,5 +8,6 @@ MAPPING = {
     "dependency_groups.dependencygroupresolver": "https://dependency-groups.readthedocs.io/en/latest/resolver.html#dependency_groups.DependencyGroupResolver",
     "dependency_groups.dependencygroupresolver.lookup": "https://dependency-groups.readthedocs.io/en/latest/resolver.html#dependency_groups.DependencyGroupResolver.lookup",
     "dependency_groups.dependencygroupresolver.resolve": "https://dependency-groups.readthedocs.io/en/latest/resolver.html#dependency_groups.DependencyGroupResolver.resolve",
+    "dependency_groups.dependencygroupresolver.resolve_all": "https://dependency-groups.readthedocs.io/en/latest/resolver.html#dependency_groups.DependencyGroupResolver.resolve_all",
     "dependency_groups.resolve": "https://dependency-groups.readthedocs.io/en/latest/functional_interface.html#dependency_groups.resolve",
 }

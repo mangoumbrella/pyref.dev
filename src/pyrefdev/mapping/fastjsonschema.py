@@ -1,4 +1,4 @@
-VERSION = "2.22.1"
+VERSION = "2.22.2"
 
 # fmt: off
 MAPPING = {

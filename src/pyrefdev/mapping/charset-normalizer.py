@@ -1,4 +1,4 @@
-VERSION = "3.4.9"
+VERSION = "3.5.1"
 
 # fmt: off
 MAPPING = {
@@ -23,9 +23,7 @@ MAPPING = {
     "charset_normalizer.from_path": "https://charset-normalizer.readthedocs.io/en/latest/api.html#charset_normalizer.from_path",
     "charset_normalizer.is_binary": "https://charset-normalizer.readthedocs.io/en/latest/api.html#charset_normalizer.is_binary",
     "charset_normalizer.md": "https://charset-normalizer.readthedocs.io/en/latest/api.html",
-    "charset_normalizer.md.is_suspiciously_successive_range": "https://charset-normalizer.readthedocs.io/en/latest/api.html#charset_normalizer.md.is_suspiciously_successive_range",
     "charset_normalizer.md.mess_ratio": "https://charset-normalizer.readthedocs.io/en/latest/api.html#charset_normalizer.md.mess_ratio",
-    "charset_normalizer.md.messdetectorplugin": "https://charset-normalizer.readthedocs.io/en/latest/api.html#charset_normalizer.md.MessDetectorPlugin",
     "charset_normalizer.models": "https://charset-normalizer.readthedocs.io/en/latest/api.html",
     "charset_normalizer.models.charsetmatch": "https://charset-normalizer.readthedocs.io/en/latest/api.html#charset_normalizer.models.CharsetMatch",
     "charset_normalizer.models.charsetmatch.could_be_from_charset": "https://charset-normalizer.readthedocs.io/en/latest/api.html#charset_normalizer.models.CharsetMatch.could_be_from_charset",

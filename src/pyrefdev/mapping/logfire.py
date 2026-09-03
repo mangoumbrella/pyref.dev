@@ -1,4 +1,4 @@
-VERSION = "4.40.0"
+VERSION = "4.41.0"
 
 # fmt: off
 MAPPING = {
@@ -25,6 +25,7 @@ MAPPING = {
     "logfire._internal.config.advancedoptions.base_url": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.base_url",
     "logfire._internal.config.advancedoptions.emit_configuration_span": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.emit_configuration_span",
     "logfire._internal.config.advancedoptions.exception_callback": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.exception_callback",
+    "logfire._internal.config.advancedoptions.generate_base_url": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.generate_base_url",
     "logfire._internal.config.advancedoptions.id_generator": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.id_generator",
     "logfire._internal.config.advancedoptions.log_record_processors": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.log_record_processors",
     "logfire._internal.config.advancedoptions.ns_timestamp_generator": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.ns_timestamp_generator",
@@ -170,6 +171,7 @@ MAPPING = {
     "logfire.advancedoptions.base_url": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.base_url",
     "logfire.advancedoptions.emit_configuration_span": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.emit_configuration_span",
     "logfire.advancedoptions.exception_callback": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.exception_callback",
+    "logfire.advancedoptions.generate_base_url": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.generate_base_url",
     "logfire.advancedoptions.id_generator": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.id_generator",
     "logfire.advancedoptions.log_record_processors": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.log_record_processors",
     "logfire.advancedoptions.ns_timestamp_generator": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.AdvancedOptions.ns_timestamp_generator",

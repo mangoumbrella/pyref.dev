@@ -1,4 +1,4 @@
-VERSION = "6.1.0"
+VERSION = "6.2.0"
 
 # fmt: off
 MAPPING = {
@@ -239,6 +239,7 @@ MAPPING = {
     "hdmf.build.objectmapper.objectmapper.map_const_arg": "https://hdmf.readthedocs.io/en/stable/hdmf.build.objectmapper.html#hdmf.build.objectmapper.ObjectMapper.map_const_arg",
     "hdmf.build.objectmapper.objectmapper.map_spec": "https://hdmf.readthedocs.io/en/stable/hdmf.build.objectmapper.html#hdmf.build.objectmapper.ObjectMapper.map_spec",
     "hdmf.build.objectmapper.objectmapper.no_convert": "https://hdmf.readthedocs.io/en/stable/hdmf.build.objectmapper.html#hdmf.build.objectmapper.ObjectMapper.no_convert",
+    "hdmf.build.objectmapper.objectmapper.no_override": "https://hdmf.readthedocs.io/en/stable/hdmf.build.objectmapper.html#hdmf.build.objectmapper.ObjectMapper.NO_OVERRIDE",
     "hdmf.build.objectmapper.objectmapper.obj_attrs": "https://hdmf.readthedocs.io/en/stable/hdmf.build.objectmapper.html#hdmf.build.objectmapper.ObjectMapper.obj_attrs",
     "hdmf.build.objectmapper.objectmapper.object_attr": "https://hdmf.readthedocs.io/en/stable/hdmf.build.objectmapper.html#hdmf.build.objectmapper.ObjectMapper.object_attr",
     "hdmf.build.objectmapper.objectmapper.spec": "https://hdmf.readthedocs.io/en/stable/hdmf.build.objectmapper.html#hdmf.build.objectmapper.ObjectMapper.spec",
@@ -313,6 +314,11 @@ MAPPING = {
     "hdmf.common.io.table.dynamictablemap.constructor_args": "https://hdmf.readthedocs.io/en/stable/hdmf.common.io.table.html#hdmf.common.io.table.DynamicTableMap.constructor_args",
     "hdmf.common.io.table.dynamictablemap.get_attr_value": "https://hdmf.readthedocs.io/en/stable/hdmf.common.io.table.html#hdmf.common.io.table.DynamicTableMap.get_attr_value",
     "hdmf.common.io.table.dynamictablemap.obj_attrs": "https://hdmf.readthedocs.io/en/stable/hdmf.common.io.table.html#hdmf.common.io.table.DynamicTableMap.obj_attrs",
+    "hdmf.common.io.table.meaningstablemap": "https://hdmf.readthedocs.io/en/stable/hdmf.common.io.table.html#hdmf.common.io.table.MeaningsTableMap",
+    "hdmf.common.io.table.meaningstablemap.construct": "https://hdmf.readthedocs.io/en/stable/hdmf.common.io.table.html#hdmf.common.io.table.MeaningsTableMap.construct",
+    "hdmf.common.io.table.meaningstablemap.constructor_args": "https://hdmf.readthedocs.io/en/stable/hdmf.common.io.table.html#hdmf.common.io.table.MeaningsTableMap.constructor_args",
+    "hdmf.common.io.table.meaningstablemap.obj_attrs": "https://hdmf.readthedocs.io/en/stable/hdmf.common.io.table.html#hdmf.common.io.table.MeaningsTableMap.obj_attrs",
+    "hdmf.common.io.table.meaningstablemap.target_carg": "https://hdmf.readthedocs.io/en/stable/hdmf.common.io.table.html#hdmf.common.io.table.MeaningsTableMap.target_carg",
     "hdmf.common.load_namespaces": "https://hdmf.readthedocs.io/en/stable/hdmf.common.html#hdmf.common.load_namespaces",
     "hdmf.common.load_type_config": "https://hdmf.readthedocs.io/en/stable/hdmf.common.html#hdmf.common.load_type_config",
     "hdmf.common.multi": "https://hdmf.readthedocs.io/en/stable/hdmf.common.multi.html#module-hdmf.common.multi",

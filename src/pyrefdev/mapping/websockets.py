@@ -1,4 +1,4 @@
-VERSION = "17.0"
+VERSION = "17.1"
 
 # fmt: off
 MAPPING = {
@@ -25,7 +25,6 @@ MAPPING = {
     "websockets.asyncio.client.clientconnection.subprotocol": "https://websockets.readthedocs.io/en/stable/reference/asyncio/client.html#websockets.asyncio.client.ClientConnection.subprotocol",
     "websockets.asyncio.client.clientconnection.wait_closed": "https://websockets.readthedocs.io/en/stable/reference/asyncio/client.html#websockets.asyncio.client.ClientConnection.wait_closed",
     "websockets.asyncio.client.connect": "https://websockets.readthedocs.io/en/stable/reference/asyncio/client.html#websockets.asyncio.client.connect",
-    "websockets.asyncio.client.process_exception": "https://websockets.readthedocs.io/en/stable/reference/asyncio/client.html#websockets.asyncio.client.process_exception",
     "websockets.asyncio.client.unix_connect": "https://websockets.readthedocs.io/en/stable/reference/asyncio/client.html#websockets.asyncio.client.unix_connect",
     "websockets.asyncio.connection": "https://websockets.readthedocs.io/en/stable/reference/asyncio/connection.html",
     "websockets.asyncio.connection.connection": "https://websockets.readthedocs.io/en/stable/reference/asyncio/connection.html#websockets.asyncio.connection.Connection",
@@ -455,7 +454,6 @@ MAPPING = {
     "websockets.trio.client.clientconnection.subprotocol": "https://websockets.readthedocs.io/en/stable/reference/trio/client.html#websockets.trio.client.ClientConnection.subprotocol",
     "websockets.trio.client.clientconnection.wait_closed": "https://websockets.readthedocs.io/en/stable/reference/trio/client.html#websockets.trio.client.ClientConnection.wait_closed",
     "websockets.trio.client.connect": "https://websockets.readthedocs.io/en/stable/reference/trio/client.html#websockets.trio.client.connect",
-    "websockets.trio.client.process_exception": "https://websockets.readthedocs.io/en/stable/reference/trio/client.html#websockets.trio.client.process_exception",
     "websockets.trio.client.unix_connect": "https://websockets.readthedocs.io/en/stable/reference/trio/client.html#websockets.trio.client.unix_connect",
     "websockets.trio.connection": "https://websockets.readthedocs.io/en/stable/reference/trio/connection.html",
     "websockets.trio.connection.connection": "https://websockets.readthedocs.io/en/stable/reference/trio/connection.html#websockets.trio.connection.Connection",

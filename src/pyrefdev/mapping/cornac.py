@@ -1,4 +1,4 @@
-VERSION = "2.6.0"
+VERSION = "3.0.0"
 
 # fmt: off
 MAPPING = {
@@ -181,6 +181,8 @@ MAPPING = {
     "cornac.eval_methods.ratio_split.ratiosplit": "https://cornac.readthedocs.io/en/stable/api_ref/eval_methods.html#cornac.eval_methods.ratio_split.RatioSplit",
     "cornac.eval_methods.stratified_split": "https://cornac.readthedocs.io/en/stable/api_ref/eval_methods.html#module-cornac.eval_methods.stratified_split",
     "cornac.eval_methods.stratified_split.stratifiedsplit": "https://cornac.readthedocs.io/en/stable/api_ref/eval_methods.html#cornac.eval_methods.stratified_split.StratifiedSplit",
+    "cornac.eval_methods.timestamp_split": "https://cornac.readthedocs.io/en/stable/api_ref/eval_methods.html#module-cornac.eval_methods.timestamp_split",
+    "cornac.eval_methods.timestamp_split.timestampsplit": "https://cornac.readthedocs.io/en/stable/api_ref/eval_methods.html#cornac.eval_methods.timestamp_split.TimestampSplit",
     "cornac.experiment": "https://cornac.readthedocs.io/en/stable/api_ref/experiment.html#module-cornac.experiment",
     "cornac.experiment.experiment": "https://cornac.readthedocs.io/en/stable/api_ref/experiment.html#module-cornac.experiment.experiment",
     "cornac.experiment.experiment.experiment": "https://cornac.readthedocs.io/en/stable/api_ref/experiment.html#cornac.experiment.experiment.Experiment",
@@ -350,6 +352,11 @@ MAPPING = {
     "cornac.models.cvaecf.recom_cvaecf.cvaecf": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.cvaecf.recom_cvaecf.CVAECF",
     "cornac.models.cvaecf.recom_cvaecf.cvaecf.fit": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.cvaecf.recom_cvaecf.CVAECF.fit",
     "cornac.models.cvaecf.recom_cvaecf.cvaecf.score": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.cvaecf.recom_cvaecf.CVAECF.score",
+    "cornac.models.diffgrm": "https://cornac.readthedocs.io/en/stable/api_ref/models.html",
+    "cornac.models.diffgrm.recom_diffgrm": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#module-cornac.models.diffgrm.recom_diffgrm",
+    "cornac.models.diffgrm.recom_diffgrm.diffgrm": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.diffgrm.recom_diffgrm.DiffGRM",
+    "cornac.models.diffgrm.recom_diffgrm.diffgrm.fit": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.diffgrm.recom_diffgrm.DiffGRM.fit",
+    "cornac.models.diffgrm.recom_diffgrm.diffgrm.score": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.diffgrm.recom_diffgrm.DiffGRM.score",
     "cornac.models.dmrl": "https://cornac.readthedocs.io/en/stable/api_ref/models.html",
     "cornac.models.dmrl.recom_dmrl": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#module-cornac.models.dmrl.recom_dmrl",
     "cornac.models.dmrl.recom_dmrl.dmrl": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.dmrl.recom_dmrl.DMRL",
@@ -444,6 +451,10 @@ MAPPING = {
     "cornac.models.knn.recom_knn.userknn": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.knn.recom_knn.UserKNN",
     "cornac.models.knn.recom_knn.userknn.fit": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.knn.recom_knn.UserKNN.fit",
     "cornac.models.knn.recom_knn.userknn.score": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.knn.recom_knn.UserKNN.score",
+    "cornac.models.letter": "https://cornac.readthedocs.io/en/stable/api_ref/models.html",
+    "cornac.models.letter.recom_letter": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#module-cornac.models.letter.recom_letter",
+    "cornac.models.letter.recom_letter.letter": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.letter.recom_letter.LETTER",
+    "cornac.models.letter.recom_letter.letter.score": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.letter.recom_letter.LETTER.score",
     "cornac.models.lightgcn": "https://cornac.readthedocs.io/en/stable/api_ref/models.html",
     "cornac.models.lightgcn.recom_lightgcn": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#module-cornac.models.lightgcn.recom_lightgcn",
     "cornac.models.lightgcn.recom_lightgcn.lightgcn": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.lightgcn.recom_lightgcn.LightGCN",
@@ -602,6 +613,11 @@ MAPPING = {
     "cornac.models.recvae.recom_recvae.recvae": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.recvae.recom_recvae.RecVAE",
     "cornac.models.recvae.recom_recvae.recvae.fit": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.recvae.recom_recvae.RecVAE.fit",
     "cornac.models.recvae.recom_recvae.recvae.score": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.recvae.recom_recvae.RecVAE.score",
+    "cornac.models.rpg": "https://cornac.readthedocs.io/en/stable/api_ref/models.html",
+    "cornac.models.rpg.recom_rpg": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#module-cornac.models.rpg.recom_rpg",
+    "cornac.models.rpg.recom_rpg.rpg": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.rpg.recom_rpg.RPG",
+    "cornac.models.rpg.recom_rpg.rpg.fit": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.rpg.recom_rpg.RPG.fit",
+    "cornac.models.rpg.recom_rpg.rpg.score": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.rpg.recom_rpg.RPG.score",
     "cornac.models.sbpr": "https://cornac.readthedocs.io/en/stable/api_ref/models.html",
     "cornac.models.sbpr.recom_sbpr": "https://cornac.readthedocs.io/en/stable/api_ref/models.html",
     "cornac.models.sbpr.recom_sbpr.sbpr": "https://cornac.readthedocs.io/en/stable/api_ref/models.html#cornac.models.sbpr.recom_sbpr.SBPR",

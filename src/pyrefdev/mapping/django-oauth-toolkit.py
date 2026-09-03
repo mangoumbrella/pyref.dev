@@ -1,4 +1,4 @@
-VERSION = "3.4.0"
+VERSION = "3.4.1"
 
 # fmt: off
 MAPPING = {
@@ -38,6 +38,7 @@ MAPPING = {
     "oauth2_provider.models.abstractidtoken.scopes": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.AbstractIDToken.scopes",
     "oauth2_provider.models.abstractrefreshtoken": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.AbstractRefreshToken",
     "oauth2_provider.models.abstractrefreshtoken.revoke": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.AbstractRefreshToken.revoke",
+    "oauth2_provider.models.abstractrefreshtoken.revoke_family": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.AbstractRefreshToken.revoke_family",
     "oauth2_provider.models.accesstoken": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.AccessToken",
     "oauth2_provider.models.accesstoken.doesnotexist": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.AccessToken.DoesNotExist",
     "oauth2_provider.models.accesstoken.multipleobjectsreturned": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.AccessToken.MultipleObjectsReturned",
@@ -46,6 +47,7 @@ MAPPING = {
     "oauth2_provider.models.application.doesnotexist": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.Application.DoesNotExist",
     "oauth2_provider.models.application.multipleobjectsreturned": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.Application.MultipleObjectsReturned",
     "oauth2_provider.models.application.notupdated": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.Application.NotUpdated",
+    "oauth2_provider.models.check_redirect_to_uri_allowed": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.check_redirect_to_uri_allowed",
     "oauth2_provider.models.clientsecretfield": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.ClientSecretField",
     "oauth2_provider.models.clientsecretfield.pre_save": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.ClientSecretField.pre_save",
     "oauth2_provider.models.devicecoderesponse": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.DeviceCodeResponse",
@@ -75,6 +77,7 @@ MAPPING = {
     "oauth2_provider.models.idtoken.notupdated": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.IDToken.NotUpdated",
     "oauth2_provider.models.is_origin_allowed": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.is_origin_allowed",
     "oauth2_provider.models.redirect_to_uri_allowed": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.redirect_to_uri_allowed",
+    "oauth2_provider.models.refresh_token_expire_timedelta": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.refresh_token_expire_timedelta",
     "oauth2_provider.models.refreshtoken": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.RefreshToken",
     "oauth2_provider.models.refreshtoken.doesnotexist": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.RefreshToken.DoesNotExist",
     "oauth2_provider.models.refreshtoken.multipleobjectsreturned": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.RefreshToken.MultipleObjectsReturned",
@@ -82,6 +85,8 @@ MAPPING = {
     "oauth2_provider.models.resourcejsonfield": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.ResourceJSONField",
     "oauth2_provider.models.resourcejsonfield.get_db_prep_value": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.ResourceJSONField.get_db_prep_value",
     "oauth2_provider.models.resourcejsonfield.pre_save": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.ResourceJSONField.pre_save",
+    "oauth2_provider.models.revoke_access_token": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.revoke_access_token",
+    "oauth2_provider.models.set_token_value": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.set_token_value",
     "oauth2_provider.models.tokenchecksumfield": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.TokenChecksumField",
     "oauth2_provider.models.tokenchecksumfield.pre_save": "https://django-oauth-toolkit.readthedocs.io/en/stable/models.html#oauth2_provider.models.TokenChecksumField.pre_save",
     "oauth2_provider.views.application": "https://django-oauth-toolkit.readthedocs.io/en/stable/views/application.html#module-oauth2_provider.views.application",
@@ -147,6 +152,7 @@ MAPPING = {
     "oauth2_provider.views.mixins.scopedresourcemixin.get_scopes": "https://django-oauth-toolkit.readthedocs.io/en/stable/views/details.html#oauth2_provider.views.mixins.ScopedResourceMixin.get_scopes",
     "oauth2_provider.views.token": "https://django-oauth-toolkit.readthedocs.io/en/stable/views/token.html#module-oauth2_provider.views.token",
     "oauth2_provider.views.token.authorizedtokendeleteview": "https://django-oauth-toolkit.readthedocs.io/en/stable/views/token.html#oauth2_provider.views.token.AuthorizedTokenDeleteView",
+    "oauth2_provider.views.token.authorizedtokendeleteview.form_valid": "https://django-oauth-toolkit.readthedocs.io/en/stable/views/token.html#oauth2_provider.views.token.AuthorizedTokenDeleteView.form_valid",
     "oauth2_provider.views.token.authorizedtokendeleteview.get_queryset": "https://django-oauth-toolkit.readthedocs.io/en/stable/views/token.html#oauth2_provider.views.token.AuthorizedTokenDeleteView.get_queryset",
     "oauth2_provider.views.token.authorizedtokendeleteview.model": "https://django-oauth-toolkit.readthedocs.io/en/stable/views/token.html#oauth2_provider.views.token.AuthorizedTokenDeleteView.model",
     "oauth2_provider.views.token.authorizedtokenslistview": "https://django-oauth-toolkit.readthedocs.io/en/stable/views/token.html#oauth2_provider.views.token.AuthorizedTokensListView",

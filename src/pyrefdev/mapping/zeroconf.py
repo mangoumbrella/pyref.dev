@@ -1,4 +1,4 @@
-VERSION = "0.150.0"
+VERSION = "0.151.3"
 
 # fmt: off
 MAPPING = {
@@ -91,6 +91,7 @@ MAPPING = {
     "zeroconf.serviceinfo.async_update_records": "https://python-zeroconf.readthedocs.io/en/stable/api.html#zeroconf.ServiceInfo.async_update_records",
     "zeroconf.serviceinfo.async_wait": "https://python-zeroconf.readthedocs.io/en/stable/api.html#zeroconf.ServiceInfo.async_wait",
     "zeroconf.serviceinfo.decoded_properties": "https://python-zeroconf.readthedocs.io/en/stable/api.html#zeroconf.ServiceInfo.decoded_properties",
+    "zeroconf.serviceinfo.dns_address_nsec": "https://python-zeroconf.readthedocs.io/en/stable/api.html#zeroconf.ServiceInfo.dns_address_nsec",
     "zeroconf.serviceinfo.dns_addresses": "https://python-zeroconf.readthedocs.io/en/stable/api.html#zeroconf.ServiceInfo.dns_addresses",
     "zeroconf.serviceinfo.dns_nsec": "https://python-zeroconf.readthedocs.io/en/stable/api.html#zeroconf.ServiceInfo.dns_nsec",
     "zeroconf.serviceinfo.dns_pointer": "https://python-zeroconf.readthedocs.io/en/stable/api.html#zeroconf.ServiceInfo.dns_pointer",

@@ -1,4 +1,4 @@
-VERSION = "0.151.1"
+VERSION = "0.152.0"
 
 # fmt: off
 MAPPING = {
@@ -28,7 +28,9 @@ MAPPING = {
     "django_components.app_settings.componentssettings.tag_formatter": "https://django-components.github.io/django-components/docs/reference/settings/#tag_formatter",
     "django_components.app_settings.componentssettings.template_cache_size": "https://django-components.github.io/django-components/docs/reference/settings/#template_cache_size",
     "django_components.attributes": "https://django-components.github.io/django-components/docs/reference/template_tags/",
+    "django_components.attributes.attrsnode": "https://django-components.github.io/django-components/docs/reference/template_tags/#attrs",
     "django_components.attributes.htmlattrsnode": "https://django-components.github.io/django-components/docs/reference/template_tags/#html_attrs",
+    "django_components.attrsdict": "https://django-components.github.io/django-components/docs/reference/api/#AttrsDict",
     "django_components.autodiscover": "https://django-components.github.io/django-components/docs/reference/api/#autodiscover",
     "django_components.basenode": "https://django-components.github.io/django-components/docs/reference/api/#BaseNode",
     "django_components.basenode.active_flags": "https://django-components.github.io/django-components/docs/reference/api/#django_components.BaseNode.active_flags",
@@ -316,6 +318,7 @@ MAPPING = {
     "django_components.componentview.put": "https://django-components.github.io/django-components/docs/reference/api/#django_components.ComponentView.put",
     "django_components.componentview.trace": "https://django-components.github.io/django-components/docs/reference/api/#django_components.ComponentView.trace",
     "django_components.componentview.url": "https://django-components.github.io/django-components/docs/reference/api/#django_components.ComponentView.url",
+    "django_components.compose_attrs": "https://django-components.github.io/django-components/docs/reference/api/#compose_attrs",
     "django_components.contextbehavior": "https://django-components.github.io/django-components/docs/reference/api/#ContextBehavior",
     "django_components.contextbehavior.django": "https://django-components.github.io/django-components/docs/reference/api/#django_components.ContextBehavior.DJANGO",
     "django_components.contextbehavior.isolated": "https://django-components.github.io/django-components/docs/reference/api/#django_components.ContextBehavior.ISOLATED",

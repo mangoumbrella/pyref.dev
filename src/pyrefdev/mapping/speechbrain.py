@@ -1,4 +1,4 @@
-VERSION = "1.1.0"
+VERSION = "1.1.1"
 
 # fmt: off
 MAPPING = {
@@ -537,7 +537,7 @@ MAPPING = {
     "speechbrain.inference.encoders.melspectrogramencoder.encode_mel_spectrogram": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.inference.encoders.html#speechbrain.inference.encoders.MelSpectrogramEncoder.encode_mel_spectrogram",
     "speechbrain.inference.encoders.melspectrogramencoder.encode_mel_spectrogram_batch": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.inference.encoders.html#speechbrain.inference.encoders.MelSpectrogramEncoder.encode_mel_spectrogram_batch",
     "speechbrain.inference.encoders.melspectrogramencoder.encode_waveform": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.inference.encoders.html#speechbrain.inference.encoders.MelSpectrogramEncoder.encode_waveform",
-    "speechbrain.inference.encoders.melspectrogramencoder.mel_spectogram": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.inference.encoders.html#speechbrain.inference.encoders.MelSpectrogramEncoder.mel_spectogram",
+    "speechbrain.inference.encoders.melspectrogramencoder.mel_spectrogram": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.inference.encoders.html#speechbrain.inference.encoders.MelSpectrogramEncoder.mel_spectrogram",
     "speechbrain.inference.encoders.melspectrogramencoder.modules_needed": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.inference.encoders.html#speechbrain.inference.encoders.MelSpectrogramEncoder.MODULES_NEEDED",
     "speechbrain.inference.encoders.waveformencoder": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.inference.encoders.html#speechbrain.inference.encoders.WaveformEncoder",
     "speechbrain.inference.encoders.waveformencoder.encode_batch": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.inference.encoders.html#speechbrain.inference.encoders.WaveformEncoder.encode_batch",
@@ -1162,7 +1162,7 @@ MAPPING = {
     "speechbrain.lobes.models.diffwave.diffwave": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.DiffWave.html#speechbrain.lobes.models.DiffWave.DiffWave",
     "speechbrain.lobes.models.diffwave.diffwave.diffusion_forward": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.DiffWave.html#speechbrain.lobes.models.DiffWave.DiffWave.diffusion_forward",
     "speechbrain.lobes.models.diffwave.diffwave.forward": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.DiffWave.html#speechbrain.lobes.models.DiffWave.DiffWave.forward",
-    "speechbrain.lobes.models.diffwave.diffwave_mel_spectogram": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.DiffWave.html#speechbrain.lobes.models.DiffWave.diffwave_mel_spectogram",
+    "speechbrain.lobes.models.diffwave.diffwave_mel_spectrogram": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.DiffWave.html#speechbrain.lobes.models.DiffWave.diffwave_mel_spectrogram",
     "speechbrain.lobes.models.diffwave.diffwavediffusion": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.DiffWave.html#speechbrain.lobes.models.DiffWave.DiffWaveDiffusion",
     "speechbrain.lobes.models.diffwave.diffwavediffusion.inference": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.DiffWave.html#speechbrain.lobes.models.DiffWave.DiffWaveDiffusion.inference",
     "speechbrain.lobes.models.diffwave.residualblock": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.DiffWave.html#speechbrain.lobes.models.DiffWave.ResidualBlock",
@@ -1292,7 +1292,7 @@ MAPPING = {
     "speechbrain.lobes.models.fastspeech2.losswithalignment": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.FastSpeech2.html#speechbrain.lobes.models.FastSpeech2.LossWithAlignment",
     "speechbrain.lobes.models.fastspeech2.losswithalignment.forward": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.FastSpeech2.html#speechbrain.lobes.models.FastSpeech2.LossWithAlignment.forward",
     "speechbrain.lobes.models.fastspeech2.maximum_path_numpy": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.FastSpeech2.html#speechbrain.lobes.models.FastSpeech2.maximum_path_numpy",
-    "speechbrain.lobes.models.fastspeech2.mel_spectogram": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.FastSpeech2.html#speechbrain.lobes.models.FastSpeech2.mel_spectogram",
+    "speechbrain.lobes.models.fastspeech2.mel_spectrogram": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.FastSpeech2.html#speechbrain.lobes.models.FastSpeech2.mel_spectrogram",
     "speechbrain.lobes.models.fastspeech2.postnet": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.FastSpeech2.html#speechbrain.lobes.models.FastSpeech2.PostNet",
     "speechbrain.lobes.models.fastspeech2.postnet.forward": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.FastSpeech2.html#speechbrain.lobes.models.FastSpeech2.PostNet.forward",
     "speechbrain.lobes.models.fastspeech2.spnpredictor": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.FastSpeech2.html#speechbrain.lobes.models.FastSpeech2.SPNPredictor",
@@ -1376,7 +1376,7 @@ MAPPING = {
     "speechbrain.lobes.models.hifigan.hingegloss.forward": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.HifiGAN.html#speechbrain.lobes.models.HifiGAN.HingeGLoss.forward",
     "speechbrain.lobes.models.hifigan.l1specloss": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.HifiGAN.html#speechbrain.lobes.models.HifiGAN.L1SpecLoss",
     "speechbrain.lobes.models.hifigan.l1specloss.forward": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.HifiGAN.html#speechbrain.lobes.models.HifiGAN.L1SpecLoss.forward",
-    "speechbrain.lobes.models.hifigan.mel_spectogram": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.HifiGAN.html#speechbrain.lobes.models.HifiGAN.mel_spectogram",
+    "speechbrain.lobes.models.hifigan.mel_spectrogram": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.HifiGAN.html#speechbrain.lobes.models.HifiGAN.mel_spectrogram",
     "speechbrain.lobes.models.hifigan.melganfeatureloss": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.HifiGAN.html#speechbrain.lobes.models.HifiGAN.MelganFeatureLoss",
     "speechbrain.lobes.models.hifigan.melganfeatureloss.forward": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.HifiGAN.html#speechbrain.lobes.models.HifiGAN.MelganFeatureLoss.forward",
     "speechbrain.lobes.models.hifigan.msedloss": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.HifiGAN.html#speechbrain.lobes.models.HifiGAN.MSEDLoss",
@@ -1534,7 +1534,7 @@ MAPPING = {
     "speechbrain.lobes.models.tacotron2.loss.forward": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.Tacotron2.html#speechbrain.lobes.models.Tacotron2.Loss.forward",
     "speechbrain.lobes.models.tacotron2.loss.get_attention_loss": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.Tacotron2.html#speechbrain.lobes.models.Tacotron2.Loss.get_attention_loss",
     "speechbrain.lobes.models.tacotron2.lossstats": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.Tacotron2.html#speechbrain.lobes.models.Tacotron2.LossStats",
-    "speechbrain.lobes.models.tacotron2.mel_spectogram": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.Tacotron2.html#speechbrain.lobes.models.Tacotron2.mel_spectogram",
+    "speechbrain.lobes.models.tacotron2.mel_spectrogram": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.Tacotron2.html#speechbrain.lobes.models.Tacotron2.mel_spectrogram",
     "speechbrain.lobes.models.tacotron2.postnet": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.Tacotron2.html#speechbrain.lobes.models.Tacotron2.Postnet",
     "speechbrain.lobes.models.tacotron2.postnet.forward": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.Tacotron2.html#speechbrain.lobes.models.Tacotron2.Postnet.forward",
     "speechbrain.lobes.models.tacotron2.prenet": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.lobes.models.Tacotron2.html#speechbrain.lobes.models.Tacotron2.Prenet",
@@ -2285,6 +2285,7 @@ MAPPING = {
     "speechbrain.utils.bleu": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.utils.bleu.html",
     "speechbrain.utils.callchains": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.utils.callchains.html",
     "speechbrain.utils.callchains.lengths_arg_exists": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.utils.callchains.html#speechbrain.utils.callchains.lengths_arg_exists",
+    "speechbrain.utils.callchains.lengths_arg_name": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.utils.callchains.html#speechbrain.utils.callchains.lengths_arg_name",
     "speechbrain.utils.callchains.lengthscapablechain": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.utils.callchains.html#speechbrain.utils.callchains.LengthsCapableChain",
     "speechbrain.utils.callchains.lengthscapablechain.__call__": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.utils.callchains.html#speechbrain.utils.callchains.LengthsCapableChain.__call__",
     "speechbrain.utils.callchains.lengthscapablechain.append": "https://speechbrain.readthedocs.io/en/latest/API/speechbrain.utils.callchains.html#speechbrain.utils.callchains.LengthsCapableChain.append",

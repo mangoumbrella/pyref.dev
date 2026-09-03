@@ -122,6 +122,7 @@ MAPPING = {
     "b2luigi.batch.processes.lsf.lsfprocess.terminate_job": "https://b2luigi.belle2.org/api/batch_processes.html#b2luigi.batch.processes.lsf.LSFProcess.terminate_job",
     "b2luigi.batch.processes.slurm": "https://b2luigi.belle2.org/api/batch_processes.html#module-b2luigi.batch.processes.slurm",
     "b2luigi.batch.processes.slurm.slurmjobstatus": "https://b2luigi.belle2.org/api/batch_processes.html#b2luigi.batch.processes.slurm.SlurmJobStatus",
+    "b2luigi.batch.processes.slurm.slurmjobstatus._generate_next_value_": "https://b2luigi.belle2.org/api/batch_processes.html#b2luigi.batch.processes.slurm.SlurmJobStatus._generate_next_value_",
     "b2luigi.batch.processes.slurm.slurmjobstatus.boot_fail": "https://b2luigi.belle2.org/api/batch_processes.html#b2luigi.batch.processes.slurm.SlurmJobStatus.boot_fail",
     "b2luigi.batch.processes.slurm.slurmjobstatus.cancelled": "https://b2luigi.belle2.org/api/batch_processes.html#b2luigi.batch.processes.slurm.SlurmJobStatus.cancelled",
     "b2luigi.batch.processes.slurm.slurmjobstatus.completed": "https://b2luigi.belle2.org/api/batch_processes.html#b2luigi.batch.processes.slurm.SlurmJobStatus.completed",

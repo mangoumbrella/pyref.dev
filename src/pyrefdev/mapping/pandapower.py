@@ -265,6 +265,7 @@ MAPPING = {
     "pandapower.networks.gbreducednetwork": "https://pandapower.readthedocs.io/en/latest/networks/power_system_test_cases.html#pandapower.networks.GBreducednetwork",
     "pandapower.networks.iceland": "https://pandapower.readthedocs.io/en/latest/networks/power_system_test_cases.html#pandapower.networks.iceland",
     "pandapower.networks.ieee_european_lv_asymmetric": "https://pandapower.readthedocs.io/en/latest/networks/3phase_grids.html#pandapower.networks.ieee_european_lv_asymmetric",
+    "pandapower.networks.lv_schutterwald": "https://pandapower.readthedocs.io/en/latest/networks/lv_schutterwald.html#pandapower.networks.lv_schutterwald",
     "pandapower.networks.mv_oberrhein": "https://pandapower.readthedocs.io/en/latest/networks/mv_oberrhein.html#pandapower.networks.mv_oberrhein",
     "pandapower.networks.panda_four_load_branch": "https://pandapower.readthedocs.io/en/latest/networks/test.html#pandapower.networks.panda_four_load_branch",
     "pandapower.networks.simple_four_bus_system": "https://pandapower.readthedocs.io/en/latest/networks/test.html#pandapower.networks.simple_four_bus_system",

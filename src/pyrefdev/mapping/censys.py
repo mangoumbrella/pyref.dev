@@ -1,4 +1,4 @@
-VERSION = "2.2.19"
+VERSION = "2.3.0"
 
 # fmt: off
 MAPPING = {
@@ -228,6 +228,7 @@ MAPPING = {
     "censys.search.v2.api.censyssearchapiv2.list_all_tags": "https://censys-python.readthedocs.io/en/stable/censys.search.v2.html#censys.search.v2.api.CensysSearchAPIv2.list_all_tags",
     "censys.search.v2.api.censyssearchapiv2.list_tags_on_document": "https://censys-python.readthedocs.io/en/stable/censys.search.v2.html#censys.search.v2.api.CensysSearchAPIv2.list_tags_on_document",
     "censys.search.v2.api.censyssearchapiv2.query": "https://censys-python.readthedocs.io/en/stable/censys.search.v2.html#censys.search.v2.api.CensysSearchAPIv2.Query",
+    "censys.search.v2.api.censyssearchapiv2.query.nextcursor": "https://censys-python.readthedocs.io/en/stable/censys.search.v2.html#censys.search.v2.api.CensysSearchAPIv2.Query.nextCursor",
     "censys.search.v2.api.censyssearchapiv2.query.total": "https://censys-python.readthedocs.io/en/stable/censys.search.v2.html#censys.search.v2.api.CensysSearchAPIv2.Query.total",
     "censys.search.v2.api.censyssearchapiv2.query.view_all": "https://censys-python.readthedocs.io/en/stable/censys.search.v2.html#censys.search.v2.api.CensysSearchAPIv2.Query.view_all",
     "censys.search.v2.api.censyssearchapiv2.quota": "https://censys-python.readthedocs.io/en/stable/censys.search.v2.html#censys.search.v2.api.CensysSearchAPIv2.quota",

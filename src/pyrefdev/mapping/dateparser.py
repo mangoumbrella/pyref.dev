@@ -1,4 +1,4 @@
-VERSION = "1.4.1"
+VERSION = "1.4.2"
 
 # fmt: off
 MAPPING = {
@@ -65,6 +65,7 @@ MAPPING = {
     "dateparser.timezone_parser.build_tz_offsets": "https://dateparser.readthedocs.io/en/latest/dateparser.html#dateparser.timezone_parser.build_tz_offsets",
     "dateparser.timezone_parser.convert_to_local_tz": "https://dateparser.readthedocs.io/en/latest/dateparser.html#dateparser.timezone_parser.convert_to_local_tz",
     "dateparser.timezone_parser.get_local_tz_offset": "https://dateparser.readthedocs.io/en/latest/dateparser.html#dateparser.timezone_parser.get_local_tz_offset",
+    "dateparser.timezone_parser.is_timezone_token": "https://dateparser.readthedocs.io/en/latest/dateparser.html#dateparser.timezone_parser.is_timezone_token",
     "dateparser.timezone_parser.pop_tz_offset_from_string": "https://dateparser.readthedocs.io/en/latest/dateparser.html#dateparser.timezone_parser.pop_tz_offset_from_string",
     "dateparser.timezone_parser.statictzinfo": "https://dateparser.readthedocs.io/en/latest/dateparser.html#dateparser.timezone_parser.StaticTzInfo",
     "dateparser.timezone_parser.statictzinfo.dst": "https://dateparser.readthedocs.io/en/latest/dateparser.html#dateparser.timezone_parser.StaticTzInfo.dst",

@@ -1,4 +1,4 @@
-VERSION = "9.1.15"
+VERSION = "9.1.16"
 
 # fmt: off
 MAPPING = {
@@ -14849,6 +14849,7 @@ MAPPING = {
     "dirac.workloadmanagementsystem.client.jobmonitoringclient.jobmonitoringclient.httpsclient": "https://dirac.diracgrid.org/en/latest/CodeDocumentation/WorkloadManagementSystem/Client/JobMonitoringClient.html#DIRAC.WorkloadManagementSystem.Client.JobMonitoringClient.JobMonitoringClient.httpsClient",
     "dirac.workloadmanagementsystem.client.jobmonitoringclient.jobmonitoringclient.setserver": "https://dirac.diracgrid.org/en/latest/CodeDocumentation/WorkloadManagementSystem/Client/JobMonitoringClient.html#DIRAC.WorkloadManagementSystem.Client.JobMonitoringClient.JobMonitoringClient.setServer",
     "dirac.workloadmanagementsystem.client.jobreport": "https://dirac.diracgrid.org/en/latest/CodeDocumentation/WorkloadManagementSystem/Client/JobReport.html#module-DIRAC.WorkloadManagementSystem.Client.JobReport",
+    "dirac.workloadmanagementsystem.client.jobreport.isfiniteparametervalue": "https://dirac.diracgrid.org/en/latest/CodeDocumentation/WorkloadManagementSystem/Client/JobReport.html#DIRAC.WorkloadManagementSystem.Client.JobReport.isFiniteParameterValue",
     "dirac.workloadmanagementsystem.client.jobreport.jobreport": "https://dirac.diracgrid.org/en/latest/CodeDocumentation/WorkloadManagementSystem/Client/JobReport.html#DIRAC.WorkloadManagementSystem.Client.JobReport.JobReport",
     "dirac.workloadmanagementsystem.client.jobreport.jobreport.__init__": "https://dirac.diracgrid.org/en/latest/CodeDocumentation/WorkloadManagementSystem/Client/JobReport.html#DIRAC.WorkloadManagementSystem.Client.JobReport.JobReport.__init__",
     "dirac.workloadmanagementsystem.client.jobreport.jobreport.commit": "https://dirac.diracgrid.org/en/latest/CodeDocumentation/WorkloadManagementSystem/Client/JobReport.html#DIRAC.WorkloadManagementSystem.Client.JobReport.JobReport.commit",

@@ -1,4 +1,4 @@
-VERSION = "1.19.0"
+VERSION = "1.19.1"
 
 # fmt: off
 MAPPING = {
@@ -306,6 +306,7 @@ MAPPING = {
     "alembic.ddl.impl.string": "https://alembic.sqlalchemy.org/en/latest/api/ddl.html",
     "alembic.ddl.impl.string.params": "https://alembic.sqlalchemy.org/en/latest/api/ddl.html",
     "alembic.ddl.impl.string.params.collation": "https://alembic.sqlalchemy.org/en/latest/api/ddl.html#alembic.ddl.impl.String.params.collation",
+    "alembic.ddl.impl.string.params.collation_schema": "https://alembic.sqlalchemy.org/en/latest/api/ddl.html#alembic.ddl.impl.String.params.collation_schema",
     "alembic.ddl.impl.string.params.length": "https://alembic.sqlalchemy.org/en/latest/api/ddl.html#alembic.ddl.impl.String.params.length",
     "alembic.ddl.impl.table": "https://alembic.sqlalchemy.org/en/latest/api/ddl.html",
     "alembic.ddl.impl.table.params": "https://alembic.sqlalchemy.org/en/latest/api/ddl.html",

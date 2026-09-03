@@ -1,4 +1,4 @@
-VERSION = "25.12.2"
+VERSION = "25.13.2"
 
 # fmt: off
 MAPPING = {
@@ -83,6 +83,8 @@ MAPPING = {
     "htcondor2._remote_param.remoteparam": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/remoteparam.html#htcondor2.RemoteParam",
     "htcondor2._schedd": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/schedd.html",
     "htcondor2._schedd.schedd": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/schedd.html#htcondor2.Schedd",
+    "htcondor2._security_context": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/securitycontext.html",
+    "htcondor2._security_context.securitycontext": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/securitycontext.html#htcondor2.SecurityContext",
     "htcondor2._startd": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/startd.html",
     "htcondor2._startd.startd": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/startd.html#htcondor2.Startd",
     "htcondor2._submit": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/submit.html",
@@ -372,6 +374,8 @@ MAPPING = {
     "htcondor2.schedd.unexport_jobs": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/schedd.html#htcondor2.Schedd.unexport_jobs",
     "htcondor2.schedd.updateprojectrec": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/schedd.html#htcondor2.Schedd.updateProjectRec",
     "htcondor2.schedd.updateuserrec": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/schedd.html#htcondor2.Schedd.updateUserRec",
+    "htcondor2.securitycontext": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/securitycontext.html#htcondor2.SecurityContext",
+    "htcondor2.securitycontext.preferred_token": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/securitycontext.html#htcondor2.SecurityContext.preferred_token",
     "htcondor2.send_alive": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/module.html#htcondor2.send_alive",
     "htcondor2.send_command": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/module.html#htcondor2.send_command",
     "htcondor2.set_ready_state": "https://htcondor.readthedocs.io/en/latest/apis/python-bindings/api/version2/htcondor2/module.html#htcondor2.set_ready_state",

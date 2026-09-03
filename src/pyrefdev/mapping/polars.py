@@ -1,4 +1,4 @@
-VERSION = "1.43.1"
+VERSION = "1.44.1"
 
 # fmt: off
 MAPPING = {
@@ -45,6 +45,7 @@ MAPPING = {
     "polars.concat_arr": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.concat_arr.html#polars.concat_arr",
     "polars.concat_list": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.concat_list.html#polars.concat_list",
     "polars.concat_str": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.concat_str.html#polars.concat_str",
+    "polars.config.enable_monitoring": "https://docs.pola.rs/api/python/stable/reference/api/polars.Config.enable_monitoring.html#polars.Config.enable_monitoring",
     "polars.config.load": "https://docs.pola.rs/api/python/stable/reference/api/polars.Config.load.html#polars.Config.load",
     "polars.config.load_from_file": "https://docs.pola.rs/api/python/stable/reference/api/polars.Config.load_from_file.html#polars.Config.load_from_file",
     "polars.config.restore_defaults": "https://docs.pola.rs/api/python/stable/reference/api/polars.Config.restore_defaults.html#polars.Config.restore_defaults",
@@ -401,6 +402,7 @@ MAPPING = {
     "polars.expr.arr.arg_min": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.arr.arg_min.html#polars.Expr.arr.arg_min",
     "polars.expr.arr.contains": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.arr.contains.html#polars.Expr.arr.contains",
     "polars.expr.arr.count_matches": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.arr.count_matches.html#polars.Expr.arr.count_matches",
+    "polars.expr.arr.dot": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.arr.dot.html#polars.Expr.arr.dot",
     "polars.expr.arr.eval": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.arr.eval.html#polars.Expr.arr.eval",
     "polars.expr.arr.explode": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.arr.explode.html#polars.Expr.arr.explode",
     "polars.expr.arr.first": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.arr.first.html#polars.Expr.arr.first",
@@ -782,6 +784,7 @@ MAPPING = {
     "polars.expr.str.to_uppercase": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.str.to_uppercase.html#polars.Expr.str.to_uppercase",
     "polars.expr.str.zfill": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.str.zfill.html#polars.Expr.str.zfill",
     "polars.expr.struct.__getitem__": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.struct.__getitem__.html#polars.Expr.struct.__getitem__",
+    "polars.expr.struct.drop": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.struct.drop.html#polars.Expr.struct.drop",
     "polars.expr.struct.field": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.struct.field.html#polars.Expr.struct.field",
     "polars.expr.struct.json_encode": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.struct.json_encode.html#polars.Expr.struct.json_encode",
     "polars.expr.struct.rename_fields": "https://docs.pola.rs/api/python/stable/reference/expressions/api/polars.Expr.struct.rename_fields.html#polars.Expr.struct.rename_fields",
@@ -1082,6 +1085,7 @@ MAPPING = {
     "polars.series.arr.arg_min": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.arr.arg_min.html#polars.Series.arr.arg_min",
     "polars.series.arr.contains": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.arr.contains.html#polars.Series.arr.contains",
     "polars.series.arr.count_matches": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.arr.count_matches.html#polars.Series.arr.count_matches",
+    "polars.series.arr.dot": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.arr.dot.html#polars.Series.arr.dot",
     "polars.series.arr.eval": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.arr.eval.html#polars.Series.arr.eval",
     "polars.series.arr.explode": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.arr.explode.html#polars.Series.arr.explode",
     "polars.series.arr.first": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.arr.first.html#polars.Series.arr.first",
@@ -1448,6 +1452,7 @@ MAPPING = {
     "polars.series.str.to_titlecase": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.str.to_titlecase.html#polars.Series.str.to_titlecase",
     "polars.series.str.to_uppercase": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.str.to_uppercase.html#polars.Series.str.to_uppercase",
     "polars.series.str.zfill": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.str.zfill.html#polars.Series.str.zfill",
+    "polars.series.struct.drop": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.struct.drop.html#polars.Series.struct.drop",
     "polars.series.struct.field": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.struct.field.html#polars.Series.struct.field",
     "polars.series.struct.fields": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.struct.fields.html#polars.Series.struct.fields",
     "polars.series.struct.json_encode": "https://docs.pola.rs/api/python/stable/reference/series/api/polars.Series.struct.json_encode.html#polars.Series.struct.json_encode",

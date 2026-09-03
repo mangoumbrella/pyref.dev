@@ -1,4 +1,4 @@
-VERSION = "0.19.1"
+VERSION = "0.20.0"
 
 # fmt: off
 MAPPING = {
@@ -7,6 +7,7 @@ MAPPING = {
     "optree.broadcast_common": "https://optree.readthedocs.io/en/latest/ops.html#optree.broadcast_common",
     "optree.broadcast_prefix": "https://optree.readthedocs.io/en/latest/ops.html#optree.broadcast_prefix",
     "optree.customtreenode": "https://optree.readthedocs.io/en/latest/typing.html#optree.CustomTreeNode",
+    "optree.customtreenode.__annotations_cache__": "https://optree.readthedocs.io/en/latest/typing.html#optree.CustomTreeNode.__annotations_cache__",
     "optree.customtreenode.__init__": "https://optree.readthedocs.io/en/latest/typing.html#optree.CustomTreeNode.__init__",
     "optree.customtreenode.__tree_flatten__": "https://optree.readthedocs.io/en/latest/typing.html#optree.CustomTreeNode.__tree_flatten__",
     "optree.customtreenode.__tree_unflatten__": "https://optree.readthedocs.io/en/latest/typing.html#optree.CustomTreeNode.__tree_unflatten__",
@@ -69,6 +70,7 @@ MAPPING = {
     "optree.pytreekind.defaultdict": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeKind.DEFAULTDICT",
     "optree.pytreekind.deque": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeKind.DEQUE",
     "optree.pytreekind.dict": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeKind.DICT",
+    "optree.pytreekind.frozendict": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeKind.FROZENDICT",
     "optree.pytreekind.leaf": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeKind.LEAF",
     "optree.pytreekind.list": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeKind.LIST",
     "optree.pytreekind.namedtuple": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeKind.NAMEDTUPLE",
@@ -78,6 +80,8 @@ MAPPING = {
     "optree.pytreekind.structsequence": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeKind.STRUCTSEQUENCE",
     "optree.pytreekind.tuple": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeKind.TUPLE",
     "optree.pytreespec": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec",
+    "optree.pytreespec.__annotate_func__": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec.__annotate_func__",
+    "optree.pytreespec.__annotations_cache__": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec.__annotations_cache__",
     "optree.pytreespec.__eq__": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec.__eq__",
     "optree.pytreespec.__ge__": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec.__ge__",
     "optree.pytreespec.__gt__": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec.__gt__",
@@ -87,6 +91,7 @@ MAPPING = {
     "optree.pytreespec.__len__": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec.__len__",
     "optree.pytreespec.__lt__": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec.__lt__",
     "optree.pytreespec.__ne__": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec.__ne__",
+    "optree.pytreespec.__reduce__": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec.__reduce__",
     "optree.pytreespec.accessors": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec.accessors",
     "optree.pytreespec.broadcast_to_common_suffix": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec.broadcast_to_common_suffix",
     "optree.pytreespec.child": "https://optree.readthedocs.io/en/latest/typing.html#optree.PyTreeSpec.child",
@@ -160,6 +165,7 @@ MAPPING = {
     "optree.treespec_entries": "https://optree.readthedocs.io/en/latest/ops.html#optree.treespec_entries",
     "optree.treespec_entry": "https://optree.readthedocs.io/en/latest/ops.html#optree.treespec_entry",
     "optree.treespec_from_collection": "https://optree.readthedocs.io/en/latest/ops.html#optree.treespec_from_collection",
+    "optree.treespec_frozendict": "https://optree.readthedocs.io/en/latest/ops.html#optree.treespec_frozendict",
     "optree.treespec_is_leaf": "https://optree.readthedocs.io/en/latest/ops.html#optree.treespec_is_leaf",
     "optree.treespec_is_one_level": "https://optree.readthedocs.io/en/latest/ops.html#optree.treespec_is_one_level",
     "optree.treespec_is_prefix": "https://optree.readthedocs.io/en/latest/ops.html#optree.treespec_is_prefix",
