@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+Nothing noticeable unreleased.
+
+## v2026.4
+
 - Updated the following packages:
   - [aiida-core](https://aiida.readthedocs.io/projects/aiida-core/en/stable/)
   - [aiogoogle](https://aiogoogle.readthedocs.io/en/latest/)
