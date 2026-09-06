@@ -1,4 +1,4 @@
-VERSION = "4.23.3"
+VERSION = "4.24.0"
 
 # fmt: off
 MAPPING = {
@@ -112,6 +112,7 @@ MAPPING = {
     "cyclopts.config.env.source": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Env.source",
     "cyclopts.config.json": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Json",
     "cyclopts.config.json.allow_unknown": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Json.allow_unknown",
+    "cyclopts.config.json.encoding": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Json.encoding",
     "cyclopts.config.json.must_exist": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Json.must_exist",
     "cyclopts.config.json.path": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Json.path",
     "cyclopts.config.json.root_keys": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Json.root_keys",
@@ -128,6 +129,7 @@ MAPPING = {
     "cyclopts.config.toml.use_commands_as_keys": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Toml.use_commands_as_keys",
     "cyclopts.config.yaml": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Yaml",
     "cyclopts.config.yaml.allow_unknown": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Yaml.allow_unknown",
+    "cyclopts.config.yaml.encoding": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Yaml.encoding",
     "cyclopts.config.yaml.must_exist": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Yaml.must_exist",
     "cyclopts.config.yaml.path": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Yaml.path",
     "cyclopts.config.yaml.root_keys": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.config.Yaml.root_keys",
@@ -283,6 +285,7 @@ MAPPING = {
     "cyclopts.parameter.alias": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.Parameter.alias",
     "cyclopts.parameter.allow_leading_hyphen": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.Parameter.allow_leading_hyphen",
     "cyclopts.parameter.allow_repeating": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.Parameter.allow_repeating",
+    "cyclopts.parameter.choices": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.Parameter.choices",
     "cyclopts.parameter.combine": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.Parameter.combine",
     "cyclopts.parameter.consume_multiple": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.Parameter.consume_multiple",
     "cyclopts.parameter.converter": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.Parameter.converter",

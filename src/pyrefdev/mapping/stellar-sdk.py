@@ -1,4 +1,4 @@
-VERSION = "16.0.0"
+VERSION = "16.1.0"
 
 # fmt: off
 MAPPING = {
@@ -540,13 +540,18 @@ MAPPING = {
     "stellar_sdk.exceptions.basehorizonerror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.BaseHorizonError",
     "stellar_sdk.exceptions.baserequesterror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.BaseRequestError",
     "stellar_sdk.exceptions.connectionerror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.ConnectionError",
+    "stellar_sdk.exceptions.contractcodenotfounderror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.ContractCodeNotFoundError",
+    "stellar_sdk.exceptions.contractinstancenotfounderror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.ContractInstanceNotFoundError",
+    "stellar_sdk.exceptions.contractwasmretrievalerror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.ContractWasmRetrievalError",
     "stellar_sdk.exceptions.ed25519publickeyinvaliderror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.Ed25519PublicKeyInvalidError",
     "stellar_sdk.exceptions.ed25519secretseedinvaliderror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.Ed25519SecretSeedInvalidError",
+    "stellar_sdk.exceptions.externalrefnotfounderror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.ExternalRefNotFoundError",
     "stellar_sdk.exceptions.featurenotenablederror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.FeatureNotEnabledError",
     "stellar_sdk.exceptions.memoinvalidexception": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.MemoInvalidException",
     "stellar_sdk.exceptions.missinged25519secretseederror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.MissingEd25519SecretSeedError",
     "stellar_sdk.exceptions.noapproximationerror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.NoApproximationError",
     "stellar_sdk.exceptions.notfounderror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.NotFoundError",
+    "stellar_sdk.exceptions.sachasnowasmerror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.SACHasNoWasmError",
     "stellar_sdk.exceptions.sdkerror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.SdkError",
     "stellar_sdk.exceptions.signatureexisterror": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.exceptions.SignatureExistError",
     "stellar_sdk.fee_bump_transaction": "https://stellar-sdk.readthedocs.io/en/stable/api.html",
@@ -813,6 +818,7 @@ MAPPING = {
     "stellar_sdk.scval.from_bytes": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.from_bytes",
     "stellar_sdk.scval.from_duration": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.from_duration",
     "stellar_sdk.scval.from_enum": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.from_enum",
+    "stellar_sdk.scval.from_executable_tag": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.from_executable_tag",
     "stellar_sdk.scval.from_int128": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.from_int128",
     "stellar_sdk.scval.from_int256": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.from_int256",
     "stellar_sdk.scval.from_int32": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.from_int32",
@@ -833,6 +839,7 @@ MAPPING = {
     "stellar_sdk.scval.to_bytes": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.to_bytes",
     "stellar_sdk.scval.to_duration": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.to_duration",
     "stellar_sdk.scval.to_enum": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.to_enum",
+    "stellar_sdk.scval.to_executable_tag": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.to_executable_tag",
     "stellar_sdk.scval.to_int128": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.to_int128",
     "stellar_sdk.scval.to_int256": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.to_int256",
     "stellar_sdk.scval.to_int32": "https://stellar-sdk.readthedocs.io/en/stable/api.html#stellar_sdk.scval.to_int32",

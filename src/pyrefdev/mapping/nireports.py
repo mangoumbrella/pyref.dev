@@ -1,4 +1,4 @@
-VERSION = "25.3.0"
+VERSION = "26.0.0"
 
 # fmt: off
 MAPPING = {
@@ -44,6 +44,8 @@ MAPPING = {
     "nireports.assembler.tools.generate_reports": "https://nireports.readthedocs.io/en/stable/api/nireports.assembler.tools.html#nireports.assembler.tools.generate_reports",
     "nireports.assembler.tools.run_reports": "https://nireports.readthedocs.io/en/stable/api/nireports.assembler.tools.html#nireports.assembler.tools.run_reports",
     "nireports.cli": "https://nireports.readthedocs.io/en/stable/api/nireports.cli.html#module-nireports.cli",
+    "nireports.deprecation": "https://nireports.readthedocs.io/en/stable/api/nireports.deprecation.html#module-nireports.deprecation",
+    "nireports.deprecation.version_comparator": "https://nireports.readthedocs.io/en/stable/api/nireports.deprecation.html#nireports.deprecation.version_comparator",
     "nireports.interfaces": "https://nireports.readthedocs.io/en/stable/api/nireports.interfaces.html#module-nireports.interfaces",
     "nireports.interfaces.base": "https://nireports.readthedocs.io/en/stable/api/nireports.interfaces.base.html#module-nireports.interfaces.base",
     "nireports.interfaces.compcorvarianceplot": "https://nireports.readthedocs.io/en/stable/api/nireports.interfaces.html#nireports.interfaces.CompCorVariancePlot",

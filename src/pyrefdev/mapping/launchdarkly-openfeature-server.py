@@ -1,4 +1,4 @@
-VERSION = "0.5.1"
+VERSION = "0.8.0"
 
 # fmt: off
 MAPPING = {
@@ -14,6 +14,7 @@ MAPPING = {
     "ld_openfeature.launchdarklyprovider.resolve_object_details": "https://launchdarkly-openfeature-python-sdk.readthedocs.io/en/stable/api-main.html#ld_openfeature.LaunchDarklyProvider.resolve_object_details",
     "ld_openfeature.launchdarklyprovider.resolve_string_details": "https://launchdarkly-openfeature-python-sdk.readthedocs.io/en/stable/api-main.html#ld_openfeature.LaunchDarklyProvider.resolve_string_details",
     "ld_openfeature.launchdarklyprovider.shutdown": "https://launchdarkly-openfeature-python-sdk.readthedocs.io/en/stable/api-main.html#ld_openfeature.LaunchDarklyProvider.shutdown",
+    "ld_openfeature.launchdarklyprovider.track": "https://launchdarkly-openfeature-python-sdk.readthedocs.io/en/stable/api-main.html#ld_openfeature.LaunchDarklyProvider.track",
     "ld_openfeature.provider": "https://launchdarkly-openfeature-python-sdk.readthedocs.io/en/stable/api-main.html",
     "ld_openfeature.provider.launchdarklyprovider": "https://launchdarkly-openfeature-python-sdk.readthedocs.io/en/stable/api-main.html#ld_openfeature.LaunchDarklyProvider",
 }

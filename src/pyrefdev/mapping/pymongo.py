@@ -1,4 +1,4 @@
-VERSION = "4.17.0"
+VERSION = "4.18.0"
 
 # fmt: off
 MAPPING = {
@@ -33,15 +33,6 @@ MAPPING = {
     "pymongo.asynchronous.client_session.asyncclientsession.session_id": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/client_session.html#pymongo.asynchronous.client_session.AsyncClientSession.session_id",
     "pymongo.asynchronous.client_session.asyncclientsession.start_transaction": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/client_session.html#pymongo.asynchronous.client_session.AsyncClientSession.start_transaction",
     "pymongo.asynchronous.client_session.asyncclientsession.with_transaction": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/client_session.html#pymongo.asynchronous.client_session.AsyncClientSession.with_transaction",
-    "pymongo.asynchronous.client_session.sessionoptions": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/client_session.html#pymongo.asynchronous.client_session.SessionOptions",
-    "pymongo.asynchronous.client_session.sessionoptions.causal_consistency": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/client_session.html#pymongo.asynchronous.client_session.SessionOptions.causal_consistency",
-    "pymongo.asynchronous.client_session.sessionoptions.default_transaction_options": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/client_session.html#pymongo.asynchronous.client_session.SessionOptions.default_transaction_options",
-    "pymongo.asynchronous.client_session.sessionoptions.snapshot": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/client_session.html#pymongo.asynchronous.client_session.SessionOptions.snapshot",
-    "pymongo.asynchronous.client_session.transactionoptions": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/client_session.html#pymongo.asynchronous.client_session.TransactionOptions",
-    "pymongo.asynchronous.client_session.transactionoptions.max_commit_time_ms": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/client_session.html#pymongo.asynchronous.client_session.TransactionOptions.max_commit_time_ms",
-    "pymongo.asynchronous.client_session.transactionoptions.read_concern": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/client_session.html#pymongo.asynchronous.client_session.TransactionOptions.read_concern",
-    "pymongo.asynchronous.client_session.transactionoptions.read_preference": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/client_session.html#pymongo.asynchronous.client_session.TransactionOptions.read_preference",
-    "pymongo.asynchronous.client_session.transactionoptions.write_concern": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/client_session.html#pymongo.asynchronous.client_session.TransactionOptions.write_concern",
     "pymongo.asynchronous.collection": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/collection.html",
     "pymongo.asynchronous.collection.asynccollection": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/collection.html#pymongo.asynchronous.collection.AsyncCollection",
     "pymongo.asynchronous.collection.asynccollection.__getattr__": "https://pymongo.readthedocs.io/en/stable/api/pymongo/asynchronous/collection.html#pymongo.asynchronous.collection.AsyncCollection.__getattr__",
@@ -417,6 +408,7 @@ MAPPING = {
     "pymongo.encryption.algorithm.indexed": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.Algorithm.INDEXED",
     "pymongo.encryption.algorithm.range": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.Algorithm.RANGE",
     "pymongo.encryption.algorithm.rangepreview": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.Algorithm.RANGEPREVIEW",
+    "pymongo.encryption.algorithm.string": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.Algorithm.STRING",
     "pymongo.encryption.algorithm.textpreview": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.Algorithm.TEXTPREVIEW",
     "pymongo.encryption.algorithm.unindexed": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.Algorithm.UNINDEXED",
     "pymongo.encryption.clientencryption": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.ClientEncryption",
@@ -435,10 +427,13 @@ MAPPING = {
     "pymongo.encryption.clientencryption.rewrap_many_data_key": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.ClientEncryption.rewrap_many_data_key",
     "pymongo.encryption.querytype": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType",
     "pymongo.encryption.querytype.equality": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.EQUALITY",
+    "pymongo.encryption.querytype.prefix": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.PREFIX",
     "pymongo.encryption.querytype.prefixpreview": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.PREFIXPREVIEW",
     "pymongo.encryption.querytype.range": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.RANGE",
     "pymongo.encryption.querytype.rangepreview": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.RANGEPREVIEW",
+    "pymongo.encryption.querytype.substring": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.SUBSTRING",
     "pymongo.encryption.querytype.substringpreview": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.SUBSTRINGPREVIEW",
+    "pymongo.encryption.querytype.suffix": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.SUFFIX",
     "pymongo.encryption.querytype.suffixpreview": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.QueryType.SUFFIXPREVIEW",
     "pymongo.encryption.rewrapmanydatakeyresult": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.RewrapManyDataKeyResult",
     "pymongo.encryption.rewrapmanydatakeyresult.bulk_write_result": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption.html#pymongo.encryption.RewrapManyDataKeyResult.bulk_write_result",
@@ -447,6 +442,7 @@ MAPPING = {
     "pymongo.encryption_options.check_min_pymongocrypt": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.check_min_pymongocrypt",
     "pymongo.encryption_options.prefixopts": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.PrefixOpts",
     "pymongo.encryption_options.rangeopts": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.RangeOpts",
+    "pymongo.encryption_options.stringopts": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.StringOpts",
     "pymongo.encryption_options.substringopts": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.SubstringOpts",
     "pymongo.encryption_options.suffixopts": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.SuffixOpts",
     "pymongo.encryption_options.textopts": "https://pymongo.readthedocs.io/en/stable/api/pymongo/encryption_options.html#pymongo.encryption_options.TextOpts",

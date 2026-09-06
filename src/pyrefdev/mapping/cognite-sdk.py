@@ -1,4 +1,4 @@
-VERSION = "8.14.0"
+VERSION = "8.15.0"
 
 # fmt: off
 MAPPING = {
@@ -415,6 +415,7 @@ MAPPING = {
     "cognite.client.asynccogniteclient.time_series.data.insert": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/generated/cognite.client.AsyncCogniteClient.time_series.data.insert.html#cognite.client.AsyncCogniteClient.time_series.data.insert",
     "cognite.client.asynccogniteclient.time_series.data.insert_dataframe": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/generated/cognite.client.AsyncCogniteClient.time_series.data.insert_dataframe.html#cognite.client.AsyncCogniteClient.time_series.data.insert_dataframe",
     "cognite.client.asynccogniteclient.time_series.data.insert_multiple": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/generated/cognite.client.AsyncCogniteClient.time_series.data.insert_multiple.html#cognite.client.AsyncCogniteClient.time_series.data.insert_multiple",
+    "cognite.client.asynccogniteclient.time_series.data.insert_states": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/generated/cognite.client.AsyncCogniteClient.time_series.data.insert_states.html#cognite.client.AsyncCogniteClient.time_series.data.insert_states",
     "cognite.client.asynccogniteclient.time_series.data.retrieve": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/generated/cognite.client.AsyncCogniteClient.time_series.data.retrieve.html#cognite.client.AsyncCogniteClient.time_series.data.retrieve",
     "cognite.client.asynccogniteclient.time_series.data.retrieve_arrays": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/generated/cognite.client.AsyncCogniteClient.time_series.data.retrieve_arrays.html#cognite.client.AsyncCogniteClient.time_series.data.retrieve_arrays",
     "cognite.client.asynccogniteclient.time_series.data.retrieve_dataframe": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/generated/cognite.client.AsyncCogniteClient.time_series.data.retrieve_dataframe.html#cognite.client.AsyncCogniteClient.time_series.data.retrieve_dataframe",

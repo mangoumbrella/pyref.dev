@@ -1,9 +1,10 @@
-VERSION = "9.17.2"
+VERSION = "9.18.1"
 
 # fmt: off
 MAPPING = {
     "copier": "https://copier.readthedocs.io/en/stable/",
     "copier.errors": "https://copier.readthedocs.io/en/stable/reference/api/#copier.errors",
+    "copier.errors.cleanupwarning": "https://copier.readthedocs.io/en/stable/reference/api/#copier.errors.CleanupWarning",
     "copier.errors.configfileerror": "https://copier.readthedocs.io/en/stable/reference/api/#copier.errors.ConfigFileError",
     "copier.errors.copieranswersinterrupt": "https://copier.readthedocs.io/en/stable/reference/api/#copier.errors.CopierAnswersInterrupt",
     "copier.errors.copiererror": "https://copier.readthedocs.io/en/stable/reference/api/#copier.errors.CopierError",

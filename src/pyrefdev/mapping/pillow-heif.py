@@ -1,4 +1,4 @@
-VERSION = "1.5.0"
+VERSION = "1.6.0"
 
 # fmt: off
 MAPPING = {
@@ -25,9 +25,15 @@ MAPPING = {
     "pillow_heif.heif.baseimage.size": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.BaseImage.size",
     "pillow_heif.heif.baseimage.stride": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.BaseImage.stride",
     "pillow_heif.heif.baseimage.to_pillow": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.BaseImage.to_pillow",
+    "pillow_heif.heif.heifauximage": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifAuxImage",
+    "pillow_heif.heif.heifauximage.data": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifAuxImage.data",
+    "pillow_heif.heif.heifauximage.load": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifAuxImage.load",
+    "pillow_heif.heif.heifauximage.mode": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifAuxImage.mode",
+    "pillow_heif.heif.heifauximage.size": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifAuxImage.size",
+    "pillow_heif.heif.heifauximage.stride": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifAuxImage.stride",
+    "pillow_heif.heif.heifauximage.to_pillow": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifAuxImage.to_pillow",
     "pillow_heif.heif.heifdepthimage": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifDepthImage",
     "pillow_heif.heif.heifdepthimage.data": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifDepthImage.data",
-    "pillow_heif.heif.heifdepthimage.info": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifDepthImage.info",
     "pillow_heif.heif.heifdepthimage.load": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifDepthImage.load",
     "pillow_heif.heif.heifdepthimage.mode": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifDepthImage.mode",
     "pillow_heif.heif.heifdepthimage.size": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifDepthImage.size",
@@ -69,7 +75,6 @@ MAPPING = {
     "pillow_heif.heifimage.data": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.data",
     "pillow_heif.heifimage.get_aux_image": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.get_aux_image",
     "pillow_heif.heifimage.has_alpha": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.has_alpha",
-    "pillow_heif.heifimage.info": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.info",
     "pillow_heif.heifimage.load": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.load",
     "pillow_heif.heifimage.mode": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.mode",
     "pillow_heif.heifimage.premultiplied_alpha": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.premultiplied_alpha",
@@ -113,9 +118,11 @@ MAPPING = {
     "pillow_heif.is_supported": "https://pillow-heif.readthedocs.io/en/latest/reference/API.html#pillow_heif.is_supported",
     "pillow_heif.open_heif": "https://pillow-heif.readthedocs.io/en/latest/reference/API.html#pillow_heif.open_heif",
     "pillow_heif.options": "https://pillow-heif.readthedocs.io/en/latest/options.html",
-    "pillow_heif.options.allow_incorrect_headers": "https://pillow-heif.readthedocs.io/en/latest/options.html#pillow_heif.options.ALLOW_INCORRECT_HEADERS",
+    "pillow_heif.options.aux_images": "https://pillow-heif.readthedocs.io/en/latest/options.html#pillow_heif.options.AUX_IMAGES",
     "pillow_heif.options.decode_threads": "https://pillow-heif.readthedocs.io/en/latest/options.html#pillow_heif.options.DECODE_THREADS",
     "pillow_heif.options.depth_images": "https://pillow-heif.readthedocs.io/en/latest/options.html#pillow_heif.options.DEPTH_IMAGES",
+    "pillow_heif.options.disable_security_limits": "https://pillow-heif.readthedocs.io/en/latest/options.html#pillow_heif.options.DISABLE_SECURITY_LIMITS",
+    "pillow_heif.options.grid_tile_size": "https://pillow-heif.readthedocs.io/en/latest/options.html#pillow_heif.options.GRID_TILE_SIZE",
     "pillow_heif.options.preferred_decoder": "https://pillow-heif.readthedocs.io/en/latest/options.html#pillow_heif.options.PREFERRED_DECODER",
     "pillow_heif.options.preferred_encoder": "https://pillow-heif.readthedocs.io/en/latest/options.html#pillow_heif.options.PREFERRED_ENCODER",
     "pillow_heif.options.quality": "https://pillow-heif.readthedocs.io/en/latest/options.html#pillow_heif.options.QUALITY",

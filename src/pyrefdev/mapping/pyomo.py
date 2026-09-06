@@ -25281,7 +25281,7 @@ MAPPING = {
     "pyomo.tpl.ply.lex.plylogger": "https://pyomo.readthedocs.io/en/stable/api/pyomo.tpl.ply.lex.PlyLogger.html#pyomo.tpl.ply.lex.PlyLogger",
     "pyomo.tpl.ply.lex.plylogger.__init__": "https://pyomo.readthedocs.io/en/stable/api/pyomo.tpl.ply.lex.PlyLogger.html#pyomo.tpl.ply.lex.PlyLogger.__init__",
     "pyomo.tpl.ply.lex.runmain": "https://pyomo.readthedocs.io/en/stable/api/pyomo.tpl.ply.lex.runmain.html#pyomo.tpl.ply.lex.runmain",
-    "pyomo.tpl.ply.lex.token": "https://pyomo.readthedocs.io/en/stable/api/pyomo.tpl.ply.lex.Token.html#pyomo.tpl.ply.lex.TOKEN",
+    "pyomo.tpl.ply.lex.token": "https://pyomo.readthedocs.io/en/stable/api/pyomo.tpl.ply.lex.TOKEN.html#pyomo.tpl.ply.lex.TOKEN",
     "pyomo.tpl.ply.yacc": "https://pyomo.readthedocs.io/en/stable/api/pyomo.tpl.ply.yacc.html",
     "pyomo.tpl.ply.yacc.call_errorfunc": "https://pyomo.readthedocs.io/en/stable/api/pyomo.tpl.ply.yacc.call_errorfunc.html#pyomo.tpl.ply.yacc.call_errorfunc",
     "pyomo.tpl.ply.yacc.digraph": "https://pyomo.readthedocs.io/en/stable/api/pyomo.tpl.ply.yacc.digraph.html#pyomo.tpl.ply.yacc.digraph",

@@ -1,4 +1,4 @@
-VERSION = "0.3.9"
+VERSION = "0.3.10"
 
 # fmt: off
 MAPPING = {
@@ -62,7 +62,6 @@ MAPPING = {
     "radio_beam.beam.isfinite": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.isfinite",
     "radio_beam.beam.isscalar": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.isscalar",
     "radio_beam.beam.item": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.item",
-    "radio_beam.beam.itemset": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.itemset",
     "radio_beam.beam.itemsize": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.itemsize",
     "radio_beam.beam.jtok": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.jtok",
     "radio_beam.beam.jtok_equiv": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.jtok_equiv",
@@ -74,12 +73,11 @@ MAPPING = {
     "radio_beam.beam.mt": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.mT",
     "radio_beam.beam.nbytes": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.nbytes",
     "radio_beam.beam.ndim": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.ndim",
-    "radio_beam.beam.newbyteorder": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.newbyteorder",
     "radio_beam.beam.nonzero": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.nonzero",
     "radio_beam.beam.pa": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.pa",
     "radio_beam.beam.partition": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.partition",
+    "radio_beam.beam.pixels_per_beam": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.pixels_per_beam",
     "radio_beam.beam.prod": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.prod",
-    "radio_beam.beam.ptp": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.ptp",
     "radio_beam.beam.put": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.put",
     "radio_beam.beam.ravel": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.ravel",
     "radio_beam.beam.real": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beam.html#radio_beam.Beam.real",
@@ -164,7 +162,6 @@ MAPPING = {
     "radio_beam.beams.isfinite": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.isfinite",
     "radio_beam.beams.isscalar": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.isscalar",
     "radio_beam.beams.item": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.item",
-    "radio_beam.beams.itemset": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.itemset",
     "radio_beam.beams.itemsize": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.itemsize",
     "radio_beam.beams.largest_beam": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.largest_beam",
     "radio_beam.beams.max": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.max",
@@ -174,11 +171,10 @@ MAPPING = {
     "radio_beam.beams.mt": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.mT",
     "radio_beam.beams.nbytes": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.nbytes",
     "radio_beam.beams.ndim": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.ndim",
-    "radio_beam.beams.newbyteorder": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.newbyteorder",
     "radio_beam.beams.nonzero": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.nonzero",
     "radio_beam.beams.partition": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.partition",
+    "radio_beam.beams.pixels_per_beam": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.pixels_per_beam",
     "radio_beam.beams.prod": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.prod",
-    "radio_beam.beams.ptp": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.ptp",
     "radio_beam.beams.put": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.put",
     "radio_beam.beams.ravel": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.ravel",
     "radio_beam.beams.real": "https://radio-beam.readthedocs.io/en/stable/api/radio_beam.Beams.html#radio_beam.Beams.real",

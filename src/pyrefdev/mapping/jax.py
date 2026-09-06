@@ -309,6 +309,7 @@ MAPPING = {
     "jax.experimental.pallas.mosaic_gpu.nd_loop": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.nd_loop.html#jax.experimental.pallas.mosaic_gpu.nd_loop",
     "jax.experimental.pallas.mosaic_gpu.planar_snake": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.planar_snake.html#jax.experimental.pallas.mosaic_gpu.planar_snake",
     "jax.experimental.pallas.mosaic_gpu.query_cluster_cancel": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.query_cluster_cancel.html#jax.experimental.pallas.mosaic_gpu.query_cluster_cancel",
+    "jax.experimental.pallas.mosaic_gpu.semaphore_signal_parallel": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.semaphore_signal_parallel.html#jax.experimental.pallas.mosaic_gpu.semaphore_signal_parallel",
     "jax.experimental.pallas.mosaic_gpu.semaphoresignal": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.SemaphoreSignal.html#jax.experimental.pallas.mosaic_gpu.SemaphoreSignal",
     "jax.experimental.pallas.mosaic_gpu.semaphoresignal.__init__": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.SemaphoreSignal.html#jax.experimental.pallas.mosaic_gpu.SemaphoreSignal.__init__",
     "jax.experimental.pallas.mosaic_gpu.semaphoretype": "https://docs.jax.dev/en/latest/_autosummary/jax.experimental.pallas.mosaic_gpu.SemaphoreType.html#jax.experimental.pallas.mosaic_gpu.SemaphoreType",

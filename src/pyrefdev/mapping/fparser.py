@@ -1,4 +1,4 @@
-VERSION = "0.2.4"
+VERSION = "0.2.5"
 
 # fmt: off
 MAPPING = {
@@ -1627,6 +1627,8 @@ MAPPING = {
     "fparser.two.fortran2003.format_item.tostr": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2003/index.html#fparser.two.Fortran2003.Format_Item.tostr",
     "fparser.two.fortran2003.format_item.use_names": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2003/index.html#fparser.two.Fortran2003.Format_Item.use_names",
     "fparser.two.fortran2003.format_item_c1002": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2003/index.html#fparser.two.Fortran2003.Format_Item_C1002",
+    "fparser.two.fortran2003.format_item_c1002._extension_match": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2003/index.html#fparser.two.Fortran2003.Format_Item_C1002._extension_match",
+    "fparser.two.fortran2003.format_item_c1002._standard_match": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2003/index.html#fparser.two.Fortran2003.Format_Item_C1002._standard_match",
     "fparser.two.fortran2003.format_item_c1002.match": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2003/index.html#fparser.two.Fortran2003.Format_Item_C1002.match",
     "fparser.two.fortran2003.format_item_c1002.subclass_names": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2003/index.html#fparser.two.Fortran2003.Format_Item_C1002.subclass_names",
     "fparser.two.fortran2003.format_item_c1002.tostr": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2003/index.html#fparser.two.Fortran2003.Format_Item_C1002.tostr",
@@ -2755,8 +2757,15 @@ MAPPING = {
     "fparser.two.fortran2008.intrinsic_function_reference": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Function_Reference",
     "fparser.two.fortran2008.intrinsic_function_reference._intrinsic_type": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Function_Reference._intrinsic_type",
     "fparser.two.fortran2008.intrinsic_name": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name",
+    "fparser.two.fortran2008.intrinsic_name.f08_bessel_functions": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name.f08_bessel_functions",
+    "fparser.two.fortran2008.intrinsic_name.f08_bit_transformation_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name.f08_bit_transformation_intrinsics",
+    "fparser.two.fortran2008.intrinsic_name.f08_bitsequence_comparison_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name.f08_bitsequence_comparison_intrinsics",
     "fparser.two.fortran2008.intrinsic_name.f08_bitshift_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name.f08_bitshift_intrinsics",
+    "fparser.two.fortran2008.intrinsic_name.f08_counting_bit_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name.f08_counting_bit_intrinsics",
+    "fparser.two.fortran2008.intrinsic_name.f08_masking_bit_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name.f08_masking_bit_intrinsics",
     "fparser.two.fortran2008.intrinsic_name.f08_math_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name.f08_math_intrinsics",
+    "fparser.two.fortran2008.intrinsic_name.f08_other_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name.f08_other_intrinsics",
+    "fparser.two.fortran2008.intrinsic_name.f08_trig_and_hyper_functions": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name.f08_trig_and_hyper_functions",
     "fparser.two.fortran2008.intrinsic_name.function_names": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name.function_names",
     "fparser.two.fortran2008.intrinsic_name.generic_function_names": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name.generic_function_names",
     "fparser.two.fortran2008.intrinsic_name.specific_function_names": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/index.html#fparser.two.Fortran2008.Intrinsic_Name.specific_function_names",
@@ -2764,8 +2773,15 @@ MAPPING = {
     "fparser.two.fortran2008.intrinsics_f08.intrinsic_function_reference": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Function_Reference",
     "fparser.two.fortran2008.intrinsics_f08.intrinsic_function_reference._intrinsic_type": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Function_Reference._intrinsic_type",
     "fparser.two.fortran2008.intrinsics_f08.intrinsic_name": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name",
+    "fparser.two.fortran2008.intrinsics_f08.intrinsic_name.f08_bessel_functions": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name.f08_bessel_functions",
+    "fparser.two.fortran2008.intrinsics_f08.intrinsic_name.f08_bit_transformation_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name.f08_bit_transformation_intrinsics",
+    "fparser.two.fortran2008.intrinsics_f08.intrinsic_name.f08_bitsequence_comparison_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name.f08_bitsequence_comparison_intrinsics",
     "fparser.two.fortran2008.intrinsics_f08.intrinsic_name.f08_bitshift_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name.f08_bitshift_intrinsics",
+    "fparser.two.fortran2008.intrinsics_f08.intrinsic_name.f08_counting_bit_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name.f08_counting_bit_intrinsics",
+    "fparser.two.fortran2008.intrinsics_f08.intrinsic_name.f08_masking_bit_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name.f08_masking_bit_intrinsics",
     "fparser.two.fortran2008.intrinsics_f08.intrinsic_name.f08_math_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name.f08_math_intrinsics",
+    "fparser.two.fortran2008.intrinsics_f08.intrinsic_name.f08_other_intrinsics": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name.f08_other_intrinsics",
+    "fparser.two.fortran2008.intrinsics_f08.intrinsic_name.f08_trig_and_hyper_functions": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name.f08_trig_and_hyper_functions",
     "fparser.two.fortran2008.intrinsics_f08.intrinsic_name.function_names": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name.function_names",
     "fparser.two.fortran2008.intrinsics_f08.intrinsic_name.generic_function_names": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name.generic_function_names",
     "fparser.two.fortran2008.intrinsics_f08.intrinsic_name.specific_function_names": "https://fparser.readthedocs.io/en/stable/autoapi/fparser/two/Fortran2008/intrinsics_f08/index.html#fparser.two.Fortran2008.intrinsics_f08.Intrinsic_Name.specific_function_names",

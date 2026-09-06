@@ -1,4 +1,4 @@
-VERSION = "7.0.1"
+VERSION = "7.1.0"
 
 # fmt: off
 MAPPING = {
@@ -29,6 +29,7 @@ MAPPING = {
     "json2xml.dicttoxml.make_id": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.make_id",
     "json2xml.dicttoxml.make_typed_attrstring": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.make_typed_attrstring",
     "json2xml.dicttoxml.make_valid_xml_name": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.make_valid_xml_name",
+    "json2xml.dicttoxml.serialize": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.serialize",
     "json2xml.dicttoxml.serializerconfig": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig",
     "json2xml.dicttoxml.serializerconfig.attr_type": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.attr_type",
     "json2xml.dicttoxml.serializerconfig.cdata": "https://json2xml.readthedocs.io/en/stable/json2xml.html#json2xml.dicttoxml.SerializerConfig.cdata",

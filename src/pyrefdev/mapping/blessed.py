@@ -1,4 +1,4 @@
-VERSION = "1.48.0"
+VERSION = "1.49.0"
 
 # fmt: off
 MAPPING = {
@@ -214,6 +214,8 @@ MAPPING = {
     "blessed.formatters": "https://blessed.readthedocs.io/en/latest/api/formatters.html",
     "blessed.formatters._build_known_capability_names": "https://blessed.readthedocs.io/en/latest/api/formatters.html#blessed.formatters._build_known_capability_names",
     "blessed.formatters._make_colors": "https://blessed.readthedocs.io/en/latest/api/formatters.html#blessed.formatters._make_colors",
+    "blessed.formatters._tparm": "https://blessed.readthedocs.io/en/latest/api/formatters.html#blessed.formatters._tparm",
+    "blessed.formatters._tparm_cached": "https://blessed.readthedocs.io/en/latest/api/formatters.html#blessed.formatters._tparm_cached",
     "blessed.formatters.colors": "https://blessed.readthedocs.io/en/latest/api/formatters.html#blessed.formatters.COLORS",
     "blessed.formatters.compoundables": "https://blessed.readthedocs.io/en/latest/api/formatters.html#blessed.formatters.COMPOUNDABLES",
     "blessed.formatters.formattingotherstring": "https://blessed.readthedocs.io/en/latest/api/formatters.html#blessed.formatters.FormattingOtherString",
@@ -723,6 +725,7 @@ MAPPING = {
     "blessed.terminal.terminal.get_device_attributes": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.get_device_attributes",
     "blessed.terminal.terminal.get_fgcolor": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.get_fgcolor",
     "blessed.terminal.terminal.get_fgcolor_hex": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.get_fgcolor_hex",
+    "blessed.terminal.terminal.get_font_coverage": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.get_font_coverage",
     "blessed.terminal.terminal.get_iterm2_capabilities": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.get_iterm2_capabilities",
     "blessed.terminal.terminal.get_kitty_keyboard_state": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.get_kitty_keyboard_state",
     "blessed.terminal.terminal.get_location": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.get_location",

@@ -1,4 +1,4 @@
-VERSION = "0.20.0"
+VERSION = "0.21.0"
 
 # fmt: off
 MAPPING = {
@@ -36,6 +36,7 @@ MAPPING = {
     "stardog.admin.admin.healthcheck": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.healthcheck",
     "stardog.admin.admin.import_file": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.import_file",
     "stardog.admin.admin.import_virtual_graph": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.import_virtual_graph",
+    "stardog.admin.admin.kill_process": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.kill_process",
     "stardog.admin.admin.kill_query": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.kill_query",
     "stardog.admin.admin.materialize_virtual_graph": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.materialize_virtual_graph",
     "stardog.admin.admin.new_cache_target": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.new_cache_target",
@@ -47,6 +48,8 @@ MAPPING = {
     "stardog.admin.admin.new_stored_query": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.new_stored_query",
     "stardog.admin.admin.new_user": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.new_user",
     "stardog.admin.admin.new_virtual_graph": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.new_virtual_graph",
+    "stardog.admin.admin.process": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.process",
+    "stardog.admin.admin.processes": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.processes",
     "stardog.admin.admin.queries": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.queries",
     "stardog.admin.admin.query": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.query",
     "stardog.admin.admin.restore": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Admin.restore",
@@ -103,6 +106,14 @@ MAPPING = {
     "stardog.admin.datasource.refresh_metadata": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.DataSource.refresh_metadata",
     "stardog.admin.datasource.share": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.DataSource.share",
     "stardog.admin.datasource.update": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.DataSource.update",
+    "stardog.admin.processinfo": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.ProcessInfo",
+    "stardog.admin.processinfo.db": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.ProcessInfo.db",
+    "stardog.admin.processinfo.endtime": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.ProcessInfo.endTime",
+    "stardog.admin.processinfo.id": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.ProcessInfo.id",
+    "stardog.admin.processinfo.starttime": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.ProcessInfo.startTime",
+    "stardog.admin.processinfo.status": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.ProcessInfo.status",
+    "stardog.admin.processinfo.type": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.ProcessInfo.type",
+    "stardog.admin.processinfo.user": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.ProcessInfo.user",
     "stardog.admin.role": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Role",
     "stardog.admin.role.__init__": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Role.__init__",
     "stardog.admin.role.add_permission": "https://pystardog.readthedocs.io/en/stable/source/stardog.html#stardog.admin.Role.add_permission",

@@ -1,4 +1,4 @@
-VERSION = "0.19.0"
+VERSION = "0.19.1"
 
 # fmt: off
 MAPPING = {
@@ -100,6 +100,13 @@ MAPPING = {
     "nequip.train.callbacks.softadapt": "https://nequip.readthedocs.io/en/latest/api/callbacks.html#nequip.train.callbacks.SoftAdapt",
     "nequip.train.callbacks.testtimexyzfilewriter": "https://nequip.readthedocs.io/en/latest/api/callbacks.html#nequip.train.callbacks.TestTimeXYZFileWriter",
     "nequip.train.callbacks.tf32scheduler": "https://nequip.readthedocs.io/en/latest/api/callbacks.html#nequip.train.callbacks.TF32Scheduler",
+    "nequip.train.callbacks.torchprofilercallback": "https://nequip.readthedocs.io/en/latest/api/callbacks.html#nequip.train.callbacks.TorchProfilerCallback",
+    "nequip.train.callbacks.torchprofilercallback.on_exception": "https://nequip.readthedocs.io/en/latest/api/callbacks.html#nequip.train.callbacks.TorchProfilerCallback.on_exception",
+    "nequip.train.callbacks.torchprofilercallback.on_train_batch_end": "https://nequip.readthedocs.io/en/latest/api/callbacks.html#nequip.train.callbacks.TorchProfilerCallback.on_train_batch_end",
+    "nequip.train.callbacks.torchprofilercallback.on_train_end": "https://nequip.readthedocs.io/en/latest/api/callbacks.html#nequip.train.callbacks.TorchProfilerCallback.on_train_end",
+    "nequip.train.callbacks.torchprofilercallback.on_train_start": "https://nequip.readthedocs.io/en/latest/api/callbacks.html#nequip.train.callbacks.TorchProfilerCallback.on_train_start",
+    "nequip.train.callbacks.torchprofilercallback.teardown": "https://nequip.readthedocs.io/en/latest/api/callbacks.html#nequip.train.callbacks.TorchProfilerCallback.teardown",
+    "nequip.train.callbacks.trainingstatsmonitor": "https://nequip.readthedocs.io/en/latest/api/callbacks.html#nequip.train.callbacks.TrainingStatsMonitor",
     "nequip.train.callbacks.valtimexyzfilewriter": "https://nequip.readthedocs.io/en/latest/api/callbacks.html#nequip.train.callbacks.ValTimeXYZFileWriter",
     "nequip.train.callbacks.wandbwatch": "https://nequip.readthedocs.io/en/latest/api/callbacks.html#nequip.train.callbacks.WandbWatch",
     "nequip.train.configlightningmodule": "https://nequip.readthedocs.io/en/latest/api/lightning_module.html#nequip.train.ConFIGLightningModule",
@@ -125,6 +132,8 @@ MAPPING = {
     "nequip.train.rootmeansquarederror": "https://nequip.readthedocs.io/en/latest/api/metrics.html#nequip.train.RootMeanSquaredError",
     "nequip.train.schedulefreelightningmodule": "https://nequip.readthedocs.io/en/latest/api/lightning_module.html#nequip.train.ScheduleFreeLightningModule",
     "nequip.train.simpleddpstrategy": "https://nequip.readthedocs.io/en/latest/api/ddp.html#nequip.train.SimpleDDPStrategy",
+    "nequip.train.simpleddpstrategy.load_checkpoint": "https://nequip.readthedocs.io/en/latest/api/ddp.html#nequip.train.SimpleDDPStrategy.load_checkpoint",
     "nequip.train.simpleddpstrategy.post_backward": "https://nequip.readthedocs.io/en/latest/api/ddp.html#nequip.train.SimpleDDPStrategy.post_backward",
+    "nequip.train.simpleddpstrategy.restore_checkpoint_after_setup": "https://nequip.readthedocs.io/en/latest/api/ddp.html#nequip.train.SimpleDDPStrategy.restore_checkpoint_after_setup",
     "nequip.train.stratifiedhuberforceloss": "https://nequip.readthedocs.io/en/latest/api/metrics.html#nequip.train.StratifiedHuberForceLoss",
 }

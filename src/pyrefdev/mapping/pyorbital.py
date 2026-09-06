@@ -1,4 +1,4 @@
-VERSION = "1.12.1"
+VERSION = "1.13.0"
 
 # fmt: off
 MAPPING = {
@@ -10,6 +10,7 @@ MAPPING = {
     "pyorbital.astronomy.jdays": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.astronomy.jdays",
     "pyorbital.astronomy.jdays2000": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.astronomy.jdays2000",
     "pyorbital.astronomy.observer_position": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.astronomy.observer_position",
+    "pyorbital.astronomy.sun_azimuth_angle": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.astronomy.sun_azimuth_angle",
     "pyorbital.astronomy.sun_earth_distance_correction": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.astronomy.sun_earth_distance_correction",
     "pyorbital.astronomy.sun_ecliptic_longitude": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.astronomy.sun_ecliptic_longitude",
     "pyorbital.astronomy.sun_ra_dec": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.astronomy.sun_ra_dec",
