@@ -1,4 +1,4 @@
-VERSION = "0.5.0.post0"
+VERSION = "0.5.1"
 
 # fmt: off
 MAPPING = {

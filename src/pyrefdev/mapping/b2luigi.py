@@ -16,6 +16,7 @@ MAPPING = {
     "b2luigi.basf2_helper.tasks.basf2ntuplemergetask.cmd": "https://b2luigi.belle2.org/api/basf2_helper.html#b2luigi.basf2_helper.tasks.Basf2nTupleMergeTask.cmd",
     "b2luigi.basf2_helper.tasks.basf2ntuplemergetask.max_batch_size": "https://b2luigi.belle2.org/api/basf2_helper.html#b2luigi.basf2_helper.tasks.Basf2nTupleMergeTask.max_batch_size",
     "b2luigi.basf2_helper.tasks.basf2pathtask": "https://b2luigi.belle2.org/api/basf2_helper.html#b2luigi.basf2_helper.tasks.Basf2PathTask",
+    "b2luigi.basf2_helper.tasks.basf2pathtask.calculate_statistics": "https://b2luigi.belle2.org/api/basf2_helper.html#b2luigi.basf2_helper.tasks.Basf2PathTask.calculate_statistics",
     "b2luigi.basf2_helper.tasks.basf2pathtask.create_path": "https://b2luigi.belle2.org/api/basf2_helper.html#b2luigi.basf2_helper.tasks.Basf2PathTask.create_path",
     "b2luigi.basf2_helper.tasks.basf2pathtask.max_batch_size": "https://b2luigi.belle2.org/api/basf2_helper.html#b2luigi.basf2_helper.tasks.Basf2PathTask.max_batch_size",
     "b2luigi.basf2_helper.tasks.basf2pathtask.max_event": "https://b2luigi.belle2.org/api/basf2_helper.html#b2luigi.basf2_helper.tasks.Basf2PathTask.max_event",

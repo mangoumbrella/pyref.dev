@@ -1,4 +1,4 @@
-VERSION = "1.1.1"
+VERSION = "1.2.0"
 
 # fmt: off
 MAPPING = {
@@ -1178,6 +1178,7 @@ MAPPING = {
     "cuda.core.programoptions.std": "https://nvidia.github.io/cuda-python/cuda-core/generated/cuda.core.ProgramOptions.html#cuda.core.ProgramOptions.std",
     "cuda.core.programoptions.time": "https://nvidia.github.io/cuda-python/cuda-core/generated/cuda.core.ProgramOptions.html#cuda.core.ProgramOptions.time",
     "cuda.core.programoptions.undefine_macro": "https://nvidia.github.io/cuda-python/cuda-core/generated/cuda.core.ProgramOptions.html#cuda.core.ProgramOptions.undefine_macro",
+    "cuda.core.programoptions.use_bundled_headers": "https://nvidia.github.io/cuda-python/cuda-core/generated/cuda.core.ProgramOptions.html#cuda.core.ProgramOptions.use_bundled_headers",
     "cuda.core.programoptions.use_fast_math": "https://nvidia.github.io/cuda-python/cuda-core/generated/cuda.core.ProgramOptions.html#cuda.core.ProgramOptions.use_fast_math",
     "cuda.core.programoptions.use_libdevice": "https://nvidia.github.io/cuda-python/cuda-core/generated/cuda.core.ProgramOptions.html#cuda.core.ProgramOptions.use_libdevice",
     "cuda.core.programoptions.use_pch": "https://nvidia.github.io/cuda-python/cuda-core/generated/cuda.core.ProgramOptions.html#cuda.core.ProgramOptions.use_pch",

@@ -1,4 +1,4 @@
-VERSION = "4.0.0"
+VERSION = "4.1.0"
 
 # fmt: off
 MAPPING = {
@@ -23,8 +23,6 @@ MAPPING = {
     "tsam.algorithms.k_medoids_exact": "https://tsam.readthedocs.io/en/latest/reference/api/utilities/#tsam.algorithms.k_medoids_exact",
     "tsam.algorithms.k_medoids_exact.exactkmedoids": "https://tsam.readthedocs.io/en/latest/reference/api/utilities/#tsam.algorithms.k_medoids_exact.ExactKMedoids",
     "tsam.algorithms.k_medoids_exact.exactkmedoids.fit": "https://tsam.readthedocs.io/en/latest/reference/api/utilities/#tsam.algorithms.k_medoids_exact.ExactKMedoids.fit",
-    "tsam.algorithms.k_medoids_exact.kmedoids": "https://tsam.readthedocs.io/en/latest/reference/api/utilities/#tsam.algorithms.k_medoids_exact.KMedoids",
-    "tsam.algorithms.k_medoids_exact.kmedoids.fit": "https://tsam.readthedocs.io/en/latest/reference/api/utilities/#tsam.algorithms.k_medoids_exact.KMedoids.fit",
     "tsam.algorithms.representations": "https://tsam.readthedocs.io/en/latest/reference/api/utilities/#tsam.algorithms.representations",
     "tsam.algorithms.representations.duration_representation": "https://tsam.readthedocs.io/en/latest/reference/api/utilities/#tsam.algorithms.duration_representation.duration_representation",
     "tsam.algorithms.representations.maxoid_representation": "https://tsam.readthedocs.io/en/latest/reference/api/utilities/#tsam.algorithms.representations.maxoid_representation",

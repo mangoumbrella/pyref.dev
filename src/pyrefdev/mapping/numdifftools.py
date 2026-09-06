@@ -1,4 +1,4 @@
-VERSION = "0.10.1"
+VERSION = "0.11.1"
 
 # fmt: off
 MAPPING = {
@@ -457,8 +457,6 @@ MAPPING = {
     "numdifftools.tests.test_numdifftools.testrichardson.test_complex": "https://numdifftools.readthedocs.io/en/stable/reference/numdifftools.tests.html#numdifftools.tests.test_numdifftools.TestRichardson.test_complex",
     "numdifftools.tests.test_scripts": "https://numdifftools.readthedocs.io/en/stable/reference/numdifftools.tests.html#module-numdifftools.tests.test_scripts",
     "numdifftools.tests.test_scripts.test__find_default_scale_run_all_benchmarks": "https://numdifftools.readthedocs.io/en/stable/reference/numdifftools.tests.html#numdifftools.tests.test_scripts.test__find_default_scale_run_all_benchmarks",
-    "numdifftools.tests.test_scripts.test_profile_numdifftools_main": "https://numdifftools.readthedocs.io/en/stable/reference/numdifftools.tests.html#numdifftools.tests.test_scripts.test_profile_numdifftools_main",
-    "numdifftools.tests.test_scripts.test_profile_numdifftools_profile_hessian": "https://numdifftools.readthedocs.io/en/stable/reference/numdifftools.tests.html#numdifftools.tests.test_scripts.test_profile_numdifftools_profile_hessian",
     "numdifftools.tests.test_scripts.test_run_gradient_and_hessian_benchmarks": "https://numdifftools.readthedocs.io/en/stable/reference/numdifftools.tests.html#numdifftools.tests.test_scripts.test_run_gradient_and_hessian_benchmarks",
     "numdifftools.tests.test_step_generators": "https://numdifftools.readthedocs.io/en/stable/reference/numdifftools.tests.html#module-numdifftools.tests.test_step_generators",
     "numdifftools.tests.test_step_generators.test__min_step_generator_with_step_nom1": "https://numdifftools.readthedocs.io/en/stable/reference/numdifftools.tests.html#numdifftools.tests.test_step_generators.test__min_step_generator_with_step_nom1",

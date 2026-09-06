@@ -516,7 +516,7 @@ MAPPING = {
     "pyquil.quantum_processor.qcsquantumprocessor.qubits": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.html#pyquil.quantum_processor.QCSQuantumProcessor.qubits",
     "pyquil.quantum_processor.qcsquantumprocessor.to_compiler_isa": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.html#pyquil.quantum_processor.QCSQuantumProcessor.to_compiler_isa",
     "pyquil.quantum_processor.transformers": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.html",
-    "pyquil.quantum_processor.transformers.compiler_isa_to_graph": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.html#pyquil.quantum_processor.transformers.compiler_isa_to_graph",
+    "pyquil.quantum_processor.transformers.compiler_isa_to_graph": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.compiler_isa_to_graph.html",
     "pyquil.quantum_processor.transformers.compiler_isa_to_graph.compiler_isa_to_graph": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.compiler_isa_to_graph.html#pyquil.quantum_processor.transformers.compiler_isa_to_graph.compiler_isa_to_graph",
     "pyquil.quantum_processor.transformers.graph_to_compiler_isa": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.html#pyquil.quantum_processor.transformers.graph_to_compiler_isa",
     "pyquil.quantum_processor.transformers.graph_to_compiler_isa.compiler_isa_to_graph": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.graph_to_compiler_isa.html#pyquil.quantum_processor.transformers.graph_to_compiler_isa.compiler_isa_to_graph",

@@ -1,4 +1,4 @@
-VERSION = "2.5.1"
+VERSION = "2.6.0"
 
 # fmt: off
 MAPPING = {
@@ -69,6 +69,7 @@ MAPPING = {
     "openreview.api.openreviewclient.get_jobs_status": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_jobs_status",
     "openreview.api.openreviewclient.get_message_requests": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_message_requests",
     "openreview.api.openreviewclient.get_messages": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_messages",
+    "openreview.api.openreviewclient.get_meta_invitation_id": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_meta_invitation_id",
     "openreview.api.openreviewclient.get_note": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_note",
     "openreview.api.openreviewclient.get_note_edit": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_note_edit",
     "openreview.api.openreviewclient.get_note_edits": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_note_edits",

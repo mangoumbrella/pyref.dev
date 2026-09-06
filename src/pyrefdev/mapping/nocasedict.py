@@ -1,4 +1,4 @@
-VERSION = "2.2.0"
+VERSION = "2.2.1"
 
 # fmt: off
 MAPPING = {
@@ -17,14 +17,19 @@ MAPPING = {
     "nocasedict.nocasedict.__contains__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__contains__",
     "nocasedict.nocasedict.__delitem__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__delitem__",
     "nocasedict.nocasedict.__eq__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__eq__",
+    "nocasedict.nocasedict.__ge__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__ge__",
     "nocasedict.nocasedict.__getitem__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__getitem__",
+    "nocasedict.nocasedict.__gt__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__gt__",
     "nocasedict.nocasedict.__ior__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__ior__",
     "nocasedict.nocasedict.__iter__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__iter__",
+    "nocasedict.nocasedict.__le__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__le__",
     "nocasedict.nocasedict.__len__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__len__",
+    "nocasedict.nocasedict.__lt__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__lt__",
     "nocasedict.nocasedict.__ne__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__ne__",
     "nocasedict.nocasedict.__or__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__or__",
     "nocasedict.nocasedict.__repr__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__repr__",
     "nocasedict.nocasedict.__reversed__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__reversed__",
+    "nocasedict.nocasedict.__ror__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__ror__",
     "nocasedict.nocasedict.__setitem__": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.__setitem__",
     "nocasedict.nocasedict.clear": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.clear",
     "nocasedict.nocasedict.copy": "https://nocasedict.readthedocs.io/en/stable/reference.html#nocasedict.NocaseDict.copy",

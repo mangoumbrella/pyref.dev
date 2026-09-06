@@ -1,4 +1,4 @@
-VERSION = "8.4.0"
+VERSION = "8.5.0"
 
 # fmt: off
 MAPPING = {
@@ -261,6 +261,7 @@ MAPPING = {
     "sphinx_needs.views.needsandpartslistview.__iter__": "https://sphinx-needs.readthedocs.io/en/stable/api.html#sphinx_needs.views.NeedsAndPartsListView.__iter__",
     "sphinx_needs.views.needsandpartslistview.__len__": "https://sphinx-needs.readthedocs.io/en/stable/api.html#sphinx_needs.views.NeedsAndPartsListView.__len__",
     "sphinx_needs.views.needsandpartslistview.filter_has_tag": "https://sphinx-needs.readthedocs.io/en/stable/api.html#sphinx_needs.views.NeedsAndPartsListView.filter_has_tag",
+    "sphinx_needs.views.needsandpartslistview.filter_id_complete": "https://sphinx-needs.readthedocs.io/en/stable/api.html#sphinx_needs.views.NeedsAndPartsListView.filter_id_complete",
     "sphinx_needs.views.needsandpartslistview.filter_ids": "https://sphinx-needs.readthedocs.io/en/stable/api.html#sphinx_needs.views.NeedsAndPartsListView.filter_ids",
     "sphinx_needs.views.needsandpartslistview.filter_is_external": "https://sphinx-needs.readthedocs.io/en/stable/api.html#sphinx_needs.views.NeedsAndPartsListView.filter_is_external",
     "sphinx_needs.views.needsandpartslistview.filter_statuses": "https://sphinx-needs.readthedocs.io/en/stable/api.html#sphinx_needs.views.NeedsAndPartsListView.filter_statuses",

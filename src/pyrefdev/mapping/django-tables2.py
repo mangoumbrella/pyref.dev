@@ -1,4 +1,4 @@
-VERSION = "3.0.0"
+VERSION = "3.0.1"
 
 # fmt: off
 MAPPING = {
@@ -9,7 +9,6 @@ MAPPING = {
     "django_tables2.columns.boundcolumn.__str__": "https://django-tables2.readthedocs.io/en/latest/pages/internal.html#django_tables2.columns.BoundColumn.__str__",
     "django_tables2.columns.boundcolumn.__weakref__": "https://django-tables2.readthedocs.io/en/latest/pages/internal.html#django_tables2.columns.BoundColumn.__weakref__",
     "django_tables2.columns.boundcolumn._get_cell_class": "https://django-tables2.readthedocs.io/en/latest/pages/internal.html#django_tables2.columns.BoundColumn._get_cell_class",
-    "django_tables2.columns.boundcolumn.accessor": "https://django-tables2.readthedocs.io/en/latest/pages/internal.html#django_tables2.columns.BoundColumn.accessor",
     "django_tables2.columns.boundcolumn.attrs": "https://django-tables2.readthedocs.io/en/latest/pages/internal.html#django_tables2.columns.BoundColumn.attrs",
     "django_tables2.columns.boundcolumn.default": "https://django-tables2.readthedocs.io/en/latest/pages/internal.html#django_tables2.columns.BoundColumn.default",
     "django_tables2.columns.boundcolumn.footer": "https://django-tables2.readthedocs.io/en/latest/pages/internal.html#django_tables2.columns.BoundColumn.footer",
@@ -45,8 +44,10 @@ MAPPING = {
     "django_tables2.columns.column.value": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.Column.value",
     "django_tables2.columns.datecolumn": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.DateColumn",
     "django_tables2.columns.datecolumn.from_field": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.DateColumn.from_field",
+    "django_tables2.columns.datecolumn.value": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.DateColumn.value",
     "django_tables2.columns.datetimecolumn": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.DateTimeColumn",
     "django_tables2.columns.datetimecolumn.from_field": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.DateTimeColumn.from_field",
+    "django_tables2.columns.datetimecolumn.value": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.DateTimeColumn.value",
     "django_tables2.columns.emailcolumn": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.EmailColumn",
     "django_tables2.columns.emailcolumn.from_field": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.EmailColumn.from_field",
     "django_tables2.columns.filecolumn": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.FileColumn",
@@ -61,8 +62,8 @@ MAPPING = {
     "django_tables2.columns.manytomanycolumn.from_field": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.ManyToManyColumn.from_field",
     "django_tables2.columns.manytomanycolumn.render": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.ManyToManyColumn.render",
     "django_tables2.columns.manytomanycolumn.transform": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.ManyToManyColumn.transform",
-    "django_tables2.columns.relatedlinkcolumn": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.RelatedLinkColumn",
     "django_tables2.columns.templatecolumn": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.TemplateColumn",
+    "django_tables2.columns.templatecolumn.get_context_data": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.TemplateColumn.get_context_data",
     "django_tables2.columns.templatecolumn.render": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.TemplateColumn.render",
     "django_tables2.columns.templatecolumn.value": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.TemplateColumn.value",
     "django_tables2.columns.urlcolumn": "https://django-tables2.readthedocs.io/en/latest/pages/api-reference.html#django_tables2.columns.URLColumn",

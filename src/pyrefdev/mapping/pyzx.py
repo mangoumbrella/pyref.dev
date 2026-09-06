@@ -1,4 +1,4 @@
-VERSION = "0.10.5"
+VERSION = "0.10.6"
 
 # fmt: off
 MAPPING = {
@@ -275,6 +275,7 @@ MAPPING = {
     "pyzx.routing.rootheuristic.exhaustive": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.RootHeuristic.EXHAUSTIVE",
     "pyzx.routing.rootheuristic.random": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.RootHeuristic.RANDOM",
     "pyzx.routing.rootheuristic.recursive": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.RootHeuristic.RECURSIVE",
+    "pyzx.routing.rootheuristic.rootheuristicprotocol": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.RootHeuristic.RootHeuristicProtocol",
     "pyzx.routing.rootheuristic.to_function": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.RootHeuristic.to_function",
     "pyzx.routing.route_phase_poly": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.route_phase_poly",
     "pyzx.routing.routingmethod": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.RoutingMethod",
@@ -287,6 +288,7 @@ MAPPING = {
     "pyzx.routing.splitheuristic.arity": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.SplitHeuristic.ARITY",
     "pyzx.routing.splitheuristic.count": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.SplitHeuristic.COUNT",
     "pyzx.routing.splitheuristic.random": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.SplitHeuristic.RANDOM",
+    "pyzx.routing.splitheuristic.splitheuristicprotocol": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.SplitHeuristic.SplitHeuristicProtocol",
     "pyzx.routing.splitheuristic.to_function": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.SplitHeuristic.to_function",
     "pyzx.routing.steiner_gauss": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.steiner_gauss",
     "pyzx.simplify": "https://pyzx.readthedocs.io/en/stable/api.html#module-pyzx.simplify",

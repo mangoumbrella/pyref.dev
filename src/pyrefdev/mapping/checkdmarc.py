@@ -1,4 +1,4 @@
-VERSION = "5.17.5"
+VERSION = "6.0.0"
 
 # fmt: off
 MAPPING = {
@@ -66,6 +66,7 @@ MAPPING = {
     "checkdmarc.dmarc.unverifieddmarcuridestination": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.dmarc.UnverifiedDMARCURIDestination",
     "checkdmarc.dmarc.verify_dmarc_report_destination": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.dmarc.verify_dmarc_report_destination",
     "checkdmarc.dnssec": "https://domainaware.github.io/checkdmarc/api.html#module-checkdmarc.dnssec",
+    "checkdmarc.dnssec.check_dnssec": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.dnssec.check_dnssec",
     "checkdmarc.dnssec.get_dnskey": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.dnssec.get_dnskey",
     "checkdmarc.dnssec.get_tlsa_records": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.dnssec.get_tlsa_records",
     "checkdmarc.dnssec.test_dnssec": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.dnssec.test_dnssec",
@@ -84,6 +85,7 @@ MAPPING = {
     "checkdmarc.mta_sts.mtastspolicyerror": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.mta_sts.MTASTSPolicyError",
     "checkdmarc.mta_sts.mtastspolicyparsingresults": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.mta_sts.MTASTSPolicyParsingResults",
     "checkdmarc.mta_sts.mtastspolicysyntaxerror": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.mta_sts.MTASTSPolicySyntaxError",
+    "checkdmarc.mta_sts.mtastsqueryresult": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.mta_sts.MTASTSQueryResult",
     "checkdmarc.mta_sts.mtastsqueryresults": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.mta_sts.MTASTSQueryResults",
     "checkdmarc.mta_sts.mtastsrecordinwronglocation": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.mta_sts.MTASTSRecordInWrongLocation",
     "checkdmarc.mta_sts.mtastsrecordnotfound": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.mta_sts.MTASTSRecordNotFound",
@@ -120,6 +122,7 @@ MAPPING = {
     "checkdmarc.smtp_tls_reporting.query_smtp_tls_reporting_record": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.smtp_tls_reporting.query_smtp_tls_reporting_record",
     "checkdmarc.smtp_tls_reporting.smtptlsreportingerror": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.smtp_tls_reporting.SMTPTLSReportingError",
     "checkdmarc.smtp_tls_reporting.smtptlsreportingfailure": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.smtp_tls_reporting.SMTPTLSReportingFailure",
+    "checkdmarc.smtp_tls_reporting.smtptlsreportingqueryresult": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.smtp_tls_reporting.SMTPTLSReportingQueryResult",
     "checkdmarc.smtp_tls_reporting.smtptlsreportingqueryresults": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.smtp_tls_reporting.SMTPTLSReportingQueryResults",
     "checkdmarc.smtp_tls_reporting.smtptlsreportingrecordinwronglocation": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.smtp_tls_reporting.SMTPTLSReportingRecordInWrongLocation",
     "checkdmarc.smtp_tls_reporting.smtptlsreportingrecordnotfound": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.smtp_tls_reporting.SMTPTLSReportingRecordNotFound",
@@ -166,12 +169,15 @@ MAPPING = {
     "checkdmarc.utils.dnsexceptionnxdomain": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.DNSExceptionNXDOMAIN",
     "checkdmarc.utils.get_a_records": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.get_a_records",
     "checkdmarc.utils.get_base_domain": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.get_base_domain",
+    "checkdmarc.utils.get_mx_record_set": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.get_mx_record_set",
     "checkdmarc.utils.get_mx_records": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.get_mx_records",
     "checkdmarc.utils.get_nameservers": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.get_nameservers",
     "checkdmarc.utils.get_reverse_dns": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.get_reverse_dns",
     "checkdmarc.utils.get_soa_record": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.get_soa_record",
     "checkdmarc.utils.get_txt_records": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.get_txt_records",
     "checkdmarc.utils.mxhost": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.MXHost",
+    "checkdmarc.utils.mxrecord": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.MXRecord",
+    "checkdmarc.utils.mxrecordset": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.MXRecordSet",
     "checkdmarc.utils.nameserverresulterror": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.NameserverResultError",
     "checkdmarc.utils.nameserverresultok": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.NameserverResultOk",
     "checkdmarc.utils.normalize_domain": "https://domainaware.github.io/checkdmarc/api.html#checkdmarc.utils.normalize_domain",

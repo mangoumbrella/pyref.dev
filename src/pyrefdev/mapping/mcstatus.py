@@ -1,4 +1,4 @@
-VERSION = "14.1.0"
+VERSION = "14.2.0"
 
 # fmt: off
 MAPPING = {
@@ -187,6 +187,7 @@ MAPPING = {
     "mcstatus.responses.java.javastatusresponse.enforces_secure_chat": "https://mcstatus.readthedocs.io/en/stable/api/basic/#mcstatus.responses.java.JavaStatusResponse.enforces_secure_chat",
     "mcstatus.responses.java.javastatusresponse.forge_data": "https://mcstatus.readthedocs.io/en/stable/api/basic/#mcstatus.responses.java.JavaStatusResponse.forge_data",
     "mcstatus.responses.java.javastatusresponse.icon": "https://mcstatus.readthedocs.io/en/stable/api/basic/#mcstatus.responses.java.JavaStatusResponse.icon",
+    "mcstatus.responses.java.javastatusresponse.is_modded": "https://mcstatus.readthedocs.io/en/stable/api/basic/#mcstatus.responses.java.JavaStatusResponse.is_modded",
     "mcstatus.responses.java.javastatusresponse.latency": "https://mcstatus.readthedocs.io/en/stable/api/basic/#mcstatus.responses.java.JavaStatusResponse.latency",
     "mcstatus.responses.java.javastatusresponse.motd": "https://mcstatus.readthedocs.io/en/stable/api/basic/#mcstatus.responses.java.JavaStatusResponse.motd",
     "mcstatus.responses.java.javastatusresponse.players": "https://mcstatus.readthedocs.io/en/stable/api/basic/#mcstatus.responses.java.JavaStatusResponse.players",

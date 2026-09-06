@@ -106,7 +106,7 @@ MAPPING = {
     "construct.selecterror": "https://construct.readthedocs.io/en/latest/api/exceptions.html#construct.SelectError",
     "construct.sequence": "https://construct.readthedocs.io/en/latest/api/structs.html#construct.Sequence",
     "construct.setglobalprintfalseflags": "https://construct.readthedocs.io/en/latest/api/debugging.html#construct.setGlobalPrintFalseFlags",
-    "construct.setglobalprintfullstrings": "https://construct.readthedocs.io/en/latest/api/strings.html#construct.setGlobalPrintFullStrings",
+    "construct.setglobalprintfullstrings": "https://construct.readthedocs.io/en/latest/api/debugging.html#construct.setGlobalPrintFullStrings",
     "construct.setglobalprintprivateentries": "https://construct.readthedocs.io/en/latest/api/debugging.html#construct.setGlobalPrintPrivateEntries",
     "construct.sizeoferror": "https://construct.readthedocs.io/en/latest/api/exceptions.html#construct.SizeofError",
     "construct.slicing": "https://construct.readthedocs.io/en/latest/api/adapters.html#construct.Slicing",

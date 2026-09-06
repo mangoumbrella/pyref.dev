@@ -1,4 +1,4 @@
-VERSION = "4.1.0"
+VERSION = "4.2.0"
 
 # fmt: off
 MAPPING = {
@@ -160,10 +160,6 @@ MAPPING = {
     "pynwb.core.nwbcontainer.namespace": "https://pynwb.readthedocs.io/en/stable/pynwb.core.html#pynwb.core.NWBContainer.namespace",
     "pynwb.core.nwbcontainer.neurodata_type": "https://pynwb.readthedocs.io/en/stable/pynwb.core.html#pynwb.core.NWBContainer.neurodata_type",
     "pynwb.core.nwbdata": "https://pynwb.readthedocs.io/en/stable/pynwb.core.html#pynwb.core.NWBData",
-    "pynwb.core.nwbdata.__getitem__": "https://pynwb.readthedocs.io/en/stable/pynwb.core.html#pynwb.core.NWBData.__getitem__",
-    "pynwb.core.nwbdata.append": "https://pynwb.readthedocs.io/en/stable/pynwb.core.html#pynwb.core.NWBData.append",
-    "pynwb.core.nwbdata.data": "https://pynwb.readthedocs.io/en/stable/pynwb.core.html#pynwb.core.NWBData.data",
-    "pynwb.core.nwbdata.extend": "https://pynwb.readthedocs.io/en/stable/pynwb.core.html#pynwb.core.NWBData.extend",
     "pynwb.core.nwbdata.namespace": "https://pynwb.readthedocs.io/en/stable/pynwb.core.html#pynwb.core.NWBData.namespace",
     "pynwb.core.nwbdata.neurodata_type": "https://pynwb.readthedocs.io/en/stable/pynwb.core.html#pynwb.core.NWBData.neurodata_type",
     "pynwb.core.nwbdatainterface": "https://pynwb.readthedocs.io/en/stable/pynwb.core.html#pynwb.core.NWBDataInterface",
@@ -635,6 +631,7 @@ MAPPING = {
     "pynwb.io.image": "https://pynwb.readthedocs.io/en/stable/pynwb.io.image.html#module-pynwb.io.image",
     "pynwb.io.image.imageseriesmap": "https://pynwb.readthedocs.io/en/stable/pynwb.io.image.html#pynwb.io.image.ImageSeriesMap",
     "pynwb.io.image.imageseriesmap.constructor_args": "https://pynwb.readthedocs.io/en/stable/pynwb.io.image.html#pynwb.io.image.ImageSeriesMap.constructor_args",
+    "pynwb.io.image.imageseriesmap.num_samples_attr": "https://pynwb.readthedocs.io/en/stable/pynwb.io.image.html#pynwb.io.image.ImageSeriesMap.num_samples_attr",
     "pynwb.io.image.imageseriesmap.obj_attrs": "https://pynwb.readthedocs.io/en/stable/pynwb.io.image.html#pynwb.io.image.ImageSeriesMap.obj_attrs",
     "pynwb.io.misc": "https://pynwb.readthedocs.io/en/stable/pynwb.io.misc.html#module-pynwb.io.misc",
     "pynwb.io.misc.unitsmap": "https://pynwb.readthedocs.io/en/stable/pynwb.io.misc.html#pynwb.io.misc.UnitsMap",
@@ -643,6 +640,7 @@ MAPPING = {
     "pynwb.io.misc.unitsmap.obj_attrs": "https://pynwb.readthedocs.io/en/stable/pynwb.io.misc.html#pynwb.io.misc.UnitsMap.obj_attrs",
     "pynwb.io.misc.unitsmap.resolution_carg": "https://pynwb.readthedocs.io/en/stable/pynwb.io.misc.html#pynwb.io.misc.UnitsMap.resolution_carg",
     "pynwb.io.misc.unitsmap.waveform_rate_carg": "https://pynwb.readthedocs.io/en/stable/pynwb.io.misc.html#pynwb.io.misc.UnitsMap.waveform_rate_carg",
+    "pynwb.io.misc.unitsmap.waveform_time_before_peak_in_ms_carg": "https://pynwb.readthedocs.io/en/stable/pynwb.io.misc.html#pynwb.io.misc.UnitsMap.waveform_time_before_peak_in_ms_carg",
     "pynwb.io.misc.unitsmap.waveform_unit_carg": "https://pynwb.readthedocs.io/en/stable/pynwb.io.misc.html#pynwb.io.misc.UnitsMap.waveform_unit_carg",
     "pynwb.io.ogen": "https://pynwb.readthedocs.io/en/stable/pynwb.io.ogen.html#module-pynwb.io.ogen",
     "pynwb.io.ophys": "https://pynwb.readthedocs.io/en/stable/pynwb.io.ophys.html#module-pynwb.io.ophys",
@@ -655,6 +653,7 @@ MAPPING = {
     "pynwb.io.retinotopy": "https://pynwb.readthedocs.io/en/stable/pynwb.io.retinotopy.html#module-pynwb.io.retinotopy",
     "pynwb.io.utils": "https://pynwb.readthedocs.io/en/stable/pynwb.io.utils.html#module-pynwb.io.utils",
     "pynwb.io.utils.get_nwb_version": "https://pynwb.readthedocs.io/en/stable/pynwb.io.utils.html#pynwb.io.utils.get_nwb_version",
+    "pynwb.io.utils.parse_date": "https://pynwb.readthedocs.io/en/stable/pynwb.io.utils.html#pynwb.io.utils.parse_date",
     "pynwb.legacy": "https://pynwb.readthedocs.io/en/stable/pynwb.legacy.html#module-pynwb.legacy",
     "pynwb.legacy.get_type_map": "https://pynwb.readthedocs.io/en/stable/pynwb.legacy.html#pynwb.legacy.get_type_map",
     "pynwb.legacy.io": "https://pynwb.readthedocs.io/en/stable/pynwb.legacy.io.html#module-pynwb.legacy.io",
@@ -777,6 +776,7 @@ MAPPING = {
     "pynwb.misc.units.neurodata_type": "https://pynwb.readthedocs.io/en/stable/pynwb.misc.html#pynwb.misc.Units.neurodata_type",
     "pynwb.misc.units.resolution": "https://pynwb.readthedocs.io/en/stable/pynwb.misc.html#pynwb.misc.Units.resolution",
     "pynwb.misc.units.waveform_rate": "https://pynwb.readthedocs.io/en/stable/pynwb.misc.html#pynwb.misc.Units.waveform_rate",
+    "pynwb.misc.units.waveform_time_before_peak_in_ms": "https://pynwb.readthedocs.io/en/stable/pynwb.misc.html#pynwb.misc.Units.waveform_time_before_peak_in_ms",
     "pynwb.misc.units.waveform_unit": "https://pynwb.readthedocs.io/en/stable/pynwb.misc.html#pynwb.misc.Units.waveform_unit",
     "pynwb.misc.units.waveforms_desc": "https://pynwb.readthedocs.io/en/stable/pynwb.misc.html#pynwb.misc.Units.waveforms_desc",
     "pynwb.nwbhdf5io": "https://pynwb.readthedocs.io/en/stable/pynwb.html#pynwb.NWBHDF5IO",

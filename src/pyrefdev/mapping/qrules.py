@@ -1,4 +1,4 @@
-VERSION = "0.10.10"
+VERSION = "0.10.12"
 
 # fmt: off
 MAPPING = {
@@ -10,6 +10,7 @@ MAPPING = {
     "qrules.argument_handling.rule": "https://qrules.readthedocs.io/stable/api/qrules.argument_handling.html#qrules.argument_handling.Rule",
     "qrules.argument_handling.ruleargumenthandler": "https://qrules.readthedocs.io/stable/api/qrules.argument_handling.html#qrules.argument_handling.RuleArgumentHandler",
     "qrules.argument_handling.ruleargumenthandler.register_rule": "https://qrules.readthedocs.io/stable/api/qrules.argument_handling.html#qrules.argument_handling.RuleArgumentHandler.register_rule",
+    "qrules.argument_handling.rulekey": "https://qrules.readthedocs.io/stable/api/qrules.argument_handling.html#qrules.argument_handling.RuleKey",
     "qrules.check_reaction_violations": "https://qrules.readthedocs.io/stable/api/qrules.html#qrules.check_reaction_violations",
     "qrules.combinatorics": "https://qrules.readthedocs.io/stable/api/qrules.combinatorics.html#module-qrules.combinatorics",
     "qrules.combinatorics.as_state_definition": "https://qrules.readthedocs.io/stable/api/qrules.combinatorics.html#qrules.combinatorics.as_state_definition",
@@ -116,6 +117,7 @@ MAPPING = {
     "qrules.io": "https://qrules.readthedocs.io/stable/api/qrules.io.html#module-qrules.io",
     "qrules.io.asdict": "https://qrules.readthedocs.io/stable/api/qrules.io.html#qrules.io.asdict",
     "qrules.io.asdot": "https://qrules.readthedocs.io/stable/api/qrules.io.html#qrules.io.asdot",
+    "qrules.io.asmermaid": "https://qrules.readthedocs.io/stable/api/qrules.io.html#qrules.io.asmermaid",
     "qrules.io.fromdict": "https://qrules.readthedocs.io/stable/api/qrules.io.html#qrules.io.fromdict",
     "qrules.io.jsonsetencoder": "https://qrules.readthedocs.io/stable/api/qrules.io.html#qrules.io.JSONSetEncoder",
     "qrules.io.jsonsetencoder.default": "https://qrules.readthedocs.io/stable/api/qrules.io.html#qrules.io.JSONSetEncoder.default",
@@ -198,6 +200,8 @@ MAPPING = {
     "qrules.quantum_numbers.nodequantumnumbertypes": "https://qrules.readthedocs.io/stable/api/qrules.quantum_numbers.html#qrules.quantum_numbers.NodeQuantumNumberTypes",
     "qrules.quantum_numbers.parity": "https://qrules.readthedocs.io/stable/api/qrules.quantum_numbers.html#qrules.quantum_numbers.Parity",
     "qrules.quantum_numbers.parity.value": "https://qrules.readthedocs.io/stable/api/qrules.quantum_numbers.html#qrules.quantum_numbers.Parity.value",
+    "qrules.quantum_numbers.quantumnumbertype": "https://qrules.readthedocs.io/stable/api/qrules.quantum_numbers.html#qrules.quantum_numbers.QuantumNumberType",
+    "qrules.quantum_numbers.quantumnumbertype.__call__": "https://qrules.readthedocs.io/stable/api/qrules.quantum_numbers.html#qrules.quantum_numbers.QuantumNumberType.__call__",
     "qrules.settings": "https://qrules.readthedocs.io/stable/api/qrules.settings.html#module-qrules.settings",
     "qrules.settings.conservation_law_priorities": "https://qrules.readthedocs.io/stable/api/qrules.settings.html#qrules.settings.CONSERVATION_LAW_PRIORITIES",
     "qrules.settings.create_interaction_settings": "https://qrules.readthedocs.io/stable/api/qrules.settings.html#qrules.settings.create_interaction_settings",
@@ -297,7 +301,6 @@ MAPPING = {
     "qrules.topology.mutabletransition.topology": "https://qrules.readthedocs.io/stable/api/qrules.topology.html#qrules.topology.MutableTransition.topology",
     "qrules.topology.simplestatetransitiontopologybuilder": "https://qrules.readthedocs.io/stable/api/qrules.topology.html#qrules.topology.SimpleStateTransitionTopologyBuilder",
     "qrules.topology.simplestatetransitiontopologybuilder.build": "https://qrules.readthedocs.io/stable/api/qrules.topology.html#qrules.topology.SimpleStateTransitionTopologyBuilder.build",
-    "qrules.topology.simplestatetransitiontopologybuilder.interaction_node_set": "https://qrules.readthedocs.io/stable/api/qrules.topology.html#qrules.topology.SimpleStateTransitionTopologyBuilder.interaction_node_set",
     "qrules.topology.topology": "https://qrules.readthedocs.io/stable/api/qrules.topology.html#qrules.topology.Topology",
     "qrules.topology.topology.edges": "https://qrules.readthedocs.io/stable/api/qrules.topology.html#qrules.topology.Topology.edges",
     "qrules.topology.topology.get_edge_ids_ingoing_to_node": "https://qrules.readthedocs.io/stable/api/qrules.topology.html#qrules.topology.Topology.get_edge_ids_ingoing_to_node",
@@ -360,5 +363,6 @@ MAPPING = {
     "qrules.transition.statetransitionmanager.interaction_determinators": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.StateTransitionManager.interaction_determinators",
     "qrules.transition.statetransitionmanager.set_allowed_interaction_types": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.StateTransitionManager.set_allowed_interaction_types",
     "qrules.transition.statetransitionmanager.set_allowed_intermediate_particles": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.StateTransitionManager.set_allowed_intermediate_particles",
+    "qrules.transition.statetransitionmanager.solving_mode": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.StateTransitionManager.solving_mode",
     "qrules.transition.statetransitionmanager.topologies": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.StateTransitionManager.topologies",
 }
