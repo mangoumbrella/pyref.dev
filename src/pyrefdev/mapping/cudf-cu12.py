@@ -591,6 +591,7 @@ MAPPING = {
     "cudf.datetimeindex.dayofyear": "https://docs.rapids.ai/api/cudf/stable/cudf/api_docs/api/cudf.DatetimeIndex.dayofyear/#cudf.DatetimeIndex.dayofyear",
     "cudf.datetimeindex.floor": "https://docs.rapids.ai/api/cudf/stable/cudf/api_docs/api/cudf.DatetimeIndex.floor/#cudf.DatetimeIndex.floor",
     "cudf.datetimeindex.hour": "https://docs.rapids.ai/api/cudf/stable/cudf/api_docs/api/cudf.DatetimeIndex.hour/#cudf.DatetimeIndex.hour",
+    "cudf.datetimeindex.indexer_between_time": "https://docs.rapids.ai/api/cudf/stable/cudf/api_docs/api/cudf.DatetimeIndex.indexer_between_time/#cudf.DatetimeIndex.indexer_between_time",
     "cudf.datetimeindex.is_leap_year": "https://docs.rapids.ai/api/cudf/stable/cudf/api_docs/api/cudf.DatetimeIndex.is_leap_year/#cudf.DatetimeIndex.is_leap_year",
     "cudf.datetimeindex.isocalendar": "https://docs.rapids.ai/api/cudf/stable/cudf/api_docs/api/cudf.DatetimeIndex.isocalendar/#cudf.DatetimeIndex.isocalendar",
     "cudf.datetimeindex.microsecond": "https://docs.rapids.ai/api/cudf/stable/cudf/api_docs/api/cudf.DatetimeIndex.microsecond/#cudf.DatetimeIndex.microsecond",

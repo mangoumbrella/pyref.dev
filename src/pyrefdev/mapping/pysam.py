@@ -1,4 +1,4 @@
-VERSION = "0.24.0"
+VERSION = "0.24.1"
 
 # fmt: off
 MAPPING = {
@@ -168,6 +168,15 @@ MAPPING = {
     "pysam.fastxfile.closed": "https://pysam.readthedocs.io/en/stable/api.html#pysam.FastxFile.closed",
     "pysam.fastxfile.filename": "https://pysam.readthedocs.io/en/stable/api.html#pysam.FastxFile.filename",
     "pysam.fastxfile.is_open": "https://pysam.readthedocs.io/en/stable/api.html#pysam.FastxFile.is_open",
+    "pysam.fastxrecord": "https://pysam.readthedocs.io/en/stable/api.html#pysam.FastxRecord",
+    "pysam.fastxrecord.comment": "https://pysam.readthedocs.io/en/stable/api.html#pysam.FastxRecord.comment",
+    "pysam.fastxrecord.get_quality_array": "https://pysam.readthedocs.io/en/stable/api.html#pysam.FastxRecord.get_quality_array",
+    "pysam.fastxrecord.name": "https://pysam.readthedocs.io/en/stable/api.html#pysam.FastxRecord.name",
+    "pysam.fastxrecord.quality": "https://pysam.readthedocs.io/en/stable/api.html#pysam.FastxRecord.quality",
+    "pysam.fastxrecord.sequence": "https://pysam.readthedocs.io/en/stable/api.html#pysam.FastxRecord.sequence",
+    "pysam.fastxrecord.set_comment": "https://pysam.readthedocs.io/en/stable/api.html#pysam.FastxRecord.set_comment",
+    "pysam.fastxrecord.set_name": "https://pysam.readthedocs.io/en/stable/api.html#pysam.FastxRecord.set_name",
+    "pysam.fastxrecord.set_sequence": "https://pysam.readthedocs.io/en/stable/api.html#pysam.FastxRecord.set_sequence",
     "pysam.htsfile": "https://pysam.readthedocs.io/en/stable/api.html#pysam.HTSFile",
     "pysam.htsfile.add_hts_options": "https://pysam.readthedocs.io/en/stable/api.html#pysam.HTSFile.add_hts_options",
     "pysam.htsfile.category": "https://pysam.readthedocs.io/en/stable/api.html#pysam.HTSFile.category",
@@ -225,6 +234,8 @@ MAPPING = {
     "pysam.pileupread.level": "https://pysam.readthedocs.io/en/stable/api.html#pysam.PileupRead.level",
     "pysam.pileupread.query_position": "https://pysam.readthedocs.io/en/stable/api.html#pysam.PileupRead.query_position",
     "pysam.pileupread.query_position_or_next": "https://pysam.readthedocs.io/en/stable/api.html#pysam.PileupRead.query_position_or_next",
+    "pysam.reverse_complement": "https://pysam.readthedocs.io/en/stable/api.html#pysam.reverse_complement",
+    "pysam.reverse_complement_inplace": "https://pysam.readthedocs.io/en/stable/api.html#pysam.reverse_complement_inplace",
     "pysam.samtools": "https://pysam.readthedocs.io/en/stable/usage.html",
     "pysam.samtools.command": "https://pysam.readthedocs.io/en/stable/usage.html#pysam.samtools.command",
     "pysam.samtools.command.get_messages": "https://pysam.readthedocs.io/en/stable/usage.html#pysam.samtools.command.get_messages",

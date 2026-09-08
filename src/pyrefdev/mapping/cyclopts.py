@@ -1,4 +1,4 @@
-VERSION = "4.24.0"
+VERSION = "4.25.0"
 
 # fmt: off
 MAPPING = {
@@ -327,6 +327,7 @@ MAPPING = {
     "cyclopts.token.keyword": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.Token.keyword",
     "cyclopts.token.source": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.Token.source",
     "cyclopts.token.value": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.Token.value",
+    "cyclopts.tokenizationerror": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.TokenizationError",
     "cyclopts.types": "https://cyclopts.readthedocs.io/en/latest/api.html",
     "cyclopts.types.binpath": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.types.BinPath",
     "cyclopts.types.csvpath": "https://cyclopts.readthedocs.io/en/latest/api.html#cyclopts.types.CsvPath",

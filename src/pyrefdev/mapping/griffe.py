@@ -1,4 +1,4 @@
-VERSION = "2.2.0"
+VERSION = "2.3.0"
 
 # fmt: off
 MAPPING = {
@@ -1155,6 +1155,7 @@ MAPPING = {
     "griffe._internal.extensions.base.extensions": "https://mkdocstrings.github.io/griffe/reference/api/extensions/#griffe.Extensions",
     "griffe._internal.extensions.base.extensions.add": "https://mkdocstrings.github.io/griffe/reference/api/extensions/#griffe.Extensions.add",
     "griffe._internal.extensions.base.extensions.call": "https://mkdocstrings.github.io/griffe/reference/api/extensions/#griffe.Extensions.call",
+    "griffe._internal.extensions.base.extensions.has_hooks": "https://mkdocstrings.github.io/griffe/reference/api/extensions/#griffe.Extensions.has_hooks",
     "griffe._internal.extensions.base.load_extensions": "https://mkdocstrings.github.io/griffe/reference/api/extensions/#griffe.load_extensions",
     "griffe._internal.extensions.base.loadableextensiontype": "https://mkdocstrings.github.io/griffe/reference/api/extensions/#griffe.LoadableExtensionType",
     "griffe._internal.extensions.dataclasses": "https://mkdocstrings.github.io/griffe/reference/api/extensions/",
@@ -1223,7 +1224,7 @@ MAPPING = {
     "griffe._internal.loader.griffeloader.ignored_modules": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.ignored_modules",
     "griffe._internal.loader.griffeloader.lines_collection": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.lines_collection",
     "griffe._internal.loader.griffeloader.load": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.load",
-    "griffe._internal.loader.griffeloader.modules_collection": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.modules_collection",
+    "griffe._internal.loader.griffeloader.prefer_stubs_docs": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.prefer_stubs_docs",
     "griffe._internal.loader.griffeloader.resolve_aliases": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.resolve_aliases",
     "griffe._internal.loader.griffeloader.resolve_module_aliases": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.resolve_module_aliases",
     "griffe._internal.loader.griffeloader.stats": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.stats",
@@ -3072,6 +3073,7 @@ MAPPING = {
     "griffe.extensions": "https://mkdocstrings.github.io/griffe/reference/api/extensions/#griffe.Extensions",
     "griffe.extensions.add": "https://mkdocstrings.github.io/griffe/reference/api/extensions/#griffe.Extensions.add",
     "griffe.extensions.call": "https://mkdocstrings.github.io/griffe/reference/api/extensions/#griffe.Extensions.call",
+    "griffe.extensions.has_hooks": "https://mkdocstrings.github.io/griffe/reference/api/extensions/#griffe.Extensions.has_hooks",
     "griffe.find_breaking_changes": "https://mkdocstrings.github.io/griffe/reference/api/checks/#griffe.find_breaking_changes",
     "griffe.function": "https://mkdocstrings.github.io/griffe/reference/api/models/function/#griffe.Function",
     "griffe.function.__bool__": "https://mkdocstrings.github.io/griffe/reference/api/models/function/#griffe.Function.__bool__",
@@ -3196,7 +3198,7 @@ MAPPING = {
     "griffe.griffeloader.ignored_modules": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.ignored_modules",
     "griffe.griffeloader.lines_collection": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.lines_collection",
     "griffe.griffeloader.load": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.load",
-    "griffe.griffeloader.modules_collection": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.modules_collection",
+    "griffe.griffeloader.prefer_stubs_docs": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.prefer_stubs_docs",
     "griffe.griffeloader.resolve_aliases": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.resolve_aliases",
     "griffe.griffeloader.resolve_module_aliases": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.resolve_module_aliases",
     "griffe.griffeloader.stats": "https://mkdocstrings.github.io/griffe/reference/api/loaders/#griffe.GriffeLoader.stats",

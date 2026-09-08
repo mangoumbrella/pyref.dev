@@ -1,4 +1,4 @@
-VERSION = "26.1.0"
+VERSION = "26.2.0"
 
 # fmt: off
 MAPPING = {
@@ -9,6 +9,7 @@ MAPPING = {
     "cattrs.baseconverter": "https://catt.rs/en/stable/cattrs.html#cattrs.BaseConverter",
     "cattrs.baseconverter.copy": "https://catt.rs/en/stable/cattrs.html#cattrs.BaseConverter.copy",
     "cattrs.baseconverter.detailed_validation": "https://catt.rs/en/stable/cattrs.html#cattrs.BaseConverter.detailed_validation",
+    "cattrs.baseconverter.gen_structure_hetero_tuple": "https://catt.rs/en/stable/cattrs.html#cattrs.BaseConverter.gen_structure_hetero_tuple",
     "cattrs.baseconverter.get_structure_hook": "https://catt.rs/en/stable/cattrs.html#cattrs.BaseConverter.get_structure_hook",
     "cattrs.baseconverter.get_unstructure_hook": "https://catt.rs/en/stable/cattrs.html#cattrs.BaseConverter.get_unstructure_hook",
     "cattrs.baseconverter.register_structure_hook": "https://catt.rs/en/stable/cattrs.html#cattrs.BaseConverter.register_structure_hook",
@@ -95,6 +96,7 @@ MAPPING = {
     "cattrs.errors.basevalidationerror": "https://catt.rs/en/stable/cattrs.html#cattrs.errors.BaseValidationError",
     "cattrs.errors.basevalidationerror.cl": "https://catt.rs/en/stable/cattrs.html#cattrs.errors.BaseValidationError.cl",
     "cattrs.errors.basevalidationerror.derive": "https://catt.rs/en/stable/cattrs.html#cattrs.errors.BaseValidationError.derive",
+    "cattrs.errors.cattrserror": "https://catt.rs/en/stable/cattrs.html#cattrs.errors.CattrsError",
     "cattrs.errors.classvalidationerror": "https://catt.rs/en/stable/cattrs.html#cattrs.errors.ClassValidationError",
     "cattrs.errors.classvalidationerror.group_exceptions": "https://catt.rs/en/stable/cattrs.html#cattrs.errors.ClassValidationError.group_exceptions",
     "cattrs.errors.forbiddenextrakeyserror": "https://catt.rs/en/stable/cattrs.html#cattrs.errors.ForbiddenExtraKeysError",
@@ -113,6 +115,7 @@ MAPPING = {
     "cattrs.gen.make_dict_structure_fn_from_attrs": "https://catt.rs/en/stable/cattrs.gen.html#cattrs.gen.make_dict_structure_fn_from_attrs",
     "cattrs.gen.make_dict_unstructure_fn": "https://catt.rs/en/stable/cattrs.gen.html#cattrs.gen.make_dict_unstructure_fn",
     "cattrs.gen.make_dict_unstructure_fn_from_attrs": "https://catt.rs/en/stable/cattrs.gen.html#cattrs.gen.make_dict_unstructure_fn_from_attrs",
+    "cattrs.gen.make_hetero_tuple_structure_fn": "https://catt.rs/en/stable/cattrs.gen.html#cattrs.gen.make_hetero_tuple_structure_fn",
     "cattrs.gen.make_hetero_tuple_unstructure_fn": "https://catt.rs/en/stable/cattrs.gen.html#cattrs.gen.make_hetero_tuple_unstructure_fn",
     "cattrs.gen.make_iterable_unstructure_fn": "https://catt.rs/en/stable/cattrs.gen.html#cattrs.gen.make_iterable_unstructure_fn",
     "cattrs.gen.make_mapping_structure_fn": "https://catt.rs/en/stable/cattrs.gen.html#cattrs.gen.make_mapping_structure_fn",
@@ -236,6 +239,7 @@ MAPPING = {
     "cattrs.preconf.ujson.ujsonconverter.omit_if_default": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.ujson.UjsonConverter.omit_if_default",
     "cattrs.preconf.ujson.ujsonconverter.type_overrides": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.ujson.UjsonConverter.type_overrides",
     "cattrs.preconf.ujson.ujsonconverter.use_alias": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.ujson.UjsonConverter.use_alias",
+    "cattrs.preconf.unstructure_datetime_as_timestamp": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.unstructure_datetime_as_timestamp",
     "cattrs.preconf.validate_datetime": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.validate_datetime",
     "cattrs.preconf.wrap": "https://catt.rs/en/stable/cattrs.preconf.html#cattrs.preconf.wrap",
     "cattrs.register_structure_hook": "https://catt.rs/en/stable/cattrs.html#cattrs.register_structure_hook",

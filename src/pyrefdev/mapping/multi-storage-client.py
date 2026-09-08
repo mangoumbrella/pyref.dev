@@ -1,4 +1,4 @@
-VERSION = "1.0.1"
+VERSION = "1.1.0"
 
 # fmt: off
 MAPPING = {
@@ -113,13 +113,6 @@ MAPPING = {
     "multistorageclient.contrib.torch.multistoragefilesystemwriter": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.contrib.torch.MultiStorageFileSystemWriter",
     "multistorageclient.contrib.torch.multistoragefilesystemwriter.validate_checkpoint_id": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.contrib.torch.MultiStorageFileSystemWriter.validate_checkpoint_id",
     "multistorageclient.contrib.torch.save": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.contrib.torch.save",
-    "multistorageclient.contrib.xarray": "https://nvidia.github.io/multi-storage-client/references/api.html#module-multistorageclient.contrib.xarray",
-    "multistorageclient.contrib.xarray.open_zarr": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.contrib.xarray.open_zarr",
-    "multistorageclient.contrib.zarr": "https://nvidia.github.io/multi-storage-client/references/api.html#module-multistorageclient.contrib.zarr",
-    "multistorageclient.contrib.zarr.lazyzarrstore": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.contrib.zarr.LazyZarrStore",
-    "multistorageclient.contrib.zarr.lazyzarrstore.getitems": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.contrib.zarr.LazyZarrStore.getitems",
-    "multistorageclient.contrib.zarr.lazyzarrstore.keys": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.contrib.zarr.LazyZarrStore.keys",
-    "multistorageclient.contrib.zarr.open_consolidated": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.contrib.zarr.open_consolidated",
     "multistorageclient.generators": "https://nvidia.github.io/multi-storage-client/references/api.html#module-multistorageclient.generators",
     "multistorageclient.generators.manifest_metadata": "https://nvidia.github.io/multi-storage-client/references/api.html",
     "multistorageclient.generators.manifest_metadata.manifestmetadatagenerator": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.generators.ManifestMetadataGenerator",
@@ -495,7 +488,9 @@ MAPPING = {
     "multistorageclient.types.storageproviderconfig.type": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.StorageProviderConfig.type",
     "multistorageclient.types.symlinkhandling": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SymlinkHandling",
     "multistorageclient.types.symlinkhandling.follow": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SymlinkHandling.FOLLOW",
+    "multistorageclient.types.symlinkhandling.follow_strict": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SymlinkHandling.FOLLOW_STRICT",
     "multistorageclient.types.symlinkhandling.preserve": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SymlinkHandling.PRESERVE",
+    "multistorageclient.types.symlinkhandling.preserve_strict": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SymlinkHandling.PRESERVE_STRICT",
     "multistorageclient.types.symlinkhandling.skip": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SymlinkHandling.SKIP",
     "multistorageclient.types.syncerror": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SyncError",
     "multistorageclient.types.syncresult": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SyncResult",

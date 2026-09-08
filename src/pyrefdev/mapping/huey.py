@@ -1,4 +1,4 @@
-VERSION = "3.3.4"
+VERSION = "3.4.0"
 
 # fmt: off
 MAPPING = {
@@ -58,6 +58,7 @@ MAPPING = {
     "huey.storage.basestorage.has_data_for_key": "https://huey.readthedocs.io/en/stable/api.html#huey.storage.BaseStorage.has_data_for_key",
     "huey.storage.basestorage.incr": "https://huey.readthedocs.io/en/stable/api.html#huey.storage.BaseStorage.incr",
     "huey.storage.basestorage.peek_data": "https://huey.readthedocs.io/en/stable/api.html#huey.storage.BaseStorage.peek_data",
+    "huey.storage.basestorage.peek_many": "https://huey.readthedocs.io/en/stable/api.html#huey.storage.BaseStorage.peek_many",
     "huey.storage.basestorage.pop_data": "https://huey.readthedocs.io/en/stable/api.html#huey.storage.BaseStorage.pop_data",
     "huey.storage.basestorage.put_data": "https://huey.readthedocs.io/en/stable/api.html#huey.storage.BaseStorage.put_data",
     "huey.storage.basestorage.put_if_empty": "https://huey.readthedocs.io/en/stable/api.html#huey.storage.BaseStorage.put_if_empty",

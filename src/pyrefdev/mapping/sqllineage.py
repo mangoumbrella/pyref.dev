@@ -1,4 +1,4 @@
-VERSION = "1.5.8"
+VERSION = "1.5.9"
 
 # fmt: off
 MAPPING = {
@@ -42,7 +42,14 @@ MAPPING = {
     "sqllineage.runner.lineagerunner": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner",
     "sqllineage.runner.lineagerunner.__str__": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner.__str__",
     "sqllineage.runner.lineagerunner.draw": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner.draw",
+    "sqllineage.runner.lineagerunner.find_nodes": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner.find_nodes",
+    "sqllineage.runner.lineagerunner.get_column_lineage": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner.get_column_lineage",
+    "sqllineage.runner.lineagerunner.intermediate_tables": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner.intermediate_tables",
     "sqllineage.runner.lineagerunner.print_column_lineage": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner.print_column_lineage",
     "sqllineage.runner.lineagerunner.print_table_lineage": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner.print_table_lineage",
+    "sqllineage.runner.lineagerunner.source_tables": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner.source_tables",
+    "sqllineage.runner.lineagerunner.statements": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner.statements",
     "sqllineage.runner.lineagerunner.supported_dialects": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner.supported_dialects",
+    "sqllineage.runner.lineagerunner.target_tables": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner.target_tables",
+    "sqllineage.runner.lineagerunner.to_cytoscape": "https://sqllineage.readthedocs.io/en/latest/basic_concepts/runner.html#sqllineage.runner.LineageRunner.to_cytoscape",
 }
