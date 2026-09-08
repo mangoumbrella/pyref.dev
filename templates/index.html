@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="/static/styles.css?v=5">
+    <link rel="stylesheet" href="/static/styles.css?v=7">
     <title>pyref.dev - Python Reference Docs</title>
     <script>
         // Applied before first paint so an explicit theme choice does not flash
@@ -63,7 +63,15 @@
 
         <div class="hero-intro">
             <p>Quickly jump to the official documentation for Python standard library modules and popular packages by using a simple URL pattern:</p>
-            <div class="pattern-box"><span class="prefix">pyref.dev/</span><span class="symbol">&lt;fully.qualified.symbol&gt;</span></div>
+            <form class="pattern-box" id="pattern-form" method="get" action="/is">
+                <label class="pattern-field" for="pattern-input">
+                    <span class="prefix">pyref.dev/</span>
+                    <input type="text" name="symbol" id="pattern-input" class="pattern-input"
+                           placeholder="&lt;fully.qualified.symbol&gt;" aria-label="Fully qualified symbol"
+                           autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="go">
+                </label>
+                <button type="submit" class="pattern-hint" aria-label="Go to this symbol">press &#9166;</button>
+            </form>
         </div>
     </section>
 
@@ -2134,6 +2142,17 @@
     </footer>
 
     <script>
+        // Enter in the pattern box does what typing pyref.dev/<symbol> in the
+        // address bar does: an exact lookup that falls back to search. Without
+        // JS the form still submits to /is as a plain search.
+        document.getElementById('pattern-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const symbol = document.getElementById('pattern-input').value.trim();
+            if (symbol) {
+                window.location.href = '/' + encodeURIComponent(symbol);
+            }
+        });
+
         document.addEventListener('keydown', function(event) {
             if (event.key === '/' && !event.ctrlKey && !event.metaKey) {
                 // Only trigger if not typing in an input field

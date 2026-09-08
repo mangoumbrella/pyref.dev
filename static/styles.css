@@ -266,25 +266,85 @@ button {
 }
 
 .pattern-box {
+    display: flex;
+    align-items: center;
     margin-top: 16px;
     border: 1px solid var(--accent-border);
     border-left: 5px solid var(--mark);
     border-radius: 8px;
     background: var(--bg-raised);
+}
+
+/* The focus ring belongs to the whole box: the input inside it is chromeless,
+   so a ring around the input alone would read as a second, smaller box. The
+   submit hint keeps its own ring, hence :has() rather than :focus-within. */
+.pattern-box:has(.pattern-input:focus) {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.pattern-field {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    align-items: baseline;
     padding: 18px 22px;
     font-family: var(--font-mono);
     font-size: 24px;
     letter-spacing: -0.015em;
-    overflow-x: auto;
+    cursor: text;
 }
 
 .pattern-box .prefix {
     color: var(--ink-eyebrow);
 }
 
-.pattern-box .symbol {
-    color: var(--accent);
+.pattern-input {
+    flex: 1;
+    min-width: 0;
+    border: none;
+    background: none;
+    padding: 0;
+    font: inherit;
+    letter-spacing: inherit;
     font-weight: 600;
+    color: var(--accent);
+    caret-color: var(--accent);
+}
+
+.pattern-input:focus {
+    outline: none;
+}
+
+/* Matches the weight and colour the symbol had when it was static text, so the
+   box looks unchanged until it is used. */
+.pattern-input::placeholder {
+    font-weight: 600;
+    color: var(--accent);
+    opacity: 1;
+}
+
+/* Hidden rather than transparent while the field is empty: there is nothing to
+   submit yet, so it must not be clickable or reachable by tab either. */
+.pattern-hint {
+    flex: none;
+    align-self: stretch;
+    padding: 0 22px 0 12px;
+    font-family: var(--font-sans);
+    font-size: 13px;
+    letter-spacing: 0;
+    color: var(--ink-faint);
+    white-space: nowrap;
+    visibility: hidden;
+}
+
+.pattern-box:has(.pattern-input:not(:placeholder-shown)) .pattern-hint {
+    visibility: visible;
+}
+
+.pattern-hint:hover {
+    color: var(--accent);
+    text-decoration: underline;
 }
 
 /* Examples */
@@ -677,7 +737,7 @@ code {
         font-size: 38px;
     }
 
-    .pattern-box {
+    .pattern-field {
         font-size: 19px;
     }
 
@@ -718,7 +778,7 @@ code {
         font-size: 32px;
     }
 
-    .pattern-box {
+    .pattern-field {
         font-size: 16px;
     }
 
