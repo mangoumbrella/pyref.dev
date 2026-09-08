@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600;700&display=swap">
-    <link rel="stylesheet" href="/static/styles.css?v=7">
+    <link rel="stylesheet" href="/static/styles.css?v=8">
     <title>{% if symbol %}Search: {{ symbol }}{% else %}Search{% endif %} - pyref.dev</title>
     <script>
         // Applied before first paint so an explicit theme choice does not flash
@@ -36,7 +36,7 @@
 </head>
 <body>
     <header class="results-header">
-        <a href="/" class="wordmark">pyref.dev</a>
+        <a href="/" class="wordmark"><span class="py-blue">pyref</span>.<span class="py-yellow">dev</span></a>
         <form class="search-control" method="get" action="/is">
             <span class="select-wrap">
                 <select name="package" class="package-select" aria-label="Package">

@@ -5,6 +5,10 @@
     --font-mono: "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 
     --pad: 52px;
+    --content: 1200px;
+    /* Rules and backgrounds stay full-bleed while the content sits in a centred
+       column: the gutter takes over from --pad once the viewport is wider. */
+    --gutter: max(var(--pad), calc((100% - var(--content)) / 2));
 
     --accent: #306998;
     --accent-hover: #24527a;
@@ -149,7 +153,7 @@ button {
 }
 
 .section {
-    padding: 40px var(--pad);
+    padding: 40px var(--gutter);
     border-bottom: 1px solid var(--rule);
 }
 
@@ -167,15 +171,22 @@ button {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    padding: 18px var(--pad);
+    padding: 18px var(--gutter);
     border-bottom: 1px solid var(--rule);
 }
 
 .wordmark {
-    font-family: var(--font-mono);
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: -0.01em;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.py-blue {
+    color: var(--accent);
+}
+
+.py-yellow {
+    color: var(--mark);
 }
 
 .header-actions {
@@ -205,28 +216,46 @@ button {
 
 /* Hero */
 .hero {
-    padding: 60px var(--pad) 52px;
+    padding: 60px var(--gutter) 52px;
     border-bottom: 1px solid var(--rule);
+    text-align: center;
 }
 
 .hero-title {
-    font-family: var(--font-mono);
-    font-size: 46px;
-    font-weight: 600;
-    letter-spacing: -0.035em;
+    position: relative;
+    display: inline-block;
+    font-size: 56px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
     line-height: 1;
+}
+
+/* The dot the mark has always had: Python yellow, tucked behind the wordmark's
+   opening letters. */
+.hero-title::before {
+    content: "";
+    position: absolute;
+    top: -15px;
+    left: -25px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: var(--mark);
+    opacity: 0.6;
+    z-index: -1;
 }
 
 .tagline {
     font-size: 18px;
     line-height: 1.55;
     color: var(--ink-body);
-    margin-top: 14px;
+    margin: 14px auto 0;
     max-width: 48ch;
 }
 
 .counts {
     display: flex;
+    justify-content: center;
     gap: 44px;
     margin-top: 34px;
 }
@@ -250,22 +279,29 @@ button {
 }
 
 .hero-intro {
-    margin-top: 42px;
+    margin: 42px auto 0;
     max-width: 66ch;
 }
 
 .hero-intro p {
+    max-width: 54ch;
+    margin-inline: auto;
     font-size: 15px;
     line-height: 1.65;
     color: var(--ink-intro);
-    text-wrap: pretty;
+    /* Centred, so two lines of even length read better than a full-width line
+       with a short tail under it. */
+    text-wrap: balance;
 }
 
 .hero-intro a {
     color: var(--accent);
 }
 
+/* The field is a live input, so its text starts at the left edge however the
+   hero around it is aligned. */
 .pattern-box {
+    text-align: left;
     display: flex;
     align-items: center;
     margin-top: 16px;
@@ -548,7 +584,7 @@ code {
 
 /* Footer */
 .footer {
-    padding: 26px var(--pad) 32px;
+    padding: 26px var(--gutter) 32px;
     border-top: 1px solid var(--rule);
     font-size: 13px;
     line-height: 1.8;
@@ -564,7 +600,7 @@ code {
     display: flex;
     align-items: center;
     gap: 16px;
-    padding: 14px var(--pad);
+    padding: 14px var(--gutter);
     border-bottom: 1px solid var(--rule);
 }
 
@@ -609,7 +645,7 @@ code {
 }
 
 .results-count {
-    padding: 26px var(--pad) 0;
+    padding: 26px var(--gutter) 0;
     font-size: 15px;
     color: var(--ink-body);
 }
@@ -625,7 +661,7 @@ code {
 }
 
 .results-list {
-    padding: 20px var(--pad) 44px;
+    padding: 20px var(--gutter) 44px;
 }
 
 /* A column width, not a count: symbol names are unbreakable dotted strings and
@@ -696,7 +732,7 @@ code {
 }
 
 .no-results {
-    padding: 20px var(--pad) 44px;
+    padding: 20px var(--gutter) 44px;
     font-size: 15px;
     color: var(--ink-body);
 }
@@ -778,10 +814,6 @@ code {
         font-size: 32px;
     }
 
-    .pattern-field {
-        font-size: 16px;
-    }
-
     .counts {
         gap: 24px;
     }
@@ -789,5 +821,20 @@ code {
     .select-wrap,
     .search-input {
         min-width: 100%;
+    }
+}
+
+/* The pattern box is one unbreakable line: the prefix plus a 34-character
+   placeholder. Below this width the submit hint no longer fits beside it (a
+   keyboard's go key still submits), and the line itself has to track the
+   viewport or its tail gets clipped. */
+@media (max-width: 560px) {
+    .pattern-hint {
+        display: none;
+    }
+
+    .pattern-field {
+        padding: 16px;
+        font-size: min(19px, calc(4.9vw - 4px));
     }
 }
