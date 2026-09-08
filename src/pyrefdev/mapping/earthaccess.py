@@ -1,4 +1,4 @@
-VERSION = "0.18.0"
+VERSION = "0.19.0"
 
 # fmt: off
 MAPPING = {
@@ -54,9 +54,9 @@ MAPPING = {
     "earthaccess.results.datacollection.abstract": "https://earthaccess.readthedocs.io/en/stable/api/collections/collections/#earthaccess.results.DataCollection.abstract",
     "earthaccess.results.datacollection.citation": "https://earthaccess.readthedocs.io/en/stable/api/collections/collections/#earthaccess.results.DataCollection.citation",
     "earthaccess.results.datacollection.concept_id": "https://earthaccess.readthedocs.io/en/stable/api/collections/collections/#earthaccess.results.DataCollection.concept_id",
+    "earthaccess.results.datacollection.data_links": "https://earthaccess.readthedocs.io/en/stable/api/collections/collections/#earthaccess.results.DataCollection.data_links",
     "earthaccess.results.datacollection.data_type": "https://earthaccess.readthedocs.io/en/stable/api/collections/collections/#earthaccess.results.DataCollection.data_type",
     "earthaccess.results.datacollection.doi": "https://earthaccess.readthedocs.io/en/stable/api/collections/collections/#earthaccess.results.DataCollection.doi",
-    "earthaccess.results.datacollection.get_data": "https://earthaccess.readthedocs.io/en/stable/api/collections/collections/#earthaccess.results.DataCollection.get_data",
     "earthaccess.results.datacollection.get_umm": "https://earthaccess.readthedocs.io/en/stable/api/collections/collections/#earthaccess.results.DataCollection.get_umm",
     "earthaccess.results.datacollection.landing_page": "https://earthaccess.readthedocs.io/en/stable/api/collections/collections/#earthaccess.results.DataCollection.landing_page",
     "earthaccess.results.datacollection.s3_bucket": "https://earthaccess.readthedocs.io/en/stable/api/collections/collections/#earthaccess.results.DataCollection.s3_bucket",

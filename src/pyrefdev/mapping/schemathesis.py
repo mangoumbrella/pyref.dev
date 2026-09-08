@@ -1,4 +1,4 @@
-VERSION = "4.25.2"
+VERSION = "4.26.0"
 
 # fmt: off
 MAPPING = {
@@ -7,6 +7,7 @@ MAPPING = {
     "schemathesis.apioperation.as_strategy": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.APIOperation.as_strategy",
     "schemathesis.apioperation.case": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.APIOperation.Case",
     "schemathesis.apioperation.get_parameter_serializers": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.APIOperation.get_parameter_serializers",
+    "schemathesis.apioperation.has_skipped_required_body": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.APIOperation.has_skipped_required_body",
     "schemathesis.apioperation.is_valid_response": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.APIOperation.is_valid_response",
     "schemathesis.apioperation.validate_response": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.APIOperation.validate_response",
     "schemathesis.auth": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.auth",
@@ -42,7 +43,6 @@ MAPPING = {
     "schemathesis.baseschema.prepare_request_body": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.prepare_request_body",
     "schemathesis.baseschema.reauth_state": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.reauth_state",
     "schemathesis.baseschema.record_runtime_observations": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.record_runtime_observations",
-    "schemathesis.baseschema.reset_coverage_state": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.reset_coverage_state",
     "schemathesis.baseschema.revalidate_case_metadata": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.revalidate_case_metadata",
     "schemathesis.case": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case",
     "schemathesis.case.__setattr__": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Case.__setattr__",
