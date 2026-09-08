@@ -4,85 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/static/logo128.png">
-    <link rel="stylesheet" href="/static/styles.css?v=4">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="/static/styles.css?v=7">
     <title>{% if symbol %}Search: {{ symbol }}{% else %}Search{% endif %} - pyref.dev</title>
+    <script>
+        // Applied before first paint so an explicit theme choice does not flash
+        // the other theme.
+        (function () {
+            var root = document.documentElement;
+            try {
+                var stored = localStorage.getItem("pyrefdev-theme");
+                if (stored === "light" || stored === "dark") {
+                    root.dataset.theme = stored;
+                }
+            } catch (e) {}
+            document.addEventListener("DOMContentLoaded", function () {
+                document.getElementById("theme-toggle").addEventListener("click", function () {
+                    var dark = root.dataset.theme
+                        ? root.dataset.theme === "dark"
+                        : window.matchMedia("(prefers-color-scheme: dark)").matches;
+                    root.dataset.theme = dark ? "light" : "dark";
+                    try {
+                        localStorage.setItem("pyrefdev-theme", root.dataset.theme);
+                    } catch (e) {}
+                });
+            });
+        })();
+    </script>
 </head>
 <body>
-    <header class="header">
-        <a href="/" class="logo">
-            <span class="py-blue">pyref</span>.<span class="py-yellow">dev</span>
-        </a>
-        <a href="https://github.com/mangoumbrella/pyref.dev" class="btn btn-primary github-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-            </svg>
-            View on GitHub
-        </a>
+    <header class="results-header">
+        <a href="/" class="wordmark">pyref.dev</a>
+        <form class="search-control" method="get" action="/is">
+            <span class="select-wrap">
+                <select name="package" class="package-select" aria-label="Package">
+                    <option value="">All Packages</option>
+                    {% for pkg in packages %}
+                        <option value="{{ pkg }}" {% if pkg == selected_package %}selected{% endif %}>{% if pkg == "python" %}Standard Library{% else %}{{ pkg }}{% endif %}</option>
+                    {% endfor %}
+                </select>
+                <span class="select-caret" aria-hidden="true">▾</span>
+            </span>
+            <input type="text" name="symbol" value="{{ symbol }}" placeholder="Enter symbol to search..." class="search-input" autofocus>
+            <button type="submit" class="btn-search">Search</button>
+            <button type="submit" name="lucky" value="true" class="btn-lucky">Lucky</button>
+        </form>
+        <div class="header-actions">
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch color theme">
+                <span class="when-light">Dark</span><span class="when-dark">Light</span>
+            </button>
+            <a href="https://github.com/mangoumbrella/pyref.dev">View on GitHub</a>
+        </div>
     </header>
 
-    <div class="container">
-        <div class="search-form">
-            <form method="get" action="/is">
-                <div class="search-input-row">
-                    <input type="text" name="symbol" value="{{ symbol }}" placeholder="Enter symbol to search..." class="search-input" autofocus>
-                    <select name="package" class="package-select">
-                        <option value="">All Packages</option>
-                        {% for pkg in packages %}
-                            <option value="{{ pkg }}" {% if pkg == selected_package %}selected{% endif %}>{% if pkg == "python" %}Standard Library{% else %}{{ pkg }}{% endif %}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                <div class="search-buttons-row">
-                    <button type="submit" class="btn btn-primary search-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        Search
-                    </button>
-                    <button type="submit" name="lucky" value="true" class="btn btn-success lucky-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                        </svg>
-                        Lucky
-                    </button>
-                </div>
-            </form>
+    {% if symbol %}
+        <div class="results-count">
+            <span class="count">{{ "{:,}".format(results|length) }}</span> result{% if results|length != 1 %}s{% endif %} for &ldquo;{{ symbol }}&rdquo;{% if selected_package %} in {% if package_url %}<a href="{{ package_url }}" target="_blank" rel="noopener noreferrer">{% endif %}{% if selected_package == "python" %}Standard Library{% else %}{{ selected_package }}{% endif %}{% if package_url %}</a>{% endif %}{% endif %}
         </div>
 
-        {% if symbol %}
-            <div class="results-header">
-                <span class="results-count">{{ results|length }}</span> result{% if results|length != 1 %}s{% endif %} for "{{ symbol }}"{% if selected_package %} in <strong>{% if package_url %}<a href="{{ package_url }}" target="_blank" rel="noopener noreferrer">{% endif %}{% if selected_package == "python" %}Standard Library{% else %}{{ selected_package }}{% endif %}{% if package_url %}</a>{% endif %}</strong>{% endif %}
-            </div>
-
-            {% if results %}
-                <div class="results-list">
+        {% if results %}
+            <div class="results-list">
+                <ul class="results-columns">
                     {% for result in results %}
-                        <div class="result-item{% if loop.index > 10 %} hidden-result{% endif %}">
+                        <li class="result-item{% if loop.index > 10 %} hidden-result{% endif %}">
                             <a href="{{ result.url }}" class="result-symbol">{{ result.symbol }}</a>
-                            <button class="copy-button" onclick="copyToClipboard('pyref.dev/{{ result.symbol }}')" title="Copy pyref.dev link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <button class="copy-button" onclick="copyToClipboard('pyref.dev/{{ result.symbol }}')" title="Copy pyref.dev link" aria-label="Copy pyref.dev link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                                     <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
                                     <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
                                 </svg>
                             </button>
-                        </div>
+                        </li>
                     {% endfor %}
-                    {% if results|length > 10 %}
-                        <div class="show-more-container">
-                            <button class="show-more-button" onclick="showMoreResults()">
-                                Show {{ results|length - 10 }} more results
-                            </button>
-                        </div>
-                    {% endif %}
-                </div>
-            {% else %}
-                <div class="no-results">
-                    No symbols found matching "{{ symbol }}"
-                </div>
-            {% endif %}
+                </ul>
+                {% if results|length > 10 %}
+                    <div class="show-more-container">
+                        <button class="show-more-button" onclick="showMoreResults()">
+                            Show {{ "{:,}".format(results|length - 10) }} more results
+                        </button>
+                    </div>
+                {% endif %}
+            </div>
+        {% else %}
+            <div class="no-results">
+                No symbols found matching &ldquo;{{ symbol }}&rdquo;
+            </div>
         {% endif %}
-    </div>
+    {% endif %}
 
     <!-- Notification popup -->
     <div id="notification" class="notification hidden">
@@ -102,11 +112,11 @@
         function showMoreResults() {
             const hiddenResults = document.querySelectorAll('.hidden-result');
             const showMoreContainer = document.querySelector('.show-more-container');
-            
+
             hiddenResults.forEach(result => {
                 result.classList.remove('hidden-result');
             });
-            
+
             if (showMoreContainer) {
                 showMoreContainer.style.display = 'none';
             }
@@ -131,28 +141,26 @@
         function showNotification(message) {
             const notification = document.getElementById('notification');
             const notificationText = document.getElementById('notification-text');
-            
+
             // Clear any existing timeouts
             clearTimeout(notificationTimeout);
             clearTimeout(hideTimeout);
-            
+
             // Reset all classes
-            notification.classList.remove('show', 'hiding', 'hidden');
-            
+            notification.classList.remove('show', 'hidden');
+
             notificationText.textContent = message;
-            
+
             // Force reflow to ensure the element is rendered before adding the show class
             notification.offsetHeight;
-            
+
             setTimeout(() => {
                 notification.classList.add('show');
             }, 10);
-            
+
             notificationTimeout = setTimeout(() => {
                 notification.classList.remove('show');
-                notification.classList.add('hiding');
                 hideTimeout = setTimeout(() => {
-                    notification.classList.remove('hiding');
                     notification.classList.add('hidden');
                 }, 300);
             }, 2000);
