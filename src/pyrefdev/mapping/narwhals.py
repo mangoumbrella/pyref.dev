@@ -1136,6 +1136,7 @@ MAPPING = {
     "narwhals.series": "https://narwhals-dev.github.io/narwhals/api-reference/series/#narwhals.series.Series",
     "narwhals.series.series": "https://narwhals-dev.github.io/narwhals/api-reference/series/#narwhals.series.Series",
     "narwhals.series.series.__arrow_c_stream__": "https://narwhals-dev.github.io/narwhals/api-reference/series/#narwhals.series.Series.__arrow_c_stream__",
+    "narwhals.series.series.__contains__": "https://narwhals-dev.github.io/narwhals/api-reference/series/#narwhals.series.Series.__contains__",
     "narwhals.series.series.__getitem__": "https://narwhals-dev.github.io/narwhals/api-reference/series/#narwhals.series.Series.__getitem__",
     "narwhals.series.series.__iter__": "https://narwhals-dev.github.io/narwhals/api-reference/series/#narwhals.series.Series.__iter__",
     "narwhals.series.series.abs": "https://narwhals-dev.github.io/narwhals/api-reference/series/#narwhals.series.Series.abs",

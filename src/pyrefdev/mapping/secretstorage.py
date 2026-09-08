@@ -3,7 +3,7 @@ VERSION = "3.5.0"
 # fmt: off
 MAPPING = {
     "secretstorage": "https://secretstorage.readthedocs.io/en/latest/",
-    "secretstorage.check_service_availability": "https://secretstorage.readthedocs.io/en/latest/index.html#secretstorage.check_service_availability",
+    "secretstorage.check_service_availability": "https://secretstorage.readthedocs.io/en/latest/#secretstorage.check_service_availability",
     "secretstorage.collection": "https://secretstorage.readthedocs.io/en/latest/collection.html",
     "secretstorage.collection.collection": "https://secretstorage.readthedocs.io/en/latest/collection.html#secretstorage.collection.Collection",
     "secretstorage.collection.collection.create_item": "https://secretstorage.readthedocs.io/en/latest/collection.html#secretstorage.collection.Collection.create_item",
@@ -22,7 +22,7 @@ MAPPING = {
     "secretstorage.collection.get_collection_by_alias": "https://secretstorage.readthedocs.io/en/latest/collection.html#secretstorage.collection.get_collection_by_alias",
     "secretstorage.collection.get_default_collection": "https://secretstorage.readthedocs.io/en/latest/collection.html#secretstorage.collection.get_default_collection",
     "secretstorage.collection.search_items": "https://secretstorage.readthedocs.io/en/latest/collection.html#secretstorage.collection.search_items",
-    "secretstorage.dbus_init": "https://secretstorage.readthedocs.io/en/latest/index.html#secretstorage.dbus_init",
+    "secretstorage.dbus_init": "https://secretstorage.readthedocs.io/en/latest/#secretstorage.dbus_init",
     "secretstorage.exceptions": "https://secretstorage.readthedocs.io/en/latest/exceptions.html",
     "secretstorage.exceptions.itemnotfoundexception": "https://secretstorage.readthedocs.io/en/latest/exceptions.html#secretstorage.exceptions.ItemNotFoundException",
     "secretstorage.exceptions.lockedexception": "https://secretstorage.readthedocs.io/en/latest/exceptions.html#secretstorage.exceptions.LockedException",

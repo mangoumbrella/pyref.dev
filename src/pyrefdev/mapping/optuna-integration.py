@@ -1,4 +1,4 @@
-VERSION = "4.9.0"
+VERSION = "5.0.0"
 
 # fmt: off
 MAPPING = {
@@ -121,7 +121,6 @@ MAPPING = {
     "optuna_integration.torchdistributedtrial.suggest_discrete_uniform": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TorchDistributedTrial.html#optuna_integration.TorchDistributedTrial.suggest_discrete_uniform",
     "optuna_integration.torchdistributedtrial.suggest_loguniform": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TorchDistributedTrial.html#optuna_integration.TorchDistributedTrial.suggest_loguniform",
     "optuna_integration.torchdistributedtrial.suggest_uniform": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TorchDistributedTrial.html#optuna_integration.TorchDistributedTrial.suggest_uniform",
-    "optuna_integration.torchdistributedtrial.system_attrs": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TorchDistributedTrial.html#optuna_integration.TorchDistributedTrial.system_attrs",
     "optuna_integration.trackiocallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TrackioCallback.html#optuna_integration.TrackioCallback",
     "optuna_integration.trackiocallback.track_in_trackio": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TrackioCallback.html#optuna_integration.TrackioCallback.track_in_trackio",
     "optuna_integration.weightsandbiasescallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.WeightsAndBiasesCallback.html#optuna_integration.WeightsAndBiasesCallback",

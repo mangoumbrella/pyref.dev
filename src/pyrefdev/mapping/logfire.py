@@ -1,4 +1,4 @@
-VERSION = "4.41.0"
+VERSION = "5.0.0"
 
 # fmt: off
 MAPPING = {
@@ -198,26 +198,6 @@ MAPPING = {
     "logfire.exceptions": "https://pydantic.dev/docs/logfire/api/exceptions/#logfire.exceptions",
     "logfire.exceptions.logfireconfigerror": "https://pydantic.dev/docs/logfire/api/exceptions/#logfire.exceptions.LogfireConfigError",
     "logfire.exceptions.logfireserverwarning": "https://pydantic.dev/docs/logfire/api/exceptions/#logfire.exceptions.LogfireServerWarning",
-    "logfire.experimental": "https://pydantic.dev/docs/logfire/api/query_client/",
-    "logfire.experimental.query_client": "https://pydantic.dev/docs/logfire/api/query_client/",
-    "logfire.experimental.query_client.asynclogfirequeryclient": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.AsyncLogfireQueryClient",
-    "logfire.experimental.query_client.asynclogfirequeryclient.info": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.AsyncLogfireQueryClient.info",
-    "logfire.experimental.query_client.asynclogfirequeryclient.query_arrow": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.AsyncLogfireQueryClient.query_arrow",
-    "logfire.experimental.query_client.asynclogfirequeryclient.query_csv": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.AsyncLogfireQueryClient.query_csv",
-    "logfire.experimental.query_client.asynclogfirequeryclient.query_json_rows": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.AsyncLogfireQueryClient.query_json_rows",
-    "logfire.experimental.query_client.columndetails": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.ColumnDetails",
-    "logfire.experimental.query_client.columndetails.datatype": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.ColumnDetails.datatype",
-    "logfire.experimental.query_client.columndetails.name": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.ColumnDetails.name",
-    "logfire.experimental.query_client.columndetails.nullable": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.ColumnDetails.nullable",
-    "logfire.experimental.query_client.logfirequeryclient": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.LogfireQueryClient",
-    "logfire.experimental.query_client.logfirequeryclient.info": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.LogfireQueryClient.info",
-    "logfire.experimental.query_client.logfirequeryclient.query_arrow": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.LogfireQueryClient.query_arrow",
-    "logfire.experimental.query_client.logfirequeryclient.query_csv": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.LogfireQueryClient.query_csv",
-    "logfire.experimental.query_client.logfirequeryclient.query_json_rows": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.LogfireQueryClient.query_json_rows",
-    "logfire.experimental.query_client.readtokeninfo": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.ReadTokenInfo",
-    "logfire.experimental.query_client.rowqueryresults": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.RowQueryResults",
-    "logfire.experimental.query_client.rowqueryresults.columns": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.RowQueryResults.columns",
-    "logfire.experimental.query_client.rowqueryresults.rows": "https://pydantic.dev/docs/logfire/api/query_client/#logfire.query_client.RowQueryResults.rows",
     "logfire.get_baggage": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.get_baggage",
     "logfire.get_context": "https://pydantic.dev/docs/logfire/api/propagate/#logfire.propagate.get_context",
     "logfire.integrations.logging": "https://pydantic.dev/docs/logfire/api/logfire/",

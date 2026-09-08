@@ -1,4 +1,4 @@
-VERSION = "10.12.0"
+VERSION = "10.13.0.post1"
 
 # fmt: off
 MAPPING = {
@@ -217,11 +217,17 @@ MAPPING = {
     "pikepdf.exceptions.imagedecompressionerror": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.ImageDecompressionError",
     "pikepdf.exceptions.invalidpdfimageerror": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.InvalidPdfImageError",
     "pikepdf.exceptions.jobusageerror": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.JobUsageError",
+    "pikepdf.exceptions.notextractableerror": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.NotExtractableError",
     "pikepdf.exceptions.outlinestructureerror": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.OutlineStructureError",
+    "pikepdf.exceptions.pagecopywarning": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.PageCopyWarning",
     "pikepdf.exceptions.passworderror": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.PasswordError",
     "pikepdf.exceptions.pdferror": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.PdfError",
     "pikepdf.exceptions.pdfparsingerror": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.PdfParsingError",
+    "pikepdf.exceptions.pikepdferror": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.PikepdfError",
+    "pikepdf.exceptions.pikepdfwarning": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.PikepdfWarning",
+    "pikepdf.exceptions.referencecycleerror": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.ReferenceCycleError",
     "pikepdf.exceptions.unsupportedimagetypeerror": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.UnsupportedImageTypeError",
+    "pikepdf.exceptions.xmptypewarning": "https://pikepdf.readthedocs.io/en/latest/api/exceptions.html#pikepdf.exceptions.XmpTypeWarning",
     "pikepdf.form": "https://pikepdf.readthedocs.io/en/latest/api/form.html",
     "pikepdf.form._fieldwrapper": "https://pikepdf.readthedocs.io/en/latest/api/form.html#pikepdf.form._FieldWrapper",
     "pikepdf.form._fieldwrapper.export_enabled": "https://pikepdf.readthedocs.io/en/latest/api/form.html#pikepdf.form._FieldWrapper.export_enabled",

@@ -1647,6 +1647,7 @@ MAPPING = {
     "quimb.tensor.fitting": "https://quimb.readthedocs.io/en/latest/autoapi/quimb/tensor/fitting/index.html#module-quimb.tensor.fitting",
     "quimb.tensor.fitting._tn_fit_als_core": "https://quimb.readthedocs.io/en/latest/autoapi/quimb/tensor/fitting/index.html#quimb.tensor.fitting._tn_fit_als_core",
     "quimb.tensor.fitting.conjugate_gradient": "https://quimb.readthedocs.io/en/latest/autoapi/quimb/tensor/fitting/index.html#quimb.tensor.fitting.conjugate_gradient",
+    "quimb.tensor.fitting.distance_from_overlaps": "https://quimb.readthedocs.io/en/latest/autoapi/quimb/tensor/fitting/index.html#quimb.tensor.fitting.distance_from_overlaps",
     "quimb.tensor.fitting.tensor_network_distance": "https://quimb.readthedocs.io/en/latest/autoapi/quimb/tensor/fitting/index.html#quimb.tensor.fitting.tensor_network_distance",
     "quimb.tensor.fitting.tensor_network_fit_als": "https://quimb.readthedocs.io/en/latest/autoapi/quimb/tensor/fitting/index.html#quimb.tensor.fitting.tensor_network_fit_als",
     "quimb.tensor.fitting.tensor_network_fit_autodiff": "https://quimb.readthedocs.io/en/latest/autoapi/quimb/tensor/fitting/index.html#quimb.tensor.fitting.tensor_network_fit_autodiff",

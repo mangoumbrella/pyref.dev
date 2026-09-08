@@ -1,10 +1,11 @@
-VERSION = "1.6.0"
+VERSION = "1.7.0"
 
 # fmt: off
 MAPPING = {
     "pillow_heif": "https://pillow-heif.readthedocs.io/en/latest/",
     "pillow_heif.as_plugin": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImagePlugin.html",
     "pillow_heif.as_plugin._libheifimagefile": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImagePlugin.html#pillow_heif.as_plugin._LibHeifImageFile",
+    "pillow_heif.as_plugin._libheifimagefile.draft": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImagePlugin.html#pillow_heif.as_plugin._LibHeifImageFile.draft",
     "pillow_heif.as_plugin._libheifimagefile.get_format_mimetype": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImagePlugin.html#pillow_heif.as_plugin._LibHeifImageFile.get_format_mimetype",
     "pillow_heif.as_plugin._libheifimagefile.info": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImagePlugin.html#pillow_heif.as_plugin._LibHeifImageFile.info",
     "pillow_heif.as_plugin._libheifimagefile.is_animated": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImagePlugin.html#pillow_heif.as_plugin._LibHeifImageFile.is_animated",
@@ -39,6 +40,13 @@ MAPPING = {
     "pillow_heif.heif.heifdepthimage.size": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifDepthImage.size",
     "pillow_heif.heif.heifdepthimage.stride": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifDepthImage.stride",
     "pillow_heif.heif.heifdepthimage.to_pillow": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifDepthImage.to_pillow",
+    "pillow_heif.heif.heifthumbnail": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifThumbnail",
+    "pillow_heif.heif.heifthumbnail.data": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifThumbnail.data",
+    "pillow_heif.heif.heifthumbnail.load": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifThumbnail.load",
+    "pillow_heif.heif.heifthumbnail.mode": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifThumbnail.mode",
+    "pillow_heif.heif.heifthumbnail.size": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifThumbnail.size",
+    "pillow_heif.heif.heifthumbnail.stride": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifThumbnail.stride",
+    "pillow_heif.heif.heifthumbnail.to_pillow": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.heif.HeifThumbnail.to_pillow",
     "pillow_heif.heifcolorprimaries": "https://pillow-heif.readthedocs.io/en/latest/reference/constants.html#pillow_heif.HeifColorPrimaries",
     "pillow_heif.heifcolorprimaries.ebu_tech_3213_e": "https://pillow-heif.readthedocs.io/en/latest/reference/constants.html#pillow_heif.HeifColorPrimaries.EBU_TECH_3213_E",
     "pillow_heif.heifcolorprimaries.generic_film": "https://pillow-heif.readthedocs.io/en/latest/reference/constants.html#pillow_heif.HeifColorPrimaries.GENERIC_FILM",
@@ -74,6 +82,7 @@ MAPPING = {
     "pillow_heif.heifimage": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage",
     "pillow_heif.heifimage.data": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.data",
     "pillow_heif.heifimage.get_aux_image": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.get_aux_image",
+    "pillow_heif.heifimage.get_thumbnail": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.get_thumbnail",
     "pillow_heif.heifimage.has_alpha": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.has_alpha",
     "pillow_heif.heifimage.load": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.load",
     "pillow_heif.heifimage.mode": "https://pillow-heif.readthedocs.io/en/latest/reference/HeifImage.html#pillow_heif.HeifImage.mode",

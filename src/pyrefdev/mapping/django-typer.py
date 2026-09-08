@@ -1,4 +1,4 @@
-VERSION = "3.9.0"
+VERSION = "4.1.0"
 
 # fmt: off
 MAPPING = {
@@ -57,13 +57,13 @@ MAPPING = {
     "django_typer.management.commands.shellcompletion.command.install": "https://django-typer.readthedocs.io/en/stable/reference/shell_completion.html#django_typer.management.commands.shellcompletion.Command.install",
     "django_typer.management.commands.shellcompletion.command.manage_script": "https://django-typer.readthedocs.io/en/stable/reference/shell_completion.html#django_typer.management.commands.shellcompletion.Command.manage_script",
     "django_typer.management.commands.shellcompletion.command.manage_script_name": "https://django-typer.readthedocs.io/en/stable/reference/shell_completion.html#django_typer.management.commands.shellcompletion.Command.manage_script_name",
+    "django_typer.management.commands.shellcompletion.command.print_result": "https://django-typer.readthedocs.io/en/stable/reference/shell_completion.html#django_typer.management.commands.shellcompletion.Command.print_result",
     "django_typer.management.commands.shellcompletion.command.shell": "https://django-typer.readthedocs.io/en/stable/reference/shell_completion.html#django_typer.management.commands.shellcompletion.Command.shell",
     "django_typer.management.commands.shellcompletion.command.uninstall": "https://django-typer.readthedocs.io/en/stable/reference/shell_completion.html#django_typer.management.commands.shellcompletion.Command.uninstall",
     "django_typer.management.context": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.Context",
     "django_typer.management.context.__init__": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.Context.__init__",
     "django_typer.management.context.paramdict": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.Context.ParamDict",
     "django_typer.management.context.paramdict.__init__": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.Context.ParamDict.__init__",
-    "django_typer.management.context.parent": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.Context.parent",
     "django_typer.management.context.supplied_params": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.Context.supplied_params",
     "django_typer.management.djangotypermixin": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DjangoTyperMixin",
     "django_typer.management.djangotypermixin.__init__": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DjangoTyperMixin.__init__",
@@ -71,12 +71,16 @@ MAPPING = {
     "django_typer.management.djangotypermixin.context_class": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DjangoTyperMixin.context_class",
     "django_typer.management.djangotypermixin.converter": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DjangoTyperMixin.Converter",
     "django_typer.management.djangotypermixin.get_params": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DjangoTyperMixin.get_params",
+    "django_typer.management.djangotypermixin.make_context": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DjangoTyperMixin.make_context",
     "django_typer.management.djangotypermixin.no_callback": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DjangoTyperMixin.no_callback",
     "django_typer.management.djangotypermixin.shell_complete": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DjangoTyperMixin.shell_complete",
     "django_typer.management.dtcommand": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DTCommand",
     "django_typer.management.dtgroup": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DTGroup",
+    "django_typer.management.dtgroup.__init__": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DTGroup.__init__",
+    "django_typer.management.dtgroup.chain": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DTGroup.chain",
     "django_typer.management.dtgroup.invoke": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DTGroup.invoke",
     "django_typer.management.dtgroup.list_commands": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DTGroup.list_commands",
+    "django_typer.management.dtgroup.parse_args": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.DTGroup.parse_args",
     "django_typer.management.finalize": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.finalize",
     "django_typer.management.get_command": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.get_command",
     "django_typer.management.group": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.group",
@@ -89,6 +93,7 @@ MAPPING = {
     "django_typer.management.typercommand": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.TyperCommand",
     "django_typer.management.typercommand.__call__": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.TyperCommand.__call__",
     "django_typer.management.typercommand.__init__": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.TyperCommand.__init__",
+    "django_typer.management.typercommand.atomic": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.TyperCommand.atomic",
     "django_typer.management.typercommand.callback": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.TyperCommand.callback",
     "django_typer.management.typercommand.command": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.TyperCommand.command",
     "django_typer.management.typercommand.command_tree": "https://django-typer.readthedocs.io/en/stable/reference/management.html#django_typer.management.TyperCommand.command_tree",

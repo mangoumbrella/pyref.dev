@@ -580,7 +580,7 @@ MAPPING = {
     "graphistry.compute.hop.hop": "https://pygraphistry.readthedocs.io/en/latest/graphistry.compute.html#graphistry.compute.hop.hop",
     "graphistry.compute.hop.query_if_not_none": "https://pygraphistry.readthedocs.io/en/latest/graphistry.compute.html#graphistry.compute.hop.query_if_not_none",
     "graphistry.compute.hop.resolve_hop_bounds": "https://pygraphistry.readthedocs.io/en/latest/graphistry.compute.html#graphistry.compute.hop.resolve_hop_bounds",
-    "graphistry.compute.hop.undirected_rediscovered_seed_ids": "https://pygraphistry.readthedocs.io/en/latest/graphistry.compute.html#graphistry.compute.hop.undirected_rediscovered_seed_ids",
+    "graphistry.compute.hop.undirected_rediscovered_seed_ids": "https://pygraphistry.readthedocs.io/en/latest/api/gfql/hop.html#graphistry.compute.hop.undirected_rediscovered_seed_ids",
     "graphistry.compute.is_in": "https://pygraphistry.readthedocs.io/en/latest/graphistry.compute.html#graphistry.compute.is_in",
     "graphistry.compute.is_leap_year": "https://pygraphistry.readthedocs.io/en/latest/graphistry.compute.html#graphistry.compute.is_leap_year",
     "graphistry.compute.is_month_end": "https://pygraphistry.readthedocs.io/en/latest/graphistry.compute.html#graphistry.compute.is_month_end",
