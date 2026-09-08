@@ -6,6 +6,7 @@ Nothing noticeable unreleased.
 
 ## v2026.6
 
+- Updated the website design.
 - Updated the following packages:
   - [aiogoogle](https://aiogoogle.readthedocs.io/en/latest/)
   - [aiolimiter](https://aiolimiter.readthedocs.io/en/stable/)
