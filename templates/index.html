@@ -4,103 +4,132 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="/static/logo128.png">
-    <link rel="stylesheet" href="/static/styles.css?v=4">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600;700&display=swap">
+    <link rel="stylesheet" href="/static/styles.css?v=5">
     <title>pyref.dev - Python Reference Docs</title>
+    <script>
+        // Applied before first paint so an explicit theme choice does not flash
+        // the other theme.
+        (function () {
+            var root = document.documentElement;
+            try {
+                var stored = localStorage.getItem("pyrefdev-theme");
+                if (stored === "light" || stored === "dark") {
+                    root.dataset.theme = stored;
+                }
+            } catch (e) {}
+            document.addEventListener("DOMContentLoaded", function () {
+                document.getElementById("theme-toggle").addEventListener("click", function () {
+                    var dark = root.dataset.theme
+                        ? root.dataset.theme === "dark"
+                        : window.matchMedia("(prefers-color-scheme: dark)").matches;
+                    root.dataset.theme = dark ? "light" : "dark";
+                    try {
+                        localStorage.setItem("pyrefdev-theme", root.dataset.theme);
+                    } catch (e) {}
+                });
+            });
+        })();
+    </script>
 </head>
 <body>
-    <header class="header home">
-        <a href="https://github.com/mangoumbrella/pyref.dev" class="btn btn-primary github-link">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
-            </svg>
-            View on GitHub
-        </a>
+    <header class="site-header">
+        <a href="/" class="wordmark">pyref.dev</a>
+        <div class="header-actions">
+            <button type="button" class="theme-toggle" id="theme-toggle" aria-label="Switch color theme">
+                <span class="when-light">Dark</span><span class="when-dark">Light</span>
+            </button>
+            <a href="https://github.com/mangoumbrella/pyref.dev">View on GitHub</a>
+        </div>
     </header>
-    <div class="container home">
-        <div class="logo home">
-            <h1><span class="py-blue">pyref</span>.<span class="py-yellow">dev</span></h1>
-        </div>
+
+    <section class="hero">
+        <h1 class="hero-title">pyref.dev</h1>
         <p class="tagline">A fast, convenient way to access Python reference docs.</p>
-        
-        <div class="stats">
-            <div class="stat">
-                <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <rect x="3" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="3" width="7" height="7"></rect>
-                    <rect x="14" y="14" width="7" height="7"></rect>
-                    <rect x="3" y="14" width="7" height="7"></rect>
-                </svg>
-                <span><span class="stat-number">1,993</span> packages</span>
+
+        <div class="counts">
+            <div>
+                <div class="count-value" data-count="packages">1,993</div>
+                <div class="count-label">packages</div>
             </div>
-            <div class="stat">
-                <svg class="stat-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <polyline points="16 18 22 12 16 6"></polyline>
-                    <polyline points="8 6 2 12 8 18"></polyline>
-                </svg>
-                <span><span class="stat-number">1,185,794</span> symbols</span>
+            <div class="count-divider"></div>
+            <div>
+                <div class="count-value" data-count="symbols">1,185,794</div>
+                <div class="count-label">symbols</div>
             </div>
         </div>
 
-        <p>Quickly jump to the official documentation for Python standard library modules and popular packages by using a simple URL pattern:</p>
-        <div class="url-pattern">pyref.dev/&lt;fully.qualified.symbol&gt;</div>
-
-        <h2 class="section-title">Examples</h2>
-        <ul class="examples-list">
-            <li><a href="https://pyref.dev/json">pyref.dev/json</a></li>
-            <li><a href="https://pyref.dev/pathlib.Path">pyref.dev/pathlib.Path</a></li>
-            <li><a href="https://pyref.dev/datetime.datetime.strftime">pyref.dev/datetime.datetime.strftime</a></li>
-            <li><a href="https://pyref.dev/numpy.array">pyref.dev/numpy.array</a></li>
-        </ul>
-
-        <h2 class="section-title">You can also search symbols</h2>
-
-        <div class="search-form">
-            <form method="get" action="/is">
-                <div class="search-input-row">
-                    <input type="text" name="symbol" placeholder="Enter symbol to search..." class="search-input" id="search-input">
-                    <select name="package" class="package-select">
-                        <option value="">All Packages</option>
-                        {% for pkg in packages %}
-                            <option value="{{ pkg }}">{% if pkg == "python" %}Standard Library{% else %}{{ pkg }}{% endif %}</option>
-                        {% endfor %}
-                    </select>
-                </div>
-                <div class="search-buttons-row">
-                    <button type="submit" class="btn btn-primary search-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="11" cy="11" r="8"></circle>
-                            <path d="m21 21-4.35-4.35"></path>
-                        </svg>
-                        Search
-                    </button>
-                    <button type="submit" name="lucky" value="true" class="btn btn-success lucky-button">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-                        </svg>
-                        Lucky
-                    </button>
-                </div>
-            </form>
+        <div class="hero-intro">
+            <p>Quickly jump to the official documentation for Python standard library modules and popular packages by using a simple URL pattern:</p>
+            <div class="pattern-box"><span class="prefix">pyref.dev/</span><span class="symbol">&lt;fully.qualified.symbol&gt;</span></div>
         </div>
+    </section>
 
-        <h2 class="section-title">Browser custom search engines</h2>
-        <p>
-            For even fastest lookups, add <a href="http://pyref.dev/">pyref.dev</a> as a custom search engine in your browser. Use <code>https://pyref.dev/%s</code> as the URL with <code>%s</code> in place of the query.
-            Then you can type a shortcut (e.g., <code>py</code>), <code>&lt;SPACE&gt;</space></code>, <code>SYMBOL</code> in your address bar to quickly jump to the documentation.
-            If you use Chrome, see <a href="https://support.google.com/chrome/answer/95426">instructions</a> on setting up custom search engines.
-        </p>
-        <p style="margin-bottom: 0.4rem;">Here are more advanced URL patterns:</p>
-        <ul>
-            <li><code>https://pyref.dev/is?symbol=%s</code>: Search for a symbol across all packages</li>
-            <li><code>https://pyref.dev/is?lucky=1&amp;symbol=%s</code>: Immediately navigate to first result</li>
-            <li><code>https://pyref.dev/is?lucky=1&amp;package=python&amp;symbol=%s</code>: Search only the standard library and navigate to first result</li>
+    <section class="section">
+        <h2 class="eyebrow">Examples</h2>
+        <ul class="examples">
+            <li><a href="https://pyref.dev/json"><span class="prefix">pyref.dev/</span><span class="symbol">json</span></a></li>
+            <li><a href="https://pyref.dev/pathlib.Path"><span class="prefix">pyref.dev/</span><span class="symbol">pathlib.Path</span></a></li>
+            <li><a href="https://pyref.dev/datetime.datetime.strftime"><span class="prefix">pyref.dev/</span><span class="symbol">datetime.datetime.strftime</span></a></li>
+            <li><a href="https://pyref.dev/numpy.array"><span class="prefix">pyref.dev/</span><span class="symbol">numpy.array</span></a></li>
         </ul>
+    </section>
 
-        <h2 id="supported-packages" class="section-title" style="margin-top: 2rem; margin-bottom: 0;">Supported packages</h2>
-    </div>
+    <section class="section">
+        <h2 class="eyebrow">You can also search symbols</h2>
+        <form class="search-control" method="get" action="/is">
+            <span class="select-wrap">
+                <select name="package" class="package-select" aria-label="Package">
+                    <option value="">All Packages</option>
+                    {% for pkg in packages %}
+                        <option value="{{ pkg }}">{% if pkg == "python" %}Standard Library{% else %}{{ pkg }}{% endif %}</option>
+                    {% endfor %}
+                </select>
+                <span class="select-caret" aria-hidden="true">▾</span>
+            </span>
+            <input type="text" name="symbol" placeholder="Enter symbol to search..." class="search-input" id="search-input">
+            <button type="submit" class="btn-search">Search</button>
+            <button type="submit" name="lucky" value="true" class="btn-lucky">Lucky</button>
+        </form>
+    </section>
 
-    <div class="supported-packages">
-        <ul class="packages-grid">
+    <section class="section setup-grid">
+        <div>
+            <h2 class="eyebrow">Browser custom search engines</h2>
+            <p>
+                For even fastest lookups, add <a href="https://pyref.dev/">pyref.dev</a> as a custom search engine in your browser. Use the URL below with <code>%s</code> in place of the query.
+                Then you can type a shortcut (e.g., <code>py</code>), <code>&lt;SPACE&gt;</code>, <code>SYMBOL</code> in your address bar to quickly jump to the documentation.
+                If you use Chrome, see <a href="https://support.google.com/chrome/answer/95426">instructions</a> on setting up custom search engines.
+            </p>
+            <div class="code-block">https://pyref.dev/%s</div>
+        </div>
+        <div>
+            <h2 class="eyebrow">Advanced URL patterns</h2>
+            <ul class="patterns">
+                <li>
+                    <div class="pattern-url">https://pyref.dev/is?symbol=%s</div>
+                    <div class="pattern-desc">Search for a symbol across all packages</div>
+                </li>
+                <li>
+                    <div class="pattern-url">https://pyref.dev/is?lucky=1&amp;symbol=%s</div>
+                    <div class="pattern-desc">Immediately navigate to first result</div>
+                </li>
+                <li>
+                    <div class="pattern-url">https://pyref.dev/is?lucky=1&amp;package=python&amp;symbol=%s</div>
+                    <div class="pattern-desc">Search only the standard library and navigate to first result</div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="section packages" id="supported-packages">
+        <div class="section-head">
+            <h2 class="eyebrow">Supported packages</h2>
+            <span class="packages-total"><span data-count="packages">1,993</span> total</span>
+        </div>
+        <ul class="packages-index">
             <li class="stdlib-package"><a href="https://docs.python.org/3/library/">Standard Library</a></li>
             <!-- BEGIN PYPI PACKAGES -->
             <li><a href="https://access.readthedocs.io/en/stable/">access</a></li>
@@ -2097,8 +2126,8 @@
             <li><a href="https://python-zyte-api.readthedocs.io/en/stable/">zyte-api</a></li>
             <!-- END PYPI PACKAGES -->
         </ul>
-    </div>
-    
+    </section>
+
     <footer class="footer">
         <p>Website served with <a href="https://github.com/mangoumbrella/pyref.dev">pyrefdev</a> v{{ version }} on Python {{ python_version }}</p>
         <p>&copy; 2025-2026 <a href="https://mangoumbrella.com">Mango Umbrella LLC</a> and the pyref.dev authors</p>

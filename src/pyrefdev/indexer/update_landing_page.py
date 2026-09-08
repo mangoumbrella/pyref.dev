@@ -35,16 +35,18 @@ def update_landing_page_with_packages(
         flags=re.DOTALL,
     )
 
+    # Both the hero figure and the "N total" above the package index carry
+    # data-count="packages", so one substitution keeps them in step.
     num_packages = len(SUPPORTED_PACKAGES)
     new_content = re.sub(
-        r'(class="stat-number">)([0-9][0-9,]*(?:\.[0-9]+)*)(</span> packages)',
+        r'(data-count="packages">)([0-9][0-9,]*(?:\.[0-9]+)*)(</)',
         rf"\g<1>{num_packages:,}\g<3>",
         new_content,
     )
     all_symbols, _ = mapping.load_mapping(verify_duplicates=False)
     num_symbols = len(all_symbols)
     new_content = re.sub(
-        r'(class="stat-number">)([0-9][0-9,]*(?:\.[0-9]+)*)(</span> symbols)',
+        r'(data-count="symbols">)([0-9][0-9,]*(?:\.[0-9]+)*)(</)',
         rf"\g<1>{num_symbols:,}\g<3>",
         new_content,
     )
