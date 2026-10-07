@@ -1,4 +1,4 @@
-VERSION = "3.117.1"
+VERSION = "3.117.2"
 
 # fmt: off
 MAPPING = {
@@ -672,6 +672,7 @@ MAPPING = {
     "pulpcore.app.models.repository.repositoryversion.contains": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/base-models/#pulpcore.app.models.repository.RepositoryVersion.contains",
     "pulpcore.app.models.repository.repositoryversion.content": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/base-models/#pulpcore.app.models.repository.RepositoryVersion.content",
     "pulpcore.app.models.repository.repositoryversion.content_batch_qs": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/base-models/#pulpcore.app.models.repository.RepositoryVersion.content_batch_qs",
+    "pulpcore.app.models.repository.repositoryversion.content_ids_subquery": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/base-models/#pulpcore.app.models.repository.RepositoryVersion.content_ids_subquery",
     "pulpcore.app.models.repository.repositoryversion.delete": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/base-models/#pulpcore.app.models.repository.RepositoryVersion.delete",
     "pulpcore.app.models.repository.repositoryversion.disk_size": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/base-models/#pulpcore.app.models.repository.RepositoryVersion.disk_size",
     "pulpcore.app.models.repository.repositoryversion.get_content": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/base-models/#pulpcore.app.models.repository.RepositoryVersion.get_content",
@@ -701,6 +702,7 @@ MAPPING = {
     "pulpcore.app.models.repositoryversion.contains": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/models/#pulpcore.app.models.RepositoryVersion.contains",
     "pulpcore.app.models.repositoryversion.content": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/models/#pulpcore.app.models.RepositoryVersion.content",
     "pulpcore.app.models.repositoryversion.content_batch_qs": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/models/#pulpcore.app.models.RepositoryVersion.content_batch_qs",
+    "pulpcore.app.models.repositoryversion.content_ids_subquery": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/models/#pulpcore.app.models.RepositoryVersion.content_ids_subquery",
     "pulpcore.app.models.repositoryversion.delete": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/models/#pulpcore.app.models.RepositoryVersion.delete",
     "pulpcore.app.models.repositoryversion.disk_size": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/models/#pulpcore.app.models.RepositoryVersion.disk_size",
     "pulpcore.app.models.repositoryversion.get_content": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/platform-api/app/models/#pulpcore.app.models.RepositoryVersion.get_content",
@@ -1601,6 +1603,7 @@ MAPPING = {
     "pulpcore.plugin.models.repositoryversion.contains": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/plugins-api/models/#pulpcore.plugin.models.RepositoryVersion.contains",
     "pulpcore.plugin.models.repositoryversion.content": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/plugins-api/models/#pulpcore.plugin.models.RepositoryVersion.content",
     "pulpcore.plugin.models.repositoryversion.content_batch_qs": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/plugins-api/models/#pulpcore.plugin.models.RepositoryVersion.content_batch_qs",
+    "pulpcore.plugin.models.repositoryversion.content_ids_subquery": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/plugins-api/models/#pulpcore.plugin.models.RepositoryVersion.content_ids_subquery",
     "pulpcore.plugin.models.repositoryversion.delete": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/plugins-api/models/#pulpcore.plugin.models.RepositoryVersion.delete",
     "pulpcore.plugin.models.repositoryversion.disk_size": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/plugins-api/models/#pulpcore.plugin.models.RepositoryVersion.disk_size",
     "pulpcore.plugin.models.repositoryversion.get_content": "https://pulpproject.org/pulpcore/docs/dev/reference/code-api/plugins-api/models/#pulpcore.plugin.models.RepositoryVersion.get_content",

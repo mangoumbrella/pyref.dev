@@ -1,4 +1,4 @@
-VERSION = "3.11.5"
+VERSION = "3.12.0"
 
 # fmt: off
 MAPPING = {
@@ -214,7 +214,6 @@ MAPPING = {
     "sentinelhub.api.ogc.customurlparam.get_string": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.api.ogc.html#sentinelhub.api.ogc.CustomUrlParam.get_string",
     "sentinelhub.api.ogc.customurlparam.has_value": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.api.ogc.html#sentinelhub.api.ogc.CustomUrlParam.has_value",
     "sentinelhub.api.ogc.customurlparam.minqa": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.api.ogc.html#sentinelhub.api.ogc.CustomUrlParam.MINQA",
-    "sentinelhub.api.ogc.customurlparam.preview": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.api.ogc.html#sentinelhub.api.ogc.CustomUrlParam.PREVIEW",
     "sentinelhub.api.ogc.customurlparam.quality": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.api.ogc.html#sentinelhub.api.ogc.CustomUrlParam.QUALITY",
     "sentinelhub.api.ogc.customurlparam.showlogo": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.api.ogc.html#sentinelhub.api.ogc.CustomUrlParam.SHOWLOGO",
     "sentinelhub.api.ogc.customurlparam.upsampling": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.api.ogc.html#sentinelhub.api.ogc.CustomUrlParam.UPSAMPLING",

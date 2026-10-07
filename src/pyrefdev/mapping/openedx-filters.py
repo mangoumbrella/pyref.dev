@@ -1,4 +1,4 @@
-VERSION = "3.9.0"
+VERSION = "3.12.0"
 
 # fmt: off
 MAPPING = {
@@ -165,6 +165,10 @@ MAPPING = {
     "openedx_filters.learning.filters.studentregistrationrequested": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.StudentRegistrationRequested",
     "openedx_filters.learning.filters.studentregistrationrequested.preventregistration": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.StudentRegistrationRequested.PreventRegistration",
     "openedx_filters.learning.filters.studentregistrationrequested.run_filter": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.StudentRegistrationRequested.run_filter",
+    "openedx_filters.learning.filters.supportcontactcontextrequested": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.SupportContactContextRequested",
+    "openedx_filters.learning.filters.supportcontactcontextrequested.run_filter": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.SupportContactContextRequested.run_filter",
+    "openedx_filters.learning.filters.supportenrollmentdatarequested": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.SupportEnrollmentDataRequested",
+    "openedx_filters.learning.filters.supportenrollmentdatarequested.run_filter": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.SupportEnrollmentDataRequested.run_filter",
     "openedx_filters.learning.filters.verticalblockchildrenderstarted": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.VerticalBlockChildRenderStarted",
     "openedx_filters.learning.filters.verticalblockchildrenderstarted.preventchildblockrender": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.VerticalBlockChildRenderStarted.PreventChildBlockRender",
     "openedx_filters.learning.filters.verticalblockchildrenderstarted.run_filter": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.VerticalBlockChildRenderStarted.run_filter",

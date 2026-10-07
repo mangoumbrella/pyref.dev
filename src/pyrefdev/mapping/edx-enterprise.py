@@ -1,4 +1,4 @@
-VERSION = "8.9.4"
+VERSION = "8.12.0"
 
 # fmt: off
 MAPPING = {
@@ -1576,6 +1576,11 @@ MAPPING = {
     "enterprise.filters.logistration.postloginenterpriseredirect.run_filter": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.filters.html#enterprise.filters.logistration.PostLoginEnterpriseRedirect.run_filter",
     "enterprise.filters.logistration.registrationformenterpriseoverrides": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.filters.html#enterprise.filters.logistration.RegistrationFormEnterpriseOverrides",
     "enterprise.filters.logistration.registrationformenterpriseoverrides.run_filter": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.filters.html#enterprise.filters.logistration.RegistrationFormEnterpriseOverrides.run_filter",
+    "enterprise.filters.support": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.filters.html#module-enterprise.filters.support",
+    "enterprise.filters.support.supportcontactenterprisetagstep": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.filters.html#enterprise.filters.support.SupportContactEnterpriseTagStep",
+    "enterprise.filters.support.supportcontactenterprisetagstep.run_filter": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.filters.html#enterprise.filters.support.SupportContactEnterpriseTagStep.run_filter",
+    "enterprise.filters.support.supportenterpriseenrollmentdatainjector": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.filters.html#enterprise.filters.support.SupportEnterpriseEnrollmentDataInjector",
+    "enterprise.filters.support.supportenterpriseenrollmentdatainjector.run_filter": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.filters.html#enterprise.filters.support.SupportEnterpriseEnrollmentDataInjector.run_filter",
     "enterprise.forms": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.html#module-enterprise.forms",
     "enterprise.forms.enterpriseloginform": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.html#enterprise.forms.EnterpriseLoginForm",
     "enterprise.forms.enterpriseloginform.base_fields": "https://open-edx-enterprise-service-documentation.readthedocs.io/en/stable/enterprise.html#enterprise.forms.EnterpriseLoginForm.base_fields",

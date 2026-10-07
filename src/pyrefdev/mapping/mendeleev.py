@@ -1,4 +1,4 @@
-VERSION = "1.2.0"
+VERSION = "1.3.0"
 
 # fmt: off
 MAPPING = {
@@ -94,6 +94,7 @@ MAPPING = {
     "mendeleev.electronegativity.mulliken": "https://mendeleev.readthedocs.io/en/stable/api/mendeleev.electronegativity.html#mendeleev.electronegativity.mulliken",
     "mendeleev.electronegativity.mulliken.electron_affinity": "https://mendeleev.readthedocs.io/en/stable/api/mendeleev.electronegativity.html#mendeleev.electronegativity.mulliken.electron_affinity",
     "mendeleev.electronegativity.mulliken.ionization_energy": "https://mendeleev.readthedocs.io/en/stable/api/mendeleev.electronegativity.html#mendeleev.electronegativity.mulliken.ionization_energy",
+    "mendeleev.electronegativity.mulliken.missing_is_zero": "https://mendeleev.readthedocs.io/en/stable/api/mendeleev.electronegativity.html#mendeleev.electronegativity.mulliken.missing_is_zero",
     "mendeleev.electronegativity.n_effective": "https://mendeleev.readthedocs.io/en/stable/api/mendeleev.electronegativity.html#mendeleev.electronegativity.n_effective",
     "mendeleev.electronegativity.n_effective.n": "https://mendeleev.readthedocs.io/en/stable/api/mendeleev.electronegativity.html#mendeleev.electronegativity.n_effective.n",
     "mendeleev.electronegativity.n_effective.source": "https://mendeleev.readthedocs.io/en/stable/api/mendeleev.electronegativity.html#mendeleev.electronegativity.n_effective.source",
@@ -190,6 +191,7 @@ MAPPING = {
     "mendeleev.models.element.electronegativity_mullay": "https://mendeleev.readthedocs.io/en/stable/api/models.html#mendeleev.models.Element.electronegativity_mullay",
     "mendeleev.models.element.electronegativity_mulliken": "https://mendeleev.readthedocs.io/en/stable/api/models.html#mendeleev.models.Element.electronegativity_mulliken",
     "mendeleev.models.element.electronegativity_mulliken.charge": "https://mendeleev.readthedocs.io/en/stable/api/models.html#mendeleev.models.Element.electronegativity_mulliken.charge",
+    "mendeleev.models.element.electronegativity_mulliken.missing_is_zero": "https://mendeleev.readthedocs.io/en/stable/api/models.html#mendeleev.models.Element.electronegativity_mulliken.missing_is_zero",
     "mendeleev.models.element.electronegativity_nagle": "https://mendeleev.readthedocs.io/en/stable/api/models.html#mendeleev.models.Element.electronegativity_nagle",
     "mendeleev.models.element.electronegativity_pauling": "https://mendeleev.readthedocs.io/en/stable/api/models.html#mendeleev.models.Element.electronegativity_pauling",
     "mendeleev.models.element.electronegativity_sanderson": "https://mendeleev.readthedocs.io/en/stable/api/models.html#mendeleev.models.Element.electronegativity_sanderson",

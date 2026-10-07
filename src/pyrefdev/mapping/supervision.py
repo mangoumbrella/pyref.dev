@@ -1,4 +1,4 @@
-VERSION = "0.30.2"
+VERSION = "0.30.4"
 
 # fmt: off
 MAPPING = {
@@ -246,6 +246,7 @@ MAPPING = {
     "supervision.detection.tools.json_sink.jsonsink.write_and_close": "https://supervision.roboflow.com/latest/detection/tools/save_detections/#supervision.detection.tools.json_sink.JSONSink.write_and_close",
     "supervision.detection.tools.polygon_zone": "https://supervision.roboflow.com/latest/detection/tools/polygon_zone/",
     "supervision.detection.tools.polygon_zone.polygonzone": "https://supervision.roboflow.com/latest/detection/tools/polygon_zone/#supervision.detection.tools.polygon_zone.PolygonZone",
+    "supervision.detection.tools.polygon_zone.polygonzone.__init__": "https://supervision.roboflow.com/latest/detection/tools/polygon_zone/#supervision.detection.tools.polygon_zone.PolygonZone.__init__",
     "supervision.detection.tools.polygon_zone.polygonzone.trigger": "https://supervision.roboflow.com/latest/detection/tools/polygon_zone/#supervision.detection.tools.polygon_zone.PolygonZone.trigger",
     "supervision.detection.tools.polygon_zone.polygonzoneannotator": "https://supervision.roboflow.com/latest/detection/tools/polygon_zone/#supervision.detection.tools.polygon_zone.PolygonZoneAnnotator",
     "supervision.detection.tools.polygon_zone.polygonzoneannotator.annotate": "https://supervision.roboflow.com/latest/detection/tools/polygon_zone/#supervision.detection.tools.polygon_zone.PolygonZoneAnnotator.annotate",

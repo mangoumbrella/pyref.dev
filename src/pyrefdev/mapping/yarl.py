@@ -1,4 +1,4 @@
-VERSION = "1.24.5"
+VERSION = "1.25.1"
 
 # fmt: off
 MAPPING = {
@@ -6,6 +6,7 @@ MAPPING = {
     "yarl.cache_clear": "https://yarl.aio-libs.org/en/latest/api/#yarl.cache_clear",
     "yarl.cache_configure": "https://yarl.aio-libs.org/en/latest/api/#yarl.cache_configure",
     "yarl.cache_info": "https://yarl.aio-libs.org/en/latest/api/#yarl.cache_info",
+    "yarl.query_to_pairs": "https://yarl.aio-libs.org/en/latest/api/#yarl.query_to_pairs",
     "yarl.url": "https://yarl.aio-libs.org/en/latest/api/#yarl.URL",
     "yarl.url.__truediv__": "https://yarl.aio-libs.org/en/latest/api/#yarl.URL.__truediv__",
     "yarl.url.absolute": "https://yarl.aio-libs.org/en/latest/api/#yarl.URL.absolute",

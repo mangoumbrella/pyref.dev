@@ -1,4 +1,4 @@
-VERSION = "3.4.7"
+VERSION = "3.4.8"
 
 # fmt: off
 MAPPING = {
@@ -248,7 +248,6 @@ MAPPING = {
     "ldap.opt_x_sasl_ssf_external": "https://www.python-ldap.org/en/latest/reference/ldap.html#ldap.OPT_X_SASL_SSF_EXTERNAL",
     "ldap.opt_x_sasl_ssf_max": "https://www.python-ldap.org/en/latest/reference/ldap.html#ldap.OPT_X_SASL_SSF_MAX",
     "ldap.opt_x_sasl_ssf_min": "https://www.python-ldap.org/en/latest/reference/ldap.html#ldap.OPT_X_SASL_SSF_MIN",
-    "ldap.opt_x_tls": "https://www.python-ldap.org/en/latest/reference/ldap.html#ldap.OPT_X_TLS",
     "ldap.opt_x_tls_allow": "https://www.python-ldap.org/en/latest/reference/ldap.html#ldap.OPT_X_TLS_ALLOW",
     "ldap.opt_x_tls_cacertdir": "https://www.python-ldap.org/en/latest/reference/ldap.html#ldap.OPT_X_TLS_CACERTDIR",
     "ldap.opt_x_tls_cacertfile": "https://www.python-ldap.org/en/latest/reference/ldap.html#ldap.OPT_X_TLS_CACERTFILE",

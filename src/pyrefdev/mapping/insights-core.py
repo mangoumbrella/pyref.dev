@@ -1,4 +1,4 @@
-VERSION = "3.8.0"
+VERSION = "3.8.1"
 
 # fmt: off
 MAPPING = {
@@ -3602,6 +3602,9 @@ MAPPING = {
     "insights.parsers.sysctl.sysctlconfinitramfs.parse_content": "https://insights-core.readthedocs.io/en/latest/shared_parsers_catalog/sysctl.html#insights.parsers.sysctl.SysctlConfInitramfs.parse_content",
     "insights.parsers.sysctl.sysctldconfetc": "https://insights-core.readthedocs.io/en/latest/shared_parsers_catalog/sysctl.html#insights.parsers.sysctl.SysctlDConfEtc",
     "insights.parsers.sysctl.sysctldconfusr": "https://insights-core.readthedocs.io/en/latest/shared_parsers_catalog/sysctl.html#insights.parsers.sysctl.SysctlDConfUsr",
+    "insights.parsers.sysroles_fingerprint": "https://insights-core.readthedocs.io/en/latest/shared_parsers_catalog/sysroles_fingerprint.html#module-insights.parsers.sysroles_fingerprint",
+    "insights.parsers.sysroles_fingerprint.sysrolesfingerprint": "https://insights-core.readthedocs.io/en/latest/shared_parsers_catalog/sysroles_fingerprint.html#insights.parsers.sysroles_fingerprint.SysrolesFingerprint",
+    "insights.parsers.sysroles_fingerprint.sysrolesfingerprint.parse_content": "https://insights-core.readthedocs.io/en/latest/shared_parsers_catalog/sysroles_fingerprint.html#insights.parsers.sysroles_fingerprint.SysrolesFingerprint.parse_content",
     "insights.parsers.system_time": "https://insights-core.readthedocs.io/en/latest/shared_parsers_catalog/system_time.html",
     "insights.parsers.system_time.chronyconf": "https://insights-core.readthedocs.io/en/latest/shared_parsers_catalog/system_time.html#insights.parsers.system_time.ChronyConf",
     "insights.parsers.system_time.localtime": "https://insights-core.readthedocs.io/en/latest/shared_parsers_catalog/system_time.html#insights.parsers.system_time.LocalTime",
@@ -4787,6 +4790,7 @@ MAPPING = {
     "insights.specs.default.defaultspecs.sysctl_conf": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.default.DefaultSpecs.sysctl_conf",
     "insights.specs.default.defaultspecs.sysctl_d_conf_etc": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.default.DefaultSpecs.sysctl_d_conf_etc",
     "insights.specs.default.defaultspecs.sysctl_d_conf_usr": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.default.DefaultSpecs.sysctl_d_conf_usr",
+    "insights.specs.default.defaultspecs.sysroles_fingerprint": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.default.DefaultSpecs.sysroles_fingerprint",
     "insights.specs.default.defaultspecs.systemctl_cat_rpcbind_socket": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.default.DefaultSpecs.systemctl_cat_rpcbind_socket",
     "insights.specs.default.defaultspecs.systemctl_get_default": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.default.DefaultSpecs.systemctl_get_default",
     "insights.specs.default.defaultspecs.systemctl_list_unit_files": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.default.DefaultSpecs.systemctl_list_unit_files",
@@ -6123,6 +6127,7 @@ MAPPING = {
     "insights.specs.specs.sysctl_conf_initramfs": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.Specs.sysctl_conf_initramfs",
     "insights.specs.specs.sysctl_d_conf_etc": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.Specs.sysctl_d_conf_etc",
     "insights.specs.specs.sysctl_d_conf_usr": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.Specs.sysctl_d_conf_usr",
+    "insights.specs.specs.sysroles_fingerprint": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.Specs.sysroles_fingerprint",
     "insights.specs.specs.systemctl_cat_dnsmasq_service": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.Specs.systemctl_cat_dnsmasq_service",
     "insights.specs.specs.systemctl_cat_rpcbind_socket": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.Specs.systemctl_cat_rpcbind_socket",
     "insights.specs.specs.systemctl_get_default": "https://insights-core.readthedocs.io/en/latest/api_index.html#insights.specs.Specs.systemctl_get_default",

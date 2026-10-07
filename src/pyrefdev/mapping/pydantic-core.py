@@ -1,4 +1,4 @@
-VERSION = "2.48.0"
+VERSION = "2.49.0"
 
 # fmt: off
 MAPPING = {
@@ -7,6 +7,7 @@ MAPPING = {
     "pydantic_core.argskwargs": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core/#pydantic_core.ArgsKwargs",
     "pydantic_core.argskwargs.args": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core/#pydantic_core.ArgsKwargs.args",
     "pydantic_core.argskwargs.kwargs": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core/#pydantic_core.ArgsKwargs.kwargs",
+    "pydantic_core.core_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core_schema/#pydantic_core.core_schema",
     "pydantic_core.core_schema.any_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core_schema/#pydantic_core.core_schema.any_schema",
     "pydantic_core.core_schema.arguments_parameter": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core_schema/#pydantic_core.core_schema.arguments_parameter",
     "pydantic_core.core_schema.arguments_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core_schema/#pydantic_core.core_schema.arguments_schema",
@@ -58,6 +59,7 @@ MAPPING = {
     "pydantic_core.core_schema.decimal_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core_schema/#pydantic_core.core_schema.decimal_schema",
     "pydantic_core.core_schema.definition_reference_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core_schema/#pydantic_core.core_schema.definition_reference_schema",
     "pydantic_core.core_schema.definitions_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core_schema/#pydantic_core.core_schema.definitions_schema",
+    "pydantic_core.core_schema.deque_schema": "https://pydantic.dev/docs/validation/dev/api/pydantic-core/pydantic_core_schema/#pydantic_core.core_schema.deque_schema",
     "pydantic_core.core_schema.dict_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core_schema/#pydantic_core.core_schema.dict_schema",
     "pydantic_core.core_schema.ellipsis_schema": "https://pydantic.dev/docs/validation/dev/api/pydantic-core/pydantic_core_schema/#pydantic_core.core_schema.ellipsis_schema",
     "pydantic_core.core_schema.enum_schema": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core_schema/#pydantic_core.core_schema.enum_schema",
@@ -155,6 +157,7 @@ MAPPING = {
     "pydantic_core.initerrordetails.input": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core/#pydantic_core.InitErrorDetails.input",
     "pydantic_core.initerrordetails.loc": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core/#pydantic_core.InitErrorDetails.loc",
     "pydantic_core.initerrordetails.type": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core/#pydantic_core.InitErrorDetails.type",
+    "pydantic_core.missing": "https://pydantic.dev/docs/validation/dev/concepts/types/#pydantic_core.MISSING",
     "pydantic_core.multihosthost": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core/#pydantic_core.MultiHostHost",
     "pydantic_core.multihosthost.host": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core/#pydantic_core.MultiHostHost.host",
     "pydantic_core.multihosthost.password": "https://pydantic.dev/docs/validation/latest/api/pydantic-core/pydantic_core/#pydantic_core.MultiHostHost.password",

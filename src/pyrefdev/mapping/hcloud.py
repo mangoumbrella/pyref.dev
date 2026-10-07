@@ -1,4 +1,4 @@
-VERSION = "2.23.0"
+VERSION = "2.24.0"
 
 # fmt: off
 MAPPING = {
@@ -191,6 +191,7 @@ MAPPING = {
     "hcloud.images.domain": "https://hcloud-python.readthedocs.io/en/stable/api.clients.images.html",
     "hcloud.images.domain.createimageresponse": "https://hcloud-python.readthedocs.io/en/stable/api.clients.images.html#hcloud.images.domain.CreateImageResponse",
     "hcloud.images.domain.image": "https://hcloud-python.readthedocs.io/en/stable/api.clients.images.html#hcloud.images.domain.Image",
+    "hcloud.images.domain.image.deprecated": "https://hcloud-python.readthedocs.io/en/stable/api.clients.images.html#hcloud.images.domain.Image.deprecated",
     "hcloud.isos": "https://hcloud-python.readthedocs.io/en/stable/api.clients.isos.html",
     "hcloud.isos.client": "https://hcloud-python.readthedocs.io/en/stable/api.clients.isos.html",
     "hcloud.isos.client.boundiso": "https://hcloud-python.readthedocs.io/en/stable/api.clients.isos.html#hcloud.isos.client.BoundIso",

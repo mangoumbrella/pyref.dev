@@ -1,4 +1,4 @@
-VERSION = "8.0.9"
+VERSION = "8.0.10"
 
 # fmt: off
 MAPPING = {
@@ -622,6 +622,7 @@ MAPPING = {
     "trytond.tests.test_tryton.activate_module": "https://docs.tryton.org/latest/server/ref/tests.html#trytond.tests.test_tryton.activate_module",
     "trytond.tests.test_tryton.context": "https://docs.tryton.org/latest/server/ref/tests.html#trytond.tests.test_tryton.CONTEXT",
     "trytond.tests.test_tryton.db_name": "https://docs.tryton.org/latest/server/ref/tests.html#trytond.tests.test_tryton.DB_NAME",
+    "trytond.tests.test_tryton.dbtestcase": "https://docs.tryton.org/latest/server/ref/tests.html#trytond.tests.test_tryton.DBTestCase",
     "trytond.tests.test_tryton.doctest_checker": "https://docs.tryton.org/latest/server/ref/tests.html#trytond.tests.test_tryton.doctest_checker",
     "trytond.tests.test_tryton.doctest_setup": "https://docs.tryton.org/latest/server/ref/tests.html#trytond.tests.test_tryton.doctest_setup",
     "trytond.tests.test_tryton.doctest_teardown": "https://docs.tryton.org/latest/server/ref/tests.html#trytond.tests.test_tryton.doctest_teardown",

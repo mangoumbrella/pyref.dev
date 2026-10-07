@@ -1,4 +1,4 @@
-VERSION = "6.18.0"
+VERSION = "6.19.0"
 
 # fmt: off
 MAPPING = {
@@ -547,6 +547,7 @@ MAPPING = {
     "pypdf.pdfwriter.add_named_destination": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.add_named_destination",
     "pypdf.pdfwriter.add_named_destination_array": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.add_named_destination_array",
     "pypdf.pdfwriter.add_named_destination_object": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.add_named_destination_object",
+    "pypdf.pdfwriter.add_open_action": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.add_open_action",
     "pypdf.pdfwriter.add_outline": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.add_outline",
     "pypdf.pdfwriter.add_outline_item": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.add_outline_item",
     "pypdf.pdfwriter.add_outline_item_destination": "https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html#pypdf.PdfWriter.add_outline_item_destination",

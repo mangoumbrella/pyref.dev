@@ -1,4 +1,4 @@
-VERSION = "4.11.7"
+VERSION = "4.11.8"
 
 # fmt: off
 MAPPING = {
@@ -131,11 +131,15 @@ MAPPING = {
     "platformdirs.unix": "https://platformdirs.readthedocs.io/en/latest/api.html",
     "platformdirs.unix.unix": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix",
     "platformdirs.unix.unix.user_applications_dir": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix.user_applications_dir",
+    "platformdirs.unix.unix.user_applications_path": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix.user_applications_path",
     "platformdirs.unix.unix.user_bin_dir": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix.user_bin_dir",
     "platformdirs.unix.unix.user_cache_dir": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix.user_cache_dir",
     "platformdirs.unix.unix.user_config_dir": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix.user_config_dir",
+    "platformdirs.unix.unix.user_config_path": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix.user_config_path",
     "platformdirs.unix.unix.user_data_dir": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix.user_data_dir",
+    "platformdirs.unix.unix.user_data_path": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix.user_data_path",
     "platformdirs.unix.unix.user_log_dir": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix.user_log_dir",
+    "platformdirs.unix.unix.user_preference_path": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix.user_preference_path",
     "platformdirs.unix.unix.user_runtime_dir": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix.user_runtime_dir",
     "platformdirs.unix.unix.user_state_dir": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.unix.Unix.user_state_dir",
     "platformdirs.user_applications_dir": "https://platformdirs.readthedocs.io/en/latest/api.html#platformdirs.user_applications_dir",

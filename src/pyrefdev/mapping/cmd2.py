@@ -1,4 +1,4 @@
-VERSION = "4.2.3"
+VERSION = "4.2.4"
 
 # fmt: off
 MAPPING = {
@@ -142,9 +142,9 @@ MAPPING = {
     "cmd2.argparse_utils.subcommandspec.help": "https://cmd2.readthedocs.io/en/stable/api/argparse_utils/#cmd2.argparse_utils.SubcommandSpec.help",
     "cmd2.argparse_utils.subcommandspec.name": "https://cmd2.readthedocs.io/en/stable/api/argparse_utils/#cmd2.argparse_utils.SubcommandSpec.name",
     "cmd2.argparse_utils.subcommandspec.parser_source": "https://cmd2.readthedocs.io/en/stable/api/argparse_utils/#cmd2.argparse_utils.SubcommandSpec.parser_source",
-    "cmd2.clipboard": "https://cmd2.readthedocs.io/en/stable/api/clipboard/#cmd2.clipboard",
-    "cmd2.clipboard.get_paste_buffer": "https://cmd2.readthedocs.io/en/stable/api/clipboard/#cmd2.clipboard.get_paste_buffer",
-    "cmd2.clipboard.write_to_paste_buffer": "https://cmd2.readthedocs.io/en/stable/api/clipboard/#cmd2.clipboard.write_to_paste_buffer",
+    "cmd2.clipboard": "https://cmd2.readthedocs.io/en/stable/features/clipboard/#cmd2.clipboard",
+    "cmd2.clipboard.get_paste_buffer": "https://cmd2.readthedocs.io/en/stable/features/clipboard/#cmd2.clipboard.get_paste_buffer",
+    "cmd2.clipboard.write_to_paste_buffer": "https://cmd2.readthedocs.io/en/stable/features/clipboard/#cmd2.clipboard.write_to_paste_buffer",
     "cmd2.cmd": "https://cmd2.readthedocs.io/en/stable/api/cmd/#cmd2.Cmd",
     "cmd2.cmd.__init__": "https://cmd2.readthedocs.io/en/stable/features/initialization/#cmd2.Cmd.__init__",
     "cmd2.cmd.active_session": "https://cmd2.readthedocs.io/en/stable/api/cmd/#cmd2.Cmd.active_session",

@@ -1,4 +1,4 @@
-VERSION = "2.2.0"
+VERSION = "2.3.0"
 
 # fmt: off
 MAPPING = {
@@ -9,11 +9,14 @@ MAPPING = {
     "nameparser.ambiguity.tokens": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.Ambiguity.tokens",
     "nameparser.ambiguitykind": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.AmbiguityKind",
     "nameparser.ambiguitykind.comma_structure": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.AmbiguityKind.COMMA_STRUCTURE",
+    "nameparser.ambiguitykind.conjunction_or_initial": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.AmbiguityKind.CONJUNCTION_OR_INITIAL",
+    "nameparser.ambiguitykind.given_or_family": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.AmbiguityKind.GIVEN_OR_FAMILY",
     "nameparser.ambiguitykind.order": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.AmbiguityKind.ORDER",
     "nameparser.ambiguitykind.particle_or_given": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.AmbiguityKind.PARTICLE_OR_GIVEN",
     "nameparser.ambiguitykind.segmentation": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.AmbiguityKind.SEGMENTATION",
     "nameparser.ambiguitykind.suffix_or_name": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.AmbiguityKind.SUFFIX_OR_NAME",
     "nameparser.ambiguitykind.suffix_or_nickname": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.AmbiguityKind.SUFFIX_OR_NICKNAME",
+    "nameparser.ambiguitykind.title_or_name": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.AmbiguityKind.TITLE_OR_NAME",
     "nameparser.ambiguitykind.unbalanced_delimiter": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.AmbiguityKind.UNBALANCED_DELIMITER",
     "nameparser.config": "https://nameparser.readthedocs.io/en/latest/modules.html#module-nameparser.config",
     "nameparser.config.bound_given_names": "https://nameparser.readthedocs.io/en/latest/modules.html#module-nameparser.config.bound_given_names",
@@ -22,6 +25,7 @@ MAPPING = {
     "nameparser.config.capitalization.capitalization_exceptions": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.config.capitalization.CAPITALIZATION_EXCEPTIONS",
     "nameparser.config.conjunctions": "https://nameparser.readthedocs.io/en/latest/modules.html#module-nameparser.config.conjunctions",
     "nameparser.config.conjunctions.conjunctions": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.config.conjunctions.CONJUNCTIONS",
+    "nameparser.config.conjunctions.conjunctions_ambiguous": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.config.conjunctions.CONJUNCTIONS_AMBIGUOUS",
     "nameparser.config.constants": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.config.Constants",
     "nameparser.config.constants.copy": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.config.Constants.copy",
     "nameparser.config.maiden_markers": "https://nameparser.readthedocs.io/en/latest/modules.html#module-nameparser.config.maiden_markers",
@@ -60,6 +64,7 @@ MAPPING = {
     "nameparser.lexicon": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.Lexicon",
     "nameparser.lexicon.bound_given_names": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.Lexicon.bound_given_names",
     "nameparser.lexicon.conjunctions": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.Lexicon.conjunctions",
+    "nameparser.lexicon.conjunctions_ambiguous": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.Lexicon.conjunctions_ambiguous",
     "nameparser.lexicon.given_name_titles": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.Lexicon.given_name_titles",
     "nameparser.lexicon.honorific_tails": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.Lexicon.honorific_tails",
     "nameparser.lexicon.maiden_markers": "https://nameparser.readthedocs.io/en/latest/modules.html#nameparser.Lexicon.maiden_markers",

@@ -1,4 +1,4 @@
-VERSION = "2.3.0"
+VERSION = "2.4.1"
 
 # fmt: off
 MAPPING = {
@@ -2094,6 +2094,12 @@ MAPPING = {
     "trame.widgets.rca.remotecontrolledarea.set_drop_frames_pending_network_limit": "https://trame.readthedocs.io/en/latest/trame.widgets.rca.html#trame.widgets.rca.RemoteControlledArea.set_drop_frames_pending_network_limit",
     "trame.widgets.rca.statisticsdisplay": "https://trame.readthedocs.io/en/latest/trame.widgets.rca.html#trame.widgets.rca.StatisticsDisplay",
     "trame.widgets.rca.videodecoderdisplayarea": "https://trame.readthedocs.io/en/latest/trame.widgets.rca.html#trame.widgets.rca.VideoDecoderDisplayArea",
+    "trame.widgets.react": "https://trame.readthedocs.io/en/latest/trame.widgets.react.html#module-trame.widgets.react",
+    "trame.widgets.react.bind": "https://trame.readthedocs.io/en/latest/trame.widgets.react.html#trame.widgets.react.Bind",
+    "trame.widgets.react.callback": "https://trame.readthedocs.io/en/latest/trame.widgets.react.html#trame.widgets.react.Callback",
+    "trame.widgets.react.for": "https://trame.readthedocs.io/en/latest/trame.widgets.react.html#trame.widgets.react.For",
+    "trame.widgets.react.if": "https://trame.readthedocs.io/en/latest/trame.widgets.react.html#trame.widgets.react.If",
+    "trame.widgets.react.slot": "https://trame.readthedocs.io/en/latest/trame.widgets.react.html#trame.widgets.react.Slot",
     "trame.widgets.router": "https://trame.readthedocs.io/en/latest/trame.widgets.router.html#module-trame.widgets.router",
     "trame.widgets.router.routerlink": "https://trame.readthedocs.io/en/latest/trame.widgets.router.html#trame.widgets.router.RouterLink",
     "trame.widgets.router.routerview": "https://trame.readthedocs.io/en/latest/trame.widgets.router.html#trame.widgets.router.RouterView",

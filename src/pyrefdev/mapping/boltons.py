@@ -1,4 +1,4 @@
-VERSION = "26.1.0"
+VERSION = "26.2.0"
 
 # fmt: off
 MAPPING = {
@@ -299,6 +299,7 @@ MAPPING = {
     "boltons.statsutils.mean": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.mean",
     "boltons.statsutils.median": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.median",
     "boltons.statsutils.median_abs_dev": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.median_abs_dev",
+    "boltons.statsutils.mode": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.mode",
     "boltons.statsutils.pearson_type": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.pearson_type",
     "boltons.statsutils.rel_std_dev": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.rel_std_dev",
     "boltons.statsutils.skewness": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.skewness",
@@ -318,6 +319,7 @@ MAPPING = {
     "boltons.statsutils.stats.median": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.Stats.median",
     "boltons.statsutils.stats.median_abs_dev": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.Stats.median_abs_dev",
     "boltons.statsutils.stats.min": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.Stats.min",
+    "boltons.statsutils.stats.mode": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.Stats.mode",
     "boltons.statsutils.stats.pearson_type": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.Stats.pearson_type",
     "boltons.statsutils.stats.rel_std_dev": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.Stats.rel_std_dev",
     "boltons.statsutils.stats.skewness": "https://boltons.readthedocs.io/en/latest/statsutils.html#boltons.statsutils.Stats.skewness",
@@ -337,6 +339,7 @@ MAPPING = {
     "boltons.strutils.camel2under": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.camel2under",
     "boltons.strutils.cardinalize": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.cardinalize",
     "boltons.strutils.complement_int_list": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.complement_int_list",
+    "boltons.strutils.ellipsize": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.ellipsize",
     "boltons.strutils.escape_shell_args": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.escape_shell_args",
     "boltons.strutils.find_hashtags": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.find_hashtags",
     "boltons.strutils.format_int_list": "https://boltons.readthedocs.io/en/latest/strutils.html#boltons.strutils.format_int_list",

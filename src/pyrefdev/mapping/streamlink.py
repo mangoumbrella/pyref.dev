@@ -1,4 +1,4 @@
-VERSION = "8.5.0"
+VERSION = "8.6.1"
 
 # fmt: off
 MAPPING = {
@@ -48,6 +48,7 @@ MAPPING = {
     "streamlink.plugin.api.validate.length": "https://streamlink.github.io/api/validate.html#streamlink.plugin.api.validate.length",
     "streamlink.plugin.api.validate.list": "https://streamlink.github.io/api/validate.html#streamlink.plugin.api.validate.list",
     "streamlink.plugin.api.validate.map": "https://streamlink.github.io/api/validate.html#streamlink.plugin.api.validate.map",
+    "streamlink.plugin.api.validate.nextjs_inline_rsc": "https://streamlink.github.io/api/validate.html#streamlink.plugin.api.validate.nextjs_inline_rsc",
     "streamlink.plugin.api.validate.none_or_all": "https://streamlink.github.io/api/validate.html#streamlink.plugin.api.validate.none_or_all",
     "streamlink.plugin.api.validate.optional": "https://streamlink.github.io/api/validate.html#streamlink.plugin.api.validate.optional",
     "streamlink.plugin.api.validate.parse_html": "https://streamlink.github.io/api/validate.html#streamlink.plugin.api.validate.parse_html",
