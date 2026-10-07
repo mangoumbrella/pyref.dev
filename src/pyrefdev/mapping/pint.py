@@ -1,4 +1,4 @@
-VERSION = "0.25.3"
+VERSION = "0.26.1"
 
 # fmt: off
 MAPPING = {
@@ -7,6 +7,7 @@ MAPPING = {
     "pint.compat": "https://pint.readthedocs.io/en/stable/api/specific.html#module-pint.compat",
     "pint.compat.behaviorchangewarning": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.BehaviorChangeWarning",
     "pint.compat.check_upcast_type": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.check_upcast_type",
+    "pint.compat.coerce_scalar": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.coerce_scalar",
     "pint.compat.eq": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.eq",
     "pint.compat.fully_qualified_name": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.fully_qualified_name",
     "pint.compat.is_duck_array": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.is_duck_array",
@@ -27,6 +28,9 @@ MAPPING = {
     "pint.delegates": "https://pint.readthedocs.io/en/stable/api/facets.html",
     "pint.delegates.formatter": "https://pint.readthedocs.io/en/stable/api/facets.html#module-pint.delegates.formatter",
     "pint.delegates.formatter.formatter": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.delegates.formatter.Formatter",
+    "pint.delegates.formatter.sort_by_dimensionality": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.delegates.formatter.sort_by_dimensionality",
+    "pint.delegates.formatter.sort_by_display_name": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.delegates.formatter.sort_by_display_name",
+    "pint.delegates.formatter.sort_by_unit_name": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.delegates.formatter.sort_by_unit_name",
     "pint.dimensionalityerror": "https://pint.readthedocs.io/en/stable/api/base.html#pint.DimensionalityError",
     "pint.errors": "https://pint.readthedocs.io/en/stable/api/specific.html#module-pint.errors",
     "pint.errors.definitionerror": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.errors.DefinitionError",

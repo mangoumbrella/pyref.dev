@@ -1,4 +1,4 @@
-VERSION = "2.9.3"
+VERSION = "2.10.0"
 
 # fmt: off
 MAPPING = {
@@ -18,13 +18,14 @@ MAPPING = {
     "civis.client.apiclient": "https://civis-python.readthedocs.io/en/stable/client.html#civis.APIClient",
     "civis.find": "https://civis-python.readthedocs.io/en/stable/responses.html#civis.find",
     "civis.find_one": "https://civis-python.readthedocs.io/en/stable/responses.html#civis.find_one",
-    "civis.futures": "https://civis-python.readthedocs.io/en/stable/responses.html",
-    "civis.futures.civisfuture": "https://civis-python.readthedocs.io/en/stable/responses.html#civis.futures.CivisFuture",
-    "civis.futures.civisfuture.job_id": "https://civis-python.readthedocs.io/en/stable/responses.html#civis.futures.CivisFuture.job_id",
-    "civis.futures.civisfuture.job_run_url": "https://civis-python.readthedocs.io/en/stable/responses.html#civis.futures.CivisFuture.job_run_url",
-    "civis.futures.civisfuture.job_url": "https://civis-python.readthedocs.io/en/stable/responses.html#civis.futures.CivisFuture.job_url",
-    "civis.futures.civisfuture.outputs": "https://civis-python.readthedocs.io/en/stable/responses.html#civis.futures.CivisFuture.outputs",
-    "civis.futures.civisfuture.run_id": "https://civis-python.readthedocs.io/en/stable/responses.html#civis.futures.CivisFuture.run_id",
+    "civis.futures": "https://civis-python.readthedocs.io/en/stable/parallel.html",
+    "civis.futures.civisfuture": "https://civis-python.readthedocs.io/en/stable/parallel.html#civis.futures.CivisFuture",
+    "civis.futures.civisfuture.cancel": "https://civis-python.readthedocs.io/en/stable/parallel.html#civis.futures.CivisFuture.cancel",
+    "civis.futures.civisfuture.job_id": "https://civis-python.readthedocs.io/en/stable/parallel.html#civis.futures.CivisFuture.job_id",
+    "civis.futures.civisfuture.job_run_url": "https://civis-python.readthedocs.io/en/stable/parallel.html#civis.futures.CivisFuture.job_run_url",
+    "civis.futures.civisfuture.job_url": "https://civis-python.readthedocs.io/en/stable/parallel.html#civis.futures.CivisFuture.job_url",
+    "civis.futures.civisfuture.outputs": "https://civis-python.readthedocs.io/en/stable/parallel.html#civis.futures.CivisFuture.outputs",
+    "civis.futures.civisfuture.run_id": "https://civis-python.readthedocs.io/en/stable/parallel.html#civis.futures.CivisFuture.run_id",
     "civis.io.civis_file_to_table": "https://civis-python.readthedocs.io/en/stable/generated/civis.io.civis_file_to_table.html#civis.io.civis_file_to_table",
     "civis.io.civis_to_csv": "https://civis-python.readthedocs.io/en/stable/generated/civis.io.civis_to_csv.html#civis.io.civis_to_csv",
     "civis.io.civis_to_file": "https://civis-python.readthedocs.io/en/stable/generated/civis.io.civis_to_file.html#civis.io.civis_to_file",
@@ -726,7 +727,6 @@ MAPPING = {
     "civis.resources._resources.scripts.list_dbt_runs_logs": "https://civis-python.readthedocs.io/en/stable/api_scripts/list_dbt_runs_logs.html#civis.resources._resources.Scripts.list_dbt_runs_logs",
     "civis.resources._resources.scripts.list_dbt_runs_outputs": "https://civis-python.readthedocs.io/en/stable/api_scripts/list_dbt_runs_outputs.html#civis.resources._resources.Scripts.list_dbt_runs_outputs",
     "civis.resources._resources.scripts.list_dbt_shares": "https://civis-python.readthedocs.io/en/stable/api_scripts/list_dbt_shares.html#civis.resources._resources.Scripts.list_dbt_shares",
-    "civis.resources._resources.scripts.list_history": "https://civis-python.readthedocs.io/en/stable/api_scripts/list_history.html#civis.resources._resources.Scripts.list_history",
     "civis.resources._resources.scripts.list_javascript_dependencies": "https://civis-python.readthedocs.io/en/stable/api_scripts/list_javascript_dependencies.html#civis.resources._resources.Scripts.list_javascript_dependencies",
     "civis.resources._resources.scripts.list_javascript_git": "https://civis-python.readthedocs.io/en/stable/api_scripts/list_javascript_git.html#civis.resources._resources.Scripts.list_javascript_git",
     "civis.resources._resources.scripts.list_javascript_git_commits": "https://civis-python.readthedocs.io/en/stable/api_scripts/list_javascript_git_commits.html#civis.resources._resources.Scripts.list_javascript_git_commits",

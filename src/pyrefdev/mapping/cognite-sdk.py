@@ -1,4 +1,4 @@
-VERSION = "8.15.0"
+VERSION = "8.16.1"
 
 # fmt: off
 MAPPING = {
@@ -514,6 +514,7 @@ MAPPING = {
     "cognite.client.cogniteclient.version": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/cognite_client.html#cognite.client.CogniteClient.version",
     "cognite.client.config": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/cognite_client.html",
     "cognite.client.config.clientconfig": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/cognite_client.html#cognite.client.config.ClientConfig",
+    "cognite.client.config.clientconfig.cdf_cluster": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/cognite_client.html#cognite.client.config.ClientConfig.cdf_cluster",
     "cognite.client.config.clientconfig.default": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/cognite_client.html#cognite.client.config.ClientConfig.default",
     "cognite.client.config.clientconfig.load": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/cognite_client.html#cognite.client.config.ClientConfig.load",
     "cognite.client.config.globalconfig": "https://cognite-sdk-python.readthedocs-hosted.com/en/latest/cognite_client.html#cognite.client.config.GlobalConfig",

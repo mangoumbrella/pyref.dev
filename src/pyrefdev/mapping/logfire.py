@@ -1,4 +1,4 @@
-VERSION = "5.0.0"
+VERSION = "5.1.0"
 
 # fmt: off
 MAPPING = {
@@ -102,6 +102,7 @@ MAPPING = {
     "logfire._internal.main.logfire.instrument_google_genai": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_google_genai",
     "logfire._internal.main.logfire.instrument_httpx": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_httpx",
     "logfire._internal.main.logfire.instrument_litellm": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_litellm",
+    "logfire._internal.main.logfire.instrument_litestar": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_litestar",
     "logfire._internal.main.logfire.instrument_mcp": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_mcp",
     "logfire._internal.main.logfire.instrument_mysql": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_mysql",
     "logfire._internal.main.logfire.instrument_openai": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_openai",
@@ -265,6 +266,7 @@ MAPPING = {
     "logfire.logfire.instrument_google_genai": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_google_genai",
     "logfire.logfire.instrument_httpx": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_httpx",
     "logfire.logfire.instrument_litellm": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_litellm",
+    "logfire.logfire.instrument_litestar": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_litestar",
     "logfire.logfire.instrument_mcp": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_mcp",
     "logfire.logfire.instrument_mysql": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_mysql",
     "logfire.logfire.instrument_openai": "https://pydantic.dev/docs/logfire/api/logfire/#logfire.Logfire.instrument_openai",

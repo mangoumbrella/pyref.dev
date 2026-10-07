@@ -1,4 +1,4 @@
-VERSION = "3.1.0"
+VERSION = "3.2.1"
 
 # fmt: off
 MAPPING = {
@@ -520,11 +520,17 @@ MAPPING = {
     "prov.serializers": "https://prov.readthedocs.io/en/latest/reference/serializers.html",
     "prov.serializers.donotexist": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.DoNotExist",
     "prov.serializers.get": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.get",
+    "prov.serializers.provn_lexer": "https://prov.readthedocs.io/en/latest/reference/serializers.html",
+    "prov.serializers.provn_lexer.provnsyntaxerror": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.provn_lexer.ProvNSyntaxError",
+    "prov.serializers.provn_lexer.provnsyntaxerror.column": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.provn_lexer.ProvNSyntaxError.column",
+    "prov.serializers.provn_lexer.provnsyntaxerror.line": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.provn_lexer.ProvNSyntaxError.line",
+    "prov.serializers.provn_lexer.provnsyntaxerror.message": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.provn_lexer.ProvNSyntaxError.message",
     "prov.serializers.registry": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.Registry",
     "prov.serializers.registry.load_serializers": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.Registry.load_serializers",
     "prov.serializers.registry.serializers": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.Registry.serializers",
     "prov.serializers.serializer": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.Serializer",
     "prov.serializers.serializer.deserialize": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.Serializer.deserialize",
+    "prov.serializers.serializer.deserialize_options": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.Serializer.deserialize_options",
     "prov.serializers.serializer.document": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.Serializer.document",
     "prov.serializers.serializer.serialize": "https://prov.readthedocs.io/en/latest/reference/serializers.html#prov.serializers.Serializer.serialize",
 }

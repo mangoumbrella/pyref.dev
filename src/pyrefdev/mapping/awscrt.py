@@ -1,4 +1,4 @@
-VERSION = "0.36.2"
+VERSION = "0.36.3"
 
 # fmt: off
 MAPPING = {
@@ -286,6 +286,11 @@ MAPPING = {
     "awscrt.io.defaulthostresolver": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.DefaultHostResolver",
     "awscrt.io.eventloopgroup": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.EventLoopGroup",
     "awscrt.io.eventloopgroup.shutdown_event": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.EventLoopGroup.shutdown_event",
+    "awscrt.io.exponentialbackoffjittermode": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.ExponentialBackoffJitterMode",
+    "awscrt.io.exponentialbackoffjittermode.decorrelated": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.ExponentialBackoffJitterMode.DECORRELATED",
+    "awscrt.io.exponentialbackoffjittermode.default": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.ExponentialBackoffJitterMode.DEFAULT",
+    "awscrt.io.exponentialbackoffjittermode.full": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.ExponentialBackoffJitterMode.FULL",
+    "awscrt.io.exponentialbackoffjittermode.none": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.ExponentialBackoffJitterMode.NONE",
     "awscrt.io.hostresolverbase": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.HostResolverBase",
     "awscrt.io.init_logging": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.init_logging",
     "awscrt.io.inputstream": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.InputStream",
@@ -465,11 +470,6 @@ MAPPING = {
     "awscrt.mqtt5.disconnectreasoncode.unspecified_error": "https://awslabs.github.io/aws-crt-python/api/mqtt5.html#awscrt.mqtt5.DisconnectReasonCode.UNSPECIFIED_ERROR",
     "awscrt.mqtt5.disconnectreasoncode.use_another_server": "https://awslabs.github.io/aws-crt-python/api/mqtt5.html#awscrt.mqtt5.DisconnectReasonCode.USE_ANOTHER_SERVER",
     "awscrt.mqtt5.disconnectreasoncode.wildcard_subscriptions_not_supported": "https://awslabs.github.io/aws-crt-python/api/mqtt5.html#awscrt.mqtt5.DisconnectReasonCode.WILDCARD_SUBSCRIPTIONS_NOT_SUPPORTED",
-    "awscrt.mqtt5.exponentialbackoffjittermode": "https://awslabs.github.io/aws-crt-python/api/mqtt5.html#awscrt.mqtt5.ExponentialBackoffJitterMode",
-    "awscrt.mqtt5.exponentialbackoffjittermode.decorrelated": "https://awslabs.github.io/aws-crt-python/api/mqtt5.html#awscrt.mqtt5.ExponentialBackoffJitterMode.DECORRELATED",
-    "awscrt.mqtt5.exponentialbackoffjittermode.default": "https://awslabs.github.io/aws-crt-python/api/mqtt5.html#awscrt.mqtt5.ExponentialBackoffJitterMode.DEFAULT",
-    "awscrt.mqtt5.exponentialbackoffjittermode.full": "https://awslabs.github.io/aws-crt-python/api/mqtt5.html#awscrt.mqtt5.ExponentialBackoffJitterMode.FULL",
-    "awscrt.mqtt5.exponentialbackoffjittermode.none": "https://awslabs.github.io/aws-crt-python/api/mqtt5.html#awscrt.mqtt5.ExponentialBackoffJitterMode.NONE",
     "awscrt.mqtt5.extendedvalidationandflowcontroloptions": "https://awslabs.github.io/aws-crt-python/api/mqtt5.html#awscrt.mqtt5.ExtendedValidationAndFlowControlOptions",
     "awscrt.mqtt5.extendedvalidationandflowcontroloptions.aws_iot_core_defaults": "https://awslabs.github.io/aws-crt-python/api/mqtt5.html#awscrt.mqtt5.ExtendedValidationAndFlowControlOptions.AWS_IOT_CORE_DEFAULTS",
     "awscrt.mqtt5.extendedvalidationandflowcontroloptions.none": "https://awslabs.github.io/aws-crt-python/api/mqtt5.html#awscrt.mqtt5.ExtendedValidationAndFlowControlOptions.NONE",
@@ -610,6 +610,7 @@ MAPPING = {
     "awscrt.s3.s3responseerror.name": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ResponseError.name",
     "awscrt.s3.s3responseerror.operation_name": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ResponseError.operation_name",
     "awscrt.s3.s3responseerror.status_code": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ResponseError.status_code",
+    "awscrt.s3.s3retryconfig": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3RetryConfig",
     "awscrt.websocket": "https://awslabs.github.io/aws-crt-python/api/websocket.html#module-awscrt.websocket",
     "awscrt.websocket.connect": "https://awslabs.github.io/aws-crt-python/api/websocket.html#awscrt.websocket.connect",
     "awscrt.websocket.create_handshake_request": "https://awslabs.github.io/aws-crt-python/api/websocket.html#awscrt.websocket.create_handshake_request",

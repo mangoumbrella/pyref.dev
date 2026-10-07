@@ -1,4 +1,4 @@
-VERSION = "2026.2.1"
+VERSION = "2026.2.2"
 
 # fmt: off
 MAPPING = {
@@ -637,6 +637,7 @@ MAPPING = {
     "islpy.basicset.flatten": "https://documen.tician.de/islpy/ref_set.html#islpy.BasicSet.flatten",
     "islpy.basicset.foreach_bound_pair": "https://documen.tician.de/islpy/ref_set.html#islpy.BasicSet.foreach_bound_pair",
     "islpy.basicset.foreach_constraint": "https://documen.tician.de/islpy/ref_set.html#islpy.BasicSet.foreach_constraint",
+    "islpy.basicset.foreach_opposite_constraint_pair": "https://documen.tician.de/islpy/ref_set.html#islpy.BasicSet.foreach_opposite_constraint_pair",
     "islpy.basicset.from_constraint": "https://documen.tician.de/islpy/ref_set.html#islpy.BasicSet.from_constraint",
     "islpy.basicset.from_constraint_matrices": "https://documen.tician.de/islpy/ref_set.html#islpy.BasicSet.from_constraint_matrices",
     "islpy.basicset.from_multi_aff": "https://documen.tician.de/islpy/ref_set.html#islpy.BasicSet.from_multi_aff",
@@ -763,6 +764,7 @@ MAPPING = {
     "islpy.constraint.cmp_last_non_zero": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.Constraint.cmp_last_non_zero",
     "islpy.constraint.copy": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.Constraint.copy",
     "islpy.constraint.dim": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.Constraint.dim",
+    "islpy.constraint.drop_all_locals": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.Constraint.drop_all_locals",
     "islpy.constraint.dump": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.Constraint.dump",
     "islpy.constraint.eq_from_names": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.Constraint.eq_from_names",
     "islpy.constraint.equality_alloc": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.Constraint.equality_alloc",
@@ -1722,6 +1724,7 @@ MAPPING = {
     "islpy.multival.insert_dims": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.MultiVal.insert_dims",
     "islpy.multival.involves_dims": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.MultiVal.involves_dims",
     "islpy.multival.involves_nan": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.MultiVal.involves_nan",
+    "islpy.multival.is_equal": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.MultiVal.is_equal",
     "islpy.multival.is_zero": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.MultiVal.is_zero",
     "islpy.multival.max": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.MultiVal.max",
     "islpy.multival.min": "https://documen.tician.de/islpy/ref_fundamental.html#islpy.MultiVal.min",
@@ -3138,6 +3141,7 @@ MAPPING = {
     "islpy.unionmap.params": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionMap.params",
     "islpy.unionmap.plain_is_empty": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionMap.plain_is_empty",
     "islpy.unionmap.plain_is_injective": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionMap.plain_is_injective",
+    "islpy.unionmap.plain_unshifted_simple_hull": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionMap.plain_unshifted_simple_hull",
     "islpy.unionmap.polyhedral_hull": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionMap.polyhedral_hull",
     "islpy.unionmap.power": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionMap.power",
     "islpy.unionmap.preimage_domain_multi_aff": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionMap.preimage_domain_multi_aff",
@@ -3576,6 +3580,7 @@ MAPPING = {
     "islpy.unionset.min_multi_union_pw_aff": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionSet.min_multi_union_pw_aff",
     "islpy.unionset.n_set": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionSet.n_set",
     "islpy.unionset.params": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionSet.params",
+    "islpy.unionset.plain_unshifted_simple_hull": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionSet.plain_unshifted_simple_hull",
     "islpy.unionset.polyhedral_hull": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionSet.polyhedral_hull",
     "islpy.unionset.preimage_multi_aff": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionSet.preimage_multi_aff",
     "islpy.unionset.preimage_pw_multi_aff": "https://documen.tician.de/islpy/ref_set.html#islpy.UnionSet.preimage_pw_multi_aff",

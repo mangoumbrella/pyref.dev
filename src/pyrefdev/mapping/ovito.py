@@ -1,4 +1,4 @@
-VERSION = "3.16.0"
+VERSION = "3.16.1"
 
 # fmt: off
 MAPPING = {
@@ -756,6 +756,7 @@ MAPPING = {
     "ovito.vis.colorlegendoverlay.background_enabled": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.ColorLegendOverlay.background_enabled",
     "ovito.vis.colorlegendoverlay.border_color": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.ColorLegendOverlay.border_color",
     "ovito.vis.colorlegendoverlay.border_enabled": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.ColorLegendOverlay.border_enabled",
+    "ovito.vis.colorlegendoverlay.caption": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.ColorLegendOverlay.caption",
     "ovito.vis.colorlegendoverlay.color_mapping_source": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.ColorLegendOverlay.color_mapping_source",
     "ovito.vis.colorlegendoverlay.font": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.ColorLegendOverlay.font",
     "ovito.vis.colorlegendoverlay.font_family": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.ColorLegendOverlay.font_family",
@@ -778,7 +779,7 @@ MAPPING = {
     "ovito.vis.colorlegendoverlay.text_color": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.ColorLegendOverlay.text_color",
     "ovito.vis.colorlegendoverlay.ticks_enabled": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.ColorLegendOverlay.ticks_enabled",
     "ovito.vis.colorlegendoverlay.ticks_spacing": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.ColorLegendOverlay.ticks_spacing",
-    "ovito.vis.colorlegendoverlay.title": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.ColorLegendOverlay.title",
+    "ovito.vis.colorlegendoverlay.use_type_shapes": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.ColorLegendOverlay.use_type_shapes",
     "ovito.vis.coordinatetripodoverlay": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.CoordinateTripodOverlay",
     "ovito.vis.coordinatetripodoverlay.alignment": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.CoordinateTripodOverlay.alignment",
     "ovito.vis.coordinatetripodoverlay.axis1_color": "https://docs.ovito.org/python/modules/ovito_vis.html#ovito.vis.CoordinateTripodOverlay.axis1_color",

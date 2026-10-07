@@ -1,4 +1,4 @@
-VERSION = "2026.8.1"
+VERSION = "2026.9.0"
 
 # fmt: off
 MAPPING = {
@@ -25,6 +25,7 @@ MAPPING = {
     "uxarray.grid.chunk": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.chunk.html#uxarray.Grid.chunk",
     "uxarray.grid.compute_face_areas": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.compute_face_areas.html#uxarray.Grid.compute_face_areas",
     "uxarray.grid.compute_face_node_angles": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.compute_face_node_angles.html#uxarray.Grid.compute_face_node_angles",
+    "uxarray.grid.compute_skewness": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.compute_skewness.html#uxarray.Grid.compute_skewness",
     "uxarray.grid.connectivity": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.connectivity.html#uxarray.Grid.connectivity",
     "uxarray.grid.construct_face_centers": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.construct_face_centers.html#uxarray.Grid.construct_face_centers",
     "uxarray.grid.coordinates": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.coordinates.html#uxarray.Grid.coordinates",
@@ -195,6 +196,7 @@ MAPPING = {
     "uxarray.uxdataarray.remap.to_rectilinear": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.remap.to_rectilinear.html#uxarray.UxDataArray.remap.to_rectilinear",
     "uxarray.uxdataarray.remap.to_structured": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.remap.to_structured.html#uxarray.UxDataArray.remap.to_structured",
     "uxarray.uxdataarray.scalardotgradient": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.scalardotgradient.html#uxarray.UxDataArray.scalardotgradient",
+    "uxarray.uxdataarray.sel": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.sel.html#uxarray.UxDataArray.sel",
     "uxarray.uxdataarray.subset": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.subset.html#uxarray.UxDataArray.subset",
     "uxarray.uxdataarray.subset.bounding_box": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.subset.bounding_box.html#uxarray.UxDataArray.subset.bounding_box",
     "uxarray.uxdataarray.subset.bounding_circle": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.subset.bounding_circle.html#uxarray.UxDataArray.subset.bounding_circle",

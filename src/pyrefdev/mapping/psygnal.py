@@ -1,4 +1,4 @@
-VERSION = "0.15.1"
+VERSION = "0.16.1"
 
 # fmt: off
 MAPPING = {
@@ -17,7 +17,9 @@ MAPPING = {
     "psygnal.containers.eventedcallableobjectproxy.events": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.EventedCallableObjectProxy.events",
     "psygnal.containers.eventeddict": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.EventedDict",
     "psygnal.containers.eventedlist": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.EventedList",
+    "psygnal.containers.eventedlist.clear": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.EventedList.clear",
     "psygnal.containers.eventedlist.copy": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.EventedList.copy",
+    "psygnal.containers.eventedlist.extend": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.EventedList.extend",
     "psygnal.containers.eventedlist.insert": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.EventedList.insert",
     "psygnal.containers.eventedlist.move": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.EventedList.move",
     "psygnal.containers.eventedlist.move_multiple": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.EventedList.move_multiple",
@@ -32,6 +34,10 @@ MAPPING = {
     "psygnal.containers.eventedset.symmetric_difference_update": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.EventedSet.symmetric_difference_update",
     "psygnal.containers.eventedset.update": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.EventedSet.update",
     "psygnal.containers.listevents": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.ListEvents",
+    "psygnal.containers.listevents.batch_inserted": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.ListEvents.batch_inserted",
+    "psygnal.containers.listevents.batch_inserting": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.ListEvents.batch_inserting",
+    "psygnal.containers.listevents.batch_removed": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.ListEvents.batch_removed",
+    "psygnal.containers.listevents.batch_removing": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.ListEvents.batch_removing",
     "psygnal.containers.listevents.changed": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.ListEvents.changed",
     "psygnal.containers.listevents.child_event": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.ListEvents.child_event",
     "psygnal.containers.listevents.inserted": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.ListEvents.inserted",

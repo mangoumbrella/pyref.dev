@@ -1,4 +1,4 @@
-VERSION = "2.20.10"
+VERSION = "2.21.0"
 
 # fmt: off
 MAPPING = {
@@ -185,6 +185,10 @@ MAPPING = {
     "mteb.cache.resultcache.submit_results": "https://docs.mteb.org/api/results/#mteb.cache.ResultCache.submit_results",
     "mteb.cachebackendprotocol": "https://docs.mteb.org/api/model/#mteb.models.cache_wrappers.CacheBackendProtocol",
     "mteb.crossencoderprotocol": "https://docs.mteb.org/api/model/#mteb.models.CrossEncoderProtocol",
+    "mteb.data_cleaning": "https://docs.mteb.org/api/task/#mteb.data_cleaning",
+    "mteb.data_cleaning._filters": "https://docs.mteb.org/api/task/",
+    "mteb.data_cleaning._filters.remove_duplicates": "https://docs.mteb.org/api/task/#mteb.data_cleaning.remove_duplicates",
+    "mteb.data_cleaning.remove_duplicates": "https://docs.mteb.org/api/task/#mteb.data_cleaning.remove_duplicates",
     "mteb.encoderprotocol": "https://docs.mteb.org/api/model/#mteb.models.EncoderProtocol",
     "mteb.evaluate": "https://docs.mteb.org/api/evaluation/#mteb.evaluate",
     "mteb.evaluate.abstask": "https://docs.mteb.org/api/task/#mteb.AbsTask",

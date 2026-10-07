@@ -1,4 +1,4 @@
-VERSION = "0.18.1"
+VERSION = "0.19.0"
 
 # fmt: off
 MAPPING = {
@@ -96,9 +96,10 @@ MAPPING = {
     "cyrk.cy.events_test.build_event_wrapper_test": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.events_test.build_event_wrapper_test",
     "cyrk.cy.events_test.run_cysolver_with_events": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.events_test.run_cysolver_with_events",
     "cyrk.cy.helpers": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#module-CyRK.cy.helpers",
-    "cyrk.cy.prange_test": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#module-CyRK.cy.prange_test",
-    "cyrk.cy.prange_test.run_prange_common_args_test": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.prange_test.run_prange_common_args_test",
-    "cyrk.cy.prange_test.run_prange_test": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.prange_test.run_prange_test",
+    "cyrk.cy.parallel_test": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#module-CyRK.cy.parallel_test",
+    "cyrk.cy.parallel_test.run_parallel_benchmark": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.parallel_test.run_parallel_benchmark",
+    "cyrk.cy.parallel_test.run_parallel_common_args_test": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.parallel_test.run_parallel_common_args_test",
+    "cyrk.cy.parallel_test.run_parallel_test": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.parallel_test.run_parallel_test",
     "cyrk.cy.pyhelpers": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#module-CyRK.cy.pyhelpers",
     "cyrk.cy.pyhelpers.find_ode_method_int": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.pyhelpers.find_ode_method_int",
     "cyrk.cy.pyhelpers.get_error_message": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.pyhelpers.get_error_message",

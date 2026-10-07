@@ -1,4 +1,4 @@
-VERSION = "1.3.3"
+VERSION = "1.4.0"
 
 # fmt: off
 MAPPING = {
@@ -25,6 +25,7 @@ MAPPING = {
     "contourpy.contourgenerator.lines": "https://contourpy.readthedocs.io/en/stable/api/contourpy/ContourGenerator.html#contourpy.ContourGenerator.lines",
     "contourpy.contourgenerator.multi_filled": "https://contourpy.readthedocs.io/en/stable/api/contourpy/ContourGenerator.html#contourpy.ContourGenerator.multi_filled",
     "contourpy.contourgenerator.multi_lines": "https://contourpy.readthedocs.io/en/stable/api/contourpy/ContourGenerator.html#contourpy.ContourGenerator.multi_lines",
+    "contourpy.contourgenerator.name": "https://contourpy.readthedocs.io/en/stable/api/contourpy/ContourGenerator.html#contourpy.ContourGenerator.name",
     "contourpy.contourgenerator.quad_as_tri": "https://contourpy.readthedocs.io/en/stable/api/contourpy/ContourGenerator.html#contourpy.ContourGenerator.quad_as_tri",
     "contourpy.contourgenerator.supports_corner_mask": "https://contourpy.readthedocs.io/en/stable/api/contourpy/ContourGenerator.html#contourpy.ContourGenerator.supports_corner_mask",
     "contourpy.contourgenerator.supports_fill_type": "https://contourpy.readthedocs.io/en/stable/api/contourpy/ContourGenerator.html#contourpy.ContourGenerator.supports_fill_type",

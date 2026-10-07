@@ -1,4 +1,4 @@
-VERSION = "0.9.3"
+VERSION = "0.9.4"
 
 # fmt: off
 MAPPING = {
@@ -169,6 +169,7 @@ MAPPING = {
     "pystow.utils.read_pydantic_tsv": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_pydantic_tsv.html#pystow.utils.read_pydantic_tsv",
     "pystow.utils.read_pydantic_yaml": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_pydantic_yaml.html#pystow.utils.read_pydantic_yaml",
     "pystow.utils.read_rdf": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_rdf.html#pystow.utils.read_rdf",
+    "pystow.utils.read_rdflib": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_rdflib.html#pystow.utils.read_rdflib",
     "pystow.utils.read_tarfile_csv": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_tarfile_csv.html#pystow.utils.read_tarfile_csv",
     "pystow.utils.read_tarfile_xml": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_tarfile_xml.html#pystow.utils.read_tarfile_xml",
     "pystow.utils.read_xml": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_xml.html#pystow.utils.read_xml",
@@ -200,6 +201,7 @@ MAPPING = {
     "pystow.utils.write_pydantic_json": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_pydantic_json.html#pystow.utils.write_pydantic_json",
     "pystow.utils.write_pydantic_jsonl": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_pydantic_jsonl.html#pystow.utils.write_pydantic_jsonl",
     "pystow.utils.write_pydantic_yaml": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_pydantic_yaml.html#pystow.utils.write_pydantic_yaml",
+    "pystow.utils.write_rdflib": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_rdflib.html#pystow.utils.write_rdflib",
     "pystow.utils.write_tarfile_csv": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_tarfile_csv.html#pystow.utils.write_tarfile_csv",
     "pystow.utils.write_tarfile_xml": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_tarfile_xml.html#pystow.utils.write_tarfile_xml",
     "pystow.utils.write_yaml": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_yaml.html#pystow.utils.write_yaml",

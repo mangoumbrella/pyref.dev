@@ -1,4 +1,4 @@
-VERSION = "3.3.0"
+VERSION = "3.4.0"
 
 # fmt: off
 MAPPING = {
@@ -1464,7 +1464,6 @@ MAPPING = {
     "zarr.experimental.cache_store.logger": "https://zarr.readthedocs.io/en/stable/api/zarr/experimental/#zarr.experimental.cache_store.logger",
     "zarr.from_array": "https://zarr.readthedocs.io/en/stable/api/zarr/functions/from_array/#zarr.from_array",
     "zarr.full": "https://zarr.readthedocs.io/en/stable/api/zarr/functions/full/#zarr.full",
-    "zarr.full_like": "https://zarr.readthedocs.io/en/stable/api/zarr/functions/full_like/#zarr.full_like",
     "zarr.group": "https://zarr.readthedocs.io/en/stable/api/zarr/functions/group/#zarr.group",
     "zarr.Group": "https://zarr.readthedocs.io/en/stable/api/zarr/group/#zarr.Group",
     "zarr.group.__contains__": "https://zarr.readthedocs.io/en/stable/api/zarr/group/#zarr.Group.__contains__",
@@ -2157,6 +2156,7 @@ MAPPING = {
     "zarr.testing.strategies.chunk_grids": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.chunk_grids",
     "zarr.testing.strategies.chunk_paths": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.chunk_paths",
     "zarr.testing.strategies.chunk_shapes": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.chunk_shapes",
+    "zarr.testing.strategies.chunks_param_from_rectilinear": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.chunks_param_from_rectilinear",
     "zarr.testing.strategies.clear_store": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.clear_store",
     "zarr.testing.strategies.complex_rectilinear_arrays": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.complex_rectilinear_arrays",
     "zarr.testing.strategies.compressors": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.compressors",
@@ -2175,6 +2175,7 @@ MAPPING = {
     "zarr.testing.strategies.rectilinear_chunks": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.rectilinear_chunks",
     "zarr.testing.strategies.safe_unicode_for_dtype": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.safe_unicode_for_dtype",
     "zarr.testing.strategies.shard_shapes": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.shard_shapes",
+    "zarr.testing.strategies.sharded_arrays": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.sharded_arrays",
     "zarr.testing.strategies.sharding_inner_codecs": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.sharding_inner_codecs",
     "zarr.testing.strategies.short_node_names": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.short_node_names",
     "zarr.testing.strategies.simple_arrays": "https://zarr.readthedocs.io/en/stable/api/zarr/testing/strategies/#zarr.testing.strategies.simple_arrays",

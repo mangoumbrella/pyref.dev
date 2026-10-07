@@ -1,4 +1,4 @@
-VERSION = "2.7.0"
+VERSION = "2.8.0"
 
 # fmt: off
 MAPPING = {
@@ -270,6 +270,8 @@ MAPPING = {
     "urllib3.util.timeout.read_timeout": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Timeout.read_timeout",
     "urllib3.util.timeout.start_connect": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Timeout.start_connect",
     "urllib3.util.url": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Url",
+    "urllib3.util.url.auth_decoded": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Url.auth_decoded",
+    "urllib3.util.url.auth_decoded_joined": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Url.auth_decoded_joined",
     "urllib3.util.url.authority": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Url.authority",
     "urllib3.util.url.hostname": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Url.hostname",
     "urllib3.util.url.netloc": "https://urllib3.readthedocs.io/en/stable/reference/urllib3.util.html#urllib3.util.Url.netloc",

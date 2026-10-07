@@ -1,4 +1,4 @@
-VERSION = "9.4.3"
+VERSION = "9.4.6"
 
 # fmt: off
 MAPPING = {
@@ -448,6 +448,7 @@ MAPPING = {
     "rio_tiler.tasks.multi_values_list": "https://cogeotiff.github.io/rio-tiler/api/rio_tiler/tasks/#rio_tiler.tasks.multi_values_list",
     "rio_tiler.utils": "https://cogeotiff.github.io/rio-tiler/api/rio_tiler/utils/#rio_tiler.utils",
     "rio_tiler.utils._array_gdal_name": "https://cogeotiff.github.io/rio-tiler/api/rio_tiler/utils/#rio_tiler.utils._array_gdal_name",
+    "rio_tiler.utils._check_geographic_bounds": "https://cogeotiff.github.io/rio-tiler/latest/api/rio_tiler/utils/#rio_tiler.utils._check_geographic_bounds",
     "rio_tiler.utils._chunks": "https://cogeotiff.github.io/rio-tiler/api/rio_tiler/utils/#rio_tiler.utils._chunks",
     "rio_tiler.utils._crs_authority_info": "https://cogeotiff.github.io/rio-tiler/api/rio_tiler/utils/#rio_tiler.utils._CRS_authority_info",
     "rio_tiler.utils._get_width_height": "https://cogeotiff.github.io/rio-tiler/api/rio_tiler/utils/#rio_tiler.utils._get_width_height",

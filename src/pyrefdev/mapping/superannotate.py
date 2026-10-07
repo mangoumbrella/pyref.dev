@@ -1,4 +1,4 @@
-VERSION = "4.6.0"
+VERSION = "4.6.1"
 
 # fmt: off
 MAPPING = {
@@ -115,4 +115,7 @@ MAPPING = {
     "superannotate.saclient.upload_video_to_project": "https://superannotate.readthedocs.io/en/stable/api_reference/api_project.html#superannotate.SAClient.upload_video_to_project",
     "superannotate.saclient.upload_videos_from_folder_to_project": "https://superannotate.readthedocs.io/en/stable/api_reference/api_project.html#superannotate.SAClient.upload_videos_from_folder_to_project",
     "superannotate.saclient.validate_annotations": "https://superannotate.readthedocs.io/en/stable/api_reference/helpers.html#superannotate.SAClient.validate_annotations",
+    "superannotate.saorgclient": "https://superannotate.readthedocs.io/en/stable/api_reference/api_org_client.html",
+    "superannotate.saorgclient.get_team_client": "https://superannotate.readthedocs.io/en/stable/api_reference/api_org_client.html#superannotate.SAORGClient.get_team_client",
+    "superannotate.saorgclient.list_teams": "https://superannotate.readthedocs.io/en/stable/api_reference/api_org_client.html#superannotate.SAORGClient.list_teams",
 }

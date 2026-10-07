@@ -1,4 +1,4 @@
-VERSION = "4.26.0"
+VERSION = "4.27.3"
 
 # fmt: off
 MAPPING = {
@@ -39,6 +39,7 @@ MAPPING = {
     "schemathesis.baseschema.include": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.include",
     "schemathesis.baseschema.iter_link_candidates": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.iter_link_candidates",
     "schemathesis.baseschema.iter_schema_warnings": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.iter_schema_warnings",
+    "schemathesis.baseschema.operations_with_incoming_links": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.operations_with_incoming_links",
     "schemathesis.baseschema.parametrize": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.parametrize",
     "schemathesis.baseschema.prepare_request_body": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.prepare_request_body",
     "schemathesis.baseschema.reauth_state": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.BaseSchema.reauth_state",
@@ -101,17 +102,20 @@ MAPPING = {
     "schemathesis.response.body_size": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.body_size",
     "schemathesis.response.clear_cache": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.clear_cache",
     "schemathesis.response.content": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.content",
+    "schemathesis.response.content_size": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.content_size",
     "schemathesis.response.elapsed": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.elapsed",
     "schemathesis.response.encoded_body": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.encoded_body",
     "schemathesis.response.encoding": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.encoding",
     "schemathesis.response.headers": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.headers",
     "schemathesis.response.http_version": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.http_version",
+    "schemathesis.response.is_truncated": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.is_truncated",
     "schemathesis.response.json": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.json",
     "schemathesis.response.message": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.message",
     "schemathesis.response.request": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.request",
     "schemathesis.response.status_code": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.status_code",
     "schemathesis.response.text": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.text",
     "schemathesis.response.text_lossy": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.text_lossy",
+    "schemathesis.response.truncated": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.truncated",
     "schemathesis.response.verify": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.Response.verify",
     "schemathesis.serializationcontext": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.SerializationContext",
     "schemathesis.serializationcontext.case": "https://schemathesis.readthedocs.io/en/stable/reference/python/#schemathesis.SerializationContext.case",
