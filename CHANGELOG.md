@@ -6,6 +6,9 @@ Nothing noticeable unreleased.
 
 ## v2026.7
 
+- Added support for Python 3.15.
+- Updated standard library to Python 3.15.
+- Dropped support for Python 3.10.
 - Updated the following packages:
   - [aiogoogle](https://aiogoogle.readthedocs.io/en/latest/)
   - [aiohttp-middlewares](https://aiohttp-middlewares.readthedocs.io/en/stable/)
