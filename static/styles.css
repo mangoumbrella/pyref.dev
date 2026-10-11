@@ -6,6 +6,8 @@
 
     --pad: 52px;
     --content: 1200px;
+    /* Tall enough for the search page's controls, so both headers match. */
+    --header-height: 64px;
     /* Rules and backgrounds stay full-bleed while the content sits in a centred
        column: the gutter takes over from --pad once the viewport is wider. */
     --gutter: max(var(--pad), calc((100% - var(--content)) / 2));
@@ -171,7 +173,8 @@ button {
     justify-content: space-between;
     align-items: center;
     gap: 16px;
-    padding: 18px var(--gutter);
+    min-height: var(--header-height);
+    padding: 12px var(--gutter);
     border-bottom: 1px solid var(--rule);
 }
 
@@ -600,12 +603,13 @@ code {
     display: flex;
     align-items: center;
     gap: 16px;
-    padding: 14px var(--gutter);
+    min-height: var(--header-height);
+    padding: 12px var(--gutter);
     border-bottom: 1px solid var(--rule);
 }
 
 .results-header .wordmark {
-    font-size: 14px;
+    flex-shrink: 0;
 }
 
 .results-header .search-control {
