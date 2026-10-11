@@ -66,7 +66,7 @@ To set up a new server:
 To update to a new version:
 
 ```bash
-git pull && git fetch --tags && uv pip install -e . && uv sync --all-extras --locked && uv run pyrefdev-indexer build-index && systemctl restart pyrefdev.service
+deploy/upgrade.sh
 ```
 
 To upgrade uv venv's Python version:
