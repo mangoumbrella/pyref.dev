@@ -1,4 +1,4 @@
-VERSION = "1.3.0"
+VERSION = "1.4.0"
 
 # fmt: off
 MAPPING = {
@@ -17,6 +17,10 @@ MAPPING = {
     "mink.configuration.configuration.q": "https://kevinzakka.github.io/mink/api/configuration.html#mink.configuration.Configuration.q",
     "mink.configuration.configuration.update": "https://kevinzakka.github.io/mink/api/configuration.html#mink.configuration.Configuration.update",
     "mink.configuration.configuration.update_from_keyframe": "https://kevinzakka.github.io/mink/api/configuration.html#mink.configuration.Configuration.update_from_keyframe",
+    "mink.elastic": "https://kevinzakka.github.io/mink/api/inverse_kinematics.html",
+    "mink.elastic.elastic": "https://kevinzakka.github.io/mink/api/inverse_kinematics.html#mink.elastic.Elastic",
+    "mink.elastic.elastic.penalty": "https://kevinzakka.github.io/mink/api/inverse_kinematics.html#mink.elastic.Elastic.penalty",
+    "mink.elastic.elastic.task": "https://kevinzakka.github.io/mink/api/inverse_kinematics.html#mink.elastic.Elastic.task",
     "mink.lie": "https://kevinzakka.github.io/mink/api/lie.html",
     "mink.lie.base": "https://kevinzakka.github.io/mink/api/lie.html",
     "mink.lie.base.matrixliegroup": "https://kevinzakka.github.io/mink/api/lie.html#mink.lie.base.MatrixLieGroup",
@@ -111,7 +115,6 @@ MAPPING = {
     "mink.tasks.axis_align_task.axisaligntask.axis": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.axis_align_task.AxisAlignTask.axis",
     "mink.tasks.axis_align_task.axisaligntask.compute_error": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.axis_align_task.AxisAlignTask.compute_error",
     "mink.tasks.axis_align_task.axisaligntask.compute_jacobian": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.axis_align_task.AxisAlignTask.compute_jacobian",
-    "mink.tasks.axis_align_task.axisaligntask.compute_qp_objective": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.axis_align_task.AxisAlignTask.compute_qp_objective",
     "mink.tasks.axis_align_task.axisaligntask.compute_qp_residual": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.axis_align_task.AxisAlignTask.compute_qp_residual",
     "mink.tasks.axis_align_task.axisaligntask.frame_name": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.axis_align_task.AxisAlignTask.frame_name",
     "mink.tasks.axis_align_task.axisaligntask.frame_type": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.axis_align_task.AxisAlignTask.frame_type",
@@ -147,7 +150,6 @@ MAPPING = {
     "mink.tasks.frame_task.frametask": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.frame_task.FrameTask",
     "mink.tasks.frame_task.frametask.compute_error": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.frame_task.FrameTask.compute_error",
     "mink.tasks.frame_task.frametask.compute_jacobian": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.frame_task.FrameTask.compute_jacobian",
-    "mink.tasks.frame_task.frametask.compute_qp_objective": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.frame_task.FrameTask.compute_qp_objective",
     "mink.tasks.frame_task.frametask.compute_qp_residual": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.frame_task.FrameTask.compute_qp_residual",
     "mink.tasks.frame_task.frametask.frame_name": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.frame_task.FrameTask.frame_name",
     "mink.tasks.frame_task.frametask.frame_type": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.frame_task.FrameTask.frame_type",
@@ -163,7 +165,6 @@ MAPPING = {
     "mink.tasks.look_at_task.lookattask.axis": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.look_at_task.LookAtTask.axis",
     "mink.tasks.look_at_task.lookattask.compute_error": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.look_at_task.LookAtTask.compute_error",
     "mink.tasks.look_at_task.lookattask.compute_jacobian": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.look_at_task.LookAtTask.compute_jacobian",
-    "mink.tasks.look_at_task.lookattask.compute_qp_objective": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.look_at_task.LookAtTask.compute_qp_objective",
     "mink.tasks.look_at_task.lookattask.compute_qp_residual": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.look_at_task.LookAtTask.compute_qp_residual",
     "mink.tasks.look_at_task.lookattask.frame_name": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.look_at_task.LookAtTask.frame_name",
     "mink.tasks.look_at_task.lookattask.frame_type": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.look_at_task.LookAtTask.frame_type",
@@ -183,7 +184,6 @@ MAPPING = {
     "mink.tasks.relative_frame_task.relativeframetask": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.relative_frame_task.RelativeFrameTask",
     "mink.tasks.relative_frame_task.relativeframetask.compute_error": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.relative_frame_task.RelativeFrameTask.compute_error",
     "mink.tasks.relative_frame_task.relativeframetask.compute_jacobian": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.relative_frame_task.RelativeFrameTask.compute_jacobian",
-    "mink.tasks.relative_frame_task.relativeframetask.compute_qp_objective": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.relative_frame_task.RelativeFrameTask.compute_qp_objective",
     "mink.tasks.relative_frame_task.relativeframetask.compute_qp_residual": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.relative_frame_task.RelativeFrameTask.compute_qp_residual",
     "mink.tasks.relative_frame_task.relativeframetask.frame_name": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.relative_frame_task.RelativeFrameTask.frame_name",
     "mink.tasks.relative_frame_task.relativeframetask.frame_type": "https://kevinzakka.github.io/mink/api/tasks.html#mink.tasks.relative_frame_task.RelativeFrameTask.frame_type",

@@ -1,4 +1,4 @@
-VERSION = "1.19.1"
+VERSION = "1.21.0"
 
 # fmt: off
 MAPPING = {
@@ -8,6 +8,7 @@ MAPPING = {
     "pyqtbuild.pyqtbuild_version": "https://pyqt-builder.readthedocs.io/en/stable/pyqtbuild_api.html#pyqtbuild.PYQTBUILD_VERSION",
     "pyqtbuild.pyqtbuild_version_str": "https://pyqt-builder.readthedocs.io/en/stable/pyqtbuild_api.html#pyqtbuild.PYQTBUILD_VERSION_STR",
     "pyqtbuild.pyqtproject": "https://pyqt-builder.readthedocs.io/en/stable/pyqtbuild_api.html#pyqtbuild.PyQtProject",
+    "pyqtbuild.pyqtproject.get_version_tag": "https://pyqt-builder.readthedocs.io/en/stable/pyqtbuild_api.html#pyqtbuild.PyQtProject.get_version_tag",
     "pyqtbuild.qmakebuilder": "https://pyqt-builder.readthedocs.io/en/stable/pyqtbuild_api.html#pyqtbuild.QmakeBuilder",
     "pyqtbuild.qmakebuilder.qmake_quote": "https://pyqt-builder.readthedocs.io/en/stable/pyqtbuild_api.html#pyqtbuild.QmakeBuilder.qmake_quote",
     "pyqtbuild.qmakebuilder.qt_configuration": "https://pyqt-builder.readthedocs.io/en/stable/pyqtbuild_api.html#pyqtbuild.QmakeBuilder.qt_configuration",

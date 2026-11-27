@@ -1,4 +1,4 @@
-VERSION = "0.4.7"
+VERSION = "0.4.8"
 
 # fmt: off
 MAPPING = {
@@ -203,6 +203,7 @@ MAPPING = {
     "dagster_ray.kuberay.configs.rayjobspec.job_id": "https://danielgafni.github.io/dagster-ray/api/kuberay/#dagster_ray.kuberay.resources.rayjob.InteractiveRayJobSpec.job_id",
     "dagster_ray.kuberay.configs.rayjobspec.managed_by": "https://danielgafni.github.io/dagster-ray/api/kuberay/#dagster_ray.kuberay.resources.rayjob.InteractiveRayJobSpec.managed_by",
     "dagster_ray.kuberay.configs.rayjobspec.metadata": "https://danielgafni.github.io/dagster-ray/api/kuberay/#dagster_ray.kuberay.resources.rayjob.InteractiveRayJobSpec.metadata",
+    "dagster_ray.kuberay.configs.rayjobspec.pre_running_deadline_seconds": "https://danielgafni.github.io/dagster-ray/latest/api/kuberay/#dagster_ray.kuberay.configs.RayJobSpec.pre_running_deadline_seconds",
     "dagster_ray.kuberay.configs.rayjobspec.ray_cluster_spec": "https://danielgafni.github.io/dagster-ray/api/kuberay/#dagster_ray.kuberay.configs.RayJobSpec.ray_cluster_spec",
     "dagster_ray.kuberay.configs.rayjobspec.runtime_env_yaml": "https://danielgafni.github.io/dagster-ray/api/kuberay/#dagster_ray.kuberay.resources.rayjob.InteractiveRayJobSpec.runtime_env_yaml",
     "dagster_ray.kuberay.configs.rayjobspec.shutdown_after_job_finishes": "https://danielgafni.github.io/dagster-ray/api/kuberay/#dagster_ray.kuberay.resources.rayjob.InteractiveRayJobSpec.shutdown_after_job_finishes",

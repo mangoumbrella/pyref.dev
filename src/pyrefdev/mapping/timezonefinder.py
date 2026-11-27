@@ -1,4 +1,4 @@
-VERSION = "9.0.0"
+VERSION = "9.2.0"
 
 # fmt: off
 MAPPING = {
@@ -8,6 +8,8 @@ MAPPING = {
     "timezonefinder.localize": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.localize",
     "timezonefinder.timezone_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.timezone_at",
     "timezonefinder.timezone_at_land": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.timezone_at_land",
+    "timezonefinder.timezone_id_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.timezone_id_at",
+    "timezonefinder.timezone_id_at_land": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.timezone_id_at_land",
     "timezonefinder.timezone_ids_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.timezone_ids_at",
     "timezonefinder.timezone_ids_at_land": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.timezone_ids_at_land",
     "timezonefinder.timezone_names_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.timezone_names_at",
@@ -34,11 +36,14 @@ MAPPING = {
     "timezonefinder.timezonefinder.shortcuts": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.shortcuts",
     "timezonefinder.timezonefinder.timezone_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.timezone_at",
     "timezonefinder.timezonefinder.timezone_at_land": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.timezone_at_land",
+    "timezonefinder.timezonefinder.timezone_id_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.timezone_id_at",
+    "timezonefinder.timezonefinder.timezone_id_at_land": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.timezone_id_at_land",
     "timezonefinder.timezonefinder.timezone_ids_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.timezone_ids_at",
     "timezonefinder.timezonefinder.timezone_ids_at_land": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.timezone_ids_at_land",
     "timezonefinder.timezonefinder.timezone_names": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.timezone_names",
     "timezonefinder.timezonefinder.timezone_names_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.timezone_names_at",
     "timezonefinder.timezonefinder.timezone_names_at_land": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.timezone_names_at_land",
+    "timezonefinder.timezonefinder.timezones_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.timezones_at",
     "timezonefinder.timezonefinder.unique_timezone_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.unique_timezone_at",
     "timezonefinder.timezonefinder.using_clang_pip": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.using_clang_pip",
     "timezonefinder.timezonefinder.using_numba": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinder.using_numba",
@@ -65,6 +70,8 @@ MAPPING = {
     "timezonefinder.timezonefinderl.shortcuts": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinderL.shortcuts",
     "timezonefinder.timezonefinderl.timezone_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinderL.timezone_at",
     "timezonefinder.timezonefinderl.timezone_at_land": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinderL.timezone_at_land",
+    "timezonefinder.timezonefinderl.timezone_id_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinderL.timezone_id_at",
+    "timezonefinder.timezonefinderl.timezone_id_at_land": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinderL.timezone_id_at_land",
     "timezonefinder.timezonefinderl.timezone_ids_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinderL.timezone_ids_at",
     "timezonefinder.timezonefinderl.timezone_ids_at_land": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinderL.timezone_ids_at_land",
     "timezonefinder.timezonefinderl.timezone_names": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinderL.timezone_names",
@@ -82,6 +89,7 @@ MAPPING = {
     "timezonefinder.timezonefinderl.zone_names": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinderL.zone_names",
     "timezonefinder.timezonefinderl.zone_names_from_ids": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinderL.zone_names_from_ids",
     "timezonefinder.timezonefinderl.zoneinfo_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.TimezoneFinderL.zoneinfo_at",
+    "timezonefinder.timezones_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.timezones_at",
     "timezonefinder.unique_timezone_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.unique_timezone_at",
     "timezonefinder.utc_offset_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.utc_offset_at",
     "timezonefinder.zoneinfo_at": "https://timezonefinder.readthedocs.io/en/latest/4_api.html#timezonefinder.zoneinfo_at",

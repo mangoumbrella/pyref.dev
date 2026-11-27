@@ -1,4 +1,4 @@
-VERSION = "0.14.0"
+VERSION = "0.15.0"
 
 # fmt: off
 MAPPING = {
@@ -76,6 +76,7 @@ MAPPING = {
     "aiokafka.errors.delegationtokenownermismatch": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.errors.DelegationTokenOwnerMismatch",
     "aiokafka.errors.delegationtokenrequestnotallowed": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.errors.DelegationTokenRequestNotAllowed",
     "aiokafka.errors.duplicatesequencenumber": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.errors.DuplicateSequenceNumber",
+    "aiokafka.errors.fencedinstanceiderror": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.errors.FencedInstanceIdError",
     "aiokafka.errors.fetchsessionidnotfound": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.errors.FetchSessionIdNotFound",
     "aiokafka.errors.groupauthorizationfailederror": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.errors.GroupAuthorizationFailedError",
     "aiokafka.errors.groupcoordinatornotavailableerror": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.errors.GroupCoordinatorNotAvailableError",
@@ -166,6 +167,12 @@ MAPPING = {
     "aiokafka.errors.unsupportedversionerror": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.errors.UnsupportedVersionError",
     "aiokafka.helpers": "https://aiokafka.readthedocs.io/en/stable/api.html#module-aiokafka.helpers",
     "aiokafka.helpers.create_ssl_context": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.helpers.create_ssl_context",
+    "aiokafka.metrics": "https://aiokafka.readthedocs.io/en/stable/api.html",
+    "aiokafka.metrics.producermetricscollector": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.metrics.ProducerMetricsCollector",
+    "aiokafka.metrics.producermetricscollector.on_batch_completed": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.metrics.ProducerMetricsCollector.on_batch_completed",
+    "aiokafka.metrics.producermetricscollector.on_batch_dispatched": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.metrics.ProducerMetricsCollector.on_batch_dispatched",
+    "aiokafka.metrics.producermetricscollector.on_batch_failed": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.metrics.ProducerMetricsCollector.on_batch_failed",
+    "aiokafka.metrics.producermetricscollector.on_buffer_wait": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.metrics.ProducerMetricsCollector.on_buffer_wait",
     "aiokafka.producer": "https://aiokafka.readthedocs.io/en/stable/api.html",
     "aiokafka.producer.message_accumulator": "https://aiokafka.readthedocs.io/en/stable/api.html",
     "aiokafka.producer.message_accumulator.batchbuilder": "https://aiokafka.readthedocs.io/en/stable/api.html#aiokafka.producer.message_accumulator.BatchBuilder",

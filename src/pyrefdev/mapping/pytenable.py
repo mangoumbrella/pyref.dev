@@ -1,4 +1,4 @@
-VERSION = "26.8.1"
+VERSION = "26.10.1"
 
 # fmt: off
 MAPPING = {
@@ -465,6 +465,7 @@ MAPPING = {
     "tenable.io.agent_groups.agentgroupsapi.create": "https://pytenable.readthedocs.io/en/stable/api/io/agent_groups.html#tenable.io.agent_groups.AgentGroupsAPI.create",
     "tenable.io.agent_groups.agentgroupsapi.delete": "https://pytenable.readthedocs.io/en/stable/api/io/agent_groups.html#tenable.io.agent_groups.AgentGroupsAPI.delete",
     "tenable.io.agent_groups.agentgroupsapi.delete_agent": "https://pytenable.readthedocs.io/en/stable/api/io/agent_groups.html#tenable.io.agent_groups.AgentGroupsAPI.delete_agent",
+    "tenable.io.agent_groups.agentgroupsapi.delete_agents": "https://pytenable.readthedocs.io/en/stable/api/io/agent_groups.html#tenable.io.agent_groups.AgentGroupsAPI.delete_agents",
     "tenable.io.agent_groups.agentgroupsapi.details": "https://pytenable.readthedocs.io/en/stable/api/io/agent_groups.html#tenable.io.agent_groups.AgentGroupsAPI.details",
     "tenable.io.agent_groups.agentgroupsapi.list": "https://pytenable.readthedocs.io/en/stable/api/io/agent_groups.html#tenable.io.agent_groups.AgentGroupsAPI.list",
     "tenable.io.agent_groups.agentgroupsapi.task_status": "https://pytenable.readthedocs.io/en/stable/api/io/agent_groups.html#tenable.io.agent_groups.AgentGroupsAPI.task_status",
@@ -641,6 +642,14 @@ MAPPING = {
     "tenable.io.policies.policiesapi.policy_import": "https://pytenable.readthedocs.io/en/stable/api/io/policies.html#tenable.io.policies.PoliciesAPI.policy_import",
     "tenable.io.policies.policiesapi.template_details": "https://pytenable.readthedocs.io/en/stable/api/io/policies.html#tenable.io.policies.PoliciesAPI.template_details",
     "tenable.io.policies.policiesapi.templates": "https://pytenable.readthedocs.io/en/stable/api/io/policies.html#tenable.io.policies.PoliciesAPI.templates",
+    "tenable.io.recast_rules": "https://pytenable.readthedocs.io/en/stable/api/io/recast_rules.html#module-tenable.io.recast_rules",
+    "tenable.io.recast_rules.recastrulesapi": "https://pytenable.readthedocs.io/en/stable/api/io/recast_rules.html#tenable.io.recast_rules.RecastRulesAPI",
+    "tenable.io.recast_rules.recastrulesapi.create": "https://pytenable.readthedocs.io/en/stable/api/io/recast_rules.html#tenable.io.recast_rules.RecastRulesAPI.create",
+    "tenable.io.recast_rules.recastrulesapi.delete": "https://pytenable.readthedocs.io/en/stable/api/io/recast_rules.html#tenable.io.recast_rules.RecastRulesAPI.delete",
+    "tenable.io.recast_rules.recastrulesapi.details": "https://pytenable.readthedocs.io/en/stable/api/io/recast_rules.html#tenable.io.recast_rules.RecastRulesAPI.details",
+    "tenable.io.recast_rules.recastrulesapi.edit": "https://pytenable.readthedocs.io/en/stable/api/io/recast_rules.html#tenable.io.recast_rules.RecastRulesAPI.edit",
+    "tenable.io.recast_rules.recastrulesapi.filters": "https://pytenable.readthedocs.io/en/stable/api/io/recast_rules.html#tenable.io.recast_rules.RecastRulesAPI.filters",
+    "tenable.io.recast_rules.recastrulesapi.search": "https://pytenable.readthedocs.io/en/stable/api/io/recast_rules.html#tenable.io.recast_rules.RecastRulesAPI.search",
     "tenable.io.remediation_scans": "https://pytenable.readthedocs.io/en/stable/api/io/remediation_scans.html#module-tenable.io.remediation_scans",
     "tenable.io.remediation_scans.remediationscansapi": "https://pytenable.readthedocs.io/en/stable/api/io/remediation_scans.html#tenable.io.remediation_scans.RemediationScansAPI",
     "tenable.io.remediation_scans.remediationscansapi.create_remediation_scan": "https://pytenable.readthedocs.io/en/stable/api/io/remediation_scans.html#tenable.io.remediation_scans.RemediationScansAPI.create_remediation_scan",
@@ -754,6 +763,7 @@ MAPPING = {
     "tenable.io.tenableio.permissions": "https://pytenable.readthedocs.io/en/stable/api/io/index.html#tenable.io.TenableIO.permissions",
     "tenable.io.tenableio.plugins": "https://pytenable.readthedocs.io/en/stable/api/io/index.html#tenable.io.TenableIO.plugins",
     "tenable.io.tenableio.policies": "https://pytenable.readthedocs.io/en/stable/api/io/index.html#tenable.io.TenableIO.policies",
+    "tenable.io.tenableio.recast_rules": "https://pytenable.readthedocs.io/en/stable/api/io/index.html#tenable.io.TenableIO.recast_rules",
     "tenable.io.tenableio.remediationscans": "https://pytenable.readthedocs.io/en/stable/api/io/index.html#tenable.io.TenableIO.remediationscans",
     "tenable.io.tenableio.scanner_groups": "https://pytenable.readthedocs.io/en/stable/api/io/index.html#tenable.io.TenableIO.scanner_groups",
     "tenable.io.tenableio.scanners": "https://pytenable.readthedocs.io/en/stable/api/io/index.html#tenable.io.TenableIO.scanners",

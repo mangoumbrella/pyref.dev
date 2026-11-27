@@ -1,4 +1,4 @@
-VERSION = "2026.8.17"
+VERSION = "2026.10.20"
 
 # fmt: off
 MAPPING = {
@@ -29,6 +29,7 @@ MAPPING = {
     "nox.sessions.session.log": "https://nox.thea.codes/en/stable/config.html#nox.sessions.Session.log",
     "nox.sessions.session.name": "https://nox.thea.codes/en/stable/config.html#nox.sessions.Session.name",
     "nox.sessions.session.notify": "https://nox.thea.codes/en/stable/config.html#nox.sessions.Session.notify",
+    "nox.sessions.session.parallel": "https://nox.thea.codes/en/stable/config.html#nox.sessions.Session.parallel",
     "nox.sessions.session.posargs": "https://nox.thea.codes/en/stable/config.html#nox.sessions.Session.posargs",
     "nox.sessions.session.python": "https://nox.thea.codes/en/stable/config.html#nox.sessions.Session.python",
     "nox.sessions.session.run": "https://nox.thea.codes/en/stable/config.html#nox.sessions.Session.run",

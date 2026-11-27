@@ -1,4 +1,4 @@
-VERSION = "3.5.1"
+VERSION = "3.5.2"
 
 # fmt: off
 MAPPING = {
@@ -73,6 +73,7 @@ MAPPING = {
     "mesa.agentset.groupby.agg": "https://mesa.readthedocs.io/stable/apis/agentset.html#mesa.agentset.GroupBy.agg",
     "mesa.agentset.groupby.count": "https://mesa.readthedocs.io/stable/apis/agentset.html#mesa.agentset.GroupBy.count",
     "mesa.agentset.groupby.do": "https://mesa.readthedocs.io/stable/apis/agentset.html#mesa.agentset.GroupBy.do",
+    "mesa.agentset.groupby.get_group": "https://mesa.readthedocs.io/stable/apis/agentset.html#mesa.agentset.GroupBy.get_group",
     "mesa.agentset.groupby.groups": "https://mesa.readthedocs.io/stable/apis/agentset.html#mesa.agentset.GroupBy.groups",
     "mesa.agentset.groupby.map": "https://mesa.readthedocs.io/stable/apis/agentset.html#mesa.agentset.GroupBy.map",
     "mesa.batch_run": "https://mesa.readthedocs.io/stable/mesa.html#mesa.batch_run",
@@ -167,7 +168,9 @@ MAPPING = {
     "mesa.discrete_space.__init__.propertylayer.select_cells": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.__init__.PropertyLayer.select_cells",
     "mesa.discrete_space.__init__.propertylayer.set_cells": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.__init__.PropertyLayer.set_cells",
     "mesa.discrete_space.__init__.voronoigrid": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.__init__.VoronoiGrid",
+    "mesa.discrete_space.__init__.voronoigrid.add_cell": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.__init__.VoronoiGrid.add_cell",
     "mesa.discrete_space.__init__.voronoigrid.find_nearest_cell": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.__init__.VoronoiGrid.find_nearest_cell",
+    "mesa.discrete_space.__init__.voronoigrid.remove_cell": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.__init__.VoronoiGrid.remove_cell",
     "mesa.discrete_space.cell": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#module-mesa.discrete_space.cell",
     "mesa.discrete_space.cell.cell": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.cell.Cell",
     "mesa.discrete_space.cell.cell.add_agent": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.cell.Cell.add_agent",
@@ -253,7 +256,9 @@ MAPPING = {
     "mesa.discrete_space.voronoi.delaunay.export_triangles": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.voronoi.Delaunay.export_triangles",
     "mesa.discrete_space.voronoi.delaunay.export_voronoi_regions": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.voronoi.Delaunay.export_voronoi_regions",
     "mesa.discrete_space.voronoi.voronoigrid": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.voronoi.VoronoiGrid",
+    "mesa.discrete_space.voronoi.voronoigrid.add_cell": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.voronoi.VoronoiGrid.add_cell",
     "mesa.discrete_space.voronoi.voronoigrid.find_nearest_cell": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.voronoi.VoronoiGrid.find_nearest_cell",
+    "mesa.discrete_space.voronoi.voronoigrid.remove_cell": "https://mesa.readthedocs.io/stable/apis/discrete_space.html#mesa.discrete_space.voronoi.VoronoiGrid.remove_cell",
     "mesa.mesa_logging": "https://mesa.readthedocs.io/stable/apis/mesa_logging.html#module-mesa.mesa_logging",
     "mesa.mesa_logging.function_logger": "https://mesa.readthedocs.io/stable/apis/mesa_logging.html#mesa.mesa_logging.function_logger",
     "mesa.mesa_logging.get_module_logger": "https://mesa.readthedocs.io/stable/apis/mesa_logging.html#mesa.mesa_logging.get_module_logger",
@@ -455,6 +460,7 @@ MAPPING = {
     "mesa.time.eventgenerator.execution_count": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventGenerator.execution_count",
     "mesa.time.eventgenerator.function": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventGenerator.function",
     "mesa.time.eventgenerator.is_active": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventGenerator.is_active",
+    "mesa.time.eventgenerator.is_paused": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventGenerator.is_paused",
     "mesa.time.eventgenerator.model": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventGenerator.model",
     "mesa.time.eventgenerator.next_scheduled_time": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventGenerator.next_scheduled_time",
     "mesa.time.eventgenerator.pause": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventGenerator.pause",
@@ -467,6 +473,7 @@ MAPPING = {
     "mesa.time.eventlist.add_event": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventList.add_event",
     "mesa.time.eventlist.clear": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventList.clear",
     "mesa.time.eventlist.compact": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventList.compact",
+    "mesa.time.eventlist.compaction_ratio": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventList.COMPACTION_RATIO",
     "mesa.time.eventlist.is_empty": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventList.is_empty",
     "mesa.time.eventlist.peek_ahead": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventList.peek_ahead",
     "mesa.time.eventlist.pop_event": "https://mesa.readthedocs.io/stable/apis/time.html#mesa.time.EventList.pop_event",

@@ -1,4 +1,4 @@
-VERSION = "0.19.0"
+VERSION = "0.20.0"
 
 # fmt: off
 MAPPING = {
@@ -45,6 +45,7 @@ MAPPING = {
     "cyrk.cy.common.cyrkerrorcodes.optimize_sign_error": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.OPTIMIZE_SIGN_ERROR",
     "cyrk.cy.common.cyrkerrorcodes.other_error": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.OTHER_ERROR",
     "cyrk.cy.common.cyrkerrorcodes.property_not_set": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.PROPERTY_NOT_SET",
+    "cyrk.cy.common.cyrkerrorcodes.python_function_error": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.PYTHON_FUNCTION_ERROR",
     "cyrk.cy.common.cyrkerrorcodes.setup_not_called": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.SETUP_NOT_CALLED",
     "cyrk.cy.common.cyrkerrorcodes.step_size_error_acceptance": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.STEP_SIZE_ERROR_ACCEPTANCE",
     "cyrk.cy.common.cyrkerrorcodes.step_size_error_spacing": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.STEP_SIZE_ERROR_SPACING",
@@ -53,6 +54,7 @@ MAPPING = {
     "cyrk.cy.common.cyrkerrorcodes.unset_error_code": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.UNSET_ERROR_CODE",
     "cyrk.cy.common.cyrkerrorcodes.unsupported_unknown_model": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.UNSUPPORTED_UNKNOWN_MODEL",
     "cyrk.cy.common.cyrkerrorcodes.vector_size_exceeds_limits": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.CyrkErrorCodes.VECTOR_SIZE_EXCEEDS_LIMITS",
+    "cyrk.cy.common.get_error_message": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.common.get_error_message",
     "cyrk.cy.cysolver_api": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#module-CyRK.cy.cysolver_api",
     "cyrk.cy.cysolver_api.odemethod": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod",
     "cyrk.cy.cysolver_api.odemethod.base_method": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.BASE_METHOD",
@@ -64,6 +66,9 @@ MAPPING = {
     "cyrk.cy.cysolver_api.odemethod.rk23": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.RK23",
     "cyrk.cy.cysolver_api.odemethod.rk45": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.RK45",
     "cyrk.cy.cysolver_api.odemethod.rk_base_method": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.RK_BASE_METHOD",
+    "cyrk.cy.cysolver_api.odemethod.tsit5": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.TSIT5",
+    "cyrk.cy.cysolver_api.odemethod.vern7": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.VERN7",
+    "cyrk.cy.cysolver_api.odemethod.vern8": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.ODEMethod.VERN8",
     "cyrk.cy.cysolver_api.wrapcysolverresult": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.WrapCySolverResult",
     "cyrk.cy.cysolver_api.wrapcysolverresult.call": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.WrapCySolverResult.call",
     "cyrk.cy.cysolver_api.wrapcysolverresult.call_vectorize": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.cysolver_api.WrapCySolverResult.call_vectorize",
@@ -97,17 +102,20 @@ MAPPING = {
     "cyrk.cy.events_test.run_cysolver_with_events": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.events_test.run_cysolver_with_events",
     "cyrk.cy.helpers": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#module-CyRK.cy.helpers",
     "cyrk.cy.parallel_test": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#module-CyRK.cy.parallel_test",
+    "cyrk.cy.parallel_test.run_dense_output_threads_test": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.parallel_test.run_dense_output_threads_test",
     "cyrk.cy.parallel_test.run_parallel_benchmark": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.parallel_test.run_parallel_benchmark",
     "cyrk.cy.parallel_test.run_parallel_common_args_test": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.parallel_test.run_parallel_common_args_test",
     "cyrk.cy.parallel_test.run_parallel_test": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.parallel_test.run_parallel_test",
     "cyrk.cy.pyhelpers": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#module-CyRK.cy.pyhelpers",
     "cyrk.cy.pyhelpers.find_ode_method_int": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.pyhelpers.find_ode_method_int",
-    "cyrk.cy.pyhelpers.get_error_message": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.pyhelpers.get_error_message",
     "cyrk.cy.pysolver": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#module-CyRK.cy.pysolver",
     "cyrk.cy.pysolver.pysolve_ivp": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.pysolver.pysolve_ivp",
     "cyrk.cy.pysolver.pysolver": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.pysolver.PySolver",
+    "cyrk.cy.pysolver.pysolver.call": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.pysolver.PySolver.call",
+    "cyrk.cy.pysolver.pysolver.call_vectorize": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.pysolver.PySolver.call_vectorize",
     "cyrk.cy.pysolver.pysolver.set_problem_parameters": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.pysolver.PySolver.set_problem_parameters",
     "cyrk.cy.pysolver.pysolver.set_pydiffeq": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.pysolver.PySolver.set_pydiffeq",
+    "cyrk.cy.pysolver.pysolver.solve": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#CyRK.cy.pysolver.PySolver.solve",
     "cyrk.cy.pysolver_cyhook": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.cy.html#module-CyRK.cy.pysolver_cyhook",
     "cyrk.get_include": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.html#CyRK.get_include",
     "cyrk.helper": "https://cyrk.readthedocs.io/en/stable/API/generated/CyRK.html#module-CyRK.helper",

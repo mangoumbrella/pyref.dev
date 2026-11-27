@@ -1,4 +1,4 @@
-VERSION = "1.5.4"
+VERSION = "1.7.1"
 
 # fmt: off
 MAPPING = {
@@ -39,7 +39,9 @@ MAPPING = {
     "hpgeom.hpgeom.nside_to_pixel_area": "https://hpgeom.readthedocs.io/en/stable/modules.html#hpgeom.hpgeom.nside_to_pixel_area",
     "hpgeom.hpgeom.nside_to_resolution": "https://hpgeom.readthedocs.io/en/stable/modules.html#hpgeom.hpgeom.nside_to_resolution",
     "hpgeom.hpgeom.order_to_nside": "https://hpgeom.readthedocs.io/en/stable/modules.html#hpgeom.hpgeom.order_to_nside",
+    "hpgeom.hpgeom.pixel_ranges_intersection": "https://hpgeom.readthedocs.io/en/stable/modules.html#hpgeom.hpgeom.pixel_ranges_intersection",
     "hpgeom.hpgeom.pixel_ranges_to_pixels": "https://hpgeom.readthedocs.io/en/stable/modules.html#hpgeom.hpgeom.pixel_ranges_to_pixels",
+    "hpgeom.hpgeom.pixel_ranges_union": "https://hpgeom.readthedocs.io/en/stable/modules.html#hpgeom.hpgeom.pixel_ranges_union",
     "hpgeom.hpgeom.pixel_to_angle": "https://hpgeom.readthedocs.io/en/stable/modules.html#hpgeom.hpgeom.pixel_to_angle",
     "hpgeom.hpgeom.pixel_to_vector": "https://hpgeom.readthedocs.io/en/stable/modules.html#hpgeom.hpgeom.pixel_to_vector",
     "hpgeom.hpgeom.query_box": "https://hpgeom.readthedocs.io/en/stable/modules.html#hpgeom.hpgeom.query_box",

@@ -1,4 +1,4 @@
-VERSION = "0.72.0"
+VERSION = "0.74.0"
 
 # fmt: off
 MAPPING = {
@@ -238,6 +238,13 @@ MAPPING = {
     "dclab.rtdc_dataset.config.load_from_file": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#dclab.rtdc_dataset.config.load_from_file",
     "dclab.rtdc_dataset.copier": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#module-dclab.rtdc_dataset.copier",
     "dclab.rtdc_dataset.copier.basin_definition_copy": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#dclab.rtdc_dataset.copier.basin_definition_copy",
+    "dclab.rtdc_dataset.copier.bytebookkeeper": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#dclab.rtdc_dataset.copier.ByteBookKeeper",
+    "dclab.rtdc_dataset.copier.bytebookkeeper.complete_item": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#dclab.rtdc_dataset.copier.ByteBookKeeper.complete_item",
+    "dclab.rtdc_dataset.copier.bytebookkeeper.get_done": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#dclab.rtdc_dataset.copier.ByteBookKeeper.get_done",
+    "dclab.rtdc_dataset.copier.bytebookkeeper.get_progress": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#dclab.rtdc_dataset.copier.ByteBookKeeper.get_progress",
+    "dclab.rtdc_dataset.copier.bytebookkeeper.get_total": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#dclab.rtdc_dataset.copier.ByteBookKeeper.get_total",
+    "dclab.rtdc_dataset.copier.bytebookkeeper.remove": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#dclab.rtdc_dataset.copier.ByteBookKeeper.remove",
+    "dclab.rtdc_dataset.copier.bytebookkeeper.update": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#dclab.rtdc_dataset.copier.ByteBookKeeper.update",
     "dclab.rtdc_dataset.copier.get_size": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#dclab.rtdc_dataset.copier.get_size",
     "dclab.rtdc_dataset.copier.h5ds_copy": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#dclab.rtdc_dataset.copier.h5ds_copy",
     "dclab.rtdc_dataset.copier.internal_basin_events_copy": "https://dclab.readthedocs.io/en/stable/sec_code_reference.html#dclab.rtdc_dataset.copier.internal_basin_events_copy",

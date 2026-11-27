@@ -1,4 +1,4 @@
-VERSION = "3.10.0"
+VERSION = "3.10.2"
 
 # fmt: off
 MAPPING = {
@@ -409,6 +409,7 @@ MAPPING = {
     "bokeh.core.properties.rgb": "https://docs.bokeh.org/en/latest/docs/reference/core/properties.html#bokeh.core.properties.RGB",
     "bokeh.core.properties.seq": "https://docs.bokeh.org/en/latest/docs/reference/core/properties.html#bokeh.core.properties.Seq",
     "bokeh.core.properties.set": "https://docs.bokeh.org/en/latest/docs/reference/core/properties.html#bokeh.core.properties.Set",
+    "bokeh.core.properties.set_validation_default": "https://docs.bokeh.org/en/latest/docs/reference/core/properties.html#bokeh.core.properties.set_validation_default",
     "bokeh.core.properties.size": "https://docs.bokeh.org/en/latest/docs/reference/core/properties.html#bokeh.core.properties.Size",
     "bokeh.core.properties.sizespec": "https://docs.bokeh.org/en/latest/docs/reference/core/properties.html#bokeh.core.properties.SizeSpec",
     "bokeh.core.properties.string": "https://docs.bokeh.org/en/latest/docs/reference/core/properties.html#bokeh.core.properties.String",

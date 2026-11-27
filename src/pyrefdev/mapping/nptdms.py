@@ -1,4 +1,4 @@
-VERSION = "1.11.0"
+VERSION = "1.14.0"
 
 # fmt: off
 MAPPING = {
@@ -6,17 +6,16 @@ MAPPING = {
     "nptdms.channeldatachunk": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.ChannelDataChunk",
     "nptdms.channelobject": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.ChannelObject",
     "nptdms.channelobject.__init__": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.ChannelObject.__init__",
-    "nptdms.channelobject.path": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.ChannelObject.path",
     "nptdms.datachunk": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.DataChunk",
     "nptdms.datachunk.groups": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.DataChunk.groups",
+    "nptdms.extract_segments": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.extract_segments",
     "nptdms.groupdatachunk": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.GroupDataChunk",
     "nptdms.groupdatachunk.channels": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.GroupDataChunk.channels",
     "nptdms.groupobject": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.GroupObject",
     "nptdms.groupobject.__init__": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.GroupObject.__init__",
-    "nptdms.groupobject.path": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.GroupObject.path",
+    "nptdms.merge_byte_ranges": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.merge_byte_ranges",
     "nptdms.rootobject": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.RootObject",
     "nptdms.rootobject.__init__": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.RootObject.__init__",
-    "nptdms.rootobject.path": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.RootObject.path",
     "nptdms.tdms": "https://nptdms.readthedocs.io/en/stable/apireference.html",
     "nptdms.tdms.channeldatachunk": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.ChannelDataChunk",
     "nptdms.tdms.channelsegmentstatus": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.tdms.ChannelSegmentStatus",
@@ -32,6 +31,7 @@ MAPPING = {
     "nptdms.tdms.tdmsgroup": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsGroup",
     "nptdms.tdmschannel": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsChannel",
     "nptdms.tdmschannel.as_dataframe": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsChannel.as_dataframe",
+    "nptdms.tdmschannel.byte_ranges": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsChannel.byte_ranges",
     "nptdms.tdmschannel.data": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsChannel.data",
     "nptdms.tdmschannel.data_chunks": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsChannel.data_chunks",
     "nptdms.tdmschannel.dtype": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsChannel.dtype",
@@ -45,6 +45,7 @@ MAPPING = {
     "nptdms.tdmsfile": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsFile",
     "nptdms.tdmsfile.as_dataframe": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsFile.as_dataframe",
     "nptdms.tdmsfile.as_hdf": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsFile.as_hdf",
+    "nptdms.tdmsfile.byte_ranges": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsFile.byte_ranges",
     "nptdms.tdmsfile.close": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsFile.close",
     "nptdms.tdmsfile.data_chunks": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsFile.data_chunks",
     "nptdms.tdmsfile.file_status": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsFile.file_status",
@@ -56,6 +57,7 @@ MAPPING = {
     "nptdms.tdmsfile.tdms_version": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsFile.tdms_version",
     "nptdms.tdmsgroup": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsGroup",
     "nptdms.tdmsgroup.as_dataframe": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsGroup.as_dataframe",
+    "nptdms.tdmsgroup.byte_ranges": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsGroup.byte_ranges",
     "nptdms.tdmsgroup.channels": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsGroup.channels",
     "nptdms.tdmsgroup.name": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsGroup.name",
     "nptdms.tdmsgroup.path": "https://nptdms.readthedocs.io/en/stable/apireference.html#nptdms.TdmsGroup.path",

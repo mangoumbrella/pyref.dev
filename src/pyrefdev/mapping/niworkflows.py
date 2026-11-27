@@ -1,4 +1,4 @@
-VERSION = "1.15.1"
+VERSION = "1.15.4"
 
 # fmt: off
 MAPPING = {
@@ -41,6 +41,7 @@ MAPPING = {
     "niworkflows.engine.workflows.literateworkflow.visit_desc": "https://www.nipreps.org/niworkflows/api/niworkflows.engine.workflows.html#niworkflows.engine.workflows.LiterateWorkflow.visit_desc",
     "niworkflows.func": "https://www.nipreps.org/niworkflows/api/niworkflows.func.html#module-niworkflows.func",
     "niworkflows.func.util": "https://www.nipreps.org/niworkflows/api/niworkflows.func.util.html#module-niworkflows.func.util",
+    "niworkflows.func.util.init_bold_premask_wf": "https://www.nipreps.org/niworkflows/api/niworkflows.func.util.html#niworkflows.func.util.init_bold_premask_wf",
     "niworkflows.func.util.init_bold_reference_wf": "https://www.nipreps.org/niworkflows/api/niworkflows.func.util.html#niworkflows.func.util.init_bold_reference_wf",
     "niworkflows.func.util.init_enhance_and_skullstrip_bold_wf": "https://www.nipreps.org/niworkflows/api/niworkflows.func.util.html#niworkflows.func.util.init_enhance_and_skullstrip_bold_wf",
     "niworkflows.func.util.init_skullstrip_bold_wf": "https://www.nipreps.org/niworkflows/api/niworkflows.func.util.html#niworkflows.func.util.init_skullstrip_bold_wf",

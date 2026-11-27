@@ -1,4 +1,4 @@
-VERSION = "0.11.5"
+VERSION = "0.11.10"
 
 # fmt: off
 MAPPING = {
@@ -43,6 +43,7 @@ MAPPING = {
     "rosbags.rosbag1.readererror": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag1.html#rosbags.rosbag1.ReaderError",
     "rosbags.rosbag1.writer": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag1.html",
     "rosbags.rosbag1.Writer": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag1.html#rosbags.rosbag1.Writer",
+    "rosbags.rosbag1.writer.abort": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag1.html#rosbags.rosbag1.Writer.abort",
     "rosbags.rosbag1.writer.add_connection": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag1.html#rosbags.rosbag1.Writer.add_connection",
     "rosbags.rosbag1.writer.close": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag1.html#rosbags.rosbag1.Writer.close",
     "rosbags.rosbag1.writer.compressionformat": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag1.html#rosbags.rosbag1.Writer.CompressionFormat",
@@ -84,6 +85,7 @@ MAPPING = {
     "rosbags.rosbag2.storageplugin": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag2.html#rosbags.rosbag2.StoragePlugin",
     "rosbags.rosbag2.writer": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag2.html",
     "rosbags.rosbag2.Writer": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag2.html#rosbags.rosbag2.Writer",
+    "rosbags.rosbag2.writer.abort": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag2.html#rosbags.rosbag2.Writer.abort",
     "rosbags.rosbag2.writer.add_connection": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag2.html#rosbags.rosbag2.Writer.add_connection",
     "rosbags.rosbag2.writer.close": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag2.html#rosbags.rosbag2.Writer.close",
     "rosbags.rosbag2.writer.open": "https://ternaris.gitlab.io/rosbags/api/rosbags.rosbag2.html#rosbags.rosbag2.Writer.open",

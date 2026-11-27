@@ -1,4 +1,4 @@
-VERSION = "0.11.0"
+VERSION = "0.12.0"
 
 # fmt: off
 MAPPING = {
@@ -33,7 +33,7 @@ MAPPING = {
     "pyorc.predicate.__and__": "https://pyorc.readthedocs.io/en/stable/api.html#pyorc.Predicate.__and__",
     "pyorc.predicate.__invert__": "https://pyorc.readthedocs.io/en/stable/api.html#pyorc.Predicate.__invert__",
     "pyorc.predicate.__or__": "https://pyorc.readthedocs.io/en/stable/api.html#pyorc.Predicate.__or__",
-    "pyorc.predicatecolumn": "https://pyorc.readthedocs.io/en/stable/api.html",
+    "pyorc.predicatecolumn": "https://pyorc.readthedocs.io/en/stable/api.html#pyorc.PredicateColumn",
     "pyorc.predicatecolumn.__eq__": "https://pyorc.readthedocs.io/en/stable/api.html#pyorc.PredicateColumn.__eq__",
     "pyorc.predicatecolumn.__ge__": "https://pyorc.readthedocs.io/en/stable/api.html#pyorc.PredicateColumn.__ge__",
     "pyorc.predicatecolumn.__gt__": "https://pyorc.readthedocs.io/en/stable/api.html#pyorc.PredicateColumn.__gt__",

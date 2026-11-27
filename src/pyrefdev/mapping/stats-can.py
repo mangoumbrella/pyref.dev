@@ -1,12 +1,16 @@
-VERSION = "3.2.3"
+VERSION = "3.3.0"
 
 # fmt: off
 MAPPING = {
     "stats_can": "https://stats-can.readthedocs.io/en/latest/",
     "stats_can.code_sets_to_df_dict": "https://stats-can.readthedocs.io/en/latest/api/sc/#stats_can.sc.code_sets_to_df_dict",
     "stats_can.get_changed_cube_list": "https://stats-can.readthedocs.io/en/latest/api/scwds/#stats_can.scwds.get_changed_cube_list",
+    "stats_can.get_changed_series_data_from_cube_pid_coord": "https://stats-can.readthedocs.io/en/latest/api/scwds/#stats_can.scwds.get_changed_series_data_from_cube_pid_coord",
+    "stats_can.get_changed_series_data_from_vector": "https://stats-can.readthedocs.io/en/latest/api/scwds/#stats_can.scwds.get_changed_series_data_from_vector",
     "stats_can.get_changed_series_list": "https://stats-can.readthedocs.io/en/latest/api/scwds/#stats_can.scwds.get_changed_series_list",
     "stats_can.get_cube_metadata": "https://stats-can.readthedocs.io/en/latest/api/scwds/#stats_can.scwds.get_cube_metadata",
+    "stats_can.get_data_from_cube_pid_coord_and_latest_n_periods": "https://stats-can.readthedocs.io/en/latest/api/scwds/#stats_can.scwds.get_data_from_cube_pid_coord_and_latest_n_periods",
+    "stats_can.get_series_info_from_cube_pid_coord": "https://stats-can.readthedocs.io/en/latest/api/scwds/#stats_can.scwds.get_series_info_from_cube_pid_coord",
     "stats_can.get_series_info_from_vector": "https://stats-can.readthedocs.io/en/latest/api/scwds/#stats_can.scwds.get_series_info_from_vector",
     "stats_can.sc": "https://stats-can.readthedocs.io/en/latest/api/sc/#stats_can.sc",
     "stats_can.sc.code_sets_to_df_dict": "https://stats-can.readthedocs.io/en/latest/api/sc/#stats_can.sc.code_sets_to_df_dict",

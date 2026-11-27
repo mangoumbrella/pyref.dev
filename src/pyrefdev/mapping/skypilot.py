@@ -1,4 +1,4 @@
-VERSION = "0.13.0"
+VERSION = "0.14.3"
 
 # fmt: off
 MAPPING = {
@@ -38,6 +38,7 @@ MAPPING = {
     "sky.task.__init__": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.__init__",
     "sky.task.from_yaml": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.from_yaml",
     "sky.task.from_yaml_str": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.from_yaml_str",
+    "sky.task.job": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.job",
     "sky.task.resolve_and_validate_volumes": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.resolve_and_validate_volumes",
     "sky.task.set_file_mounts": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.set_file_mounts",
     "sky.task.set_resources": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.set_resources",
@@ -46,6 +47,7 @@ MAPPING = {
     "sky.task.set_storage_mounts": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.set_storage_mounts",
     "sky.task.set_volumes": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.set_volumes",
     "sky.task.task": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task",
+    "sky.task.to_submitted_yaml_config": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.to_submitted_yaml_config",
     "sky.task.update_envs": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.update_envs",
     "sky.task.update_envs_and_secrets_from_workdir": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.update_envs_and_secrets_from_workdir",
     "sky.task.update_file_mounts": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.update_file_mounts",
@@ -53,6 +55,7 @@ MAPPING = {
     "sky.task.update_storage_mounts": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.update_storage_mounts",
     "sky.task.update_volumes": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.update_volumes",
     "sky.task.update_workdir": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.update_workdir",
+    "sky.task.validate_job": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.Task.validate_job",
     "sky.utils": "https://docs.skypilot.ai/en/stable/reference/api.html",
     "sky.utils.common": "https://docs.skypilot.ai/en/stable/reference/api.html",
     "sky.utils.common.statusrefreshmode": "https://docs.skypilot.ai/en/stable/reference/api.html#sky.StatusRefreshMode",

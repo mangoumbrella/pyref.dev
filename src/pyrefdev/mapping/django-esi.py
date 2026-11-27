@@ -1,4 +1,4 @@
-VERSION = "9.10.0"
+VERSION = "10.1.0"
 
 # fmt: off
 MAPPING = {
@@ -15,6 +15,10 @@ MAPPING = {
     "esi.app_settings.esi_requests_write_timeout": "https://django-esi.readthedocs.io/en/stable/operations.html#esi.app_settings.ESI_REQUESTS_WRITE_TIMEOUT",
     "esi.app_settings.esi_server_error_max_retries": "https://django-esi.readthedocs.io/en/stable/operations.html#esi.app_settings.ESI_SERVER_ERROR_MAX_RETRIES",
     "esi.app_settings.esi_server_error_wait_exponent": "https://django-esi.readthedocs.io/en/stable/operations.html#esi.app_settings.ESI_SERVER_ERROR_WAIT_EXPONENT",
+    "esi.app_settings.esi_sso_max_retries": "https://django-esi.readthedocs.io/en/stable/operations.html#esi.app_settings.ESI_SSO_MAX_RETRIES",
+    "esi.app_settings.esi_sso_max_retry_after": "https://django-esi.readthedocs.io/en/stable/operations.html#esi.app_settings.ESI_SSO_MAX_RETRY_AFTER",
+    "esi.app_settings.esi_sso_user_agent": "https://django-esi.readthedocs.io/en/stable/operations.html#esi.app_settings.ESI_SSO_USER_AGENT",
+    "esi.app_settings.esi_sso_wait_exponent": "https://django-esi.readthedocs.io/en/stable/operations.html#esi.app_settings.ESI_SSO_WAIT_EXPONENT",
     "esi.app_settings.esi_user_contact_email": "https://django-esi.readthedocs.io/en/stable/operations.html#esi.app_settings.ESI_USER_CONTACT_EMAIL",
     "esi.decorators": "https://django-esi.readthedocs.io/en/stable/api.html#module-esi.decorators",
     "esi.decorators.esi_rate_limiter_bucketed": "https://django-esi.readthedocs.io/en/stable/api.html#esi.decorators.esi_rate_limiter_bucketed",
@@ -28,6 +32,9 @@ MAPPING = {
     "esi.errors.djangoesiexception": "https://django-esi.readthedocs.io/en/stable/api.html#esi.errors.DjangoEsiException",
     "esi.errors.incompleteresponseerror": "https://django-esi.readthedocs.io/en/stable/api.html#esi.errors.IncompleteResponseError",
     "esi.errors.notrefreshabletokenerror": "https://django-esi.readthedocs.io/en/stable/api.html#esi.errors.NotRefreshableTokenError",
+    "esi.errors.ssooautherror": "https://django-esi.readthedocs.io/en/stable/api.html#esi.errors.SSOOAuthError",
+    "esi.errors.ssooautherror.__init__": "https://django-esi.readthedocs.io/en/stable/api.html#esi.errors.SSOOAuthError.__init__",
+    "esi.errors.ssounavailableerror": "https://django-esi.readthedocs.io/en/stable/api.html#esi.errors.SSOUnavailableError",
     "esi.errors.tokenerror": "https://django-esi.readthedocs.io/en/stable/api.html#esi.errors.TokenError",
     "esi.errors.tokenexpirederror": "https://django-esi.readthedocs.io/en/stable/api.html#esi.errors.TokenExpiredError",
     "esi.errors.tokeninvaliderror": "https://django-esi.readthedocs.io/en/stable/api.html#esi.errors.TokenInvalidError",

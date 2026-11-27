@@ -1,4 +1,4 @@
-VERSION = "2026.8.1"
+VERSION = "2026.10.1"
 
 # fmt: off
 MAPPING = {
@@ -35,6 +35,7 @@ MAPPING = {
     "gcsfs.core.gcsfilesystem.clear_instance_cache": "https://gcsfs.readthedocs.io/en/latest/api.html#gcsfs.core.GCSFileSystem.clear_instance_cache",
     "gcsfs.core.gcsfilesystem.copy": "https://gcsfs.readthedocs.io/en/latest/api.html#gcsfs.core.GCSFileSystem.copy",
     "gcsfs.core.gcsfilesystem.cp": "https://gcsfs.readthedocs.io/en/latest/api.html#gcsfs.core.GCSFileSystem.cp",
+    "gcsfs.core.gcsfilesystem.cp_file": "https://gcsfs.readthedocs.io/en/latest/api.html#gcsfs.core.GCSFileSystem.cp_file",
     "gcsfs.core.gcsfilesystem.created": "https://gcsfs.readthedocs.io/en/latest/api.html#gcsfs.core.GCSFileSystem.created",
     "gcsfs.core.gcsfilesystem.current": "https://gcsfs.readthedocs.io/en/latest/api.html#gcsfs.core.GCSFileSystem.current",
     "gcsfs.core.gcsfilesystem.delete": "https://gcsfs.readthedocs.io/en/latest/api.html#gcsfs.core.GCSFileSystem.delete",

@@ -1,4 +1,4 @@
-VERSION = "2.9.0.post0"
+VERSION = "4.0.0"
 
 # fmt: off
 MAPPING = {
@@ -53,15 +53,19 @@ MAPPING = {
     "dateutil.rrule.rruleset.xafter": "https://dateutil.readthedocs.io/en/stable/rrule.html#dateutil.rrule.rruleset.xafter",
     "dateutil.rrule.rrulestr": "https://dateutil.readthedocs.io/en/stable/rrule.html#dateutil.rrule.rrulestr",
     "dateutil.tz": "https://dateutil.readthedocs.io/en/stable/tz.html",
+    "dateutil.tz.available_iana_timezones": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.available_iana_timezones",
     "dateutil.tz.datetime_ambiguous": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.datetime_ambiguous",
     "dateutil.tz.datetime_exists": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.datetime_exists",
     "dateutil.tz.dateutil": "https://dateutil.readthedocs.io/en/stable/tz.html",
     "dateutil.tz.dateutil.tz": "https://dateutil.readthedocs.io/en/stable/tz.html",
+    "dateutil.tz.dateutil.tz.tzpath": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.dateutil.tz.TZPATH",
     "dateutil.tz.dateutil.tz.utc": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.dateutil.tz.UTC",
+    "dateutil.tz.deprecatedtzkeywarning": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.DeprecatedTzKeyWarning",
     "dateutil.tz.enfold": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.enfold",
     "dateutil.tz.gettz": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.gettz",
     "dateutil.tz.gettz.cache_clear": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.gettz.cache_clear",
     "dateutil.tz.gettz.nocache": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.gettz.nocache",
+    "dateutil.tz.reset_tzpath": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.reset_tzpath",
     "dateutil.tz.resolve_imaginary": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.resolve_imaginary",
     "dateutil.tz.tzical": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.tzical",
     "dateutil.tz.tzical.get": "https://dateutil.readthedocs.io/en/stable/tz.html#dateutil.tz.tzical.get",
@@ -99,4 +103,5 @@ MAPPING = {
     "dateutil.zoneinfo.gettz_db_metadata": "https://dateutil.readthedocs.io/en/stable/zoneinfo.html#dateutil.zoneinfo.gettz_db_metadata",
     "dateutil.zoneinfo.rebuild": "https://dateutil.readthedocs.io/en/stable/zoneinfo.html#module-dateutil.zoneinfo.rebuild",
     "dateutil.zoneinfo.rebuild.rebuild": "https://dateutil.readthedocs.io/en/stable/zoneinfo.html#dateutil.zoneinfo.rebuild.rebuild",
+    "dateutil.zoneinfo.rebuild.rebuilddeprecationwarning": "https://dateutil.readthedocs.io/en/stable/zoneinfo.html#dateutil.zoneinfo.rebuild.RebuildDeprecationWarning",
 }

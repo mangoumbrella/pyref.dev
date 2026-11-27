@@ -1,10 +1,11 @@
-VERSION = "6.8.0"
+VERSION = "7.2.1"
 
 # fmt: off
 MAPPING = {
     "multidict": "https://multidict.aio-libs.org/en/stable/",
     "multidict.cimultidict": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.CIMultiDict",
     "multidict.cimultidictproxy": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.CIMultiDictProxy",
+    "multidict.get_include": "https://multidict.aio-libs.org/en/stable/capi/#multidict.get_include",
     "multidict.getversion": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.getversion",
     "multidict.istr": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.istr",
     "multidict.multidict": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDict",
@@ -26,6 +27,7 @@ MAPPING = {
     "multidict.multidict.popitem": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDict.popitem",
     "multidict.multidict.popone": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDict.popone",
     "multidict.multidict.setdefault": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDict.setdefault",
+    "multidict.multidict.to_dict": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDict.to_dict",
     "multidict.multidict.update": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDict.update",
     "multidict.multidict.values": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDict.values",
     "multidict.multidictproxy": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDictProxy",
@@ -38,5 +40,6 @@ MAPPING = {
     "multidict.multidictproxy.iter": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDictProxy.iter",
     "multidict.multidictproxy.keys": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDictProxy.keys",
     "multidict.multidictproxy.len": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDictProxy.len",
+    "multidict.multidictproxy.to_dict": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDictProxy.to_dict",
     "multidict.multidictproxy.values": "https://multidict.aio-libs.org/en/stable/multidict/#multidict.MultiDictProxy.values",
 }

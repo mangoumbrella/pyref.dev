@@ -1,9 +1,10 @@
-VERSION = "1.1.7"
+VERSION = "1.2.0"
 
 # fmt: off
 MAPPING = {
     "pynmeagps": "https://www.semuconsulting.com/pynmeagps/",
     "pynmeagps.exceptions": "https://www.semuconsulting.com/pynmeagps/pynmeagps.html#module-pynmeagps.exceptions",
+    "pynmeagps.exceptions.nmeaerror": "https://www.semuconsulting.com/pynmeagps/pynmeagps.html#pynmeagps.exceptions.NMEAError",
     "pynmeagps.exceptions.nmeamessageerror": "https://www.semuconsulting.com/pynmeagps/pynmeagps.html#pynmeagps.exceptions.NMEAMessageError",
     "pynmeagps.exceptions.nmeaparseerror": "https://www.semuconsulting.com/pynmeagps/pynmeagps.html#pynmeagps.exceptions.NMEAParseError",
     "pynmeagps.exceptions.nmeastreamerror": "https://www.semuconsulting.com/pynmeagps/pynmeagps.html#pynmeagps.exceptions.NMEAStreamError",
@@ -77,6 +78,7 @@ MAPPING = {
     "pynmeagps.nmeatypes_core.err_raise": "https://www.semuconsulting.com/pynmeagps/pynmeagps.html#pynmeagps.nmeatypes_core.ERR_RAISE",
     "pynmeagps.nmeatypes_core.get": "https://www.semuconsulting.com/pynmeagps/pynmeagps.html#pynmeagps.nmeatypes_core.GET",
     "pynmeagps.nmeatypes_core.input": "https://www.semuconsulting.com/pynmeagps/pynmeagps.html#pynmeagps.nmeatypes_core.INPUT",
+    "pynmeagps.nmeatypes_core.maxbufsize": "https://www.semuconsulting.com/pynmeagps/pynmeagps.html#pynmeagps.nmeatypes_core.MAXBUFSIZE",
     "pynmeagps.nmeatypes_core.nmea_msgids": "https://www.semuconsulting.com/pynmeagps/pynmeagps.html#pynmeagps.nmeatypes_core.NMEA_MSGIDS",
     "pynmeagps.nmeatypes_core.nmea_msgids_prop": "https://www.semuconsulting.com/pynmeagps/pynmeagps.html#pynmeagps.nmeatypes_core.NMEA_MSGIDS_PROP",
     "pynmeagps.nmeatypes_core.nmea_prefix_prop": "https://www.semuconsulting.com/pynmeagps/pynmeagps.html#pynmeagps.nmeatypes_core.NMEA_PREFIX_PROP",

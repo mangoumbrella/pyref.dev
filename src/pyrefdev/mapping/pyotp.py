@@ -1,4 +1,4 @@
-VERSION = "2.10.0"
+VERSION = "2.12.1"
 
 # fmt: off
 MAPPING = {
@@ -7,6 +7,9 @@ MAPPING = {
     "pyotp.contrib.steam": "https://pyauth.github.io/pyotp/index.html#module-pyotp.contrib.steam",
     "pyotp.contrib.steam.steam": "https://pyauth.github.io/pyotp/index.html#pyotp.contrib.steam.Steam",
     "pyotp.contrib.steam.steam.generate_otp": "https://pyauth.github.io/pyotp/index.html#pyotp.contrib.steam.Steam.generate_otp",
+    "pyotp.exceptions": "https://pyauth.github.io/pyotp/index.html#module-pyotp.exceptions",
+    "pyotp.exceptions.otpverificationerror": "https://pyauth.github.io/pyotp/index.html#pyotp.exceptions.OTPVerificationError",
+    "pyotp.exceptions.pyotperror": "https://pyauth.github.io/pyotp/index.html#pyotp.exceptions.PyOTPError",
     "pyotp.hotp": "https://pyauth.github.io/pyotp/index.html#module-pyotp.hotp",
     "pyotp.hotp.hotp": "https://pyauth.github.io/pyotp/index.html#pyotp.hotp.HOTP",
     "pyotp.hotp.hotp.at": "https://pyauth.github.io/pyotp/index.html#pyotp.hotp.HOTP.at",
@@ -20,6 +23,7 @@ MAPPING = {
     "pyotp.totp.totp.provisioning_uri": "https://pyauth.github.io/pyotp/index.html#pyotp.totp.TOTP.provisioning_uri",
     "pyotp.totp.totp.timecode": "https://pyauth.github.io/pyotp/index.html#pyotp.totp.TOTP.timecode",
     "pyotp.totp.totp.verify": "https://pyauth.github.io/pyotp/index.html#pyotp.totp.TOTP.verify",
+    "pyotp.totp.totp.verify_and_get_timecode": "https://pyauth.github.io/pyotp/index.html#pyotp.totp.TOTP.verify_and_get_timecode",
     "pyotp.utils": "https://pyauth.github.io/pyotp/index.html#module-pyotp.utils",
     "pyotp.utils.build_uri": "https://pyauth.github.io/pyotp/index.html#pyotp.utils.build_uri",
     "pyotp.utils.strings_equal": "https://pyauth.github.io/pyotp/index.html#pyotp.utils.strings_equal",

@@ -1,4 +1,4 @@
-VERSION = "1.3.6"
+VERSION = "1.4.1"
 
 # fmt: off
 MAPPING = {
@@ -154,6 +154,7 @@ MAPPING = {
     "pyubx2.ubxvariants.get_cfgtp5_dict": "https://www.semuconsulting.com/pyubx2/pyubx2.html#pyubx2.ubxvariants.get_cfgtp5_dict",
     "pyubx2.ubxvariants.get_daheading_dict": "https://www.semuconsulting.com/pyubx2/pyubx2.html#pyubx2.ubxvariants.get_daheading_dict",
     "pyubx2.ubxvariants.get_mga_dict": "https://www.semuconsulting.com/pyubx2/pyubx2.html#pyubx2.ubxvariants.get_mga_dict",
+    "pyubx2.ubxvariants.get_monrf_dict": "https://www.semuconsulting.com/pyubx2/pyubx2.html#pyubx2.ubxvariants.get_monrf_dict",
     "pyubx2.ubxvariants.get_relposned_dict": "https://www.semuconsulting.com/pyubx2/pyubx2.html#pyubx2.ubxvariants.get_relposned_dict",
     "pyubx2.ubxvariants.get_rxmpmp_dict": "https://www.semuconsulting.com/pyubx2/pyubx2.html#pyubx2.ubxvariants.get_rxmpmp_dict",
     "pyubx2.ubxvariants.get_rxmpmreq_dict": "https://www.semuconsulting.com/pyubx2/pyubx2.html#pyubx2.ubxvariants.get_rxmpmreq_dict",

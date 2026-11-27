@@ -1,4 +1,4 @@
-VERSION = "1.13.0"
+VERSION = "1.14.0"
 
 # fmt: off
 MAPPING = {
@@ -17,12 +17,14 @@ MAPPING = {
     "pyorbital.astronomy.sun_zenith_angle": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.astronomy.sun_zenith_angle",
     "pyorbital.orbital": "https://pyorbital.readthedocs.io/en/stable/index.html#module-pyorbital.orbital",
     "pyorbital.orbital.get_observer_look": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.orbital.get_observer_look",
+    "pyorbital.orbital.get_observer_look_from_cartesian_position": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.orbital.get_observer_look_from_cartesian_position",
     "pyorbital.orbital.kep2xyz": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.orbital.kep2xyz",
     "pyorbital.orbital.orbital": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.orbital.Orbital",
     "pyorbital.orbital.orbital.find_aol": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.orbital.Orbital.find_aol",
     "pyorbital.orbital.orbital.find_aos": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.orbital.Orbital.find_aos",
     "pyorbital.orbital.orbital.get_equatorial_crossing_time": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.orbital.Orbital.get_equatorial_crossing_time",
     "pyorbital.orbital.orbital.get_last_an_time": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.orbital.Orbital.get_last_an_time",
+    "pyorbital.orbital.orbital.get_last_dn_time": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.orbital.Orbital.get_last_dn_time",
     "pyorbital.orbital.orbital.get_lonlatalt": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.orbital.Orbital.get_lonlatalt",
     "pyorbital.orbital.orbital.get_next_passes": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.orbital.Orbital.get_next_passes",
     "pyorbital.orbital.orbital.get_observer_look": "https://pyorbital.readthedocs.io/en/stable/index.html#pyorbital.orbital.Orbital.get_observer_look",

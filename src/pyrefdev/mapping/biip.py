@@ -1,4 +1,4 @@
-VERSION = "5.0.0"
+VERSION = "5.2.0"
 
 # fmt: off
 MAPPING = {
@@ -76,6 +76,7 @@ MAPPING = {
     "biip.gs1_element_strings.gs1elementstring.gtin": "https://biip.readthedocs.io/stable/reference/gs1_element_strings/#biip.gs1_element_strings.GS1ElementString.gtin",
     "biip.gs1_element_strings.gs1elementstring.gtin_error": "https://biip.readthedocs.io/stable/reference/gs1_element_strings/#biip.gs1_element_strings.GS1ElementString.gtin_error",
     "biip.gs1_element_strings.gs1elementstring.money": "https://biip.readthedocs.io/stable/reference/gs1_element_strings/#biip.gs1_element_strings.GS1ElementString.money",
+    "biip.gs1_element_strings.gs1elementstring.parse": "https://biip.readthedocs.io/stable/reference/gs1_element_strings/#biip.gs1_element_strings.GS1ElementString.parse",
     "biip.gs1_element_strings.gs1elementstring.pattern_groups": "https://biip.readthedocs.io/stable/reference/gs1_element_strings/#biip.gs1_element_strings.GS1ElementString.pattern_groups",
     "biip.gs1_element_strings.gs1elementstring.sscc": "https://biip.readthedocs.io/stable/reference/gs1_element_strings/#biip.gs1_element_strings.GS1ElementString.sscc",
     "biip.gs1_element_strings.gs1elementstring.sscc_error": "https://biip.readthedocs.io/stable/reference/gs1_element_strings/#biip.gs1_element_strings.GS1ElementString.sscc_error",

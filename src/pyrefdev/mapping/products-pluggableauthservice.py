@@ -1,4 +1,4 @@
-VERSION = "4.2.2"
+VERSION = "4.3"
 
 # fmt: off
 MAPPING = {
@@ -16,6 +16,8 @@ MAPPING = {
     "products.pluggableauthservice.interfaces.events.iprincipalcreatedevent": "https://productspluggableauthservice.readthedocs.io/en/stable/api/events.html#Products.PluggableAuthService.interfaces.events.IPrincipalCreatedEvent",
     "products.pluggableauthservice.interfaces.events.iprincipaldeletedevent": "https://productspluggableauthservice.readthedocs.io/en/stable/api/events.html#Products.PluggableAuthService.interfaces.events.IPrincipalDeletedEvent",
     "products.pluggableauthservice.interfaces.events.ipropertiesupdatedevent": "https://productspluggableauthservice.readthedocs.io/en/stable/api/events.html#Products.PluggableAuthService.interfaces.events.IPropertiesUpdatedEvent",
+    "products.pluggableauthservice.interfaces.events.iroleassignedtoprincipalevent": "https://productspluggableauthservice.readthedocs.io/en/stable/api/events.html#Products.PluggableAuthService.interfaces.events.IRoleAssignedToPrincipalEvent",
+    "products.pluggableauthservice.interfaces.events.iroleremovedfromprincipalevent": "https://productspluggableauthservice.readthedocs.io/en/stable/api/events.html#Products.PluggableAuthService.interfaces.events.IRoleRemovedFromPrincipalEvent",
     "products.pluggableauthservice.interfaces.events.iuserloggedinevent": "https://productspluggableauthservice.readthedocs.io/en/stable/api/events.html#Products.PluggableAuthService.interfaces.events.IUserLoggedInEvent",
     "products.pluggableauthservice.interfaces.events.iuserloggedoutevent": "https://productspluggableauthservice.readthedocs.io/en/stable/api/events.html#Products.PluggableAuthService.interfaces.events.IUserLoggedOutEvent",
     "products.pluggableauthservice.interfaces.plugins": "https://productspluggableauthservice.readthedocs.io/en/stable/api/plugins.html",

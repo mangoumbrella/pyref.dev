@@ -1,4 +1,4 @@
-VERSION = "0.1.10"
+VERSION = "0.1.11"
 
 # fmt: off
 MAPPING = {
@@ -162,6 +162,7 @@ MAPPING = {
     "treescope.repr_lib.render_object_constructor": "https://treescope.readthedocs.io/en/stable/api/leaf/treescope.repr_lib.render_object_constructor.html#treescope.repr_lib.render_object_constructor",
     "treescope.roundtrip_abbreviation_threshold": "https://treescope.readthedocs.io/en/stable/api/treescope.roundtrip_abbreviation_threshold.html#treescope.roundtrip_abbreviation_threshold",
     "treescope.show": "https://treescope.readthedocs.io/en/stable/api/treescope.show.html#treescope.show",
+    "treescope.theme": "https://treescope.readthedocs.io/en/stable/api/treescope.theme.html#treescope.theme",
     "treescope.type_registries": "https://treescope.readthedocs.io/en/stable/api/treescope.type_registries.html#module-treescope.type_registries",
     "treescope.type_registries.immutable_types_registry": "https://treescope.readthedocs.io/en/stable/api/leaf/treescope.type_registries.IMMUTABLE_TYPES_REGISTRY.html#treescope.type_registries.IMMUTABLE_TYPES_REGISTRY",
     "treescope.type_registries.lookup_immutability_for_type": "https://treescope.readthedocs.io/en/stable/api/leaf/treescope.type_registries.lookup_immutability_for_type.html#treescope.type_registries.lookup_immutability_for_type",

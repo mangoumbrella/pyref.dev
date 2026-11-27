@@ -1,4 +1,4 @@
-VERSION = "4.5.2"
+VERSION = "4.6.0"
 
 # fmt: off
 MAPPING = {
@@ -269,6 +269,7 @@ MAPPING = {
     "spotdl.providers.audio.ytdllogger.error": "https://spotdl.readthedocs.io/en/latest/reference/providers/audio/#spotdl.providers.audio.YTDLLogger.error",
     "spotdl.providers.audio.ytdllogger.warning": "https://spotdl.readthedocs.io/en/latest/reference/providers/audio/#spotdl.providers.audio.YTDLLogger.warning",
     "spotdl.providers.audio.ytmusic": "https://spotdl.readthedocs.io/en/latest/reference/providers/audio/ytmusic/#spotdl.providers.audio.ytmusic",
+    "spotdl.providers.audio.ytmusic.is_view_count": "https://spotdl.readthedocs.io/en/latest/reference/providers/audio/ytmusic/#spotdl.providers.audio.ytmusic.is_view_count",
     "spotdl.providers.audio.ytmusic.parse_duration": "https://spotdl.readthedocs.io/en/latest/reference/utils/formatter/#spotdl.utils.formatter.parse_duration",
     "spotdl.providers.audio.ytmusic.result": "https://spotdl.readthedocs.io/en/latest/reference/types/result/#spotdl.types.result.Result",
     "spotdl.providers.audio.ytmusic.youtubemusic": "https://spotdl.readthedocs.io/en/latest/reference/providers/audio/ytmusic/#spotdl.providers.audio.ytmusic.YouTubeMusic",
@@ -541,6 +542,7 @@ MAPPING = {
     "spotdl.utils.matching.calc_time_match": "https://spotdl.readthedocs.io/en/latest/reference/utils/matching/#spotdl.utils.matching.calc_time_match",
     "spotdl.utils.matching.check_common_word": "https://spotdl.readthedocs.io/en/latest/reference/utils/matching/#spotdl.utils.matching.check_common_word",
     "spotdl.utils.matching.check_forbidden_words": "https://spotdl.readthedocs.io/en/latest/reference/utils/matching/#spotdl.utils.matching.check_forbidden_words",
+    "spotdl.utils.matching.contains_words": "https://spotdl.readthedocs.io/en/latest/reference/utils/matching/#spotdl.utils.matching.contains_words",
     "spotdl.utils.matching.create_clean_string": "https://spotdl.readthedocs.io/en/latest/reference/utils/matching/#spotdl.utils.matching.create_clean_string",
     "spotdl.utils.matching.create_match_strings": "https://spotdl.readthedocs.io/en/latest/reference/utils/matching/#spotdl.utils.matching.create_match_strings",
     "spotdl.utils.matching.debug": "https://spotdl.readthedocs.io/en/latest/reference/utils/matching/#spotdl.utils.matching.debug",
@@ -586,17 +588,21 @@ MAPPING = {
     "spotdl.utils.web.applicationstate": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.ApplicationState",
     "spotdl.utils.web.client": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.Client",
     "spotdl.utils.web.client.connect": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.Client.connect",
+    "spotdl.utils.web.client.create_downloader": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.Client.create_downloader",
     "spotdl.utils.web.client.disconnect": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.Client.disconnect",
     "spotdl.utils.web.client.disconnect_now": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.Client.disconnect_now",
     "spotdl.utils.web.client.get_instance": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.Client.get_instance",
     "spotdl.utils.web.client.send_update": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.Client.send_update",
     "spotdl.utils.web.client.song_update": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.Client.song_update",
+    "spotdl.utils.web.client.update_settings": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.Client.update_settings",
     "spotdl.utils.web.fix_mime_types": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.fix_mime_types",
     "spotdl.utils.web.get_client": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.get_client",
     "spotdl.utils.web.get_current_state": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.get_current_state",
+    "spotdl.utils.web.get_settings_changes": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.get_settings_changes",
     "spotdl.utils.web.spastaticfiles": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.SPAStaticFiles",
     "spotdl.utils.web.spastaticfiles.get_response": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.SPAStaticFiles.get_response",
     "spotdl.utils.web.validate_search_term": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.validate_search_term",
+    "spotdl.utils.web.validate_setting": "https://spotdl.readthedocs.io/en/latest/reference/utils/web/#spotdl.utils.web.validate_setting",
     "spotdl.web": "https://spotdl.readthedocs.io/en/latest/reference/web/#spotdl.web",
     "spotdl.web.api": "https://spotdl.readthedocs.io/en/latest/reference/web/api/#spotdl.web.api",
     "spotdl.web.api.check_update": "https://spotdl.readthedocs.io/en/latest/reference/web/api/#spotdl.web.api.check_update",
@@ -611,6 +617,7 @@ MAPPING = {
     "spotdl.web.api.update_settings": "https://spotdl.readthedocs.io/en/latest/reference/web/api/#spotdl.web.api.update_settings",
     "spotdl.web.api.version": "https://spotdl.readthedocs.io/en/latest/reference/web/api/#spotdl.web.api.version",
     "spotdl.web.routes": "https://spotdl.readthedocs.io/en/latest/reference/web/routes/#spotdl.web.routes",
+    "spotdl.web.routes.datastar_response": "https://spotdl.readthedocs.io/en/latest/reference/web/utils/#spotdl.web.utils.datastar_response",
     "spotdl.web.routes.downloads": "https://spotdl.readthedocs.io/en/latest/reference/web/routes/#spotdl.web.routes.downloads",
     "spotdl.web.routes.gen_download": "https://spotdl.readthedocs.io/en/latest/reference/web/routes/#spotdl.web.routes.gen_download",
     "spotdl.web.routes.handle_client_component_search_input_rotating_placeholder": "https://spotdl.readthedocs.io/en/latest/reference/web/routes/#spotdl.web.routes.handle_client_component_search_input_rotating_placeholder",
@@ -626,6 +633,7 @@ MAPPING = {
     "spotdl.web.routes.search": "https://spotdl.readthedocs.io/en/latest/reference/web/routes/#spotdl.web.routes.search",
     "spotdl.web.routes.signals": "https://spotdl.readthedocs.io/en/latest/reference/web/utils/#spotdl.web.utils.Signals",
     "spotdl.web.utils": "https://spotdl.readthedocs.io/en/latest/reference/web/utils/#spotdl.web.utils",
+    "spotdl.web.utils.datastar_response": "https://spotdl.readthedocs.io/en/latest/reference/web/utils/#spotdl.web.utils.datastar_response",
     "spotdl.web.utils.handle_signals": "https://spotdl.readthedocs.io/en/latest/reference/web/utils/#spotdl.web.utils.handle_signals",
     "spotdl.web.utils.signals": "https://spotdl.readthedocs.io/en/latest/reference/web/utils/#spotdl.web.utils.Signals",
 }

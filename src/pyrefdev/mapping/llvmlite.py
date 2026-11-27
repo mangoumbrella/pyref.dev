@@ -1,4 +1,4 @@
-VERSION = "0.49.0"
+VERSION = "0.50.0"
 
 # fmt: off
 MAPPING = {
@@ -262,6 +262,8 @@ MAPPING = {
     "llvmlite.ir.aggregate.elements": "https://llvmlite.readthedocs.io/en/latest/user-guide/ir/types.html#llvmlite.ir.Aggregate.elements",
     "llvmlite.ir.argument": "https://llvmlite.readthedocs.io/en/latest/user-guide/ir/values.html#llvmlite.ir.Argument",
     "llvmlite.ir.argument.add_attribute": "https://llvmlite.readthedocs.io/en/latest/user-guide/ir/values.html#llvmlite.ir.Argument.add_attribute",
+    "llvmlite.ir.argument.attributes": "https://llvmlite.readthedocs.io/en/latest/user-guide/ir/values.html",
+    "llvmlite.ir.argument.attributes.range": "https://llvmlite.readthedocs.io/en/latest/user-guide/ir/values.html#llvmlite.ir.Argument.attributes.range",
     "llvmlite.ir.arraytype": "https://llvmlite.readthedocs.io/en/latest/user-guide/ir/types.html#llvmlite.ir.ArrayType",
     "llvmlite.ir.atomic_rmw": "https://llvmlite.readthedocs.io/en/latest/user-guide/ir/ir-builder.html#llvmlite.ir.atomic_rmw",
     "llvmlite.ir.block": "https://llvmlite.readthedocs.io/en/latest/user-guide/ir/values.html#llvmlite.ir.Block",

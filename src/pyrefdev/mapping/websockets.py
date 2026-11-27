@@ -1,4 +1,4 @@
-VERSION = "17.1"
+VERSION = "17.4"
 
 # fmt: off
 MAPPING = {
@@ -109,6 +109,7 @@ MAPPING = {
     "websockets.client.clientprotocol.send_request": "https://websockets.readthedocs.io/en/stable/reference/sansio/client.html#websockets.client.ClientProtocol.send_request",
     "websockets.client.clientprotocol.send_text": "https://websockets.readthedocs.io/en/stable/reference/sansio/client.html#websockets.client.ClientProtocol.send_text",
     "websockets.client.clientprotocol.state": "https://websockets.readthedocs.io/en/stable/reference/sansio/client.html#websockets.client.ClientProtocol.state",
+    "websockets.client.process_exception": "https://websockets.readthedocs.io/en/stable/reference/sansio/client.html#websockets.client.process_exception",
     "websockets.datastructures": "https://websockets.readthedocs.io/en/stable/reference/datastructures.html#module-websockets.datastructures",
     "websockets.datastructures.headers": "https://websockets.readthedocs.io/en/stable/reference/datastructures.html#websockets.datastructures.Headers",
     "websockets.datastructures.headers.get_all": "https://websockets.readthedocs.io/en/stable/reference/datastructures.html#websockets.datastructures.Headers.get_all",
@@ -376,8 +377,11 @@ MAPPING = {
     "websockets.sync.client.clientconnection.send": "https://websockets.readthedocs.io/en/stable/reference/sync/client.html#websockets.sync.client.ClientConnection.send",
     "websockets.sync.client.clientconnection.state": "https://websockets.readthedocs.io/en/stable/reference/sync/client.html#websockets.sync.client.ClientConnection.state",
     "websockets.sync.client.clientconnection.subprotocol": "https://websockets.readthedocs.io/en/stable/reference/sync/client.html#websockets.sync.client.ClientConnection.subprotocol",
+    "websockets.sync.client.clientconnection.wait_closed": "https://websockets.readthedocs.io/en/stable/reference/sync/client.html#websockets.sync.client.ClientConnection.wait_closed",
     "websockets.sync.client.connect": "https://websockets.readthedocs.io/en/stable/reference/sync/client.html#websockets.sync.client.connect",
+    "websockets.sync.client.reconnect": "https://websockets.readthedocs.io/en/stable/reference/sync/client.html#websockets.sync.client.reconnect",
     "websockets.sync.client.unix_connect": "https://websockets.readthedocs.io/en/stable/reference/sync/client.html#websockets.sync.client.unix_connect",
+    "websockets.sync.client.unix_reconnect": "https://websockets.readthedocs.io/en/stable/reference/sync/client.html#websockets.sync.client.unix_reconnect",
     "websockets.sync.connection": "https://websockets.readthedocs.io/en/stable/reference/sync/connection.html",
     "websockets.sync.connection.connection": "https://websockets.readthedocs.io/en/stable/reference/sync/connection.html#websockets.sync.connection.Connection",
     "websockets.sync.connection.connection.__iter__": "https://websockets.readthedocs.io/en/stable/reference/sync/connection.html#websockets.sync.connection.Connection.__iter__",
@@ -398,6 +402,7 @@ MAPPING = {
     "websockets.sync.connection.connection.send": "https://websockets.readthedocs.io/en/stable/reference/sync/connection.html#websockets.sync.connection.Connection.send",
     "websockets.sync.connection.connection.state": "https://websockets.readthedocs.io/en/stable/reference/sync/connection.html#websockets.sync.connection.Connection.state",
     "websockets.sync.connection.connection.subprotocol": "https://websockets.readthedocs.io/en/stable/reference/sync/connection.html#websockets.sync.connection.Connection.subprotocol",
+    "websockets.sync.connection.connection.wait_closed": "https://websockets.readthedocs.io/en/stable/reference/sync/connection.html#websockets.sync.connection.Connection.wait_closed",
     "websockets.sync.router": "https://websockets.readthedocs.io/en/stable/reference/sync/server.html#module-websockets.sync.router",
     "websockets.sync.router.route": "https://websockets.readthedocs.io/en/stable/reference/sync/server.html#websockets.sync.router.route",
     "websockets.sync.router.router": "https://websockets.readthedocs.io/en/stable/reference/sync/server.html#websockets.sync.router.Router",
@@ -431,6 +436,7 @@ MAPPING = {
     "websockets.sync.server.serverconnection.send": "https://websockets.readthedocs.io/en/stable/reference/sync/server.html#websockets.sync.server.ServerConnection.send",
     "websockets.sync.server.serverconnection.state": "https://websockets.readthedocs.io/en/stable/reference/sync/server.html#websockets.sync.server.ServerConnection.state",
     "websockets.sync.server.serverconnection.subprotocol": "https://websockets.readthedocs.io/en/stable/reference/sync/server.html#websockets.sync.server.ServerConnection.subprotocol",
+    "websockets.sync.server.serverconnection.wait_closed": "https://websockets.readthedocs.io/en/stable/reference/sync/server.html#websockets.sync.server.ServerConnection.wait_closed",
     "websockets.sync.server.unix_serve": "https://websockets.readthedocs.io/en/stable/reference/sync/server.html#websockets.sync.server.unix_serve",
     "websockets.trio.client": "https://websockets.readthedocs.io/en/stable/reference/trio/client.html",
     "websockets.trio.client.clientconnection": "https://websockets.readthedocs.io/en/stable/reference/trio/client.html#websockets.trio.client.ClientConnection",
@@ -516,6 +522,7 @@ MAPPING = {
     "websockets.typing.extensionparameter": "https://websockets.readthedocs.io/en/stable/reference/types.html#websockets.typing.ExtensionParameter",
     "websockets.typing.loggerlike": "https://websockets.readthedocs.io/en/stable/reference/types.html#websockets.typing.LoggerLike",
     "websockets.typing.origin": "https://websockets.readthedocs.io/en/stable/reference/types.html#websockets.typing.Origin",
+    "websockets.typing.pathlike": "https://websockets.readthedocs.io/en/stable/reference/types.html#websockets.typing.PathLike",
     "websockets.typing.statuslike": "https://websockets.readthedocs.io/en/stable/reference/types.html#websockets.typing.StatusLike",
     "websockets.typing.subprotocol": "https://websockets.readthedocs.io/en/stable/reference/types.html#websockets.typing.Subprotocol",
     "websockets.uri": "https://websockets.readthedocs.io/en/stable/reference/datastructures.html#module-websockets.uri",

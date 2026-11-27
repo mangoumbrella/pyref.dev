@@ -1,10 +1,13 @@
-VERSION = "0.14.0"
+VERSION = "0.15.1"
 
 # fmt: off
 MAPPING = {
     "lakefs_spec": "https://lakefs-spec.org/latest/",
     "lakefs_spec.errors": "https://lakefs-spec.org/latest/reference/lakefs_spec/errors/#lakefs_spec.errors",
     "lakefs_spec.errors.translate_lakefs_error": "https://lakefs-spec.org/latest/reference/lakefs_spec/errors/#lakefs_spec.errors.translate_lakefs_error",
+    "lakefs_spec.file": "https://lakefs-spec.org/latest/reference/lakefs_spec/file/#lakefs_spec.file",
+    "lakefs_spec.file.lakefsobjectreader": "https://lakefs-spec.org/latest/reference/lakefs_spec/file/#lakefs_spec.file.LakeFSObjectReader",
+    "lakefs_spec.file.lakefsobjectwriter": "https://lakefs-spec.org/latest/reference/lakefs_spec/file/#lakefs_spec.file.LakeFSObjectWriter",
     "lakefs_spec.lakefsfilesystem": "https://lakefs-spec.org/latest/reference/lakefs_spec/spec/#lakefs_spec.spec.LakeFSFileSystem",
     "lakefs_spec.lakefstransaction": "https://lakefs-spec.org/latest/reference/lakefs_spec/transaction/#lakefs_spec.transaction.LakeFSTransaction",
     "lakefs_spec.spec": "https://lakefs-spec.org/latest/reference/lakefs_spec/spec/#lakefs_spec.spec",

@@ -1,4 +1,4 @@
-VERSION = "2.0.11"
+VERSION = "2.0.47"
 
 # fmt: off
 MAPPING = {
@@ -143,6 +143,31 @@ MAPPING = {
     "power_grid_model_io.mappings.value_mapping.valuemapping": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.mappings.value_mapping.ValueMapping",
     "power_grid_model_io.mappings.value_mapping.valuemapping.__init__": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.mappings.value_mapping.ValueMapping.__init__",
     "power_grid_model_io.mappings.value_mapping.valuemapping.get_substitutions": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.mappings.value_mapping.ValueMapping.get_substitutions",
+    "power_grid_model_io.networks": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html",
+    "power_grid_model_io.networks.enum": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#module-power_grid_model_io.networks.enum",
+    "power_grid_model_io.networks.enum.ieeefournodevariant": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_down_dd_balanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_down_dd_balanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_down_dd_unbalanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_down_dd_unbalanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_down_dyn_balanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_down_dyn_balanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_down_dyn_unbalanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_down_dyn_unbalanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_down_yd_balanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_down_yd_balanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_down_yd_unbalanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_down_yd_unbalanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_down_ynd_balanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_down_ynd_balanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_down_ynd_unbalanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_down_ynd_unbalanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_down_ynyn_balanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_down_ynyn_balanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_down_ynyn_unbalanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_down_ynyn_unbalanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_up_dd_balanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_up_dd_balanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_up_dd_unbalanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_up_dd_unbalanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_up_dyn_balanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_up_dyn_balanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_up_dyn_unbalanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_up_dyn_unbalanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_up_yd_balanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_up_yd_balanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_up_yd_unbalanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_up_yd_unbalanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_up_ynd_balanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_up_ynd_balanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_up_ynd_unbalanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_up_ynd_unbalanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_up_ynyn_balanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_up_ynyn_balanced_loading",
+    "power_grid_model_io.networks.enum.ieeefournodevariant.step_up_ynyn_unbalanced_loading": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.enum.IeeeFourNodeVariant.step_up_ynyn_unbalanced_loading",
+    "power_grid_model_io.networks.ieee_test_networks": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#module-power_grid_model_io.networks.ieee_test_networks",
+    "power_grid_model_io.networks.ieee_test_networks.ieee_four_node": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.networks.ieee_test_networks.ieee_four_node",
     "power_grid_model_io.utils": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html",
     "power_grid_model_io.utils.auto_id": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#module-power_grid_model_io.utils.auto_id",
     "power_grid_model_io.utils.auto_id.autoid": "https://power-grid-model-io.readthedocs.io/en/stable/power_grid_model_io.html#power_grid_model_io.utils.auto_id.AutoID",

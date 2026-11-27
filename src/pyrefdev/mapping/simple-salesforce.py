@@ -1,4 +1,4 @@
-VERSION = "1.12.10"
+VERSION = "1.12.11"
 
 # fmt: off
 MAPPING = {
@@ -50,6 +50,7 @@ MAPPING = {
     "simple_salesforce.util.perappusage.name": "https://simple-salesforce.readthedocs.io/en/stable/api/simple_salesforce.util.html#simple_salesforce.util.PerAppUsage.name",
     "simple_salesforce.util.perappusage.total": "https://simple-salesforce.readthedocs.io/en/stable/api/simple_salesforce.util.html#simple_salesforce.util.PerAppUsage.total",
     "simple_salesforce.util.perappusage.used": "https://simple-salesforce.readthedocs.io/en/stable/api/simple_salesforce.util.html#simple_salesforce.util.PerAppUsage.used",
+    "simple_salesforce.util.safe_urljoin": "https://simple-salesforce.readthedocs.io/en/stable/api/simple_salesforce.util.html#simple_salesforce.util.safe_urljoin",
     "simple_salesforce.util.usage": "https://simple-salesforce.readthedocs.io/en/stable/api/simple_salesforce.util.html#simple_salesforce.util.Usage",
     "simple_salesforce.util.usage.total": "https://simple-salesforce.readthedocs.io/en/stable/api/simple_salesforce.util.html#simple_salesforce.util.Usage.total",
     "simple_salesforce.util.usage.used": "https://simple-salesforce.readthedocs.io/en/stable/api/simple_salesforce.util.html#simple_salesforce.util.Usage.used",

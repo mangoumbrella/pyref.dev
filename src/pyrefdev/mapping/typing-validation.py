@@ -1,4 +1,4 @@
-VERSION = "2.2.1"
+VERSION = "2.3.0"
 
 # fmt: off
 MAPPING = {
@@ -24,7 +24,9 @@ MAPPING = {
     "typing_validation.diagnosis.detail.not_a_subclass": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.diagnosis.html#typing_validation.diagnosis.Detail.NOT_A_SUBCLASS",
     "typing_validation.diagnosis.detail.not_an_instance": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.diagnosis.html#typing_validation.diagnosis.Detail.NOT_AN_INSTANCE",
     "typing_validation.diagnosis.detail.not_none": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.diagnosis.html#typing_validation.diagnosis.Detail.NOT_NONE",
+    "typing_validation.diagnosis.detail.not_the_sentinel": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.diagnosis.html#typing_validation.diagnosis.Detail.NOT_THE_SENTINEL",
     "typing_validation.diagnosis.detail.plugin_rejected": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.diagnosis.html#typing_validation.diagnosis.Detail.PLUGIN_REJECTED",
+    "typing_validation.diagnosis.detail.unexpected_key": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.diagnosis.html#typing_validation.diagnosis.Detail.UNEXPECTED_KEY",
     "typing_validation.diagnosis.detail.wrong_length": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.diagnosis.html#typing_validation.diagnosis.Detail.WRONG_LENGTH",
     "typing_validation.diagnosis.diagnose": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.diagnosis.html#typing_validation.diagnosis.diagnose",
     "typing_validation.diagnosis.diagnosisfailure": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.diagnosis.html#typing_validation.diagnosis.DiagnosisFailure",
@@ -84,6 +86,7 @@ MAPPING = {
     "typing_validation.nodes.typeform.none": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeForm.NONE",
     "typing_validation.nodes.typeform.plugin": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeForm.PLUGIN",
     "typing_validation.nodes.typeform.protocol": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeForm.PROTOCOL",
+    "typing_validation.nodes.typeform.sentinel": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeForm.SENTINEL",
     "typing_validation.nodes.typeform.tuple": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeForm.TUPLE",
     "typing_validation.nodes.typeform.type_of": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeForm.TYPE_OF",
     "typing_validation.nodes.typeform.type_var": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeForm.TYPE_VAR",
@@ -92,6 +95,8 @@ MAPPING = {
     "typing_validation.nodes.typeform.unsupported": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeForm.UNSUPPORTED",
     "typing_validation.nodes.typenode": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeNode",
     "typing_validation.nodes.typenode.children": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeNode.children",
+    "typing_validation.nodes.typenode.closed": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeNode.closed",
+    "typing_validation.nodes.typenode.extra_items": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeNode.extra_items",
     "typing_validation.nodes.typenode.form": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeNode.form",
     "typing_validation.nodes.typenode.labels": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeNode.labels",
     "typing_validation.nodes.typenode.reason": "https://typing-validation.readthedocs.io/en/stable/api/typing_validation.nodes.html#typing_validation.nodes.TypeNode.reason",

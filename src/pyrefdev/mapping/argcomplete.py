@@ -1,4 +1,4 @@
-VERSION = "3.7.2"
+VERSION = "3.8.0"
 
 # fmt: off
 MAPPING = {
@@ -32,6 +32,7 @@ MAPPING = {
     "argcomplete.finders": "https://kislyuk.github.io/argcomplete/index.html",
     "argcomplete.finders.completionfinder": "https://kislyuk.github.io/argcomplete/index.html#argcomplete.CompletionFinder",
     "argcomplete.finders.exclusivecompletionfinder": "https://kislyuk.github.io/argcomplete/index.html#argcomplete.ExclusiveCompletionFinder",
+    "argcomplete.get_num_consumed_args": "https://kislyuk.github.io/argcomplete/index.html#argcomplete.get_num_consumed_args",
     "argcomplete.shellcode": "https://kislyuk.github.io/argcomplete/index.html#argcomplete.shellcode",
     "argcomplete.suppresscompleter": "https://kislyuk.github.io/argcomplete/index.html#argcomplete.SuppressCompleter",
     "argcomplete.suppresscompleter.__init__": "https://kislyuk.github.io/argcomplete/index.html#argcomplete.SuppressCompleter.__init__",

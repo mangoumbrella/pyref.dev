@@ -1,4 +1,4 @@
-VERSION = "4.15.1"
+VERSION = "4.16.0"
 
 # fmt: off
 MAPPING = {
@@ -148,6 +148,7 @@ MAPPING = {
     "anyio.from_thread": "https://anyio.readthedocs.io/en/stable/api.html",
     "anyio.from_thread.blockingportal": "https://anyio.readthedocs.io/en/stable/api.html#anyio.from_thread.BlockingPortal",
     "anyio.from_thread.blockingportal.call": "https://anyio.readthedocs.io/en/stable/api.html#anyio.from_thread.BlockingPortal.call",
+    "anyio.from_thread.blockingportal.call_async": "https://anyio.readthedocs.io/en/stable/api.html#anyio.from_thread.BlockingPortal.call_async",
     "anyio.from_thread.blockingportal.sleep_until_stopped": "https://anyio.readthedocs.io/en/stable/api.html#anyio.from_thread.BlockingPortal.sleep_until_stopped",
     "anyio.from_thread.blockingportal.start_task": "https://anyio.readthedocs.io/en/stable/api.html#anyio.from_thread.BlockingPortal.start_task",
     "anyio.from_thread.blockingportal.start_task_soon": "https://anyio.readthedocs.io/en/stable/api.html#anyio.from_thread.BlockingPortal.start_task_soon",

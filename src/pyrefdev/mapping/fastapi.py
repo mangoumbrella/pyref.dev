@@ -1,4 +1,4 @@
-VERSION = "0.141.1"
+VERSION = "0.163.1"
 
 # fmt: off
 MAPPING = {
@@ -79,7 +79,9 @@ MAPPING = {
     "fastapi.middleware.gzip.gzipmiddleware": "https://fastapi.tiangolo.com/reference/middleware/#fastapi.middleware.gzip.GZipMiddleware",
     "fastapi.middleware.gzip.gzipmiddleware.app": "https://fastapi.tiangolo.com/reference/middleware/#fastapi.middleware.gzip.GZipMiddleware.app",
     "fastapi.middleware.gzip.gzipmiddleware.compresslevel": "https://fastapi.tiangolo.com/reference/middleware/#fastapi.middleware.gzip.GZipMiddleware.compresslevel",
+    "fastapi.middleware.gzip.gzipmiddleware.exclude_content_types": "https://fastapi.tiangolo.com/reference/middleware/#fastapi.middleware.gzip.GZipMiddleware.exclude_content_types",
     "fastapi.middleware.gzip.gzipmiddleware.minimum_size": "https://fastapi.tiangolo.com/reference/middleware/#fastapi.middleware.gzip.GZipMiddleware.minimum_size",
+    "fastapi.middleware.gzip.gzipmiddleware.thread_minimum_size": "https://fastapi.tiangolo.com/reference/middleware/#fastapi.middleware.gzip.GZipMiddleware.thread_minimum_size",
     "fastapi.middleware.httpsredirect": "https://fastapi.tiangolo.com/reference/middleware/",
     "fastapi.middleware.httpsredirect.httpsredirectmiddleware": "https://fastapi.tiangolo.com/reference/middleware/#fastapi.middleware.httpsredirect.HTTPSRedirectMiddleware",
     "fastapi.middleware.httpsredirect.httpsredirectmiddleware.app": "https://fastapi.tiangolo.com/reference/middleware/#fastapi.middleware.httpsredirect.HTTPSRedirectMiddleware.app",

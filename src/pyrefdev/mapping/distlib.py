@@ -1,4 +1,4 @@
-VERSION = "0.4.3"
+VERSION = "0.4.4"
 
 # fmt: off
 MAPPING = {
@@ -103,6 +103,7 @@ MAPPING = {
     "distlib.metadata": "https://distlib.readthedocs.io/en/latest/reference.html",
     "distlib.metadata.metadata": "https://distlib.readthedocs.io/en/latest/reference.html#distlib.metadata.Metadata",
     "distlib.metadata.metadata.todict": "https://distlib.readthedocs.io/en/latest/reference.html#distlib.metadata.Metadata.todict",
+    "distlib.metadata.metadata.urls": "https://distlib.readthedocs.io/en/latest/reference.html#distlib.metadata.Metadata.urls",
     "distlib.resources": "https://distlib.readthedocs.io/en/latest/reference.html",
     "distlib.resources.cache": "https://distlib.readthedocs.io/en/latest/reference.html#distlib.resources.cache",
     "distlib.resources.finder": "https://distlib.readthedocs.io/en/latest/reference.html#distlib.resources.finder",

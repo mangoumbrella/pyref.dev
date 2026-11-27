@@ -1,4 +1,4 @@
-VERSION = "5.17.0"
+VERSION = "5.18.1"
 
 # fmt: off
 MAPPING = {
@@ -32,6 +32,7 @@ MAPPING = {
     "socketio.asyncaiopikamanager.get_rooms": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncAioPikaManager.get_rooms",
     "socketio.asyncaiopikamanager.initialize": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncAioPikaManager.initialize",
     "socketio.asyncaiopikamanager.leave_room": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncAioPikaManager.leave_room",
+    "socketio.asyncaiopikamanager.pre_connect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncAioPikaManager.pre_connect",
     "socketio.asyncaiopikamanager.pre_disconnect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncAioPikaManager.pre_disconnect",
     "socketio.asyncaiopikamanager.trigger_callback": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncAioPikaManager.trigger_callback",
     "socketio.asyncclient": "https://python-socketio.readthedocs.io/en/stable/api_client.html#socketio.AsyncClient",
@@ -72,6 +73,7 @@ MAPPING = {
     "socketio.asyncmanager.get_rooms": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncManager.get_rooms",
     "socketio.asyncmanager.initialize": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncManager.initialize",
     "socketio.asyncmanager.leave_room": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncManager.leave_room",
+    "socketio.asyncmanager.pre_connect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncManager.pre_connect",
     "socketio.asyncmanager.pre_disconnect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncManager.pre_disconnect",
     "socketio.asyncmanager.trigger_callback": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncManager.trigger_callback",
     "socketio.asyncnamespace": "https://python-socketio.readthedocs.io/en/stable/api_namespace.html#socketio.AsyncNamespace",
@@ -98,6 +100,7 @@ MAPPING = {
     "socketio.asyncredismanager.get_rooms": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncRedisManager.get_rooms",
     "socketio.asyncredismanager.initialize": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncRedisManager.initialize",
     "socketio.asyncredismanager.leave_room": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncRedisManager.leave_room",
+    "socketio.asyncredismanager.pre_connect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncRedisManager.pre_connect",
     "socketio.asyncredismanager.pre_disconnect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncRedisManager.pre_disconnect",
     "socketio.asyncredismanager.trigger_callback": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.AsyncRedisManager.trigger_callback",
     "socketio.asyncserver": "https://python-socketio.readthedocs.io/en/stable/api_server.html#socketio.AsyncServer",
@@ -182,6 +185,7 @@ MAPPING = {
     "socketio.kafkamanager.get_rooms": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.KafkaManager.get_rooms",
     "socketio.kafkamanager.initialize": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.KafkaManager.initialize",
     "socketio.kafkamanager.leave_room": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.KafkaManager.leave_room",
+    "socketio.kafkamanager.pre_connect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.KafkaManager.pre_connect",
     "socketio.kafkamanager.pre_disconnect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.KafkaManager.pre_disconnect",
     "socketio.kafkamanager.trigger_callback": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.KafkaManager.trigger_callback",
     "socketio.kombu_manager": "https://python-socketio.readthedocs.io/en/stable/api_manager.html",
@@ -197,6 +201,7 @@ MAPPING = {
     "socketio.kombumanager.get_rooms": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.KombuManager.get_rooms",
     "socketio.kombumanager.initialize": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.KombuManager.initialize",
     "socketio.kombumanager.leave_room": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.KombuManager.leave_room",
+    "socketio.kombumanager.pre_connect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.KombuManager.pre_connect",
     "socketio.kombumanager.pre_disconnect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.KombuManager.pre_disconnect",
     "socketio.kombumanager.trigger_callback": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.KombuManager.trigger_callback",
     "socketio.manager": "https://python-socketio.readthedocs.io/en/stable/api_manager.html",
@@ -212,6 +217,7 @@ MAPPING = {
     "socketio.manager.initialize": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.Manager.initialize",
     "socketio.manager.leave_room": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.Manager.leave_room",
     "socketio.manager.manager": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.Manager",
+    "socketio.manager.pre_connect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.Manager.pre_connect",
     "socketio.manager.pre_disconnect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.Manager.pre_disconnect",
     "socketio.manager.trigger_callback": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.Manager.trigger_callback",
     "socketio.middleware": "https://python-socketio.readthedocs.io/en/stable/api_middleware.html",
@@ -247,6 +253,7 @@ MAPPING = {
     "socketio.pubsubmanager.get_rooms": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.PubSubManager.get_rooms",
     "socketio.pubsubmanager.initialize": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.PubSubManager.initialize",
     "socketio.pubsubmanager.leave_room": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.PubSubManager.leave_room",
+    "socketio.pubsubmanager.pre_connect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.PubSubManager.pre_connect",
     "socketio.pubsubmanager.pre_disconnect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.PubSubManager.pre_disconnect",
     "socketio.pubsubmanager.trigger_callback": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.PubSubManager.trigger_callback",
     "socketio.redis_manager": "https://python-socketio.readthedocs.io/en/stable/api_manager.html",
@@ -262,6 +269,7 @@ MAPPING = {
     "socketio.redismanager.get_rooms": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.RedisManager.get_rooms",
     "socketio.redismanager.initialize": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.RedisManager.initialize",
     "socketio.redismanager.leave_room": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.RedisManager.leave_room",
+    "socketio.redismanager.pre_connect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.RedisManager.pre_connect",
     "socketio.redismanager.pre_disconnect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.RedisManager.pre_disconnect",
     "socketio.redismanager.trigger_callback": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.RedisManager.trigger_callback",
     "socketio.server": "https://python-socketio.readthedocs.io/en/stable/api_server.html",
@@ -319,6 +327,7 @@ MAPPING = {
     "socketio.zmqmanager.get_rooms": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.ZmqManager.get_rooms",
     "socketio.zmqmanager.initialize": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.ZmqManager.initialize",
     "socketio.zmqmanager.leave_room": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.ZmqManager.leave_room",
+    "socketio.zmqmanager.pre_connect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.ZmqManager.pre_connect",
     "socketio.zmqmanager.pre_disconnect": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.ZmqManager.pre_disconnect",
     "socketio.zmqmanager.trigger_callback": "https://python-socketio.readthedocs.io/en/stable/api_manager.html#socketio.ZmqManager.trigger_callback",
 }

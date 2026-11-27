@@ -1,4 +1,4 @@
-VERSION = "0.32.0"
+VERSION = "0.38.0"
 
 # fmt: off
 MAPPING = {
@@ -103,6 +103,7 @@ MAPPING = {
     "daily.eventhandler.on_live_stream_stopped": "https://reference-python.daily.co/api_reference.html#daily.EventHandler.on_live_stream_stopped",
     "daily.eventhandler.on_live_stream_updated": "https://reference-python.daily.co/api_reference.html#daily.EventHandler.on_live_stream_updated",
     "daily.eventhandler.on_live_stream_warning": "https://reference-python.daily.co/api_reference.html#daily.EventHandler.on_live_stream_warning",
+    "daily.eventhandler.on_network_connection_status_updated": "https://reference-python.daily.co/api_reference.html#daily.EventHandler.on_network_connection_status_updated",
     "daily.eventhandler.on_network_stats_updated": "https://reference-python.daily.co/api_reference.html#daily.EventHandler.on_network_stats_updated",
     "daily.eventhandler.on_participant_counts_updated": "https://reference-python.daily.co/api_reference.html#daily.EventHandler.on_participant_counts_updated",
     "daily.eventhandler.on_participant_joined": "https://reference-python.daily.co/api_reference.html#daily.EventHandler.on_participant_joined",

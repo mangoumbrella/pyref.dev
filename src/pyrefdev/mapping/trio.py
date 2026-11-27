@@ -1,4 +1,4 @@
-VERSION = "0.34.0"
+VERSION = "0.35.0"
 
 # fmt: off
 MAPPING = {
@@ -138,6 +138,7 @@ MAPPING = {
     "trio.lowlevel.currently_ki_protected": "https://trio.readthedocs.io/en/stable/reference-lowlevel.html#trio.lowlevel.currently_ki_protected",
     "trio.lowlevel.disable_ki_protection": "https://trio.readthedocs.io/en/stable/reference-lowlevel.html#trio.lowlevel.disable_ki_protection",
     "trio.lowlevel.enable_ki_protection": "https://trio.readthedocs.io/en/stable/reference-lowlevel.html#trio.lowlevel.enable_ki_protection",
+    "trio.lowlevel.encode_hostname": "https://trio.readthedocs.io/en/stable/reference-io.html#trio.lowlevel.encode_hostname",
     "trio.lowlevel.fdstream": "https://trio.readthedocs.io/en/stable/reference-lowlevel.html#trio.lowlevel.FdStream",
     "trio.lowlevel.in_trio_run": "https://trio.readthedocs.io/en/stable/reference-lowlevel.html#trio.lowlevel.in_trio_run",
     "trio.lowlevel.in_trio_task": "https://trio.readthedocs.io/en/stable/reference-lowlevel.html#trio.lowlevel.in_trio_task",

@@ -1,4 +1,4 @@
-VERSION = "7.1.8"
+VERSION = "8.0.0"
 
 # fmt: off
 MAPPING = {
@@ -9,6 +9,7 @@ MAPPING = {
     "cachetools.cache.maxsize": "https://cachetools.readthedocs.io/en/latest/index.html#cachetools.Cache.maxsize",
     "cachetools.cached": "https://cachetools.readthedocs.io/en/latest/index.html#cachetools.cached",
     "cachetools.cachedmethod": "https://cachetools.readthedocs.io/en/latest/index.html#cachetools.cachedmethod",
+    "cachetools.cacheinfo": "https://cachetools.readthedocs.io/en/latest/index.html#cachetools.CacheInfo",
     "cachetools.fifocache": "https://cachetools.readthedocs.io/en/latest/index.html#cachetools.FIFOCache",
     "cachetools.fifocache.popitem": "https://cachetools.readthedocs.io/en/latest/index.html#cachetools.FIFOCache.popitem",
     "cachetools.func": "https://cachetools.readthedocs.io/en/latest/index.html#module-cachetools.func",

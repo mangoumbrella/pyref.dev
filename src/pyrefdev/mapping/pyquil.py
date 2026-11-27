@@ -1,4 +1,4 @@
-VERSION = "4.18.0"
+VERSION = "4.23.0"
 
 # fmt: off
 MAPPING = {
@@ -518,12 +518,12 @@ MAPPING = {
     "pyquil.quantum_processor.transformers": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.html",
     "pyquil.quantum_processor.transformers.compiler_isa_to_graph": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.compiler_isa_to_graph.html",
     "pyquil.quantum_processor.transformers.compiler_isa_to_graph.compiler_isa_to_graph": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.compiler_isa_to_graph.html#pyquil.quantum_processor.transformers.compiler_isa_to_graph.compiler_isa_to_graph",
-    "pyquil.quantum_processor.transformers.graph_to_compiler_isa": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.html#pyquil.quantum_processor.transformers.graph_to_compiler_isa",
+    "pyquil.quantum_processor.transformers.graph_to_compiler_isa": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.graph_to_compiler_isa.html",
     "pyquil.quantum_processor.transformers.graph_to_compiler_isa.compiler_isa_to_graph": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.graph_to_compiler_isa.html#pyquil.quantum_processor.transformers.graph_to_compiler_isa.compiler_isa_to_graph",
     "pyquil.quantum_processor.transformers.graph_to_compiler_isa.graph_to_compiler_isa": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.graph_to_compiler_isa.html#pyquil.quantum_processor.transformers.graph_to_compiler_isa.graph_to_compiler_isa",
     "pyquil.quantum_processor.transformers.graph_to_compiler_isa.graphgateerror": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.graph_to_compiler_isa.html#pyquil.quantum_processor.transformers.graph_to_compiler_isa.GraphGateError",
     "pyquil.quantum_processor.transformers.graphgateerror": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.html#pyquil.quantum_processor.transformers.GraphGateError",
-    "pyquil.quantum_processor.transformers.qcs_isa_to_compiler_isa": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.html#pyquil.quantum_processor.transformers.qcs_isa_to_compiler_isa",
+    "pyquil.quantum_processor.transformers.qcs_isa_to_compiler_isa": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.qcs_isa_to_compiler_isa.html",
     "pyquil.quantum_processor.transformers.qcs_isa_to_compiler_isa.qcs_isa_to_compiler_isa": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.qcs_isa_to_compiler_isa.html#pyquil.quantum_processor.transformers.qcs_isa_to_compiler_isa.qcs_isa_to_compiler_isa",
     "pyquil.quantum_processor.transformers.qcs_isa_to_compiler_isa.qcsisaparseerror": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.qcs_isa_to_compiler_isa.html#pyquil.quantum_processor.transformers.qcs_isa_to_compiler_isa.QCSISAParseError",
     "pyquil.quantum_processor.transformers.qcs_isa_to_graph": "https://pyquil-docs.rigetti.com/en/stable/apidocs/pyquil.quantum_processor.transformers.html#pyquil.quantum_processor.transformers.qcs_isa_to_graph",

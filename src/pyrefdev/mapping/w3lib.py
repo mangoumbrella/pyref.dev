@@ -1,10 +1,11 @@
-VERSION = "2.4.1"
+VERSION = "2.6.0"
 
 # fmt: off
 MAPPING = {
     "w3lib": "https://w3lib.readthedocs.io/en/latest/",
     "w3lib.encoding": "https://w3lib.readthedocs.io/en/latest/w3lib.html#module-w3lib.encoding",
     "w3lib.encoding.html_body_declared_encoding": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.encoding.html_body_declared_encoding",
+    "w3lib.encoding.html_encoding": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.encoding.html_encoding",
     "w3lib.encoding.html_to_unicode": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.encoding.html_to_unicode",
     "w3lib.encoding.http_content_type_encoding": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.encoding.http_content_type_encoding",
     "w3lib.encoding.read_bom": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.encoding.read_bom",
@@ -26,6 +27,7 @@ MAPPING = {
     "w3lib.http.headers_dict_to_raw": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.http.headers_dict_to_raw",
     "w3lib.http.headers_raw_to_dict": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.http.headers_raw_to_dict",
     "w3lib.url": "https://w3lib.readthedocs.io/en/latest/w3lib.html#module-w3lib.url",
+    "w3lib.url.add_http_if_no_scheme": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.url.add_http_if_no_scheme",
     "w3lib.url.add_or_replace_parameter": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.url.add_or_replace_parameter",
     "w3lib.url.add_or_replace_parameters": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.url.add_or_replace_parameters",
     "w3lib.url.any_to_uri": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.url.any_to_uri",
@@ -37,7 +39,6 @@ MAPPING = {
     "w3lib.url.parsedatauriresult.media_type": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.url.ParseDataURIResult.media_type",
     "w3lib.url.parsedatauriresult.media_type_parameters": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.url.ParseDataURIResult.media_type_parameters",
     "w3lib.url.path_to_file_uri": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.url.path_to_file_uri",
-    "w3lib.url.safe_download_url": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.url.safe_download_url",
     "w3lib.url.safe_url_string": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.url.safe_url_string",
     "w3lib.url.url_query_cleaner": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.url.url_query_cleaner",
     "w3lib.url.url_query_parameter": "https://w3lib.readthedocs.io/en/latest/w3lib.html#w3lib.url.url_query_parameter",

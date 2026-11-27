@@ -1,4 +1,4 @@
-VERSION = "8.5.0"
+VERSION = "8.5.1"
 
 # fmt: off
 MAPPING = {
@@ -166,8 +166,13 @@ MAPPING = {
     "click.parameter": "https://click.palletsprojects.com/en/stable/api/#click.Parameter",
     "click.parameter.get_default": "https://click.palletsprojects.com/en/stable/api/#click.Parameter.get_default",
     "click.parameter.get_error_hint": "https://click.palletsprojects.com/en/stable/api/#click.Parameter.get_error_hint",
+    "click.parameter.get_help_spec": "https://click.palletsprojects.com/en/stable/api/#click.Parameter.get_help_spec",
     "click.parameter.human_readable_name": "https://click.palletsprojects.com/en/stable/api/#click.Parameter.human_readable_name",
+    "click.parameter.name": "https://click.palletsprojects.com/en/stable/api/#click.Parameter.name",
+    "click.parameter.opts": "https://click.palletsprojects.com/en/stable/api/#click.Parameter.opts",
+    "click.parameter.secondary_opts": "https://click.palletsprojects.com/en/stable/api/#click.Parameter.secondary_opts",
     "click.parameter.shell_complete": "https://click.palletsprojects.com/en/stable/api/#click.Parameter.shell_complete",
+    "click.parameter.spec": "https://click.palletsprojects.com/en/stable/api/#click.Parameter.spec",
     "click.parameter.to_info_dict": "https://click.palletsprojects.com/en/stable/api/#click.Parameter.to_info_dict",
     "click.parameter.type_cast_value": "https://click.palletsprojects.com/en/stable/api/#click.Parameter.type_cast_value",
     "click.paramtype": "https://click.palletsprojects.com/en/stable/api/#click.ParamType",

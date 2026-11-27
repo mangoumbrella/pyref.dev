@@ -1,4 +1,4 @@
-VERSION = "2.36.0"
+VERSION = "2.44.0"
 
 # fmt: off
 MAPPING = {
@@ -63,6 +63,7 @@ MAPPING = {
     "google.api_core.exceptions.lengthrequired": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.LengthRequired",
     "google.api_core.exceptions.methodnotallowed": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.MethodNotAllowed",
     "google.api_core.exceptions.methodnotimplemented": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.MethodNotImplemented",
+    "google.api_core.exceptions.missingstatusheadererror": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.MissingStatusHeaderError",
     "google.api_core.exceptions.movedpermanently": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.MovedPermanently",
     "google.api_core.exceptions.notfound": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.NotFound",
     "google.api_core.exceptions.notmodified": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.NotModified",
@@ -72,6 +73,7 @@ MAPPING = {
     "google.api_core.exceptions.redirection": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.Redirection",
     "google.api_core.exceptions.requestrangenotsatisfiable": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.RequestRangeNotSatisfiable",
     "google.api_core.exceptions.resourceexhausted": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.ResourceExhausted",
+    "google.api_core.exceptions.resumabletransfererror": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.ResumableTransferError",
     "google.api_core.exceptions.resumeincomplete": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.ResumeIncomplete",
     "google.api_core.exceptions.retryerror": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.RetryError",
     "google.api_core.exceptions.retryerror.cause": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.RetryError.cause",
@@ -79,9 +81,12 @@ MAPPING = {
     "google.api_core.exceptions.serviceunavailable": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.ServiceUnavailable",
     "google.api_core.exceptions.temporaryredirect": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.TemporaryRedirect",
     "google.api_core.exceptions.toomanyrequests": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.TooManyRequests",
+    "google.api_core.exceptions.transferstallederror": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.TransferStalledError",
     "google.api_core.exceptions.unauthenticated": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.Unauthenticated",
     "google.api_core.exceptions.unauthorized": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.Unauthorized",
     "google.api_core.exceptions.unknown": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.Unknown",
+    "google.api_core.exceptions.unseekablestreamerror": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.UnseekableStreamError",
+    "google.api_core.exceptions.uploadcancellederror": "https://googleapis.dev/python/google-api-core/latest/exceptions.html#google.api_core.exceptions.UploadCancelledError",
     "google.api_core.future": "https://googleapis.dev/python/google-api-core/latest/futures.html#module-google.api_core.future",
     "google.api_core.future.async_future": "https://googleapis.dev/python/google-api-core/latest/futures.html#module-google.api_core.future.async_future",
     "google.api_core.future.async_future.asyncfuture": "https://googleapis.dev/python/google-api-core/latest/futures.html#google.api_core.future.async_future.AsyncFuture",
@@ -108,6 +113,7 @@ MAPPING = {
     "google.api_core.gapic_v1.client_info.clientinfo.to_grpc_metadata": "https://googleapis.dev/python/google-api-core/latest/client_info.html#google.api_core.gapic_v1.client_info.ClientInfo.to_grpc_metadata",
     "google.api_core.general_helpers": "https://googleapis.dev/python/google-api-core/latest/helpers.html#module-google.api_core.general_helpers",
     "google.api_core.grpc_helpers": "https://googleapis.dev/python/google-api-core/latest/helpers.html#module-google.api_core.grpc_helpers",
+    "google.api_core.grpc_helpers.apply_channel_interceptors": "https://googleapis.dev/python/google-api-core/latest/helpers.html#google.api_core.grpc_helpers.apply_channel_interceptors",
     "google.api_core.grpc_helpers.channelstub": "https://googleapis.dev/python/google-api-core/latest/helpers.html#google.api_core.grpc_helpers.ChannelStub",
     "google.api_core.grpc_helpers.channelstub.close": "https://googleapis.dev/python/google-api-core/latest/helpers.html#google.api_core.grpc_helpers.ChannelStub.close",
     "google.api_core.grpc_helpers.channelstub.requests": "https://googleapis.dev/python/google-api-core/latest/helpers.html#google.api_core.grpc_helpers.ChannelStub.requests",

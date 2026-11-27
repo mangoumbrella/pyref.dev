@@ -1,4 +1,4 @@
-VERSION = "1.6.0"
+VERSION = "1.7.0"
 
 # fmt: off
 MAPPING = {
@@ -56,6 +56,7 @@ MAPPING = {
     "pluggy.pluginmanager.is_registered": "https://pluggy.readthedocs.io/en/latest/api_reference.html#pluggy.PluginManager.is_registered",
     "pluggy.pluginmanager.list_name_plugin": "https://pluggy.readthedocs.io/en/latest/api_reference.html#pluggy.PluginManager.list_name_plugin",
     "pluggy.pluginmanager.list_plugin_distinfo": "https://pluggy.readthedocs.io/en/latest/api_reference.html#pluggy.PluginManager.list_plugin_distinfo",
+    "pluggy.pluginmanager.list_plugin_distributions": "https://pluggy.readthedocs.io/en/latest/api_reference.html#pluggy.PluginManager.list_plugin_distributions",
     "pluggy.pluginmanager.load_setuptools_entrypoints": "https://pluggy.readthedocs.io/en/latest/api_reference.html#pluggy.PluginManager.load_setuptools_entrypoints",
     "pluggy.pluginmanager.parse_hookimpl_opts": "https://pluggy.readthedocs.io/en/latest/api_reference.html#pluggy.PluginManager.parse_hookimpl_opts",
     "pluggy.pluginmanager.parse_hookspec_opts": "https://pluggy.readthedocs.io/en/latest/api_reference.html#pluggy.PluginManager.parse_hookspec_opts",

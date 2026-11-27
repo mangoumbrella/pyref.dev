@@ -1,4 +1,4 @@
-VERSION = "1.4.5"
+VERSION = "2.0.0"
 
 # fmt: off
 MAPPING = {
@@ -8,6 +8,7 @@ MAPPING = {
     "filterpy.common.kinematic_kf": "https://filterpy.readthedocs.io/en/latest/common/common.html#filterpy.common.kinematic_kf",
     "filterpy.common.kinematic_state_transition": "https://filterpy.readthedocs.io/en/latest/common/common.html#filterpy.common.kinematic_state_transition",
     "filterpy.common.linear_ode_discretation": "https://filterpy.readthedocs.io/en/latest/common/common.html#filterpy.common.linear_ode_discretation",
+    "filterpy.common.outer_product_sum": "https://filterpy.readthedocs.io/en/latest/common/common.html#filterpy.common.outer_product_sum",
     "filterpy.common.q_continuous_white_noise": "https://filterpy.readthedocs.io/en/latest/common/common.html#filterpy.common.Q_continuous_white_noise",
     "filterpy.common.q_discrete_white_noise": "https://filterpy.readthedocs.io/en/latest/common/common.html#filterpy.common.Q_discrete_white_noise",
     "filterpy.common.runge_kutta4": "https://filterpy.readthedocs.io/en/latest/common/common.html#filterpy.common.runge_kutta4",
@@ -17,7 +18,7 @@ MAPPING = {
     "filterpy.discrete_bayes.normalize": "https://filterpy.readthedocs.io/en/latest/discrete_bayes/discrete_bayes.html#filterpy.discrete_bayes.normalize",
     "filterpy.discrete_bayes.predict": "https://filterpy.readthedocs.io/en/latest/discrete_bayes/discrete_bayes.html#filterpy.discrete_bayes.predict",
     "filterpy.discrete_bayes.update": "https://filterpy.readthedocs.io/en/latest/discrete_bayes/discrete_bayes.html#filterpy.discrete_bayes.update",
-    "filterpy.gh": "https://filterpy.readthedocs.io/en/latest/gh/benedict_bornder_constants.html",
+    "filterpy.gh": "https://filterpy.readthedocs.io/en/latest/gh/optimal_noise_smoothing.html",
     "filterpy.gh.benedict_bornder_constants": "https://filterpy.readthedocs.io/en/latest/gh/benedict_bornder_constants.html#filterpy.gh.benedict_bornder_constants",
     "filterpy.gh.critical_damping_parameters": "https://filterpy.readthedocs.io/en/latest/gh/critical_damping_parameters.html#filterpy.gh.critical_damping_parameters",
     "filterpy.gh.ghfilter": "https://filterpy.readthedocs.io/en/latest/gh/GHFilter.html#filterpy.gh.GHFilter",
@@ -48,7 +49,7 @@ MAPPING = {
     "filterpy.hinfinity.hinfinityfilter.residual_of": "https://filterpy.readthedocs.io/en/latest/hinfinity/HInfinityFilter.html#filterpy.hinfinity.HInfinityFilter.residual_of",
     "filterpy.hinfinity.hinfinityfilter.update": "https://filterpy.readthedocs.io/en/latest/hinfinity/HInfinityFilter.html#filterpy.hinfinity.HInfinityFilter.update",
     "filterpy.hinfinity.hinfinityfilter.v": "https://filterpy.readthedocs.io/en/latest/hinfinity/HInfinityFilter.html#filterpy.hinfinity.HInfinityFilter.V",
-    "filterpy.kalman": "https://filterpy.readthedocs.io/en/latest/kalman/Saver.html",
+    "filterpy.kalman": "https://filterpy.readthedocs.io/en/latest/kalman/MMAEFilterBank.html",
     "filterpy.kalman.batch_filter": "https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html#filterpy.kalman.batch_filter",
     "filterpy.kalman.ensemblekalmanfilter": "https://filterpy.readthedocs.io/en/latest/kalman/EnsembleKalmanFilter.html#filterpy.kalman.EnsembleKalmanFilter",
     "filterpy.kalman.ensemblekalmanfilter.__init__": "https://filterpy.readthedocs.io/en/latest/kalman/EnsembleKalmanFilter.html#filterpy.kalman.EnsembleKalmanFilter.__init__",
@@ -113,6 +114,7 @@ MAPPING = {
     "filterpy.kalman.kalmanfilter.test_matrix_dimensions": "https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html#filterpy.kalman.KalmanFilter.test_matrix_dimensions",
     "filterpy.kalman.kalmanfilter.update": "https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html#filterpy.kalman.KalmanFilter.update",
     "filterpy.kalman.kalmanfilter.update_correlated": "https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html#filterpy.kalman.KalmanFilter.update_correlated",
+    "filterpy.kalman.kalmanfilter.update_sequential": "https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html#filterpy.kalman.KalmanFilter.update_sequential",
     "filterpy.kalman.kalmanfilter.update_steadystate": "https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html#filterpy.kalman.KalmanFilter.update_steadystate",
     "filterpy.kalman.merwescaledsigmapoints": "https://filterpy.readthedocs.io/en/latest/kalman/UnscentedKalmanFilter.html#filterpy.kalman.MerweScaledSigmaPoints",
     "filterpy.kalman.merwescaledsigmapoints.__init__": "https://filterpy.readthedocs.io/en/latest/kalman/UnscentedKalmanFilter.html#filterpy.kalman.MerweScaledSigmaPoints.__init__",
@@ -123,10 +125,6 @@ MAPPING = {
     "filterpy.kalman.mmaefilterbank.predict": "https://filterpy.readthedocs.io/en/latest/kalman/MMAEFilterBank.html#filterpy.kalman.MMAEFilterBank.predict",
     "filterpy.kalman.mmaefilterbank.update": "https://filterpy.readthedocs.io/en/latest/kalman/MMAEFilterBank.html#filterpy.kalman.MMAEFilterBank.update",
     "filterpy.kalman.predict": "https://filterpy.readthedocs.io/en/latest/kalman/KalmanFilter.html#filterpy.kalman.predict",
-    "filterpy.kalman.saver": "https://filterpy.readthedocs.io/en/latest/kalman/Saver.html#filterpy.kalman.Saver",
-    "filterpy.kalman.saver.__init__": "https://filterpy.readthedocs.io/en/latest/kalman/Saver.html#filterpy.kalman.Saver.__init__",
-    "filterpy.kalman.saver.save": "https://filterpy.readthedocs.io/en/latest/kalman/Saver.html#filterpy.kalman.Saver.save",
-    "filterpy.kalman.saver.to_array": "https://filterpy.readthedocs.io/en/latest/kalman/Saver.html#filterpy.kalman.Saver.to_array",
     "filterpy.kalman.simplexsigmapoints": "https://filterpy.readthedocs.io/en/latest/kalman/UnscentedKalmanFilter.html#filterpy.kalman.SimplexSigmaPoints",
     "filterpy.kalman.simplexsigmapoints.__init__": "https://filterpy.readthedocs.io/en/latest/kalman/UnscentedKalmanFilter.html#filterpy.kalman.SimplexSigmaPoints.__init__",
     "filterpy.kalman.simplexsigmapoints.num_sigmas": "https://filterpy.readthedocs.io/en/latest/kalman/UnscentedKalmanFilter.html#filterpy.kalman.SimplexSigmaPoints.num_sigmas",
@@ -144,6 +142,8 @@ MAPPING = {
     "filterpy.kalman.squarerootkalmanfilter.r": "https://filterpy.readthedocs.io/en/latest/kalman/SquareRootFilter.html#filterpy.kalman.SquareRootKalmanFilter.R",
     "filterpy.kalman.squarerootkalmanfilter.r1_2": "https://filterpy.readthedocs.io/en/latest/kalman/SquareRootFilter.html#filterpy.kalman.SquareRootKalmanFilter.R1_2",
     "filterpy.kalman.squarerootkalmanfilter.residual_of": "https://filterpy.readthedocs.io/en/latest/kalman/SquareRootFilter.html#filterpy.kalman.SquareRootKalmanFilter.residual_of",
+    "filterpy.kalman.squarerootkalmanfilter.s": "https://filterpy.readthedocs.io/en/latest/kalman/SquareRootFilter.html#filterpy.kalman.SquareRootKalmanFilter.S",
+    "filterpy.kalman.squarerootkalmanfilter.si": "https://filterpy.readthedocs.io/en/latest/kalman/SquareRootFilter.html#filterpy.kalman.SquareRootKalmanFilter.SI",
     "filterpy.kalman.squarerootkalmanfilter.update": "https://filterpy.readthedocs.io/en/latest/kalman/SquareRootFilter.html#filterpy.kalman.SquareRootKalmanFilter.update",
     "filterpy.kalman.unscented_transform": "https://filterpy.readthedocs.io/en/latest/kalman/unscented_transform.html#filterpy.kalman.unscented_transform",
     "filterpy.kalman.unscentedkalmanfilter": "https://filterpy.readthedocs.io/en/latest/kalman/UnscentedKalmanFilter.html#filterpy.kalman.UnscentedKalmanFilter",
@@ -184,7 +184,6 @@ MAPPING = {
     "filterpy.stats.mul": "https://filterpy.readthedocs.io/en/latest/stats/stats.html#filterpy.stats.mul",
     "filterpy.stats.multivariate_gaussian": "https://filterpy.readthedocs.io/en/latest/stats/stats.html#filterpy.stats.multivariate_gaussian",
     "filterpy.stats.multivariate_multiply": "https://filterpy.readthedocs.io/en/latest/stats/stats.html#filterpy.stats.multivariate_multiply",
-    "filterpy.stats.ness": "https://filterpy.readthedocs.io/en/latest/stats/stats.html#filterpy.stats.NESS",
     "filterpy.stats.norm_cdf": "https://filterpy.readthedocs.io/en/latest/stats/stats.html#filterpy.stats.norm_cdf",
     "filterpy.stats.plot_covariance_ellipse": "https://filterpy.readthedocs.io/en/latest/stats/stats.html#filterpy.stats.plot_covariance_ellipse",
     "filterpy.stats.plot_discrete_cdf": "https://filterpy.readthedocs.io/en/latest/stats/stats.html#filterpy.stats.plot_discrete_cdf",

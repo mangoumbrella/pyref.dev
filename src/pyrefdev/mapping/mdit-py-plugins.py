@@ -1,4 +1,4 @@
-VERSION = "0.6.1"
+VERSION = "0.7.0"
 
 # fmt: off
 MAPPING = {
@@ -32,6 +32,8 @@ MAPPING = {
     "mdit_py_plugins.myst_blocks.myst_block_plugin": "https://mdit-py-plugins.readthedocs.io/en/stable/index.html#mdit_py_plugins.myst_blocks.myst_block_plugin",
     "mdit_py_plugins.myst_role": "https://mdit-py-plugins.readthedocs.io/en/stable/index.html",
     "mdit_py_plugins.myst_role.myst_role_plugin": "https://mdit-py-plugins.readthedocs.io/en/stable/index.html#mdit_py_plugins.myst_role.myst_role_plugin",
+    "mdit_py_plugins.section_ref": "https://mdit-py-plugins.readthedocs.io/en/stable/index.html",
+    "mdit_py_plugins.section_ref.section_ref_plugin": "https://mdit-py-plugins.readthedocs.io/en/stable/index.html#mdit_py_plugins.section_ref.section_ref_plugin",
     "mdit_py_plugins.subscript": "https://mdit-py-plugins.readthedocs.io/en/stable/index.html",
     "mdit_py_plugins.subscript.sub_plugin": "https://mdit-py-plugins.readthedocs.io/en/stable/index.html#mdit_py_plugins.subscript.sub_plugin",
     "mdit_py_plugins.superscript": "https://mdit-py-plugins.readthedocs.io/en/stable/index.html",

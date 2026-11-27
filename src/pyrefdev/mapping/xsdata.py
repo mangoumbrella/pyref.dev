@@ -1,4 +1,4 @@
-VERSION = "26.2"
+VERSION = "26.10"
 
 # fmt: off
 MAPPING = {
@@ -42,6 +42,9 @@ MAPPING = {
     "xsdata.codegen.handlers.add_attribute_substitutions.addattributesubstitutions.prepare_substituted": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/add_attribute_substitutions/#xsdata.codegen.handlers.add_attribute_substitutions.AddAttributeSubstitutions.prepare_substituted",
     "xsdata.codegen.handlers.add_attribute_substitutions.addattributesubstitutions.process": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/add_attribute_substitutions/#xsdata.codegen.handlers.add_attribute_substitutions.AddAttributeSubstitutions.process",
     "xsdata.codegen.handlers.add_attribute_substitutions.addattributesubstitutions.process_attribute": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/add_attribute_substitutions/#xsdata.codegen.handlers.add_attribute_substitutions.AddAttributeSubstitutions.process_attribute",
+    "xsdata.codegen.handlers.add_nillable_text_overrides": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/add_nillable_text_overrides/#xsdata.codegen.handlers.add_nillable_text_overrides",
+    "xsdata.codegen.handlers.add_nillable_text_overrides.addnillabletextoverrides": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/add_nillable_text_overrides/#xsdata.codegen.handlers.add_nillable_text_overrides.AddNillableTextOverrides",
+    "xsdata.codegen.handlers.add_nillable_text_overrides.addnillabletextoverrides.process": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/add_nillable_text_overrides/#xsdata.codegen.handlers.add_nillable_text_overrides.AddNillableTextOverrides.process",
     "xsdata.codegen.handlers.calculate_attribute_paths": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/calculate_attribute_paths/#xsdata.codegen.handlers.calculate_attribute_paths",
     "xsdata.codegen.handlers.calculate_attribute_paths.calculateattributepaths": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/calculate_attribute_paths/#xsdata.codegen.handlers.calculate_attribute_paths.CalculateAttributePaths",
     "xsdata.codegen.handlers.calculate_attribute_paths.calculateattributepaths.process": "https://xsdata.readthedocs.io/en/latest/api/codegen/handlers/calculate_attribute_paths/#xsdata.codegen.handlers.calculate_attribute_paths.CalculateAttributePaths.process",
@@ -434,6 +437,7 @@ MAPPING = {
     "xsdata.codegen.resolver.dependenciesresolver": "https://xsdata.readthedocs.io/en/latest/api/codegen/resolver/#xsdata.codegen.resolver.DependenciesResolver",
     "xsdata.codegen.resolver.dependenciesresolver.__init__": "https://xsdata.readthedocs.io/en/latest/api/codegen/resolver/#xsdata.codegen.resolver.DependenciesResolver.__init__",
     "xsdata.codegen.resolver.dependenciesresolver.apply_aliases": "https://xsdata.readthedocs.io/en/latest/api/codegen/resolver/#xsdata.codegen.resolver.DependenciesResolver.apply_aliases",
+    "xsdata.codegen.resolver.dependenciesresolver.class_slugs": "https://xsdata.readthedocs.io/en/latest/api/codegen/resolver/#xsdata.codegen.resolver.DependenciesResolver.class_slugs",
     "xsdata.codegen.resolver.dependenciesresolver.create_class_list": "https://xsdata.readthedocs.io/en/latest/api/codegen/resolver/#xsdata.codegen.resolver.DependenciesResolver.create_class_list",
     "xsdata.codegen.resolver.dependenciesresolver.create_class_map": "https://xsdata.readthedocs.io/en/latest/api/codegen/resolver/#xsdata.codegen.resolver.DependenciesResolver.create_class_map",
     "xsdata.codegen.resolver.dependenciesresolver.get_class_module": "https://xsdata.readthedocs.io/en/latest/api/codegen/resolver/#xsdata.codegen.resolver.DependenciesResolver.get_class_module",
@@ -577,6 +581,11 @@ MAPPING = {
     "xsdata.formats.converter.stringconverter.serialize": "https://xsdata.readthedocs.io/en/latest/api/formats/converter/#xsdata.formats.converter.StringConverter.serialize",
     "xsdata.formats.converter.timeconverter": "https://xsdata.readthedocs.io/en/latest/api/formats/converter/#xsdata.formats.converter.TimeConverter",
     "xsdata.formats.converter.timeconverter.deserialize": "https://xsdata.readthedocs.io/en/latest/api/formats/converter/#xsdata.formats.converter.TimeConverter.deserialize",
+    "xsdata.formats.dataclass.bytecode": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/bytecode/#xsdata.formats.dataclass.bytecode",
+    "xsdata.formats.dataclass.bytecode.memorybytecodecache": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/bytecode/#xsdata.formats.dataclass.bytecode.MemoryBytecodeCache",
+    "xsdata.formats.dataclass.bytecode.memorybytecodecache.clear": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/bytecode/#xsdata.formats.dataclass.bytecode.MemoryBytecodeCache.clear",
+    "xsdata.formats.dataclass.bytecode.memorybytecodecache.dump_bytecode": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/bytecode/#xsdata.formats.dataclass.bytecode.MemoryBytecodeCache.dump_bytecode",
+    "xsdata.formats.dataclass.bytecode.memorybytecodecache.load_bytecode": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/bytecode/#xsdata.formats.dataclass.bytecode.MemoryBytecodeCache.load_bytecode",
     "xsdata.formats.dataclass.client": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/client/#xsdata.formats.dataclass.client",
     "xsdata.formats.dataclass.client.client": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/client/#xsdata.formats.dataclass.client.Client",
     "xsdata.formats.dataclass.client.client.__init__": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/client/#xsdata.formats.dataclass.client.Client.__init__",
@@ -646,6 +655,7 @@ MAPPING = {
     "xsdata.formats.dataclass.filters.filters.constant_name": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/filters/#xsdata.formats.dataclass.filters.Filters.constant_name",
     "xsdata.formats.dataclass.filters.filters.constant_value": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/filters/#xsdata.formats.dataclass.filters.Filters.constant_value",
     "xsdata.formats.dataclass.filters.filters.default_imports": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/filters/#xsdata.formats.dataclass.filters.Filters.default_imports",
+    "xsdata.formats.dataclass.filters.filters.enum_base": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/filters/#xsdata.formats.dataclass.filters.Filters.enum_base",
     "xsdata.formats.dataclass.filters.filters.field_choices": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/filters/#xsdata.formats.dataclass.filters.Filters.field_choices",
     "xsdata.formats.dataclass.filters.filters.field_default_enum": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/filters/#xsdata.formats.dataclass.filters.Filters.field_default_enum",
     "xsdata.formats.dataclass.filters.filters.field_default_tokens": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/filters/#xsdata.formats.dataclass.filters.Filters.field_default_tokens",
@@ -856,6 +866,7 @@ MAPPING = {
     "xsdata.formats.dataclass.parsers.tree.treeparser.start": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/tree/#xsdata.formats.dataclass.parsers.tree.TreeParser.start",
     "xsdata.formats.dataclass.parsers.utils": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/utils/#xsdata.formats.dataclass.parsers.utils",
     "xsdata.formats.dataclass.parsers.utils.parserutils": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/utils/#xsdata.formats.dataclass.parsers.utils.ParserUtils",
+    "xsdata.formats.dataclass.parsers.utils.parserutils.accepts_empty_text": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/utils/#xsdata.formats.dataclass.parsers.utils.ParserUtils.accepts_empty_text",
     "xsdata.formats.dataclass.parsers.utils.parserutils.normalize_content": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/utils/#xsdata.formats.dataclass.parsers.utils.ParserUtils.normalize_content",
     "xsdata.formats.dataclass.parsers.utils.parserutils.parse_any_attribute": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/utils/#xsdata.formats.dataclass.parsers.utils.ParserUtils.parse_any_attribute",
     "xsdata.formats.dataclass.parsers.utils.parserutils.parse_any_attributes": "https://xsdata.readthedocs.io/en/latest/api/formats/dataclass/parsers/utils/#xsdata.formats.dataclass.parsers.utils.ParserUtils.parse_any_attributes",

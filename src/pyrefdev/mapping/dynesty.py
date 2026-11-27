@@ -1,4 +1,4 @@
-VERSION = "3.1.0"
+VERSION = "3.2.0"
 
 # fmt: off
 MAPPING = {
@@ -175,6 +175,7 @@ MAPPING = {
     "dynesty.utils.loglikelihood": "https://dynesty.readthedocs.io/en/stable/api.html#dynesty.utils.LogLikelihood",
     "dynesty.utils.loglikelihood.append_evaluation_history": "https://dynesty.readthedocs.io/en/stable/api.html#dynesty.utils.LogLikelihood.append_evaluation_history",
     "dynesty.utils.loglikelihood.finalize_history": "https://dynesty.readthedocs.io/en/stable/api.html#dynesty.utils.LogLikelihood.finalize_history",
+    "dynesty.utils.loglikelihood.history_check": "https://dynesty.readthedocs.io/en/stable/api.html#dynesty.utils.LogLikelihood.history_check",
     "dynesty.utils.loglikelihood.history_init": "https://dynesty.readthedocs.io/en/stable/api.html#dynesty.utils.LogLikelihood.history_init",
     "dynesty.utils.loglikelihood.history_save": "https://dynesty.readthedocs.io/en/stable/api.html#dynesty.utils.LogLikelihood.history_save",
     "dynesty.utils.logloutput": "https://dynesty.readthedocs.io/en/stable/api.html#dynesty.utils.LoglOutput",

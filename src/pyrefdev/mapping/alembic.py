@@ -1,4 +1,4 @@
-VERSION = "1.20.0"
+VERSION = "1.20.1"
 
 # fmt: off
 MAPPING = {
@@ -21,6 +21,9 @@ MAPPING = {
     "alembic.autogenerate.compare_metadata.params.context": "https://alembic.sqlalchemy.org/en/latest/api/autogenerate.html#alembic.autogenerate.compare_metadata.params.context",
     "alembic.autogenerate.compare_metadata.params.metadata": "https://alembic.sqlalchemy.org/en/latest/api/autogenerate.html#alembic.autogenerate.compare_metadata.params.metadata",
     "alembic.autogenerate.produce_migrations": "https://alembic.sqlalchemy.org/en/latest/api/autogenerate.html#alembic.autogenerate.produce_migrations",
+    "alembic.autogenerate.produce_migrations.params": "https://alembic.sqlalchemy.org/en/latest/api/autogenerate.html",
+    "alembic.autogenerate.produce_migrations.params.context": "https://alembic.sqlalchemy.org/en/latest/api/autogenerate.html#alembic.autogenerate.produce_migrations.params.context",
+    "alembic.autogenerate.produce_migrations.params.metadata": "https://alembic.sqlalchemy.org/en/latest/api/autogenerate.html#alembic.autogenerate.produce_migrations.params.metadata",
     "alembic.autogenerate.render_python_code": "https://alembic.sqlalchemy.org/en/latest/api/autogenerate.html#alembic.autogenerate.render_python_code",
     "alembic.autogenerate.render_python_code.params": "https://alembic.sqlalchemy.org/en/latest/api/autogenerate.html",
     "alembic.autogenerate.render_python_code.params.alembic_module_prefix": "https://alembic.sqlalchemy.org/en/latest/api/autogenerate.html#alembic.autogenerate.render_python_code.params.alembic_module_prefix",
@@ -830,6 +833,7 @@ MAPPING = {
     "alembic.runtime.environment.environmentcontext.run_migrations": "https://alembic.sqlalchemy.org/en/latest/api/runtime.html#alembic.runtime.environment.EnvironmentContext.run_migrations",
     "alembic.runtime.environment.environmentcontext.script": "https://alembic.sqlalchemy.org/en/latest/api/runtime.html#alembic.runtime.environment.EnvironmentContext.script",
     "alembic.runtime.environment.environmentcontext.static_output": "https://alembic.sqlalchemy.org/en/latest/api/runtime.html#alembic.runtime.environment.EnvironmentContext.static_output",
+    "alembic.runtime.environment.onversionapplyfn": "https://alembic.sqlalchemy.org/en/latest/api/runtime.html#alembic.runtime.environment.OnVersionApplyFn",
     "alembic.runtime.migration": "https://alembic.sqlalchemy.org/en/latest/api/runtime.html#module-alembic.runtime.migration",
     "alembic.runtime.migration.migrationcontext": "https://alembic.sqlalchemy.org/en/latest/api/runtime.html#alembic.runtime.migration.MigrationContext",
     "alembic.runtime.migration.migrationcontext.autocommit_block": "https://alembic.sqlalchemy.org/en/latest/api/runtime.html#alembic.runtime.migration.MigrationContext.autocommit_block",

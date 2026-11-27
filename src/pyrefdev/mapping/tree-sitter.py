@@ -1,4 +1,4 @@
-VERSION = "0.26.0"
+VERSION = "0.27.0"
 
 # fmt: off
 MAPPING = {
@@ -108,9 +108,11 @@ MAPPING = {
     "tree_sitter.point.edit": "https://tree-sitter.github.io/py-tree-sitter/classes/tree_sitter.Point.html#tree_sitter.Point.edit",
     "tree_sitter.point.row": "https://tree-sitter.github.io/py-tree-sitter/classes/tree_sitter.Point.html#tree_sitter.Point.row",
     "tree_sitter.query": "https://tree-sitter.github.io/py-tree-sitter/classes/tree_sitter.Query.html#tree_sitter.Query",
+    "tree_sitter.query.__copy__": "https://tree-sitter.github.io/py-tree-sitter/classes/tree_sitter.Query.html#tree_sitter.Query.__copy__",
     "tree_sitter.query.capture_count": "https://tree-sitter.github.io/py-tree-sitter/classes/tree_sitter.Query.html#tree_sitter.Query.capture_count",
     "tree_sitter.query.capture_name": "https://tree-sitter.github.io/py-tree-sitter/classes/tree_sitter.Query.html#tree_sitter.Query.capture_name",
     "tree_sitter.query.capture_quantifier": "https://tree-sitter.github.io/py-tree-sitter/classes/tree_sitter.Query.html#tree_sitter.Query.capture_quantifier",
+    "tree_sitter.query.copy": "https://tree-sitter.github.io/py-tree-sitter/classes/tree_sitter.Query.html#tree_sitter.Query.copy",
     "tree_sitter.query.disable_capture": "https://tree-sitter.github.io/py-tree-sitter/classes/tree_sitter.Query.html#tree_sitter.Query.disable_capture",
     "tree_sitter.query.disable_pattern": "https://tree-sitter.github.io/py-tree-sitter/classes/tree_sitter.Query.html#tree_sitter.Query.disable_pattern",
     "tree_sitter.query.end_byte_for_pattern": "https://tree-sitter.github.io/py-tree-sitter/classes/tree_sitter.Query.html#tree_sitter.Query.end_byte_for_pattern",

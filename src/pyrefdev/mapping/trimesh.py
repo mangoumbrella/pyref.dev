@@ -1,4 +1,4 @@
-VERSION = "5.1.0"
+VERSION = "5.2.2"
 
 # fmt: off
 MAPPING = {
@@ -824,6 +824,7 @@ MAPPING = {
     "trimesh.pointcloud.colors": "https://trimesh.org/trimesh.html#trimesh.PointCloud.colors",
     "trimesh.pointcloud.convex_hull": "https://trimesh.org/trimesh.html#trimesh.PointCloud.convex_hull",
     "trimesh.pointcloud.copy": "https://trimesh.org/trimesh.html#trimesh.PointCloud.copy",
+    "trimesh.pointcloud.estimate_normals": "https://trimesh.org/trimesh.html#trimesh.PointCloud.estimate_normals",
     "trimesh.pointcloud.export": "https://trimesh.org/trimesh.html#trimesh.PointCloud.export",
     "trimesh.pointcloud.extents": "https://trimesh.org/trimesh.html#trimesh.PointCloud.extents",
     "trimesh.pointcloud.hash": "https://trimesh.org/trimesh.html#trimesh.PointCloud.hash",
@@ -853,6 +854,7 @@ MAPPING = {
     "trimesh.points.pointcloud.colors": "https://trimesh.org/trimesh.points.html#trimesh.points.PointCloud.colors",
     "trimesh.points.pointcloud.convex_hull": "https://trimesh.org/trimesh.points.html#trimesh.points.PointCloud.convex_hull",
     "trimesh.points.pointcloud.copy": "https://trimesh.org/trimesh.points.html#trimesh.points.PointCloud.copy",
+    "trimesh.points.pointcloud.estimate_normals": "https://trimesh.org/trimesh.points.html#trimesh.points.PointCloud.estimate_normals",
     "trimesh.points.pointcloud.export": "https://trimesh.org/trimesh.points.html#trimesh.points.PointCloud.export",
     "trimesh.points.pointcloud.extents": "https://trimesh.org/trimesh.points.html#trimesh.points.PointCloud.extents",
     "trimesh.points.pointcloud.hash": "https://trimesh.org/trimesh.points.html#trimesh.points.PointCloud.hash",

@@ -1,4 +1,4 @@
-VERSION = "5.0.1"
+VERSION = "5.0.2"
 
 # fmt: off
 MAPPING = {
@@ -1055,6 +1055,23 @@ MAPPING = {
     "pyteomics.proforma.psimodresolver.clear_cache": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.PSIModResolver.clear_cache",
     "pyteomics.proforma.psimodresolver.enable_caching": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.PSIModResolver.enable_caching",
     "pyteomics.proforma.psimodresolver.parse_identifier": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.PSIModResolver.parse_identifier",
+    "pyteomics.proforma.residmodification": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidModification",
+    "pyteomics.proforma.residmodification.__init__": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidModification.__init__",
+    "pyteomics.proforma.residmodification.composition": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidModification.composition",
+    "pyteomics.proforma.residmodification.definition": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidModification.definition",
+    "pyteomics.proforma.residmodification.find_tag_type": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidModification.find_tag_type",
+    "pyteomics.proforma.residmodification.has_mass": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidModification.has_mass",
+    "pyteomics.proforma.residmodification.id": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidModification.id",
+    "pyteomics.proforma.residmodification.key": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidModification.key",
+    "pyteomics.proforma.residmodification.mass": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidModification.mass",
+    "pyteomics.proforma.residmodification.name": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidModification.name",
+    "pyteomics.proforma.residmodification.provider": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidModification.provider",
+    "pyteomics.proforma.residmodification.resolve": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidModification.resolve",
+    "pyteomics.proforma.residresolver": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidResolver",
+    "pyteomics.proforma.residresolver.__init__": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidResolver.__init__",
+    "pyteomics.proforma.residresolver.clear_cache": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidResolver.clear_cache",
+    "pyteomics.proforma.residresolver.enable_caching": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidResolver.enable_caching",
+    "pyteomics.proforma.residresolver.parse_identifier": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.ResidResolver.parse_identifier",
     "pyteomics.proforma.set_unimod_path": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.set_unimod_path",
     "pyteomics.proforma.stableisotope": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.StableIsotope",
     "pyteomics.proforma.stableisotope.__init__": "https://pyteomics.readthedocs.io/en/stable/api/proforma.html#pyteomics.proforma.StableIsotope.__init__",

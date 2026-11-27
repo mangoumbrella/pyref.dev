@@ -1,4 +1,4 @@
-VERSION = "3.4.0"
+VERSION = "3.6.0"
 
 # fmt: off
 MAPPING = {
@@ -62,6 +62,7 @@ MAPPING = {
     "pyytlounge.models": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#module-pyytlounge.models",
     "pyytlounge.models.authstate": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthState",
     "pyytlounge.models.authstate.deserialize": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthState.deserialize",
+    "pyytlounge.models.authstate.device_id": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthState.device_id",
     "pyytlounge.models.authstate.expiry": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthState.expiry",
     "pyytlounge.models.authstate.lounge_id_token": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthState.lounge_id_token",
     "pyytlounge.models.authstate.refresh_token": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthState.refresh_token",
@@ -69,6 +70,7 @@ MAPPING = {
     "pyytlounge.models.authstate.serialize": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthState.serialize",
     "pyytlounge.models.authstate.version": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthState.version",
     "pyytlounge.models.authstatedata": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthStateData",
+    "pyytlounge.models.authstatedata.deviceid": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthStateData.deviceId",
     "pyytlounge.models.authstatedata.expiry": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthStateData.expiry",
     "pyytlounge.models.authstatedata.loungeidtoken": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthStateData.loungeIdToken",
     "pyytlounge.models.authstatedata.refreshtoken": "https://pyytlounge.readthedocs.io/en/stable/pyytlounge.html#pyytlounge.models.AuthStateData.refreshToken",

@@ -1,4 +1,4 @@
-VERSION = "1.7.0"
+VERSION = "1.9.0"
 
 # fmt: off
 MAPPING = {
@@ -10,6 +10,7 @@ MAPPING = {
     "jnius.javaclass.__javaclass__": "https://pyjnius.readthedocs.io/en/latest/api.html#jnius.JavaClass.__javaclass__",
     "jnius.javaclass.__javaconstructor__": "https://pyjnius.readthedocs.io/en/latest/api.html#jnius.JavaClass.__javaconstructor__",
     "jnius.javaclass.__metaclass__": "https://pyjnius.readthedocs.io/en/latest/api.html#jnius.JavaClass.__metaclass__",
+    "jnius.javaexception": "https://pyjnius.readthedocs.io/en/latest/api.html#jnius.JavaException",
     "jnius.javafield": "https://pyjnius.readthedocs.io/en/latest/api.html#jnius.JavaField",
     "jnius.javafield.__init__": "https://pyjnius.readthedocs.io/en/latest/api.html#jnius.JavaField.__init__",
     "jnius.javamethod": "https://pyjnius.readthedocs.io/en/latest/api.html#jnius.JavaMethod",

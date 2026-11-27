@@ -1,4 +1,4 @@
-VERSION = "5.7.0"
+VERSION = "5.7.2"
 
 # fmt: off
 MAPPING = {
@@ -23,6 +23,9 @@ MAPPING = {
     "konoha.word_tokenizers.janome_tokenizer": "https://konoha.readthedocs.io/en/stable/reference/word_tokenizers/janome_tokenizer.html#module-konoha.word_tokenizers.janome_tokenizer",
     "konoha.word_tokenizers.janome_tokenizer.janometokenizer": "https://konoha.readthedocs.io/en/stable/reference/word_tokenizers/janome_tokenizer.html#konoha.word_tokenizers.janome_tokenizer.JanomeTokenizer",
     "konoha.word_tokenizers.janome_tokenizer.janometokenizer.tokenize": "https://konoha.readthedocs.io/en/stable/reference/word_tokenizers/janome_tokenizer.html#konoha.word_tokenizers.janome_tokenizer.JanomeTokenizer.tokenize",
+    "konoha.word_tokenizers.kytea_tokenizer": "https://konoha.readthedocs.io/en/stable/reference/word_tokenizers/kytea_tokenizer.html#module-konoha.word_tokenizers.kytea_tokenizer",
+    "konoha.word_tokenizers.kytea_tokenizer.kyteatokenizer": "https://konoha.readthedocs.io/en/stable/reference/word_tokenizers/kytea_tokenizer.html#konoha.word_tokenizers.kytea_tokenizer.KyTeaTokenizer",
+    "konoha.word_tokenizers.kytea_tokenizer.kyteatokenizer.tokenize": "https://konoha.readthedocs.io/en/stable/reference/word_tokenizers/kytea_tokenizer.html#konoha.word_tokenizers.kytea_tokenizer.KyTeaTokenizer.tokenize",
     "konoha.word_tokenizers.mecab_tokenizer": "https://konoha.readthedocs.io/en/stable/reference/word_tokenizers/mecab_tokenizer.html#module-konoha.word_tokenizers.mecab_tokenizer",
     "konoha.word_tokenizers.mecab_tokenizer.mecabtokenizer": "https://konoha.readthedocs.io/en/stable/reference/word_tokenizers/mecab_tokenizer.html#konoha.word_tokenizers.mecab_tokenizer.MeCabTokenizer",
     "konoha.word_tokenizers.mecab_tokenizer.mecabtokenizer.tokenize": "https://konoha.readthedocs.io/en/stable/reference/word_tokenizers/mecab_tokenizer.html#konoha.word_tokenizers.mecab_tokenizer.MeCabTokenizer.tokenize",

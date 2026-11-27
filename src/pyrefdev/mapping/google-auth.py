@@ -1,4 +1,4 @@
-VERSION = "2.58.0"
+VERSION = "2.62.2"
 
 # fmt: off
 MAPPING = {
@@ -474,6 +474,7 @@ MAPPING = {
     "google.auth.environment_vars.gce_metadata_root": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.environment_vars.html#google.auth.environment_vars.GCE_METADATA_ROOT",
     "google.auth.environment_vars.gce_metadata_timeout": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.environment_vars.html#google.auth.environment_vars.GCE_METADATA_TIMEOUT",
     "google.auth.environment_vars.google_api_certificate_config": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.environment_vars.html#google.auth.environment_vars.GOOGLE_API_CERTIFICATE_CONFIG",
+    "google.auth.environment_vars.google_api_enable_runtime_bound_token": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.environment_vars.html#google.auth.environment_vars.GOOGLE_API_ENABLE_RUNTIME_BOUND_TOKEN",
     "google.auth.environment_vars.google_api_prevent_agent_token_sharing_for_gcp_services": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.environment_vars.html#google.auth.environment_vars.GOOGLE_API_PREVENT_AGENT_TOKEN_SHARING_FOR_GCP_SERVICES",
     "google.auth.environment_vars.google_api_use_client_certificate": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.environment_vars.html#google.auth.environment_vars.GOOGLE_API_USE_CLIENT_CERTIFICATE",
     "google.auth.environment_vars.google_api_use_mtls_endpoint": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.environment_vars.html#google.auth.environment_vars.GOOGLE_API_USE_MTLS_ENDPOINT",
@@ -783,6 +784,7 @@ MAPPING = {
     "google.auth.transport.urllib3.authorizedhttp": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.transport.urllib3.html#google.auth.transport.urllib3.AuthorizedHttp",
     "google.auth.transport.urllib3.authorizedhttp.configure_mtls_channel": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.transport.urllib3.html#google.auth.transport.urllib3.AuthorizedHttp.configure_mtls_channel",
     "google.auth.transport.urllib3.authorizedhttp.headers": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.transport.urllib3.html#google.auth.transport.urllib3.AuthorizedHttp.headers",
+    "google.auth.transport.urllib3.authorizedhttp.is_mtls": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.transport.urllib3.html#google.auth.transport.urllib3.AuthorizedHttp.is_mtls",
     "google.auth.transport.urllib3.authorizedhttp.request": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.transport.urllib3.html#google.auth.transport.urllib3.AuthorizedHttp.request",
     "google.auth.transport.urllib3.authorizedhttp.request_encode_body": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.transport.urllib3.html#google.auth.transport.urllib3.AuthorizedHttp.request_encode_body",
     "google.auth.transport.urllib3.authorizedhttp.request_encode_url": "https://googleapis.dev/python/google-auth/latest/reference/google.auth.transport.urllib3.html#google.auth.transport.urllib3.AuthorizedHttp.request_encode_url",

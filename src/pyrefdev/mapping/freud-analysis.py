@@ -1,4 +1,4 @@
-VERSION = "3.5.0"
+VERSION = "3.6.1"
 
 # fmt: off
 MAPPING = {
@@ -75,8 +75,12 @@ MAPPING = {
     "freud.data.unitcell.fcc": "https://freud.readthedocs.io/en/stable/modules/data.html#freud.data.UnitCell.fcc",
     "freud.data.unitcell.from_cif": "https://freud.readthedocs.io/en/stable/modules/data.html#freud.data.UnitCell.from_cif",
     "freud.data.unitcell.generate_system": "https://freud.readthedocs.io/en/stable/modules/data.html#freud.data.UnitCell.generate_system",
+    "freud.data.unitcell.graphene": "https://freud.readthedocs.io/en/stable/modules/data.html#freud.data.UnitCell.graphene",
+    "freud.data.unitcell.hcp": "https://freud.readthedocs.io/en/stable/modules/data.html#freud.data.UnitCell.hcp",
     "freud.data.unitcell.hex": "https://freud.readthedocs.io/en/stable/modules/data.html#freud.data.UnitCell.hex",
     "freud.data.unitcell.lattice_vectors": "https://freud.readthedocs.io/en/stable/modules/data.html#freud.data.UnitCell.lattice_vectors",
+    "freud.data.unitcell.oblique": "https://freud.readthedocs.io/en/stable/modules/data.html#freud.data.UnitCell.oblique",
+    "freud.data.unitcell.rectangular": "https://freud.readthedocs.io/en/stable/modules/data.html#freud.data.UnitCell.rectangular",
     "freud.data.unitcell.sc": "https://freud.readthedocs.io/en/stable/modules/data.html#freud.data.UnitCell.sc",
     "freud.data.unitcell.square": "https://freud.readthedocs.io/en/stable/modules/data.html#freud.data.UnitCell.square",
     "freud.density": "https://freud.readthedocs.io/en/stable/modules/density.html#module-freud.density",
@@ -225,6 +229,12 @@ MAPPING = {
     "freud.locality.aabbquery.plot": "https://freud.readthedocs.io/en/stable/modules/locality.html#freud.locality.AABBQuery.plot",
     "freud.locality.aabbquery.points": "https://freud.readthedocs.io/en/stable/modules/locality.html#freud.locality.AABBQuery.points",
     "freud.locality.aabbquery.query": "https://freud.readthedocs.io/en/stable/modules/locality.html#freud.locality.AABBQuery.query",
+    "freud.locality.cellquery": "https://freud.readthedocs.io/en/stable/modules/locality.html#freud.locality.CellQuery",
+    "freud.locality.cellquery.box": "https://freud.readthedocs.io/en/stable/modules/locality.html#freud.locality.CellQuery.box",
+    "freud.locality.cellquery.from_system": "https://freud.readthedocs.io/en/stable/modules/locality.html#freud.locality.CellQuery.from_system",
+    "freud.locality.cellquery.plot": "https://freud.readthedocs.io/en/stable/modules/locality.html#freud.locality.CellQuery.plot",
+    "freud.locality.cellquery.points": "https://freud.readthedocs.io/en/stable/modules/locality.html#freud.locality.CellQuery.points",
+    "freud.locality.cellquery.query": "https://freud.readthedocs.io/en/stable/modules/locality.html#freud.locality.CellQuery.query",
     "freud.locality.filter": "https://freud.readthedocs.io/en/stable/modules/locality.html#freud.locality.Filter",
     "freud.locality.filter.compute": "https://freud.readthedocs.io/en/stable/modules/locality.html#freud.locality.Filter.compute",
     "freud.locality.filter.default_query_args": "https://freud.readthedocs.io/en/stable/modules/locality.html#freud.locality.Filter.default_query_args",

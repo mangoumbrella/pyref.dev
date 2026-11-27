@@ -1,4 +1,4 @@
-VERSION = "0.7.3"
+VERSION = "0.8.0"
 
 # fmt: off
 MAPPING = {
@@ -23,6 +23,7 @@ MAPPING = {
     "loguru._logger.logger.opt": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.opt",
     "loguru._logger.logger.parse": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.parse",
     "loguru._logger.logger.patch": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.patch",
+    "loguru._logger.logger.reinstall": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.reinstall",
     "loguru._logger.logger.remove": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.remove",
     "loguru._logger.logger.start": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.start",
     "loguru._logger.logger.stop": "https://loguru.readthedocs.io/en/stable/api/logger.html#loguru._logger.Logger.stop",

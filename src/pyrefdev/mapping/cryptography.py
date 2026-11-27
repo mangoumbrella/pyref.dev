@@ -1,4 +1,4 @@
-VERSION = "50.0.1"
+VERSION = "50.0.2"
 
 # fmt: off
 MAPPING = {
@@ -658,6 +658,11 @@ MAPPING = {
     "cryptography.hazmat.primitives.serialization.load_ssh_private_key": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/serialization/#cryptography.hazmat.primitives.serialization.load_ssh_private_key",
     "cryptography.hazmat.primitives.serialization.load_ssh_public_identity": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/serialization/#cryptography.hazmat.primitives.serialization.load_ssh_public_identity",
     "cryptography.hazmat.primitives.serialization.load_ssh_public_key": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/serialization/#cryptography.hazmat.primitives.serialization.load_ssh_public_key",
+    "cryptography.hazmat.primitives.serialization.mldsa44ed25519privatekey": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/serialization/#cryptography.hazmat.primitives.serialization.MLDSA44Ed25519PrivateKey",
+    "cryptography.hazmat.primitives.serialization.mldsa44ed25519privatekey.private_bytes": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/serialization/#cryptography.hazmat.primitives.serialization.MLDSA44Ed25519PrivateKey.private_bytes",
+    "cryptography.hazmat.primitives.serialization.mldsa44ed25519privatekey.public_key": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/serialization/#cryptography.hazmat.primitives.serialization.MLDSA44Ed25519PrivateKey.public_key",
+    "cryptography.hazmat.primitives.serialization.mldsa44ed25519publickey": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/serialization/#cryptography.hazmat.primitives.serialization.MLDSA44Ed25519PublicKey",
+    "cryptography.hazmat.primitives.serialization.mldsa44ed25519publickey.public_bytes": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/serialization/#cryptography.hazmat.primitives.serialization.MLDSA44Ed25519PublicKey.public_bytes",
     "cryptography.hazmat.primitives.serialization.noencryption": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/serialization/#cryptography.hazmat.primitives.serialization.NoEncryption",
     "cryptography.hazmat.primitives.serialization.parameterformat": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/serialization/#cryptography.hazmat.primitives.serialization.ParameterFormat",
     "cryptography.hazmat.primitives.serialization.parameterformat.pkcs3": "https://cryptography.io/en/latest/hazmat/primitives/asymmetric/serialization/#cryptography.hazmat.primitives.serialization.ParameterFormat.PKCS3",

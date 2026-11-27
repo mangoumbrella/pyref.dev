@@ -1,4 +1,4 @@
-VERSION = "1.4.4"
+VERSION = "1.4.5"
 
 # fmt: off
 MAPPING = {
@@ -8,7 +8,6 @@ MAPPING = {
     "mkdocs_autorefs._internal.backlinks.backlink": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.Backlink",
     "mkdocs_autorefs._internal.backlinks.backlink.crumbs": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.Backlink.crumbs",
     "mkdocs_autorefs._internal.backlinks.backlinkcrumb": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.BacklinkCrumb",
-    "mkdocs_autorefs._internal.backlinks.backlinkcrumb.__eq__": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.BacklinkCrumb.__eq__",
     "mkdocs_autorefs._internal.backlinks.backlinkcrumb.parent": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.BacklinkCrumb.parent",
     "mkdocs_autorefs._internal.backlinks.backlinkcrumb.title": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.BacklinkCrumb.title",
     "mkdocs_autorefs._internal.backlinks.backlinkcrumb.url": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.BacklinkCrumb.url",
@@ -109,7 +108,6 @@ MAPPING = {
     "mkdocs_autorefs.backlink": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.Backlink",
     "mkdocs_autorefs.backlink.crumbs": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.Backlink.crumbs",
     "mkdocs_autorefs.backlinkcrumb": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.BacklinkCrumb",
-    "mkdocs_autorefs.backlinkcrumb.__eq__": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.BacklinkCrumb.__eq__",
     "mkdocs_autorefs.backlinkcrumb.parent": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.BacklinkCrumb.parent",
     "mkdocs_autorefs.backlinkcrumb.title": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.BacklinkCrumb.title",
     "mkdocs_autorefs.backlinkcrumb.url": "https://mkdocstrings.github.io/autorefs/reference/api/#mkdocs_autorefs.BacklinkCrumb.url",

@@ -1,4 +1,4 @@
-VERSION = "1.0.3"
+VERSION = "1.0.4"
 
 # fmt: off
 MAPPING = {
@@ -135,6 +135,8 @@ MAPPING = {
     "tskit.load_text": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.load_text",
     "tskit.metadata": "https://tskit.dev/tskit/docs/stable/python-api.html",
     "tskit.metadata.metadataschema": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.MetadataSchema",
+    "tskit.metadata_access_warning_count": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.METADATA_ACCESS_WARNING_COUNT",
+    "tskit.metadata_access_warning_size": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.METADATA_ACCESS_WARNING_SIZE",
     "tskit.metadataencodingerror": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.MetadataEncodingError",
     "tskit.metadataschema": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.MetadataSchema",
     "tskit.metadataschema.asdict": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.MetadataSchema.asdict",
@@ -399,6 +401,7 @@ MAPPING = {
     "tskit.tablecollection.metadata": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TableCollection.metadata",
     "tskit.tablecollection.metadata_bytes": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TableCollection.metadata_bytes",
     "tskit.tablecollection.metadata_schema": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TableCollection.metadata_schema",
+    "tskit.tablecollection.metadata_size": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TableCollection.metadata_size",
     "tskit.tablecollection.migrations": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TableCollection.migrations",
     "tskit.tablecollection.mutations": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TableCollection.mutations",
     "tskit.tablecollection.nbytes": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TableCollection.nbytes",
@@ -639,6 +642,7 @@ MAPPING = {
     "tskit.treesequence.mean_descendants": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TreeSequence.mean_descendants",
     "tskit.treesequence.metadata": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TreeSequence.metadata",
     "tskit.treesequence.metadata_schema": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TreeSequence.metadata_schema",
+    "tskit.treesequence.metadata_size": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TreeSequence.metadata_size",
     "tskit.treesequence.migration": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TreeSequence.migration",
     "tskit.treesequence.migrations": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TreeSequence.migrations",
     "tskit.treesequence.migrations_dest": "https://tskit.dev/tskit/docs/stable/python-api.html#tskit.TreeSequence.migrations_dest",

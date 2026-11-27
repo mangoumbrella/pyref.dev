@@ -1,4 +1,4 @@
-VERSION = "2.2.0"
+VERSION = "2.4.0"
 
 # fmt: off
 MAPPING = {
@@ -20,6 +20,7 @@ MAPPING = {
     "trafilatura.html2txt": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.html2txt",
     "trafilatura.load_html": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.load_html",
     "trafilatura.sitemaps": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
+    "trafilatura.sitemaps.parse_sitemap": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.sitemaps.parse_sitemap",
     "trafilatura.sitemaps.sitemap_search": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.sitemaps.sitemap_search",
     "trafilatura.spider": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html",
     "trafilatura.spider.focused_crawler": "https://trafilatura.readthedocs.io/en/latest/corefunctions.html#trafilatura.spider.focused_crawler",

@@ -1,4 +1,4 @@
-VERSION = "0.16.5"
+VERSION = "0.17.1"
 
 # fmt: off
 MAPPING = {
@@ -149,6 +149,7 @@ MAPPING = {
     "numcodecs.pcodec.pcodec.decode": "https://numcodecs.readthedocs.io/en/stable/compression/pcodec.html#numcodecs.pcodec.PCodec.decode",
     "numcodecs.pcodec.pcodec.encode": "https://numcodecs.readthedocs.io/en/stable/compression/pcodec.html#numcodecs.pcodec.PCodec.encode",
     "numcodecs.pickles": "https://numcodecs.readthedocs.io/en/stable/other/pickles.html",
+    "numcodecs.pickles.allow_unsafe_pickle_decode": "https://numcodecs.readthedocs.io/en/stable/other/pickles.html#numcodecs.pickles.ALLOW_UNSAFE_PICKLE_DECODE",
     "numcodecs.pickles.pickle": "https://numcodecs.readthedocs.io/en/stable/other/pickles.html#numcodecs.pickles.Pickle",
     "numcodecs.pickles.pickle.codec_id": "https://numcodecs.readthedocs.io/en/stable/other/pickles.html#numcodecs.pickles.Pickle.codec_id",
     "numcodecs.pickles.pickle.decode": "https://numcodecs.readthedocs.io/en/stable/other/pickles.html#numcodecs.pickles.Pickle.decode",
@@ -251,6 +252,7 @@ MAPPING = {
     "numcodecs.zstd.decompress": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.decompress",
     "numcodecs.zstd.zstd": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.Zstd",
     "numcodecs.zstd.zstd.codec_id": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.Zstd.codec_id",
+    "numcodecs.zstd.zstd.decode": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.Zstd.decode",
     "numcodecs.zstd.zstd.encode": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.Zstd.encode",
     "numcodecs.zstd.zstd.from_config": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.Zstd.from_config",
     "numcodecs.zstd.zstd.get_config": "https://numcodecs.readthedocs.io/en/stable/compression/zstd.html#numcodecs.zstd.Zstd.get_config",

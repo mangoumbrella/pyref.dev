@@ -1,4 +1,4 @@
-VERSION = "1.11.0"
+VERSION = "1.12.1"
 
 # fmt: off
 MAPPING = {
@@ -7,10 +7,10 @@ MAPPING = {
     "parsel.csstranslator": "https://parsel.readthedocs.io/en/latest/parsel.html#module-parsel.csstranslator",
     "parsel.csstranslator.css2xpath": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.css2xpath",
     "parsel.csstranslator.generictranslator": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.GenericTranslator",
-    "parsel.csstranslator.generictranslator.css_to_xpath": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.GenericTranslator.css_to_xpath",
     "parsel.csstranslator.htmltranslator": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.HTMLTranslator",
-    "parsel.csstranslator.htmltranslator.css_to_xpath": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.HTMLTranslator.css_to_xpath",
+    "parsel.csstranslator.is_safe_name": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.is_safe_name",
     "parsel.csstranslator.translatormixin": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.TranslatorMixin",
+    "parsel.csstranslator.translatormixin.css_to_xpath": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.TranslatorMixin.css_to_xpath",
     "parsel.csstranslator.translatormixin.xpath_attr_functional_pseudo_element": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.TranslatorMixin.xpath_attr_functional_pseudo_element",
     "parsel.csstranslator.translatormixin.xpath_element": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.TranslatorMixin.xpath_element",
     "parsel.csstranslator.translatormixin.xpath_pseudo_element": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.TranslatorMixin.xpath_pseudo_element",
@@ -24,11 +24,13 @@ MAPPING = {
     "parsel.csstranslator.xpathexpr.join": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.XPathExpr.join",
     "parsel.csstranslator.xpathexpr.textnode": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.csstranslator.XPathExpr.textnode",
     "parsel.selector": "https://parsel.readthedocs.io/en/latest/parsel.html#module-parsel.selector",
+    "parsel.selector.absolutexpathwarning": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.AbsoluteXPathWarning",
     "parsel.selector.cannotdropelementwithoutparent": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.CannotDropElementWithoutParent",
     "parsel.selector.cannotremoveelementwithoutparent": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.CannotRemoveElementWithoutParent",
     "parsel.selector.cannotremoveelementwithoutroot": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.CannotRemoveElementWithoutRoot",
     "parsel.selector.create_root_node": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.create_root_node",
     "parsel.selector.ctgroupvalue": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.CTGroupValue",
+    "parsel.selector.jsonpatherror": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.JSONPathError",
     "parsel.selector.safexmlparser": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.SafeXMLParser",
     "parsel.selector.selector": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.Selector",
     "parsel.selector.selector.attrib": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.Selector.attrib",
@@ -39,6 +41,7 @@ MAPPING = {
     "parsel.selector.selector.get": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.Selector.get",
     "parsel.selector.selector.getall": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.Selector.getall",
     "parsel.selector.selector.jmespath": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.Selector.jmespath",
+    "parsel.selector.selector.jsonpath": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.Selector.jsonpath",
     "parsel.selector.selector.namespaces": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.Selector.namespaces",
     "parsel.selector.selector.re": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.Selector.re",
     "parsel.selector.selector.re_first": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.Selector.re_first",
@@ -57,6 +60,7 @@ MAPPING = {
     "parsel.selector.selectorlist.get": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.SelectorList.get",
     "parsel.selector.selectorlist.getall": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.SelectorList.getall",
     "parsel.selector.selectorlist.jmespath": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.SelectorList.jmespath",
+    "parsel.selector.selectorlist.jsonpath": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.SelectorList.jsonpath",
     "parsel.selector.selectorlist.re": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.SelectorList.re",
     "parsel.selector.selectorlist.re_first": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.SelectorList.re_first",
     "parsel.selector.selectorlist.xpath": "https://parsel.readthedocs.io/en/latest/parsel.html#parsel.selector.SelectorList.xpath",

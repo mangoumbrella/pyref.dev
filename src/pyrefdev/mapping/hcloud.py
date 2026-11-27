@@ -1,4 +1,4 @@
-VERSION = "2.24.0"
+VERSION = "2.27.0"
 
 # fmt: off
 MAPPING = {
@@ -297,6 +297,8 @@ MAPPING = {
     "hcloud.networks.client.boundnetwork.delete_subnet": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.BoundNetwork.delete_subnet",
     "hcloud.networks.client.boundnetwork.get_actions": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.BoundNetwork.get_actions",
     "hcloud.networks.client.boundnetwork.get_actions_list": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.BoundNetwork.get_actions_list",
+    "hcloud.networks.client.boundnetwork.get_member_all": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.BoundNetwork.get_member_all",
+    "hcloud.networks.client.boundnetwork.get_member_list": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.BoundNetwork.get_member_list",
     "hcloud.networks.client.boundnetwork.model": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.BoundNetwork.model",
     "hcloud.networks.client.boundnetwork.update": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.BoundNetwork.update",
     "hcloud.networks.client.networksclient": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.NetworksClient",
@@ -315,6 +317,8 @@ MAPPING = {
     "hcloud.networks.client.networksclient.get_by_id": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.NetworksClient.get_by_id",
     "hcloud.networks.client.networksclient.get_by_name": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.NetworksClient.get_by_name",
     "hcloud.networks.client.networksclient.get_list": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.NetworksClient.get_list",
+    "hcloud.networks.client.networksclient.get_member_all": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.NetworksClient.get_member_all",
+    "hcloud.networks.client.networksclient.get_member_list": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.NetworksClient.get_member_list",
     "hcloud.networks.client.networksclient.update": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.client.NetworksClient.update",
     "hcloud.networks.domain": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html",
     "hcloud.networks.domain.createnetworkresponse": "https://hcloud-python.readthedocs.io/en/stable/api.clients.networks.html#hcloud.networks.domain.CreateNetworkResponse",

@@ -1,4 +1,4 @@
-VERSION = "1.0.4"
+VERSION = "2.0.1"
 
 # fmt: off
 MAPPING = {
@@ -132,6 +132,7 @@ MAPPING = {
     "pdbeccdutils.core.models.residue.to_arpeggio": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.core.html#pdbeccdutils.core.models.Residue.to_arpeggio",
     "pdbeccdutils.core.models.residue.to_dict": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.core.html#pdbeccdutils.core.models.Residue.to_dict",
     "pdbeccdutils.core.models.sanitisationresult": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.core.html#pdbeccdutils.core.models.SanitisationResult",
+    "pdbeccdutils.core.models.sanitisationresult.errors": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.core.html#pdbeccdutils.core.models.SanitisationResult.errors",
     "pdbeccdutils.core.models.sanitisationresult.mol": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.core.html#pdbeccdutils.core.models.SanitisationResult.mol",
     "pdbeccdutils.core.models.sanitisationresult.status": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.core.html#pdbeccdutils.core.models.SanitisationResult.status",
     "pdbeccdutils.core.models.scaffoldingmethod": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.core.html#pdbeccdutils.core.models.ScaffoldingMethod",
@@ -152,6 +153,8 @@ MAPPING = {
     "pdbeccdutils.helpers.cif_tools.get_prd_code": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.helpers.html#pdbeccdutils.helpers.cif_tools.get_prd_code",
     "pdbeccdutils.helpers.cif_tools.get_prdcc_code": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.helpers.html#pdbeccdutils.helpers.cif_tools.get_prdcc_code",
     "pdbeccdutils.helpers.cif_tools.preprocess_cif_category": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.helpers.html#pdbeccdutils.helpers.cif_tools.preprocess_cif_category",
+    "pdbeccdutils.helpers.cif_tools.validate_ligand_cif_categories": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.helpers.html#pdbeccdutils.helpers.cif_tools.validate_ligand_cif_categories",
+    "pdbeccdutils.helpers.cif_tools.validate_mm_cif_categories": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.helpers.html#pdbeccdutils.helpers.cif_tools.validate_mm_cif_categories",
     "pdbeccdutils.helpers.conversions": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.helpers.html#module-pdbeccdutils.helpers.conversions",
     "pdbeccdutils.helpers.conversions.listit": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.helpers.html#pdbeccdutils.helpers.conversions.listit",
     "pdbeccdutils.helpers.conversions.str_to_float": "https://pdbeurope.github.io/ccdutils/pdbeccdutils.helpers.html#pdbeccdutils.helpers.conversions.str_to_float",

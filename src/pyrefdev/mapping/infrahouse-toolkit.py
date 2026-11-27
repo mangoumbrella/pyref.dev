@@ -1,4 +1,4 @@
-VERSION = "2.64.0"
+VERSION = "2.66.0"
 
 # fmt: off
 MAPPING = {
@@ -236,6 +236,7 @@ MAPPING = {
     "infrahouse_toolkit.cli.ih_secrets.cmd_list.list_secrets": "https://infrahouse-toolkit.readthedocs.io/en/stable/infrahouse_toolkit.cli.ih_secrets.cmd_list.html#infrahouse_toolkit.cli.ih_secrets.cmd_list.list_secrets",
     "infrahouse_toolkit.cli.ih_secrets.cmd_set": "https://infrahouse-toolkit.readthedocs.io/en/stable/infrahouse_toolkit.cli.ih_secrets.cmd_set.html#module-infrahouse_toolkit.cli.ih_secrets.cmd_set",
     "infrahouse_toolkit.cli.ih_skeema": "https://infrahouse-toolkit.readthedocs.io/en/stable/infrahouse_toolkit.cli.ih_skeema.html#module-infrahouse_toolkit.cli.ih_skeema",
+    "infrahouse_toolkit.cli.ih_skeema.cmd_preflight": "https://infrahouse-toolkit.readthedocs.io/en/stable/infrahouse_toolkit.cli.ih_skeema.cmd_preflight.html#module-infrahouse_toolkit.cli.ih_skeema.cmd_preflight",
     "infrahouse_toolkit.cli.ih_skeema.cmd_run": "https://infrahouse-toolkit.readthedocs.io/en/stable/infrahouse_toolkit.cli.ih_skeema.cmd_run.html#module-infrahouse_toolkit.cli.ih_skeema.cmd_run",
     "infrahouse_toolkit.cli.lib": "https://infrahouse-toolkit.readthedocs.io/en/stable/infrahouse_toolkit.cli.html#module-infrahouse_toolkit.cli.lib",
     "infrahouse_toolkit.cli.lib.get_backend_key": "https://infrahouse-toolkit.readthedocs.io/en/stable/infrahouse_toolkit.cli.html#infrahouse_toolkit.cli.lib.get_backend_key",

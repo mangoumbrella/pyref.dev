@@ -1,4 +1,4 @@
-VERSION = "11.1.0"
+VERSION = "11.2.1"
 
 # fmt: off
 MAPPING = {
@@ -112,6 +112,7 @@ MAPPING = {
     "more_itertools.random_combination": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.random_combination",
     "more_itertools.random_combination_with_replacement": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.random_combination_with_replacement",
     "more_itertools.random_derangement": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.random_derangement",
+    "more_itertools.random_ordered_range": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.random_ordered_range",
     "more_itertools.random_permutation": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.random_permutation",
     "more_itertools.random_product": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.random_product",
     "more_itertools.repeat_each": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.repeat_each",
@@ -148,6 +149,7 @@ MAPPING = {
     "more_itertools.stagger": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.stagger",
     "more_itertools.strictly_n": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.strictly_n",
     "more_itertools.strip": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.strip",
+    "more_itertools.subfactorial": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.subfactorial",
     "more_itertools.subslices": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.subslices",
     "more_itertools.substrings": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.substrings",
     "more_itertools.substrings_indexes": "https://more-itertools.readthedocs.io/en/stable/api.html#more_itertools.substrings_indexes",

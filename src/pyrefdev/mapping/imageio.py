@@ -1,4 +1,4 @@
-VERSION = "2.37.4"
+VERSION = "2.38.2"
 
 # fmt: off
 MAPPING = {
@@ -93,6 +93,18 @@ MAPPING = {
     "imageio.plugins.pyav.pyavplugin.video_stream_metadata": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pyav.PyAVPlugin.video_stream_metadata.html#imageio.plugins.pyav.PyAVPlugin.video_stream_metadata",
     "imageio.plugins.pyav.pyavplugin.write": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pyav.PyAVPlugin.write.html#imageio.plugins.pyav.PyAVPlugin.write",
     "imageio.plugins.pyav.pyavplugin.write_frame": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pyav.PyAVPlugin.write_frame.html#imageio.plugins.pyav.PyAVPlugin.write_frame",
+    "imageio.plugins.pydicom": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pydicom.html",
+    "imageio.plugins.pydicom.pydicomplugin.compression": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pydicom.PydicomPlugin.compression.html#imageio.plugins.pydicom.PydicomPlugin.compression",
+    "imageio.plugins.pydicom.pydicomplugin.instance_metadata": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pydicom.PydicomPlugin.instance_metadata.html#imageio.plugins.pydicom.PydicomPlugin.instance_metadata",
+    "imageio.plugins.pydicom.pydicomplugin.iter": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pydicom.PydicomPlugin.iter.html#imageio.plugins.pydicom.PydicomPlugin.iter",
+    "imageio.plugins.pydicom.pydicomplugin.lut_dense": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pydicom.PydicomPlugin.lut_dense.html#imageio.plugins.pydicom.PydicomPlugin.lut_dense",
+    "imageio.plugins.pydicom.pydicomplugin.lut_linear": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pydicom.PydicomPlugin.lut_linear.html#imageio.plugins.pydicom.PydicomPlugin.lut_linear",
+    "imageio.plugins.pydicom.pydicomplugin.metadata": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pydicom.PydicomPlugin.metadata.html#imageio.plugins.pydicom.PydicomPlugin.metadata",
+    "imageio.plugins.pydicom.pydicomplugin.properties": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pydicom.PydicomPlugin.properties.html#imageio.plugins.pydicom.PydicomPlugin.properties",
+    "imageio.plugins.pydicom.pydicomplugin.read": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pydicom.PydicomPlugin.read.html#imageio.plugins.pydicom.PydicomPlugin.read",
+    "imageio.plugins.pydicom.pydicomplugin.shared_frame_metadata": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pydicom.PydicomPlugin.shared_frame_metadata.html#imageio.plugins.pydicom.PydicomPlugin.shared_frame_metadata",
+    "imageio.plugins.pydicom.pydicomplugin.write": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pydicom.PydicomPlugin.write.html#imageio.plugins.pydicom.PydicomPlugin.write",
+    "imageio.plugins.pydicom.pydicomplugin.write_frame": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.pydicom.PydicomPlugin.write_frame.html#imageio.plugins.pydicom.PydicomPlugin.write_frame",
     "imageio.plugins.rawpy": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.rawpy.html",
     "imageio.plugins.simpleitk": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.simpleitk.html",
     "imageio.plugins.spe": "https://imageio.readthedocs.io/en/stable/_autosummary/imageio.plugins.spe.html",

@@ -1,4 +1,4 @@
-VERSION = "9.17.1"
+VERSION = "9.18.1"
 
 # fmt: off
 MAPPING = {
@@ -1420,7 +1420,12 @@ MAPPING = {
     "ipython.utils.pycolorize.symbols": "https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.PyColorize.html#IPython.utils.PyColorize.Symbols",
     "ipython.utils.pycolorize.theme": "https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.PyColorize.html#IPython.utils.PyColorize.Theme",
     "ipython.utils.pycolorize.theme.__init__": "https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.PyColorize.html#IPython.utils.PyColorize.Theme.__init__",
+    "ipython.utils.pycolorize.theme.from_dict": "https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.PyColorize.html#IPython.utils.PyColorize.Theme.from_dict",
+    "ipython.utils.pycolorize.theme.from_file": "https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.PyColorize.html#IPython.utils.PyColorize.Theme.from_file",
     "ipython.utils.pycolorize.theme.make_arrow": "https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.PyColorize.html#IPython.utils.PyColorize.Theme.make_arrow",
+    "ipython.utils.pycolorize.themetable": "https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.PyColorize.html#IPython.utils.PyColorize.ThemeTable",
+    "ipython.utils.pycolorize.themetable.__init__": "https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.PyColorize.html#IPython.utils.PyColorize.ThemeTable.__init__",
+    "ipython.utils.pycolorize.token_from_str": "https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.PyColorize.html#IPython.utils.PyColorize.token_from_str",
     "ipython.utils.sentinel": "https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.sentinel.html",
     "ipython.utils.sentinel.sentinel": "https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.sentinel.html#IPython.utils.sentinel.Sentinel",
     "ipython.utils.sentinel.sentinel.__init__": "https://ipython.readthedocs.io/en/stable/api/generated/IPython.utils.sentinel.html#IPython.utils.sentinel.Sentinel.__init__",

@@ -1,4 +1,4 @@
-VERSION = "5.1.0"
+VERSION = "5.3.1"
 
 # fmt: off
 MAPPING = {
@@ -31,6 +31,13 @@ MAPPING = {
     "signxml.exceptions.invaliddigest": "https://xml-security.github.io/signxml/index.html#signxml.InvalidDigest",
     "signxml.exceptions.invalidinput": "https://xml-security.github.io/signxml/index.html#signxml.InvalidInput",
     "signxml.exceptions.invalidsignature": "https://xml-security.github.io/signxml/index.html#signxml.InvalidSignature",
+    "signxml.external": "https://xml-security.github.io/signxml/index.html",
+    "signxml.external.externalsigningkey": "https://xml-security.github.io/signxml/index.html#signxml.ExternalSigningKey",
+    "signxml.external.signingrequest": "https://xml-security.github.io/signxml/index.html#signxml.SigningRequest",
+    "signxml.externalsigningkey": "https://xml-security.github.io/signxml/index.html#signxml.ExternalSigningKey",
+    "signxml.externalsigningkey.key_size": "https://xml-security.github.io/signxml/index.html#signxml.ExternalSigningKey.key_size",
+    "signxml.externalsigningkey.public_key": "https://xml-security.github.io/signxml/index.html#signxml.ExternalSigningKey.public_key",
+    "signxml.externalsigningkey.sign": "https://xml-security.github.io/signxml/index.html#signxml.ExternalSigningKey.sign",
     "signxml.invalidcertificate": "https://xml-security.github.io/signxml/index.html#signxml.InvalidCertificate",
     "signxml.invaliddigest": "https://xml-security.github.io/signxml/index.html#signxml.InvalidDigest",
     "signxml.invalidinput": "https://xml-security.github.io/signxml/index.html#signxml.InvalidInput",
@@ -87,6 +94,11 @@ MAPPING = {
     "signxml.signer": "https://xml-security.github.io/signxml/index.html",
     "signxml.signer.signaturereference": "https://xml-security.github.io/signxml/index.html#signxml.SignatureReference",
     "signxml.signer.xmlsigner": "https://xml-security.github.io/signxml/index.html#signxml.XMLSigner",
+    "signxml.signingrequest": "https://xml-security.github.io/signxml/index.html#signxml.SigningRequest",
+    "signxml.signingrequest.data": "https://xml-security.github.io/signxml/index.html#signxml.SigningRequest.data",
+    "signxml.signingrequest.digest": "https://xml-security.github.io/signxml/index.html#signxml.SigningRequest.digest",
+    "signxml.signingrequest.hash_algorithm": "https://xml-security.github.io/signxml/index.html#signxml.SigningRequest.hash_algorithm",
+    "signxml.signingrequest.signature_algorithm": "https://xml-security.github.io/signxml/index.html#signxml.SigningRequest.signature_algorithm",
     "signxml.verifier": "https://xml-security.github.io/signxml/index.html",
     "signxml.verifier.signatureconfiguration": "https://xml-security.github.io/signxml/index.html#signxml.SignatureConfiguration",
     "signxml.verifier.verifyresult": "https://xml-security.github.io/signxml/index.html#signxml.VerifyResult",

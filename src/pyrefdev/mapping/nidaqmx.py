@@ -1,4 +1,4 @@
-VERSION = "1.6.0"
+VERSION = "1.7.0"
 
 # fmt: off
 MAPPING = {
@@ -629,6 +629,7 @@ MAPPING = {
     "nidaqmx.constants.unitsprescaled.ticks": "https://nidaqmx-python.readthedocs.io/en/stable/constants.html#nidaqmx.constants.UnitsPreScaled.TICKS",
     "nidaqmx.constants.unitsprescaled.volts": "https://nidaqmx-python.readthedocs.io/en/stable/constants.html#nidaqmx.constants.UnitsPreScaled.VOLTS",
     "nidaqmx.constants.unitsprescaled.volts_per_volt": "https://nidaqmx-python.readthedocs.io/en/stable/constants.html#nidaqmx.constants.UnitsPreScaled.VOLTS_PER_VOLT",
+    "nidaqmx.constants.unitsprescaled.watts": "https://nidaqmx-python.readthedocs.io/en/stable/constants.html#nidaqmx.constants.UnitsPreScaled.WATTS",
     "nidaqmx.constants.usagetypeai": "https://nidaqmx-python.readthedocs.io/en/stable/constants.html#nidaqmx.constants.UsageTypeAI",
     "nidaqmx.constants.usagetypeai.acceleration_4_wire_dc_voltage": "https://nidaqmx-python.readthedocs.io/en/stable/constants.html#nidaqmx.constants.UsageTypeAI.ACCELERATION_4_WIRE_DC_VOLTAGE",
     "nidaqmx.constants.usagetypeai.acceleration_accelerometer_current_input": "https://nidaqmx-python.readthedocs.io/en/stable/constants.html#nidaqmx.constants.UsageTypeAI.ACCELERATION_ACCELEROMETER_CURRENT_INPUT",
@@ -1278,6 +1279,8 @@ MAPPING = {
     "nidaqmx.task.channels.aichannel.ai_acceld_b_ref": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_acceld_b_ref",
     "nidaqmx.task.channels.aichannel.ai_adc_custom_timing_mode": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_adc_custom_timing_mode",
     "nidaqmx.task.channels.aichannel.ai_adc_timing_mode": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_adc_timing_mode",
+    "nidaqmx.task.channels.aichannel.ai_analog_path_delay": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_analog_path_delay",
+    "nidaqmx.task.channels.aichannel.ai_analog_path_delay_units": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_analog_path_delay_units",
     "nidaqmx.task.channels.aichannel.ai_atten": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_atten",
     "nidaqmx.task.channels.aichannel.ai_auto_zero_mode": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_auto_zero_mode",
     "nidaqmx.task.channels.aichannel.ai_averaging_win_size": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_averaging_win_size",
@@ -1396,6 +1399,7 @@ MAPPING = {
     "nidaqmx.task.channels.aichannel.ai_raw_data_compression_type": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_raw_data_compression_type",
     "nidaqmx.task.channels.aichannel.ai_raw_samp_justification": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_raw_samp_justification",
     "nidaqmx.task.channels.aichannel.ai_raw_samp_size": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_raw_samp_size",
+    "nidaqmx.task.channels.aichannel.ai_remove_analog_path_delay": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_remove_analog_path_delay",
     "nidaqmx.task.channels.aichannel.ai_remove_filter_delay": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_remove_filter_delay",
     "nidaqmx.task.channels.aichannel.ai_resistance_cfg": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_resistance_cfg",
     "nidaqmx.task.channels.aichannel.ai_resistance_units": "https://nidaqmx-python.readthedocs.io/en/stable/task_channels.html#nidaqmx.task.channels.AIChannel.ai_resistance_units",

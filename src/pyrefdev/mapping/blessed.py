@@ -1,4 +1,4 @@
-VERSION = "1.49.0"
+VERSION = "1.52.0"
 
 # fmt: off
 MAPPING = {
@@ -319,6 +319,7 @@ MAPPING = {
     "blessed.keyboard.keystroke.text": "https://blessed.readthedocs.io/en/latest/api/keyboard.html#blessed.keyboard.Keystroke.text",
     "blessed.keyboard.keystroke.uses_keyboard_protocol": "https://blessed.readthedocs.io/en/latest/api/keyboard.html#blessed.keyboard.Keystroke.uses_keyboard_protocol",
     "blessed.keyboard.keystroke.value": "https://blessed.readthedocs.io/en/latest/api/keyboard.html#blessed.keyboard.Keystroke.value",
+    "blessed.keyboard.keystroke.xtgettcap": "https://blessed.readthedocs.io/en/latest/api/keyboard.html#blessed.keyboard.Keystroke.xtgettcap",
     "blessed.keyboard.kittykeyboardprotocol": "https://blessed.readthedocs.io/en/latest/api/keyboard.html#blessed.keyboard.KittyKeyboardProtocol",
     "blessed.keyboard.kittykeyboardprotocol.disambiguate": "https://blessed.readthedocs.io/en/latest/api/keyboard.html#blessed.keyboard.KittyKeyboardProtocol.disambiguate",
     "blessed.keyboard.kittykeyboardprotocol.make_arguments": "https://blessed.readthedocs.io/en/latest/api/keyboard.html#blessed.keyboard.KittyKeyboardProtocol.make_arguments",
@@ -383,6 +384,7 @@ MAPPING = {
     "blessed.line_editor.displaystate.text": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.DisplayState.text",
     "blessed.line_editor.displaystate.text_sgr": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.DisplayState.text_sgr",
     "blessed.line_editor.lineeditor": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.LineEditor",
+    "blessed.line_editor.lineeditor.ambiguous_width": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.LineEditor.ambiguous_width",
     "blessed.line_editor.lineeditor.bg_sgr": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.LineEditor.bg_sgr",
     "blessed.line_editor.lineeditor.clear": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.LineEditor.clear",
     "blessed.line_editor.lineeditor.display": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.LineEditor.display",
@@ -416,6 +418,7 @@ MAPPING = {
     "blessed.line_editor.lineeditor.scroll_jump": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.LineEditor.scroll_jump",
     "blessed.line_editor.lineeditor.set_password_mode": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.LineEditor.set_password_mode",
     "blessed.line_editor.lineeditor.suggestion_sgr": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.LineEditor.suggestion_sgr",
+    "blessed.line_editor.lineeditor.term_program": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.LineEditor.term_program",
     "blessed.line_editor.lineeditor.text_sgr": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.LineEditor.text_sgr",
     "blessed.line_editor.lineeditresult": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.LineEditResult",
     "blessed.line_editor.lineeditresult.bell": "https://blessed.readthedocs.io/en/latest/api/line_editor.html#blessed.line_editor.LineEditResult.bell",
@@ -458,6 +461,7 @@ MAPPING = {
     "blessed.sequences.measure_length": "https://blessed.readthedocs.io/en/latest/api/sequences.html#blessed.sequences.measure_length",
     "blessed.sequences.sequence": "https://blessed.readthedocs.io/en/latest/api/sequences.html#blessed.sequences.Sequence",
     "blessed.sequences.sequence.center": "https://blessed.readthedocs.io/en/latest/api/sequences.html#blessed.sequences.Sequence.center",
+    "blessed.sequences.sequence.clip": "https://blessed.readthedocs.io/en/latest/api/sequences.html#blessed.sequences.Sequence.clip",
     "blessed.sequences.sequence.length": "https://blessed.readthedocs.io/en/latest/api/sequences.html#blessed.sequences.Sequence.length",
     "blessed.sequences.sequence.ljust": "https://blessed.readthedocs.io/en/latest/api/sequences.html#blessed.sequences.Sequence.ljust",
     "blessed.sequences.sequence.lstrip": "https://blessed.readthedocs.io/en/latest/api/sequences.html#blessed.sequences.Sequence.lstrip",
@@ -470,10 +474,12 @@ MAPPING = {
     "blessed.terminal": "https://blessed.readthedocs.io/en/latest/api/terminal.html",
     "blessed.terminal.terminal": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal",
     "blessed.terminal.terminal.__getattr__": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.__getattr__",
+    "blessed.terminal.terminal.ambiguous_width": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.ambiguous_width",
     "blessed.terminal.terminal.async_inkey": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.async_inkey",
     "blessed.terminal.terminal.bracketed_paste": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.bracketed_paste",
     "blessed.terminal.terminal.cbreak": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.cbreak",
     "blessed.terminal.terminal.center": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.center",
+    "blessed.terminal.terminal.clip": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.clip",
     "blessed.terminal.terminal.clipboard_copy": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.clipboard_copy",
     "blessed.terminal.terminal.clipboard_paste": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.clipboard_paste",
     "blessed.terminal.terminal.color": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.color",
@@ -690,6 +696,7 @@ MAPPING = {
     "blessed.terminal.terminal.decrqss.decswbv": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.Decrqss.DECSWBV",
     "blessed.terminal.terminal.decrqss.sgr": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.Decrqss.SGR",
     "blessed.terminal.terminal.detect_ambiguous_width": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.detect_ambiguous_width",
+    "blessed.terminal.terminal.detect_term_program": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.detect_term_program",
     "blessed.terminal.terminal.does_bracketed_paste": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.does_bracketed_paste",
     "blessed.terminal.terminal.does_colored_underlines": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.does_colored_underlines",
     "blessed.terminal.terminal.does_decrqss": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.does_decrqss",
@@ -784,6 +791,7 @@ MAPPING = {
     "blessed.terminal.terminal.strip": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.strip",
     "blessed.terminal.terminal.strip_seqs": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.strip_seqs",
     "blessed.terminal.terminal.synchronized_output": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.synchronized_output",
+    "blessed.terminal.terminal.term_program": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.term_program",
     "blessed.terminal.terminal.text_sized": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.text_sized",
     "blessed.terminal.terminal.truncate": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.truncate",
     "blessed.terminal.terminal.ungetch": "https://blessed.readthedocs.io/en/latest/api/terminal.html#blessed.terminal.Terminal.ungetch",

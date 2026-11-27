@@ -1,4 +1,4 @@
-VERSION = "1.24.0"
+VERSION = "1.25.0"
 
 # fmt: off
 MAPPING = {
@@ -27,6 +27,7 @@ MAPPING = {
     "extra_data.components.lpd1m.trains": "https://extra-data.readthedocs.io/en/stable/agipd_lpd_data.html#extra_data.components.LPD1M.trains",
     "extra_data.components.lpd1m.write_frames": "https://extra-data.readthedocs.io/en/stable/agipd_lpd_data.html#extra_data.components.LPD1M.write_frames",
     "extra_data.components.lpd1m.write_virtual_cxi": "https://extra-data.readthedocs.io/en/stable/agipd_lpd_data.html#extra_data.components.LPD1M.write_virtual_cxi",
+    "extra_data.components.lpdsolo": "https://extra-data.readthedocs.io/en/stable/agipd_lpd_data.html#extra_data.components.LPDSolo",
     "extra_data.datacollection": "https://extra-data.readthedocs.io/en/stable/reading_files.html#extra_data.DataCollection",
     "extra_data.datacollection.alias": "https://extra-data.readthedocs.io/en/stable/reading_files.html#extra_data.DataCollection.alias",
     "extra_data.datacollection.aliasindexer": "https://extra-data.readthedocs.io/en/stable/reading_files.html",

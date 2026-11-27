@@ -1,4 +1,4 @@
-VERSION = "2.0.0"
+VERSION = "2.1.0"
 
 # fmt: off
 MAPPING = {
@@ -31,13 +31,19 @@ MAPPING = {
     "multibase.converters.identityconverter.encode": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.converters.IdentityConverter.encode",
     "multibase.decode": "https://py-multibase.readthedocs.io/en/stable/api_reference.html#multibase.decode",
     "multibase.encode": "https://py-multibase.readthedocs.io/en/stable/api_reference.html#multibase.encode",
+    "multibase.encoder": "https://py-multibase.readthedocs.io/en/stable/api_reference.html#multibase.Encoder",
+    "multibase.encoder.code": "https://py-multibase.readthedocs.io/en/stable/api_reference.html#multibase.Encoder.code",
+    "multibase.encoder.encode": "https://py-multibase.readthedocs.io/en/stable/api_reference.html#multibase.Encoder.encode",
+    "multibase.encoder_by_name": "https://py-multibase.readthedocs.io/en/stable/api_reference.html#multibase.encoder_by_name",
     "multibase.exceptions": "https://py-multibase.readthedocs.io/en/stable/multibase.html#module-multibase.exceptions",
     "multibase.exceptions.decodingerror": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.exceptions.DecodingError",
     "multibase.exceptions.invalidmultibasestringerror": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.exceptions.InvalidMultibaseStringError",
     "multibase.exceptions.multibaseerror": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.exceptions.MultibaseError",
     "multibase.exceptions.unsupportedencodingerror": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.exceptions.UnsupportedEncodingError",
     "multibase.get_codec": "https://py-multibase.readthedocs.io/en/stable/api_reference.html#multibase.get_codec",
+    "multibase.get_encoding_info": "https://py-multibase.readthedocs.io/en/stable/api_reference.html#multibase.get_encoding_info",
     "multibase.is_encoded": "https://py-multibase.readthedocs.io/en/stable/api_reference.html#multibase.is_encoded",
+    "multibase.is_encoding_supported": "https://py-multibase.readthedocs.io/en/stable/api_reference.html#multibase.is_encoding_supported",
     "multibase.multibase": "https://py-multibase.readthedocs.io/en/stable/multibase.html#module-multibase.multibase",
     "multibase.multibase.composeddecoder": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.multibase.ComposedDecoder",
     "multibase.multibase.composeddecoder.decode": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.multibase.ComposedDecoder.decode",
@@ -47,7 +53,9 @@ MAPPING = {
     "multibase.multibase.decoder.or_": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.multibase.Decoder.or_",
     "multibase.multibase.encode": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.multibase.encode",
     "multibase.multibase.encoder": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.multibase.Encoder",
+    "multibase.multibase.encoder.code": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.multibase.Encoder.code",
     "multibase.multibase.encoder.encode": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.multibase.Encoder.encode",
+    "multibase.multibase.encoder_by_name": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.multibase.encoder_by_name",
     "multibase.multibase.encoding": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.multibase.Encoding",
     "multibase.multibase.encoding.code": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.multibase.Encoding.code",
     "multibase.multibase.encoding.converter": "https://py-multibase.readthedocs.io/en/stable/multibase.html#multibase.multibase.Encoding.converter",

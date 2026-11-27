@@ -1,4 +1,4 @@
-VERSION = "10.1.0"
+VERSION = "11.0.0"
 
 # fmt: off
 MAPPING = {
@@ -32,4 +32,9 @@ MAPPING = {
     "django_structlog.signals.bind_extra_request_finished_metadata": "https://django-structlog.readthedocs.io/en/stable/api_documentation.html#django_structlog.signals.bind_extra_request_finished_metadata",
     "django_structlog.signals.bind_extra_request_metadata": "https://django-structlog.readthedocs.io/en/stable/api_documentation.html#django_structlog.signals.bind_extra_request_metadata",
     "django_structlog.signals.update_failure_response": "https://django-structlog.readthedocs.io/en/stable/api_documentation.html#django_structlog.signals.update_failure_response",
+    "django_structlog.tasks": "https://django-structlog.readthedocs.io/en/stable/api_documentation.html",
+    "django_structlog.tasks.signals": "https://django-structlog.readthedocs.io/en/stable/api_documentation.html#module-django_structlog.tasks.signals",
+    "django_structlog.tasks.signals.bind_extra_task_metadata": "https://django-structlog.readthedocs.io/en/stable/api_documentation.html#django_structlog.tasks.signals.bind_extra_task_metadata",
+    "django_structlog.tasks.signals.modify_context_before_task_publish": "https://django-structlog.readthedocs.io/en/stable/api_documentation.html#django_structlog.tasks.signals.modify_context_before_task_publish",
+    "django_structlog.tasks.signals.pre_task_succeeded": "https://django-structlog.readthedocs.io/en/stable/api_documentation.html#django_structlog.tasks.signals.pre_task_succeeded",
 }

@@ -1,4 +1,4 @@
-VERSION = "2.1.0"
+VERSION = "2.2.0"
 
 # fmt: off
 MAPPING = {
@@ -1103,6 +1103,7 @@ MAPPING = {
     "skrf.circuit.circuit.connections_list": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.circuit.Circuit.connections_list.html#skrf.circuit.Circuit.connections_list",
     "skrf.circuit.circuit.connections_nb": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.circuit.Circuit.connections_nb.html#skrf.circuit.Circuit.connections_nb",
     "skrf.circuit.circuit.connections_pair": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.circuit.Circuit.connections_pair.html#skrf.circuit.Circuit.connections_pair",
+    "skrf.circuit.circuit.cs_external": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.circuit.Circuit.cs_external.html#skrf.circuit.Circuit.cs_external",
     "skrf.circuit.circuit.currents": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.circuit.Circuit.currents.html#skrf.circuit.Circuit.currents",
     "skrf.circuit.circuit.currents_external": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.circuit.Circuit.currents_external.html#skrf.circuit.Circuit.currents_external",
     "skrf.circuit.circuit.dim": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.circuit.Circuit.dim.html#skrf.circuit.Circuit.dim",
@@ -1142,6 +1143,7 @@ MAPPING = {
     "skrf.circuit.reduce_circuit": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.circuit.reduce_circuit.html#skrf.circuit.reduce_circuit",
     "skrf.constants": "https://scikit-rf.readthedocs.io/en/latest/api/constants.html#module-skrf.constants",
     "skrf.constants.c": "https://scikit-rf.readthedocs.io/en/latest/api/constants.html#skrf.constants.c",
+    "skrf.constants.freq_unit_default": "https://scikit-rf.readthedocs.io/en/latest/api/constants.html#skrf.constants.FREQ_UNIT_DEFAULT",
     "skrf.constants.frequencyunitt": "https://scikit-rf.readthedocs.io/en/latest/api/constants.html#skrf.constants.FrequencyUnitT",
     "skrf.constants.inf": "https://scikit-rf.readthedocs.io/en/latest/api/constants.html#skrf.constants.INF",
     "skrf.constants.k_boltzmann": "https://scikit-rf.readthedocs.io/en/latest/api/constants.html#skrf.constants.K_BOLTZMANN",
@@ -2593,6 +2595,13 @@ MAPPING = {
     "skrf.vectorfitting.vectorfitting.wall_clock_time": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.vectorFitting.VectorFitting.wall_clock_time.html#skrf.vectorFitting.VectorFitting.wall_clock_time",
     "skrf.vectorfitting.vectorfitting.write_npz": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.vectorFitting.VectorFitting.write_npz.html#skrf.vectorFitting.VectorFitting.write_npz",
     "skrf.vectorfitting.vectorfitting.write_spice_subcircuit_s": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.vectorFitting.VectorFitting.write_spice_subcircuit_s.html#skrf.vectorFitting.VectorFitting.write_spice_subcircuit_s",
+    "skrf.vectorfitting.vectorfittingparametric": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.vectorFitting.VectorFittingParametric.html#skrf.vectorFitting.VectorFittingParametric",
+    "skrf.vectorfitting.vectorfittingparametric.__init__": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.vectorFitting.VectorFittingParametric.__init__.html#skrf.vectorFitting.VectorFittingParametric.__init__",
+    "skrf.vectorfitting.vectorfittingparametric.auto_fit": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.vectorFitting.VectorFittingParametric.auto_fit.html#skrf.vectorFitting.VectorFittingParametric.auto_fit",
+    "skrf.vectorfitting.vectorfittingparametric.get_local_vectorfit": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.vectorFitting.VectorFittingParametric.get_local_vectorfit.html#skrf.vectorFitting.VectorFittingParametric.get_local_vectorfit",
+    "skrf.vectorfitting.vectorfittingparametric.get_model_response": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.vectorFitting.VectorFittingParametric.get_model_response.html#skrf.vectorFitting.VectorFittingParametric.get_model_response",
+    "skrf.vectorfitting.vectorfittingparametric.read_npz": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.vectorFitting.VectorFittingParametric.read_npz.html#skrf.vectorFitting.VectorFittingParametric.read_npz",
+    "skrf.vectorfitting.vectorfittingparametric.write_npz": "https://scikit-rf.readthedocs.io/en/latest/api/generated/skrf.vectorFitting.VectorFittingParametric.write_npz.html#skrf.vectorFitting.VectorFittingParametric.write_npz",
     "skrf.vi": "https://scikit-rf.readthedocs.io/en/latest/api/vi/index.html#module-0",
     "skrf.vi.validators.booleanvalidator": "https://scikit-rf.readthedocs.io/en/latest/api/vi/generated/skrf.vi.validators.BooleanValidator.html#skrf.vi.validators.BooleanValidator",
     "skrf.vi.validators.booleanvalidator.__init__": "https://scikit-rf.readthedocs.io/en/latest/api/vi/generated/skrf.vi.validators.BooleanValidator.__init__.html#skrf.vi.validators.BooleanValidator.__init__",

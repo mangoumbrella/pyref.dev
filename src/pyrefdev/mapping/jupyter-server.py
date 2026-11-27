@@ -1,4 +1,4 @@
-VERSION = "2.21.0"
+VERSION = "2.21.1"
 
 # fmt: off
 MAPPING = {
@@ -163,6 +163,7 @@ MAPPING = {
     "jupyter_server.base.handlers.authenticatedhandler.token_authenticated": "https://jupyter-server.readthedocs.io/en/stable/api/jupyter_server.base.html#jupyter_server.base.handlers.AuthenticatedHandler.token_authenticated",
     "jupyter_server.base.handlers.filefindhandler": "https://jupyter-server.readthedocs.io/en/stable/api/jupyter_server.base.html#jupyter_server.base.handlers.FileFindHandler",
     "jupyter_server.base.handlers.filefindhandler.compute_etag": "https://jupyter-server.readthedocs.io/en/stable/api/jupyter_server.base.html#jupyter_server.base.handlers.FileFindHandler.compute_etag",
+    "jupyter_server.base.handlers.filefindhandler.follow_dir_symlinks": "https://jupyter-server.readthedocs.io/en/stable/api/jupyter_server.base.html#jupyter_server.base.handlers.FileFindHandler.follow_dir_symlinks",
     "jupyter_server.base.handlers.filefindhandler.get": "https://jupyter-server.readthedocs.io/en/stable/api/jupyter_server.base.html#jupyter_server.base.handlers.FileFindHandler.get",
     "jupyter_server.base.handlers.filefindhandler.get_absolute_path": "https://jupyter-server.readthedocs.io/en/stable/api/jupyter_server.base.html#jupyter_server.base.handlers.FileFindHandler.get_absolute_path",
     "jupyter_server.base.handlers.filefindhandler.head": "https://jupyter-server.readthedocs.io/en/stable/api/jupyter_server.base.html#jupyter_server.base.handlers.FileFindHandler.head",

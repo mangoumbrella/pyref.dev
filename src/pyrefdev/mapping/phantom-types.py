@@ -1,4 +1,4 @@
-VERSION = "3.0.2"
+VERSION = "4.0.0"
 
 # fmt: off
 MAPPING = {
@@ -46,8 +46,8 @@ MAPPING = {
     "phantom.negated.sequencenotstr": "https://phantom-types.readthedocs.io/en/stable/pages/types.html#phantom.negated.SequenceNotStr",
     "phantom.phantom": "https://phantom-types.readthedocs.io/en/stable/pages/types.html#phantom.Phantom",
     "phantom.phantom.__bound__": "https://phantom-types.readthedocs.io/en/stable/pages/types.html#phantom.Phantom.__bound__",
-    "phantom.phantom.__get_validators__": "https://phantom-types.readthedocs.io/en/stable/pages/types.html#phantom.Phantom.__get_validators__",
-    "phantom.phantom.__modify_schema__": "https://phantom-types.readthedocs.io/en/stable/pages/types.html#phantom.Phantom.__modify_schema__",
+    "phantom.phantom.__get_pydantic_core_schema__": "https://phantom-types.readthedocs.io/en/stable/pages/types.html#phantom.Phantom.__get_pydantic_core_schema__",
+    "phantom.phantom.__get_pydantic_json_schema__": "https://phantom-types.readthedocs.io/en/stable/pages/types.html#phantom.Phantom.__get_pydantic_json_schema__",
     "phantom.phantom.__schema__": "https://phantom-types.readthedocs.io/en/stable/pages/types.html#phantom.Phantom.__schema__",
     "phantom.phantom.parse": "https://phantom-types.readthedocs.io/en/stable/pages/types.html#phantom.Phantom.parse",
     "phantom.predicates": "https://phantom-types.readthedocs.io/en/stable/pages/predicates.html",

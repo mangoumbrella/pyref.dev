@@ -1,4 +1,4 @@
-VERSION = "3.5.0"
+VERSION = "3.5.1"
 
 # fmt: off
 MAPPING = {
@@ -56,9 +56,7 @@ MAPPING = {
     "morphio.annotation.section_id": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Annotation.section_id",
     "morphio.annotation.type": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Annotation.type",
     "morphio.annotationtype": "https://morphio.readthedocs.io/en/stable/python.html#morphio.AnnotationType",
-    "morphio.annotationtype.name": "https://morphio.readthedocs.io/en/stable/python.html#morphio.AnnotationType.name",
     "morphio.cellfamily": "https://morphio.readthedocs.io/en/stable/python.html#morphio.CellFamily",
-    "morphio.cellfamily.name": "https://morphio.readthedocs.io/en/stable/python.html#morphio.CellFamily.name",
     "morphio.celllevel": "https://morphio.readthedocs.io/en/stable/python.html#morphio.CellLevel",
     "morphio.celllevel.cell_family": "https://morphio.readthedocs.io/en/stable/python.html#morphio.CellLevel.cell_family",
     "morphio.celllevel.soma_type": "https://morphio.readthedocs.io/en/stable/python.html#morphio.CellLevel.soma_type",
@@ -89,9 +87,7 @@ MAPPING = {
     "morphio.glialcell": "https://morphio.readthedocs.io/en/stable/python.html#morphio.GlialCell",
     "morphio.idsequenceerror": "https://morphio.readthedocs.io/en/stable/python.html#morphio.IDSequenceError",
     "morphio.itertype": "https://morphio.readthedocs.io/en/stable/python.html#morphio.IterType",
-    "morphio.itertype.name": "https://morphio.readthedocs.io/en/stable/python.html#morphio.IterType.name",
     "morphio.loglevel": "https://morphio.readthedocs.io/en/stable/python.html#morphio.LogLevel",
-    "morphio.loglevel.name": "https://morphio.readthedocs.io/en/stable/python.html#morphio.LogLevel.name",
     "morphio.missingparenterror": "https://morphio.readthedocs.io/en/stable/python.html#morphio.MissingParentError",
     "morphio.mitochondria": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Mitochondria",
     "morphio.mitochondria.root_sections": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Mitochondria.root_sections",
@@ -120,6 +116,7 @@ MAPPING = {
     "morphio.morphology.markers": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Morphology.markers",
     "morphio.morphology.mitochondria": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Morphology.mitochondria",
     "morphio.morphology.n_points": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Morphology.n_points",
+    "morphio.morphology.n_sections": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Morphology.n_sections",
     "morphio.morphology.perimeters": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Morphology.perimeters",
     "morphio.morphology.points": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Morphology.points",
     "morphio.morphology.root_sections": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Morphology.root_sections",
@@ -204,7 +201,6 @@ MAPPING = {
     "morphio.mut.soma.surface": "https://morphio.readthedocs.io/en/stable/python.html#morphio.mut.Soma.surface",
     "morphio.mut.soma.type": "https://morphio.readthedocs.io/en/stable/python.html#morphio.mut.Soma.type",
     "morphio.option": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Option",
-    "morphio.option.name": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Option.name",
     "morphio.pointlevel": "https://morphio.readthedocs.io/en/stable/python.html#morphio.PointLevel",
     "morphio.pointlevel.diameters": "https://morphio.readthedocs.io/en/stable/python.html#morphio.PointLevel.diameters",
     "morphio.pointlevel.perimeters": "https://morphio.readthedocs.io/en/stable/python.html#morphio.PointLevel.perimeters",
@@ -233,7 +229,6 @@ MAPPING = {
     "morphio.sectionlevel.section_types": "https://morphio.readthedocs.io/en/stable/python.html#morphio.SectionLevel.section_types",
     "morphio.sectionlevel.sections": "https://morphio.readthedocs.io/en/stable/python.html#morphio.SectionLevel.sections",
     "morphio.sectiontype": "https://morphio.readthedocs.io/en/stable/python.html#morphio.SectionType",
-    "morphio.sectiontype.name": "https://morphio.readthedocs.io/en/stable/python.html#morphio.SectionType.name",
     "morphio.set_ignored_warning": "https://morphio.readthedocs.io/en/stable/python.html#morphio.set_ignored_warning",
     "morphio.set_maximum_warnings": "https://morphio.readthedocs.io/en/stable/python.html#morphio.set_maximum_warnings",
     "morphio.set_raise_warnings": "https://morphio.readthedocs.io/en/stable/python.html#morphio.set_raise_warnings",
@@ -246,12 +241,9 @@ MAPPING = {
     "morphio.soma.type": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Soma.type",
     "morphio.somaerror": "https://morphio.readthedocs.io/en/stable/python.html#morphio.SomaError",
     "morphio.somatype": "https://morphio.readthedocs.io/en/stable/python.html#morphio.SomaType",
-    "morphio.somatype.name": "https://morphio.readthedocs.io/en/stable/python.html#morphio.SomaType.name",
     "morphio.unknownfiletype": "https://morphio.readthedocs.io/en/stable/python.html#morphio.UnknownFileType",
     "morphio.vasculaturesectiontype": "https://morphio.readthedocs.io/en/stable/python.html#morphio.VasculatureSectionType",
-    "morphio.vasculaturesectiontype.name": "https://morphio.readthedocs.io/en/stable/python.html#morphio.VasculatureSectionType.name",
     "morphio.warning": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Warning",
-    "morphio.warning.name": "https://morphio.readthedocs.io/en/stable/python.html#morphio.Warning.name",
     "morphio.warninghandlercollector": "https://morphio.readthedocs.io/en/stable/python.html#morphio.WarningHandlerCollector",
     "morphio.warninghandlercollector.get_all": "https://morphio.readthedocs.io/en/stable/python.html#morphio.WarningHandlerCollector.get_all",
     "morphio.warninghandlercollector.reset": "https://morphio.readthedocs.io/en/stable/python.html#morphio.WarningHandlerCollector.reset",

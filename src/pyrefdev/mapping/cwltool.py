@@ -1,4 +1,4 @@
-VERSION = "3.2.20260720092025"
+VERSION = "3.3.20261106131234"
 
 # fmt: off
 MAPPING = {
@@ -14,6 +14,7 @@ MAPPING = {
     "cwltool.argparser.directoryaction.objclass": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/argparser/index.html#cwltool.argparser.DirectoryAction.objclass",
     "cwltool.argparser.directoryappendaction": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/argparser/index.html#cwltool.argparser.DirectoryAppendAction",
     "cwltool.argparser.directoryappendaction.objclass": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/argparser/index.html#cwltool.argparser.DirectoryAppendAction.objclass",
+    "cwltool.argparser.doc_to_str": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/argparser/index.html#cwltool.argparser.doc_to_str",
     "cwltool.argparser.fileaction": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/argparser/index.html#cwltool.argparser.FileAction",
     "cwltool.argparser.fileaction.objclass": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/argparser/index.html#cwltool.argparser.FileAction.objclass",
     "cwltool.argparser.fileappendaction": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/argparser/index.html#cwltool.argparser.FileAppendAction",
@@ -200,6 +201,7 @@ MAPPING = {
     "cwltool.context.runtimecontext.mutation_manager": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/context/index.html#cwltool.context.RuntimeContext.mutation_manager",
     "cwltool.context.runtimecontext.name": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/context/index.html#cwltool.context.RuntimeContext.name",
     "cwltool.context.runtimecontext.no_match_user": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/context/index.html#cwltool.context.RuntimeContext.no_match_user",
+    "cwltool.context.runtimecontext.no_net": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/context/index.html#cwltool.context.RuntimeContext.no_net",
     "cwltool.context.runtimecontext.no_read_only": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/context/index.html#cwltool.context.RuntimeContext.no_read_only",
     "cwltool.context.runtimecontext.on_error": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/context/index.html#cwltool.context.RuntimeContext.on_error",
     "cwltool.context.runtimecontext.orcid": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/context/index.html#cwltool.context.RuntimeContext.orcid",
@@ -792,6 +794,7 @@ MAPPING = {
     "cwltool.utils.hasreqshints.get_requirement": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.HasReqsHints.get_requirement",
     "cwltool.utils.hasreqshints.hints": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.HasReqsHints.hints",
     "cwltool.utils.hasreqshints.requirements": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.HasReqsHints.requirements",
+    "cwltool.utils.is_dirent": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.is_dirent",
     "cwltool.utils.jobsgeneratortype": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.JobsGeneratorType",
     "cwltool.utils.jobstype": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.JobsType",
     "cwltool.utils.jsontype": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.JSONType",
@@ -800,6 +803,7 @@ MAPPING = {
     "cwltool.utils.normalizefilesdirs": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.normalizeFilesDirs",
     "cwltool.utils.outputcallbacktype": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.OutputCallbackType",
     "cwltool.utils.parameterstype": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.ParametersType",
+    "cwltool.utils.path_to_loc": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.path_to_loc",
     "cwltool.utils.posix_path": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.posix_path",
     "cwltool.utils.processes_to_kill": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.processes_to_kill",
     "cwltool.utils.random_outdir": "https://cwltool.readthedocs.io/en/stable/autoapi/cwltool/utils/index.html#cwltool.utils.random_outdir",

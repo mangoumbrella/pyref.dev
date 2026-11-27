@@ -1,4 +1,4 @@
-VERSION = "1.7.0"
+VERSION = "1.7.1"
 
 # fmt: off
 MAPPING = {
@@ -32,6 +32,7 @@ MAPPING = {
     "typedspark.catalogs": "https://typedspark.readthedocs.io/en/stable/api.html#typedspark.Catalogs",
     "typedspark.column": "https://typedspark.readthedocs.io/en/stable/api.html#typedspark.Column",
     "typedspark.column.dtype": "https://typedspark.readthedocs.io/en/stable/api.html#typedspark.Column.dtype",
+    "typedspark.column.exact_dtype": "https://typedspark.readthedocs.io/en/stable/api.html#typedspark.Column.exact_dtype",
     "typedspark.column.full_path": "https://typedspark.readthedocs.io/en/stable/api.html#typedspark.Column.full_path",
     "typedspark.columnmeta": "https://typedspark.readthedocs.io/en/stable/api.html#typedspark.ColumnMeta",
     "typedspark.columnmeta.comment": "https://typedspark.readthedocs.io/en/stable/api.html#typedspark.ColumnMeta.comment",

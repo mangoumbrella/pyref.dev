@@ -1,4 +1,4 @@
-VERSION = "0.56.1"
+VERSION = "0.58.2"
 
 # fmt: off
 MAPPING = {
@@ -3279,6 +3279,7 @@ MAPPING = {
     "extract_msg.utils.makeweakref": "https://msg-extractor.readthedocs.io/en/stable/extract_msg.html#extract_msg.utils.makeWeakRef",
     "extract_msg.utils.msgpathtostring": "https://msg-extractor.readthedocs.io/en/stable/extract_msg.html#extract_msg.utils.msgPathToString",
     "extract_msg.utils.parsetype": "https://msg-extractor.readthedocs.io/en/stable/extract_msg.html#extract_msg.utils.parseType",
+    "extract_msg.utils.patchcss": "https://msg-extractor.readthedocs.io/en/stable/extract_msg.html#extract_msg.utils.patchCss",
     "extract_msg.utils.preparefilename": "https://msg-extractor.readthedocs.io/en/stable/extract_msg.html#extract_msg.utils.prepareFilename",
     "extract_msg.utils.roundup": "https://msg-extractor.readthedocs.io/en/stable/extract_msg.html#extract_msg.utils.roundUp",
     "extract_msg.utils.rtfsanitizehtml": "https://msg-extractor.readthedocs.io/en/stable/extract_msg.html#extract_msg.utils.rtfSanitizeHtml",

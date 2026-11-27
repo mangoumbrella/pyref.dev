@@ -1,4 +1,4 @@
-VERSION = "2.12.0"
+VERSION = "2.12.2"
 
 # fmt: off
 MAPPING = {
@@ -874,9 +874,9 @@ MAPPING = {
     "tidy3d.components.microwave.path_integrals.integrals.base.custom2dpathintegral": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.microwave.Custom2DPathIntegral.html#tidy3d.plugins.microwave.Custom2DPathIntegral",
     "tidy3d.components.microwave.path_integrals.integrals.current.axisalignedcurrentintegral": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.rf.AxisAlignedCurrentIntegral.html#tidy3d.rf.AxisAlignedCurrentIntegral",
     "tidy3d.components.microwave.path_integrals.integrals.current.compositecurrentintegral": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.rf.CompositeCurrentIntegral.html#tidy3d.rf.CompositeCurrentIntegral",
-    "tidy3d.components.microwave.path_integrals.integrals.current.custom2dcurrentintegral": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.rf.Custom2DCurrentIntegral.html#tidy3d.rf.Custom2DCurrentIntegral",
-    "tidy3d.components.microwave.path_integrals.integrals.voltage.axisalignedvoltageintegral": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.rf.AxisAlignedVoltageIntegral.html#tidy3d.rf.AxisAlignedVoltageIntegral",
-    "tidy3d.components.microwave.path_integrals.integrals.voltage.custom2dvoltageintegral": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.rf.Custom2DVoltageIntegral.html#tidy3d.rf.Custom2DVoltageIntegral",
+    "tidy3d.components.microwave.path_integrals.integrals.current.custom2dcurrentintegral": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.microwave.Custom2DCurrentIntegral.html#tidy3d.plugins.microwave.Custom2DCurrentIntegral",
+    "tidy3d.components.microwave.path_integrals.integrals.voltage.axisalignedvoltageintegral": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.microwave.AxisAlignedVoltageIntegral.html#tidy3d.plugins.microwave.AxisAlignedVoltageIntegral",
+    "tidy3d.components.microwave.path_integrals.integrals.voltage.custom2dvoltageintegral": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.microwave.Custom2DVoltageIntegral.html#tidy3d.plugins.microwave.Custom2DVoltageIntegral",
     "tidy3d.components.microwave.path_integrals.specs.base": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.components.microwave.path_integrals.specs.base.AbstractAxesRH.html",
     "tidy3d.components.microwave.path_integrals.specs.base.abstractaxesrh": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.components.microwave.path_integrals.specs.base.AbstractAxesRH.html#tidy3d.components.microwave.path_integrals.specs.base.AbstractAxesRH",
     "tidy3d.components.microwave.path_integrals.specs.base.abstractaxesrh.local_dims": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.components.microwave.path_integrals.specs.base.AbstractAxesRH.html#tidy3d.components.microwave.path_integrals.specs.base.AbstractAxesRH.local_dims",
@@ -1574,6 +1574,7 @@ MAPPING = {
     "tidy3d.distanceunstructuredgrid.names_exist_bcs": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.DistanceUnstructuredGrid.html#tidy3d.DistanceUnstructuredGrid.names_exist_bcs",
     "tidy3d.distanceunstructuredgrid.non_refined_structures": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.DistanceUnstructuredGrid.html#tidy3d.DistanceUnstructuredGrid.non_refined_structures",
     "tidy3d.distanceunstructuredgrid.sampling": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.DistanceUnstructuredGrid.html#tidy3d.DistanceUnstructuredGrid.sampling",
+    "tidy3d.distanceunstructuredgrid.smallest_requested_dl": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.DistanceUnstructuredGrid.html#tidy3d.DistanceUnstructuredGrid.smallest_requested_dl",
     "tidy3d.distanceunstructuredgrid.uniform_grid_mediums": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.DistanceUnstructuredGrid.html#tidy3d.DistanceUnstructuredGrid.uniform_grid_mediums",
     "tidy3d.distributedgeneration": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.DistributedGeneration.html#tidy3d.DistributedGeneration",
     "tidy3d.distributedgeneration.check_spatialdataarray_dimensions": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.DistributedGeneration.html#tidy3d.DistributedGeneration.check_spatialdataarray_dimensions",
@@ -2776,6 +2777,8 @@ MAPPING = {
     "tidy3d.plugins.dipole_emission.dipoleemissionstudy.store_position_indexes": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.dipole_emission.DipoleEmissionStudy.html#tidy3d.plugins.dipole_emission.DipoleEmissionStudy.store_position_indexes",
     "tidy3d.plugins.dipole_emission.dipoleemissionstudy.to_simulations": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.dipole_emission.DipoleEmissionStudy.html#tidy3d.plugins.dipole_emission.DipoleEmissionStudy.to_simulations",
     "tidy3d.plugins.dipole_emission.dipoleemissionstudydata": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.dipole_emission.DipoleEmissionStudyData.html#tidy3d.plugins.dipole_emission.DipoleEmissionStudyData",
+    "tidy3d.plugins.dipole_emission.dipoleemissionstudydata.angular_radiation_transfer": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.dipole_emission.DipoleEmissionStudyData.html#tidy3d.plugins.dipole_emission.DipoleEmissionStudyData.angular_radiation_transfer",
+    "tidy3d.plugins.dipole_emission.dipoleemissionstudydata.angular_radiation_transfer_at_positions": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.dipole_emission.DipoleEmissionStudyData.html#tidy3d.plugins.dipole_emission.DipoleEmissionStudyData.angular_radiation_transfer_at_positions",
     "tidy3d.plugins.dipole_emission.dipoleemissionstudydata.phi": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.dipole_emission.DipoleEmissionStudyData.html#tidy3d.plugins.dipole_emission.DipoleEmissionStudyData.phi",
     "tidy3d.plugins.dipole_emission.dipoleemissionstudydata.radiation_intensity": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.dipole_emission.DipoleEmissionStudyData.html#tidy3d.plugins.dipole_emission.DipoleEmissionStudyData.radiation_intensity",
     "tidy3d.plugins.dipole_emission.dipoleemissionstudydata.radiation_intensity_at_positions": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.dipole_emission.DipoleEmissionStudyData.html#tidy3d.plugins.dipole_emission.DipoleEmissionStudyData.radiation_intensity_at_positions",
@@ -3039,8 +3042,8 @@ MAPPING = {
     "tidy3d.plugins.microwave.impedancecalculator.compute_voltage_current": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.microwave.ImpedanceCalculator.html#tidy3d.plugins.microwave.ImpedanceCalculator.compute_voltage_current",
     "tidy3d.plugins.microwave.impedancecalculator.current_integral": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.microwave.ImpedanceCalculator.html#tidy3d.plugins.microwave.ImpedanceCalculator.current_integral",
     "tidy3d.plugins.microwave.impedancecalculator.voltage_integral": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.microwave.ImpedanceCalculator.html#tidy3d.plugins.microwave.ImpedanceCalculator.voltage_integral",
-    "tidy3d.plugins.microwave.lobe_measurer": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.rf.LobeMeasurer.html",
-    "tidy3d.plugins.microwave.lobe_measurer.lobemeasurer": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.rf.LobeMeasurer.html#tidy3d.rf.LobeMeasurer",
+    "tidy3d.plugins.microwave.lobe_measurer": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.microwave.LobeMeasurer.html",
+    "tidy3d.plugins.microwave.lobe_measurer.lobemeasurer": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.microwave.LobeMeasurer.html#tidy3d.plugins.microwave.LobeMeasurer",
     "tidy3d.plugins.microwave.lobemeasurer": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.microwave.LobeMeasurer.html#tidy3d.plugins.microwave.LobeMeasurer",
     "tidy3d.plugins.microwave.lobemeasurer.angle": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.microwave.LobeMeasurer.html#tidy3d.plugins.microwave.LobeMeasurer.angle",
     "tidy3d.plugins.microwave.lobemeasurer.apply_cyclic_extension": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.plugins.microwave.LobeMeasurer.html#tidy3d.plugins.microwave.LobeMeasurer.apply_cyclic_extension",
@@ -4194,6 +4197,7 @@ MAPPING = {
     "tidy3d.uniformunstructuredgrid.min_edges_per_side": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.UniformUnstructuredGrid.html#tidy3d.UniformUnstructuredGrid.min_edges_per_side",
     "tidy3d.uniformunstructuredgrid.min_mesh_size": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.UniformUnstructuredGrid.html#tidy3d.UniformUnstructuredGrid.min_mesh_size",
     "tidy3d.uniformunstructuredgrid.non_refined_structures": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.UniformUnstructuredGrid.html#tidy3d.UniformUnstructuredGrid.non_refined_structures",
+    "tidy3d.uniformunstructuredgrid.smallest_requested_dl": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.UniformUnstructuredGrid.html#tidy3d.UniformUnstructuredGrid.smallest_requested_dl",
     "tidy3d.unsteadyheatanalysis": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.UnsteadyHeatAnalysis.html#tidy3d.UnsteadyHeatAnalysis",
     "tidy3d.unsteadyheatanalysis.initial_temperature": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.UnsteadyHeatAnalysis.html#tidy3d.UnsteadyHeatAnalysis.initial_temperature",
     "tidy3d.unsteadyheatanalysis.unsteady_spec": "https://docs.flexcompute.com/projects/tidy3d/en/latest/api/_autosummary/tidy3d.UnsteadyHeatAnalysis.html#tidy3d.UnsteadyHeatAnalysis.unsteady_spec",

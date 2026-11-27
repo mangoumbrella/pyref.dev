@@ -1,10 +1,11 @@
-VERSION = "0.18.1"
+VERSION = "0.19.1"
 
 # fmt: off
 MAPPING = {
     "ufolib2": "https://ufolib2.readthedocs.io/en/stable/",
     "ufolib2.constants": "https://ufolib2.readthedocs.io/en/stable/reference.html#module-ufoLib2.constants",
     "ufolib2.constants.data_lib_key": "https://ufolib2.readthedocs.io/en/stable/reference.html#ufoLib2.constants.DATA_LIB_KEY",
+    "ufolib2.constants.date_lib_key": "https://ufolib2.readthedocs.io/en/stable/reference.html#ufoLib2.constants.DATE_LIB_KEY",
     "ufolib2.constants.default_layer_name": "https://ufolib2.readthedocs.io/en/stable/reference.html#ufoLib2.constants.DEFAULT_LAYER_NAME",
     "ufolib2.constants.object_libs_key": "https://ufolib2.readthedocs.io/en/stable/reference.html#ufoLib2.constants.OBJECT_LIBS_KEY",
     "ufolib2.errors": "https://ufolib2.readthedocs.io/en/stable/reference.html#module-ufoLib2.errors",

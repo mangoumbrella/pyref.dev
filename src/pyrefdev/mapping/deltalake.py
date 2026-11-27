@@ -1,4 +1,4 @@
-VERSION = "1.6.3"
+VERSION = "1.6.6"
 
 # fmt: off
 MAPPING = {
@@ -79,6 +79,7 @@ MAPPING = {
     "deltalake.deltatable.protocol": "https://delta-io.github.io/delta-rs/api/delta_table/#deltalake.DeltaTable.protocol",
     "deltalake.deltatable.repair": "https://delta-io.github.io/delta-rs/api/delta_table/#deltalake.DeltaTable.repair",
     "deltalake.deltatable.restore": "https://delta-io.github.io/delta-rs/api/delta_table/#deltalake.DeltaTable.restore",
+    "deltalake.deltatable.scan": "https://delta-io.github.io/delta-rs/latest/api/delta_table/#deltalake.DeltaTable.scan",
     "deltalake.deltatable.schema": "https://delta-io.github.io/delta-rs/api/delta_table/#deltalake.DeltaTable.schema",
     "deltalake.deltatable.to_pandas": "https://delta-io.github.io/delta-rs/api/delta_table/#deltalake.DeltaTable.to_pandas",
     "deltalake.deltatable.to_pyarrow_dataset": "https://delta-io.github.io/delta-rs/api/delta_table/#deltalake.DeltaTable.to_pyarrow_dataset",
@@ -221,11 +222,12 @@ MAPPING = {
     "deltalake.table.tableoptimizer": "https://delta-io.github.io/delta-rs/api/delta_table/delta_table_optimizer/#deltalake.table.TableOptimizer",
     "deltalake.table.tableoptimizer.compact": "https://delta-io.github.io/delta-rs/api/delta_table/delta_table_optimizer/#deltalake.table.TableOptimizer.compact",
     "deltalake.table.tableoptimizer.z_order": "https://delta-io.github.io/delta-rs/api/delta_table/delta_table_optimizer/#deltalake.table.TableOptimizer.z_order",
-    "deltalake.transaction": "https://delta-io.github.io/delta-rs/api/transaction/",
+    "deltalake.tableproperty": "https://delta-io.github.io/delta-rs/latest/api/delta_writer/#deltalake.TableProperty",
     "deltalake.transaction.addaction": "https://delta-io.github.io/delta-rs/api/transaction/#deltalake.transaction.AddAction",
     "deltalake.transaction.commitproperties": "https://delta-io.github.io/delta-rs/api/transaction/#deltalake.CommitProperties",
     "deltalake.transaction.create_table_with_add_actions": "https://delta-io.github.io/delta-rs/api/transaction/#deltalake.transaction.create_table_with_add_actions",
     "deltalake.transaction.postcommithookproperties": "https://delta-io.github.io/delta-rs/api/transaction/#deltalake.PostCommitHookProperties",
+    "deltalake.transaction.removeaction": "https://delta-io.github.io/delta-rs/latest/api/transaction/#deltalake.transaction.RemoveAction",
     "deltalake.write_deltalake": "https://delta-io.github.io/delta-rs/api/delta_writer/#deltalake.write_deltalake",
     "deltalake.writer": "https://delta-io.github.io/delta-rs/api/delta_writer/",
     "deltalake.writer.bloomfilterproperties": "https://delta-io.github.io/delta-rs/api/delta_writer/#deltalake.BloomFilterProperties",

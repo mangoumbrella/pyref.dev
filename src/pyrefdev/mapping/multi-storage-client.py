@@ -1,4 +1,4 @@
-VERSION = "1.1.0"
+VERSION = "1.5.0"
 
 # fmt: off
 MAPPING = {
@@ -59,6 +59,7 @@ MAPPING = {
     "multistorageclient.client.single.singlestorageclient.sync_replicas": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.client.single.SingleStorageClient.sync_replicas",
     "multistorageclient.client.single.singlestorageclient.upload_file": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.client.single.SingleStorageClient.upload_file",
     "multistorageclient.client.single.singlestorageclient.upload_files": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.client.single.SingleStorageClient.upload_files",
+    "multistorageclient.client.single.singlestorageclient.writable_replicas": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.client.single.SingleStorageClient.writable_replicas",
     "multistorageclient.client.single.singlestorageclient.write": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.client.single.SingleStorageClient.write",
     "multistorageclient.config": "https://nvidia.github.io/multi-storage-client/references/api.html",
     "multistorageclient.config.storageclientconfig": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.StorageClientConfig",
@@ -257,6 +258,8 @@ MAPPING = {
     "multistorageclient.providers.s3.statics3credentialsprovider": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.providers.s3.StaticS3CredentialsProvider",
     "multistorageclient.providers.s3.statics3credentialsprovider.get_credentials": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.providers.s3.StaticS3CredentialsProvider.get_credentials",
     "multistorageclient.providers.s3.statics3credentialsprovider.refresh_credentials": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.providers.s3.StaticS3CredentialsProvider.refresh_credentials",
+    "multistorageclient.providers.s3_cuobject": "https://nvidia.github.io/multi-storage-client/references/api.html#module-multistorageclient.providers.s3_cuobject",
+    "multistorageclient.providers.s3_cuobject.s3cuobjectstorageprovider": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.providers.s3_cuobject.S3CuObjectStorageProvider",
     "multistorageclient.providers.s8k": "https://nvidia.github.io/multi-storage-client/references/api.html#module-multistorageclient.providers.s8k",
     "multistorageclient.providers.s8k.s8kstorageprovider": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.providers.s8k.S8KStorageProvider",
     "multistorageclient.shortcuts": "https://nvidia.github.io/multi-storage-client/references/api.html#module-multistorageclient.shortcuts",
@@ -371,6 +374,7 @@ MAPPING = {
     "multistorageclient.types.autocommitconfig": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.AutoCommitConfig",
     "multistorageclient.types.autocommitconfig.at_exit": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.AutoCommitConfig.at_exit",
     "multistorageclient.types.autocommitconfig.interval_minutes": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.AutoCommitConfig.interval_minutes",
+    "multistorageclient.types.batchtransfercallback": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.BatchTransferCallback",
     "multistorageclient.types.batchtransfererror": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.BatchTransferError",
     "multistorageclient.types.batchtransferfailure": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.BatchTransferFailure",
     "multistorageclient.types.batchtransferfailure.destination_path": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.BatchTransferFailure.destination_path",
@@ -438,6 +442,7 @@ MAPPING = {
     "multistorageclient.types.range.offset": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.Range.offset",
     "multistorageclient.types.range.size": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.Range.size",
     "multistorageclient.types.replica": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.Replica",
+    "multistorageclient.types.replica.read_only": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.Replica.read_only",
     "multistorageclient.types.replica.read_priority": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.Replica.read_priority",
     "multistorageclient.types.replica.replica_profile": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.Replica.replica_profile",
     "multistorageclient.types.resolvedpath": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.ResolvedPath",
@@ -486,6 +491,8 @@ MAPPING = {
     "multistorageclient.types.storageproviderconfig": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.StorageProviderConfig",
     "multistorageclient.types.storageproviderconfig.options": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.StorageProviderConfig.options",
     "multistorageclient.types.storageproviderconfig.type": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.StorageProviderConfig.type",
+    "multistorageclient.types.suffixrange": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SuffixRange",
+    "multistorageclient.types.suffixrange.size": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SuffixRange.size",
     "multistorageclient.types.symlinkhandling": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SymlinkHandling",
     "multistorageclient.types.symlinkhandling.follow": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SymlinkHandling.FOLLOW",
     "multistorageclient.types.symlinkhandling.follow_strict": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SymlinkHandling.FOLLOW_STRICT",
@@ -501,4 +508,5 @@ MAPPING = {
     "multistorageclient.types.syncresult.total_files_deleted": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SyncResult.total_files_deleted",
     "multistorageclient.types.syncresult.total_time_seconds": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SyncResult.total_time_seconds",
     "multistorageclient.types.syncresult.total_work_units": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.SyncResult.total_work_units",
+    "multistorageclient.types.transferstate": "https://nvidia.github.io/multi-storage-client/references/api.html#multistorageclient.types.TransferState",
 }

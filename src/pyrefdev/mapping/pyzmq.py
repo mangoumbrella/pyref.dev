@@ -1,4 +1,4 @@
-VERSION = "27.2.0"
+VERSION = "27.3.0"
 
 # fmt: off
 MAPPING = {
@@ -243,9 +243,15 @@ MAPPING = {
     "zmq.eventloop.ioloop": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.ioloop.html#module-zmq.eventloop.ioloop",
     "zmq.eventloop.zmqstream": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#module-zmq.eventloop.zmqstream",
     "zmq.eventloop.zmqstream.zmqstream": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream",
+    "zmq.eventloop.zmqstream.zmqstream.bind": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.bind",
+    "zmq.eventloop.zmqstream.zmqstream.bind_to_random_port": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.bind_to_random_port",
     "zmq.eventloop.zmqstream.zmqstream.close": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.close",
     "zmq.eventloop.zmqstream.zmqstream.closed": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.closed",
+    "zmq.eventloop.zmqstream.zmqstream.connect": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.connect",
     "zmq.eventloop.zmqstream.zmqstream.flush": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.flush",
+    "zmq.eventloop.zmqstream.zmqstream.getsockopt": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.getsockopt",
+    "zmq.eventloop.zmqstream.zmqstream.getsockopt_string": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.getsockopt_string",
+    "zmq.eventloop.zmqstream.zmqstream.getsockopt_unicode": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.getsockopt_unicode",
     "zmq.eventloop.zmqstream.zmqstream.io_loop": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.io_loop",
     "zmq.eventloop.zmqstream.zmqstream.on_err": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.on_err",
     "zmq.eventloop.zmqstream.zmqstream.on_recv": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.on_recv",
@@ -262,6 +268,9 @@ MAPPING = {
     "zmq.eventloop.zmqstream.zmqstream.send_unicode": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.send_unicode",
     "zmq.eventloop.zmqstream.zmqstream.sending": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.sending",
     "zmq.eventloop.zmqstream.zmqstream.set_close_callback": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.set_close_callback",
+    "zmq.eventloop.zmqstream.zmqstream.setsockopt": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.setsockopt",
+    "zmq.eventloop.zmqstream.zmqstream.setsockopt_string": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.setsockopt_string",
+    "zmq.eventloop.zmqstream.zmqstream.setsockopt_unicode": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.setsockopt_unicode",
     "zmq.eventloop.zmqstream.zmqstream.socket": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.socket",
     "zmq.eventloop.zmqstream.zmqstream.stop_on_err": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.stop_on_err",
     "zmq.eventloop.zmqstream.zmqstream.stop_on_recv": "https://pyzmq.readthedocs.io/en/stable/api/zmq.eventloop.zmqstream.html#zmq.eventloop.zmqstream.ZMQStream.stop_on_recv",

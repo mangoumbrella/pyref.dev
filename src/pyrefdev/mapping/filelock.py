@@ -1,4 +1,4 @@
-VERSION = "3.32.6"
+VERSION = "4.2.10"
 
 # fmt: off
 MAPPING = {
@@ -28,7 +28,9 @@ MAPPING = {
     "filelock.asyncsoftreadwritelock.acquire_write": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.AsyncSoftReadWriteLock.acquire_write",
     "filelock.asyncsoftreadwritelock.blocking": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.AsyncSoftReadWriteLock.blocking",
     "filelock.asyncsoftreadwritelock.close": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.AsyncSoftReadWriteLock.close",
+    "filelock.asyncsoftreadwritelock.compromise": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.AsyncSoftReadWriteLock.compromise",
     "filelock.asyncsoftreadwritelock.executor": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.AsyncSoftReadWriteLock.executor",
+    "filelock.asyncsoftreadwritelock.generation": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.AsyncSoftReadWriteLock.generation",
     "filelock.asyncsoftreadwritelock.lock_file": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.AsyncSoftReadWriteLock.lock_file",
     "filelock.asyncsoftreadwritelock.loop": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.AsyncSoftReadWriteLock.loop",
     "filelock.asyncsoftreadwritelock.read_lock": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.AsyncSoftReadWriteLock.read_lock",
@@ -63,7 +65,9 @@ MAPPING = {
     "filelock.basefilelock.preserve_lock_file": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.BaseFileLock.preserve_lock_file",
     "filelock.basefilelock.release": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.BaseFileLock.release",
     "filelock.basefilelock.timeout": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.BaseFileLock.timeout",
+    "filelock.compromisereason": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.CompromiseReason",
     "filelock.filelock": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.FileLock",
+    "filelock.has_fcntl": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.has_fcntl",
     "filelock.leasecompromise": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.LeaseCompromise",
     "filelock.leasecompromise.error": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.LeaseCompromise.error",
     "filelock.leasecompromise.lock_file": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.LeaseCompromise.lock_file",
@@ -89,6 +93,7 @@ MAPPING = {
     "filelock.markersoftfilelock.is_lock_held_by_us": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.MarkerSoftFileLock.is_lock_held_by_us",
     "filelock.markersoftfilelock.owner": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.MarkerSoftFileLock.owner",
     "filelock.markersoftfilelock.pid": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.MarkerSoftFileLock.pid",
+    "filelock.ownermode": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.OwnerMode",
     "filelock.ownerrecord": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.OwnerRecord",
     "filelock.ownerrecord.hostname": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.OwnerRecord.hostname",
     "filelock.ownerrecord.lease_duration": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.OwnerRecord.lease_duration",
@@ -121,6 +126,8 @@ MAPPING = {
     "filelock.softreadwritelock.acquire_read": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.SoftReadWriteLock.acquire_read",
     "filelock.softreadwritelock.acquire_write": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.SoftReadWriteLock.acquire_write",
     "filelock.softreadwritelock.close": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.SoftReadWriteLock.close",
+    "filelock.softreadwritelock.compromise": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.SoftReadWriteLock.compromise",
+    "filelock.softreadwritelock.generation": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.SoftReadWriteLock.generation",
     "filelock.softreadwritelock.get_lock": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.SoftReadWriteLock.get_lock",
     "filelock.softreadwritelock.read_lock": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.SoftReadWriteLock.read_lock",
     "filelock.softreadwritelock.release": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.SoftReadWriteLock.release",
@@ -135,6 +142,7 @@ MAPPING = {
     "filelock.strictsoftfilelock": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.StrictSoftFileLock",
     "filelock.strictsoftfilelock.claims": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.StrictSoftFileLock.claims",
     "filelock.strictsoftfilelock.force_break": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.StrictSoftFileLock.force_break",
+    "filelock.strictsoftfilelock.lock_path_occupant": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.StrictSoftFileLock.lock_path_occupant",
     "filelock.timeout": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.Timeout",
     "filelock.timeout.lock_file": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.Timeout.lock_file",
     "filelock.unixfilelock": "https://py-filelock.readthedocs.io/en/latest/api.html#filelock.UnixFileLock",

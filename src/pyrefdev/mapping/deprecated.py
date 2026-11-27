@@ -1,4 +1,4 @@
-VERSION = "1.3.1"
+VERSION = "3.0.1"
 
 # fmt: off
 MAPPING = {
@@ -6,7 +6,31 @@ MAPPING = {
     "deprecated.classic": "https://deprecated.readthedocs.io/en/latest/api.html#module-deprecated.classic",
     "deprecated.classic.classicadapter": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.classic.ClassicAdapter",
     "deprecated.classic.classicadapter.get_deprecated_msg": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.classic.ClassicAdapter.get_deprecated_msg",
+    "deprecated.classic.classicadapter.warn": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.classic.ClassicAdapter.warn",
+    "deprecated.classic.deprecatable": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.classic.Deprecatable",
     "deprecated.classic.deprecated": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.classic.deprecated",
+    "deprecated.classic.skip_file_prefixes": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.classic.SKIP_FILE_PREFIXES",
+    "deprecated.classic.warningaction": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.classic.WarningAction",
+    "deprecated.deprecated": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.deprecated",
+    "deprecated.deprecated_params": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.deprecated_params",
+    "deprecated.google": "https://deprecated.readthedocs.io/en/latest/api.html#module-deprecated.google",
+    "deprecated.google.add_section_item": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.google.add_section_item",
+    "deprecated.google.deprecated": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.google.deprecated",
+    "deprecated.google.googleadapter": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.google.GoogleAdapter",
+    "deprecated.google.googleadapter.get_section_item": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.google.GoogleAdapter.get_section_item",
+    "deprecated.google.googlesection": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.google.GoogleSection",
+    "deprecated.google.section_headers": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.google.SECTION_HEADERS",
+    "deprecated.google.versionadded": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.google.versionadded",
+    "deprecated.google.versionchanged": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.google.versionchanged",
+    "deprecated.numpy": "https://deprecated.readthedocs.io/en/latest/api.html#module-deprecated.numpy",
+    "deprecated.numpy.add_section_item": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.numpy.add_section_item",
+    "deprecated.numpy.deprecated": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.numpy.deprecated",
+    "deprecated.numpy.numpyadapter": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.numpy.NumpyAdapter",
+    "deprecated.numpy.numpyadapter.get_section_item": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.numpy.NumpyAdapter.get_section_item",
+    "deprecated.numpy.numpysection": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.numpy.NumpySection",
+    "deprecated.numpy.section_headers": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.numpy.SECTION_HEADERS",
+    "deprecated.numpy.versionadded": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.numpy.versionadded",
+    "deprecated.numpy.versionchanged": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.numpy.versionchanged",
     "deprecated.params": "https://deprecated.readthedocs.io/en/latest/api.html#module-deprecated.params",
     "deprecated.params.deprecated_params": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.params.deprecated_params",
     "deprecated.params.deprecatedparams": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.params.DeprecatedParams",
@@ -14,6 +38,7 @@ MAPPING = {
     "deprecated.sphinx.deprecated": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.sphinx.deprecated",
     "deprecated.sphinx.sphinxadapter": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.sphinx.SphinxAdapter",
     "deprecated.sphinx.sphinxadapter.get_deprecated_msg": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.sphinx.SphinxAdapter.get_deprecated_msg",
+    "deprecated.sphinx.sphinxdirective": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.sphinx.SphinxDirective",
     "deprecated.sphinx.versionadded": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.sphinx.versionadded",
     "deprecated.sphinx.versionchanged": "https://deprecated.readthedocs.io/en/latest/api.html#deprecated.sphinx.versionchanged",
 }

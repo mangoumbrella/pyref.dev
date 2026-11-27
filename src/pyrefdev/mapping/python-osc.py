@@ -1,4 +1,4 @@
-VERSION = "1.10.2"
+VERSION = "1.10.3"
 
 # fmt: off
 MAPPING = {
@@ -36,24 +36,24 @@ MAPPING = {
     "pythonosc.osc_tcp_server.forkingosctcpserver": "https://python-osc.readthedocs.io/en/stable/server.html#pythonosc.osc_tcp_server.ForkingOSCTCPServer",
     "pythonosc.osc_tcp_server.osctcpserver": "https://python-osc.readthedocs.io/en/stable/server.html#pythonosc.osc_tcp_server.OSCTCPServer",
     "pythonosc.osc_tcp_server.osctcpserver.__init__": "https://python-osc.readthedocs.io/en/stable/server.html#pythonosc.osc_tcp_server.OSCTCPServer.__init__",
-    "pythonosc.osc_tcp_server.osctcpserver.dispatcher": "https://python-osc.readthedocs.io/en/stable/server.html#pythonosc.osc_tcp_server.OSCTCPServer.dispatcher",
+    "pythonosc.osc_tcp_server.tcphandler": "https://python-osc.readthedocs.io/en/stable/server.html#pythonosc.osc_tcp_server.TCPHandler",
     "pythonosc.osc_tcp_server.threadingosctcpserver": "https://python-osc.readthedocs.io/en/stable/server.html#pythonosc.osc_tcp_server.ThreadingOSCTCPServer",
     "pythonosc.tcp_client": "https://python-osc.readthedocs.io/en/stable/client.html#module-pythonosc.tcp_client",
     "pythonosc.tcp_client.asyncdispatchtcpclient": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.AsyncDispatchTCPClient",
+    "pythonosc.tcp_client.asyncdispatchtcpclient.__init__": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.AsyncDispatchTCPClient.__init__",
     "pythonosc.tcp_client.asyncdispatchtcpclient.handle_messages": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.AsyncDispatchTCPClient.handle_messages",
     "pythonosc.tcp_client.asyncsimpletcpclient": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.AsyncSimpleTCPClient",
-    "pythonosc.tcp_client.asyncsimpletcpclient.__init__": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.AsyncSimpleTCPClient.__init__",
     "pythonosc.tcp_client.asyncsimpletcpclient.send_message": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.AsyncSimpleTCPClient.send_message",
     "pythonosc.tcp_client.asynctcpclient": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.AsyncTCPClient",
     "pythonosc.tcp_client.asynctcpclient.__init__": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.AsyncTCPClient.__init__",
     "pythonosc.tcp_client.asynctcpclient.send": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.AsyncTCPClient.send",
     "pythonosc.tcp_client.simpletcpclient": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.SimpleTCPClient",
-    "pythonosc.tcp_client.simpletcpclient.__init__": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.SimpleTCPClient.__init__",
     "pythonosc.tcp_client.simpletcpclient.send_message": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.SimpleTCPClient.send_message",
     "pythonosc.tcp_client.tcpclient": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.TCPClient",
     "pythonosc.tcp_client.tcpclient.__init__": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.TCPClient.__init__",
     "pythonosc.tcp_client.tcpclient.send": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.TCPClient.send",
     "pythonosc.tcp_client.tcpdispatchclient": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.TCPDispatchClient",
+    "pythonosc.tcp_client.tcpdispatchclient.__init__": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.TCPDispatchClient.__init__",
     "pythonosc.tcp_client.tcpdispatchclient.handle_messages": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.tcp_client.TCPDispatchClient.handle_messages",
     "pythonosc.udp_client": "https://python-osc.readthedocs.io/en/stable/client.html#module-pythonosc.udp_client",
     "pythonosc.udp_client.dispatchclient": "https://python-osc.readthedocs.io/en/stable/client.html#pythonosc.udp_client.DispatchClient",

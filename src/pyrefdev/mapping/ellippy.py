@@ -1,4 +1,4 @@
-VERSION = "1.1.1"
+VERSION = "1.2.1"
 
 # fmt: off
 MAPPING = {
@@ -7,6 +7,7 @@ MAPPING = {
     "ellippy.bulirsch.cel": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.cel.html#ellippy.bulirsch.cel",
     "ellippy.bulirsch.cel1": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.cel1.html#ellippy.bulirsch.cel1",
     "ellippy.bulirsch.cel2": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.cel2.html#ellippy.bulirsch.cel2",
+    "ellippy.bulirsch.cel3": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.cel3.html#ellippy.bulirsch.cel3",
     "ellippy.bulirsch.el1": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.el1.html#ellippy.bulirsch.el1",
     "ellippy.bulirsch.el2": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.el2.html#ellippy.bulirsch.el2",
     "ellippy.bulirsch.el3": "https://p-sira.github.io/ellippy/functions/ellippy.bulirsch.el3.html#ellippy.bulirsch.el3",
@@ -23,6 +24,7 @@ MAPPING = {
     "ellippy.legendre.ellipeinc": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellipeinc.html#ellippy.legendre.ellipeinc",
     "ellippy.legendre.ellipf": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellipf.html#ellippy.legendre.ellipf",
     "ellippy.legendre.ellipk": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellipk.html#ellippy.legendre.ellipk",
+    "ellippy.legendre.ellipke": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellipke.html#ellippy.legendre.ellipke",
     "ellippy.legendre.ellippi": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellippi.html#ellippy.legendre.ellippi",
     "ellippy.legendre.ellippiinc": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellippiinc.html#ellippy.legendre.ellippiinc",
     "ellippy.legendre.ellippiinc_bulirsch": "https://p-sira.github.io/ellippy/functions/ellippy.legendre.ellippiinc_bulirsch.html#ellippy.legendre.ellippiinc_bulirsch",

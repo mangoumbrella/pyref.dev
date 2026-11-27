@@ -1,4 +1,4 @@
-VERSION = "0.3.2"
+VERSION = "0.5.0"
 
 # fmt: off
 MAPPING = {
@@ -62,13 +62,17 @@ MAPPING = {
     "probeinterface.ProbeGroup": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup",
     "probeinterface.probegroup.add_probe": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.add_probe",
     "probeinterface.probegroup.auto_generate_contact_ids": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.auto_generate_contact_ids",
-    "probeinterface.probegroup.auto_generate_probe_ids": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.auto_generate_probe_ids",
+    "probeinterface.probegroup.copy": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.copy",
     "probeinterface.probegroup.from_dict": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.from_dict",
     "probeinterface.probegroup.from_numpy": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.from_numpy",
     "probeinterface.probegroup.get_contact_count": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.get_contact_count",
     "probeinterface.probegroup.get_global_contact_ids": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.get_global_contact_ids",
+    "probeinterface.probegroup.get_global_contact_positions": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.get_global_contact_positions",
     "probeinterface.probegroup.get_global_device_channel_indices": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.get_global_device_channel_indices",
+    "probeinterface.probegroup.get_slice": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.get_slice",
     "probeinterface.probegroup.probegroup": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup",
+    "probeinterface.probegroup.select_contacts": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.select_contacts",
+    "probeinterface.probegroup.select_probes": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.select_probes",
     "probeinterface.probegroup.set_global_device_channel_indices": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.set_global_device_channel_indices",
     "probeinterface.probegroup.to_dataframe": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.to_dataframe",
     "probeinterface.probegroup.to_dict": "https://probeinterface.readthedocs.io/en/stable/api.html#probeinterface.ProbeGroup.to_dict",

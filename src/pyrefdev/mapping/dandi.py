@@ -1,4 +1,4 @@
-VERSION = "0.78.0"
+VERSION = "0.82.0"
 
 # fmt: off
 MAPPING = {
@@ -203,6 +203,11 @@ MAPPING = {
     "dandi.dandiarchive.assetitemurl.path": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.AssetItemURL.path",
     "dandi.dandiarchive.assetpathprefixurl": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.AssetPathPrefixURL",
     "dandi.dandiarchive.assetpathprefixurl.get_assets": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.AssetPathPrefixURL.get_assets",
+    "dandi.dandiarchive.assetzarrentryurl": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.AssetZarrEntryURL",
+    "dandi.dandiarchive.assetzarrentryurl.asset_path": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.AssetZarrEntryURL.asset_path",
+    "dandi.dandiarchive.assetzarrentryurl.get_assets": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.AssetZarrEntryURL.get_assets",
+    "dandi.dandiarchive.assetzarrentryurl.zarr_subpath": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.AssetZarrEntryURL.zarr_subpath",
+    "dandi.dandiarchive.at_zarr_boundary": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.at_zarr_boundary",
     "dandi.dandiarchive.baseassetidurl": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.BaseAssetIDURL",
     "dandi.dandiarchive.baseassetidurl.asset_id": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.BaseAssetIDURL.asset_id",
     "dandi.dandiarchive.baseassetidurl.dandiset_id": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.BaseAssetIDURL.dandiset_id",
@@ -228,6 +233,7 @@ MAPPING = {
     "dandi.dandiarchive.parseddandiurl.navigate": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.ParsedDandiURL.navigate",
     "dandi.dandiarchive.parseddandiurl.version_id": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.ParsedDandiURL.version_id",
     "dandi.dandiarchive.singleasseturl": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.SingleAssetURL",
+    "dandi.dandiarchive.split_zarr_location": "https://dandi.readthedocs.io/en/stable/modref/dandiarchive.html#dandi.dandiarchive.split_zarr_location",
     "dandi.delete": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.delete.html#module-dandi.delete",
     "dandi.delete.delete": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.delete.html#dandi.delete.delete",
     "dandi.delete.deleter": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.delete.html#dandi.delete.Deleter",
@@ -327,6 +333,7 @@ MAPPING = {
     "dandi.files.bidsasset.bids_dataset_description_ref": "https://dandi.readthedocs.io/en/stable/modref/files.html#dandi.files.BIDSAsset.bids_dataset_description_ref",
     "dandi.files.bidsasset.bids_path": "https://dandi.readthedocs.io/en/stable/modref/files.html#dandi.files.BIDSAsset.bids_path",
     "dandi.files.bidsasset.bids_root": "https://dandi.readthedocs.io/en/stable/modref/files.html#dandi.files.BIDSAsset.bids_root",
+    "dandi.files.bidsasset.get_bids_metadata": "https://dandi.readthedocs.io/en/stable/modref/files.html#dandi.files.BIDSAsset.get_bids_metadata",
     "dandi.files.bidsasset.get_metadata": "https://dandi.readthedocs.io/en/stable/modref/files.html#dandi.files.BIDSAsset.get_metadata",
     "dandi.files.bidsasset.get_validation_bids_version": "https://dandi.readthedocs.io/en/stable/modref/files.html#dandi.files.BIDSAsset.get_validation_bids_version",
     "dandi.files.bidsasset.get_validation_errors": "https://dandi.readthedocs.io/en/stable/modref/files.html#dandi.files.BIDSAsset.get_validation_errors",
@@ -552,8 +559,10 @@ MAPPING = {
     "dandi.organize.fileoperationmode.simulate": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.organize.html#dandi.organize.FileOperationMode.SIMULATE",
     "dandi.organize.fileoperationmode.symlink": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.organize.html#dandi.organize.FileOperationMode.SYMLINK",
     "dandi.organize.filter_invalid_metadata_rows": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.organize.html#dandi.organize.filter_invalid_metadata_rows",
+    "dandi.organize.format_metadata_load_failures": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.organize.html#dandi.organize.format_metadata_load_failures",
     "dandi.organize.get_obj_id": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.organize.html#dandi.organize.get_obj_id",
     "dandi.organize.is_undefined": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.organize.html#dandi.organize.is_undefined",
+    "dandi.organize.max_metadata_errors_shown": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.organize.html#dandi.organize.MAX_METADATA_ERRORS_SHOWN",
     "dandi.organize.organize": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.organize.html#dandi.organize.organize",
     "dandi.organize.organize_external_files": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.organize.html#dandi.organize.organize_external_files",
     "dandi.organize.organizeinvalid": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.organize.html#dandi.organize.OrganizeInvalid",
@@ -595,6 +604,7 @@ MAPPING = {
     "dandi.tests.fixtures.local_dandi_api": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.tests.fixtures.html#dandi.tests.fixtures.local_dandi_api",
     "dandi.tests.fixtures.minimal_png": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.tests.fixtures.html#dandi.tests.fixtures.MINIMAL_PNG",
     "dandi.tests.fixtures.new_dandiset": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.tests.fixtures.html#dandi.tests.fixtures.new_dandiset",
+    "dandi.tests.fixtures.no_nwbinspector_etelemetry": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.tests.fixtures.html#dandi.tests.fixtures.no_nwbinspector_etelemetry",
     "dandi.tests.fixtures.nwb_dandiset": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.tests.fixtures.html#dandi.tests.fixtures.nwb_dandiset",
     "dandi.tests.fixtures.nwb_test_data": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.tests.fixtures.html#dandi.tests.fixtures.nwb_test_data",
     "dandi.tests.fixtures.nwbfiles_image_common": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.tests.fixtures.html#dandi.tests.fixtures.nwbfiles_image_common",
@@ -661,6 +671,9 @@ MAPPING = {
     "dandi.upload.uploadvalidation.ignore": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.upload.html#dandi.upload.UploadValidation.IGNORE",
     "dandi.upload.uploadvalidation.require": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.upload.html#dandi.upload.UploadValidation.REQUIRE",
     "dandi.upload.uploadvalidation.skip": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.upload.html#dandi.upload.UploadValidation.SKIP",
+    "dandi.upload.zarrmode": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.upload.html#dandi.upload.ZarrMode",
+    "dandi.upload.zarrmode.full": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.upload.html#dandi.upload.ZarrMode.FULL",
+    "dandi.upload.zarrmode.patch": "https://dandi.readthedocs.io/en/stable/modref/generated/dandi.upload.html#dandi.upload.ZarrMode.PATCH",
     "dandi.utils": "https://dandi.readthedocs.io/en/stable/modref/utils.html#module-dandi.utils",
     "dandi.utils.abbrev_prompt": "https://dandi.readthedocs.io/en/stable/modref/utils.html#dandi.utils.abbrev_prompt",
     "dandi.utils.check_dandi_version": "https://dandi.readthedocs.io/en/stable/modref/utils.html#dandi.utils.check_dandi_version",

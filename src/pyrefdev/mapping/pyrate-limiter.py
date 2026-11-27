@@ -1,4 +1,4 @@
-VERSION = "4.5.0"
+VERSION = "4.5.1"
 
 # fmt: off
 MAPPING = {
@@ -83,6 +83,7 @@ MAPPING = {
     "pyrate_limiter.abstracts.bucket.bucketfactory.get": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.bucket.html#pyrate_limiter.abstracts.bucket.BucketFactory.get",
     "pyrate_limiter.abstracts.bucket.bucketfactory.get_buckets": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.bucket.html#pyrate_limiter.abstracts.bucket.BucketFactory.get_buckets",
     "pyrate_limiter.abstracts.bucket.bucketfactory.leak_interval": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.bucket.html#pyrate_limiter.abstracts.bucket.BucketFactory.leak_interval",
+    "pyrate_limiter.abstracts.bucket.bucketfactory.owned_buckets": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.bucket.html#pyrate_limiter.abstracts.bucket.BucketFactory.owned_buckets",
     "pyrate_limiter.abstracts.bucket.bucketfactory.schedule_leak": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.bucket.html#pyrate_limiter.abstracts.bucket.BucketFactory.schedule_leak",
     "pyrate_limiter.abstracts.bucket.bucketfactory.wrap_item": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.bucket.html#pyrate_limiter.abstracts.bucket.BucketFactory.wrap_item",
     "pyrate_limiter.abstracts.bucket.leaker": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.bucket.html#pyrate_limiter.abstracts.bucket.Leaker",
@@ -115,6 +116,7 @@ MAPPING = {
     "pyrate_limiter.abstracts.bucketfactory.get": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.html#pyrate_limiter.abstracts.BucketFactory.get",
     "pyrate_limiter.abstracts.bucketfactory.get_buckets": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.html#pyrate_limiter.abstracts.BucketFactory.get_buckets",
     "pyrate_limiter.abstracts.bucketfactory.leak_interval": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.html#pyrate_limiter.abstracts.BucketFactory.leak_interval",
+    "pyrate_limiter.abstracts.bucketfactory.owned_buckets": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.html#pyrate_limiter.abstracts.BucketFactory.owned_buckets",
     "pyrate_limiter.abstracts.bucketfactory.schedule_leak": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.html#pyrate_limiter.abstracts.BucketFactory.schedule_leak",
     "pyrate_limiter.abstracts.bucketfactory.wrap_item": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.html#pyrate_limiter.abstracts.BucketFactory.wrap_item",
     "pyrate_limiter.abstracts.decision": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.abstracts.html#pyrate_limiter.abstracts.Decision",
@@ -257,6 +259,7 @@ MAPPING = {
     "pyrate_limiter.buckets.multiprocessstatestore.reset": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.buckets.html#pyrate_limiter.buckets.MultiprocessStateStore.reset",
     "pyrate_limiter.buckets.pgqueries": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.buckets.html#pyrate_limiter.buckets.PgQueries",
     "pyrate_limiter.buckets.postgres": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.buckets.postgres.html#module-pyrate_limiter.buckets.postgres",
+    "pyrate_limiter.buckets.postgres.advisory_lock_id": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.buckets.postgres.html#pyrate_limiter.buckets.postgres.advisory_lock_id",
     "pyrate_limiter.buckets.postgres.postgresbucket": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.buckets.postgres.html#pyrate_limiter.buckets.postgres.PostgresBucket",
     "pyrate_limiter.buckets.postgres.postgresbucket.close": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.buckets.postgres.html#pyrate_limiter.buckets.postgres.PostgresBucket.close",
     "pyrate_limiter.buckets.postgres.postgresbucket.count": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.buckets.postgres.html#pyrate_limiter.buckets.postgres.PostgresBucket.count",
@@ -479,6 +482,7 @@ MAPPING = {
     "pyrate_limiter.limiter.singlebucketfactory.__init__": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.limiter.html#pyrate_limiter.limiter.SingleBucketFactory.__init__",
     "pyrate_limiter.limiter.singlebucketfactory.bucket": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.limiter.html#pyrate_limiter.limiter.SingleBucketFactory.bucket",
     "pyrate_limiter.limiter.singlebucketfactory.get": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.limiter.html#pyrate_limiter.limiter.SingleBucketFactory.get",
+    "pyrate_limiter.limiter.singlebucketfactory.owned_buckets": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.limiter.html#pyrate_limiter.limiter.SingleBucketFactory.owned_buckets",
     "pyrate_limiter.limiter.singlebucketfactory.wrap_item": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.limiter.html#pyrate_limiter.limiter.SingleBucketFactory.wrap_item",
     "pyrate_limiter.limiter_factory": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.limiter_factory.html#module-pyrate_limiter.limiter_factory",
     "pyrate_limiter.limiter_factory.create_inmemory_limiter": "https://pyratelimiter.readthedocs.io/en/stable/modules/pyrate_limiter.limiter_factory.html#pyrate_limiter.limiter_factory.create_inmemory_limiter",

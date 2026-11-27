@@ -1,4 +1,4 @@
-VERSION = "2.3.2"
+VERSION = "2.3.7"
 
 # fmt: off
 MAPPING = {
@@ -99,6 +99,7 @@ MAPPING = {
     "mailsuite.smtp.send_email": "https://seanthegeek.net/mailsuite/api.html#mailsuite.smtp.send_email",
     "mailsuite.smtp.smtperror": "https://seanthegeek.net/mailsuite/api.html#mailsuite.smtp.SMTPError",
     "mailsuite.utils": "https://seanthegeek.net/mailsuite/api.html#module-mailsuite.utils",
+    "mailsuite.utils.check_message_limits": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.check_message_limits",
     "mailsuite.utils.convert_outlook_msg": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.convert_outlook_msg",
     "mailsuite.utils.create_email": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.create_email",
     "mailsuite.utils.decode_base64": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.decode_base64",
@@ -107,6 +108,13 @@ MAPPING = {
     "mailsuite.utils.get_filename_safe_string": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.get_filename_safe_string",
     "mailsuite.utils.get_reverse_dns": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.get_reverse_dns",
     "mailsuite.utils.is_outlook_msg": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.is_outlook_msg",
+    "mailsuite.utils.max_address_header_chars": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.MAX_ADDRESS_HEADER_CHARS",
+    "mailsuite.utils.max_boundary_tests": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.MAX_BOUNDARY_TESTS",
+    "mailsuite.utils.max_header_field_length": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.MAX_HEADER_FIELD_LENGTH",
+    "mailsuite.utils.max_header_lines": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.MAX_HEADER_LINES",
+    "mailsuite.utils.max_mime_parts": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.MAX_MIME_PARTS",
+    "mailsuite.utils.max_part_depth": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.MAX_PART_DEPTH",
+    "mailsuite.utils.messagelimitexceeded": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.MessageLimitExceeded",
     "mailsuite.utils.parse_authentication_results": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.parse_authentication_results",
     "mailsuite.utils.parse_dkim_signature": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.parse_dkim_signature",
     "mailsuite.utils.parse_email": "https://seanthegeek.net/mailsuite/api.html#mailsuite.utils.parse_email",

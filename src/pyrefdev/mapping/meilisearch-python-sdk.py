@@ -1,4 +1,4 @@
-VERSION = "7.5.2"
+VERSION = "8.1.6"
 
 # fmt: off
 MAPPING = {
@@ -183,23 +183,12 @@ MAPPING = {
     "meilisearch_python_sdk.decorators": "https://meilisearch-python-sdk.paulsanders.dev/decorators_api/#meilisearch_python_sdk.decorators",
     "meilisearch_python_sdk.decorators.add_documents": "https://meilisearch-python-sdk.paulsanders.dev/decorators_api/#meilisearch_python_sdk.decorators.add_documents",
     "meilisearch_python_sdk.decorators.async_add_documents": "https://meilisearch-python-sdk.paulsanders.dev/decorators_api/#meilisearch_python_sdk.decorators.async_add_documents",
-    "meilisearch_python_sdk.decorators.asyncclient": "https://meilisearch-python-sdk.paulsanders.dev/async_client_api/#meilisearch_python_sdk.AsyncClient",
-    "meilisearch_python_sdk.decorators.client": "https://meilisearch-python-sdk.paulsanders.dev/client_api/#meilisearch_python_sdk.Client",
     "meilisearch_python_sdk.decorators.connectioninfo": "https://meilisearch-python-sdk.paulsanders.dev/decorators_api/#meilisearch_python_sdk.decorators.ConnectionInfo",
     "meilisearch_python_sdk.decorators.connectioninfo.api_key": "https://meilisearch-python-sdk.paulsanders.dev/decorators_api/#meilisearch_python_sdk.decorators.ConnectionInfo.api_key",
     "meilisearch_python_sdk.decorators.connectioninfo.url": "https://meilisearch-python-sdk.paulsanders.dev/decorators_api/#meilisearch_python_sdk.decorators.ConnectionInfo.url",
     "meilisearch_python_sdk.errors": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors",
     "meilisearch_python_sdk.errors.batchnotfounderror": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.BatchNotFoundError",
-    "meilisearch_python_sdk.errors.decodeerror": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.DecodeError",
-    "meilisearch_python_sdk.errors.expiredsignatureerror": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.ExpiredSignatureError",
-    "meilisearch_python_sdk.errors.immaturesignatureerror": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.ImmatureSignatureError",
     "meilisearch_python_sdk.errors.invaliddocumenterror": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.InvalidDocumentError",
-    "meilisearch_python_sdk.errors.invalidissuedaterror": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.InvalidIssuedAtError",
-    "meilisearch_python_sdk.errors.invalidjtierror": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.InvalidJTIError",
-    "meilisearch_python_sdk.errors.invalidrestriction": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.InvalidRestriction",
-    "meilisearch_python_sdk.errors.invalidsignatureerror": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.InvalidSignatureError",
-    "meilisearch_python_sdk.errors.invalidsubjecterror": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.InvalidSubjectError",
-    "meilisearch_python_sdk.errors.invalidtokenerror": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.InvalidTokenError",
     "meilisearch_python_sdk.errors.meilisearchapierror": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.MeilisearchApiError",
     "meilisearch_python_sdk.errors.meilisearchapierror.__init__": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.MeilisearchApiError.__init__",
     "meilisearch_python_sdk.errors.meilisearchapierror.__str__": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.MeilisearchApiError.__str__",
@@ -224,7 +213,6 @@ MAPPING = {
     "meilisearch_python_sdk.errors.meilisearchtimeouterror.__init__": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.MeilisearchError.__init__",
     "meilisearch_python_sdk.errors.meilisearchtimeouterror.__str__": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.MeilisearchTimeoutError.__str__",
     "meilisearch_python_sdk.errors.meilisearchtimeouterror.message": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.MeilisearchError.message",
-    "meilisearch_python_sdk.errors.payloadtoolarge": "https://meilisearch-python-sdk.paulsanders.dev/errors_api/#meilisearch_python_sdk.errors.PayloadTooLarge",
     "meilisearch_python_sdk.index": "https://meilisearch-python-sdk.paulsanders.dev/index_api/#meilisearch_python_sdk.index.Index",
     "meilisearch_python_sdk.index.async_index": "https://meilisearch-python-sdk.paulsanders.dev/async_index_api/",
     "meilisearch_python_sdk.index.async_index.asyncindex": "https://meilisearch-python-sdk.paulsanders.dev/async_index_api/#meilisearch_python_sdk.index.AsyncIndex",
@@ -693,6 +681,7 @@ MAPPING = {
     "meilisearch_python_sdk.models.client.clientstats.indexes": "https://meilisearch-python-sdk.paulsanders.dev/models_client/#meilisearch_python_sdk.models.client.ClientStats.indexes",
     "meilisearch_python_sdk.models.client.clientstats.last_update": "https://meilisearch-python-sdk.paulsanders.dev/models_client/#meilisearch_python_sdk.models.client.ClientStats.last_update",
     "meilisearch_python_sdk.models.client.clientstats.used_database_size": "https://meilisearch-python-sdk.paulsanders.dev/models_client/#meilisearch_python_sdk.models.client.ClientStats.used_database_size",
+    "meilisearch_python_sdk.models.client.indexstats": "https://meilisearch-python-sdk.paulsanders.dev/models_index/#meilisearch_python_sdk.models.index.IndexStats",
     "meilisearch_python_sdk.models.client.key": "https://meilisearch-python-sdk.paulsanders.dev/models_client/#meilisearch_python_sdk.models.client.Key",
     "meilisearch_python_sdk.models.client.key.created_at": "https://meilisearch-python-sdk.paulsanders.dev/models_client/#meilisearch_python_sdk.models.client.Key.created_at",
     "meilisearch_python_sdk.models.client.key.key": "https://meilisearch-python-sdk.paulsanders.dev/models_client/#meilisearch_python_sdk.models.client.Key.key",
@@ -912,6 +901,7 @@ MAPPING = {
     "meilisearch_python_sdk.models.settings.distribution": "https://meilisearch-python-sdk.paulsanders.dev/models_settings/#meilisearch_python_sdk.models.settings.Distribution",
     "meilisearch_python_sdk.models.settings.distribution.mean": "https://meilisearch-python-sdk.paulsanders.dev/models_settings/#meilisearch_python_sdk.models.settings.Distribution.mean",
     "meilisearch_python_sdk.models.settings.distribution.sigma": "https://meilisearch-python-sdk.paulsanders.dev/models_settings/#meilisearch_python_sdk.models.settings.Distribution.sigma",
+    "meilisearch_python_sdk.models.settings.embedder": "https://meilisearch-python-sdk.paulsanders.dev/models_settings/#meilisearch_python_sdk.models.settings.Embedder",
     "meilisearch_python_sdk.models.settings.embedders": "https://meilisearch-python-sdk.paulsanders.dev/models_settings/#meilisearch_python_sdk.models.settings.Embedders",
     "meilisearch_python_sdk.models.settings.embedders.embedders": "https://meilisearch-python-sdk.paulsanders.dev/models_settings/#meilisearch_python_sdk.models.settings.Embedders.embedders",
     "meilisearch_python_sdk.models.settings.faceting": "https://meilisearch-python-sdk.paulsanders.dev/models_settings/#meilisearch_python_sdk.models.settings.Faceting",
