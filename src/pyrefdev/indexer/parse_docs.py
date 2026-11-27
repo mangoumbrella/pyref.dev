@@ -80,8 +80,8 @@ def parse_docs(
     show_overall_progress: bool = True,
 ) -> None:
     """Parse crawled docs and update the mapping files."""
-    if sys.version_info[:2] != (3, 14):
-        console.fatal("pyrefdev-indexer parse_docs must be run on Python 3.14.")
+    if sys.version_info[:2] != (3, 15):
+        console.fatal("pyrefdev-indexer parse_docs must be run on Python 3.15.")
 
     packages = get_packages(package)
     if not reparse:
