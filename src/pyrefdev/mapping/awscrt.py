@@ -1,4 +1,4 @@
-VERSION = "0.36.3"
+VERSION = "0.38.1"
 
 # fmt: off
 MAPPING = {
@@ -285,6 +285,7 @@ MAPPING = {
     "awscrt.io.clienttlscontext.new_connection_options": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.ClientTlsContext.new_connection_options",
     "awscrt.io.defaulthostresolver": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.DefaultHostResolver",
     "awscrt.io.eventloopgroup": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.EventLoopGroup",
+    "awscrt.io.eventloopgroup.get_or_create_static_default": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.EventLoopGroup.get_or_create_static_default",
     "awscrt.io.eventloopgroup.shutdown_event": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.EventLoopGroup.shutdown_event",
     "awscrt.io.exponentialbackoffjittermode": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.ExponentialBackoffJitterMode",
     "awscrt.io.exponentialbackoffjittermode.decorrelated": "https://awslabs.github.io/aws-crt-python/api/io.html#awscrt.io.ExponentialBackoffJitterMode.DECORRELATED",
@@ -581,11 +582,18 @@ MAPPING = {
     "awscrt.s3.s3checksumalgorithm.xxhash64": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumAlgorithm.XXHASH64",
     "awscrt.s3.s3checksumconfig": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumConfig",
     "awscrt.s3.s3checksumconfig.algorithm": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumConfig.algorithm",
+    "awscrt.s3.s3checksumconfig.expected_checksum": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumConfig.expected_checksum",
+    "awscrt.s3.s3checksumconfig.expected_checksum_algorithm": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumConfig.expected_checksum_algorithm",
     "awscrt.s3.s3checksumconfig.location": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumConfig.location",
+    "awscrt.s3.s3checksumconfig.response_validation_mode": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumConfig.response_validation_mode",
     "awscrt.s3.s3checksumconfig.validate_response": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumConfig.validate_response",
     "awscrt.s3.s3checksumlocation": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumLocation",
     "awscrt.s3.s3checksumlocation.header": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumLocation.HEADER",
     "awscrt.s3.s3checksumlocation.trailer": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumLocation.TRAILER",
+    "awscrt.s3.s3checksumvalidationmode": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumValidationMode",
+    "awscrt.s3.s3checksumvalidationmode.default": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumValidationMode.DEFAULT",
+    "awscrt.s3.s3checksumvalidationmode.full_object": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumValidationMode.FULL_OBJECT",
+    "awscrt.s3.s3checksumvalidationmode.request_only": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ChecksumValidationMode.REQUEST_ONLY",
     "awscrt.s3.s3client": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3Client",
     "awscrt.s3.s3client.make_request": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3Client.make_request",
     "awscrt.s3.s3fileiooptions": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3FileIoOptions",
@@ -611,6 +619,11 @@ MAPPING = {
     "awscrt.s3.s3responseerror.operation_name": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ResponseError.operation_name",
     "awscrt.s3.s3responseerror.status_code": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3ResponseError.status_code",
     "awscrt.s3.s3retryconfig": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3RetryConfig",
+    "awscrt.s3.s3retrymode": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3RetryMode",
+    "awscrt.s3.s3retrymode.adaptive": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3RetryMode.ADAPTIVE",
+    "awscrt.s3.s3retrymode.exponential_backoff": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3RetryMode.EXPONENTIAL_BACKOFF",
+    "awscrt.s3.s3retrymode.none": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3RetryMode.NONE",
+    "awscrt.s3.s3retrymode.standard": "https://awslabs.github.io/aws-crt-python/api/s3.html#awscrt.s3.S3RetryMode.STANDARD",
     "awscrt.websocket": "https://awslabs.github.io/aws-crt-python/api/websocket.html#module-awscrt.websocket",
     "awscrt.websocket.connect": "https://awslabs.github.io/aws-crt-python/api/websocket.html#awscrt.websocket.connect",
     "awscrt.websocket.create_handshake_request": "https://awslabs.github.io/aws-crt-python/api/websocket.html#awscrt.websocket.create_handshake_request",

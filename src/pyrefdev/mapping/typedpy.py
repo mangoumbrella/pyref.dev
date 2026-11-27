@@ -1,4 +1,4 @@
-VERSION = "2.29.0"
+VERSION = "2.31.0"
 
 # fmt: off
 MAPPING = {
@@ -21,6 +21,8 @@ MAPPING = {
     "typedpy.deserialize_single_field": "https://typedpy.readthedocs.io/en/stable/serialization.html#typedpy.deserialize_single_field",
     "typedpy.deserialize_structure": "https://typedpy.readthedocs.io/en/stable/serialization.html#typedpy.deserialize_structure",
     "typedpy.deserializer": "https://typedpy.readthedocs.io/en/stable/serialization.html#typedpy.Deserializer",
+    "typedpy.discriminatedunion": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.DiscriminatedUnion",
+    "typedpy.emailaddress": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.EmailAddress",
     "typedpy.enum": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.Enum",
     "typedpy.enumstring": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.EnumString",
     "typedpy.exceptionfield": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.ExceptionField",
@@ -30,6 +32,7 @@ MAPPING = {
     "typedpy.extfields.extfields.datefield": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.DateField",
     "typedpy.extfields.extfields.datestring": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.DateString",
     "typedpy.extfields.extfields.datetime": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.DateTime",
+    "typedpy.extfields.extfields.emailaddress": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.EmailAddress",
     "typedpy.extfields.extfields.hostname": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.HostName",
     "typedpy.extfields.extfields.ipv4": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.IPV4",
     "typedpy.extfields.extfields.jsonstring": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.JSONString",
@@ -47,6 +50,8 @@ MAPPING = {
     "typedpy.fields.deque_field": "https://typedpy.readthedocs.io/en/stable/fields.html",
     "typedpy.fields.deque_field.deque": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.Deque",
     "typedpy.fields.deque_field.immutabledeque": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.ImmutableDeque",
+    "typedpy.fields.discriminated_union": "https://typedpy.readthedocs.io/en/stable/fields.html",
+    "typedpy.fields.discriminated_union.discriminatedunion": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.DiscriminatedUnion",
     "typedpy.fields.enum": "https://typedpy.readthedocs.io/en/stable/fields.html",
     "typedpy.fields.enum.enum": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.Enum",
     "typedpy.fields.enum.enumstring": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.EnumString",
@@ -174,6 +179,7 @@ MAPPING = {
     "typedpy.structures.structures_reuse.pick": "https://typedpy.readthedocs.io/en/stable/structures.html#typedpy.Pick",
     "typedpy.subclass": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.SubClass",
     "typedpy.testing": "https://typedpy.readthedocs.io/en/stable/common_utilities.html",
+    "typedpy.testing.assert_trusted_deserialization_mapper_is_safe": "https://typedpy.readthedocs.io/en/stable/common_utilities.html#typedpy.testing.assert_trusted_deserialization_mapper_is_safe",
     "typedpy.testing.find_diff": "https://typedpy.readthedocs.io/en/stable/common_utilities.html#typedpy.testing.find_diff",
     "typedpy.timestring": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.TimeString",
     "typedpy.tuple": "https://typedpy.readthedocs.io/en/stable/fields.html#typedpy.Tuple",

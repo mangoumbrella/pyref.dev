@@ -1,4 +1,4 @@
-VERSION = "0.8.4"
+VERSION = "0.9.5"
 
 # fmt: off
 MAPPING = {
@@ -10,6 +10,7 @@ MAPPING = {
     "wcwidth.hyperlinkparams": "https://wcwidth.readthedocs.io/en/stable/api.html#wcwidth.HyperlinkParams",
     "wcwidth.iter_graphemes": "https://wcwidth.readthedocs.io/en/stable/api.html#wcwidth.iter_graphemes",
     "wcwidth.iter_graphemes_reverse": "https://wcwidth.readthedocs.io/en/stable/api.html#wcwidth.iter_graphemes_reverse",
+    "wcwidth.iter_line_breaks": "https://wcwidth.readthedocs.io/en/stable/api.html#wcwidth.iter_line_breaks",
     "wcwidth.iter_sequences": "https://wcwidth.readthedocs.io/en/stable/api.html#wcwidth.iter_sequences",
     "wcwidth.list_term_programs": "https://wcwidth.readthedocs.io/en/stable/api.html#wcwidth.list_term_programs",
     "wcwidth.list_versions": "https://wcwidth.readthedocs.io/en/stable/api.html#wcwidth.list_versions",

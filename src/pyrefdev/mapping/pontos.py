@@ -1,4 +1,4 @@
-VERSION = "26.9.0"
+VERSION = "26.9.2"
 
 # fmt: off
 MAPPING = {
@@ -288,7 +288,8 @@ MAPPING = {
     "pontos.github.api.githubasyncrestworkflows.get_all": "https://greenbone.github.io/pontos/pontos/github/api.html#pontos.github.api.GitHubAsyncRESTWorkflows.get_all",
     "pontos.github.api.githubasyncrestworkflows.get_workflow_run": "https://greenbone.github.io/pontos/pontos/github/api.html#pontos.github.api.GitHubAsyncRESTWorkflows.get_workflow_run",
     "pontos.github.api.githubasyncrestworkflows.get_workflow_runs": "https://greenbone.github.io/pontos/pontos/github/api.html#pontos.github.api.GitHubAsyncRESTWorkflows.get_workflow_runs",
-    "pontos.github.api.json_object": "https://greenbone.github.io/pontos/pontos/github/api.html#pontos.github.api.JSON_OBJECT",
+    "pontos.github.api.httperror": "https://greenbone.github.io/pontos/pontos/github/api.html#pontos.github.api.HTTPError",
+    "pontos.github.api.httpstatuserror": "https://greenbone.github.io/pontos/pontos/github/api.html#pontos.github.api.HTTPStatusError",
     "pontos.github.api.labels": "https://greenbone.github.io/pontos/pontos/github/api.html",
     "pontos.github.api.labels.githubasyncrestlabels": "https://greenbone.github.io/pontos/pontos/github/api.html#pontos.github.api.GitHubAsyncRESTLabels",
     "pontos.github.api.organizations": "https://greenbone.github.io/pontos/pontos/github/api.html",
@@ -307,6 +308,7 @@ MAPPING = {
     "pontos.github.api.tags.githubasyncresttags": "https://greenbone.github.io/pontos/pontos/github/api.html#pontos.github.api.GitHubAsyncRESTTags",
     "pontos.github.api.teams": "https://greenbone.github.io/pontos/pontos/github/api.html",
     "pontos.github.api.teams.githubasyncrestteams": "https://greenbone.github.io/pontos/pontos/github/api.html#pontos.github.api.GitHubAsyncRESTTeams",
+    "pontos.github.api.timeout": "https://greenbone.github.io/pontos/pontos/github/api.html#pontos.github.api.Timeout",
     "pontos.github.api.update_from_applied_settings": "https://greenbone.github.io/pontos/pontos/github/api.html#pontos.github.api.update_from_applied_settings",
     "pontos.github.api.workflows": "https://greenbone.github.io/pontos/pontos/github/api.html",
     "pontos.github.api.workflows.githubasyncrestworkflows": "https://greenbone.github.io/pontos/pontos/github/api.html#pontos.github.api.GitHubAsyncRESTWorkflows",
@@ -1256,6 +1258,10 @@ MAPPING = {
     "pontos.nvd.models.cve.cvssv3metric.impact_score": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.CVSSv3Metric.impact_score",
     "pontos.nvd.models.cve.cvssv3metric.source": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.CVSSv3Metric.source",
     "pontos.nvd.models.cve.cvssv3metric.type": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.CVSSv3Metric.type",
+    "pontos.nvd.models.cve.cvssv4metric": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.CVSSv4Metric",
+    "pontos.nvd.models.cve.cvssv4metric.cvss_data": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.CVSSv4Metric.cvss_data",
+    "pontos.nvd.models.cve.cvssv4metric.source": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.CVSSv4Metric.source",
+    "pontos.nvd.models.cve.cvssv4metric.type": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.CVSSv4Metric.type",
     "pontos.nvd.models.cve.description": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.Description",
     "pontos.nvd.models.cve.description.lang": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.Description.lang",
     "pontos.nvd.models.cve.description.value": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.Description.value",
@@ -1263,6 +1269,7 @@ MAPPING = {
     "pontos.nvd.models.cve.metrics.cvss_metric_v2": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.Metrics.cvss_metric_v2",
     "pontos.nvd.models.cve.metrics.cvss_metric_v30": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.Metrics.cvss_metric_v30",
     "pontos.nvd.models.cve.metrics.cvss_metric_v31": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.Metrics.cvss_metric_v31",
+    "pontos.nvd.models.cve.metrics.cvss_metric_v40": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.Metrics.cvss_metric_v40",
     "pontos.nvd.models.cve.node": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.Node",
     "pontos.nvd.models.cve.node.cpe_match": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.Node.cpe_match",
     "pontos.nvd.models.cve.node.negate": "https://greenbone.github.io/pontos/pontos/nvd/models.html#pontos.nvd.models.cve.Node.negate",
@@ -1320,6 +1327,8 @@ MAPPING = {
     "pontos.nvd.nvdresults.chunks": "https://greenbone.github.io/pontos/pontos/nvd.html#pontos.nvd.NVDResults.chunks",
     "pontos.nvd.nvdresults.items": "https://greenbone.github.io/pontos/pontos/nvd.html#pontos.nvd.NVDResults.items",
     "pontos.nvd.nvdresults.json": "https://greenbone.github.io/pontos/pontos/nvd.html#pontos.nvd.NVDResults.json",
+    "pontos.nvd.remoteprotocolerror": "https://greenbone.github.io/pontos/pontos/nvd.html#pontos.nvd.RemoteProtocolError",
+    "pontos.nvd.timeout": "https://greenbone.github.io/pontos/pontos/nvd.html#pontos.nvd.Timeout",
     "pontos.release": "https://greenbone.github.io/pontos/pontos/release.html#module-pontos.release",
     "pontos.release.create": "https://greenbone.github.io/pontos/pontos/release.html",
     "pontos.release.create.createreleasecommand": "https://greenbone.github.io/pontos/pontos/release.html#pontos.release.CreateReleaseCommand",

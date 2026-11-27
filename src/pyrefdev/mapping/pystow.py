@@ -1,4 +1,4 @@
-VERSION = "0.9.4"
+VERSION = "0.10.3"
 
 # fmt: off
 MAPPING = {
@@ -107,10 +107,12 @@ MAPPING = {
     "pystow.utils": "https://pystow.readthedocs.io/en/stable/utils.html#module-pystow.utils",
     "pystow.utils.download": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.download.html#pystow.utils.download",
     "pystow.utils.download.downloaderror": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.DownloadError.html#pystow.utils.DownloadError",
+    "pystow.utils.download.downloadkwargs": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.DownloadKwargs.html#pystow.utils.DownloadKwargs",
     "pystow.utils.download.unexpecteddirectoryerror": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.UnexpectedDirectoryError.html#pystow.utils.UnexpectedDirectoryError",
     "pystow.utils.download_from_google": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.download_from_google.html#pystow.utils.download_from_google",
     "pystow.utils.download_from_s3": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.download_from_s3.html#pystow.utils.download_from_s3",
     "pystow.utils.downloaderror": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.DownloadError.html#pystow.utils.DownloadError",
+    "pystow.utils.downloadkwargs": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.DownloadKwargs.html#pystow.utils.DownloadKwargs",
     "pystow.utils.get_base": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.get_base.html#pystow.utils.get_base",
     "pystow.utils.get_commit": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.get_commit.html#pystow.utils.get_commit",
     "pystow.utils.get_df_io": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.get_df_io.html#pystow.utils.get_df_io",
@@ -154,6 +156,8 @@ MAPPING = {
     "pystow.utils.n": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.n.html#pystow.utils.n",
     "pystow.utils.name_from_s3_key": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.name_from_s3_key.html#pystow.utils.name_from_s3_key",
     "pystow.utils.name_from_url": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.name_from_url.html#pystow.utils.name_from_url",
+    "pystow.utils.open_archive": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.open_archive.html#pystow.utils.open_archive",
+    "pystow.utils.open_inner_tarfile": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.open_inner_tarfile.html#pystow.utils.open_inner_tarfile",
     "pystow.utils.open_inner_zipfile": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.open_inner_zipfile.html#pystow.utils.open_inner_zipfile",
     "pystow.utils.open_tarfile": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.open_tarfile.html#pystow.utils.open_tarfile",
     "pystow.utils.open_url": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.open_url.html#pystow.utils.open_url",
@@ -165,6 +169,7 @@ MAPPING = {
     "pystow.utils.raise_on_digest_mismatch": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.raise_on_digest_mismatch.html#pystow.utils.raise_on_digest_mismatch",
     "pystow.utils.read_lzma_csv": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_lzma_csv.html#pystow.utils.read_lzma_csv",
     "pystow.utils.read_pydantic_json": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_pydantic_json.html#pystow.utils.read_pydantic_json",
+    "pystow.utils.read_pydantic_json_list": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_pydantic_json_list.html#pystow.utils.read_pydantic_json_list",
     "pystow.utils.read_pydantic_jsonl": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_pydantic_jsonl.html#pystow.utils.read_pydantic_jsonl",
     "pystow.utils.read_pydantic_tsv": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_pydantic_tsv.html#pystow.utils.read_pydantic_tsv",
     "pystow.utils.read_pydantic_yaml": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.read_pydantic_yaml.html#pystow.utils.read_pydantic_yaml",
@@ -191,6 +196,7 @@ MAPPING = {
     "pystow.utils.safe_write_text": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.safe_write_text.html#pystow.utils.safe_write_text",
     "pystow.utils.safe_zipfile_open": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.safe_zipfile_open.html#pystow.utils.safe_zipfile_open",
     "pystow.utils.stream_write_pydantic_jsonl": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.stream_write_pydantic_jsonl.html#pystow.utils.stream_write_pydantic_jsonl",
+    "pystow.utils.tabulate_counter": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.tabulate_counter.html#pystow.utils.tabulate_counter",
     "pystow.utils.tarfile_writestr": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.tarfile_writestr.html#pystow.utils.tarfile_writestr",
     "pystow.utils.unexpecteddirectory": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.UnexpectedDirectory.html#pystow.utils.UnexpectedDirectory",
     "pystow.utils.unexpecteddirectoryerror": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.UnexpectedDirectoryError.html#pystow.utils.UnexpectedDirectoryError",
@@ -199,6 +205,7 @@ MAPPING = {
     "pystow.utils.write_lzma_csv": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_lzma_csv.html#pystow.utils.write_lzma_csv",
     "pystow.utils.write_pickle_gz": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_pickle_gz.html#pystow.utils.write_pickle_gz",
     "pystow.utils.write_pydantic_json": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_pydantic_json.html#pystow.utils.write_pydantic_json",
+    "pystow.utils.write_pydantic_json_list": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_pydantic_json_list.html#pystow.utils.write_pydantic_json_list",
     "pystow.utils.write_pydantic_jsonl": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_pydantic_jsonl.html#pystow.utils.write_pydantic_jsonl",
     "pystow.utils.write_pydantic_yaml": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_pydantic_yaml.html#pystow.utils.write_pydantic_yaml",
     "pystow.utils.write_rdflib": "https://pystow.readthedocs.io/en/stable/api/pystow.utils.write_rdflib.html#pystow.utils.write_rdflib",

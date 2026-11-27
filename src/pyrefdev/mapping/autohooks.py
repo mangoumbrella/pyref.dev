@@ -1,4 +1,4 @@
-VERSION = "26.2.0"
+VERSION = "26.9.0"
 
 # fmt: off
 MAPPING = {
@@ -30,6 +30,7 @@ MAPPING = {
     "autohooks.api.git.status.ignored": "https://greenbone.github.io/autohooks/api.html#autohooks.api.git.Status.IGNORED",
     "autohooks.api.git.status.modified": "https://greenbone.github.io/autohooks/api.html#autohooks.api.git.Status.MODIFIED",
     "autohooks.api.git.status.renamed": "https://greenbone.github.io/autohooks/api.html#autohooks.api.git.Status.RENAMED",
+    "autohooks.api.git.status.typechange": "https://greenbone.github.io/autohooks/api.html#autohooks.api.git.Status.TYPECHANGE",
     "autohooks.api.git.status.unmodified": "https://greenbone.github.io/autohooks/api.html#autohooks.api.git.Status.UNMODIFIED",
     "autohooks.api.git.status.untracked": "https://greenbone.github.io/autohooks/api.html#autohooks.api.git.Status.UNTRACKED",
     "autohooks.api.git.status.updated": "https://greenbone.github.io/autohooks/api.html#autohooks.api.git.Status.UPDATED",

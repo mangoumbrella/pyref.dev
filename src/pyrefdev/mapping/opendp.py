@@ -1,4 +1,4 @@
-VERSION = "0.15.1"
+VERSION = "0.16.0"
 
 # fmt: off
 MAPPING = {
@@ -117,6 +117,10 @@ MAPPING = {
     "opendp.extras.examples": "https://docs.opendp.org/en/stable/api/python/opendp.extras.examples.html#module-opendp.extras.examples",
     "opendp.extras.examples.get_california_pums_path": "https://docs.opendp.org/en/stable/api/python/opendp.extras.examples.html#opendp.extras.examples.get_california_pums_path",
     "opendp.extras.examples.get_france_lfs_path": "https://docs.opendp.org/en/stable/api/python/opendp.extras.examples.html#opendp.extras.examples.get_france_lfs_path",
+    "opendp.extras.ibis": "https://docs.opendp.org/en/stable/api/python/opendp.extras.ibis.html#module-opendp.extras.ibis",
+    "opendp.extras.ibis.get_connection": "https://docs.opendp.org/en/stable/api/python/opendp.extras.ibis.html#opendp.extras.ibis.get_connection",
+    "opendp.extras.ibis.run_on_database": "https://docs.opendp.org/en/stable/api/python/opendp.extras.ibis.html#opendp.extras.ibis.run_on_database",
+    "opendp.extras.ibis.scan_database": "https://docs.opendp.org/en/stable/api/python/opendp.extras.ibis.html#opendp.extras.ibis.scan_database",
     "opendp.extras.mbi": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#module-opendp.extras.mbi",
     "opendp.extras.mbi._aim": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html",
     "opendp.extras.mbi._aim.aim": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.AIM",
@@ -131,6 +135,7 @@ MAPPING = {
     "opendp.extras.mbi._utilities": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html",
     "opendp.extras.mbi._utilities.algorithm": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Algorithm",
     "opendp.extras.mbi._utilities.count": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Count",
+    "opendp.extras.mbi._utilities.marginals": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Marginals",
     "opendp.extras.mbi.aim": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.AIM",
     "opendp.extras.mbi.aim.make_marginals": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.AIM.make_marginals",
     "opendp.extras.mbi.aim.max_size": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.AIM.max_size",
@@ -140,6 +145,7 @@ MAPPING = {
     "opendp.extras.mbi.algorithm": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Algorithm",
     "opendp.extras.mbi.algorithm.estimator": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Algorithm.estimator",
     "opendp.extras.mbi.algorithm.make_marginals": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Algorithm.make_marginals",
+    "opendp.extras.mbi.algorithm.needs_model": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Algorithm.needs_model",
     "opendp.extras.mbi.algorithm.oneway": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Algorithm.oneway",
     "opendp.extras.mbi.algorithm.oneway_split": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Algorithm.oneway_split",
     "opendp.extras.mbi.contingencytable": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.ContingencyTable",
@@ -158,9 +164,15 @@ MAPPING = {
     "opendp.extras.mbi.count.weight": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Count.weight",
     "opendp.extras.mbi.fixed": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Fixed",
     "opendp.extras.mbi.fixed.make_marginals": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Fixed.make_marginals",
+    "opendp.extras.mbi.fixed.needs_model": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Fixed.needs_model",
     "opendp.extras.mbi.fixed.oneway": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Fixed.oneway",
     "opendp.extras.mbi.fixed.queries": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Fixed.queries",
     "opendp.extras.mbi.make_contingency_table": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.make_contingency_table",
+    "opendp.extras.mbi.marginals": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Marginals",
+    "opendp.extras.mbi.marginals.add": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Marginals.add",
+    "opendp.extras.mbi.marginals.cliques": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Marginals.cliques",
+    "opendp.extras.mbi.marginals.copy": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Marginals.copy",
+    "opendp.extras.mbi.marginals.flatten": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.Marginals.flatten",
     "opendp.extras.mbi.mirror_descent": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.mirror_descent",
     "opendp.extras.mbi.mst": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.MST",
     "opendp.extras.mbi.mst.make_marginals": "https://docs.opendp.org/en/stable/api/python/opendp.extras.mbi.html#opendp.extras.mbi.MST.make_marginals",
@@ -530,6 +542,7 @@ MAPPING = {
     "opendp.typing.get_carrier_type": "https://docs.opendp.org/en/stable/api/python/opendp.typing.html#opendp.typing.get_carrier_type",
     "opendp.typing.get_distance_type": "https://docs.opendp.org/en/stable/api/python/opendp.typing.html#opendp.typing.get_distance_type",
     "opendp.typing.get_first": "https://docs.opendp.org/en/stable/api/python/opendp.typing.html#opendp.typing.get_first",
+    "opendp.typing.get_first_non_null": "https://docs.opendp.org/en/stable/api/python/opendp.typing.html#opendp.typing.get_first_non_null",
     "opendp.typing.get_type": "https://docs.opendp.org/en/stable/api/python/opendp.typing.html#opendp.typing.get_type",
     "opendp.typing.get_value_type": "https://docs.opendp.org/en/stable/api/python/opendp.typing.html#opendp.typing.get_value_type",
     "opendp.typing.parse_or_infer": "https://docs.opendp.org/en/stable/api/python/opendp.typing.html#opendp.typing.parse_or_infer",

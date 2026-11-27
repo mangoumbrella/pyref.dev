@@ -1,4 +1,4 @@
-VERSION = "5.1.3"
+VERSION = "5.1.4"
 
 # fmt: off
 MAPPING = {
@@ -9,6 +9,7 @@ MAPPING = {
     "wolframalpha.client.aquery": "https://wolframalpha.readthedocs.io/en/stable/index.html#wolframalpha.Client.aquery",
     "wolframalpha.client.from_env": "https://wolframalpha.readthedocs.io/en/stable/index.html#wolframalpha.Client.from_env",
     "wolframalpha.client.query": "https://wolframalpha.readthedocs.io/en/stable/index.html#wolframalpha.Client.query",
+    "wolframalpha.client.timeout": "https://wolframalpha.readthedocs.io/en/stable/index.html#wolframalpha.Client.timeout",
     "wolframalpha.client.url": "https://wolframalpha.readthedocs.io/en/stable/index.html#wolframalpha.Client.url",
     "wolframalpha.document": "https://wolframalpha.readthedocs.io/en/stable/index.html#wolframalpha.Document",
     "wolframalpha.document.children": "https://wolframalpha.readthedocs.io/en/stable/index.html#wolframalpha.Document.children",

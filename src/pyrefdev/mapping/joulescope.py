@@ -1,4 +1,4 @@
-VERSION = "1.6.0"
+VERSION = "1.7.3"
 
 # fmt: off
 MAPPING = {
@@ -55,9 +55,11 @@ MAPPING = {
     "joulescope.v1.device.device.close": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.close",
     "joulescope.v1.device.device.driver": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.driver",
     "joulescope.v1.device.device.extio_status": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.extio_status",
+    "joulescope.v1.device.device.firmware": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.firmware",
     "joulescope.v1.device.device.info": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.info",
     "joulescope.v1.device.device.input_sampling_frequency": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.input_sampling_frequency",
     "joulescope.v1.device.device.is_streaming": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.is_streaming",
+    "joulescope.v1.device.device.model": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.model",
     "joulescope.v1.device.device.open": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.open",
     "joulescope.v1.device.device.output_sampling_frequency": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.output_sampling_frequency",
     "joulescope.v1.device.device.parameter_get": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.parameter_get",
@@ -72,6 +74,9 @@ MAPPING = {
     "joulescope.v1.device.device.statistics_callback": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.statistics_callback",
     "joulescope.v1.device.device.statistics_callback_register": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.statistics_callback_register",
     "joulescope.v1.device.device.statistics_callback_unregister": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.statistics_callback_unregister",
+    "joulescope.v1.device.device.statistics_get": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.statistics_get",
+    "joulescope.v1.device.device.statistics_iter": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.statistics_iter",
+    "joulescope.v1.device.device.statistics_source": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.statistics_source",
     "joulescope.v1.device.device.status": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.status",
     "joulescope.v1.device.device.stop": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.stop",
     "joulescope.v1.device.device.stream_process_register": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.stream_process_register",
@@ -80,6 +85,8 @@ MAPPING = {
     "joulescope.v1.device.device.unsubscribe": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.unsubscribe",
     "joulescope.v1.device.device.unsubscribe_all": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.unsubscribe_all",
     "joulescope.v1.device.device.view_factory": "https://joulescope.readthedocs.io/en/stable/api/device.html#joulescope.v1.device.Device.view_factory",
+    "joulescope.v1.driver": "https://joulescope.readthedocs.io/en/stable/api/discovery.html",
+    "joulescope.v1.driver.scanerror": "https://joulescope.readthedocs.io/en/stable/api/discovery.html#joulescope.v1.driver.ScanError",
     "joulescope.v1.stream_buffer": "https://joulescope.readthedocs.io/en/stable/api/stream_buffer.html",
     "joulescope.v1.stream_buffer.streambuffer": "https://joulescope.readthedocs.io/en/stable/api/stream_buffer.html#joulescope.v1.stream_buffer.StreamBuffer",
     "joulescope.v1.stream_buffer.streambuffer.data_get": "https://joulescope.readthedocs.io/en/stable/api/stream_buffer.html#joulescope.v1.stream_buffer.StreamBuffer.data_get",
@@ -87,6 +94,7 @@ MAPPING = {
     "joulescope.v1.stream_buffer.streambuffer.sample_id_range": "https://joulescope.readthedocs.io/en/stable/api/stream_buffer.html#joulescope.v1.stream_buffer.StreamBuffer.sample_id_range",
     "joulescope.v1.stream_buffer.streambuffer.samples_get": "https://joulescope.readthedocs.io/en/stable/api/stream_buffer.html#joulescope.v1.stream_buffer.StreamBuffer.samples_get",
     "joulescope.v1.stream_buffer.streambuffer.statistics_get": "https://joulescope.readthedocs.io/en/stable/api/stream_buffer.html#joulescope.v1.stream_buffer.StreamBuffer.statistics_get",
+    "joulescope.v1.stream_buffer.streambuffer.utc_anchor": "https://joulescope.readthedocs.io/en/stable/api/stream_buffer.html#joulescope.v1.stream_buffer.StreamBuffer.utc_anchor",
     "joulescope.view": "https://joulescope.readthedocs.io/en/stable/api/view.html",
     "joulescope.view.view": "https://joulescope.readthedocs.io/en/stable/api/view.html#joulescope.view.View",
     "joulescope.view.view.calibration": "https://joulescope.readthedocs.io/en/stable/api/view.html#joulescope.view.View.calibration",

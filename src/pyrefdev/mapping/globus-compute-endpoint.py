@@ -1,4 +1,4 @@
-VERSION = "4.16.0"
+VERSION = "4.21.0"
 
 # fmt: off
 MAPPING = {
@@ -7,7 +7,7 @@ MAPPING = {
     "globus_compute_endpoint.endpoint.config": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html",
     "globus_compute_endpoint.endpoint.config.config": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html",
     "globus_compute_endpoint.endpoint.config.config.baseconfig": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html#globus_compute_endpoint.endpoint.config.config.BaseConfig",
-    "globus_compute_endpoint.endpoint.config.config.managerendpointconfig": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html#globus_compute_endpoint.endpoint.config.config.ManagerEndpointConfig",
+    "globus_compute_endpoint.endpoint.config.config.coreendpointconfig": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html#globus_compute_endpoint.endpoint.config.config.CoreEndpointConfig",
     "globus_compute_endpoint.endpoint.config.config.userendpointconfig": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html#globus_compute_endpoint.endpoint.config.config.UserEndpointConfig",
     "globus_compute_endpoint.endpoint.config.pam": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html",
     "globus_compute_endpoint.endpoint.config.pam.pamconfiguration": "https://globus-compute.readthedocs.io/en/stable/endpoints/config_reference.html#globus_compute_endpoint.endpoint.config.pam.PamConfiguration",

@@ -1,4 +1,4 @@
-VERSION = "3.3.1"
+VERSION = "4.0.1"
 
 # fmt: off
 MAPPING = {
@@ -58,6 +58,7 @@ MAPPING = {
     "oauthlib.oauth2.authorizationcodegrant.create_token_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/authcode.html#oauthlib.oauth2.AuthorizationCodeGrant.create_token_response",
     "oauthlib.oauth2.authorizationcodegrant.prepare_authorization_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/authcode.html#oauthlib.oauth2.AuthorizationCodeGrant.prepare_authorization_response",
     "oauthlib.oauth2.authorizationcodegrant.validate_authorization_request": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/authcode.html#oauthlib.oauth2.AuthorizationCodeGrant.validate_authorization_request",
+    "oauthlib.oauth2.authorizationcodegrant.validate_client_authentication": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/authcode.html#oauthlib.oauth2.AuthorizationCodeGrant.validate_client_authentication",
     "oauthlib.oauth2.authorizationcodegrant.validate_grant_type": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/authcode.html#oauthlib.oauth2.AuthorizationCodeGrant.validate_grant_type",
     "oauthlib.oauth2.authorizationcodegrant.validate_scopes": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/authcode.html#oauthlib.oauth2.AuthorizationCodeGrant.validate_scopes",
     "oauthlib.oauth2.authorizationcodegrant.validate_token_request": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/authcode.html#oauthlib.oauth2.AuthorizationCodeGrant.validate_token_request",
@@ -92,6 +93,7 @@ MAPPING = {
     "oauthlib.oauth2.clientcredentialsgrant.create_authorization_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/credentials.html#oauthlib.oauth2.ClientCredentialsGrant.create_authorization_response",
     "oauthlib.oauth2.clientcredentialsgrant.create_token_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/credentials.html#oauthlib.oauth2.ClientCredentialsGrant.create_token_response",
     "oauthlib.oauth2.clientcredentialsgrant.prepare_authorization_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/credentials.html#oauthlib.oauth2.ClientCredentialsGrant.prepare_authorization_response",
+    "oauthlib.oauth2.clientcredentialsgrant.validate_client_authentication": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/credentials.html#oauthlib.oauth2.ClientCredentialsGrant.validate_client_authentication",
     "oauthlib.oauth2.clientcredentialsgrant.validate_grant_type": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/credentials.html#oauthlib.oauth2.ClientCredentialsGrant.validate_grant_type",
     "oauthlib.oauth2.clientcredentialsgrant.validate_scopes": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/credentials.html#oauthlib.oauth2.ClientCredentialsGrant.validate_scopes",
     "oauthlib.oauth2.clientcredentialsgrant.validate_token_request": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/credentials.html#oauthlib.oauth2.ClientCredentialsGrant.validate_token_request",
@@ -109,7 +111,11 @@ MAPPING = {
     "oauthlib.oauth2.devicecodegrant.add_token": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/device_code.html#oauthlib.oauth2.DeviceCodeGrant.add_token",
     "oauthlib.oauth2.devicecodegrant.create_authorization_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/device_code.html#oauthlib.oauth2.DeviceCodeGrant.create_authorization_response",
     "oauthlib.oauth2.devicecodegrant.create_token_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/device_code.html#oauthlib.oauth2.DeviceCodeGrant.create_token_response",
+    "oauthlib.oauth2.devicecodegrant.device_code_authorized": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/device_code.html#oauthlib.oauth2.DeviceCodeGrant.DEVICE_CODE_AUTHORIZED",
     "oauthlib.oauth2.devicecodegrant.prepare_authorization_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/device_code.html#oauthlib.oauth2.DeviceCodeGrant.prepare_authorization_response",
+    "oauthlib.oauth2.devicecodegrant.validate_client_authentication": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/device_code.html#oauthlib.oauth2.DeviceCodeGrant.validate_client_authentication",
+    "oauthlib.oauth2.devicecodegrant.validate_device_authorization_request": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/device_code.html#oauthlib.oauth2.DeviceCodeGrant.validate_device_authorization_request",
+    "oauthlib.oauth2.devicecodegrant.validate_device_code": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/device_code.html#oauthlib.oauth2.DeviceCodeGrant.validate_device_code",
     "oauthlib.oauth2.devicecodegrant.validate_grant_type": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/device_code.html#oauthlib.oauth2.DeviceCodeGrant.validate_grant_type",
     "oauthlib.oauth2.devicecodegrant.validate_scopes": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/device_code.html#oauthlib.oauth2.DeviceCodeGrant.validate_scopes",
     "oauthlib.oauth2.devicecodegrant.validate_token_request": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/device_code.html#oauthlib.oauth2.DeviceCodeGrant.validate_token_request",
@@ -119,6 +125,7 @@ MAPPING = {
     "oauthlib.oauth2.implicitgrant.create_token_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/implicit.html#oauthlib.oauth2.ImplicitGrant.create_token_response",
     "oauthlib.oauth2.implicitgrant.prepare_authorization_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/implicit.html#oauthlib.oauth2.ImplicitGrant.prepare_authorization_response",
     "oauthlib.oauth2.implicitgrant.validate_authorization_request": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/implicit.html#oauthlib.oauth2.ImplicitGrant.validate_authorization_request",
+    "oauthlib.oauth2.implicitgrant.validate_client_authentication": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/implicit.html#oauthlib.oauth2.ImplicitGrant.validate_client_authentication",
     "oauthlib.oauth2.implicitgrant.validate_grant_type": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/implicit.html#oauthlib.oauth2.ImplicitGrant.validate_grant_type",
     "oauthlib.oauth2.implicitgrant.validate_scopes": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/implicit.html#oauthlib.oauth2.ImplicitGrant.validate_scopes",
     "oauthlib.oauth2.implicitgrant.validate_token_request": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/implicit.html#oauthlib.oauth2.ImplicitGrant.validate_token_request",
@@ -141,6 +148,7 @@ MAPPING = {
     "oauthlib.oauth2.refreshtokengrant.create_authorization_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/refresh.html#oauthlib.oauth2.RefreshTokenGrant.create_authorization_response",
     "oauthlib.oauth2.refreshtokengrant.create_token_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/refresh.html#oauthlib.oauth2.RefreshTokenGrant.create_token_response",
     "oauthlib.oauth2.refreshtokengrant.prepare_authorization_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/refresh.html#oauthlib.oauth2.RefreshTokenGrant.prepare_authorization_response",
+    "oauthlib.oauth2.refreshtokengrant.validate_client_authentication": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/refresh.html#oauthlib.oauth2.RefreshTokenGrant.validate_client_authentication",
     "oauthlib.oauth2.refreshtokengrant.validate_grant_type": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/refresh.html#oauthlib.oauth2.RefreshTokenGrant.validate_grant_type",
     "oauthlib.oauth2.refreshtokengrant.validate_scopes": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/refresh.html#oauthlib.oauth2.RefreshTokenGrant.validate_scopes",
     "oauthlib.oauth2.refreshtokengrant.validate_token_request": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/refresh.html#oauthlib.oauth2.RefreshTokenGrant.validate_token_request",
@@ -181,6 +189,7 @@ MAPPING = {
     "oauthlib.oauth2.resourceownerpasswordcredentialsgrant.create_authorization_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/password.html#oauthlib.oauth2.ResourceOwnerPasswordCredentialsGrant.create_authorization_response",
     "oauthlib.oauth2.resourceownerpasswordcredentialsgrant.create_token_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/password.html#oauthlib.oauth2.ResourceOwnerPasswordCredentialsGrant.create_token_response",
     "oauthlib.oauth2.resourceownerpasswordcredentialsgrant.prepare_authorization_response": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/password.html#oauthlib.oauth2.ResourceOwnerPasswordCredentialsGrant.prepare_authorization_response",
+    "oauthlib.oauth2.resourceownerpasswordcredentialsgrant.validate_client_authentication": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/password.html#oauthlib.oauth2.ResourceOwnerPasswordCredentialsGrant.validate_client_authentication",
     "oauthlib.oauth2.resourceownerpasswordcredentialsgrant.validate_grant_type": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/password.html#oauthlib.oauth2.ResourceOwnerPasswordCredentialsGrant.validate_grant_type",
     "oauthlib.oauth2.resourceownerpasswordcredentialsgrant.validate_scopes": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/password.html#oauthlib.oauth2.ResourceOwnerPasswordCredentialsGrant.validate_scopes",
     "oauthlib.oauth2.resourceownerpasswordcredentialsgrant.validate_token_request": "https://oauthlib.readthedocs.io/en/latest/oauth2/grants/password.html#oauthlib.oauth2.ResourceOwnerPasswordCredentialsGrant.validate_token_request",

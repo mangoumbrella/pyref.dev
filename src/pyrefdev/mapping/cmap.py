@@ -1,4 +1,4 @@
-VERSION = "0.7.2"
+VERSION = "0.8.0"
 
 # fmt: off
 MAPPING = {
@@ -52,8 +52,11 @@ MAPPING = {
     "cmap._colormap.colormap.iter_colors": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.iter_colors",
     "cmap._colormap.colormap.lut": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.lut",
     "cmap._colormap.colormap.name": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.name",
+    "cmap._colormap.colormap.nan_color": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.nan_color",
+    "cmap._colormap.colormap.neg_inf_color": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.neg_inf_color",
     "cmap._colormap.colormap.num_colors": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.num_colors",
     "cmap._colormap.colormap.over_color": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.over_color",
+    "cmap._colormap.colormap.pos_inf_color": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.pos_inf_color",
     "cmap._colormap.colormap.reversed": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.reversed",
     "cmap._colormap.colormap.shifted": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.shifted",
     "cmap._colormap.colormap.to_altair": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.to_altair",
@@ -74,6 +77,7 @@ MAPPING = {
     "cmap._colormap.colorstops": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops",
     "cmap._colormap.colorstops.color_array": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.color_array",
     "cmap._colormap.colorstops.colors": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.colors",
+    "cmap._colormap.colorstops.lut_func": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.lut_func",
     "cmap._colormap.colorstops.parse": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.parse",
     "cmap._colormap.colorstops.reversed": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.reversed",
     "cmap._colormap.colorstops.shifted": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.shifted",
@@ -81,6 +85,7 @@ MAPPING = {
     "cmap._colormap.colorstops.to_css": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.to_css",
     "cmap._colormap.colorstops.to_lut": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.to_lut",
     "cmap._util": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/",
+    "cmap._util.register_mpl": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.register_mpl",
     "cmap._util.to_mpl": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.to_mpl",
     "cmap.catalog": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Catalog",
     "cmap.catalog.namespaced_keys": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Catalog.namespaced_keys",
@@ -112,8 +117,11 @@ MAPPING = {
     "cmap.colormap.iter_colors": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.iter_colors",
     "cmap.colormap.lut": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.lut",
     "cmap.colormap.name": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.name",
+    "cmap.colormap.nan_color": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.nan_color",
+    "cmap.colormap.neg_inf_color": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.neg_inf_color",
     "cmap.colormap.num_colors": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.num_colors",
     "cmap.colormap.over_color": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.over_color",
+    "cmap.colormap.pos_inf_color": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.pos_inf_color",
     "cmap.colormap.reversed": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.reversed",
     "cmap.colormap.shifted": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.shifted",
     "cmap.colormap.to_altair": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.Colormap.to_altair",
@@ -134,6 +142,7 @@ MAPPING = {
     "cmap.colorstops": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops",
     "cmap.colorstops.color_array": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.color_array",
     "cmap.colorstops.colors": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.colors",
+    "cmap.colorstops.lut_func": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.lut_func",
     "cmap.colorstops.parse": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.parse",
     "cmap.colorstops.reversed": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.reversed",
     "cmap.colorstops.shifted": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.ColorStops.shifted",
@@ -145,6 +154,7 @@ MAPPING = {
     "cmap.hsla.to_rgba": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.HSLA.to_rgba",
     "cmap.hsva": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.HSVA",
     "cmap.hsva.to_rgba": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.HSVA.to_rgba",
+    "cmap.register_mpl": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.register_mpl",
     "cmap.rgba": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.RGBA",
     "cmap.rgba.to_8bit": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.RGBA.to_8bit",
     "cmap.rgba.to_hex": "https://cmap-docs.readthedocs.io/en/latest/reference/cmap/#cmap.RGBA.to_hex",

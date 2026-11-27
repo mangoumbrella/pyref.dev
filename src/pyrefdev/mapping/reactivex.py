@@ -1,4 +1,4 @@
-VERSION = "5.1.0"
+VERSION = "6.1.1"
 
 # fmt: off
 MAPPING = {
@@ -78,6 +78,8 @@ MAPPING = {
     "reactivex.operators.catch": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.catch",
     "reactivex.operators.combine_latest": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.combine_latest",
     "reactivex.operators.concat": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.concat",
+    "reactivex.operators.concat_all": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.concat_all",
+    "reactivex.operators.concat_map": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.concat_map",
     "reactivex.operators.contains": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.contains",
     "reactivex.operators.count": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.count",
     "reactivex.operators.debounce": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.debounce",
@@ -144,6 +146,7 @@ MAPPING = {
     "reactivex.operators.share": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.share",
     "reactivex.operators.single": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.single",
     "reactivex.operators.single_or_default": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.single_or_default",
+    "reactivex.operators.single_or_default_async": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.single_or_default_async",
     "reactivex.operators.skip": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.skip",
     "reactivex.operators.skip_last": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.skip_last",
     "reactivex.operators.skip_last_with_time": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.skip_last_with_time",
@@ -160,6 +163,8 @@ MAPPING = {
     "reactivex.operators.subscribe_on": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.subscribe_on",
     "reactivex.operators.sum": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.sum",
     "reactivex.operators.switch_latest": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.switch_latest",
+    "reactivex.operators.switch_map": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.switch_map",
+    "reactivex.operators.switch_map_indexed": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.switch_map_indexed",
     "reactivex.operators.take": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.take",
     "reactivex.operators.take_last": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.take_last",
     "reactivex.operators.take_last_buffer": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.take_last_buffer",
@@ -188,8 +193,11 @@ MAPPING = {
     "reactivex.operators.window_toggle": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.window_toggle",
     "reactivex.operators.window_when": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.window_when",
     "reactivex.operators.window_with_count": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.window_with_count",
+    "reactivex.operators.window_with_time": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.window_with_time",
+    "reactivex.operators.window_with_time_or_count": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.window_with_time_or_count",
     "reactivex.operators.with_latest_from": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.with_latest_from",
     "reactivex.operators.zip": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.zip",
+    "reactivex.operators.zip_latest": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.zip_latest",
     "reactivex.operators.zip_with_iterable": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.zip_with_iterable",
     "reactivex.operators.zip_with_list": "https://rxpy.readthedocs.io/en/stable/reference_operators.html#reactivex.operators.zip_with_list",
     "reactivex.pipe": "https://rxpy.readthedocs.io/en/stable/reference_observable_factory.html#reactivex.pipe",
@@ -399,4 +407,5 @@ MAPPING = {
     "reactivex.using": "https://rxpy.readthedocs.io/en/stable/reference_observable_factory.html#reactivex.using",
     "reactivex.with_latest_from": "https://rxpy.readthedocs.io/en/stable/reference_observable_factory.html#reactivex.with_latest_from",
     "reactivex.zip": "https://rxpy.readthedocs.io/en/stable/reference_observable_factory.html#reactivex.zip",
+    "reactivex.zip_latest": "https://rxpy.readthedocs.io/en/stable/reference_observable_factory.html#reactivex.zip_latest",
 }

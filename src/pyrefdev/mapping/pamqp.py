@@ -1,4 +1,4 @@
-VERSION = "4.0.1"
+VERSION = "6.0.0"
 
 # fmt: off
 MAPPING = {
@@ -180,6 +180,7 @@ MAPPING = {
     "pamqp.decode.long_long_int": "https://gmr.github.io/pamqp/api/decode/#pamqp.decode.long_long_int",
     "pamqp.decode.long_str": "https://gmr.github.io/pamqp/api/decode/#pamqp.decode.long_str",
     "pamqp.decode.long_uint": "https://gmr.github.io/pamqp/api/decode/#pamqp.decode.long_uint",
+    "pamqp.decode.max_nesting_depth": "https://gmr.github.io/pamqp/api/decode/#pamqp.decode.MAX_NESTING_DEPTH",
     "pamqp.decode.octet": "https://gmr.github.io/pamqp/api/decode/#pamqp.decode.octet",
     "pamqp.decode.short_int": "https://gmr.github.io/pamqp/api/decode/#pamqp.decode.short_int",
     "pamqp.decode.short_short_int": "https://gmr.github.io/pamqp/api/decode/#pamqp.decode.short_short_int",
@@ -189,12 +190,12 @@ MAPPING = {
     "pamqp.decode.timestamp": "https://gmr.github.io/pamqp/api/decode/#pamqp.decode.timestamp",
     "pamqp.decode.void": "https://gmr.github.io/pamqp/api/decode/#pamqp.decode.void",
     "pamqp.encode": "https://gmr.github.io/pamqp/api/encode/#pamqp.encode",
+    "pamqp.encode.__getattr__": "https://gmr.github.io/pamqp/api/encode/#pamqp.encode.__getattr__",
     "pamqp.encode.bit": "https://gmr.github.io/pamqp/api/encode/#pamqp.encode.bit",
     "pamqp.encode.boolean": "https://gmr.github.io/pamqp/api/encode/#pamqp.encode.boolean",
     "pamqp.encode.by_type": "https://gmr.github.io/pamqp/api/encode/#pamqp.encode.by_type",
     "pamqp.encode.byte_array": "https://gmr.github.io/pamqp/api/encode/#pamqp.encode.byte_array",
     "pamqp.encode.decimal": "https://gmr.github.io/pamqp/api/encode/#pamqp.encode.decimal",
-    "pamqp.encode.deprecated_rabbitmq_support": "https://gmr.github.io/pamqp/api/encode/#pamqp.encode.DEPRECATED_RABBITMQ_SUPPORT",
     "pamqp.encode.double": "https://gmr.github.io/pamqp/api/encode/#pamqp.encode.double",
     "pamqp.encode.encode_table_value": "https://gmr.github.io/pamqp/api/encode/#pamqp.encode.encode_table_value",
     "pamqp.encode.field_array": "https://gmr.github.io/pamqp/api/encode/#pamqp.encode.field_array",

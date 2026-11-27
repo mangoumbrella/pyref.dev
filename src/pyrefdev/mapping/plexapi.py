@@ -1,4 +1,4 @@
-VERSION = "4.18.2"
+VERSION = "4.18.3"
 
 # fmt: off
 MAPPING = {
@@ -941,6 +941,7 @@ MAPPING = {
     "plexapi.video.clipsession": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.ClipSession",
     "plexapi.video.episode": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Episode",
     "plexapi.video.episode.actors": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Episode.actors",
+    "plexapi.video.episode.cannormalizeloudness": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Episode.canNormalizeLoudness",
     "plexapi.video.episode.episodenumber": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Episode.episodeNumber",
     "plexapi.video.episode.hascommercialmarker": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Episode.hasCommercialMarker",
     "plexapi.video.episode.hascreditsmarker": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Episode.hasCreditsMarker",
@@ -962,6 +963,7 @@ MAPPING = {
     "plexapi.video.extra": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Extra",
     "plexapi.video.movie": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Movie",
     "plexapi.video.movie.actors": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Movie.actors",
+    "plexapi.video.movie.cannormalizeloudness": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Movie.canNormalizeLoudness",
     "plexapi.video.movie.hascreditsmarker": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Movie.hasCreditsMarker",
     "plexapi.video.movie.haspreviewthumbnails": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Movie.hasPreviewThumbnails",
     "plexapi.video.movie.hasvoiceactivity": "https://python-plexapi.readthedocs.io/en/stable/modules/video.html#plexapi.video.Movie.hasVoiceActivity",

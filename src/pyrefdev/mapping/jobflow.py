@@ -1,4 +1,4 @@
-VERSION = "0.3.1"
+VERSION = "0.4.0"
 
 # fmt: off
 MAPPING = {
@@ -75,6 +75,9 @@ MAPPING = {
     "jobflow.core.reference.outputreference.resolve": "https://materialsproject.github.io/jobflow/jobflow.core.html#jobflow.core.reference.OutputReference.resolve",
     "jobflow.core.reference.outputreference.set_uuid": "https://materialsproject.github.io/jobflow/jobflow.core.html#jobflow.core.reference.OutputReference.set_uuid",
     "jobflow.core.reference.resolve_references": "https://materialsproject.github.io/jobflow/jobflow.core.html#jobflow.core.reference.resolve_references",
+    "jobflow.core.reference.resolvedreference": "https://materialsproject.github.io/jobflow/jobflow.core.html#jobflow.core.reference.ResolvedReference",
+    "jobflow.core.reference.resolvedreference.reference": "https://materialsproject.github.io/jobflow/jobflow.core.html#jobflow.core.reference.ResolvedReference.reference",
+    "jobflow.core.reference.resolvedreference.value": "https://materialsproject.github.io/jobflow/jobflow.core.html#jobflow.core.reference.ResolvedReference.value",
     "jobflow.core.reference.validate_schema_access": "https://materialsproject.github.io/jobflow/jobflow.core.html#jobflow.core.reference.validate_schema_access",
     "jobflow.core.state": "https://materialsproject.github.io/jobflow/jobflow.core.html#module-jobflow.core.state",
     "jobflow.core.store": "https://materialsproject.github.io/jobflow/jobflow.core.html#module-jobflow.core.store",
@@ -129,6 +132,7 @@ MAPPING = {
     "jobflow.utils.find.find_key": "https://materialsproject.github.io/jobflow/jobflow.utils.html#jobflow.utils.find.find_key",
     "jobflow.utils.find.find_key_value": "https://materialsproject.github.io/jobflow/jobflow.utils.html#jobflow.utils.find.find_key_value",
     "jobflow.utils.find.get_root_locations": "https://materialsproject.github.io/jobflow/jobflow.utils.html#jobflow.utils.find.get_root_locations",
+    "jobflow.utils.find.replace_job_or_flow_with_output": "https://materialsproject.github.io/jobflow/jobflow.utils.html#jobflow.utils.find.replace_job_or_flow_with_output",
     "jobflow.utils.find.update_in_dictionary": "https://materialsproject.github.io/jobflow/jobflow.utils.html#jobflow.utils.find.update_in_dictionary",
     "jobflow.utils.graph": "https://materialsproject.github.io/jobflow/jobflow.utils.html#module-jobflow.utils.graph",
     "jobflow.utils.graph.draw_graph": "https://materialsproject.github.io/jobflow/jobflow.utils.html#jobflow.utils.graph.draw_graph",

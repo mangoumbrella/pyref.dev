@@ -1,4 +1,4 @@
-VERSION = "0.52.0"
+VERSION = "0.54.1"
 
 # fmt: off
 MAPPING = {
@@ -101,14 +101,6 @@ MAPPING = {
     "shap.explanation.shape": "https://shap.readthedocs.io/en/latest/generated/shap.Explanation.html#shap.Explanation.shape",
     "shap.explanation.upper_bounds": "https://shap.readthedocs.io/en/latest/generated/shap.Explanation.html#shap.Explanation.upper_bounds",
     "shap.explanation.values": "https://shap.readthedocs.io/en/latest/generated/shap.Explanation.html#shap.Explanation.values",
-    "shap.gputreeexplainer": "https://shap.readthedocs.io/en/latest/generated/shap.GPUTreeExplainer.html#shap.GPUTreeExplainer",
-    "shap.gputreeexplainer.__init__": "https://shap.readthedocs.io/en/latest/generated/shap.GPUTreeExplainer.html#shap.GPUTreeExplainer.__init__",
-    "shap.gputreeexplainer.explain_row": "https://shap.readthedocs.io/en/latest/generated/shap.GPUTreeExplainer.html#shap.GPUTreeExplainer.explain_row",
-    "shap.gputreeexplainer.load": "https://shap.readthedocs.io/en/latest/generated/shap.GPUTreeExplainer.html#shap.GPUTreeExplainer.load",
-    "shap.gputreeexplainer.save": "https://shap.readthedocs.io/en/latest/generated/shap.GPUTreeExplainer.html#shap.GPUTreeExplainer.save",
-    "shap.gputreeexplainer.shap_interaction_values": "https://shap.readthedocs.io/en/latest/generated/shap.GPUTreeExplainer.html#shap.GPUTreeExplainer.shap_interaction_values",
-    "shap.gputreeexplainer.shap_values": "https://shap.readthedocs.io/en/latest/generated/shap.GPUTreeExplainer.html#shap.GPUTreeExplainer.shap_values",
-    "shap.gputreeexplainer.supports_model_with_masker": "https://shap.readthedocs.io/en/latest/generated/shap.GPUTreeExplainer.html#shap.GPUTreeExplainer.supports_model_with_masker",
     "shap.gradientexplainer": "https://shap.readthedocs.io/en/latest/generated/shap.GradientExplainer.html#shap.GradientExplainer",
     "shap.gradientexplainer.__init__": "https://shap.readthedocs.io/en/latest/generated/shap.GradientExplainer.html#shap.GradientExplainer.__init__",
     "shap.gradientexplainer.explain_row": "https://shap.readthedocs.io/en/latest/generated/shap.GradientExplainer.html#shap.GradientExplainer.explain_row",

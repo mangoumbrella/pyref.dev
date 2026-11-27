@@ -1,4 +1,4 @@
-VERSION = "65.19.3"
+VERSION = "65.22.1"
 
 # fmt: off
 MAPPING = {
@@ -32,6 +32,8 @@ MAPPING = {
     "allauth.account.adapter.defaultaccountadapter.is_email_verified": "https://docs.allauth.org/en/latest/account/adapter.html#allauth.account.adapter.DefaultAccountAdapter.is_email_verified",
     "allauth.account.adapter.defaultaccountadapter.is_login_by_code_required": "https://docs.allauth.org/en/latest/account/adapter.html#allauth.account.adapter.DefaultAccountAdapter.is_login_by_code_required",
     "allauth.account.adapter.defaultaccountadapter.is_open_for_signup": "https://docs.allauth.org/en/latest/account/adapter.html#allauth.account.adapter.DefaultAccountAdapter.is_open_for_signup",
+    "allauth.account.adapter.defaultaccountadapter.is_reauthentication_required": "https://docs.allauth.org/en/latest/account/adapter.html#allauth.account.adapter.DefaultAccountAdapter.is_reauthentication_required",
+    "allauth.account.adapter.defaultaccountadapter.is_safe_url": "https://docs.allauth.org/en/latest/account/adapter.html#allauth.account.adapter.DefaultAccountAdapter.is_safe_url",
     "allauth.account.adapter.defaultaccountadapter.new_user": "https://docs.allauth.org/en/latest/account/adapter.html#allauth.account.adapter.DefaultAccountAdapter.new_user",
     "allauth.account.adapter.defaultaccountadapter.phone_form_field": "https://docs.allauth.org/en/latest/account/phone.html#allauth.account.adapter.DefaultAccountAdapter.phone_form_field",
     "allauth.account.adapter.defaultaccountadapter.populate_username": "https://docs.allauth.org/en/latest/account/adapter.html#allauth.account.adapter.DefaultAccountAdapter.populate_username",
@@ -47,6 +49,7 @@ MAPPING = {
     "allauth.headless.adapter.defaultheadlessadapter": "https://docs.allauth.org/en/latest/headless/adapter.html#allauth.headless.adapter.DefaultHeadlessAdapter",
     "allauth.headless.adapter.defaultheadlessadapter.get_frontend_url": "https://docs.allauth.org/en/latest/headless/adapter.html#allauth.headless.adapter.DefaultHeadlessAdapter.get_frontend_url",
     "allauth.headless.adapter.defaultheadlessadapter.get_user_dataclass": "https://docs.allauth.org/en/latest/headless/adapter.html#allauth.headless.adapter.DefaultHeadlessAdapter.get_user_dataclass",
+    "allauth.headless.adapter.defaultheadlessadapter.populate_response_meta": "https://docs.allauth.org/en/latest/headless/adapter.html#allauth.headless.adapter.DefaultHeadlessAdapter.populate_response_meta",
     "allauth.headless.adapter.defaultheadlessadapter.serialize_user": "https://docs.allauth.org/en/latest/headless/adapter.html#allauth.headless.adapter.DefaultHeadlessAdapter.serialize_user",
     "allauth.headless.adapter.defaultheadlessadapter.user_as_dataclass": "https://docs.allauth.org/en/latest/headless/adapter.html#allauth.headless.adapter.DefaultHeadlessAdapter.user_as_dataclass",
     "allauth.headless.tokens.strategies.base": "https://docs.allauth.org/en/latest/headless/token-strategies/abstract-strategy.html",
@@ -56,6 +59,7 @@ MAPPING = {
     "allauth.headless.tokens.strategies.base.abstracttokenstrategy.create_session_token": "https://docs.allauth.org/en/latest/headless/token-strategies/abstract-strategy.html#allauth.headless.tokens.strategies.base.AbstractTokenStrategy.create_session_token",
     "allauth.headless.tokens.strategies.base.abstracttokenstrategy.get_session_token": "https://docs.allauth.org/en/latest/headless/token-strategies/abstract-strategy.html#allauth.headless.tokens.strategies.base.AbstractTokenStrategy.get_session_token",
     "allauth.headless.tokens.strategies.base.abstracttokenstrategy.lookup_session": "https://docs.allauth.org/en/latest/headless/token-strategies/abstract-strategy.html#allauth.headless.tokens.strategies.base.AbstractTokenStrategy.lookup_session",
+    "allauth.headless.tokens.strategies.base.abstracttokenstrategy.openapi_spec": "https://docs.allauth.org/en/latest/headless/token-strategies/abstract-strategy.html#allauth.headless.tokens.strategies.base.AbstractTokenStrategy.openapi_spec",
     "allauth.headless.tokens.strategies.base.abstracttokenstrategy.refresh_token": "https://docs.allauth.org/en/latest/headless/token-strategies/abstract-strategy.html#allauth.headless.tokens.strategies.base.AbstractTokenStrategy.refresh_token",
     "allauth.headless.tokens.strategies.jwt": "https://docs.allauth.org/en/latest/headless/token-strategies/jwt-tokens.html",
     "allauth.headless.tokens.strategies.jwt.jwttokenstrategy": "https://docs.allauth.org/en/latest/headless/token-strategies/jwt-tokens.html#allauth.headless.tokens.strategies.jwt.JWTTokenStrategy",

@@ -1,15 +1,21 @@
-VERSION = "2.3.1"
+VERSION = "3.0.0"
 
 # fmt: off
 MAPPING = {
     "panflute": "https://scorreia.com/software/panflute/",
+    "panflute.autofilter": "https://scorreia.com/software/panflute/code.html",
+    "panflute.autofilter.get_filter_dirs": "https://scorreia.com/software/panflute/code.html#panflute.autofilter.get_filter_dirs",
+    "panflute.autofilter.main": "https://scorreia.com/software/panflute/code.html#panflute.autofilter.main",
+    "panflute.autofilter.stdio": "https://scorreia.com/software/panflute/code.html#panflute.autofilter.stdio",
     "panflute.base": "https://scorreia.com/software/panflute/code.html#module-panflute.base",
     "panflute.base.block": "https://scorreia.com/software/panflute/code.html#panflute.base.Block",
     "panflute.base.element": "https://scorreia.com/software/panflute/code.html#panflute.base.Element",
     "panflute.base.element.ancestor": "https://scorreia.com/software/panflute/code.html#panflute.base.Element.ancestor",
     "panflute.base.element.container": "https://scorreia.com/software/panflute/code.html#panflute.base.Element.container",
     "panflute.base.element.content": "https://scorreia.com/software/panflute/code.html#panflute.base.Element.content",
+    "panflute.base.element.doc": "https://scorreia.com/software/panflute/code.html#panflute.base.Element.doc",
     "panflute.base.element.index": "https://scorreia.com/software/panflute/code.html#panflute.base.Element.index",
+    "panflute.base.element.index_in_parent": "https://scorreia.com/software/panflute/code.html#panflute.base.Element.index_in_parent",
     "panflute.base.element.location": "https://scorreia.com/software/panflute/code.html#panflute.base.Element.location",
     "panflute.base.element.next": "https://scorreia.com/software/panflute/code.html#panflute.base.Element.next",
     "panflute.base.element.offset": "https://scorreia.com/software/panflute/code.html#panflute.base.Element.offset",
@@ -34,6 +40,8 @@ MAPPING = {
     "panflute.elements.definitionitem": "https://scorreia.com/software/panflute/code.html#panflute.elements.DefinitionItem",
     "panflute.elements.definitionlist": "https://scorreia.com/software/panflute/code.html#panflute.elements.DefinitionList",
     "panflute.elements.div": "https://scorreia.com/software/panflute/code.html#panflute.elements.Div",
+    "panflute.elements.doc": "https://scorreia.com/software/panflute/code.html#panflute.elements.Doc",
+    "panflute.elements.doc.get_metadata": "https://scorreia.com/software/panflute/code.html#panflute.elements.Doc.get_metadata",
     "panflute.elements.emph": "https://scorreia.com/software/panflute/code.html#panflute.elements.Emph",
     "panflute.elements.figure": "https://scorreia.com/software/panflute/code.html#panflute.elements.Figure",
     "panflute.elements.header": "https://scorreia.com/software/panflute/code.html#panflute.elements.Header",
@@ -49,6 +57,8 @@ MAPPING = {
     "panflute.elements.metabool": "https://scorreia.com/software/panflute/code.html#panflute.elements.MetaBool",
     "panflute.elements.metainlines": "https://scorreia.com/software/panflute/code.html#panflute.elements.MetaInlines",
     "panflute.elements.metalist": "https://scorreia.com/software/panflute/code.html#panflute.elements.MetaList",
+    "panflute.elements.metalist.index": "https://scorreia.com/software/panflute/code.html#panflute.elements.MetaList.index",
+    "panflute.elements.metalist.insert": "https://scorreia.com/software/panflute/code.html#panflute.elements.MetaList.insert",
     "panflute.elements.metamap": "https://scorreia.com/software/panflute/code.html#panflute.elements.MetaMap",
     "panflute.elements.metamap.content": "https://scorreia.com/software/panflute/code.html#panflute.elements.MetaMap.content",
     "panflute.elements.metastring": "https://scorreia.com/software/panflute/code.html#panflute.elements.MetaString",
@@ -93,4 +103,6 @@ MAPPING = {
     "panflute.tools.shell": "https://scorreia.com/software/panflute/code.html#panflute.tools.shell",
     "panflute.tools.stringify": "https://scorreia.com/software/panflute/code.html#panflute.tools.stringify",
     "panflute.tools.yaml_filter": "https://scorreia.com/software/panflute/code.html#panflute.tools.yaml_filter",
+    "panflute.utils": "https://scorreia.com/software/panflute/code.html",
+    "panflute.utils.debug": "https://scorreia.com/software/panflute/code.html#panflute.utils.debug",
 }

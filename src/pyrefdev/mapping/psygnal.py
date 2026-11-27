@@ -1,8 +1,13 @@
-VERSION = "0.16.1"
+VERSION = "0.17.0"
 
 # fmt: off
 MAPPING = {
     "psygnal": "https://psygnal.readthedocs.io/en/latest/",
+    "psygnal.asyncbackend": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/#psygnal.AsyncBackend",
+    "psygnal.asyncbackend.put": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/#psygnal.AsyncBackend.put",
+    "psygnal.asyncbackend.run": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/#psygnal.AsyncBackend.run",
+    "psygnal.asyncbackend.running": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/#psygnal.AsyncBackend.running",
+    "psygnal.clear_queued": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/#psygnal.clear_queued",
     "psygnal.containers": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers",
     "psygnal.containers.callableproxyevents": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.CallableProxyEvents",
     "psygnal.containers.callableproxyevents.called": "https://psygnal.readthedocs.io/en/latest/reference/psygnal/containers/#psygnal.containers.CallableProxyEvents.called",

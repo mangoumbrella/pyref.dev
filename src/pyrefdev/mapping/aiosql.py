@@ -1,4 +1,4 @@
-VERSION = "15.0"
+VERSION = "16.2"
 
 # fmt: off
 MAPPING = {
@@ -16,6 +16,9 @@ MAPPING = {
     "aiosql.adapters.ageneric.asyncgenericadapter.select_cursor": "https://nackjicholson.github.io/aiosql/pydoc/aiosql.adapters.html#aiosql.adapters.ageneric.AsyncGenericAdapter.select_cursor",
     "aiosql.adapters.ageneric.asyncgenericadapter.select_one": "https://nackjicholson.github.io/aiosql/pydoc/aiosql.adapters.html#aiosql.adapters.ageneric.AsyncGenericAdapter.select_one",
     "aiosql.adapters.ageneric.asyncgenericadapter.select_value": "https://nackjicholson.github.io/aiosql/pydoc/aiosql.adapters.html#aiosql.adapters.ageneric.AsyncGenericAdapter.select_value",
+    "aiosql.adapters.aiopg": "https://nackjicholson.github.io/aiosql/pydoc/aiosql.adapters.html#module-aiosql.adapters.aiopg",
+    "aiosql.adapters.aiopg.aiopgadapter": "https://nackjicholson.github.io/aiosql/pydoc/aiosql.adapters.html#aiosql.adapters.aiopg.AioPgAdapter",
+    "aiosql.adapters.aiopg.aiopgadapter.insert_update_delete_many": "https://nackjicholson.github.io/aiosql/pydoc/aiosql.adapters.html#aiosql.adapters.aiopg.AioPgAdapter.insert_update_delete_many",
     "aiosql.adapters.aiosqlite": "https://nackjicholson.github.io/aiosql/pydoc/aiosql.adapters.html#module-aiosql.adapters.aiosqlite",
     "aiosql.adapters.aiosqlite.aiosqliteadapter": "https://nackjicholson.github.io/aiosql/pydoc/aiosql.adapters.html#aiosql.adapters.aiosqlite.AioSQLiteAdapter",
     "aiosql.adapters.aiosqlite.aiosqliteadapter.execute_script": "https://nackjicholson.github.io/aiosql/pydoc/aiosql.adapters.html#aiosql.adapters.aiosqlite.AioSQLiteAdapter.execute_script",

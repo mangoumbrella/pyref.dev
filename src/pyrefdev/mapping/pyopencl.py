@@ -1,4 +1,4 @@
-VERSION = "2026.1.4"
+VERSION = "2026.1.5"
 
 # fmt: off
 MAPPING = {
@@ -54,7 +54,6 @@ MAPPING = {
     "pyopencl.array.array.__abs__": "https://documen.tician.de/pyopencl/array.html#pyopencl.array.Array.__abs__",
     "pyopencl.array.array.__add__": "https://documen.tician.de/pyopencl/array.html#pyopencl.array.Array.__add__",
     "pyopencl.array.array.__and__": "https://documen.tician.de/pyopencl/array.html#pyopencl.array.Array.__and__",
-    "pyopencl.array.array.__bool__": "https://documen.tician.de/pyopencl/array.html#pyopencl.array.Array.__bool__",
     "pyopencl.array.array.__div__": "https://documen.tician.de/pyopencl/array.html#pyopencl.array.Array.__div__",
     "pyopencl.array.array.__eq__": "https://documen.tician.de/pyopencl/array.html#pyopencl.array.Array.__eq__",
     "pyopencl.array.array.__ge__": "https://documen.tician.de/pyopencl/array.html#pyopencl.array.Array.__ge__",
@@ -572,6 +571,8 @@ MAPPING = {
     "pyopencl.device_type.default": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.device_type.DEFAULT",
     "pyopencl.device_type.gpu": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.device_type.GPU",
     "pyopencl.device_type.to_string": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.device_type.to_string",
+    "pyopencl.devicepointerext": "https://documen.tician.de/pyopencl/runtime_memory.html#pyopencl.DevicePointerEXT",
+    "pyopencl.devicepointerext.address": "https://documen.tician.de/pyopencl/runtime_memory.html#pyopencl.DevicePointerEXT.address",
     "pyopencl.devicetopologyamd": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.DeviceTopologyAmd",
     "pyopencl.devicetopologyamd.__init__": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.DeviceTopologyAmd.__init__",
     "pyopencl.devicetopologyamd.bus": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.DeviceTopologyAmd.bus",
@@ -755,6 +756,7 @@ MAPPING = {
     "pyopencl.mem_info": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_info",
     "pyopencl.mem_info.associated_memobject": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_info.ASSOCIATED_MEMOBJECT",
     "pyopencl.mem_info.context": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_info.CONTEXT",
+    "pyopencl.mem_info.device_address_ext": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_info.DEVICE_ADDRESS_EXT",
     "pyopencl.mem_info.flags": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_info.FLAGS",
     "pyopencl.mem_info.host_ptr": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_info.HOST_PTR",
     "pyopencl.mem_info.map_count": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_info.MAP_COUNT",
@@ -779,6 +781,9 @@ MAPPING = {
     "pyopencl.mem_object_type.image3d": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_object_type.IMAGE3D",
     "pyopencl.mem_object_type.pipe": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_object_type.PIPE",
     "pyopencl.mem_object_type.to_string": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_object_type.to_string",
+    "pyopencl.mem_properties": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_properties",
+    "pyopencl.mem_properties.device_private_address_ext": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_properties.DEVICE_PRIVATE_ADDRESS_EXT",
+    "pyopencl.mem_properties.to_string": "https://documen.tician.de/pyopencl/runtime_const.html#pyopencl.mem_properties.to_string",
     "pyopencl.memoryerror": "https://documen.tician.de/pyopencl/runtime.html#pyopencl.MemoryError",
     "pyopencl.memorymap": "https://documen.tician.de/pyopencl/runtime_memory.html#pyopencl.MemoryMap",
     "pyopencl.memorymap.release": "https://documen.tician.de/pyopencl/runtime_memory.html#pyopencl.MemoryMap.release",

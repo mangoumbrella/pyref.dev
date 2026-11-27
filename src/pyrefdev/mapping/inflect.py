@@ -1,4 +1,4 @@
-VERSION = "7.5.0"
+VERSION = "7.6.0"
 
 # fmt: off
 MAPPING = {
@@ -12,6 +12,7 @@ MAPPING = {
     "inflect.enclose": "https://inflect.readthedocs.io/en/stable/index.html#inflect.enclose",
     "inflect.engine": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine",
     "inflect.engine.a": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.a",
+    "inflect.engine.a_a_user_defined": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.A_a_user_defined",
     "inflect.engine.an": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.an",
     "inflect.engine.checkpat": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.checkpat",
     "inflect.engine.checkpatplural": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.checkpatplural",
@@ -39,15 +40,22 @@ MAPPING = {
     "inflect.engine.millfn": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.millfn",
     "inflect.engine.no": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.no",
     "inflect.engine.num": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.num",
+    "inflect.engine.number_to_currency": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.number_to_currency",
     "inflect.engine.number_to_words": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.number_to_words",
     "inflect.engine.ordinal": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.ordinal",
     "inflect.engine.partition_word": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.partition_word",
+    "inflect.engine.persistent_count": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.persistent_count",
+    "inflect.engine.pl_adj_user_defined": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.pl_adj_user_defined",
+    "inflect.engine.pl_sb_preserve_case": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.pl_sb_preserve_case",
+    "inflect.engine.pl_sb_user_defined": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.pl_sb_user_defined",
+    "inflect.engine.pl_v_user_defined": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.pl_v_user_defined",
     "inflect.engine.plural": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.plural",
     "inflect.engine.plural_adj": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.plural_adj",
     "inflect.engine.plural_noun": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.plural_noun",
     "inflect.engine.plural_verb": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.plural_verb",
     "inflect.engine.postprocess": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.postprocess",
     "inflect.engine.present_participle": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.present_participle",
+    "inflect.engine.si_sb_user_defined": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.si_sb_user_defined",
     "inflect.engine.singular_noun": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.singular_noun",
     "inflect.engine.tenfn": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.tenfn",
     "inflect.engine.tensub": "https://inflect.readthedocs.io/en/stable/index.html#inflect.engine.tensub",

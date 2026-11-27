@@ -1,4 +1,4 @@
-VERSION = "8.2.0"
+VERSION = "8.4.0"
 
 # fmt: off
 MAPPING = {
@@ -2124,6 +2124,8 @@ MAPPING = {
     "spiceypy.utils.exceptions.spicezzholdnoput": "https://spiceypy.readthedocs.io/en/stable/documentation.html#spiceypy.utils.exceptions.SpiceZZHOLDNOPUT",
     "spiceypy.utils.libspicehelper": "https://spiceypy.readthedocs.io/en/stable/documentation.html#module-spiceypy.utils.libspicehelper",
     "spiceypy.utils.support_types": "https://spiceypy.readthedocs.io/en/stable/documentation.html#module-spiceypy.utils.support_types",
+    "spiceypy.utils.support_types.c_double_p": "https://spiceypy.readthedocs.io/en/stable/documentation.html#spiceypy.utils.support_types.c_double_p",
+    "spiceypy.utils.support_types.c_int_p": "https://spiceypy.readthedocs.io/en/stable/documentation.html#spiceypy.utils.support_types.c_int_p",
     "spiceypy.utils.support_types.c_int_vector_to_bool_python": "https://spiceypy.readthedocs.io/en/stable/documentation.html#spiceypy.utils.support_types.c_int_vector_to_bool_python",
     "spiceypy.utils.support_types.c_matrix_to_numpy": "https://spiceypy.readthedocs.io/en/stable/documentation.html#spiceypy.utils.support_types.c_matrix_to_numpy",
     "spiceypy.utils.support_types.c_vector_to_python": "https://spiceypy.readthedocs.io/en/stable/documentation.html#spiceypy.utils.support_types.c_vector_to_python",

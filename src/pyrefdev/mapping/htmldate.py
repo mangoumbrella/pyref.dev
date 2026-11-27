@@ -1,4 +1,4 @@
-VERSION = "1.10.0"
+VERSION = "1.11.0"
 
 # fmt: off
 MAPPING = {
@@ -17,7 +17,6 @@ MAPPING = {
     "htmldate.utils": "https://htmldate.readthedocs.io/en/latest/corefunctions.html",
     "htmldate.utils.fetch_url": "https://htmldate.readthedocs.io/en/latest/corefunctions.html#htmldate.utils.fetch_url",
     "htmldate.utils.load_html": "https://htmldate.readthedocs.io/en/latest/corefunctions.html#htmldate.utils.load_html",
-    "htmldate.validators.convert_date": "https://htmldate.readthedocs.io/en/latest/corefunctions.html#htmldate.validators.convert_date",
-    "htmldate.validators.is_valid_date": "https://htmldate.readthedocs.io/en/latest/corefunctions.html#htmldate.validators.is_valid_date",
     "htmldate.validators.is_valid_format": "https://htmldate.readthedocs.io/en/latest/options.html#htmldate.validators.is_valid_format",
+    "htmldate.validators.validate": "https://htmldate.readthedocs.io/en/latest/corefunctions.html#htmldate.validators.validate",
 }

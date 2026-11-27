@@ -1,4 +1,4 @@
-VERSION = "5.3.0"
+VERSION = "5.4.1"
 
 # fmt: off
 MAPPING = {
@@ -43,6 +43,7 @@ MAPPING = {
     "pyamg.amg_core.cr_helper": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.cr_helper",
     "pyamg.amg_core.csc_scale_columns": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.csc_scale_columns",
     "pyamg.amg_core.csc_scale_rows": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.csc_scale_rows",
+    "pyamg.amg_core.elimination_penalty": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.elimination_penalty",
     "pyamg.amg_core.evolution_strength_helper": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.evolution_strength_helper",
     "pyamg.amg_core.extract_subblocks": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.extract_subblocks",
     "pyamg.amg_core.filter_matrix_rows": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.filter_matrix_rows",
@@ -78,6 +79,7 @@ MAPPING = {
     "pyamg.amg_core.rs_direct_interpolation_pass2": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.rs_direct_interpolation_pass2",
     "pyamg.amg_core.satisfy_constraints_helper": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.satisfy_constraints_helper",
     "pyamg.amg_core.sor_gauss_seidel": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.sor_gauss_seidel",
+    "pyamg.amg_core.split_improvement": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.split_improvement",
     "pyamg.amg_core.standard_aggregation": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.standard_aggregation",
     "pyamg.amg_core.symmetric_strength_of_connection": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.symmetric_strength_of_connection",
     "pyamg.amg_core.truncate_rows_csr": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.amg_core.html#pyamg.amg_core.truncate_rows_csr",
@@ -91,6 +93,7 @@ MAPPING = {
     "pyamg.gallery.advection_2d": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.gallery.html#pyamg.gallery.advection_2d",
     "pyamg.gallery.demo": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.gallery.html#pyamg.gallery.demo",
     "pyamg.gallery.diffusion_stencil_2d": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.gallery.html#pyamg.gallery.diffusion_stencil_2d",
+    "pyamg.gallery.diffusion_variable": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.gallery.html#pyamg.gallery.diffusion_variable",
     "pyamg.gallery.gauge_laplacian": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.gallery.html#pyamg.gallery.gauge_laplacian",
     "pyamg.gallery.linear_elasticity": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.gallery.html#pyamg.gallery.linear_elasticity",
     "pyamg.gallery.linear_elasticity_p1": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.gallery.html#pyamg.gallery.linear_elasticity_p1",
@@ -101,6 +104,7 @@ MAPPING = {
     "pyamg.gallery.stencil_grid": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.gallery.html#pyamg.gallery.stencil_grid",
     "pyamg.graph": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.graph.html#module-pyamg.graph",
     "pyamg.graph._choice": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.graph.html#pyamg.graph._choice",
+    "pyamg.graph._cluster_nodes": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.graph.html#pyamg.graph._cluster_nodes",
     "pyamg.graph._elimination_penalty": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.graph.html#pyamg.graph._elimination_penalty",
     "pyamg.graph._rebalance": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.graph.html#pyamg.graph._rebalance",
     "pyamg.graph._split_improvement": "https://pyamg.readthedocs.io/en/latest/generated/pyamg.graph.html#pyamg.graph._split_improvement",

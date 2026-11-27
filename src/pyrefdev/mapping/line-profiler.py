@@ -1,4 +1,4 @@
-VERSION = "5.0.2"
+VERSION = "5.1.0"
 
 # fmt: off
 MAPPING = {
@@ -63,6 +63,7 @@ MAPPING = {
     "line_profiler.autoprofile.line_profiler_utils.add_imported_function_or_module": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.autoprofile.line_profiler_utils.html#line_profiler.autoprofile.line_profiler_utils.add_imported_function_or_module",
     "line_profiler.autoprofile.profmod_extractor": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.autoprofile.profmod_extractor.html#module-line_profiler.autoprofile.profmod_extractor",
     "line_profiler.autoprofile.profmod_extractor.profmodextractor": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.autoprofile.profmod_extractor.html#line_profiler.autoprofile.profmod_extractor.ProfmodExtractor",
+    "line_profiler.autoprofile.profmod_extractor.profmodextractor.extract_all": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.autoprofile.profmod_extractor.html#line_profiler.autoprofile.profmod_extractor.ProfmodExtractor.extract_all",
     "line_profiler.autoprofile.profmod_extractor.profmodextractor.run": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.autoprofile.profmod_extractor.html#line_profiler.autoprofile.profmod_extractor.ProfmodExtractor.run",
     "line_profiler.autoprofile.run_module": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.autoprofile.run_module.html#module-line_profiler.autoprofile.run_module",
     "line_profiler.autoprofile.run_module.asttreemoduleprofiler": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.autoprofile.run_module.html#line_profiler.autoprofile.run_module.AstTreeModuleProfiler",
@@ -125,25 +126,6 @@ MAPPING = {
     "line_profiler.line_profiler.main": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.line_profiler.html#line_profiler.line_profiler.main",
     "line_profiler.line_profiler.show_func": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.line_profiler.html#line_profiler.line_profiler.show_func",
     "line_profiler.line_profiler.show_text": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.line_profiler.html#line_profiler.line_profiler.show_text",
-    "line_profiler.lineprofiler": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineProfiler",
-    "line_profiler.lineprofiler.__call__": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineProfiler.__call__",
-    "line_profiler.lineprofiler.add_callable": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineProfiler.add_callable",
-    "line_profiler.lineprofiler.add_class": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineProfiler.add_class",
-    "line_profiler.lineprofiler.add_module": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineProfiler.add_module",
-    "line_profiler.lineprofiler.dump_stats": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineProfiler.dump_stats",
-    "line_profiler.lineprofiler.get_stats": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineProfiler.get_stats",
-    "line_profiler.lineprofiler.print_stats": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineProfiler.print_stats",
-    "line_profiler.lineprofiler.wrap_callable": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineProfiler.wrap_callable",
-    "line_profiler.linestats": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineStats",
-    "line_profiler.linestats.from_files": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineStats.from_files",
-    "line_profiler.linestats.from_stats_objects": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineStats.from_stats_objects",
-    "line_profiler.linestats.print": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineStats.print",
-    "line_profiler.linestats.timings": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineStats.timings",
-    "line_profiler.linestats.to_file": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineStats.to_file",
-    "line_profiler.linestats.unit": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.LineStats.unit",
-    "line_profiler.load_ipython_extension": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.load_ipython_extension",
-    "line_profiler.load_stats": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.load_stats",
-    "line_profiler.main": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.main",
     "line_profiler.profiler_mixin": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.profiler_mixin.html#module-line_profiler.profiler_mixin",
     "line_profiler.profiler_mixin.bycountprofilermixin": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.profiler_mixin.html#line_profiler.profiler_mixin.ByCountProfilerMixin",
     "line_profiler.profiler_mixin.bycountprofilermixin.disable_by_count": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.profiler_mixin.html#line_profiler.profiler_mixin.ByCountProfilerMixin.disable_by_count",
@@ -188,8 +170,6 @@ MAPPING = {
     "line_profiler.scoping_policy.scopingpolicydict.class": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.scoping_policy.html#line_profiler.scoping_policy.ScopingPolicyDict.class",
     "line_profiler.scoping_policy.scopingpolicydict.func": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.scoping_policy.html#line_profiler.scoping_policy.ScopingPolicyDict.func",
     "line_profiler.scoping_policy.scopingpolicydict.module": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.scoping_policy.html#line_profiler.scoping_policy.ScopingPolicyDict.module",
-    "line_profiler.show_func": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.show_func",
-    "line_profiler.show_text": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.html#line_profiler.show_text",
     "line_profiler.toml_config": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.toml_config.html#module-line_profiler.toml_config",
     "line_profiler.toml_config.configsource": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.toml_config.html#line_profiler.toml_config.ConfigSource",
     "line_profiler.toml_config.configsource.conf_dict": "https://kernprof.readthedocs.io/en/stable/auto/line_profiler.toml_config.html#line_profiler.toml_config.ConfigSource.conf_dict",

@@ -1,4 +1,4 @@
-VERSION = "10.8.0"
+VERSION = "10.11.0"
 
 # fmt: off
 MAPPING = {
@@ -47,6 +47,8 @@ MAPPING = {
     "edx_rest_framework_extensions.routers.course_key_lookup_regex": "https://edx-drf-extensions.readthedocs.io/en/stable/routers.html#edx_rest_framework_extensions.routers.COURSE_KEY_LOOKUP_REGEX",
     "edx_rest_framework_extensions.routers.usage_key_lookup_regex": "https://edx-drf-extensions.readthedocs.io/en/stable/routers.html#edx_rest_framework_extensions.routers.USAGE_KEY_LOOKUP_REGEX",
     "edx_rest_framework_extensions.scoping": "https://edx-drf-extensions.readthedocs.io/en/stable/scoping.html#module-edx_rest_framework_extensions.scoping",
+    "edx_rest_framework_extensions.scoping.fullscopepolicy": "https://edx-drf-extensions.readthedocs.io/en/stable/scoping.html#edx_rest_framework_extensions.scoping.FullScopePolicy",
+    "edx_rest_framework_extensions.scoping.fullscopepolicy.scope": "https://edx-drf-extensions.readthedocs.io/en/stable/scoping.html#edx_rest_framework_extensions.scoping.FullScopePolicy.scope",
     "edx_rest_framework_extensions.scoping.scopedquerysetmixin": "https://edx-drf-extensions.readthedocs.io/en/stable/scoping.html#edx_rest_framework_extensions.scoping.ScopedQuerysetMixin",
     "edx_rest_framework_extensions.scoping.scopedquerysetmixin.get_queryset": "https://edx-drf-extensions.readthedocs.io/en/stable/scoping.html#edx_rest_framework_extensions.scoping.ScopedQuerysetMixin.get_queryset",
     "edx_rest_framework_extensions.scoping.scopedquerysetmixin.scoping_policy": "https://edx-drf-extensions.readthedocs.io/en/stable/scoping.html#edx_rest_framework_extensions.scoping.ScopedQuerysetMixin.scoping_policy",

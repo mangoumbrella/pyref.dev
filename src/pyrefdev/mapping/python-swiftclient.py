@@ -131,6 +131,7 @@ MAPPING = {
     "swiftclient.utils.jsonableiterable.reverse": "https://docs.openstack.org/python-swiftclient/latest/swiftclient.html#swiftclient.utils.JSONableIterable.reverse",
     "swiftclient.utils.jsonableiterable.sort": "https://docs.openstack.org/python-swiftclient/latest/swiftclient.html#swiftclient.utils.JSONableIterable.sort",
     "swiftclient.utils.lengthwrapper": "https://docs.openstack.org/python-swiftclient/latest/swiftclient.html#swiftclient.utils.LengthWrapper",
+    "swiftclient.utils.md5": "https://docs.openstack.org/python-swiftclient/latest/swiftclient.html#swiftclient.utils.md5",
     "swiftclient.utils.prt_bytes": "https://docs.openstack.org/python-swiftclient/latest/swiftclient.html#swiftclient.utils.prt_bytes",
     "swiftclient.utils.readabletoiterable": "https://docs.openstack.org/python-swiftclient/latest/swiftclient.html#swiftclient.utils.ReadableToIterable",
     "swiftclient.utils.report_traceback": "https://docs.openstack.org/python-swiftclient/latest/swiftclient.html#swiftclient.utils.report_traceback",

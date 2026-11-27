@@ -1,4 +1,4 @@
-VERSION = "0.15.1"
+VERSION = "0.16.0"
 
 # fmt: off
 MAPPING = {
@@ -130,16 +130,6 @@ MAPPING = {
     "bx.align.maf.writer": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf.html#bx.align.maf.Writer",
     "bx.align.maf.writer.close": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf.html#bx.align.maf.Writer.close",
     "bx.align.maf.writer.write": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf.html#bx.align.maf.Writer.write",
-    "bx.align.maf_tests": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf_tests.html#module-bx.align.maf_tests",
-    "bx.align.maf_tests.check_component": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf_tests.html#bx.align.maf_tests.check_component",
-    "bx.align.maf_tests.test_column_iter": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf_tests.html#bx.align.maf_tests.test_column_iter",
-    "bx.align.maf_tests.test_read_with_synteny": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf_tests.html#bx.align.maf_tests.test_read_with_synteny",
-    "bx.align.maf_tests.test_reader": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf_tests.html#bx.align.maf_tests.test_reader",
-    "bx.align.maf_tests.test_remove_all_gap_column": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf_tests.html#bx.align.maf_tests.test_remove_all_gap_column",
-    "bx.align.maf_tests.test_reverse_complement": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf_tests.html#bx.align.maf_tests.test_reverse_complement",
-    "bx.align.maf_tests.test_slice": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf_tests.html#bx.align.maf_tests.test_slice",
-    "bx.align.maf_tests.test_write_with_synteny": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf_tests.html#bx.align.maf_tests.test_write_with_synteny",
-    "bx.align.maf_tests.test_writer": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.maf_tests.html#bx.align.maf_tests.test_writer",
     "bx.align.score": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.score.html#module-bx.align.score",
     "bx.align.score.accumulate_scores": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.score.html#bx.align.score.accumulate_scores",
     "bx.align.score.build_scoring_scheme": "https://bx-python.readthedocs.io/en/stable/lib/bx.align.score.html#bx.align.score.build_scoring_scheme",
@@ -872,13 +862,6 @@ MAPPING = {
     "bx.seq.seq.seqreaderiter": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.seq.html#bx.seq.seq.SeqReaderIter",
     "bx.seq.seq_file": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.html#bx.seq.seq_file",
     "bx.seq.seq_reader": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.html#bx.seq.seq_reader",
-    "bx.seq.seq_tests": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.seq_tests.html#module-bx.seq.seq_tests",
-    "bx.seq.seq_tests.check_get": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.seq_tests.html#bx.seq.seq_tests.check_get",
-    "bx.seq.seq_tests.seqtestcase": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.seq_tests.html#bx.seq.seq_tests.SEQTestCase",
-    "bx.seq.seq_tests.seqtestcase.test_get_fasta": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.seq_tests.html#bx.seq.seq_tests.SEQTestCase.test_get_fasta",
-    "bx.seq.seq_tests.seqtestcase.test_get_nib": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.seq_tests.html#bx.seq.seq_tests.SEQTestCase.test_get_nib",
-    "bx.seq.seq_tests.seqtestcase.test_get_qdna": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.seq_tests.html#bx.seq.seq_tests.SEQTestCase.test_get_qdna",
-    "bx.seq.seq_tests.seqtestcase.test_get_reader": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.seq_tests.html#bx.seq.seq_tests.SEQTestCase.test_get_reader",
     "bx.seq.seq_writer": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.html#bx.seq.seq_writer",
     "bx.seq.twobit": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.twobit.html#module-bx.seq.twobit",
     "bx.seq.twobit.twobitfile": "https://bx-python.readthedocs.io/en/stable/lib/bx.seq.twobit.html#bx.seq.twobit.TwoBitFile",

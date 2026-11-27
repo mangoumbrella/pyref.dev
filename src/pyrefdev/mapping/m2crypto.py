@@ -1,4 +1,4 @@
-VERSION = "0.50.0"
+VERSION = "0.51.0"
 
 # fmt: off
 MAPPING = {
@@ -402,6 +402,7 @@ MAPPING = {
     "m2crypto.ssl.cb.ssl_verify_callback_stub": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.SSL.html#M2Crypto.SSL.cb.ssl_verify_callback_stub",
     "m2crypto.ssl.checker": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.SSL.html#module-M2Crypto.SSL.Checker",
     "m2crypto.ssl.checker.checker": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.SSL.html#M2Crypto.SSL.Checker.Checker",
+    "m2crypto.ssl.checker.checker.hostcheckflags": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.SSL.html#M2Crypto.SSL.Checker.Checker.hostCheckFlags",
     "m2crypto.ssl.checker.checker.numericipmatch": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.SSL.html#M2Crypto.SSL.Checker.Checker.numericIpMatch",
     "m2crypto.ssl.checker.nocertificate": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.SSL.html#M2Crypto.SSL.Checker.NoCertificate",
     "m2crypto.ssl.checker.sslverificationerror": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.SSL.html#M2Crypto.SSL.Checker.SSLVerificationError",
@@ -644,6 +645,7 @@ MAPPING = {
     "m2crypto.x509.x509.get_pubkey": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.html#M2Crypto.X509.X509.get_pubkey",
     "m2crypto.x509.x509.get_serial_number": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.html#M2Crypto.X509.X509.get_serial_number",
     "m2crypto.x509.x509.get_subject": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.html#M2Crypto.X509.X509.get_subject",
+    "m2crypto.x509.x509.get_subject_alt_names": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.html#M2Crypto.X509.X509.get_subject_alt_names",
     "m2crypto.x509.x509.get_version": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.html#M2Crypto.X509.X509.get_version",
     "m2crypto.x509.x509.save": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.html#M2Crypto.X509.X509.save",
     "m2crypto.x509.x509.save_pem": "https://m2crypto.readthedocs.io/en/latest/M2Crypto.html#M2Crypto.X509.X509.save_pem",

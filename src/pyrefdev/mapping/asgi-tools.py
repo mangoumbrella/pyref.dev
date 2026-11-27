@@ -1,4 +1,4 @@
-VERSION = "3.0.0"
+VERSION = "3.3.0"
 
 # fmt: off
 MAPPING = {
@@ -12,6 +12,14 @@ MAPPING = {
     "asgi_tools.app.on_startup": "https://klen.github.io/asgi-tools/api.html#asgi_tools.App.on_startup",
     "asgi_tools.app.route": "https://klen.github.io/asgi-tools/api.html#asgi_tools.App.route",
     "asgi_tools.backgroundmiddleware": "https://klen.github.io/asgi-tools/api.html#asgi_tools.BackgroundMiddleware",
+    "asgi_tools.errors": "https://klen.github.io/asgi-tools/api.html#module-asgi_tools.errors",
+    "asgi_tools.errors.asgiconnectionclosederror": "https://klen.github.io/asgi-tools/api.html#asgi_tools.errors.ASGIConnectionClosedError",
+    "asgi_tools.errors.asgidecodeerror": "https://klen.github.io/asgi-tools/api.html#asgi_tools.errors.ASGIDecodeError",
+    "asgi_tools.errors.asgierror": "https://klen.github.io/asgi-tools/api.html#asgi_tools.errors.ASGIError",
+    "asgi_tools.errors.asgiinvalidmessageerror": "https://klen.github.io/asgi-tools/api.html#asgi_tools.errors.ASGIInvalidMessageError",
+    "asgi_tools.errors.asgiinvalidmethoderror": "https://klen.github.io/asgi-tools/api.html#asgi_tools.errors.ASGIInvalidMethodError",
+    "asgi_tools.errors.asginotfounderror": "https://klen.github.io/asgi-tools/api.html#asgi_tools.errors.ASGINotFoundError",
+    "asgi_tools.errors.asgirequestentitytoolargeerror": "https://klen.github.io/asgi-tools/api.html#asgi_tools.errors.ASGIRequestEntityTooLargeError",
     "asgi_tools.httpview": "https://klen.github.io/asgi-tools/api.html#asgi_tools.HTTPView",
     "asgi_tools.lifespanmiddleware": "https://klen.github.io/asgi-tools/api.html#asgi_tools.LifespanMiddleware",
     "asgi_tools.lifespanmiddleware.on_shutdown": "https://klen.github.io/asgi-tools/api.html#asgi_tools.LifespanMiddleware.on_shutdown",
@@ -23,6 +31,7 @@ MAPPING = {
     "asgi_tools.middleware.responsemiddleware": "https://klen.github.io/asgi-tools/api.html#asgi_tools.ResponseMiddleware",
     "asgi_tools.middleware.routermiddleware": "https://klen.github.io/asgi-tools/api.html#asgi_tools.RouterMiddleware",
     "asgi_tools.middleware.staticfilesmiddleware": "https://klen.github.io/asgi-tools/api.html#asgi_tools.StaticFilesMiddleware",
+    "asgi_tools.parse_response": "https://klen.github.io/asgi-tools/api.html#asgi_tools.parse_response",
     "asgi_tools.request": "https://klen.github.io/asgi-tools/api.html",
     "asgi_tools.Request": "https://klen.github.io/asgi-tools/api.html#asgi_tools.Request",
     "asgi_tools.request.body": "https://klen.github.io/asgi-tools/api.html#asgi_tools.Request.body",
@@ -33,6 +42,7 @@ MAPPING = {
     "asgi_tools.request.form": "https://klen.github.io/asgi-tools/api.html#asgi_tools.Request.form",
     "asgi_tools.request.headers": "https://klen.github.io/asgi-tools/api.html#asgi_tools.Request.headers",
     "asgi_tools.request.json": "https://klen.github.io/asgi-tools/api.html#asgi_tools.Request.json",
+    "asgi_tools.request.media": "https://klen.github.io/asgi-tools/api.html#asgi_tools.Request.media",
     "asgi_tools.request.query": "https://klen.github.io/asgi-tools/api.html#asgi_tools.Request.query",
     "asgi_tools.request.request": "https://klen.github.io/asgi-tools/api.html#asgi_tools.Request",
     "asgi_tools.request.stream": "https://klen.github.io/asgi-tools/api.html#asgi_tools.Request.stream",
@@ -45,6 +55,7 @@ MAPPING = {
     "asgi_tools.response.cookies": "https://klen.github.io/asgi-tools/api.html#asgi_tools.Response.cookies",
     "asgi_tools.response.headers": "https://klen.github.io/asgi-tools/api.html#asgi_tools.Response.headers",
     "asgi_tools.response.response": "https://klen.github.io/asgi-tools/api.html#asgi_tools.Response",
+    "asgi_tools.response.responseerror": "https://klen.github.io/asgi-tools/api.html#asgi_tools.ResponseError",
     "asgi_tools.response.responsefile": "https://klen.github.io/asgi-tools/api.html#asgi_tools.ResponseFile",
     "asgi_tools.response.responsehtml": "https://klen.github.io/asgi-tools/api.html#asgi_tools.ResponseHTML",
     "asgi_tools.response.responsejson": "https://klen.github.io/asgi-tools/api.html#asgi_tools.ResponseJSON",

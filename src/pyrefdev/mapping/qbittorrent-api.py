@@ -1,4 +1,4 @@
-VERSION = "2026.8.1"
+VERSION = "2026.10.1"
 
 # fmt: off
 MAPPING = {
@@ -231,6 +231,8 @@ MAPPING = {
     "qbittorrentapi.rss.rss.add_feed": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSS.add_feed",
     "qbittorrentapi.rss.rss.add_folder": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSS.add_folder",
     "qbittorrentapi.rss.rss.clone_rule": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSS.clone_rule",
+    "qbittorrentapi.rss.rss.export_rules": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSS.export_rules",
+    "qbittorrentapi.rss.rss.import_rules": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSS.import_rules",
     "qbittorrentapi.rss.RSS.Items": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSS.Items",
     "qbittorrentapi.rss.RSS.items": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSS.items",
     "qbittorrentapi.rss.rss.items": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSS.items",
@@ -253,6 +255,8 @@ MAPPING = {
     "qbittorrentapi.rss.rssapimixin.rss_add_feed": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSSAPIMixIn.rss_add_feed",
     "qbittorrentapi.rss.rssapimixin.rss_add_folder": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSSAPIMixIn.rss_add_folder",
     "qbittorrentapi.rss.rssapimixin.rss_clone_rule": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSSAPIMixIn.rss_clone_rule",
+    "qbittorrentapi.rss.rssapimixin.rss_export_rules": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSSAPIMixIn.rss_export_rules",
+    "qbittorrentapi.rss.rssapimixin.rss_import_rules": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSSAPIMixIn.rss_import_rules",
     "qbittorrentapi.rss.rssapimixin.rss_items": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSSAPIMixIn.rss_items",
     "qbittorrentapi.rss.rssapimixin.rss_mark_as_read": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSSAPIMixIn.rss_mark_as_read",
     "qbittorrentapi.rss.rssapimixin.rss_matching_articles": "https://qbittorrent-api.readthedocs.io/en/latest/apidoc/rss.html#qbittorrentapi.rss.RSSAPIMixIn.rss_matching_articles",

@@ -1,4 +1,4 @@
-VERSION = "0.4.5"
+VERSION = "0.4.6"
 
 # fmt: off
 MAPPING = {
@@ -7,12 +7,15 @@ MAPPING = {
     "lxml_html_clean.clean._break_text": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._break_text",
     "lxml_html_clean.clean._find_image_dataurls": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._find_image_dataurls",
     "lxml_html_clean.clean._get_authority_from_url": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._get_authority_from_url",
+    "lxml_html_clean.clean._has_conditional_comment": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._has_conditional_comment",
     "lxml_html_clean.clean._has_javascript_scheme": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._has_javascript_scheme",
     "lxml_html_clean.clean._insert_break": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._insert_break",
     "lxml_html_clean.clean._is_unsafe_image_type": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._is_unsafe_image_type",
+    "lxml_html_clean.clean._iter_css_comments": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._iter_css_comments",
     "lxml_html_clean.clean._link_text": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._link_text",
     "lxml_html_clean.clean._looks_like_tag_content": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._looks_like_tag_content",
     "lxml_html_clean.clean._possibly_malicious_schemes": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._possibly_malicious_schemes",
+    "lxml_html_clean.clean._remove_css_comments": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._remove_css_comments",
     "lxml_html_clean.clean._replace_css_import": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._replace_css_import",
     "lxml_html_clean.clean._replace_css_javascript": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._replace_css_javascript",
     "lxml_html_clean.clean._substitute_whitespace": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean._substitute_whitespace",
@@ -24,15 +27,12 @@ MAPPING = {
     "lxml_html_clean.clean.autolink_html": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.autolink_html",
     "lxml_html_clean.clean.clean_html": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.clean_html",
     "lxml_html_clean.clean.cleaner": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner",
-    "lxml_html_clean.clean.cleaner._comments_re": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._comments_re",
     "lxml_html_clean.clean.cleaner._css_unicode_escape_re": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._css_unicode_escape_re",
     "lxml_html_clean.clean.cleaner._decode_css_unicode_escapes": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._decode_css_unicode_escapes",
-    "lxml_html_clean.clean.cleaner._find_comments": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._find_comments",
     "lxml_html_clean.clean.cleaner._has_sneaky_javascript": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._has_sneaky_javascript",
     "lxml_html_clean.clean.cleaner._kill_elements": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._kill_elements",
     "lxml_html_clean.clean.cleaner._remove_javascript_link": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._remove_javascript_link",
     "lxml_html_clean.clean.cleaner._remove_sneaky_css_comments": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._remove_sneaky_css_comments",
-    "lxml_html_clean.clean.cleaner._substitute_comments": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._substitute_comments",
     "lxml_html_clean.clean.cleaner._tag_link_attrs": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner._tag_link_attrs",
     "lxml_html_clean.clean.cleaner.add_nofollow": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner.add_nofollow",
     "lxml_html_clean.clean.cleaner.allow_element": "https://lxml-html-clean.readthedocs.io/en/latest/lxml_html_clean.html#lxml_html_clean.clean.Cleaner.allow_element",

@@ -1,4 +1,4 @@
-VERSION = "5.0.0"
+VERSION = "5.1.0"
 
 # fmt: off
 MAPPING = {
@@ -117,7 +117,6 @@ MAPPING = {
     "optuna_integration.tensorboardcallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TensorBoardCallback.html#optuna_integration.TensorBoardCallback",
     "optuna_integration.tfkeraspruningcallback": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TFKerasPruningCallback.html#optuna_integration.TFKerasPruningCallback",
     "optuna_integration.torchdistributedtrial": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TorchDistributedTrial.html#optuna_integration.TorchDistributedTrial",
-    "optuna_integration.torchdistributedtrial.set_system_attr": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TorchDistributedTrial.html#optuna_integration.TorchDistributedTrial.set_system_attr",
     "optuna_integration.torchdistributedtrial.suggest_discrete_uniform": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TorchDistributedTrial.html#optuna_integration.TorchDistributedTrial.suggest_discrete_uniform",
     "optuna_integration.torchdistributedtrial.suggest_loguniform": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TorchDistributedTrial.html#optuna_integration.TorchDistributedTrial.suggest_loguniform",
     "optuna_integration.torchdistributedtrial.suggest_uniform": "https://optuna-integration.readthedocs.io/en/latest/reference/generated/optuna_integration.TorchDistributedTrial.html#optuna_integration.TorchDistributedTrial.suggest_uniform",

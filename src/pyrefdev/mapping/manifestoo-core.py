@@ -1,4 +1,4 @@
-VERSION = "1.15.5"
+VERSION = "1.16.1"
 
 # fmt: off
 MAPPING = {
@@ -76,6 +76,7 @@ MAPPING = {
     "manifestoo_core.odoo_series.odooseries.v17_0": "https://manifestoo-core.readthedocs.io/en/stable/api.html#manifestoo_core.odoo_series.OdooSeries.v17_0",
     "manifestoo_core.odoo_series.odooseries.v18_0": "https://manifestoo-core.readthedocs.io/en/stable/api.html#manifestoo_core.odoo_series.OdooSeries.v18_0",
     "manifestoo_core.odoo_series.odooseries.v19_0": "https://manifestoo-core.readthedocs.io/en/stable/api.html#manifestoo_core.odoo_series.OdooSeries.v19_0",
+    "manifestoo_core.odoo_series.odooseries.v20_0": "https://manifestoo-core.readthedocs.io/en/stable/api.html#manifestoo_core.odoo_series.OdooSeries.v20_0",
     "manifestoo_core.odoo_series.odooseries.v8_0": "https://manifestoo-core.readthedocs.io/en/stable/api.html#manifestoo_core.odoo_series.OdooSeries.v8_0",
     "manifestoo_core.odoo_series.odooseries.v9_0": "https://manifestoo-core.readthedocs.io/en/stable/api.html#manifestoo_core.odoo_series.OdooSeries.v9_0",
 }

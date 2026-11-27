@@ -1,8 +1,16 @@
-VERSION = "0.5.12"
+VERSION = "0.6.0"
 
 # fmt: off
 MAPPING = {
     "umap": "https://umap-learn.readthedocs.io/en/latest/",
+    "umap.aligned_umap": "https://umap-learn.readthedocs.io/en/latest/api.html",
+    "umap.aligned_umap.alignedumap": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.aligned_umap.AlignedUMAP",
+    "umap.label_prop": "https://umap-learn.readthedocs.io/en/latest/api.html#module-umap.label_prop",
+    "umap.label_prop.label_propagation_init": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.label_prop.label_propagation_init",
+    "umap.label_prop.recursive_init": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.label_prop.recursive_init",
+    "umap.spectral": "https://umap-learn.readthedocs.io/en/latest/api.html#module-umap.spectral",
+    "umap.spectral.spectral_layout": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.spectral.spectral_layout",
+    "umap.spectral.tswspectral_layout": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.spectral.tswspectral_layout",
     "umap.umap_": "https://umap-learn.readthedocs.io/en/latest/api.html#module-umap.umap_",
     "umap.umap_.compute_membership_strengths": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.umap_.compute_membership_strengths",
     "umap.umap_.discrete_metric_simplicial_set_intersection": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.umap_.discrete_metric_simplicial_set_intersection",
@@ -12,7 +20,6 @@ MAPPING = {
     "umap.umap_.fuzzy_simplicial_set": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.umap_.fuzzy_simplicial_set",
     "umap.umap_.init_graph_transform": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.umap_.init_graph_transform",
     "umap.umap_.init_transform": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.umap_.init_transform",
-    "umap.umap_.make_epochs_per_sample": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.umap_.make_epochs_per_sample",
     "umap.umap_.nearest_neighbors": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.umap_.nearest_neighbors",
     "umap.umap_.raise_disconnected_warning": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.umap_.raise_disconnected_warning",
     "umap.umap_.reset_local_connectivity": "https://umap-learn.readthedocs.io/en/latest/api.html#umap.umap_.reset_local_connectivity",

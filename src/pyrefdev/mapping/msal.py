@@ -1,4 +1,4 @@
-VERSION = "1.38.0"
+VERSION = "1.39.0"
 
 # fmt: off
 MAPPING = {
@@ -118,6 +118,7 @@ MAPPING = {
     "msal.managedidentityclient.params.http_cache": "https://msal-python.readthedocs.io/en/latest/#msal.ManagedIdentityClient.params.http_cache",
     "msal.managedidentityclient.params.http_client": "https://msal-python.readthedocs.io/en/latest/#msal.ManagedIdentityClient.params.http_client",
     "msal.managedidentityclient.params.managed_identity": "https://msal-python.readthedocs.io/en/latest/#msal.ManagedIdentityClient.params.managed_identity",
+    "msal.managedidentityclient.params.service_fabric_http_options": "https://msal-python.readthedocs.io/en/latest/#msal.ManagedIdentityClient.params.service_fabric_http_options",
     "msal.managedidentityclient.params.token_cache": "https://msal-python.readthedocs.io/en/latest/#msal.ManagedIdentityClient.params.token_cache",
     "msal.popauthscheme": "https://msal-python.readthedocs.io/en/latest/#msal.PopAuthScheme",
     "msal.popauthscheme.__init__": "https://msal-python.readthedocs.io/en/latest/#msal.PopAuthScheme.__init__",
@@ -168,6 +169,7 @@ MAPPING = {
     "msal.serializabletokencache.add": "https://msal-python.readthedocs.io/en/latest/#msal.SerializableTokenCache.add",
     "msal.serializabletokencache.deserialize": "https://msal-python.readthedocs.io/en/latest/#msal.SerializableTokenCache.deserialize",
     "msal.serializabletokencache.serialize": "https://msal-python.readthedocs.io/en/latest/#msal.SerializableTokenCache.serialize",
+    "msal.servicefabrichttpoptions": "https://msal-python.readthedocs.io/en/latest/#msal.ServiceFabricHttpOptions",
     "msal.systemassignedmanagedidentity": "https://msal-python.readthedocs.io/en/latest/#msal.SystemAssignedManagedIdentity",
     "msal.tokencache": "https://msal-python.readthedocs.io/en/latest/#msal.TokenCache",
     "msal.tokencache.add": "https://msal-python.readthedocs.io/en/latest/#msal.TokenCache.add",

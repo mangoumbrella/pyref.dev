@@ -1,4 +1,4 @@
-VERSION = "0.26.4"
+VERSION = "0.26.5"
 
 # fmt: off
 MAPPING = {
@@ -60,6 +60,7 @@ MAPPING = {
     "saq.utils.now": "https://saq-py.readthedocs.io/en/stable/autoapi/saq/utils/index.html#saq.utils.now",
     "saq.utils.seconds": "https://saq-py.readthedocs.io/en/stable/autoapi/saq/utils/index.html#saq.utils.seconds",
     "saq.utils.uuid1": "https://saq-py.readthedocs.io/en/stable/autoapi/saq/utils/index.html#saq.utils.uuid1",
+    "saq.utils.wait_for": "https://saq-py.readthedocs.io/en/stable/autoapi/saq/utils/index.html#saq.utils.wait_for",
     "saq.web": "https://saq-py.readthedocs.io/en/stable/autoapi/saq/web/index.html#module-saq.web",
     "saq.web.aiohttp": "https://saq-py.readthedocs.io/en/stable/autoapi/saq/web/aiohttp/index.html#module-saq.web.aiohttp",
     "saq.web.starlette": "https://saq-py.readthedocs.io/en/stable/autoapi/saq/web/starlette/index.html#module-saq.web.starlette",

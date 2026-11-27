@@ -1,4 +1,4 @@
-VERSION = "0.16.3"
+VERSION = "0.17.1"
 
 # fmt: off
 MAPPING = {
@@ -472,6 +472,10 @@ MAPPING = {
     "qwt.scale_draw.qwtabstractscaledraw.ticklabel": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_draw.QwtAbstractScaleDraw.tickLabel",
     "qwt.scale_draw.qwtabstractscaledraw.ticklength": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_draw.QwtAbstractScaleDraw.tickLength",
     "qwt.scale_draw.qwtabstractscaledraw.ticklighterfactor": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_draw.QwtAbstractScaleDraw.tickLighterFactor",
+    "qwt.scale_draw.qwtdatetimescaledraw": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_draw.QwtDateTimeScaleDraw",
+    "qwt.scale_draw.qwtdatetimescaledraw.get_format": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_draw.QwtDateTimeScaleDraw.get_format",
+    "qwt.scale_draw.qwtdatetimescaledraw.label": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_draw.QwtDateTimeScaleDraw.label",
+    "qwt.scale_draw.qwtdatetimescaledraw.set_format": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_draw.QwtDateTimeScaleDraw.set_format",
     "qwt.scale_draw.qwtscaledraw": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_draw.QwtScaleDraw",
     "qwt.scale_draw.qwtscaledraw.alignment": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_draw.QwtScaleDraw.alignment",
     "qwt.scale_draw.qwtscaledraw.boundinglabelrect": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_draw.QwtScaleDraw.boundingLabelRect",
@@ -502,6 +506,9 @@ MAPPING = {
     "qwt.scale_draw.qwtscaledraw.setlabelrotation": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_draw.QwtScaleDraw.setLabelRotation",
     "qwt.scale_draw.qwtscaledraw.setlength": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_draw.QwtScaleDraw.setLength",
     "qwt.scale_engine": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#module-qwt.scale_engine",
+    "qwt.scale_engine.qwtdatetimescaleengine": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_engine.QwtDateTimeScaleEngine",
+    "qwt.scale_engine.qwtdatetimescaleengine.buildminorticks": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_engine.QwtDateTimeScaleEngine.buildMinorTicks",
+    "qwt.scale_engine.qwtdatetimescaleengine.dividescale": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_engine.QwtDateTimeScaleEngine.divideScale",
     "qwt.scale_engine.qwtlinearscaleengine": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_engine.QwtLinearScaleEngine",
     "qwt.scale_engine.qwtlinearscaleengine.align": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_engine.QwtLinearScaleEngine.align",
     "qwt.scale_engine.qwtlinearscaleengine.autoscale": "https://pythonqwt.readthedocs.io/en/stable/reference/scale.html#qwt.scale_engine.QwtLinearScaleEngine.autoScale",

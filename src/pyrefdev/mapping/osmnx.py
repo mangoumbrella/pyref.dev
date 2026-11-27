@@ -1,4 +1,4 @@
-VERSION = "2.1.1"
+VERSION = "2.2.0"
 
 # fmt: off
 MAPPING = {
@@ -38,6 +38,7 @@ MAPPING = {
     "osmnx.graph": "https://osmnx.readthedocs.io/en/stable/user-reference.html#module-osmnx.graph",
     "osmnx.graph.graph_from_address": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.graph.graph_from_address",
     "osmnx.graph.graph_from_bbox": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.graph.graph_from_bbox",
+    "osmnx.graph.graph_from_pbf": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.graph.graph_from_pbf",
     "osmnx.graph.graph_from_place": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.graph.graph_from_place",
     "osmnx.graph.graph_from_point": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.graph.graph_from_point",
     "osmnx.graph.graph_from_polygon": "https://osmnx.readthedocs.io/en/stable/user-reference.html#osmnx.graph.graph_from_polygon",

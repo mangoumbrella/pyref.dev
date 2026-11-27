@@ -1,4 +1,4 @@
-VERSION = "21.2.1"
+VERSION = "21.2.5"
 
 # fmt: off
 MAPPING = {
@@ -147,7 +147,6 @@ MAPPING = {
     "tcod.event.event.timestamp": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.Event.timestamp",
     "tcod.event.event.timestamp_ns": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.Event.timestamp_ns",
     "tcod.event.eventdispatch": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.EventDispatch",
-    "tcod.event.eventdispatch.__class_getitem__": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.EventDispatch.__class_getitem__",
     "tcod.event.eventdispatch.dispatch": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.EventDispatch.dispatch",
     "tcod.event.eventdispatch.ev_controlleraxismotion": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.EventDispatch.ev_controlleraxismotion",
     "tcod.event.eventdispatch.ev_controllerbuttondown": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.EventDispatch.ev_controllerbuttondown",
@@ -375,7 +374,6 @@ MAPPING = {
     "tcod.event.mousewheel.x": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.MouseWheel.x",
     "tcod.event.mousewheel.y": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.MouseWheel.y",
     "tcod.event.point": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.Point",
-    "tcod.event.point.__class_getitem__": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.Point.__class_getitem__",
     "tcod.event.point.x": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.Point.x",
     "tcod.event.point.y": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.Point.y",
     "tcod.event.quit": "https://python-tcod.readthedocs.io/en/stable/tcod/event.html#tcod.event.Quit",

@@ -1,4 +1,4 @@
-VERSION = "4.6.1"
+VERSION = "4.7.0"
 
 # fmt: off
 MAPPING = {
@@ -43,6 +43,7 @@ MAPPING = {
     "superannotate.saclient.download_image": "https://superannotate.readthedocs.io/en/stable/api_reference/api_image.html#superannotate.SAClient.download_image",
     "superannotate.saclient.download_image_annotations": "https://superannotate.readthedocs.io/en/stable/api_reference/api_image.html#superannotate.SAClient.download_image_annotations",
     "superannotate.saclient.generate_items": "https://superannotate.readthedocs.io/en/stable/api_reference/api_item.html#superannotate.SAClient.generate_items",
+    "superannotate.saclient.generate_team_api_key": "https://superannotate.readthedocs.io/en/stable/api_reference/api_team.html#superannotate.SAClient.generate_team_api_key",
     "superannotate.saclient.get_annotation_class": "https://superannotate.readthedocs.io/en/stable/api_reference/api_annotation_class.html#superannotate.SAClient.get_annotation_class",
     "superannotate.saclient.get_annotations": "https://superannotate.readthedocs.io/en/stable/api_reference/api_annotation.html#superannotate.SAClient.get_annotations",
     "superannotate.saclient.get_annotations_per_frame": "https://superannotate.readthedocs.io/en/stable/api_reference/api_annotation.html#superannotate.SAClient.get_annotations_per_frame",
@@ -70,6 +71,7 @@ MAPPING = {
     "superannotate.saclient.list_folders": "https://superannotate.readthedocs.io/en/stable/api_reference/api_folder.html#superannotate.SAClient.list_folders",
     "superannotate.saclient.list_items": "https://superannotate.readthedocs.io/en/stable/api_reference/api_item.html#superannotate.SAClient.list_items",
     "superannotate.saclient.list_projects": "https://superannotate.readthedocs.io/en/stable/api_reference/api_project.html#superannotate.SAClient.list_projects",
+    "superannotate.saclient.list_team_api_keys": "https://superannotate.readthedocs.io/en/stable/api_reference/api_team.html#superannotate.SAClient.list_team_api_keys",
     "superannotate.saclient.list_users": "https://superannotate.readthedocs.io/en/stable/api_reference/api_team.html#superannotate.SAClient.list_users",
     "superannotate.saclient.list_workflows": "https://superannotate.readthedocs.io/en/stable/api_reference/api_team.html#superannotate.SAClient.list_workflows",
     "superannotate.saclient.move_items": "https://superannotate.readthedocs.io/en/stable/api_reference/api_item.html#superannotate.SAClient.move_items",
@@ -86,7 +88,9 @@ MAPPING = {
     "superannotate.saclient.rename_project": "https://superannotate.readthedocs.io/en/stable/api_reference/api_project.html#superannotate.SAClient.rename_project",
     "superannotate.saclient.resume_user_activity": "https://superannotate.readthedocs.io/en/stable/api_reference/api_team.html#superannotate.SAClient.resume_user_activity",
     "superannotate.saclient.revoke_project_user_permissions": "https://superannotate.readthedocs.io/en/stable/api_reference/api_project.html#superannotate.SAClient.revoke_project_user_permissions",
+    "superannotate.saclient.revoke_team_api_key": "https://superannotate.readthedocs.io/en/stable/api_reference/api_team.html#superannotate.SAClient.revoke_team_api_key",
     "superannotate.saclient.revoke_team_user_permissions": "https://superannotate.readthedocs.io/en/stable/api_reference/api_team.html#superannotate.SAClient.revoke_team_user_permissions",
+    "superannotate.saclient.rotate_team_api_key": "https://superannotate.readthedocs.io/en/stable/api_reference/api_team.html#superannotate.SAClient.rotate_team_api_key",
     "superannotate.saclient.search_annotation_classes": "https://superannotate.readthedocs.io/en/stable/api_reference/api_annotation_class.html#superannotate.SAClient.search_annotation_classes",
     "superannotate.saclient.search_folders": "https://superannotate.readthedocs.io/en/stable/api_reference/api_folder.html#superannotate.SAClient.search_folders",
     "superannotate.saclient.search_projects": "https://superannotate.readthedocs.io/en/stable/api_reference/api_project.html#superannotate.SAClient.search_projects",
@@ -97,8 +101,11 @@ MAPPING = {
     "superannotate.saclient.set_items_category": "https://superannotate.readthedocs.io/en/stable/api_reference/api_item.html#superannotate.SAClient.set_items_category",
     "superannotate.saclient.set_project_custom_field": "https://superannotate.readthedocs.io/en/stable/api_reference/api_project.html#superannotate.SAClient.set_project_custom_field",
     "superannotate.saclient.set_project_default_image_quality_in_editor": "https://superannotate.readthedocs.io/en/stable/api_reference/api_project.html#superannotate.SAClient.set_project_default_image_quality_in_editor",
+    "superannotate.saclient.set_project_priority": "https://superannotate.readthedocs.io/en/stable/api_reference/api_project.html#superannotate.SAClient.set_project_priority",
     "superannotate.saclient.set_project_status": "https://superannotate.readthedocs.io/en/stable/api_reference/api_project.html#superannotate.SAClient.set_project_status",
     "superannotate.saclient.set_project_steps": "https://superannotate.readthedocs.io/en/stable/api_reference/api_project.html#superannotate.SAClient.set_project_steps",
+    "superannotate.saclient.set_project_user_role": "https://superannotate.readthedocs.io/en/stable/api_reference/api_project.html#superannotate.SAClient.set_project_user_role",
+    "superannotate.saclient.set_team_user_role": "https://superannotate.readthedocs.io/en/stable/api_reference/api_team.html#superannotate.SAClient.set_team_user_role",
     "superannotate.saclient.set_user_custom_field": "https://superannotate.readthedocs.io/en/stable/api_reference/api_team.html#superannotate.SAClient.set_user_custom_field",
     "superannotate.saclient.set_user_scores": "https://superannotate.readthedocs.io/en/stable/api_reference/api_team.html#superannotate.SAClient.set_user_scores",
     "superannotate.saclient.unassign_folder": "https://superannotate.readthedocs.io/en/stable/api_reference/api_folder.html#superannotate.SAClient.unassign_folder",

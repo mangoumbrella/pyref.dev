@@ -1,4 +1,4 @@
-VERSION = "26.0.0"
+VERSION = "26.1.0"
 
 # fmt: off
 MAPPING = {
@@ -86,7 +86,9 @@ MAPPING = {
     "oracledb.asyncconnection.session_id": "https://python-oracledb.readthedocs.io/en/stable/api_manual/async_connection.html#oracledb.AsyncConnection.session_id",
     "oracledb.asyncconnection.set_app_context": "https://python-oracledb.readthedocs.io/en/stable/api_manual/async_connection.html#oracledb.AsyncConnection.set_app_context",
     "oracledb.asyncconnection.set_end_user_security_context": "https://python-oracledb.readthedocs.io/en/stable/api_manual/async_connection.html#oracledb.AsyncConnection.set_end_user_security_context",
+    "oracledb.asyncconnection.set_opentelemetry_trace_context": "https://python-oracledb.readthedocs.io/en/stable/api_manual/async_connection.html#oracledb.AsyncConnection.set_opentelemetry_trace_context",
     "oracledb.asyncconnection.stmtcachesize": "https://python-oracledb.readthedocs.io/en/stable/api_manual/async_connection.html#oracledb.AsyncConnection.stmtcachesize",
+    "oracledb.asyncconnection.supports_opentelemetry_tracing": "https://python-oracledb.readthedocs.io/en/stable/api_manual/async_connection.html#oracledb.AsyncConnection.supports_opentelemetry_tracing",
     "oracledb.asyncconnection.suspend_sessionless_transaction": "https://python-oracledb.readthedocs.io/en/stable/api_manual/async_connection.html#oracledb.AsyncConnection.suspend_sessionless_transaction",
     "oracledb.asyncconnection.terminate": "https://python-oracledb.readthedocs.io/en/stable/api_manual/async_connection.html#oracledb.AsyncConnection.terminate",
     "oracledb.asyncconnection.thin": "https://python-oracledb.readthedocs.io/en/stable/api_manual/async_connection.html#oracledb.AsyncConnection.thin",
@@ -273,10 +275,12 @@ MAPPING = {
     "oracledb.connection.session_id": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection.html#oracledb.Connection.session_id",
     "oracledb.connection.set_app_context": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection.html#oracledb.Connection.set_app_context",
     "oracledb.connection.set_end_user_security_context": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection.html#oracledb.Connection.set_end_user_security_context",
+    "oracledb.connection.set_opentelemetry_trace_context": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection.html#oracledb.Connection.set_opentelemetry_trace_context",
     "oracledb.connection.shutdown": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection.html#oracledb.Connection.shutdown",
     "oracledb.connection.startup": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection.html#oracledb.Connection.startup",
     "oracledb.connection.stmtcachesize": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection.html#oracledb.Connection.stmtcachesize",
     "oracledb.connection.subscribe": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection.html#oracledb.Connection.subscribe",
+    "oracledb.connection.supports_opentelemetry_tracing": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection.html#oracledb.Connection.supports_opentelemetry_tracing",
     "oracledb.connection.suspend_sessionless_transaction": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection.html#oracledb.Connection.suspend_sessionless_transaction",
     "oracledb.connection.tag": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection.html#oracledb.Connection.tag",
     "oracledb.connection.thin": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection.html#oracledb.Connection.thin",
@@ -375,6 +379,8 @@ MAPPING = {
     "oracledb.connectparams.tcp_connect_timeout": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connect_params.html#oracledb.ConnectParams.tcp_connect_timeout",
     "oracledb.connectparams.terminal": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connect_params.html#oracledb.ConnectParams.terminal",
     "oracledb.connectparams.thick_mode_dsn_passthrough": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connect_params.html#oracledb.ConnectParams.thick_mode_dsn_passthrough",
+    "oracledb.connectparams.transaction_priority": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connect_params.html#oracledb.ConnectParams.transaction_priority",
+    "oracledb.connectparams.use_eztls": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connect_params.html#oracledb.ConnectParams.use_eztls",
     "oracledb.connectparams.use_sni": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connect_params.html#oracledb.ConnectParams.use_sni",
     "oracledb.connectparams.use_tcp_fast_open": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connect_params.html#oracledb.ConnectParams.use_tcp_fast_open",
     "oracledb.connectparams.user": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connect_params.html#oracledb.ConnectParams.user",
@@ -747,6 +753,11 @@ MAPPING = {
     "oracledb.plugins.end_user_sec_provider.set_end_user_attributes": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html#oracledb.plugins.end_user_sec_provider.set_end_user_attributes",
     "oracledb.plugins.end_user_sec_provider.set_end_user_data_roles": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html#oracledb.plugins.end_user_sec_provider.set_end_user_data_roles",
     "oracledb.plugins.end_user_sec_provider.set_end_user_identity": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html#oracledb.plugins.end_user_sec_provider.set_end_user_identity",
+    "oracledb.plugins.opentelemetry": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html",
+    "oracledb.plugins.opentelemetry.instrument": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html#oracledb.plugins.opentelemetry.instrument",
+    "oracledb.plugins.opentelemetry.instrument_connection": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html#oracledb.plugins.opentelemetry.instrument_connection",
+    "oracledb.plugins.opentelemetry.uninstrument": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html#oracledb.plugins.opentelemetry.uninstrument",
+    "oracledb.plugins.opentelemetry.uninstrument_connection": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html#oracledb.plugins.opentelemetry.uninstrument_connection",
     "oracledb.pool.asyncconnectionpool": "https://python-oracledb.readthedocs.io/en/stable/api_manual/async_connection_pool.html#oracledb.AsyncConnectionPool",
     "oracledb.pool.connectionpool": "https://python-oracledb.readthedocs.io/en/stable/api_manual/connection_pool.html#oracledb.ConnectionPool",
     "oracledb.pool_getmode_forceget": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html#oracledb.POOL_GETMODE_FORCEGET",
@@ -914,6 +925,7 @@ MAPPING = {
     "oracledb.transactionpriority.low": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html#oracledb.TransactionPriority.LOW",
     "oracledb.transactionpriority.medium": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html#oracledb.TransactionPriority.MEDIUM",
     "oracledb.unregister_params_hook": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html#oracledb.unregister_params_hook",
+    "oracledb.update_config_cache": "https://python-oracledb.readthedocs.io/en/stable/api_manual/module.html#oracledb.update_config_cache",
     "oracledb.var": "https://python-oracledb.readthedocs.io/en/stable/api_manual/variable.html",
     "oracledb.Var": "https://python-oracledb.readthedocs.io/en/stable/api_manual/variable.html#oracledb.Var",
     "oracledb.var.actual_elements": "https://python-oracledb.readthedocs.io/en/stable/api_manual/variable.html#oracledb.Var.actual_elements",

@@ -1,4 +1,4 @@
-VERSION = "6.1.1"
+VERSION = "6.2.0"
 
 # fmt: off
 MAPPING = {
@@ -244,6 +244,7 @@ MAPPING = {
     "valkey.commands.cluster.valkeyclustercommands.hscan": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.cluster.ValkeyClusterCommands.hscan",
     "valkey.commands.cluster.valkeyclustercommands.hscan_iter": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.cluster.ValkeyClusterCommands.hscan_iter",
     "valkey.commands.cluster.valkeyclustercommands.hset": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.cluster.ValkeyClusterCommands.hset",
+    "valkey.commands.cluster.valkeyclustercommands.hsetex": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.cluster.ValkeyClusterCommands.hsetex",
     "valkey.commands.cluster.valkeyclustercommands.hsetnx": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.cluster.ValkeyClusterCommands.hsetnx",
     "valkey.commands.cluster.valkeyclustercommands.hstrlen": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.cluster.ValkeyClusterCommands.hstrlen",
     "valkey.commands.cluster.valkeyclustercommands.hvals": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.cluster.ValkeyClusterCommands.hvals",
@@ -556,6 +557,7 @@ MAPPING = {
     "valkey.commands.core.corecommands.hscan": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.core.CoreCommands.hscan",
     "valkey.commands.core.corecommands.hscan_iter": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.core.CoreCommands.hscan_iter",
     "valkey.commands.core.corecommands.hset": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.core.CoreCommands.hset",
+    "valkey.commands.core.corecommands.hsetex": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.core.CoreCommands.hsetex",
     "valkey.commands.core.corecommands.hsetnx": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.core.CoreCommands.hsetnx",
     "valkey.commands.core.corecommands.hstrlen": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.core.CoreCommands.hstrlen",
     "valkey.commands.core.corecommands.hvals": "https://valkey-py.readthedocs.io/en/stable/commands.html#valkey.commands.core.CoreCommands.hvals",

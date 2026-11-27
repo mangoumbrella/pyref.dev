@@ -1,4 +1,4 @@
-VERSION = "0.11.0"
+VERSION = "0.12.0"
 
 # fmt: off
 MAPPING = {
@@ -30,8 +30,6 @@ MAPPING = {
     "xcomponent.xcore.xcatalog": "https://mardiros.github.io/xcomponent/develop/xcomponent/xcomponent.xcore.html#xcomponent.xcore.XCatalog",
     "xcomponent.xcore.xnode": "https://mardiros.github.io/xcomponent/develop/xcomponent/xcomponent.xcore.html#xcomponent.xcore.XNode",
     "xcomponent.xcore.xnode.__eq__": "https://mardiros.github.io/xcomponent/develop/xcomponent/xcomponent.xcore.html#xcomponent.xcore.XNode.__eq__",
-    "xcomponent.xcore.xnode.__repr__": "https://mardiros.github.io/xcomponent/develop/xcomponent/xcomponent.xcore.html#xcomponent.xcore.XNode.__repr__",
     "xcomponent.xnode": "https://mardiros.github.io/xcomponent/develop/xcomponent/xcomponent.html#xcomponent.XNode",
     "xcomponent.xnode.__eq__": "https://mardiros.github.io/xcomponent/develop/xcomponent/xcomponent.html#xcomponent.XNode.__eq__",
-    "xcomponent.xnode.__repr__": "https://mardiros.github.io/xcomponent/develop/xcomponent/xcomponent.html#xcomponent.XNode.__repr__",
 }

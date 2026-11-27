@@ -1,4 +1,4 @@
-VERSION = "0.16.3"
+VERSION = "0.17.0"
 
 # fmt: off
 MAPPING = {
@@ -21,6 +21,7 @@ MAPPING = {
     "curl_cffi.const.curlinfo": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlInfo",
     "curl_cffi.const.curlmopt": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlMOpt",
     "curl_cffi.const.curlopt": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlOpt",
+    "curl_cffi.const.curlproxytype": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlProxyType",
     "curl_cffi.const.curlsslversion": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlSslVersion",
     "curl_cffi.const.curlwsflag": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlWsFlag",
     "curl_cffi.curl": "https://curl-cffi.readthedocs.io/en/stable/api.html",
@@ -29,6 +30,7 @@ MAPPING = {
     "curl_cffi.curl.close": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.Curl.close",
     "curl_cffi.curl.curl": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.Curl",
     "curl_cffi.curl.curlmime": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlMime",
+    "curl_cffi.curl.curlshare": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlShare",
     "curl_cffi.curl.debug": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.Curl.debug",
     "curl_cffi.curl.duphandle": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.Curl.duphandle",
     "curl_cffi.curl.get_reason_phrase": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.Curl.get_reason_phrase",
@@ -54,6 +56,12 @@ MAPPING = {
     "curl_cffi.curlmime.from_list": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlMime.from_list",
     "curl_cffi.curlmopt": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlMOpt",
     "curl_cffi.curlopt": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlOpt",
+    "curl_cffi.curlproxytype": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlProxyType",
+    "curl_cffi.curlshare": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlShare",
+    "curl_cffi.curlshare.__init__": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlShare.__init__",
+    "curl_cffi.curlshare.close": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlShare.close",
+    "curl_cffi.curlshare.share": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlShare.share",
+    "curl_cffi.curlshare.unshare": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlShare.unshare",
     "curl_cffi.curlsslversion": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlSslVersion",
     "curl_cffi.curlwsflag": "https://curl-cffi.readthedocs.io/en/stable/api.html#curl_cffi.CurlWsFlag",
     "curl_cffi.requests": "https://curl-cffi.readthedocs.io/en/stable/api.html",

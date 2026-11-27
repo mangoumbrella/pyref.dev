@@ -1,4 +1,4 @@
-VERSION = "0.18.0"
+VERSION = "0.19.3"
 
 # fmt: off
 MAPPING = {
@@ -32,6 +32,7 @@ MAPPING = {
     "pyjls.binding.writer.flush": "https://jls.readthedocs.io/en/stable/py_api.html#pyjls.binding.Writer.flush",
     "pyjls.binding.writer.fsr": "https://jls.readthedocs.io/en/stable/py_api.html#pyjls.binding.Writer.fsr",
     "pyjls.binding.writer.fsr_f32": "https://jls.readthedocs.io/en/stable/py_api.html#pyjls.binding.Writer.fsr_f32",
+    "pyjls.binding.writer.fsr_omit_data": "https://jls.readthedocs.io/en/stable/py_api.html#pyjls.binding.Writer.fsr_omit_data",
     "pyjls.binding.writer.signal_def": "https://jls.readthedocs.io/en/stable/py_api.html#pyjls.binding.Writer.signal_def",
     "pyjls.binding.writer.signal_def_from_struct": "https://jls.readthedocs.io/en/stable/py_api.html#pyjls.binding.Writer.signal_def_from_struct",
     "pyjls.binding.writer.source_def": "https://jls.readthedocs.io/en/stable/py_api.html#pyjls.binding.Writer.source_def",

@@ -1,4 +1,4 @@
-VERSION = "2026.9.0"
+VERSION = "2026.10.1"
 
 # fmt: off
 MAPPING = {
@@ -25,6 +25,7 @@ MAPPING = {
     "uxarray.grid.chunk": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.chunk.html#uxarray.Grid.chunk",
     "uxarray.grid.compute_face_areas": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.compute_face_areas.html#uxarray.Grid.compute_face_areas",
     "uxarray.grid.compute_face_node_angles": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.compute_face_node_angles.html#uxarray.Grid.compute_face_node_angles",
+    "uxarray.grid.compute_face_radii": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.compute_face_radii.html#uxarray.Grid.compute_face_radii",
     "uxarray.grid.compute_skewness": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.compute_skewness.html#uxarray.Grid.compute_skewness",
     "uxarray.grid.connectivity": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.connectivity.html#uxarray.Grid.connectivity",
     "uxarray.grid.construct_face_centers": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.Grid.construct_face_centers.html#uxarray.Grid.construct_face_centers",
@@ -171,7 +172,6 @@ MAPPING = {
     "uxarray.uxdataarray.azimuthal_mean": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.azimuthal_mean.html#uxarray.UxDataArray.azimuthal_mean",
     "uxarray.uxdataarray.cross_section": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.cross_section.html#uxarray.UxDataArray.cross_section",
     "uxarray.uxdataarray.curl": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.curl.html#uxarray.UxDataArray.curl",
-    "uxarray.uxdataarray.data_location": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.data_location.html#uxarray.UxDataArray.data_location",
     "uxarray.uxdataarray.data_mapping": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.data_mapping.html#uxarray.UxDataArray.data_mapping",
     "uxarray.uxdataarray.difference": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.difference.html#uxarray.UxDataArray.difference",
     "uxarray.uxdataarray.divergence": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.divergence.html#uxarray.UxDataArray.divergence",
@@ -183,6 +183,7 @@ MAPPING = {
     "uxarray.uxdataarray.isel": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.isel.html#uxarray.UxDataArray.isel",
     "uxarray.uxdataarray.neighborhood": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.neighborhood.html#uxarray.UxDataArray.neighborhood",
     "uxarray.uxdataarray.plot": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.plot.html#uxarray.UxDataArray.plot",
+    "uxarray.uxdataarray.plot.contour": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.plot.contour.html#uxarray.UxDataArray.plot.contour",
     "uxarray.uxdataarray.plot.line": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.plot.line.html#uxarray.UxDataArray.plot.line",
     "uxarray.uxdataarray.plot.points": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.plot.points.html#uxarray.UxDataArray.plot.points",
     "uxarray.uxdataarray.plot.polygons": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.plot.polygons.html#uxarray.UxDataArray.plot.polygons",
@@ -228,6 +229,7 @@ MAPPING = {
     "uxarray.uxdataarray.zonal_mean": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataArray.zonal_mean.html#uxarray.UxDataArray.zonal_mean",
     "uxarray.uxdataset": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.html#uxarray.UxDataset",
     "uxarray.uxdataset.__init__": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.html#uxarray.UxDataset.__init__",
+    "uxarray.uxdataset.azimuthal_mean": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.azimuthal_mean.html#uxarray.UxDataset.azimuthal_mean",
     "uxarray.uxdataset.from_dataframe": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.from_dataframe.html#uxarray.UxDataset.from_dataframe",
     "uxarray.uxdataset.from_dict": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.from_dict.html#uxarray.UxDataset.from_dict",
     "uxarray.uxdataset.from_healpix": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.from_healpix.html#uxarray.UxDataset.from_healpix",
@@ -250,5 +252,9 @@ MAPPING = {
     "uxarray.uxdataset.to_array": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.to_array.html#uxarray.UxDataset.to_array",
     "uxarray.uxdataset.to_xarray": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.to_xarray.html#uxarray.UxDataset.to_xarray",
     "uxarray.uxdataset.uxgrid": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.uxgrid.html#uxarray.UxDataset.uxgrid",
+    "uxarray.uxdataset.weighted_mean": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.weighted_mean.html#uxarray.UxDataset.weighted_mean",
     "uxarray.uxdataset.where": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.where.html#uxarray.UxDataset.where",
+    "uxarray.uxdataset.zonal_anomaly": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.zonal_anomaly.html#uxarray.UxDataset.zonal_anomaly",
+    "uxarray.uxdataset.zonal_average": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.zonal_average.html#uxarray.UxDataset.zonal_average",
+    "uxarray.uxdataset.zonal_mean": "https://uxarray.readthedocs.io/en/stable/generated/uxarray.UxDataset.zonal_mean.html#uxarray.UxDataset.zonal_mean",
 }

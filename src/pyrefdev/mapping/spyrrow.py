@@ -1,19 +1,30 @@
-VERSION = "0.9.0"
+VERSION = "0.10.0"
 
 # fmt: off
 MAPPING = {
     "spyrrow": "https://spyrrow.readthedocs.io/en/stable/",
+    "spyrrow.compressionprogressevent": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.CompressionProgressEvent",
     "spyrrow.item": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.Item",
+    "spyrrow.item.to_json_str": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.Item.to_json_str",
+    "spyrrow.optimizationphase": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.OptimizationPhase",
+    "spyrrow.phaseevent": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.PhaseEvent",
     "spyrrow.placeditem": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.PlacedItem",
-    "spyrrow.placeditem.id": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.PlacedItem.id",
-    "spyrrow.placeditem.rotation": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.PlacedItem.rotation",
-    "spyrrow.placeditem.translation": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.PlacedItem.translation",
+    "spyrrow.progressqueue": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.ProgressQueue",
+    "spyrrow.progressqueue.detailed": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.ProgressQueue.detailed",
+    "spyrrow.progressqueue.drain": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.ProgressQueue.drain",
+    "spyrrow.progressqueue.drain_events": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.ProgressQueue.drain_events",
+    "spyrrow.progressqueue.dropped_events": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.ProgressQueue.dropped_events",
+    "spyrrow.progressqueue.max_events": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.ProgressQueue.max_events",
+    "spyrrow.reporttype": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.ReportType",
+    "spyrrow.reporttype.phase_name": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.ReportType.phase_name",
+    "spyrrow.separationprogressevent": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.SeparationProgressEvent",
+    "spyrrow.separationresultevent": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.SeparationResultEvent",
     "spyrrow.strippackingconfig": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.StripPackingConfig",
+    "spyrrow.strippackingconfig.to_json_str": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.StripPackingConfig.to_json_str",
     "spyrrow.strippackinginstance": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.StripPackingInstance",
     "spyrrow.strippackinginstance.solve": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.StripPackingInstance.solve",
     "spyrrow.strippackinginstance.to_json_str": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.StripPackingInstance.to_json_str",
+    "spyrrow.strippackinginstance.to_sparrow_json_str": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.StripPackingInstance.to_sparrow_json_str",
     "spyrrow.strippackingsolution": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.StripPackingSolution",
-    "spyrrow.strippackingsolution.density": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.StripPackingSolution.density",
-    "spyrrow.strippackingsolution.placed_items": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.StripPackingSolution.placed_items",
-    "spyrrow.strippackingsolution.width": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.StripPackingSolution.width",
+    "spyrrow.strippackingsolution.to_json_str": "https://spyrrow.readthedocs.io/en/stable/api.html#spyrrow.StripPackingSolution.to_json_str",
 }

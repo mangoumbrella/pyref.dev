@@ -1,4 +1,4 @@
-VERSION = "5.4.0"
+VERSION = "6.0.0"
 
 # fmt: off
 MAPPING = {
@@ -88,6 +88,7 @@ MAPPING = {
     "asdf.extension._converter.converter": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.Converter.html#asdf.extension.Converter",
     "asdf.extension._converter.converterproxy": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ConverterProxy.html#asdf.extension.ConverterProxy",
     "asdf.extension._extension.extension": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.Extension.html#asdf.extension.Extension",
+    "asdf.extension._extension.extensionlike": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ExtensionLike.html#asdf.extension.ExtensionLike",
     "asdf.extension._extension.extensionproxy": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ExtensionProxy.html#asdf.extension.ExtensionProxy",
     "asdf.extension._manager": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ExtensionManager.html",
     "asdf.extension._manager.extensionmanager": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ExtensionManager.html#asdf.extension.ExtensionManager",
@@ -130,6 +131,8 @@ MAPPING = {
     "asdf.extension.extension.tags": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.Extension.html#asdf.extension.Extension.tags",
     "asdf.extension.extension.validators": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.Extension.html#asdf.extension.Extension.validators",
     "asdf.extension.extension.yaml_tag_handles": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.Extension.html#asdf.extension.Extension.yaml_tag_handles",
+    "asdf.extension.extensionlike": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ExtensionLike.html#asdf.extension.ExtensionLike",
+    "asdf.extension.extensionlike.extension_uri": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ExtensionLike.html#asdf.extension.ExtensionLike.extension_uri",
     "asdf.extension.extensionmanager": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ExtensionManager.html#asdf.extension.ExtensionManager",
     "asdf.extension.extensionmanager.extensions": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ExtensionManager.html#asdf.extension.ExtensionManager.extensions",
     "asdf.extension.extensionmanager.get_converter_for_tag": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ExtensionManager.html#asdf.extension.ExtensionManager.get_converter_for_tag",
@@ -167,6 +170,7 @@ MAPPING = {
     "asdf.extension.manifestextension.legacy_class_names": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ManifestExtension.html#asdf.extension.ManifestExtension.legacy_class_names",
     "asdf.extension.manifestextension.tags": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ManifestExtension.html#asdf.extension.ManifestExtension.tags",
     "asdf.extension.manifestextension.validators": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ManifestExtension.html#asdf.extension.ManifestExtension.validators",
+    "asdf.extension.manifestextension.yaml_tag_handles": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.ManifestExtension.html#asdf.extension.ManifestExtension.yaml_tag_handles",
     "asdf.extension.serializationcontext": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.SerializationContext.html#asdf.extension.SerializationContext",
     "asdf.extension.serializationcontext.assign_blocks": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.SerializationContext.html#asdf.extension.SerializationContext.assign_blocks",
     "asdf.extension.serializationcontext.assign_object": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.extension.SerializationContext.html#asdf.extension.SerializationContext.assign_object",
@@ -315,17 +319,11 @@ MAPPING = {
     "asdf.typing.arraystorage": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.ArrayStorage.html#asdf.typing.ArrayStorage",
     "asdf.typing.asdfversionlike": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.AsdfVersionLike.html#asdf.typing.AsdfVersionLike",
     "asdf.typing.compression": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.Compression.html#asdf.typing.Compression",
-    "asdf.typing.extensionlike": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.ExtensionLike.html#asdf.typing.ExtensionLike",
-    "asdf.typing.extensionlike.extension_uri": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.ExtensionLike.html#asdf.typing.ExtensionLike.extension_uri",
     "asdf.typing.filelike": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.FileLike.html#asdf.typing.FileLike",
     "asdf.typing.filemode": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.FileMode.html#asdf.typing.FileMode",
     "asdf.typing.filterfn": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.FilterFn.html#asdf.typing.FilterFn",
     "asdf.typing.pathlike": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.PathLike.html#asdf.typing.PathLike",
-    "asdf.typing.reader": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.Reader.html#asdf.typing.Reader",
-    "asdf.typing.reader.read": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.Reader.html#asdf.typing.Reader.read",
     "asdf.typing.treekey": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.TreeKey.html#asdf.typing.TreeKey",
-    "asdf.typing.writer": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.Writer.html#asdf.typing.Writer",
-    "asdf.typing.writer.write": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.typing.Writer.html#asdf.typing.Writer.write",
     "asdf.util": "https://www.asdf-format.org/projects/asdf/en/stable/asdf/developer_api.html#module-asdf.util",
     "asdf.util.calculate_padding": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.util.calculate_padding.html#asdf.util.calculate_padding",
     "asdf.util.filetype": "https://www.asdf-format.org/projects/asdf/en/stable/api/asdf.util.FileType.html#asdf.util.FileType",

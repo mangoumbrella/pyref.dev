@@ -1,4 +1,4 @@
-VERSION = "1.5.0"
+VERSION = "1.6.0"
 
 # fmt: off
 MAPPING = {
@@ -355,12 +355,8 @@ MAPPING = {
     "mapie.risk_control.binary_classification": "https://mapie.readthedocs.io/en/stable/api/risk-control/",
     "mapie.risk_control.binary_classification.binaryclassificationcontroller": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.BinaryClassificationController",
     "mapie.risk_control.binary_classification.binaryclassificationcontroller.calibrate": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.BinaryClassificationController.calibrate",
-    "mapie.risk_control.binary_classification.binaryclassificationcontroller.learn_fixed_sequence_order": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.BinaryClassificationController.learn_fixed_sequence_order",
-    "mapie.risk_control.binary_classification.binaryclassificationcontroller.predict": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.BinaryClassificationController.predict",
     "mapie.risk_control.binaryclassificationcontroller": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.BinaryClassificationController",
     "mapie.risk_control.binaryclassificationcontroller.calibrate": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.BinaryClassificationController.calibrate",
-    "mapie.risk_control.binaryclassificationcontroller.learn_fixed_sequence_order": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.BinaryClassificationController.learn_fixed_sequence_order",
-    "mapie.risk_control.binaryclassificationcontroller.predict": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.BinaryClassificationController.predict",
     "mapie.risk_control.binaryclassificationrisk": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.BinaryClassificationRisk",
     "mapie.risk_control.binaryrisk": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.BinaryRisk",
     "mapie.risk_control.continuousrisk": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.ContinuousRisk",
@@ -385,6 +381,9 @@ MAPPING = {
     "mapie.risk_control.mean_squared_error": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.mean_squared_error",
     "mapie.risk_control.miscoverage_loss": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.miscoverage_loss",
     "mapie.risk_control.mse": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.mse",
+    "mapie.risk_control.multi_classification": "https://mapie.readthedocs.io/en/stable/api/risk-control/",
+    "mapie.risk_control.multi_classification.multiclassificationlttcontroller": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.MultiClassificationLTTController",
+    "mapie.risk_control.multi_classification.multiclassificationlttcontroller.calibrate": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.MultiClassificationLTTController.calibrate",
     "mapie.risk_control.multi_label_classification": "https://mapie.readthedocs.io/en/stable/api/risk-control/",
     "mapie.risk_control.multi_label_classification.multilabelclassificationcontroller": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.MultiLabelClassificationController",
     "mapie.risk_control.multi_label_classification.multilabelclassificationcontroller.calibrate": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.MultiLabelClassificationController.calibrate",
@@ -392,6 +391,8 @@ MAPPING = {
     "mapie.risk_control.multi_label_classification.multilabelclassificationcontroller.compute_risks": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.MultiLabelClassificationController.compute_risks",
     "mapie.risk_control.multi_label_classification.multilabelclassificationcontroller.is_fitted": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.MultiLabelClassificationController.is_fitted",
     "mapie.risk_control.multi_label_classification.multilabelclassificationcontroller.predict": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.MultiLabelClassificationController.predict",
+    "mapie.risk_control.multiclassificationlttcontroller": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.MultiClassificationLTTController",
+    "mapie.risk_control.multiclassificationlttcontroller.calibrate": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.MultiClassificationLTTController.calibrate",
     "mapie.risk_control.multilabelclassificationcontroller": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.MultiLabelClassificationController",
     "mapie.risk_control.multilabelclassificationcontroller.calibrate": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.MultiLabelClassificationController.calibrate",
     "mapie.risk_control.multilabelclassificationcontroller.compute_best_predict_param": "https://mapie.readthedocs.io/en/stable/api/risk-control/#mapie.risk_control.MultiLabelClassificationController.compute_best_predict_param",

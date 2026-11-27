@@ -1,4 +1,4 @@
-VERSION = "0.6.0"
+VERSION = "0.7.0"
 
 # fmt: off
 MAPPING = {
@@ -18,6 +18,7 @@ MAPPING = {
     "pynndescent.distances.correlation": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.correlation",
     "pynndescent.distances.cosine": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.cosine",
     "pynndescent.distances.dice": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.dice",
+    "pynndescent.distances.direct_cosine": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.direct_cosine",
     "pynndescent.distances.dot": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.dot",
     "pynndescent.distances.euclidean": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.euclidean",
     "pynndescent.distances.hamming": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.hamming",
@@ -34,11 +35,18 @@ MAPPING = {
     "pynndescent.distances.minkowski": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.minkowski",
     "pynndescent.distances.proxy_circular_kantorovich": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.proxy_circular_kantorovich",
     "pynndescent.distances.proxy_inner_product": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.proxy_inner_product",
+    "pynndescent.distances.proxy_inner_product_query": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.proxy_inner_product_query",
     "pynndescent.distances.proxy_jensen_shannon": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.proxy_jensen_shannon",
     "pynndescent.distances.proxy_kantorovich": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.proxy_kantorovich",
     "pynndescent.distances.proxy_sinkhorn": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.proxy_sinkhorn",
     "pynndescent.distances.proxy_symmetric_kl": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.proxy_symmetric_kl",
     "pynndescent.distances.proxy_wasserstein_1d": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.proxy_wasserstein_1d",
+    "pynndescent.distances.quantized_int8_alternative_cosine": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.quantized_int8_alternative_cosine",
+    "pynndescent.distances.quantized_int8_alternative_cosine_with_norms": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.quantized_int8_alternative_cosine_with_norms",
+    "pynndescent.distances.quantized_int8_alternative_dot": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.quantized_int8_alternative_dot",
+    "pynndescent.distances.quantized_int8_alternative_dot_with_norms": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.quantized_int8_alternative_dot_with_norms",
+    "pynndescent.distances.quantized_int8_direct_cosine": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.quantized_int8_direct_cosine",
+    "pynndescent.distances.quantized_int8_direct_cosine_with_norms": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.quantized_int8_direct_cosine_with_norms",
     "pynndescent.distances.quantized_uint4_alternative_cosine": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.quantized_uint4_alternative_cosine",
     "pynndescent.distances.quantized_uint4_alternative_dot": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.quantized_uint4_alternative_dot",
     "pynndescent.distances.quantized_uint4_sq_euclidean": "https://pynndescent.readthedocs.io/en/latest/api.html#pynndescent.distances.quantized_uint4_sq_euclidean",

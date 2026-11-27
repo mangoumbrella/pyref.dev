@@ -1,4 +1,4 @@
-VERSION = "1.13.22"
+VERSION = "1.13.30"
 
 # fmt: off
 MAPPING = {
@@ -741,9 +741,11 @@ MAPPING = {
     "dagster.dagstereventtype.run_dequeued": "https://docs.dagster.io/api/dagster/execution/#dagster.DagsterEventType.RUN_DEQUEUED",
     "dagster.dagstereventtype.run_enqueued": "https://docs.dagster.io/api/dagster/execution/#dagster.DagsterEventType.RUN_ENQUEUED",
     "dagster.dagstereventtype.run_failure": "https://docs.dagster.io/api/dagster/execution/#dagster.DagsterEventType.RUN_FAILURE",
+    "dagster.dagstereventtype.run_resumed": "https://docs.dagster.io/api/dagster/execution/#dagster.DagsterEventType.RUN_RESUMED",
     "dagster.dagstereventtype.run_start": "https://docs.dagster.io/api/dagster/execution/#dagster.DagsterEventType.RUN_START",
     "dagster.dagstereventtype.run_starting": "https://docs.dagster.io/api/dagster/execution/#dagster.DagsterEventType.RUN_STARTING",
     "dagster.dagstereventtype.run_success": "https://docs.dagster.io/api/dagster/execution/#dagster.DagsterEventType.RUN_SUCCESS",
+    "dagster.dagstereventtype.run_suspended": "https://docs.dagster.io/api/dagster/execution/#dagster.DagsterEventType.RUN_SUSPENDED",
     "dagster.dagstereventtype.step_expectation_result": "https://docs.dagster.io/api/dagster/execution/#dagster.DagsterEventType.STEP_EXPECTATION_RESULT",
     "dagster.dagstereventtype.step_failure": "https://docs.dagster.io/api/dagster/execution/#dagster.DagsterEventType.STEP_FAILURE",
     "dagster.dagstereventtype.step_input": "https://docs.dagster.io/api/dagster/execution/#dagster.DagsterEventType.STEP_INPUT",
@@ -807,6 +809,7 @@ MAPPING = {
     "dagster.dagsterrunstatus.started": "https://docs.dagster.io/api/dagster/internals/#dagster.DagsterRunStatus.STARTED",
     "dagster.dagsterrunstatus.starting": "https://docs.dagster.io/api/dagster/internals/#dagster.DagsterRunStatus.STARTING",
     "dagster.dagsterrunstatus.success": "https://docs.dagster.io/api/dagster/internals/#dagster.DagsterRunStatus.SUCCESS",
+    "dagster.dagsterrunstatus.suspended": "https://docs.dagster.io/api/dagster/internals/#dagster.DagsterRunStatus.SUSPENDED",
     "dagster.dagsterstepoutputnotfounderror": "https://docs.dagster.io/api/dagster/errors/#dagster.DagsterStepOutputNotFoundError",
     "dagster.dagstersubprocesserror": "https://docs.dagster.io/api/dagster/errors/#dagster.DagsterSubprocessError",
     "dagster.dagstertype": "https://docs.dagster.io/api/dagster/types/#dagster.DagsterType",

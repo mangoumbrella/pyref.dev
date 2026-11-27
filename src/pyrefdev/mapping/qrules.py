@@ -1,4 +1,4 @@
-VERSION = "0.10.14"
+VERSION = "0.10.15"
 
 # fmt: off
 MAPPING = {
@@ -330,6 +330,8 @@ MAPPING = {
     "qrules.transition.executioninfo.not_executed_node_rules": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.ExecutionInfo.not_executed_node_rules",
     "qrules.transition.executioninfo.violated_edge_rules": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.ExecutionInfo.violated_edge_rules",
     "qrules.transition.executioninfo.violated_node_rules": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.ExecutionInfo.violated_node_rules",
+    "qrules.transition.nosolutionserror": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.NoSolutionsError",
+    "qrules.transition.nosolutionserror.execution_info": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.NoSolutionsError.execution_info",
     "qrules.transition.problemset": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.ProblemSet",
     "qrules.transition.problemset.initial_facts": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.ProblemSet.initial_facts",
     "qrules.transition.problemset.solving_settings": "https://qrules.readthedocs.io/stable/api/qrules.transition.html#qrules.transition.ProblemSet.solving_settings",

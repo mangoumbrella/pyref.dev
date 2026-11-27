@@ -1,4 +1,4 @@
-VERSION = "1.74.0"
+VERSION = "1.82.0"
 
 # fmt: off
 MAPPING = {
@@ -99,8 +99,9 @@ MAPPING = {
     "tmuxp.cli._formatter.tmuxphelpformatter._colorizedline._replace": "https://tmuxp.git-pull.com/internals/api/cli/formatter/#tmuxp.cli._formatter.TmuxpHelpFormatter._ColorizedLine._replace",
     "tmuxp.cli._formatter.tmuxphelpformatter._colorizedline.expect_value": "https://tmuxp.git-pull.com/internals/api/cli/formatter/#tmuxp.cli._formatter.TmuxpHelpFormatter._ColorizedLine.expect_value",
     "tmuxp.cli._formatter.tmuxphelpformatter._colorizedline.text": "https://tmuxp.git-pull.com/internals/api/cli/formatter/#tmuxp.cli._formatter.TmuxpHelpFormatter._ColorizedLine.text",
+    "tmuxp.cli._formatter.tmuxphelpformatter._example_theme": "https://tmuxp.git-pull.com/internals/api/cli/formatter/#tmuxp.cli._formatter.TmuxpHelpFormatter._example_theme",
     "tmuxp.cli._formatter.tmuxphelpformatter._fill_text": "https://tmuxp.git-pull.com/internals/api/cli/formatter/#tmuxp.cli._formatter.TmuxpHelpFormatter._fill_text",
-    "tmuxp.cli._formatter.tmuxphelpformatter._theme": "https://tmuxp.git-pull.com/internals/api/cli/formatter/#tmuxp.cli._formatter.TmuxpHelpFormatter._theme",
+    "tmuxp.cli._formatter.tmuxphelpformatter._help_theme": "https://tmuxp.git-pull.com/internals/api/cli/formatter/#tmuxp.cli._formatter.TmuxpHelpFormatter._help_theme",
     "tmuxp.cli._progress": "https://tmuxp.git-pull.com/internals/api/cli/progress/#module-tmuxp.cli._progress",
     "tmuxp.cli._progress._safeformatmap": "https://tmuxp.git-pull.com/internals/api/cli/progress/#tmuxp.cli._progress._SafeFormatMap",
     "tmuxp.cli._progress._truncate_visible": "https://tmuxp.git-pull.com/internals/api/cli/progress/#tmuxp.cli._progress._truncate_visible",

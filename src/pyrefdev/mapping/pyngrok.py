@@ -1,4 +1,4 @@
-VERSION = "8.1.2"
+VERSION = "9.1.4"
 
 # fmt: off
 MAPPING = {
@@ -7,6 +7,7 @@ MAPPING = {
     "pyngrok.agent.capturedrequest": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.agent.CapturedRequest",
     "pyngrok.agent.capturedrequest.data": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.agent.CapturedRequest.data",
     "pyngrok.agent.capturedrequest.id": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.agent.CapturedRequest.id",
+    "pyngrok.agent.capturedrequest.uri": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.agent.CapturedRequest.uri",
     "pyngrok.agent.delete_requests": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.agent.delete_requests",
     "pyngrok.agent.get_agent_status": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.agent.get_agent_status",
     "pyngrok.agent.get_request": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.agent.get_request",
@@ -18,6 +19,20 @@ MAPPING = {
     "pyngrok.agent.ngrokagent.status": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.agent.NgrokAgent.status",
     "pyngrok.agent.ngrokagent.uri": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.agent.NgrokAgent.uri",
     "pyngrok.agent.replay_request": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.agent.replay_request",
+    "pyngrok.aio": "https://pyngrok.readthedocs.io/en/latest/api.html#module-pyngrok.aio",
+    "pyngrok.aio.api": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.api",
+    "pyngrok.aio.api_request": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.api_request",
+    "pyngrok.aio.connect": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.connect",
+    "pyngrok.aio.connect_all": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.connect_all",
+    "pyngrok.aio.disconnect": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.disconnect",
+    "pyngrok.aio.get_ngrok_process": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.get_ngrok_process",
+    "pyngrok.aio.get_tunnels": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.get_tunnels",
+    "pyngrok.aio.get_version": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.get_version",
+    "pyngrok.aio.install_ngrok": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.install_ngrok",
+    "pyngrok.aio.kill": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.kill",
+    "pyngrok.aio.set_api_key": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.set_api_key",
+    "pyngrok.aio.set_auth_token": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.set_auth_token",
+    "pyngrok.aio.update": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.aio.update",
     "pyngrok.conf": "https://pyngrok.readthedocs.io/en/latest/api.html#module-pyngrok.conf",
     "pyngrok.conf.get_config_path": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.conf.get_config_path",
     "pyngrok.conf.get_default": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.conf.get_default",
@@ -40,6 +55,7 @@ MAPPING = {
     "pyngrok.exception.pyngrokerror": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.exception.PyngrokError",
     "pyngrok.exception.pyngrokngrokerror": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.exception.PyngrokNgrokError",
     "pyngrok.exception.pyngrokngrokerror.ngrok_error": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.exception.PyngrokNgrokError.ngrok_error",
+    "pyngrok.exception.pyngrokngrokerror.ngrok_error_code": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.exception.PyngrokNgrokError.ngrok_error_code",
     "pyngrok.exception.pyngrokngrokerror.ngrok_logs": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.exception.PyngrokNgrokError.ngrok_logs",
     "pyngrok.exception.pyngrokngrokhttperror": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.exception.PyngrokNgrokHTTPError",
     "pyngrok.exception.pyngrokngrokhttperror.body": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.exception.PyngrokNgrokHTTPError.body",
@@ -77,6 +93,7 @@ MAPPING = {
     "pyngrok.ngrok.api": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.api",
     "pyngrok.ngrok.api_request": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.api_request",
     "pyngrok.ngrok.connect": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.connect",
+    "pyngrok.ngrok.connect_all": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.connect_all",
     "pyngrok.ngrok.disconnect": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.disconnect",
     "pyngrok.ngrok.get_ngrok_process": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.get_ngrok_process",
     "pyngrok.ngrok.get_tunnels": "https://pyngrok.readthedocs.io/en/latest/api.html#pyngrok.ngrok.get_tunnels",

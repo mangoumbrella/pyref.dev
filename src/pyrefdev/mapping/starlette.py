@@ -1,4 +1,4 @@
-VERSION = "1.6.0"
+VERSION = "1.10.0"
 
 # fmt: off
 MAPPING = {
@@ -33,6 +33,8 @@ MAPPING = {
     "starlette.middleware.httpsredirect": "https://starlette.dev/middleware/",
     "starlette.middleware.httpsredirect.httpsredirectmiddleware": "https://starlette.dev/middleware/#httpsredirectmiddleware",
     "starlette.middleware.middleware": "https://starlette.dev/middleware/",
+    "starlette.middleware.opentelemetry": "https://starlette.dev/middleware/",
+    "starlette.middleware.opentelemetry.opentelemetrymiddleware": "https://starlette.dev/middleware/",
     "starlette.middleware.sessions": "https://starlette.dev/middleware/",
     "starlette.middleware.sessions.sessionmiddleware": "https://starlette.dev/middleware/#sessionmiddleware",
     "starlette.middleware.trustedhost": "https://starlette.dev/middleware/",

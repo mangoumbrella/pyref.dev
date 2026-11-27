@@ -1,4 +1,4 @@
-VERSION = "4.3.5"
+VERSION = "4.4.1"
 
 # fmt: off
 MAPPING = {
@@ -293,6 +293,7 @@ MAPPING = {
     "wsgidav.lock_man.lock_manager.lockmanager.refresh": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.lock_man.lock_manager.LockManager.refresh.html#wsgidav.lock_man.lock_manager.LockManager.refresh",
     "wsgidav.lock_man.lock_manager.lockmanager.release": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.lock_man.lock_manager.LockManager.release.html#wsgidav.lock_man.lock_manager.LockManager.release",
     "wsgidav.lock_man.lock_manager.lockmanager.remove_all_locks_from_url": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.lock_man.lock_manager.LockManager.remove_all_locks_from_url.html#wsgidav.lock_man.lock_manager.LockManager.remove_all_locks_from_url",
+    "wsgidav.lock_man.lock_manager.lockmanager.write_transaction": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.lock_man.lock_manager.LockManager.write_transaction.html#wsgidav.lock_man.lock_manager.LockManager.write_transaction",
     "wsgidav.lock_man.lock_manager.normalize_lock_root": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.lock_man.lock_manager.normalize_lock_root.html#wsgidav.lock_man.lock_manager.normalize_lock_root",
     "wsgidav.lock_man.lock_manager.validate_lock": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.lock_man.lock_manager.validate_lock.html#wsgidav.lock_man.lock_manager.validate_lock",
     "wsgidav.lock_man.lock_storage": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.lock_man.lock_storage.html#module-wsgidav.lock_man.lock_storage",
@@ -1271,6 +1272,7 @@ MAPPING = {
     "wsgidav.util.join_uri": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.util.join_uri.html#wsgidav.util.join_uri",
     "wsgidav.util.make_complete_url": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.util.make_complete_url.html#wsgidav.util.make_complete_url",
     "wsgidav.util.no_default": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.util.NO_DEFAULT.html#wsgidav.util.NO_DEFAULT",
+    "wsgidav.util.normalize_path": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.util.normalize_path.html#wsgidav.util.normalize_path",
     "wsgidav.util.obtain_content_ranges": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.util.obtain_content_ranges.html#wsgidav.util.obtain_content_ranges",
     "wsgidav.util.parse_if_header_dict": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.util.parse_if_header_dict.html#wsgidav.util.parse_if_header_dict",
     "wsgidav.util.parse_if_match_header": "https://wsgidav.readthedocs.io/en/stable/_autosummary/wsgidav.util.parse_if_match_header.html#wsgidav.util.parse_if_match_header",

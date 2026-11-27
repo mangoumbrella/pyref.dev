@@ -1,4 +1,4 @@
-VERSION = "1.9.0"
+VERSION = "1.10.1"
 
 # fmt: off
 MAPPING = {
@@ -307,7 +307,6 @@ MAPPING = {
     "duty.callables.griffe": "https://pawamoy.github.io/duty/reference/api/#duty.callables.griffe",
     "duty.callables.interrogate": "https://pawamoy.github.io/duty/reference/api/#duty.callables.interrogate",
     "duty.callables.isort": "https://pawamoy.github.io/duty/reference/api/#duty.callables.isort",
-    "duty.callables.lazy": "https://pawamoy.github.io/duty/reference/api/#duty.lazy",
     "duty.callables.mkdocs": "https://pawamoy.github.io/duty/reference/api/#duty.callables.mkdocs",
     "duty.callables.mypy": "https://pawamoy.github.io/duty/reference/api/#duty.callables.mypy",
     "duty.callables.pytest": "https://pawamoy.github.io/duty/reference/api/#duty.callables.pytest",
@@ -361,7 +360,6 @@ MAPPING = {
     "duty.exceptions": "https://pawamoy.github.io/duty/reference/api/#duty.exceptions",
     "duty.get_duty_parser": "https://pawamoy.github.io/duty/reference/api/#duty.get_duty_parser",
     "duty.get_parser": "https://pawamoy.github.io/duty/reference/api/#duty.get_parser",
-    "duty.lazy": "https://pawamoy.github.io/duty/reference/api/#duty.lazy",
     "duty.lazystderr": "https://pawamoy.github.io/duty/reference/api/#duty.LazyStderr",
     "duty.lazystderr.write": "https://pawamoy.github.io/duty/reference/api/#duty.LazyStderr.write",
     "duty.lazystdout": "https://pawamoy.github.io/duty/reference/api/#duty.LazyStdout",

@@ -1,4 +1,4 @@
-VERSION = "0.5.12"
+VERSION = "0.7.2"
 
 # fmt: off
 MAPPING = {
@@ -15,6 +15,7 @@ MAPPING = {
     "empyrical.stats.annual_return": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.annual_return",
     "empyrical.stats.annual_volatility": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.annual_volatility",
     "empyrical.stats.annualization_factor": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.annualization_factor",
+    "empyrical.stats.batting_average": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.batting_average",
     "empyrical.stats.beta": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.beta",
     "empyrical.stats.beta_aligned": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.beta_aligned",
     "empyrical.stats.beta_fragility_heuristic": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.beta_fragility_heuristic",
@@ -28,6 +29,7 @@ MAPPING = {
     "empyrical.stats.down_alpha_beta": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.down_alpha_beta",
     "empyrical.stats.down_capture": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.down_capture",
     "empyrical.stats.downside_risk": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.downside_risk",
+    "empyrical.stats.drawdown_series": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.drawdown_series",
     "empyrical.stats.excess_sharpe": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.excess_sharpe",
     "empyrical.stats.gpd_es_calculator": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.gpd_es_calculator",
     "empyrical.stats.gpd_loglikelihood": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.gpd_loglikelihood",
@@ -42,20 +44,9 @@ MAPPING = {
     "empyrical.stats.gpd_var_calculator": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.gpd_var_calculator",
     "empyrical.stats.max_drawdown": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.max_drawdown",
     "empyrical.stats.omega_ratio": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.omega_ratio",
-    "empyrical.stats.roll_alpha": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_alpha",
-    "empyrical.stats.roll_alpha_aligned": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_alpha_aligned",
     "empyrical.stats.roll_alpha_beta": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_alpha_beta",
-    "empyrical.stats.roll_alpha_beta_aligned": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_alpha_beta_aligned",
-    "empyrical.stats.roll_annual_volatility": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_annual_volatility",
-    "empyrical.stats.roll_beta": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_beta",
-    "empyrical.stats.roll_beta_aligned": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_beta_aligned",
-    "empyrical.stats.roll_cagr": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_cagr",
     "empyrical.stats.roll_down_capture": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_down_capture",
     "empyrical.stats.roll_downsize_risk": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_downsize_risk",
-    "empyrical.stats.roll_excess_sharpe": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_excess_sharpe",
-    "empyrical.stats.roll_max_drawdown": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_max_drawdown",
-    "empyrical.stats.roll_sharpe_ratio": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_sharpe_ratio",
-    "empyrical.stats.roll_sortino_ratio": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_sortino_ratio",
     "empyrical.stats.roll_up_capture": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_up_capture",
     "empyrical.stats.roll_up_down_capture": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.roll_up_down_capture",
     "empyrical.stats.sharpe_ratio": "https://empyrical.ml4trading.io/stats.html#empyrical.stats.sharpe_ratio",

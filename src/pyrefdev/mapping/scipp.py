@@ -1,4 +1,4 @@
-VERSION = "26.8.0"
+VERSION = "26.11.0"
 
 # fmt: off
 MAPPING = {
@@ -426,6 +426,7 @@ MAPPING = {
     "scipp.spatial": "https://scipp.github.io/generated/modules/scipp.spatial.html#module-scipp.spatial",
     "scipp.spatial.affine_transform": "https://scipp.github.io/generated/modules/scipp.spatial.affine_transform.html#scipp.spatial.affine_transform",
     "scipp.spatial.affine_transforms": "https://scipp.github.io/generated/modules/scipp.spatial.affine_transforms.html#scipp.spatial.affine_transforms",
+    "scipp.spatial.angle_between": "https://scipp.github.io/generated/modules/scipp.spatial.angle_between.html#scipp.spatial.angle_between",
     "scipp.spatial.as_vectors": "https://scipp.github.io/generated/modules/scipp.spatial.as_vectors.html#scipp.spatial.as_vectors",
     "scipp.spatial.inv": "https://scipp.github.io/generated/modules/scipp.spatial.inv.html#scipp.spatial.inv",
     "scipp.spatial.linear_transform": "https://scipp.github.io/generated/modules/scipp.spatial.linear_transform.html#scipp.spatial.linear_transform",

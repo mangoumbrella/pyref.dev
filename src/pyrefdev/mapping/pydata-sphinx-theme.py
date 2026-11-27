@@ -1,4 +1,4 @@
-VERSION = "0.21.0"
+VERSION = "0.24.0"
 
 # fmt: off
 MAPPING = {
@@ -38,6 +38,7 @@ MAPPING = {
     "pydata_sphinx_theme.toctree.linkinfo": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree.LinkInfo",
     "pydata_sphinx_theme.toctree.linkinfo.href": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree.LinkInfo.href",
     "pydata_sphinx_theme.toctree.linkinfo.is_current": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree.LinkInfo.is_current",
+    "pydata_sphinx_theme.toctree.linkinfo.is_current_page": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree.LinkInfo.is_current_page",
     "pydata_sphinx_theme.toctree.linkinfo.is_external": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree.LinkInfo.is_external",
     "pydata_sphinx_theme.toctree.linkinfo.title": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/toctree/index.html#pydata_sphinx_theme.toctree.LinkInfo.title",
     "pydata_sphinx_theme.translator": "https://pydata-sphinx-theme.readthedocs.io/en/stable/api/pydata_sphinx_theme/translator/index.html",

@@ -1,4 +1,4 @@
-VERSION = "0.22.0"
+VERSION = "0.23.0"
 
 # fmt: off
 MAPPING = {
@@ -33,8 +33,10 @@ MAPPING = {
     "fastapi_sso.sso.apple.applesso.get_login_redirect": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.get_login_redirect",
     "fastapi_sso.sso.apple.applesso.get_login_url": "https://tomasvotava.github.io/fastapi-sso/reference/sso.apple/#fastapi_sso.sso.apple.AppleSSO.get_login_url",
     "fastapi_sso.sso.apple.applesso.id_token": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.id_token",
+    "fastapi_sso.sso.apple.applesso.jwks_uri": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.jwks_uri",
     "fastapi_sso.sso.apple.applesso.oauth_client": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.oauth_client",
     "fastapi_sso.sso.apple.applesso.openid_from_response": "https://tomasvotava.github.io/fastapi-sso/reference/sso.apple/#fastapi_sso.sso.apple.AppleSSO.openid_from_response",
+    "fastapi_sso.sso.apple.applesso.parse_userinfo_response": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.parse_userinfo_response",
     "fastapi_sso.sso.apple.applesso.process_login": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.process_login",
     "fastapi_sso.sso.apple.applesso.refresh_token": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.refresh_token",
     "fastapi_sso.sso.apple.applesso.state": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.state",
@@ -58,9 +60,11 @@ MAPPING = {
     "fastapi_sso.sso.base.ssobase.get_login_redirect": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.get_login_redirect",
     "fastapi_sso.sso.base.ssobase.get_login_url": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.get_login_url",
     "fastapi_sso.sso.base.ssobase.id_token": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.id_token",
+    "fastapi_sso.sso.base.ssobase.jwks_uri": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.jwks_uri",
     "fastapi_sso.sso.base.ssobase.oauth_client": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.oauth_client",
     "fastapi_sso.sso.base.ssobase.openid_from_response": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.openid_from_response",
     "fastapi_sso.sso.base.ssobase.openid_from_token": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.openid_from_token",
+    "fastapi_sso.sso.base.ssobase.parse_userinfo_response": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.parse_userinfo_response",
     "fastapi_sso.sso.base.ssobase.process_login": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.process_login",
     "fastapi_sso.sso.base.ssobase.refresh_token": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.refresh_token",
     "fastapi_sso.sso.base.ssobase.state": "https://tomasvotava.github.io/fastapi-sso/reference/sso.base/#fastapi_sso.sso.base.SSOBase.state",

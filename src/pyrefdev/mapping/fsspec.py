@@ -1,4 +1,4 @@
-VERSION = "2026.7.0"
+VERSION = "2026.9.0"
 
 # fmt: off
 MAPPING = {
@@ -18,6 +18,7 @@ MAPPING = {
     "fsspec.caching": "https://filesystem-spec.readthedocs.io/en/latest/api.html",
     "fsspec.caching.backgroundblockcache": "https://filesystem-spec.readthedocs.io/en/latest/api.html#fsspec.caching.BackgroundBlockCache",
     "fsspec.caching.backgroundblockcache.cache_info": "https://filesystem-spec.readthedocs.io/en/latest/api.html#fsspec.caching.BackgroundBlockCache.cache_info",
+    "fsspec.caching.backgroundblockcache.close": "https://filesystem-spec.readthedocs.io/en/latest/api.html#fsspec.caching.BackgroundBlockCache.close",
     "fsspec.caching.blockcache": "https://filesystem-spec.readthedocs.io/en/latest/api.html#fsspec.caching.BlockCache",
     "fsspec.caching.blockcache.cache_info": "https://filesystem-spec.readthedocs.io/en/latest/api.html#fsspec.caching.BlockCache.cache_info",
     "fsspec.caching.bytescache": "https://filesystem-spec.readthedocs.io/en/latest/api.html#fsspec.caching.BytesCache",

@@ -1,4 +1,4 @@
-VERSION = "3.6.6"
+VERSION = "3.6.9"
 
 # fmt: off
 MAPPING = {
@@ -147,10 +147,14 @@ MAPPING = {
     "pyod.models.devnet": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#module-pyod.models.devnet",
     "pyod.models.devnet.devnet": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#pyod.models.devnet.DevNet",
     "pyod.models.devnet.devnet.decision_function": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#pyod.models.devnet.DevNet.decision_function",
+    "pyod.models.devnet.devnet.decision_scores_": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#pyod.models.devnet.DevNet.decision_scores_",
     "pyod.models.devnet.devnet.fit": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#pyod.models.devnet.DevNet.fit",
     "pyod.models.devnet.devnet.fit_predict_score": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#pyod.models.devnet.DevNet.fit_predict_score",
+    "pyod.models.devnet.devnet.labels_": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#pyod.models.devnet.DevNet.labels_",
+    "pyod.models.devnet.devnet.model": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#pyod.models.devnet.DevNet.model",
     "pyod.models.devnet.devnet.set_predict_proba_request": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#pyod.models.devnet.DevNet.set_predict_proba_request",
     "pyod.models.devnet.devnet.set_predict_request": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#pyod.models.devnet.DevNet.set_predict_request",
+    "pyod.models.devnet.devnet.threshold_": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#pyod.models.devnet.DevNet.threshold_",
     "pyod.models.dif": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#module-pyod.models.dif",
     "pyod.models.dif.dif": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#pyod.models.dif.DIF",
     "pyod.models.dif.dif.decision_function": "https://pyod.readthedocs.io/en/latest/pyod.models.tabular.html#pyod.models.dif.DIF.decision_function",

@@ -1,4 +1,4 @@
-VERSION = "3.10.0"
+VERSION = "3.11.0"
 
 # fmt: off
 MAPPING = {
@@ -108,6 +108,8 @@ MAPPING = {
     "domdf_python_tools.dates.calc_easter": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.calc_easter",
     "domdf_python_tools.dates.check_date": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.check_date",
     "domdf_python_tools.dates.current_tzinfo": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.current_tzinfo",
+    "domdf_python_tools.dates.date_from_isoformat": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.date_from_isoformat",
+    "domdf_python_tools.dates.datetime_from_isoformat": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.datetime_from_isoformat",
     "domdf_python_tools.dates.get_month_number": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.get_month_number",
     "domdf_python_tools.dates.get_timezone": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.get_timezone",
     "domdf_python_tools.dates.get_utc_offset": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.get_utc_offset",
@@ -117,6 +119,7 @@ MAPPING = {
     "domdf_python_tools.dates.months": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.months",
     "domdf_python_tools.dates.parse_month": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.parse_month",
     "domdf_python_tools.dates.set_timezone": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.set_timezone",
+    "domdf_python_tools.dates.time_from_isoformat": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.time_from_isoformat",
     "domdf_python_tools.dates.utc_timestamp_to_datetime": "https://domdf-python-tools.readthedocs.io/en/latest/api/dates.html#domdf_python_tools.dates.utc_timestamp_to_datetime",
     "domdf_python_tools.delegators": "https://domdf-python-tools.readthedocs.io/en/latest/api/delegators.html",
     "domdf_python_tools.delegators._c": "https://domdf-python-tools.readthedocs.io/en/latest/api/delegators.html#domdf_python_tools.delegators._C",

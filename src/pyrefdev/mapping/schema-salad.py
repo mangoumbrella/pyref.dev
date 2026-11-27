@@ -1,4 +1,4 @@
-VERSION = "8.10.20260825112551"
+VERSION = "8.10.20261106141337"
 
 # fmt: off
 MAPPING = {
@@ -26,6 +26,7 @@ MAPPING = {
     "schema_salad.avro.schema.make_avsc_object": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/avro/schema/index.html#schema_salad.avro.schema.make_avsc_object",
     "schema_salad.avro.schema.mapschema": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/avro/schema/index.html#schema_salad.avro.schema.MapSchema",
     "schema_salad.avro.schema.mapschema.values": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/avro/schema/index.html#schema_salad.avro.schema.MapSchema.values",
+    "schema_salad.avro.schema.maybe_named_types": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/avro/schema/index.html#schema_salad.avro.schema.MAYBE_NAMED_TYPES",
     "schema_salad.avro.schema.name": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/avro/schema/index.html#schema_salad.avro.schema.Name",
     "schema_salad.avro.schema.name.fullname": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/avro/schema/index.html#schema_salad.avro.schema.Name.fullname",
     "schema_salad.avro.schema.name.get_space": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/avro/schema/index.html#schema_salad.avro.schema.Name.get_space",
@@ -973,6 +974,16 @@ MAPPING = {
     "schema_salad.tests.test_ref_resolver.test_loader_initialisation_with_neither_tmp_home_set": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_ref_resolver/index.html#schema_salad.tests.test_ref_resolver.test_Loader_initialisation_with_neither_TMP_HOME_set",
     "schema_salad.tests.test_ref_resolver.test_resolve_missing_step_id": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_ref_resolver/index.html#schema_salad.tests.test_ref_resolver.test_resolve_missing_step_id",
     "schema_salad.tests.test_ref_resolver.tmp_dir_fixture": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_ref_resolver/index.html#schema_salad.tests.test_ref_resolver.tmp_dir_fixture",
+    "schema_salad.tests.test_runtime": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_runtime/index.html#module-schema_salad.tests.test_runtime",
+    "schema_salad.tests.test_runtime.base": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_runtime/index.html#schema_salad.tests.test_runtime.BASE",
+    "schema_salad.tests.test_runtime.test_save_relative_uri_inside_scope": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_runtime/index.html#schema_salad.tests.test_runtime.test_save_relative_uri_inside_scope",
+    "schema_salad.tests.test_runtime.test_save_relative_uri_no_ref_scope": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_runtime/index.html#schema_salad.tests.test_runtime.test_save_relative_uri_no_ref_scope",
+    "schema_salad.tests.test_runtime.test_save_relative_uri_packed": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_runtime/index.html#schema_salad.tests.test_runtime.test_save_relative_uri_packed",
+    "schema_salad.tests.test_runtime.test_save_relative_uri_round_trip": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_runtime/index.html#schema_salad.tests.test_runtime.test_save_relative_uri_round_trip",
+    "schema_salad.tests.test_runtime.test_save_relative_uri_scope_is_document_root": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_runtime/index.html#schema_salad.tests.test_runtime.test_save_relative_uri_scope_is_document_root",
+    "schema_salad.tests.test_runtime.test_save_relative_uri_sibling": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_runtime/index.html#schema_salad.tests.test_runtime.test_save_relative_uri_sibling",
+    "schema_salad.tests.test_runtime.test_save_relative_uri_sibling_prefix": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_runtime/index.html#schema_salad.tests.test_runtime.test_save_relative_uri_sibling_prefix",
+    "schema_salad.tests.test_runtime.test_save_relative_uri_sibling_prefix_ref_scope_1": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_runtime/index.html#schema_salad.tests.test_runtime.test_save_relative_uri_sibling_prefix_ref_scope_1",
     "schema_salad.tests.test_schema": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_schema/index.html#module-schema_salad.tests.test_schema",
     "schema_salad.tests.test_schema.test_extend_and_specialize_enums": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_schema/index.html#schema_salad.tests.test_schema.test_extend_and_specialize_enums",
     "schema_salad.tests.test_schemas_directive": "https://schema-salad.readthedocs.io/en/stable/autoapi/schema_salad/tests/test_schemas_directive/index.html#module-schema_salad.tests.test_schemas_directive",

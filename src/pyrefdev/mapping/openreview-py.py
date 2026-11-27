@@ -1,4 +1,4 @@
-VERSION = "2.6.2"
+VERSION = "2.9.3"
 
 # fmt: off
 MAPPING = {
@@ -47,10 +47,13 @@ MAPPING = {
     "openreview.api.openreviewclient.get_all_edges": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_all_edges",
     "openreview.api.openreviewclient.get_all_groups": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_all_groups",
     "openreview.api.openreviewclient.get_all_invitations": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_all_invitations",
+    "openreview.api.openreviewclient.get_all_messages": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_all_messages",
     "openreview.api.openreviewclient.get_all_notes": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_all_notes",
     "openreview.api.openreviewclient.get_all_tags": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_all_tags",
     "openreview.api.openreviewclient.get_archived_edges": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_archived_edges",
     "openreview.api.openreviewclient.get_attachment": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_attachment",
+    "openreview.api.openreviewclient.get_disallowed_domains": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_disallowed_domains",
+    "openreview.api.openreviewclient.get_domains_to_moderate": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_domains_to_moderate",
     "openreview.api.openreviewclient.get_edge": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_edge",
     "openreview.api.openreviewclient.get_edges": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_edges",
     "openreview.api.openreviewclient.get_edges_count": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.get_edges_count",
@@ -120,6 +123,8 @@ MAPPING = {
     "openreview.api.openreviewclient.search_notes": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.search_notes",
     "openreview.api.openreviewclient.search_profiles": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.search_profiles",
     "openreview.api.openreviewclient.unrestrict": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.unrestrict",
+    "openreview.api.openreviewclient.update_disallowed_domains": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.update_disallowed_domains",
+    "openreview.api.openreviewclient.update_domains_to_moderate": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.update_domains_to_moderate",
     "openreview.api.openreviewclient.update_relation_readers": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.api.OpenReviewClient.update_relation_readers",
     "openreview.client": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.Client",
     "openreview.client.activate_user": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.Client.activate_user",
@@ -215,6 +220,7 @@ MAPPING = {
     "openreview.tools.concurrent_requests": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.concurrent_requests",
     "openreview.tools.create_profile": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.create_profile",
     "openreview.tools.datetime_millis": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.datetime_millis",
+    "openreview.tools.decision_option_to_id": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.decision_option_to_id",
     "openreview.tools.decision_to_venue": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.decision_to_venue",
     "openreview.tools.efficient_iterget": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.efficient_iterget",
     "openreview.tools.generate_bibtex": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.generate_bibtex",
@@ -234,6 +240,7 @@ MAPPING = {
     "openreview.tools.get_profiles": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.get_profiles",
     "openreview.tools.get_user_hash_key": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.get_user_hash_key",
     "openreview.tools.is_accept_decision": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.is_accept_decision",
+    "openreview.tools.is_forum_invitation": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.is_forum_invitation",
     "openreview.tools.iterget": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.iterget",
     "openreview.tools.iterget_edges": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.iterget_edges",
     "openreview.tools.iterget_grouped_edges": "https://openreview-py.readthedocs.io/en/stable/api.html#openreview.tools.iterget_grouped_edges",

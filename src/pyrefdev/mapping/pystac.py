@@ -1,4 +1,4 @@
-VERSION = "1.15.2"
+VERSION = "1.16.1"
 
 # fmt: off
 MAPPING = {
@@ -325,6 +325,7 @@ MAPPING = {
     "pystac.errors.extensionnotimplemented": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.ExtensionNotImplemented",
     "pystac.errors.extensiontypeerror": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.ExtensionTypeError",
     "pystac.errors.requiredpropertymissing": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.RequiredPropertyMissing",
+    "pystac.errors.specdeprecationwarning": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.SpecDeprecationWarning",
     "pystac.errors.stacerror": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.STACError",
     "pystac.errors.stactypeerror": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.STACTypeError",
     "pystac.errors.stacvalidationerror": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.STACValidationError",
@@ -1206,6 +1207,7 @@ MAPPING = {
     "pystac.extensions.render.renderextension.name": "https://pystac.readthedocs.io/en/stable/api/extensions/render.html#pystac.extensions.render.RenderExtension.name",
     "pystac.extensions.render.renderextension.renders": "https://pystac.readthedocs.io/en/stable/api/extensions/render.html#pystac.extensions.render.RenderExtension.renders",
     "pystac.extensions.render.renderextensionhooks": "https://pystac.readthedocs.io/en/stable/api/extensions/render.html#pystac.extensions.render.RenderExtensionHooks",
+    "pystac.extensions.render.renderextensionhooks.prev_extension_ids": "https://pystac.readthedocs.io/en/stable/api/extensions/render.html#pystac.extensions.render.RenderExtensionHooks.prev_extension_ids",
     "pystac.extensions.render.renderextensionhooks.schema_uri": "https://pystac.readthedocs.io/en/stable/api/extensions/render.html#pystac.extensions.render.RenderExtensionHooks.schema_uri",
     "pystac.extensions.render.renderextensionhooks.stac_object_types": "https://pystac.readthedocs.io/en/stable/api/extensions/render.html#pystac.extensions.render.RenderExtensionHooks.stac_object_types",
     "pystac.extensions.render.t": "https://pystac.readthedocs.io/en/stable/api/extensions/render.html#pystac.extensions.render.T",
@@ -1755,6 +1757,7 @@ MAPPING = {
     "pystac.mediatype.json": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.MediaType.JSON",
     "pystac.mediatype.kml": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.MediaType.KML",
     "pystac.mediatype.netcdf": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.MediaType.NETCDF",
+    "pystac.mediatype.octet_stream": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.MediaType.OCTET_STREAM",
     "pystac.mediatype.parquet": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.MediaType.PARQUET",
     "pystac.mediatype.pdf": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.MediaType.PDF",
     "pystac.mediatype.png": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.MediaType.PNG",
@@ -1765,6 +1768,7 @@ MAPPING = {
     "pystac.mediatype.vnd_zarr": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.MediaType.VND_ZARR",
     "pystac.mediatype.xml": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.MediaType.XML",
     "pystac.mediatype.zarr": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.MediaType.ZARR",
+    "pystac.mediatype.zip": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.MediaType.ZIP",
     "pystac.provider": "https://pystac.readthedocs.io/en/stable/api/pystac.html",
     "pystac.Provider": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.Provider",
     "pystac.provider.description": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.Provider.description",
@@ -1848,6 +1852,7 @@ MAPPING = {
     "pystac.spatialextent.from_coordinates": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.SpatialExtent.from_coordinates",
     "pystac.spatialextent.from_dict": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.SpatialExtent.from_dict",
     "pystac.spatialextent.to_dict": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.SpatialExtent.to_dict",
+    "pystac.specdeprecationwarning": "https://pystac.readthedocs.io/en/stable/api/pystac.html#pystac.SpecDeprecationWarning",
     "pystac.stac_io": "https://pystac.readthedocs.io/en/stable/api/stac_io.html#module-pystac.stac_io",
     "pystac.stac_io.defaultstacio": "https://pystac.readthedocs.io/en/stable/api/stac_io.html#pystac.stac_io.DefaultStacIO",
     "pystac.stac_io.defaultstacio.read_text": "https://pystac.readthedocs.io/en/stable/api/stac_io.html#pystac.stac_io.DefaultStacIO.read_text",
@@ -1993,6 +1998,7 @@ MAPPING = {
     "pystac.validation": "https://pystac.readthedocs.io/en/stable/api/validation.html#module-pystac.validation",
     "pystac.validation.getschemaerror": "https://pystac.readthedocs.io/en/stable/api/validation.html#pystac.validation.GetSchemaError",
     "pystac.validation.jsonschemastacvalidator": "https://pystac.readthedocs.io/en/stable/api/validation.html#pystac.validation.JsonSchemaSTACValidator",
+    "pystac.validation.jsonschemastacvalidator.allow_list": "https://pystac.readthedocs.io/en/stable/api/validation.html#pystac.validation.JsonSchemaSTACValidator.allow_list",
     "pystac.validation.jsonschemastacvalidator.get_schema_from_uri": "https://pystac.readthedocs.io/en/stable/api/validation.html#pystac.validation.JsonSchemaSTACValidator.get_schema_from_uri",
     "pystac.validation.jsonschemastacvalidator.registry": "https://pystac.readthedocs.io/en/stable/api/validation.html#pystac.validation.JsonSchemaSTACValidator.registry",
     "pystac.validation.jsonschemastacvalidator.schema_cache": "https://pystac.readthedocs.io/en/stable/api/validation.html#pystac.validation.JsonSchemaSTACValidator.schema_cache",
@@ -2024,6 +2030,10 @@ MAPPING = {
     "pystac.validation.stac_validator": "https://pystac.readthedocs.io/en/stable/api/validation/stac_validator.html#module-pystac.validation.stac_validator",
     "pystac.validation.stac_validator.getschemaerror": "https://pystac.readthedocs.io/en/stable/api/validation/stac_validator.html#pystac.validation.stac_validator.GetSchemaError",
     "pystac.validation.stac_validator.jsonschemastacvalidator": "https://pystac.readthedocs.io/en/stable/api/validation.html#pystac.validation.JsonSchemaSTACValidator",
+    "pystac.validation.stac_validator.securejsonschemastacvalidator": "https://pystac.readthedocs.io/en/stable/api/validation/stac_validator.html#pystac.validation.stac_validator.SecureJsonSchemaSTACValidator",
+    "pystac.validation.stac_validator.securejsonschemastacvalidator.allow_list": "https://pystac.readthedocs.io/en/stable/api/validation/stac_validator.html#pystac.validation.stac_validator.SecureJsonSchemaSTACValidator.allow_list",
+    "pystac.validation.stac_validator.securejsonschemastacvalidator.schema_cache": "https://pystac.readthedocs.io/en/stable/api/validation/stac_validator.html#pystac.validation.stac_validator.SecureJsonSchemaSTACValidator.schema_cache",
+    "pystac.validation.stac_validator.securejsonschemastacvalidator.schema_uri_map": "https://pystac.readthedocs.io/en/stable/api/validation/stac_validator.html#pystac.validation.stac_validator.SecureJsonSchemaSTACValidator.schema_uri_map",
     "pystac.validation.stac_validator.stacvalidator": "https://pystac.readthedocs.io/en/stable/api/validation/stac_validator.html#pystac.validation.stac_validator.STACValidator",
     "pystac.validation.stac_validator.stacvalidator.validate": "https://pystac.readthedocs.io/en/stable/api/validation/stac_validator.html#pystac.validation.stac_validator.STACValidator.validate",
     "pystac.validation.stac_validator.stacvalidator.validate_core": "https://pystac.readthedocs.io/en/stable/api/validation/stac_validator.html#pystac.validation.stac_validator.STACValidator.validate_core",

@@ -1,4 +1,4 @@
-VERSION = "3.6.0"
+VERSION = "3.6.1"
 
 # fmt: off
 MAPPING = {
@@ -13,11 +13,9 @@ MAPPING = {
     "nornir.core.__init__.nornir.dict": "https://nornir.readthedocs.io/en/stable/api/nornir/core/__init__.html#nornir.core.__init__.Nornir.dict",
     "nornir.core.__init__.nornir.dry_run": "https://nornir.readthedocs.io/en/stable/api/nornir/core/__init__.html#nornir.core.__init__.Nornir.dry_run",
     "nornir.core.__init__.nornir.filter": "https://nornir.readthedocs.io/en/stable/api/nornir/core/__init__.html#nornir.core.__init__.Nornir.filter",
-    "nornir.core.__init__.nornir.get_validators": "https://nornir.readthedocs.io/en/stable/api/nornir/core/__init__.html#nornir.core.__init__.Nornir.get_validators",
     "nornir.core.__init__.nornir.inventory": "https://nornir.readthedocs.io/en/stable/api/nornir/core/__init__.html#nornir.core.__init__.Nornir.inventory",
     "nornir.core.__init__.nornir.run": "https://nornir.readthedocs.io/en/stable/api/nornir/core/__init__.html#nornir.core.__init__.Nornir.run",
     "nornir.core.__init__.nornir.runner": "https://nornir.readthedocs.io/en/stable/api/nornir/core/__init__.html#nornir.core.__init__.Nornir.runner",
-    "nornir.core.__init__.nornir.validate": "https://nornir.readthedocs.io/en/stable/api/nornir/core/__init__.html#nornir.core.__init__.Nornir.validate",
     "nornir.core.__init__.nornir.with_processors": "https://nornir.readthedocs.io/en/stable/api/nornir/core/__init__.html#nornir.core.__init__.Nornir.with_processors",
     "nornir.core.__init__.nornir.with_runner": "https://nornir.readthedocs.io/en/stable/api/nornir/core/__init__.html#nornir.core.__init__.Nornir.with_runner",
     "nornir.core.configuration": "https://nornir.readthedocs.io/en/stable/api/nornir/core/configuration.html#module-nornir.core.configuration",
@@ -96,7 +94,6 @@ MAPPING = {
     "nornir.core.filter.not_f": "https://nornir.readthedocs.io/en/stable/api/nornir/core/filter.html#nornir.core.filter.NOT_F",
     "nornir.core.filter.or": "https://nornir.readthedocs.io/en/stable/api/nornir/core/filter.html#nornir.core.filter.OR",
     "nornir.core.helpers.__init__": "https://nornir.readthedocs.io/en/stable/api/nornir/core/helpers/__init__.html#module-nornir.core.helpers.__init__",
-    "nornir.core.helpers.__init__.merge_two_dicts": "https://nornir.readthedocs.io/en/stable/api/nornir/core/helpers/__init__.html#nornir.core.helpers.__init__.merge_two_dicts",
     "nornir.core.helpers.jinja_helper": "https://nornir.readthedocs.io/en/stable/api/nornir/core/helpers/jinja_helper.html#module-nornir.core.helpers.jinja_helper",
     "nornir.core.helpers.jinja_helper.render_from_file": "https://nornir.readthedocs.io/en/stable/api/nornir/core/helpers/jinja_helper.html#nornir.core.helpers.jinja_helper.render_from_file",
     "nornir.core.helpers.jinja_helper.render_from_string": "https://nornir.readthedocs.io/en/stable/api/nornir/core/helpers/jinja_helper.html#nornir.core.helpers.jinja_helper.render_from_string",

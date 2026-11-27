@@ -1,4 +1,4 @@
-VERSION = "0.3.1"
+VERSION = "0.4.2"
 
 # fmt: off
 MAPPING = {
@@ -13,6 +13,8 @@ MAPPING = {
     "pwdlib.exceptions": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions",
     "pwdlib.exceptions.hashernotavailable": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.HasherNotAvailable",
     "pwdlib.exceptions.hashernotavailable.__init__": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.HasherNotAvailable.__init__",
+    "pwdlib.exceptions.hashgenerationerror": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.HashGenerationError",
+    "pwdlib.exceptions.hashverificationerror": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.HashVerificationError",
     "pwdlib.exceptions.pwdliberror": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.PwdlibError",
     "pwdlib.exceptions.pwdliberror.__init__": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.PwdlibError.__init__",
     "pwdlib.exceptions.unknownhasherror": "https://frankie567.github.io/pwdlib/reference/pwdlib.exceptions/#pwdlib.exceptions.UnknownHashError",
@@ -21,9 +23,11 @@ MAPPING = {
     "pwdlib.hashers.argon2": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.argon2",
     "pwdlib.hashers.argon2.argon2hasher": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.argon2.Argon2Hasher",
     "pwdlib.hashers.argon2.argon2hasher.__init__": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.argon2.Argon2Hasher.__init__",
+    "pwdlib.hashers.argon2.argon2hasher.hash": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.argon2.Argon2Hasher.hash",
     "pwdlib.hashers.bcrypt": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.bcrypt",
     "pwdlib.hashers.bcrypt.bcrypthasher": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.bcrypt.BcryptHasher",
     "pwdlib.hashers.bcrypt.bcrypthasher.__init__": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.bcrypt.BcryptHasher.__init__",
+    "pwdlib.hashers.bcrypt.bcrypthasher.hash": "https://frankie567.github.io/pwdlib/reference/pwdlib.hashers/#pwdlib.hashers.bcrypt.BcryptHasher.hash",
     "pwdlib.passwordhash": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash",
     "pwdlib.passwordhash.__init__": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash.__init__",
     "pwdlib.passwordhash.hash": "https://frankie567.github.io/pwdlib/reference/pwdlib/#pwdlib.PasswordHash.hash",

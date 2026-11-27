@@ -1,4 +1,4 @@
-VERSION = "3.2"
+VERSION = "4.1.1"
 
 # fmt: off
 MAPPING = {
@@ -108,6 +108,7 @@ MAPPING = {
     "configupdater.section": "https://configupdater.readthedocs.io/en/latest/api.html#configupdater.Section",
     "configupdater.section.add_after": "https://configupdater.readthedocs.io/en/latest/api.html#configupdater.Section.add_after",
     "configupdater.section.add_before": "https://configupdater.readthedocs.io/en/latest/api.html#configupdater.Section.add_before",
+    "configupdater.section.add_before_skip_comments": "https://configupdater.readthedocs.io/en/latest/api.html#configupdater.Section.add_before_skip_comments",
     "configupdater.section.add_comment": "https://configupdater.readthedocs.io/en/latest/api.html#configupdater.Section.add_comment",
     "configupdater.section.add_line": "https://configupdater.readthedocs.io/en/latest/api.html#configupdater.Section.add_line",
     "configupdater.section.add_option": "https://configupdater.readthedocs.io/en/latest/api.html#configupdater.Section.add_option",

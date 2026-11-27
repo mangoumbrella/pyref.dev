@@ -1,4 +1,4 @@
-VERSION = "4.2.4"
+VERSION = "4.4.2"
 
 # fmt: off
 MAPPING = {
@@ -620,11 +620,13 @@ MAPPING = {
     "cmd2.exceptions.redirectionerror": "https://cmd2.readthedocs.io/en/stable/api/exceptions/#cmd2.exceptions.RedirectionError",
     "cmd2.exceptions.skippostcommandhooks": "https://cmd2.readthedocs.io/en/stable/api/exceptions/#cmd2.exceptions.SkipPostcommandHooks",
     "cmd2.history": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history",
+    "cmd2.history.first_history_index": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.FIRST_HISTORY_INDEX",
     "cmd2.history.history": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.History",
     "cmd2.history.history.append": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.History.append",
     "cmd2.history.history.clear": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.History.clear",
     "cmd2.history.history.from_json": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.History.from_json",
     "cmd2.history.history.get": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.History.get",
+    "cmd2.history.history.is_persisted": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.History.is_persisted",
     "cmd2.history.history.regex_search": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.History.regex_search",
     "cmd2.history.history.session_start_index": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.History.session_start_index",
     "cmd2.history.history.span": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.History.span",
@@ -633,6 +635,8 @@ MAPPING = {
     "cmd2.history.history.str_search": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.History.str_search",
     "cmd2.history.history.to_json": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.History.to_json",
     "cmd2.history.history.truncate": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.History.truncate",
+    "cmd2.history.historyformaterror": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.HistoryFormatError",
+    "cmd2.history.historyindexerror": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.HistoryIndexError",
     "cmd2.history.historyitem": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.HistoryItem",
     "cmd2.history.historyitem.expanded": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.HistoryItem.expanded",
     "cmd2.history.historyitem.from_dict": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.HistoryItem.from_dict",
@@ -640,6 +644,9 @@ MAPPING = {
     "cmd2.history.historyitem.raw": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.HistoryItem.raw",
     "cmd2.history.historyitem.statement": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.HistoryItem.statement",
     "cmd2.history.historyitem.to_dict": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.HistoryItem.to_dict",
+    "cmd2.history.invalid_history_range": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.INVALID_HISTORY_RANGE",
+    "cmd2.history.no_history_items": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.NO_HISTORY_ITEMS",
+    "cmd2.history.no_matching_history_items": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.NO_MATCHING_HISTORY_ITEMS",
     "cmd2.history.single_line_format": "https://cmd2.readthedocs.io/en/stable/api/history/#cmd2.history.single_line_format",
     "cmd2.parsing": "https://cmd2.readthedocs.io/en/stable/api/parsing/#cmd2.parsing",
     "cmd2.parsing.macro": "https://cmd2.readthedocs.io/en/stable/api/parsing/#cmd2.parsing.Macro",
@@ -889,6 +896,7 @@ MAPPING = {
     "cmd2.utils.procreader.wait": "https://cmd2.readthedocs.io/en/stable/api/utils/#cmd2.utils.ProcReader.wait",
     "cmd2.utils.quote_specific_tokens": "https://cmd2.readthedocs.io/en/stable/api/utils/#cmd2.utils.quote_specific_tokens",
     "cmd2.utils.redirectionsavedstate": "https://cmd2.readthedocs.io/en/stable/api/utils/#cmd2.utils.RedirectionSavedState",
+    "cmd2.utils.redirectionsavedstate.pipe_context": "https://cmd2.readthedocs.io/en/stable/api/utils/#cmd2.utils.RedirectionSavedState.pipe_context",
     "cmd2.utils.redirectionsavedstate.redirecting": "https://cmd2.readthedocs.io/en/stable/api/utils/#cmd2.utils.RedirectionSavedState.redirecting",
     "cmd2.utils.redirectionsavedstate.saved_pipe_proc_reader": "https://cmd2.readthedocs.io/en/stable/api/utils/#cmd2.utils.RedirectionSavedState.saved_pipe_proc_reader",
     "cmd2.utils.redirectionsavedstate.saved_redirecting": "https://cmd2.readthedocs.io/en/stable/api/utils/#cmd2.utils.RedirectionSavedState.saved_redirecting",

@@ -1,10 +1,12 @@
-VERSION = "3.12.0"
+VERSION = "3.16.0"
 
 # fmt: off
 MAPPING = {
     "openedx_filters": "https://docs.openedx.org/projects/openedx-filters/en/stable/",
     "openedx_filters.authentication": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html",
     "openedx_filters.authentication.filters": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#module-openedx_filters.authentication.filters",
+    "openedx_filters.authentication.filters.accountactivationemailcontextgenerated": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.authentication.filters.AccountActivationEmailContextGenerated",
+    "openedx_filters.authentication.filters.accountactivationemailcontextgenerated.run_filter": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.authentication.filters.AccountActivationEmailContextGenerated.run_filter",
     "openedx_filters.authentication.filters.authnmfecontextgenerated": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.authentication.filters.AuthnMFEContextGenerated",
     "openedx_filters.authentication.filters.authnmfecontextgenerated.run_filter": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.authentication.filters.AuthnMFEContextGenerated.run_filter",
     "openedx_filters.authentication.filters.loginaltredirecturlrequested": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.authentication.filters.LoginAltRedirectURLRequested",
@@ -175,6 +177,10 @@ MAPPING = {
     "openedx_filters.learning.filters.verticalblockrendercompleted": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.VerticalBlockRenderCompleted",
     "openedx_filters.learning.filters.verticalblockrendercompleted.preventverticalblockrender": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.VerticalBlockRenderCompleted.PreventVerticalBlockRender",
     "openedx_filters.learning.filters.verticalblockrendercompleted.run_filter": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.learning.filters.VerticalBlockRenderCompleted.run_filter",
+    "openedx_filters.management": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html",
+    "openedx_filters.management.filters": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#module-openedx_filters.management.filters",
+    "openedx_filters.management.filters.managementcommandcontextmanagerrequested": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.management.filters.ManagementCommandContextmanagerRequested",
+    "openedx_filters.management.filters.managementcommandcontextmanagerrequested.run_filter": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters.html#openedx_filters.management.filters.ManagementCommandContextmanagerRequested.run_filter",
     "openedx_filters.tooling": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters-tooling.html",
     "openedx_filters.tooling.openedxpublicfilter": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters-tooling.html#openedx_filters.tooling.OpenEdxPublicFilter",
     "openedx_filters.tooling.openedxpublicfilter.get_filter_config": "https://docs.openedx.org/projects/openedx-filters/en/stable/reference/filters-tooling.html#openedx_filters.tooling.OpenEdxPublicFilter.get_filter_config",

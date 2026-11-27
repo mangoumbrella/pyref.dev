@@ -1,4 +1,4 @@
-VERSION = "8.3.0"
+VERSION = "9.4.2"
 
 # fmt: off
 MAPPING = {
@@ -11,7 +11,9 @@ MAPPING = {
     "vcr.cassette.cassette.can_play_response_for": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.cassette.Cassette.can_play_response_for",
     "vcr.cassette.cassette.filter_request": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.cassette.Cassette.filter_request",
     "vcr.cassette.cassette.find_requests_with_most_matches": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.cassette.Cassette.find_requests_with_most_matches",
+    "vcr.cassette.cassette.get_metadata": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.cassette.Cassette.get_metadata",
     "vcr.cassette.cassette.load": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.cassette.Cassette.load",
+    "vcr.cassette.cassette.path": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.cassette.Cassette.path",
     "vcr.cassette.cassette.play_count": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.cassette.Cassette.play_count",
     "vcr.cassette.cassette.play_response": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.cassette.Cassette.play_response",
     "vcr.cassette.cassette.requests": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.cassette.Cassette.requests",
@@ -38,12 +40,17 @@ MAPPING = {
     "vcr.config.vcr.use_cassette": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.config.VCR.use_cassette",
     "vcr.filters": "https://vcrpy.readthedocs.io/en/stable/api.html#module-vcr.filters",
     "vcr.filters.decode_response": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.filters.decode_response",
+    "vcr.filters.decompress_deflate": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.filters.decompress_deflate",
+    "vcr.filters.decompress_gzip": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.filters.decompress_gzip",
     "vcr.filters.remove_headers": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.filters.remove_headers",
     "vcr.filters.remove_post_data_parameters": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.filters.remove_post_data_parameters",
     "vcr.filters.remove_query_parameters": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.filters.remove_query_parameters",
+    "vcr.filters.replace_body_parameters": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.filters.replace_body_parameters",
     "vcr.filters.replace_headers": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.filters.replace_headers",
     "vcr.filters.replace_post_data_parameters": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.filters.replace_post_data_parameters",
     "vcr.filters.replace_query_parameters": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.filters.replace_query_parameters",
+    "vcr.filters.replace_text": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.filters.replace_text",
+    "vcr.filters.sensitive_data_hooks": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.filters.sensitive_data_hooks",
     "vcr.matchers": "https://vcrpy.readthedocs.io/en/stable/api.html#module-vcr.matchers",
     "vcr.matchers.body": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.matchers.body",
     "vcr.matchers.get_assertion_message": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.matchers.get_assertion_message",
@@ -67,12 +74,14 @@ MAPPING = {
     "vcr.patch.connectionremover.add_connection_to_pool_entry": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.patch.ConnectionRemover.add_connection_to_pool_entry",
     "vcr.patch.force_reset": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.patch.force_reset",
     "vcr.patch.reset_patchers": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.patch.reset_patchers",
+    "vcr.patch.validate_skip_patchers": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.patch.validate_skip_patchers",
     "vcr.request": "https://vcrpy.readthedocs.io/en/stable/api.html#module-vcr.request",
     "vcr.request.headersdict": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.request.HeadersDict",
     "vcr.request.request": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.request.Request",
     "vcr.request.request.__init__": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.request.Request.__init__",
     "vcr.request.request.add_header": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.request.Request.add_header",
     "vcr.request.request.body": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.request.Request.body",
+    "vcr.request.request.body_bytes": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.request.Request.body_bytes",
     "vcr.request.request.headers": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.request.Request.headers",
     "vcr.request.request.host": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.request.Request.host",
     "vcr.request.request.path": "https://vcrpy.readthedocs.io/en/stable/api.html#vcr.request.Request.path",

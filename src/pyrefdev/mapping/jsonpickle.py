@@ -1,4 +1,4 @@
-VERSION = "4.1.2"
+VERSION = "4.1.4"
 
 # fmt: off
 MAPPING = {
@@ -34,6 +34,9 @@ MAPPING = {
     "jsonpickle.handlers.lockhandler": "https://jsonpickle.readthedocs.io/en/latest/api.html#jsonpickle.handlers.LockHandler",
     "jsonpickle.handlers.lockhandler.flatten": "https://jsonpickle.readthedocs.io/en/latest/api.html#jsonpickle.handlers.LockHandler.flatten",
     "jsonpickle.handlers.lockhandler.restore": "https://jsonpickle.readthedocs.io/en/latest/api.html#jsonpickle.handlers.LockHandler.restore",
+    "jsonpickle.handlers.passthroughhandler": "https://jsonpickle.readthedocs.io/en/latest/api.html#jsonpickle.handlers.PassthroughHandler",
+    "jsonpickle.handlers.passthroughhandler.flatten": "https://jsonpickle.readthedocs.io/en/latest/api.html#jsonpickle.handlers.PassthroughHandler.flatten",
+    "jsonpickle.handlers.passthroughhandler.restore": "https://jsonpickle.readthedocs.io/en/latest/api.html#jsonpickle.handlers.PassthroughHandler.restore",
     "jsonpickle.handlers.queuehandler": "https://jsonpickle.readthedocs.io/en/latest/api.html#jsonpickle.handlers.QueueHandler",
     "jsonpickle.handlers.queuehandler.flatten": "https://jsonpickle.readthedocs.io/en/latest/api.html#jsonpickle.handlers.QueueHandler.flatten",
     "jsonpickle.handlers.queuehandler.restore": "https://jsonpickle.readthedocs.io/en/latest/api.html#jsonpickle.handlers.QueueHandler.restore",

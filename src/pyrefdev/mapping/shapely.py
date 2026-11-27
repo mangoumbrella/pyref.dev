@@ -1,4 +1,4 @@
-VERSION = "2.1.2"
+VERSION = "2.2.0"
 
 # fmt: off
 MAPPING = {
@@ -22,6 +22,7 @@ MAPPING = {
     "shapely.buffercapstyle.denominator": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferCapStyle.html#shapely.BufferCapStyle.denominator",
     "shapely.buffercapstyle.from_bytes": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferCapStyle.html#shapely.BufferCapStyle.from_bytes",
     "shapely.buffercapstyle.get_value": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferCapStyle.html#shapely.BufferCapStyle.get_value",
+    "shapely.buffercapstyle.has_value": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferCapStyle.html#shapely.BufferCapStyle.has_value",
     "shapely.buffercapstyle.imag": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferCapStyle.html#shapely.BufferCapStyle.imag",
     "shapely.buffercapstyle.is_integer": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferCapStyle.html#shapely.BufferCapStyle.is_integer",
     "shapely.buffercapstyle.numerator": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferCapStyle.html#shapely.BufferCapStyle.numerator",
@@ -35,6 +36,7 @@ MAPPING = {
     "shapely.bufferjoinstyle.denominator": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferJoinStyle.html#shapely.BufferJoinStyle.denominator",
     "shapely.bufferjoinstyle.from_bytes": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferJoinStyle.html#shapely.BufferJoinStyle.from_bytes",
     "shapely.bufferjoinstyle.get_value": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferJoinStyle.html#shapely.BufferJoinStyle.get_value",
+    "shapely.bufferjoinstyle.has_value": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferJoinStyle.html#shapely.BufferJoinStyle.has_value",
     "shapely.bufferjoinstyle.imag": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferJoinStyle.html#shapely.BufferJoinStyle.imag",
     "shapely.bufferjoinstyle.is_integer": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferJoinStyle.html#shapely.BufferJoinStyle.is_integer",
     "shapely.bufferjoinstyle.numerator": "https://shapely.readthedocs.io/en/stable/reference/shapely.BufferJoinStyle.html#shapely.BufferJoinStyle.numerator",
@@ -50,6 +52,7 @@ MAPPING = {
     "shapely.contains_xy": "https://shapely.readthedocs.io/en/stable/reference/shapely.contains_xy.html#shapely.contains_xy",
     "shapely.convex_hull": "https://shapely.readthedocs.io/en/stable/reference/shapely.convex_hull.html#shapely.convex_hull",
     "shapely.count_coordinates": "https://shapely.readthedocs.io/en/stable/reference/shapely.count_coordinates.html#shapely.count_coordinates",
+    "shapely.coverage_clean": "https://shapely.readthedocs.io/en/stable/reference/shapely.coverage_clean.html#shapely.coverage_clean",
     "shapely.coverage_invalid_edges": "https://shapely.readthedocs.io/en/stable/reference/shapely.coverage_invalid_edges.html#shapely.coverage_invalid_edges",
     "shapely.coverage_is_valid": "https://shapely.readthedocs.io/en/stable/reference/shapely.coverage_is_valid.html#shapely.coverage_is_valid",
     "shapely.coverage_simplify": "https://shapely.readthedocs.io/en/stable/reference/shapely.coverage_simplify.html#shapely.coverage_simplify",
@@ -173,6 +176,7 @@ MAPPING = {
     "shapely.get_point": "https://shapely.readthedocs.io/en/stable/reference/shapely.get_point.html#shapely.get_point",
     "shapely.get_precision": "https://shapely.readthedocs.io/en/stable/reference/shapely.get_precision.html#shapely.get_precision",
     "shapely.get_rings": "https://shapely.readthedocs.io/en/stable/reference/shapely.get_rings.html#shapely.get_rings",
+    "shapely.get_segments": "https://shapely.readthedocs.io/en/stable/reference/shapely.get_segments.html#shapely.get_segments",
     "shapely.get_srid": "https://shapely.readthedocs.io/en/stable/reference/shapely.get_srid.html#shapely.get_srid",
     "shapely.get_type_id": "https://shapely.readthedocs.io/en/stable/reference/shapely.get_type_id.html#shapely.get_type_id",
     "shapely.get_x": "https://shapely.readthedocs.io/en/stable/reference/shapely.get_x.html#shapely.get_x",
@@ -332,6 +336,7 @@ MAPPING = {
     "shapely.minimum_clearance": "https://shapely.readthedocs.io/en/stable/reference/shapely.minimum_clearance.html#shapely.minimum_clearance",
     "shapely.minimum_clearance_line": "https://shapely.readthedocs.io/en/stable/reference/shapely.minimum_clearance_line.html#shapely.minimum_clearance_line",
     "shapely.minimum_rotated_rectangle": "https://shapely.readthedocs.io/en/stable/reference/shapely.minimum_rotated_rectangle.html#shapely.minimum_rotated_rectangle",
+    "shapely.minimum_width": "https://shapely.readthedocs.io/en/stable/reference/shapely.minimum_width.html#shapely.minimum_width",
     "shapely.multilinestring": "https://shapely.readthedocs.io/en/stable/reference/shapely.MultiLineString.html#shapely.MultiLineString",
     "shapely.multilinestring.area": "https://shapely.readthedocs.io/en/stable/reference/shapely.MultiLineString.html#shapely.MultiLineString.area",
     "shapely.multilinestring.boundary": "https://shapely.readthedocs.io/en/stable/reference/shapely.MultiLineString.html#shapely.MultiLineString.boundary",
@@ -673,6 +678,7 @@ MAPPING = {
     "shapely.shortest_line": "https://shapely.readthedocs.io/en/stable/reference/shapely.shortest_line.html#shapely.shortest_line",
     "shapely.simplify": "https://shapely.readthedocs.io/en/stable/reference/shapely.simplify.html#shapely.simplify",
     "shapely.snap": "https://shapely.readthedocs.io/en/stable/reference/shapely.snap.html#shapely.snap",
+    "shapely.split": "https://shapely.readthedocs.io/en/stable/reference/shapely.split.html#shapely.split",
     "shapely.strtree": "https://shapely.readthedocs.io/en/stable/strtree.html#shapely.STRtree",
     "shapely.strtree.geometries": "https://shapely.readthedocs.io/en/stable/strtree.html#shapely.STRtree.geometries",
     "shapely.strtree.nearest": "https://shapely.readthedocs.io/en/stable/strtree.html#shapely.STRtree.nearest",
@@ -689,6 +695,7 @@ MAPPING = {
     "shapely.total_bounds": "https://shapely.readthedocs.io/en/stable/reference/shapely.total_bounds.html#shapely.total_bounds",
     "shapely.touches": "https://shapely.readthedocs.io/en/stable/reference/shapely.touches.html#shapely.touches",
     "shapely.transform": "https://shapely.readthedocs.io/en/stable/reference/shapely.transform.html#shapely.transform",
+    "shapely.transform_coordseq": "https://shapely.readthedocs.io/en/stable/reference/shapely.transform_coordseq.html#shapely.transform_coordseq",
     "shapely.unary_union": "https://shapely.readthedocs.io/en/stable/reference/shapely.unary_union.html#shapely.unary_union",
     "shapely.union": "https://shapely.readthedocs.io/en/stable/reference/shapely.union.html#shapely.union",
     "shapely.union_all": "https://shapely.readthedocs.io/en/stable/reference/shapely.union_all.html#shapely.union_all",

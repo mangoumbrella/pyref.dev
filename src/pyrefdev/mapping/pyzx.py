@@ -1,4 +1,4 @@
-VERSION = "0.10.6"
+VERSION = "0.10.8"
 
 # fmt: off
 MAPPING = {
@@ -44,6 +44,9 @@ MAPPING = {
     "pyzx.drawing.print_matrix": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.drawing.print_matrix",
     "pyzx.extract": "https://pyzx.readthedocs.io/en/stable/api.html",
     "pyzx.extract.extract_circuit": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.extract.extract_circuit",
+    "pyzx.flow": "https://pyzx.readthedocs.io/en/stable/api.html#module-pyzx.flow",
+    "pyzx.flow.gflow": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.flow.gflow",
+    "pyzx.flow.pauli_flow": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.flow.pauli_flow",
     "pyzx.generate": "https://pyzx.readthedocs.io/en/stable/api.html#module-pyzx.generate",
     "pyzx.generate.cliffords": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.generate.cliffords",
     "pyzx.generate.cliffordt": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.generate.cliffordT",
@@ -218,7 +221,6 @@ MAPPING = {
     "pyzx.routing.architecture.rec_steiner_tree": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.Architecture.rec_steiner_tree",
     "pyzx.routing.architecture.shortest_path": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.Architecture.shortest_path",
     "pyzx.routing.architecture.steiner_tree": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.Architecture.steiner_tree",
-    "pyzx.routing.architecture.to_quil_device": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.Architecture.to_quil_device",
     "pyzx.routing.architecture.transpose": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.Architecture.transpose",
     "pyzx.routing.architecture.vertex2qubit": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.Architecture.vertex2qubit",
     "pyzx.routing.architecture.visualize": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.Architecture.visualize",
@@ -275,7 +277,6 @@ MAPPING = {
     "pyzx.routing.rootheuristic.exhaustive": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.RootHeuristic.EXHAUSTIVE",
     "pyzx.routing.rootheuristic.random": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.RootHeuristic.RANDOM",
     "pyzx.routing.rootheuristic.recursive": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.RootHeuristic.RECURSIVE",
-    "pyzx.routing.rootheuristic.rootheuristicprotocol": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.RootHeuristic.RootHeuristicProtocol",
     "pyzx.routing.rootheuristic.to_function": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.RootHeuristic.to_function",
     "pyzx.routing.route_phase_poly": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.route_phase_poly",
     "pyzx.routing.routingmethod": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.RoutingMethod",
@@ -288,7 +289,6 @@ MAPPING = {
     "pyzx.routing.splitheuristic.arity": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.SplitHeuristic.ARITY",
     "pyzx.routing.splitheuristic.count": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.SplitHeuristic.COUNT",
     "pyzx.routing.splitheuristic.random": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.SplitHeuristic.RANDOM",
-    "pyzx.routing.splitheuristic.splitheuristicprotocol": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.SplitHeuristic.SplitHeuristicProtocol",
     "pyzx.routing.splitheuristic.to_function": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.SplitHeuristic.to_function",
     "pyzx.routing.steiner_gauss": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.routing.steiner_gauss",
     "pyzx.simplify": "https://pyzx.readthedocs.io/en/stable/api.html#module-pyzx.simplify",
@@ -316,6 +316,8 @@ MAPPING = {
     "pyzx.simplify.to_gh": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.simplify.to_gh",
     "pyzx.simplify.to_graph_like": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.simplify.to_graph_like",
     "pyzx.simplify.to_rg": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.simplify.to_rg",
+    "pyzx.simplify.zw_bialgebra_op_simp": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.simplify.zw_bialgebra_op_simp",
+    "pyzx.simplify.zw_bialgebra_simp": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.simplify.zw_bialgebra_simp",
     "pyzx.tensor": "https://pyzx.readthedocs.io/en/stable/api.html#module-pyzx.tensor",
     "pyzx.tensor.adjoint": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.tensor.adjoint",
     "pyzx.tensor.compare_tensors": "https://pyzx.readthedocs.io/en/stable/api.html#pyzx.tensor.compare_tensors",

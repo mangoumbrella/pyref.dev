@@ -1,4 +1,4 @@
-VERSION = "2.0.54"
+VERSION = "2.1.9"
 
 # fmt: off
 MAPPING = {
@@ -1005,6 +1005,7 @@ MAPPING = {
     "sqlalchemy.engine.default.defaultdialect.max_constraint_name_length": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.default.DefaultDialect.max_constraint_name_length",
     "sqlalchemy.engine.default.defaultdialect.max_identifier_length": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.default.DefaultDialect.max_identifier_length",
     "sqlalchemy.engine.default.defaultdialect.max_index_name_length": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.default.DefaultDialect.max_index_name_length",
+    "sqlalchemy.engine.default.defaultdialect.min_year_for_type": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.default.DefaultDialect.min_year_for_type",
     "sqlalchemy.engine.default.defaultdialect.name": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.default.DefaultDialect.name",
     "sqlalchemy.engine.default.defaultdialect.normalize_name": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.default.DefaultDialect.normalize_name",
     "sqlalchemy.engine.default.defaultdialect.on_connect": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.default.DefaultDialect.on_connect",
@@ -1231,6 +1232,7 @@ MAPPING = {
     "sqlalchemy.engine.dialect.max_constraint_name_length": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.Dialect.max_constraint_name_length",
     "sqlalchemy.engine.dialect.max_identifier_length": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.Dialect.max_identifier_length",
     "sqlalchemy.engine.dialect.max_index_name_length": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.Dialect.max_index_name_length",
+    "sqlalchemy.engine.dialect.min_year_for_type": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.Dialect.min_year_for_type",
     "sqlalchemy.engine.dialect.name": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.Dialect.name",
     "sqlalchemy.engine.dialect.normalize_name": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.Dialect.normalize_name",
     "sqlalchemy.engine.dialect.on_connect": "https://docs.sqlalchemy.org/en/20/core/internals.html#sqlalchemy.engine.Dialect.on_connect",
@@ -6635,6 +6637,7 @@ MAPPING = {
     "sqlalchemy.types.typedecorator.result_processor.params.coltype": "https://docs.sqlalchemy.org/en/20/core/custom_types.html#sqlalchemy.types.TypeDecorator.result_processor.params.coltype",
     "sqlalchemy.types.typedecorator.result_processor.params.dialect": "https://docs.sqlalchemy.org/en/20/core/custom_types.html#sqlalchemy.types.TypeDecorator.result_processor.params.dialect",
     "sqlalchemy.types.typedecorator.sort_key_function": "https://docs.sqlalchemy.org/en/20/core/custom_types.html#sqlalchemy.types.TypeDecorator.sort_key_function",
+    "sqlalchemy.types.typedecorator.tdcomparatorcontainer": "https://docs.sqlalchemy.org/en/20/core/custom_types.html#sqlalchemy.types.TypeDecorator.TDComparatorContainer",
     "sqlalchemy.types.typedecorator.type_engine": "https://docs.sqlalchemy.org/en/20/core/custom_types.html#sqlalchemy.types.TypeDecorator.type_engine",
     "sqlalchemy.types.typeengine": "https://docs.sqlalchemy.org/en/20/core/type_api.html#sqlalchemy.types.TypeEngine",
     "sqlalchemy.types.typeengine.adapt": "https://docs.sqlalchemy.org/en/20/core/type_api.html#sqlalchemy.types.TypeEngine.adapt",

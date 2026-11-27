@@ -1,4 +1,4 @@
-VERSION = "4.0.1"
+VERSION = "4.2.0"
 
 # fmt: off
 MAPPING = {
@@ -9,6 +9,8 @@ MAPPING = {
     "ulid.monotonicitypolicy": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.MonotonicityPolicy",
     "ulid.monotonicitypolicy.resolve_randomness": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.MonotonicityPolicy.resolve_randomness",
     "ulid.purerandompolicy": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.PureRandomPolicy",
+    "ulid.sqlalchemy": "https://python-ulid.readthedocs.io/en/stable/api.html#module-ulid.sqlalchemy",
+    "ulid.sqlalchemy.ulidtype": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.sqlalchemy.ULIDType",
     "ulid.strictmonotonicpolicy": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.StrictMonotonicPolicy",
     "ulid.ulid": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID",
     "ulid.ulid.datetime": "https://python-ulid.readthedocs.io/en/stable/api.html#ulid.ULID.datetime",

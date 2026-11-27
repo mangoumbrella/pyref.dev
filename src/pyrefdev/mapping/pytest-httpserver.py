@@ -1,4 +1,4 @@
-VERSION = "1.1.5"
+VERSION = "1.2.1"
 
 # fmt: off
 MAPPING = {
@@ -29,10 +29,12 @@ MAPPING = {
     "pytest_httpserver.blockinghttpserver.stop": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BlockingHTTPServer.stop",
     "pytest_httpserver.blockinghttpserver.thread_target": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BlockingHTTPServer.thread_target",
     "pytest_httpserver.blockinghttpserver.url_for": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BlockingHTTPServer.url_for",
+    "pytest_httpserver.blockinghttpserver.with_check": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BlockingHTTPServer.with_check",
     "pytest_httpserver.blockingrequesthandler": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BlockingRequestHandler",
     "pytest_httpserver.blockingrequesthandler.respond_with_data": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BlockingRequestHandler.respond_with_data",
     "pytest_httpserver.blockingrequesthandler.respond_with_json": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BlockingRequestHandler.respond_with_json",
     "pytest_httpserver.blockingrequesthandler.respond_with_response": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.BlockingRequestHandler.respond_with_response",
+    "pytest_httpserver.caseinsensitiveheadervaluematcher": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.CaseInsensitiveHeaderValueMatcher",
     "pytest_httpserver.headervaluematcher": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HeaderValueMatcher",
     "pytest_httpserver.hooks": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#module-pytest_httpserver.hooks",
     "pytest_httpserver.hooks.chain": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.hooks.Chain",
@@ -83,6 +85,7 @@ MAPPING = {
     "pytest_httpserver.httpserver.httpserverbase.stop": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.httpserver.HTTPServerBase.stop",
     "pytest_httpserver.httpserver.httpserverbase.thread_target": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.httpserver.HTTPServerBase.thread_target",
     "pytest_httpserver.httpserver.httpserverbase.url_for": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.httpserver.HTTPServerBase.url_for",
+    "pytest_httpserver.httpserver.httpserverbase.with_check": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.httpserver.HTTPServerBase.with_check",
     "pytest_httpserver.httpserver.httpservererror": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.httpserver.HTTPServerError",
     "pytest_httpserver.httpserver.is_running": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.is_running",
     "pytest_httpserver.httpserver.iter_matching_requests": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.iter_matching_requests",
@@ -94,6 +97,7 @@ MAPPING = {
     "pytest_httpserver.httpserver.requestmatcher.difference": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.httpserver.RequestMatcher.difference",
     "pytest_httpserver.httpserver.requestmatcher.match": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.httpserver.RequestMatcher.match",
     "pytest_httpserver.httpserver.requestmatcher.match_data": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.httpserver.RequestMatcher.match_data",
+    "pytest_httpserver.httpserver.requestmatcher.match_data_form": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.httpserver.RequestMatcher.match_data_form",
     "pytest_httpserver.httpserver.requestmatcher.match_json": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.httpserver.RequestMatcher.match_json",
     "pytest_httpserver.httpserver.respond_nohandler": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.respond_nohandler",
     "pytest_httpserver.httpserver.respond_permanent_failure": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.respond_permanent_failure",
@@ -103,6 +107,7 @@ MAPPING = {
     "pytest_httpserver.httpserver.url_for": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.url_for",
     "pytest_httpserver.httpserver.wait": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.wait",
     "pytest_httpserver.httpserver.wait_for_server_ready": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.wait_for_server_ready",
+    "pytest_httpserver.httpserver.with_check": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServer.with_check",
     "pytest_httpserver.httpservererror": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.HTTPServerError",
     "pytest_httpserver.nohandlererror": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.NoHandlerError",
     "pytest_httpserver.requesthandler": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.RequestHandler",
@@ -115,6 +120,7 @@ MAPPING = {
     "pytest_httpserver.requestmatcher.difference": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.RequestMatcher.difference",
     "pytest_httpserver.requestmatcher.match": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.RequestMatcher.match",
     "pytest_httpserver.requestmatcher.match_data": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.RequestMatcher.match_data",
+    "pytest_httpserver.requestmatcher.match_data_form": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.RequestMatcher.match_data_form",
     "pytest_httpserver.requestmatcher.match_json": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.RequestMatcher.match_json",
     "pytest_httpserver.requestmatcherkwargs": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.RequestMatcherKwargs",
     "pytest_httpserver.uripattern": "https://pytest-httpserver.readthedocs.io/en/latest/api.html#pytest_httpserver.URIPattern",

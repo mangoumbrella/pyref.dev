@@ -1,4 +1,4 @@
-VERSION = "1.8.0"
+VERSION = "1.9.1"
 
 # fmt: off
 MAPPING = {
@@ -10,6 +10,8 @@ MAPPING = {
     "isal.igzip.gzipfile": "https://python-isal.readthedocs.io/en/latest/index.html#isal.igzip.GzipFile",
     "isal.igzip.igzipfile": "https://python-isal.readthedocs.io/en/latest/index.html#isal.igzip.IGzipFile",
     "isal.igzip.igzipfile.__init__": "https://python-isal.readthedocs.io/en/latest/index.html#isal.igzip.IGzipFile.__init__",
+    "isal.igzip.igzipfile.readline": "https://python-isal.readthedocs.io/en/latest/index.html#isal.igzip.IGzipFile.readline",
+    "isal.igzip.igzipfile.seek": "https://python-isal.readthedocs.io/en/latest/index.html#isal.igzip.IGzipFile.seek",
     "isal.igzip.igzipfile.write": "https://python-isal.readthedocs.io/en/latest/index.html#isal.igzip.IGzipFile.write",
     "isal.igzip.open": "https://python-isal.readthedocs.io/en/latest/index.html#isal.igzip.open",
     "isal.igzip_lib": "https://python-isal.readthedocs.io/en/latest/index.html#module-isal.igzip_lib",

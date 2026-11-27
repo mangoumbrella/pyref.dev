@@ -1,4 +1,4 @@
-VERSION = "0.26.1"
+VERSION = "0.26.2"
 
 # fmt: off
 MAPPING = {
@@ -6,7 +6,6 @@ MAPPING = {
     "pint.babel_names": "https://pint.readthedocs.io/en/stable/api/specific.html#module-pint.babel_names",
     "pint.compat": "https://pint.readthedocs.io/en/stable/api/specific.html#module-pint.compat",
     "pint.compat.behaviorchangewarning": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.BehaviorChangeWarning",
-    "pint.compat.check_upcast_type": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.check_upcast_type",
     "pint.compat.coerce_scalar": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.coerce_scalar",
     "pint.compat.eq": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.eq",
     "pint.compat.fully_qualified_name": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.fully_qualified_name",
@@ -15,8 +14,6 @@ MAPPING = {
     "pint.compat.is_upcast_type": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.is_upcast_type",
     "pint.compat.isnan": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.isnan",
     "pint.compat.missing_dependency": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.missing_dependency",
-    "pint.compat.upcast_type_map": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.upcast_type_map",
-    "pint.compat.upcast_type_names": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.upcast_type_names",
     "pint.compat.zero_or_nan": "https://pint.readthedocs.io/en/stable/api/specific.html#pint.compat.zero_or_nan",
     "pint.context": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Context",
     "pint.converters": "https://pint.readthedocs.io/en/stable/api/specific.html#module-pint.converters",
@@ -130,6 +127,7 @@ MAPPING = {
     "pint.facets.plain.plainquantity": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainQuantity",
     "pint.facets.plain.plainquantity.check": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainQuantity.check",
     "pint.facets.plain.plainquantity.dimensionality": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainQuantity.dimensionality",
+    "pint.facets.plain.plainquantity.dimensionless": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainQuantity.dimensionless",
     "pint.facets.plain.plainquantity.from_list": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainQuantity.from_list",
     "pint.facets.plain.plainquantity.from_sequence": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainQuantity.from_sequence",
     "pint.facets.plain.plainquantity.is_compatible_with": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainQuantity.is_compatible_with",
@@ -149,6 +147,7 @@ MAPPING = {
     "pint.facets.plain.plainquantity.to_root_units": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainQuantity.to_root_units",
     "pint.facets.plain.plainquantity.u": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainQuantity.u",
     "pint.facets.plain.plainquantity.unit_items": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainQuantity.unit_items",
+    "pint.facets.plain.plainquantity.unitless": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainQuantity.unitless",
     "pint.facets.plain.plainquantity.units": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainQuantity.units",
     "pint.facets.plain.plainregistry": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainRegistry",
     "pint.facets.plain.plainunit": "https://pint.readthedocs.io/en/stable/api/facets.html#pint.facets.plain.PlainUnit",
@@ -191,6 +190,7 @@ MAPPING = {
     "pint.measurement": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Measurement",
     "pint.measurement.check": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Measurement.check",
     "pint.measurement.dimensionality": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Measurement.dimensionality",
+    "pint.measurement.dimensionless": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Measurement.dimensionless",
     "pint.measurement.from_list": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Measurement.from_list",
     "pint.measurement.from_sequence": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Measurement.from_sequence",
     "pint.measurement.is_compatible_with": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Measurement.is_compatible_with",
@@ -210,6 +210,7 @@ MAPPING = {
     "pint.measurement.to_root_units": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Measurement.to_root_units",
     "pint.measurement.u": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Measurement.u",
     "pint.measurement.unit_items": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Measurement.unit_items",
+    "pint.measurement.unitless": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Measurement.unitless",
     "pint.measurement.units": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Measurement.units",
     "pint.offsetunitcalculuserror": "https://pint.readthedocs.io/en/stable/api/base.html#pint.OffsetUnitCalculusError",
     "pint.pi_theorem": "https://pint.readthedocs.io/en/stable/api/base.html#pint.pi_theorem",
@@ -227,6 +228,7 @@ MAPPING = {
     "pint.quantity.check": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.check",
     "pint.quantity.compute": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.compute",
     "pint.quantity.dimensionality": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.dimensionality",
+    "pint.quantity.dimensionless": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.dimensionless",
     "pint.quantity.dot": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.dot",
     "pint.quantity.from_list": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.from_list",
     "pint.quantity.from_sequence": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.from_sequence",
@@ -249,6 +251,7 @@ MAPPING = {
     "pint.quantity.to_root_units": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.to_root_units",
     "pint.quantity.u": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.u",
     "pint.quantity.unit_items": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.unit_items",
+    "pint.quantity.unitless": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.unitless",
     "pint.quantity.units": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.units",
     "pint.quantity.visualize": "https://pint.readthedocs.io/en/stable/api/base.html#pint.Quantity.visualize",
     "pint.redefinitionerror": "https://pint.readthedocs.io/en/stable/api/base.html#pint.RedefinitionError",

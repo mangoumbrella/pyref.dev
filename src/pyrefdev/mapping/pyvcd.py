@@ -1,4 +1,4 @@
-VERSION = "0.5.0"
+VERSION = "0.5.1"
 
 # fmt: off
 MAPPING = {
@@ -218,10 +218,18 @@ MAPPING = {
     "vcd.writer": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#module-vcd.writer",
     "vcd.writer.compoundvectorvariable": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.CompoundVectorVariable",
     "vcd.writer.compoundvectorvariable.format_value": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.CompoundVectorVariable.format_value",
+    "vcd.writer.eventvariable": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.EventVariable",
+    "vcd.writer.eventvariable.format_value": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.EventVariable.format_value",
+    "vcd.writer.eventvariable.ident": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.EventVariable.ident",
+    "vcd.writer.eventvariable.size": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.EventVariable.size",
+    "vcd.writer.eventvariable.type": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.EventVariable.type",
+    "vcd.writer.eventvariable.value": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.EventVariable.value",
     "vcd.writer.realvariable": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.RealVariable",
     "vcd.writer.realvariable.format_value": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.RealVariable.format_value",
     "vcd.writer.scalarvariable": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.ScalarVariable",
     "vcd.writer.scalarvariable.format_value": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.ScalarVariable.format_value",
+    "vcd.writer.stringvariable": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.StringVariable",
+    "vcd.writer.stringvariable.format_value": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.StringVariable.format_value",
     "vcd.writer.variable": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.Variable",
     "vcd.writer.variable.format_value": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.Variable.format_value",
     "vcd.writer.variable.ident": "https://pyvcd.readthedocs.io/en/stable/vcd.writer.html#vcd.writer.Variable.ident",

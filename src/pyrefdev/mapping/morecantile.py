@@ -1,4 +1,4 @@
-VERSION = "7.0.3"
+VERSION = "7.1.0"
 
 # fmt: off
 MAPPING = {
@@ -73,6 +73,7 @@ MAPPING = {
     "morecantile.models.tilematrixset.lnglat": "https://developmentseed.org/morecantile/api/morecantile/models/#morecantile.models.TileMatrixSet.lnglat",
     "morecantile.models.tilematrixset.lr": "https://developmentseed.org/morecantile/api/morecantile/models/#morecantile.models.TileMatrixSet.lr",
     "morecantile.models.tilematrixset.matrix": "https://developmentseed.org/morecantile/api/morecantile/models/#morecantile.models.TileMatrixSet.matrix",
+    "morecantile.models.tilematrixset.matrix_to_geojson": "https://developmentseed.org/morecantile/api/morecantile/models/#morecantile.models.TileMatrixSet.matrix_to_geojson",
     "morecantile.models.tilematrixset.maxzoom": "https://developmentseed.org/morecantile/api/morecantile/models/#morecantile.models.TileMatrixSet.maxzoom",
     "morecantile.models.tilematrixset.minmax": "https://developmentseed.org/morecantile/api/morecantile/models/#morecantile.models.TileMatrixSet.minmax",
     "morecantile.models.tilematrixset.minzoom": "https://developmentseed.org/morecantile/api/morecantile/models/#morecantile.models.TileMatrixSet.minzoom",

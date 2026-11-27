@@ -1,4 +1,4 @@
-VERSION = "4.0.1"
+VERSION = "4.2.2"
 
 # fmt: off
 MAPPING = {
@@ -12,12 +12,14 @@ MAPPING = {
     "python_utils.containers.casteddictbase": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.CastedDictBase",
     "python_utils.containers.casteddictbase._key_cast": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.CastedDictBase._key_cast",
     "python_utils.containers.casteddictbase._value_cast": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.CastedDictBase._value_cast",
+    "python_utils.containers.casteddictbase.setdefault": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.CastedDictBase.setdefault",
     "python_utils.containers.casteddictbase.update": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.CastedDictBase.update",
     "python_utils.containers.dt": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.DT",
     "python_utils.containers.ht": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.HT",
     "python_utils.containers.kt": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.KT",
     "python_utils.containers.kt_cast": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.KT_cast",
     "python_utils.containers.lazycasteddict": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.LazyCastedDict",
+    "python_utils.containers.lazycasteddict.get": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.LazyCastedDict.get",
     "python_utils.containers.lazycasteddict.items": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.LazyCastedDict.items",
     "python_utils.containers.lazycasteddict.values": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.LazyCastedDict.values",
     "python_utils.containers.onduplicate": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.OnDuplicate",
@@ -26,7 +28,12 @@ MAPPING = {
     "python_utils.containers.t": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.T",
     "python_utils.containers.uniquelist": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.UniqueList",
     "python_utils.containers.uniquelist.append": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.UniqueList.append",
+    "python_utils.containers.uniquelist.clear": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.UniqueList.clear",
+    "python_utils.containers.uniquelist.extend": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.UniqueList.extend",
     "python_utils.containers.uniquelist.insert": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.UniqueList.insert",
+    "python_utils.containers.uniquelist.on_duplicate": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.UniqueList.on_duplicate",
+    "python_utils.containers.uniquelist.pop": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.UniqueList.pop",
+    "python_utils.containers.uniquelist.remove": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.UniqueList.remove",
     "python_utils.containers.vt": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.VT",
     "python_utils.containers.vt_cast": "https://python-utils.readthedocs.io/en/latest/python_utils.html#python_utils.containers.VT_cast",
     "python_utils.converters": "https://python-utils.readthedocs.io/en/latest/python_utils.html#module-python_utils.converters",

@@ -1,4 +1,4 @@
-VERSION = "3.14.3"
+VERSION = "3.14.5"
 
 # fmt: off
 MAPPING = {
@@ -102,7 +102,6 @@ MAPPING = {
     "aiohttp.clientresponse.links": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.links",
     "aiohttp.clientresponse.method": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.method",
     "aiohttp.clientresponse.ok": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.ok",
-    "aiohttp.clientresponse.output_size": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.output_size",
     "aiohttp.clientresponse.raise_for_status": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.raise_for_status",
     "aiohttp.clientresponse.raw_headers": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.raw_headers",
     "aiohttp.clientresponse.read": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.read",
@@ -112,7 +111,6 @@ MAPPING = {
     "aiohttp.clientresponse.request_info": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.request_info",
     "aiohttp.clientresponse.status": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.status",
     "aiohttp.clientresponse.text": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.text",
-    "aiohttp.clientresponse.upload_complete": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.upload_complete",
     "aiohttp.clientresponse.url": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.url",
     "aiohttp.clientresponse.version": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponse.version",
     "aiohttp.clientresponseerror": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.ClientResponseError",
@@ -195,6 +193,7 @@ MAPPING = {
     "aiohttp.cookiejar.host_only_cookies": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.CookieJar.host_only_cookies",
     "aiohttp.cookiejar.load": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.CookieJar.load",
     "aiohttp.cookiejar.save": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.CookieJar.save",
+    "aiohttp.cookiejar.treat_as_secure_origin": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.CookieJar.treat_as_secure_origin",
     "aiohttp.cookiejar.update_cookies": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.CookieJar.update_cookies",
     "aiohttp.digestauthmiddleware": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.DigestAuthMiddleware",
     "aiohttp.dummycookiejar": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.DummyCookieJar",
@@ -384,6 +383,11 @@ MAPPING = {
     "aiohttp.unixclientconnectorerror": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.UnixClientConnectorError",
     "aiohttp.unixconnector": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.UnixConnector",
     "aiohttp.unixconnector.path": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.UnixConnector.path",
+    "aiohttp.uploadabortederror": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.UploadAbortedError",
+    "aiohttp.uploadtracker": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.UploadTracker",
+    "aiohttp.uploadtracker.attempts": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.UploadTracker.attempts",
+    "aiohttp.uploadtracker.bytes_written": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.UploadTracker.bytes_written",
+    "aiohttp.uploadtracker.upload_complete": "https://docs.aiohttp.org/en/stable/client_reference.html#aiohttp.UploadTracker.upload_complete",
     "aiohttp.wait_eof": "https://docs.aiohttp.org/en/stable/streams.html#aiohttp.wait_eof",
     "aiohttp.web": "https://docs.aiohttp.org/en/stable/web.html",
     "aiohttp.web.abstractresource": "https://docs.aiohttp.org/en/stable/web_reference.html#aiohttp.web.AbstractResource",
@@ -427,6 +431,7 @@ MAPPING = {
     "aiohttp.web.baserequest.body_exists": "https://docs.aiohttp.org/en/stable/web_reference.html#aiohttp.web.BaseRequest.body_exists",
     "aiohttp.web.baserequest.can_read_body": "https://docs.aiohttp.org/en/stable/web_reference.html#aiohttp.web.BaseRequest.can_read_body",
     "aiohttp.web.baserequest.charset": "https://docs.aiohttp.org/en/stable/web_reference.html#aiohttp.web.BaseRequest.charset",
+    "aiohttp.web.baserequest.client_max_fields": "https://docs.aiohttp.org/en/stable/web_reference.html#aiohttp.web.BaseRequest.client_max_fields",
     "aiohttp.web.baserequest.client_max_size": "https://docs.aiohttp.org/en/stable/web_reference.html#aiohttp.web.BaseRequest.client_max_size",
     "aiohttp.web.baserequest.clone": "https://docs.aiohttp.org/en/stable/web_reference.html#aiohttp.web.BaseRequest.clone",
     "aiohttp.web.baserequest.content": "https://docs.aiohttp.org/en/stable/web_reference.html#aiohttp.web.BaseRequest.content",

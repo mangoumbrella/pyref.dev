@@ -1,4 +1,4 @@
-VERSION = "2.10.1"
+VERSION = "2.11.0"
 
 # fmt: off
 MAPPING = {
@@ -485,11 +485,13 @@ MAPPING = {
     "brian2.devices.cpp_standalone.device.cppstandalonedevice.build_on_run": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.build_on_run",
     "brian2.devices.cpp_standalone.device.cppstandalonedevice.build_options": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.build_options",
     "brian2.devices.cpp_standalone.device.cppstandalonedevice.check_openmp_compatible": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.check_openmp_compatible",
+    "brian2.devices.cpp_standalone.device.cppstandalonedevice.code_files_to_delete": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.code_files_to_delete",
     "brian2.devices.cpp_standalone.device.cppstandalonedevice.code_lines": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.code_lines",
     "brian2.devices.cpp_standalone.device.cppstandalonedevice.code_object": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.code_object",
     "brian2.devices.cpp_standalone.device.cppstandalonedevice.code_object_class": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.code_object_class",
     "brian2.devices.cpp_standalone.device.cppstandalonedevice.compile_source": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.compile_source",
     "brian2.devices.cpp_standalone.device.cppstandalonedevice.copy_source_files": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.copy_source_files",
+    "brian2.devices.cpp_standalone.device.cppstandalonedevice.data_files_to_delete": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.data_files_to_delete",
     "brian2.devices.cpp_standalone.device.cppstandalonedevice.delete": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.delete",
     "brian2.devices.cpp_standalone.device.cppstandalonedevice.dynamic_arrays": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.dynamic_arrays",
     "brian2.devices.cpp_standalone.device.cppstandalonedevice.dynamic_arrays_2d": "https://brian2.readthedocs.io/en/stable/reference/brian2.devices.cpp_standalone.device.CPPStandaloneDevice.html#brian2.devices.cpp_standalone.device.CPPStandaloneDevice.dynamic_arrays_2d",
@@ -1184,6 +1186,8 @@ MAPPING = {
     "brian2.units.unitsafefunctions.arcsinh": "https://brian2.readthedocs.io/en/stable/reference/brian2.units.unitsafefunctions.arcsinh.html#brian2.units.unitsafefunctions.arcsinh",
     "brian2.units.unitsafefunctions.arctan": "https://brian2.readthedocs.io/en/stable/reference/brian2.units.unitsafefunctions.arctan.html#brian2.units.unitsafefunctions.arctan",
     "brian2.units.unitsafefunctions.arctanh": "https://brian2.readthedocs.io/en/stable/reference/brian2.units.unitsafefunctions.arctanh.html#brian2.units.unitsafefunctions.arctanh",
+    "brian2.units.unitsafefunctions.concat": "https://brian2.readthedocs.io/en/stable/reference/brian2.units.unitsafefunctions.concat.html#brian2.units.unitsafefunctions.concat",
+    "brian2.units.unitsafefunctions.concatenate": "https://brian2.readthedocs.io/en/stable/reference/brian2.units.unitsafefunctions.concatenate.html#brian2.units.unitsafefunctions.concatenate",
     "brian2.units.unitsafefunctions.cos": "https://brian2.readthedocs.io/en/stable/reference/brian2.units.unitsafefunctions.cos.html#brian2.units.unitsafefunctions.cos",
     "brian2.units.unitsafefunctions.cosh": "https://brian2.readthedocs.io/en/stable/reference/brian2.units.unitsafefunctions.cosh.html#brian2.units.unitsafefunctions.cosh",
     "brian2.units.unitsafefunctions.diagonal": "https://brian2.readthedocs.io/en/stable/reference/brian2.units.unitsafefunctions.diagonal.html#brian2.units.unitsafefunctions.diagonal",

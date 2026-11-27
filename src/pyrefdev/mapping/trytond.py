@@ -1,4 +1,4 @@
-VERSION = "8.0.10"
+VERSION = "8.2.3"
 
 # fmt: off
 MAPPING = {
@@ -142,7 +142,7 @@ MAPPING = {
     "trytond.filestore": "https://docs.tryton.org/latest/server/ref/filestore.html#module-trytond.filestore",
     "trytond.filestore.filestore": "https://docs.tryton.org/latest/server/ref/filestore.html#trytond.filestore.FileStore",
     "trytond.filestore.filestore.delete": "https://docs.tryton.org/latest/server/ref/filestore.html#trytond.filestore.FileStore.delete",
-    "trytond.filestore.filestore.delete_many": "https://docs.tryton.org/latest/server/ref/filestore.html#trytond.filestore.FileStore.delete_many",
+    "trytond.filestore.filestore.deletemany": "https://docs.tryton.org/latest/server/ref/filestore.html#trytond.filestore.FileStore.deletemany",
     "trytond.filestore.filestore.get": "https://docs.tryton.org/latest/server/ref/filestore.html#trytond.filestore.FileStore.get",
     "trytond.filestore.filestore.getmany": "https://docs.tryton.org/latest/server/ref/filestore.html#trytond.filestore.FileStore.getmany",
     "trytond.filestore.filestore.set": "https://docs.tryton.org/latest/server/ref/filestore.html#trytond.filestore.FileStore.set",
@@ -181,6 +181,10 @@ MAPPING = {
     "trytond.model.avatarmixin.has_avatar": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.AvatarMixin.has_avatar",
     "trytond.model.browselist": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.BrowseList",
     "trytond.model.browselist.ids": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.BrowseList.ids",
+    "trytond.model.bulkbuffer": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.BulkBuffer",
+    "trytond.model.bulkbuffer.extend": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.BulkBuffer.extend",
+    "trytond.model.bulkbuffer.flush": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.BulkBuffer.flush",
+    "trytond.model.bulkbuffer.push": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.BulkBuffer.push",
     "trytond.model.chatmixin": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ChatMixin",
     "trytond.model.chatmixin.chat_language": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ChatMixin.chat_language",
     "trytond.model.chatmixin.chat_post": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ChatMixin.chat_post",
@@ -429,6 +433,10 @@ MAPPING = {
     "trytond.model.modelstorage._transaction": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ModelStorage._transaction",
     "trytond.model.modelstorage._user": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ModelStorage._user",
     "trytond.model.modelstorage.browse": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ModelStorage.browse",
+    "trytond.model.modelstorage.bulk_create": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ModelStorage.bulk_create",
+    "trytond.model.modelstorage.bulk_delete": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ModelStorage.bulk_delete",
+    "trytond.model.modelstorage.bulk_func": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ModelStorage.bulk_func",
+    "trytond.model.modelstorage.bulk_save": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ModelStorage.bulk_save",
     "trytond.model.modelstorage.check_modification": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ModelStorage.check_modification",
     "trytond.model.modelstorage.compute_fields": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ModelStorage.compute_fields",
     "trytond.model.modelstorage.copy": "https://docs.tryton.org/latest/server/ref/models.html#trytond.model.ModelStorage.copy",
@@ -527,6 +535,9 @@ MAPPING = {
     "trytond.pool.poolbase.__register__": "https://docs.tryton.org/latest/server/ref/pool.html#trytond.pool.PoolBase.__register__",
     "trytond.pool.poolbase.__setup__": "https://docs.tryton.org/latest/server/ref/pool.html#trytond.pool.PoolBase.__setup__",
     "trytond.pool.poolmeta": "https://docs.tryton.org/latest/server/ref/pool.html#trytond.pool.PoolMeta",
+    "trytond.protocols": "https://docs.tryton.org/latest/server/ref/protocols/dispatcher.html",
+    "trytond.protocols.dispatcher": "https://docs.tryton.org/latest/server/ref/protocols/dispatcher.html#module-trytond.protocols.dispatcher",
+    "trytond.protocols.dispatcher.register_authentication_service": "https://docs.tryton.org/latest/server/ref/protocols/dispatcher.html#trytond.protocols.dispatcher.register_authentication_service",
     "trytond.pyson": "https://docs.tryton.org/latest/server/ref/pyson.html#module-trytond.pyson",
     "trytond.pyson.and": "https://docs.tryton.org/latest/server/ref/pyson.html#trytond.pyson.And",
     "trytond.pyson.bool": "https://docs.tryton.org/latest/server/ref/pyson.html#trytond.pyson.Bool",

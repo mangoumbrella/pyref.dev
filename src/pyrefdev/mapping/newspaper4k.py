@@ -1,4 +1,4 @@
-VERSION = "0.9.6"
+VERSION = "0.9.6.1"
 
 # fmt: off
 MAPPING = {
@@ -54,6 +54,7 @@ MAPPING = {
     "newspaper.configuration.configuration.__setstate__": "https://newspaper4k.readthedocs.io/en/latest/user_guide/api_reference.html#newspaper.configuration.Configuration.__setstate__",
     "newspaper.configuration.configuration._honor_robotstxt": "https://newspaper4k.readthedocs.io/en/latest/user_guide/api_reference.html#newspaper.configuration.Configuration._honor_robotstxt",
     "newspaper.configuration.configuration.allow_binary_content": "https://newspaper4k.readthedocs.io/en/latest/user_guide/api_reference.html#newspaper.configuration.Configuration.allow_binary_content",
+    "newspaper.configuration.configuration.allow_private_hosts": "https://newspaper4k.readthedocs.io/en/latest/user_guide/api_reference.html#newspaper.configuration.Configuration.allow_private_hosts",
     "newspaper.configuration.configuration.browser_user_agent": "https://newspaper4k.readthedocs.io/en/latest/user_guide/api_reference.html#newspaper.configuration.Configuration.browser_user_agent",
     "newspaper.configuration.configuration.clean_article_html": "https://newspaper4k.readthedocs.io/en/latest/user_guide/api_reference.html#newspaper.configuration.Configuration.clean_article_html",
     "newspaper.configuration.configuration.disable_category_cache": "https://newspaper4k.readthedocs.io/en/latest/user_guide/api_reference.html#newspaper.configuration.Configuration.disable_category_cache",

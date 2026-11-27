@@ -1,4 +1,4 @@
-VERSION = "3.12.0"
+VERSION = "3.12.1"
 
 # fmt: off
 MAPPING = {
@@ -660,7 +660,6 @@ MAPPING = {
     "sentinelhub.data_collections.datacollection.landsat_tm_l1": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections.html#sentinelhub.data_collections.DataCollection.LANDSAT_TM_L1",
     "sentinelhub.data_collections.datacollection.landsat_tm_l2": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections.html#sentinelhub.data_collections.DataCollection.LANDSAT_TM_L2",
     "sentinelhub.data_collections.datacollection.metabands": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections.html#sentinelhub.data_collections.DataCollection.metabands",
-    "sentinelhub.data_collections.datacollection.modis": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections.html#sentinelhub.data_collections.DataCollection.MODIS",
     "sentinelhub.data_collections.datacollection.sentinel1": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections.html#sentinelhub.data_collections.DataCollection.SENTINEL1",
     "sentinelhub.data_collections.datacollection.sentinel1_ew": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections.html#sentinelhub.data_collections.DataCollection.SENTINEL1_EW",
     "sentinelhub.data_collections.datacollection.sentinel1_ew_asc": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections.html#sentinelhub.data_collections.DataCollection.SENTINEL1_EW_ASC",
@@ -716,7 +715,6 @@ MAPPING = {
     "sentinelhub.data_collections_bands.bands.landsat_ot_l2": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.Bands.LANDSAT_OT_L2",
     "sentinelhub.data_collections_bands.bands.landsat_tm_l1": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.Bands.LANDSAT_TM_L1",
     "sentinelhub.data_collections_bands.bands.landsat_tm_l2": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.Bands.LANDSAT_TM_L2",
-    "sentinelhub.data_collections_bands.bands.modis": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.Bands.MODIS",
     "sentinelhub.data_collections_bands.bands.sentinel1_ew": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.Bands.SENTINEL1_EW",
     "sentinelhub.data_collections_bands.bands.sentinel1_ew_sh": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.Bands.SENTINEL1_EW_SH",
     "sentinelhub.data_collections_bands.bands.sentinel1_iw": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.Bands.SENTINEL1_IW",
@@ -735,7 +733,6 @@ MAPPING = {
     "sentinelhub.data_collections_bands.metabands.landsat_ot_l2": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.MetaBands.LANDSAT_OT_L2",
     "sentinelhub.data_collections_bands.metabands.landsat_tm_l1": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.MetaBands.LANDSAT_TM_L1",
     "sentinelhub.data_collections_bands.metabands.landsat_tm_l2": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.MetaBands.LANDSAT_TM_L2",
-    "sentinelhub.data_collections_bands.metabands.modis": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.MetaBands.MODIS",
     "sentinelhub.data_collections_bands.metabands.sentinel1": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.MetaBands.SENTINEL1",
     "sentinelhub.data_collections_bands.metabands.sentinel2_l1c": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.MetaBands.SENTINEL2_L1C",
     "sentinelhub.data_collections_bands.metabands.sentinel2_l2a": "https://sentinelhub-py.readthedocs.io/en/stable/reference/sentinelhub.data_collections_bands.html#sentinelhub.data_collections_bands.MetaBands.SENTINEL2_L2A",
